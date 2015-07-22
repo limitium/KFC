@@ -1,0 +1,328 @@
+AppBundle\Entity\SpkResBuildTech:
+    type: entity
+    table: SPK_RES_BUILD_TECH
+    uniqueConstraints:
+        SPK_RES_BUILD_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        buildingType:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: BUILDING_TYPE
+        buildingClass:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: BUILDING_CLASS
+        progress:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROGRESS
+        buildingStartQuarter:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BUILDING_START_QUARTER
+        buildingStartYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BUILDING_START_YEAR
+        buildingEndQuarter:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BUILDING_END_QUARTER
+        buildingEndYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BUILDING_END_YEAR
+        architectureStyle:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ARCHITECTURE_STYLE
+        construction:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: CONSTRUCTION
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        apartmentsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: APARTMENTS_COUNT
+        apartmentAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: APARTMENT_AREA_MIN
+        apartmentAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: APARTMENT_AREA_MAX
+        ossature:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OSSATURE
+        overlap:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OVERLAP
+        outdoorWall:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OUTDOOR_WALL
+        storeysCountMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT_MIN
+        storeysCountMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT_MAX
+        ceilingHeightMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MIN
+        ceilingHeightMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MAX
+        penthouse:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PENTHOUSE
+        penthouseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PENTHOUSE_AREA_MIN
+        penthouseAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PENTHOUSE_AREA_MAX
+        townhouse:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TOWNHOUSE
+        townhouseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOWNHOUSE_AREA_MIN
+        townhouseAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOWNHOUSE_AREA_MAX
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPERATIONAL_COST
+        lifts:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LIFTS
+        planning:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PLANNING
+        windows:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WINDOWS
+        territory:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TERRITORY
+        territoryArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TERRITORY_AREA
+        permission:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PERMISSION
+        leaseContract:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: LEASE_CONTRACT
+        outBuyContract:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OUT_BUY_CONTRACT
+        investmentContract:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INVESTMENT_CONTRACT
+        forLease:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: FOR_LEASE
+        forSale:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: FOR_SALE
+        commentsRus:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS_ENG
+        undergroundParking:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UNDERGROUND_PARKING
+        security:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SECURITY
+        numberOfFloors:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: NUMBER_OF_FLOORS
+        currencyHouse:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: CURRENCY_HOUSE
+        onlystreet:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ONLYSTREET
+        ord:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ORD
+        investmentProject:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INVESTMENT_PROJECT
+        kfFee:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_FEE
+        categoryLandlord:
+            type: string
+            nullable: true
+            length: 24
+            fixed: false
+            column: CATEGORY_LANDLORD
+    lifecycleCallbacks: {  }

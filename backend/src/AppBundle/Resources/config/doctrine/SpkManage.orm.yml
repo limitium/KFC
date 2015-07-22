@@ -1,0 +1,68 @@
+AppBundle\Entity\SpkManage:
+    type: entity
+    table: SPK_MANAGE
+    uniqueConstraints:
+        SPK_MANAGE_PRIMARY:
+            columns:
+                - SPK_MANAGEID
+    id: {  }
+    fields:
+        spkManageid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_MANAGEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        residential:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RESIDENTIAL
+        retail:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RETAIL
+        office:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: OFFICE
+        industrial:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: INDUSTRIAL
+        serverPath:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SERVER_PATH
+        webPath:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: WEB_PATH
+    lifecycleCallbacks: {  }

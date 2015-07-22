@@ -1,0 +1,129 @@
+AppBundle\Entity\SpkRetConstruction:
+    type: entity
+    table: SPK_RET_CONSTRUCTION
+    uniqueConstraints:
+        SPK_RET_CONSTRUCTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storeysCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT
+        tradeStoreysCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: TRADE_STOREYS_COUNT
+        columnStep:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COLUMN_STEP
+        entranceCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ENTRANCE_COUNT
+        escalatorCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ESCALATOR_COUNT
+        escalatorDescription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ESCALATOR_DESCRIPTION
+        travolatorCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: TRAVOLATOR_COUNT
+        travolatorDescription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TRAVOLATOR_DESCRIPTION
+        liftCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LIFT_COUNT
+        visitorsLiftCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: VISITORS_LIFT_COUNT
+        panoramicLiftCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PANORAMIC_LIFT_COUNT
+        panoramicLiftDescription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PANORAMIC_LIFT_DESCRIPTION
+        goodsLiftCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GOODS_LIFT_COUNT
+        goodsLiftDescription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: GOODS_LIFT_DESCRIPTION
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        storefront:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STOREFRONT
+    lifecycleCallbacks: {  }

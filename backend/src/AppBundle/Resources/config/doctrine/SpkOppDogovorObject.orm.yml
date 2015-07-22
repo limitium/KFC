@@ -1,0 +1,1341 @@
+AppBundle\Entity\SpkOppDogovorObject:
+    type: entity
+    table: SPK_OPP_DOGOVOR_OBJECT
+    indexes:
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6:
+            columns:
+                - OBJECTID
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_1:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6_K63_58_59_60_61:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - BASE_SQUARE
+                - BASE_RENT_MIN
+                - BASE_RENT_MAX
+                - BASE_COST_MAX
+                - BASE_COST_MIN
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K63_1_6_58_59_60_61:
+            columns:
+                - BASE_SQUARE
+                - OPPORTUNITYID
+                - OBJECTID
+                - BASE_RENT_MIN
+                - BASE_RENT_MAX
+                - BASE_COST_MAX
+                - BASE_COST_MIN
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_K1_K63_58_59_60_61:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - BASE_SQUARE
+                - BASE_RENT_MIN
+                - BASE_RENT_MAX
+                - BASE_COST_MAX
+                - BASE_COST_MIN
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_c_7_1999346187__K63:
+            columns:
+                - BASE_SQUARE
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6_K33_K7_9_16_29_41:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - START_RENT
+                - FINAL_RENT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_K1_K33_K7_9_16_29_41:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - START_RENT
+                - FINAL_RENT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K33_K7_1_6_9_16_29_41:
+            columns:
+                - START_RENT
+                - FINAL_RENT
+                - OPPORTUNITYID
+                - OBJECTID
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K7_K13_1_6_9_16_29_41:
+            columns:
+                - FINAL_RENT
+                - PERCENT_OBOROT
+                - OPPORTUNITYID
+                - OBJECTID
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6_K7_K13_9_16_29_41:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - PERCENT_OBOROT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_K1_K7_K13_9_16_29_41:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_RENT
+                - PERCENT_OBOROT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_K1_K7_K13_9_16_29_33_41:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_RENT
+                - PERCENT_OBOROT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - START_RENT
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_6_7_8_18_80:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - FINAL_COST
+                - NOT_DB_OBJECT_ADDRESS
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6_K7_K13_9_16_29_33_41:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - PERCENT_OBOROT
+                - DEPOSIT
+                - NOTES
+                - INDEXATION
+                - START_RENT
+                - PREPAY_REAL_D
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K1_K6_K8:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_SQUARE
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K8_1_6:
+            columns:
+                - FINAL_SQUARE
+                - OPPORTUNITYID
+                - OBJECTID
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_7_1999346187__K6_K1_K8:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_SQUARE
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_c_7_1999346187__K8:
+            columns:
+                - FINAL_SQUARE
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K1_6_7_8_14_17_18_26_31_80:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - LEASE_END_DATE
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - DOGOVOR_PERIOD
+                - LEASE_START_DATE
+                - NOT_DB_OBJECT_ADDRESS
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K6_K1_7_8_14_17_18_26_31_80:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - LEASE_END_DATE
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - DOGOVOR_PERIOD
+                - LEASE_START_DATE
+                - NOT_DB_OBJECT_ADDRESS
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K1_K6_7_8_9_10_11_16_17_18_23_25_26_29_31_32_33_35_36_37_42_44_45_47_48_51_52_:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - DEPOSIT
+                - PREPAYMENT
+                - PAYMENT_TYPE
+                - NOTES
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - OTHER_EXPENSES
+                - FINAL_CAR_PLACE_COST
+                - DOGOVOR_PERIOD
+                - INDEXATION
+                - LEASE_START_DATE
+                - START_COST
+                - START_RENT
+                - WORK_PLACE_COUNT
+                - USABLEAREA
+                - OPERATIONAL_COST
+                - PREPAY_REQUEST_MOUNTH
+                - MUNICIPAL_COST
+                - REPAIR_COMPENSATION
+                - DEPOSIT_REQUEST_MOUNTH
+                - ADDTITIONAL_NEEDS
+                - EXPO_START
+                - EXPO_END
+                - SHOP_NAME
+                - PAYMENT_SCHEDULE
+                - BASE_CAR_PLACES
+                - PROPERTY_FURNETURE
+                - BUILDING_TYPE
+                - UNDERGROUND_PARKING_COUNT
+                - GROUND_PARKING_COUNT
+                - ROOF_PARKING_COUNT
+                - UNDERGROUND_PARKING_COST
+                - GROUND_PARKING_COST
+                - ROOF_PARKING_COST
+                - NOT_DB_OBJECT_ADDRESS
+                - OFFICE_RATE
+                - MEZZONINE_RATE
+                - RAILWAY_RATE
+                - OFFICE_SQ
+                - MEZZONINE_SQ
+                - RAILWAY_SQ
+                - BOOK_VALUE
+                - CAPITALISATION
+                - OPERATING_INCOME
+                - VAT_FOR_REPRESENTATION
+                - leaseble_build_area
+                - building_area
+                - FINAL_SQUARE_PLM
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K6_K1_7_8_9_10_11_16_17_18_23_25_26_29_31_32_33_35_36_37_42_44_45_47_48_51_52_:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - DEPOSIT
+                - PREPAYMENT
+                - PAYMENT_TYPE
+                - NOTES
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - OTHER_EXPENSES
+                - FINAL_CAR_PLACE_COST
+                - DOGOVOR_PERIOD
+                - INDEXATION
+                - LEASE_START_DATE
+                - START_COST
+                - START_RENT
+                - WORK_PLACE_COUNT
+                - USABLEAREA
+                - OPERATIONAL_COST
+                - PREPAY_REQUEST_MOUNTH
+                - MUNICIPAL_COST
+                - REPAIR_COMPENSATION
+                - DEPOSIT_REQUEST_MOUNTH
+                - ADDTITIONAL_NEEDS
+                - EXPO_START
+                - EXPO_END
+                - SHOP_NAME
+                - PAYMENT_SCHEDULE
+                - BASE_CAR_PLACES
+                - PROPERTY_FURNETURE
+                - BUILDING_TYPE
+                - UNDERGROUND_PARKING_COUNT
+                - GROUND_PARKING_COUNT
+                - ROOF_PARKING_COUNT
+                - UNDERGROUND_PARKING_COST
+                - GROUND_PARKING_COST
+                - ROOF_PARKING_COST
+                - NOT_DB_OBJECT_ADDRESS
+                - OFFICE_RATE
+                - MEZZONINE_RATE
+                - RAILWAY_RATE
+                - OFFICE_SQ
+                - MEZZONINE_SQ
+                - RAILWAY_SQ
+                - BOOK_VALUE
+                - CAPITALISATION
+                - OPERATING_INCOME
+                - VAT_FOR_REPRESENTATION
+                - leaseble_build_area
+                - building_area
+                - FINAL_SQUARE_PLM
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K6_K1_14_17_26_31_90_91_92_93_94_95:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - LEASE_END_DATE
+                - DOGOVOR_TYPE
+                - DOGOVOR_PERIOD
+                - LEASE_START_DATE
+                - BOOK_VALUE
+                - CAPITALISATION
+                - OPERATING_INCOME
+                - VAT_FOR_REPRESENTATION
+                - leaseble_build_area
+                - building_area
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K1_K6_14_17_26_31_90_91_92_93_94_95:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - LEASE_END_DATE
+                - DOGOVOR_TYPE
+                - DOGOVOR_PERIOD
+                - LEASE_START_DATE
+                - BOOK_VALUE
+                - CAPITALISATION
+                - OPERATING_INCOME
+                - VAT_FOR_REPRESENTATION
+                - leaseble_build_area
+                - building_area
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K6_K1_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_29_30_31_32_33_:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - DEPOSIT
+                - PREPAYMENT
+                - PAYMENT_TYPE
+                - PERCENT_BLACK_WHITE
+                - PERCENT_OBOROT
+                - LEASE_END_DATE
+                - IS_NDS
+                - NOTES
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - FINAL_SQM_COST
+                - FINAL_LAND_SQM_COST
+                - ADDITIONAL_SERVICES
+                - ADDITIONAL_SERVICES_COST
+                - OTHER_EXPENSES
+                - OTHER_EXPENSES_COST
+                - FINAL_CAR_PLACE_COST
+                - DOGOVOR_PERIOD
+                - INDEXATION
+                - COMMENTS
+                - LEASE_START_DATE
+                - START_COST
+                - START_RENT
+                - PROPERTY_CONDITION
+                - WORK_PLACE_COUNT
+                - USABLEAREA
+                - OPERATIONAL_COST
+                - ELECTRICITY_NEEDS
+                - PREPAY_REQUEST_D
+                - PREPAY_REAL_D
+                - PREPAY_REQUEST_MOUNTH
+                - DEPOSIT_REAL_D
+                - MUNICIPAL_COST
+                - REPAIR_COMPENSATION
+                - DEPOSIT_REQUEST_D
+                - DEPOSIT_REQUEST_MOUNTH
+                - ADDTITIONAL_NEEDS
+                - WATER_NEEDS
+                - GAZ_NEEDS
+                - EXPO_START
+                - EXPO_END
+                - SHOP_NAME
+                - PROPERTY_TYPE
+                - ISPRIMARY
+                - PAYMENT_SCHEDULE
+                - BASE_RENT_MIN
+                - BASE_RENT_MAX
+                - BASE_COST_MAX
+                - BASE_COST_MIN
+                - BASE_LAND_SQUARE
+                - BASE_SQUARE
+                - BASE_CAR_PLACES
+                - BASE_CAR_PLACE_COST
+                - BASE_SQM_COST_MIN
+                - BASE_SQM_COST_MAX
+                - COST_PER_100_MIN
+                - COST_PER_100_MAX
+                - PROPERTY_FURNETURE
+                - BUILDING_TYPE
+                - CURRENCY
+                - CURRENCY_TYPE
+                - OFFICE_RATE
+                - MEZZONINE_RATE
+                - RAILWAY_RATE
+                - OFFICE_SQ
+                - MEZZONINE_SQ
+                - RAILWAY_SQ
+                - KF_LEGAL_NAME
+        _dta_index_SPK_OPP_DOGOVOR_OBJECT_5_1999346187__K1_K6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_29_30_31_32_33_:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - FINAL_RENT
+                - FINAL_SQUARE
+                - DEPOSIT
+                - PREPAYMENT
+                - PAYMENT_TYPE
+                - PERCENT_BLACK_WHITE
+                - PERCENT_OBOROT
+                - LEASE_END_DATE
+                - IS_NDS
+                - NOTES
+                - DOGOVOR_TYPE
+                - FINAL_COST
+                - FINAL_SQM_COST
+                - FINAL_LAND_SQM_COST
+                - ADDITIONAL_SERVICES
+                - ADDITIONAL_SERVICES_COST
+                - OTHER_EXPENSES
+                - OTHER_EXPENSES_COST
+                - FINAL_CAR_PLACE_COST
+                - DOGOVOR_PERIOD
+                - INDEXATION
+                - COMMENTS
+                - LEASE_START_DATE
+                - START_COST
+                - START_RENT
+                - PROPERTY_CONDITION
+                - WORK_PLACE_COUNT
+                - USABLEAREA
+                - OPERATIONAL_COST
+                - ELECTRICITY_NEEDS
+                - PREPAY_REQUEST_D
+                - PREPAY_REAL_D
+                - PREPAY_REQUEST_MOUNTH
+                - DEPOSIT_REAL_D
+                - MUNICIPAL_COST
+                - REPAIR_COMPENSATION
+                - DEPOSIT_REQUEST_D
+                - DEPOSIT_REQUEST_MOUNTH
+                - ADDTITIONAL_NEEDS
+                - WATER_NEEDS
+                - GAZ_NEEDS
+                - EXPO_START
+                - EXPO_END
+                - SHOP_NAME
+                - PROPERTY_TYPE
+                - ISPRIMARY
+                - PAYMENT_SCHEDULE
+                - BASE_RENT_MIN
+                - BASE_RENT_MAX
+                - BASE_COST_MAX
+                - BASE_COST_MIN
+                - BASE_LAND_SQUARE
+                - BASE_SQUARE
+                - BASE_CAR_PLACES
+                - BASE_CAR_PLACE_COST
+                - BASE_SQM_COST_MIN
+                - BASE_SQM_COST_MAX
+                - COST_PER_100_MIN
+                - COST_PER_100_MAX
+                - PROPERTY_FURNETURE
+                - BUILDING_TYPE
+                - CURRENCY
+                - CURRENCY_TYPE
+                - OFFICE_RATE
+                - MEZZONINE_RATE
+                - RAILWAY_RATE
+                - OFFICE_SQ
+                - MEZZONINE_SQ
+                - RAILWAY_SQ
+                - KF_LEGAL_NAME
+    uniqueConstraints:
+        SPK_OPP_DOGOVOR_OBJECT_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        objectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OBJECTID
+        finalRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_RENT
+        finalSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_SQUARE
+        deposit:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT
+        prepayment:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPAYMENT
+        paymentType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PAYMENT_TYPE
+        percentBlackWhite:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PERCENT_BLACK_WHITE
+        percentOborot:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PERCENT_OBOROT
+        leaseEndDate:
+            type: datetime
+            nullable: true
+            column: LEASE_END_DATE
+        isNds:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_NDS
+        notes:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: NOTES
+        dogovorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DOGOVOR_TYPE
+        finalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_COST
+        finalSqmCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_SQM_COST
+        finalLandSqmCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_LAND_SQM_COST
+        additionalServices:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: ADDITIONAL_SERVICES
+        additionalServicesCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ADDITIONAL_SERVICES_COST
+        otherExpenses:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: OTHER_EXPENSES
+        otherExpensesCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OTHER_EXPENSES_COST
+        finalCarPlaceCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_CAR_PLACE_COST
+        dogovorPeriod:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DOGOVOR_PERIOD
+        offertaPeriod:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFERTA_PERIOD
+        offertaDate:
+            type: datetime
+            nullable: true
+            column: OFFERTA_DATE
+        indexation:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: INDEXATION
+        comments:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS
+        leaseStartDate:
+            type: datetime
+            nullable: true
+            column: LEASE_START_DATE
+        startCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: START_COST
+        startRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: START_RENT
+        propertyCondition:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROPERTY_CONDITION
+        workPlaceCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: WORK_PLACE_COUNT
+        usablearea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: USABLEAREA
+        operationalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPERATIONAL_COST
+        electricityNeeds:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY_NEEDS
+        annualRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ANNUAL_RENT
+        prepayRequestD:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPAY_REQUEST_D
+        prepayRealD:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPAY_REAL_D
+        prepayRequestMounth:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPAY_REQUEST_MOUNTH
+        depositRealD:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT_REAL_D
+        municipalCost:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: MUNICIPAL_COST
+        repairCompensation:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: REPAIR_COMPENSATION
+        depositRequestD:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT_REQUEST_D
+        depositRequestMounth:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT_REQUEST_MOUNTH
+        addtitionalNeeds:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ADDTITIONAL_NEEDS
+        waterNeeds:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WATER_NEEDS
+        gazNeeds:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: GAZ_NEEDS
+        expoStart:
+            type: datetime
+            nullable: true
+            column: EXPO_START
+        expoEnd:
+            type: datetime
+            nullable: true
+            column: EXPO_END
+        shopName:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SHOP_NAME
+        propertyType:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROPERTY_TYPE
+        address:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ADDRESS
+        isprimary:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISPRIMARY
+        paymentSchedule:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PAYMENT_SCHEDULE
+        baseRentMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_RENT_MIN
+        baseRentMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_RENT_MAX
+        baseCostMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_COST_MAX
+        baseCostMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_COST_MIN
+        baseLandSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_LAND_SQUARE
+        baseSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_SQUARE
+        baseCarPlaces:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_CAR_PLACES
+        baseLandSqmCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_LAND_SQM_COST
+        baseCarPlaceCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_CAR_PLACE_COST
+        baseSqmCostMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_SQM_COST_MIN
+        baseSqmCostMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASE_SQM_COST_MAX
+        costPer100Min:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_PER_100_MIN
+        costPer100Max:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_PER_100_MAX
+        propertyFurneture:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROPERTY_FURNETURE
+        buildingType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BUILDING_TYPE
+        mainSearchConditions:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: MAIN_SEARCH_CONDITIONS
+        undergroundParkingCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_PARKING_COUNT
+        groundParkingCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GROUND_PARKING_COUNT
+        roofParkingCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOF_PARKING_COUNT
+        undergroundParkingCost:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_PARKING_COST
+        groundParkingCost:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GROUND_PARKING_COST
+        roofParkingCost:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOF_PARKING_COST
+        notDbObjectAddress:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: NOT_DB_OBJECT_ADDRESS
+        currency:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: CURRENCY
+        currencyType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CURRENCY_TYPE
+        officeRate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OFFICE_RATE
+        mezzonineRate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: MEZZONINE_RATE
+        railwayRate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RAILWAY_RATE
+        officeSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQ
+        mezzonineSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MEZZONINE_SQ
+        railwaySq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RAILWAY_SQ
+        kfLegalName:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: KF_LEGAL_NAME
+        bookValue:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: BOOK_VALUE
+        capitalisation:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: CAPITALISATION
+        operatingIncome:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPERATING_INCOME
+        vatForRepresentation:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: VAT_FOR_REPRESENTATION
+        leasebleBuildArea:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: leaseble_build_area
+        buildingArea:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: building_area
+        finalSquarePlm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_SQUARE_PLM
+        startRentCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: START_RENT_CURRENCY
+        municipalCostCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: MUNICIPAL_COST_CURRENCY
+        finalRentCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: FINAL_RENT_CURRENCY
+        finalRentVat:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FINAL_RENT_VAT
+        operCostCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: OPER_COST_CURRENCY
+        operCostVat:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OPER_COST_VAT
+        isIndexation:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_INDEXATION
+        officeRateCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: OFFICE_RATE_CURRENCY
+        mezzonineRateCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: MEZZONINE_RATE_CURRENCY
+        isDecoration:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_DECORATION
+        startRentVat:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: START_RENT_VAT
+        newcomer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NEWCOMER
+        prevObject:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PREV_OBJECT
+        prevSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREV_SQUARE
+        prevRentalRate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREV_RENTAL_RATE
+        prevOpex:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREV_OPEX
+        startOpex:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: START_OPEX
+        startOpexCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: START_OPEX_CURRENCY
+        opexType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPEX_TYPE
+        prevObjClass:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: PREV_OBJ_CLASS
+        finalCostCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: FINAL_COST_CURRENCY
+        finalCarplaceCostCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: FINAL_CARPLACE_COST_CURRENCY
+        startCostCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: START_COST_CURRENCY
+        offPrevObjectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OFF_PREV_OBJECTID
+        indPrevObjectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: IND_PREV_OBJECTID
+        abortiveFee:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ABORTIVE_FEE
+        baseRentCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BASE_RENT_CURRENCY
+        repairCompensationCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: REPAIR_COMPENSATION_CURRENCY
+        depositRequestCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DEPOSIT_REQUEST_CURRENCY
+        opportunityDepositCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OPPORTUNITY_DEPOSIT_CURRENCY
+        prepayRequestCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PREPAY_REQUEST_CURRENCY
+        opportunityPrepayCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OPPORTUNITY_PREPAY_CURRENCY
+        carPlaceBaseCostCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CAR_PLACE_BASE_COST_CURRENCY
+        carPlaceFinalCostCurrenc:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CAR_PLACE_FINAL_COST_CURRENC
+        agreementAmountCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: AGREEMENT_AMOUNT_CURRENCY
+        askedOpexCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ASKED_OPEX_CURRENCY
+        forecastTurnover:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FORECAST_TURNOVER
+        marketingPay:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MARKETING_PAY
+        openPay:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPEN_PAY
+        forecastTurnoverCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FORECAST_TURNOVER_CURRENCY
+        marketingPayCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MARKETING_PAY_CURRENCY
+        openPayCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OPEN_PAY_CURRENCY
+        landRate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LAND_RATE
+        landSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQ
+        landRateCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LAND_RATE_CURRENCY
+        industrialRate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INDUSTRIAL_RATE
+        industrialSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_SQ
+        industrialRateCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INDUSTRIAL_RATE_CURRENCY
+        operator3pl:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPERATOR_3PL
+        officeCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 2
+            column: OFFICE_COST
+        mezzonineCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 2
+            column: MEZZONINE_COST
+        landCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 2
+            column: LAND_COST
+        industrialCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 2
+            column: INDUSTRIAL_COST
+    lifecycleCallbacks: {  }

@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkRequestsArea:
+    type: entity
+    table: SPK_REQUESTS_AREA
+    indexes:
+        SPK_REQUESTS_AREA_SPK_REQUESTSID:
+            columns:
+                - SPK_REQUESTSID
+    uniqueConstraints:
+        SPK_REQUESTS_AREA_PRIMARY:
+            columns:
+                - SPK_REQUESTS_AREAID
+    id: {  }
+    fields:
+        spkRequestsAreaid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTS_AREAID
+        spkRequestsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        areaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AREAID
+    lifecycleCallbacks: {  }

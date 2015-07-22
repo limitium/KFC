@@ -1,0 +1,1202 @@
+AppBundle\Entity\SpkResidential:
+    type: entity
+    table: SPK_RESIDENTIAL
+    indexes:
+        SPK_RESIDENTIAL_ID:
+            columns:
+                - ID
+        SPK_RESIDENTIAL_NAME_RUS:
+            columns:
+                - NAME_RUS
+        SPK_RESIDENTIAL_PARENTID:
+            columns:
+                - PARENTID
+        SPK_RESIDENTIAL_SECCODEID:
+            columns:
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_9_1972918100__K13_K1_6_7_9:
+            columns:
+                - PARENTID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+        _dta_index_SPK_RESIDENTIAL_9_1972918100__K13_K1:
+            columns:
+                - PARENTID
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_9_1972918100__K1_K13_6_7_9:
+            columns:
+                - SPK_PROPERTYID
+                - PARENTID
+                - ID
+                - NAME_RUS
+                - TARGET
+        _dta_index_SPK_RESIDENTIAL_9_1972918100__K1_K13:
+            columns:
+                - SPK_PROPERTYID
+                - PARENTID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K13_K1_6:
+            columns:
+                - SECCODEID
+                - PARENTID
+                - SPK_PROPERTYID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K13_6_17:
+            columns:
+                - SPK_PROPERTYID
+                - PARENTID
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K13_K1:
+            columns:
+                - SECCODEID
+                - PARENTID
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K13_K1_K17:
+            columns:
+                - PARENTID
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K13_K1_K17_6:
+            columns:
+                - PARENTID
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K13_6:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PARENTID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_17:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K13_K17_6:
+            columns:
+                - SPK_PROPERTYID
+                - PARENTID
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_6_13:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - PARENTID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K6_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_K17_9_11_12_15:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - SECCODEID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K6_9_11_12_15:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_9_11_12_15_17:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10_K17_K6_7_9_11_12:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_7_9_11_12_17:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K17_K1_K6_7_9_11_12:
+            columns:
+                - PROPERTY_TYPE
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K10_K1_K6_7_9_11_12:
+            columns:
+                - SECCODEID
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K1:
+            columns:
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_K6_7_9_11_12:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10:
+            columns:
+                - PROPERTY_TYPE
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K10:
+            columns:
+                - SECCODEID
+                - PROPERTY_TYPE
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K17:
+            columns:
+                - PROPERTY_TYPE
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K1_K17_K6_7_9_11_12:
+            columns:
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_K10_7_9_11_12_17:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_K10_7_9_11_12:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K1_K6_7_9_11_12:
+            columns:
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10_K6_7_9_11_12:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_7_9_11_12:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K6_7_9_10_11_12_15:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K17_K1_6_7_9_11_12_15:
+            columns:
+                - PROPERTY_TYPE
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K10_K1_6_7_9_11_12_15:
+            columns:
+                - SECCODEID
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K1_K17_6_7_9_11_12_15:
+            columns:
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_6_7_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10_K17_6_7_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_9_11_12_15:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K6_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_6_9_11_12_15_17:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_6:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_6:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_6_17:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10_K6_K17:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K10_1_17:
+            columns:
+                - ID
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K6_K1_K17:
+            columns:
+                - PROPERTY_TYPE
+                - ID
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_K6:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K10_K6:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_K1_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - SPK_PROPERTYID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K7_K13_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_K17_K13_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_K17_K13_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K1_K13_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_5_6_8_9_10_11_12_14_15_18:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+                - UPDATED
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_17:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_7_8_17:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - NAME_ENG
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_7_8:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - NAME_ENG
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_7_8:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - NAME_RUS
+                - NAME_ENG
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_7:
+            columns:
+                - ID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K6_K1_7:
+            columns:
+                - ID
+                - SPK_PROPERTYID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K6_7:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_6:
+            columns:
+                - NAME_RUS
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_6:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_6:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K17_K1_K6_7_8_9_11_12_15:
+            columns:
+                - PROPERTY_TYPE
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - NAME_ENG
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K13_K7_K17_K1_6_9_11_12_14:
+            columns:
+                - PARENTID
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K13_K7_K1_6_9_11_12_14:
+            columns:
+                - SECCODEID
+                - PARENTID
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K13_K7:
+            columns:
+                - PARENTID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K13_K17_K1_6_9_11_12_14:
+            columns:
+                - NAME_RUS
+                - PARENTID
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K1_K13_6_9_11_12_14:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - PARENTID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K1_6_9_11_12_14:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K13:
+            columns:
+                - NAME_RUS
+                - PARENTID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K13_K7_K17_6_9_11_12_14:
+            columns:
+                - SPK_PROPERTYID
+                - PARENTID
+                - NAME_RUS
+                - SECCODEID
+                - ID
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K7_6:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_6:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_6_17:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_6_17:
+            columns:
+                - NAME_RUS
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_K17_6:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_5_6_8_9_10_11_12_14_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_K17_K13_5_6_8_9_10_11_12_14_15:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_K17_K13_5_6_8_9_10_11_12_14_15:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K7_K13_5_6_8_9_10_11_12_14_15:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K1_K13_5_6_8_9_10_11_12_14_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - PARENTID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_K1_5_6_8_9_10_11_12_14_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - SPK_PROPERTYID
+                - MODIFYDATE
+                - ID
+                - NAME_ENG
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - COMMENTS
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_6_7_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K1_K13_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_K7_K13_15:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_K17_K13_15:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_K17_K13_15:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K13_K1_15:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PARENTID
+                - SPK_PROPERTYID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K6_7_13_15_17:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - PARENTID
+                - PROPERTY_NUMBER
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K10_K9_K1_6:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K10_K7_K1_6_17:
+            columns:
+                - TARGET
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K7_K10_K1_17:
+            columns:
+                - TARGET
+                - NAME_RUS
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K1_K10_17:
+            columns:
+                - TARGET
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K10_K1_K7_6_17:
+            columns:
+                - TARGET
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K7_K17:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - NAME_RUS
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K10_K7_17:
+            columns:
+                - TARGET
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K1_K7_K10_6_17:
+            columns:
+                - TARGET
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - PROPERTY_TYPE
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K1_K7_K9_K17_6:
+            columns:
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - TARGET
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_K9_K7:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K10_K9_K1:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K1_K17_K7:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+                - SECCODEID
+                - NAME_RUS
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K7_K10_17:
+            columns:
+                - TARGET
+                - NAME_RUS
+                - PROPERTY_TYPE
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K1_K17:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K10_K1_17:
+            columns:
+                - TARGET
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K7_K10_K1_6_17:
+            columns:
+                - TARGET
+                - NAME_RUS
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K1_K10_K9_K17_6:
+            columns:
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - TARGET
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K1_K7_K17_6:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K17_K1_K7_K9_6:
+            columns:
+                - PROPERTY_TYPE
+                - SECCODEID
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - TARGET
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_K9:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K10_K7_K9_K17_6:
+            columns:
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - TARGET
+                - SECCODEID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K7_K17_K1_6:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K7_K17_K10_K9:
+            columns:
+                - NAME_RUS
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K10_K7_K1_17:
+            columns:
+                - TARGET
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K7_K17_K1:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - NAME_RUS
+                - SECCODEID
+                - SPK_PROPERTYID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K1_K10_K7_6_17:
+            columns:
+                - TARGET
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K10_K9_K1_K17_K7_6:
+            columns:
+                - PROPERTY_TYPE
+                - TARGET
+                - SPK_PROPERTYID
+                - SECCODEID
+                - NAME_RUS
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_K10_K9_K7_6:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+                - NAME_RUS
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K1_K10_K7_17:
+            columns:
+                - TARGET
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - NAME_RUS
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K7_K17_K10_K9_6:
+            columns:
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - SECCODEID
+                - PROPERTY_TYPE
+                - TARGET
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K10_K1_K7_K9_6:
+            columns:
+                - SECCODEID
+                - PROPERTY_TYPE
+                - SPK_PROPERTYID
+                - NAME_RUS
+                - TARGET
+                - ID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K9_K1_K10_6_17:
+            columns:
+                - TARGET
+                - SPK_PROPERTYID
+                - PROPERTY_TYPE
+                - ID
+                - SECCODEID
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K6_7_9_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K17_K1_6_7_8_13_15:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - ID
+                - NAME_RUS
+                - NAME_ENG
+                - PARENTID
+                - PROPERTY_NUMBER
+        _dta_index_SPK_RESIDENTIAL_5_1972918100__K1_K17_6_7_9_10_11_12_15:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - ID
+                - NAME_RUS
+                - TARGET
+                - PROPERTY_TYPE
+                - STATUS
+                - STATUS_KF
+                - PROPERTY_NUMBER
+    uniqueConstraints:
+        SPK_RESIDENTIAL_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        nameRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_RUS
+        nameEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_ENG
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TARGET
+        propertyType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PROPERTY_TYPE
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        statusKf:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS_KF
+        parentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARENTID
+        comments:
+            type: string
+            nullable: true
+            length: 1280
+            fixed: false
+            column: COMMENTS
+        propertyNumber:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: PROPERTY_NUMBER
+        oldid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OLDID
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        updated:
+            type: datetime
+            nullable: true
+            column: UPDATED
+        ordNewbuilding:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ORD_NEWBUILDING
+        newbuilding:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NEWBUILDING
+        dogovor:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DOGOVOR
+        startdate:
+            type: datetime
+            nullable: true
+            column: STARTDATE
+        enddate:
+            type: datetime
+            nullable: true
+            column: ENDDATE
+        dogovorWoEnddate:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DOGOVOR_WO_ENDDATE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,143 @@
+AppBundle\Entity\SpkObjestSpb:
+    type: entity
+    table: SPK_Objest_SPb
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: spk_propertyid
+        propertyType:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: property_type
+        propType:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Prop_type
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        address:
+            type: string
+            nullable: true
+            length: 300
+            fixed: false
+        spkAddressid:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: SPK_ADDRESSID
+        kfObject:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: KF_OBJECT
+        department:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DEPARTMENT
+        nameRus:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: name_rus
+        nameEng:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: name_eng
+        totalArea:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: total_area
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: land_area
+        leaseArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: lease_area
+        saleArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: sale_area
+        leaseMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: lease_min
+        leaseMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: lease_max
+        saleMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: sale_min
+        saleMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: sale_max
+        consultant:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+        accountmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTMANAGERID
+        cityRus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CITY_RUS
+        userid:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        result:
+            type: string
+            nullable: false
+            length: 9
+            fixed: false
+            column: RESULT
+    lifecycleCallbacks: {  }

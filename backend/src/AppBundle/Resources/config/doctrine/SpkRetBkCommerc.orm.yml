@@ -1,0 +1,266 @@
+AppBundle\Entity\SpkRetBkCommerc:
+    type: entity
+    table: SPK_RET_BK_COMMERC
+    indexes:
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_K1_7:
+            columns:
+                - DEFAULT_RATE
+                - SPK_PROPERTYID
+                - DEFAULT_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K1_6_7:
+            columns:
+                - SPK_PROPERTYID
+                - DEFAULT_RATE
+                - DEFAULT_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_7:
+            columns:
+                - DEFAULT_RATE
+                - DEFAULT_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_K18_K7_K17:
+            columns:
+                - DEFAULT_RATE
+                - FINAL_RATE
+                - DEFAULT_COST
+                - FINAL_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_K18_K7_K17_K1:
+            columns:
+                - DEFAULT_RATE
+                - FINAL_RATE
+                - DEFAULT_COST
+                - FINAL_COST
+                - SPK_PROPERTYID
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K1_K6_K18_K7_K17:
+            columns:
+                - SPK_PROPERTYID
+                - DEFAULT_RATE
+                - FINAL_RATE
+                - DEFAULT_COST
+                - FINAL_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K1_6_8:
+            columns:
+                - SPK_PROPERTYID
+                - DEFAULT_RATE
+                - OPERATIONAL_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_K8_K1:
+            columns:
+                - DEFAULT_RATE
+                - OPERATIONAL_COST
+                - SPK_PROPERTYID
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K6_K8:
+            columns:
+                - DEFAULT_RATE
+                - OPERATIONAL_COST
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K1_6_7_8_17_18:
+            columns:
+                - SPK_PROPERTYID
+                - DEFAULT_RATE
+                - DEFAULT_COST
+                - OPERATIONAL_COST
+                - FINAL_COST
+                - FINAL_RATE
+        _dta_index_SPK_RET_BK_COMMERC_7_1776725382__K1_K6_K8_7_17_18:
+            columns:
+                - SPK_PROPERTYID
+                - DEFAULT_RATE
+                - OPERATIONAL_COST
+                - DEFAULT_COST
+                - FINAL_COST
+                - FINAL_RATE
+    uniqueConstraints:
+        SPK_RET_BK_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        defaultRate:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: DEFAULT_RATE
+        defaultCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: DEFAULT_COST
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPERATIONAL_COST
+        defaultDeposit:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: DEFAULT_DEPOSIT
+        defaultPrepayment:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: DEFAULT_PREPAYMENT
+        additionalConditions:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: ADDITIONAL_CONDITIONS
+        indexationConditions:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INDEXATION_CONDITIONS
+        termOfLease:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: TERM_OF_LEASE
+        kfCommission:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        finalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: FINAL_COST
+        finalRate:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: FINAL_RATE
+        usdRate:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: USD_RATE
+        eurRate:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: EUR_RATE
+        rateCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RATE_CUR
+        cuRate:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CU_RATE
+        finalCostCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FINAL_COST_CUR
+        industrialCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INDUSTRIAL_CUR
+        officeRentalRateCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OFFICE_RENTAL_RATE_CUR
+        costCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COST_CUR
+        opexCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OPEX_CUR
+        finalRateCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FINAL_RATE_CUR
+        costObject:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_OBJECT
+        vat:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAT
+        depositText:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: DEPOSIT_TEXT
+        termText:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TERM_TEXT
+        costObjectCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COST_OBJECT_CUR
+    lifecycleCallbacks: {  }

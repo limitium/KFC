@@ -1,0 +1,94 @@
+AppBundle\Entity\SpkParametersManage:
+    type: entity
+    table: SPK_PARAMETERS_MANAGE
+    indexes:
+        SPK_PARAMETERS_MANAGE_PARAMETER_TYPE:
+            columns:
+                - PARAMETER_TYPE
+    uniqueConstraints:
+        SPK_PARAMETERS_MANAGE_PRIMARY:
+            columns:
+                - SPK_PARAMETERS_MANAGEID
+    id: {  }
+    fields:
+        spkParametersManageid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PARAMETERS_MANAGEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parameterType:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: PARAMETER_TYPE
+        parameterNameRus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARAMETER_NAME_RUS
+        parameterNameEng:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARAMETER_NAME_ENG
+        residential:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: RESIDENTIAL
+        country:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: COUNTRY
+        retail:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: RETAIL
+        office:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OFFICE
+        industrial:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INDUSTRIAL
+        parameterGroup:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARAMETER_GROUP
+    lifecycleCallbacks: {  }

@@ -1,0 +1,1052 @@
+AppBundle\Entity\SpkRequests:
+    type: entity
+    table: SPK_REQUESTS
+    indexes:
+        SPK_REQUESTS_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+        KF_SR_IX_spkRequestsid_incl:
+            columns:
+                - SPK_REQUESTSID
+                - CREATEDATE
+                - MANAGERID
+                - STATUS
+                - CONTACTID
+                - CURRENCY
+        SPK_REQUESTS_CONTACTID:
+            columns:
+                - CONTACTID
+        SPK_REQUESTS_SECCODEID:
+            columns:
+                - SECCODEID
+        KF_SR_IX_MANAGERID:
+            columns:
+                - MANAGERID
+        _dta_index_SPK_REQUESTS_5_1191011324__K10_K1_K136_K11_3_7_8_65:
+            columns:
+                - STATUS
+                - SPK_REQUESTSID
+                - CURRENCY
+                - CONTACTID
+                - CREATEDATE
+                - DEPARTMENT
+                - REQ_TYPE
+                - SOURCEID
+        KF_SR_IX_DEPARTMENT:
+            columns:
+                - DEPARTMENT
+                - MANAGERID
+                - CONTACTID
+        'budget and square':
+            columns:
+                - DEPARTMENT
+                - REQ_TYPE
+                - SUBTYPE
+                - CREATEDATE
+                - BUDGET_MAX
+                - BUDGET_MIN
+                - SQUARE_MAX
+                - SQUARE_MIN
+    uniqueConstraints:
+        SPK_REQUESTS_PRIMARY:
+            columns:
+                - SPK_REQUESTSID
+    id: {  }
+    fields:
+        spkRequestsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        department:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DEPARTMENT
+        reqType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REQ_TYPE
+        subtype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SUBTYPE
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        notes:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: NOTES
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        requirements:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: REQUIREMENTS
+        regiondevelopment:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: REGIONDEVELOPMENT
+        terminals:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: TERMINALS
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        areaKf:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: AREA_KF
+        areaMoscow:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: AREA_MOSCOW
+        avgbill:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: AVGBILL
+        bedrooms:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: BEDROOMS
+        brand:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BRAND
+        budgetMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MAX
+        budgetMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MIN
+        commission:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COMMISSION
+        decorating:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DECORATING
+        distanceToMkad:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_TO_MKAD
+        decorationStyle:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DECORATION_STYLE
+        direction:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DIRECTION
+        entryDate:
+            type: datetime
+            nullable: true
+            column: ENTRY_DATE
+        industry:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: INDUSTRY
+        isCarPlace:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_CAR_PLACE
+        isDecoration:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_DECORATION
+        isElectricity:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_ELECTRICITY
+        isFurniture:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_FURNITURE
+        isHeating:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_HEATING
+        isLocalrailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_LOCALRAILWAY
+        isParking:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_PARKING
+        isRailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_RAILWAY
+        isTimberland:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_TIMBERLAND
+        landSquareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MAX
+        landSquareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MIN
+        market:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: MARKET
+        numberPerson:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NUMBER_PERSON
+        objectType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OBJECT_TYPE
+        officeSquareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQUARE_MAX
+        officeSquareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQUARE_MIN
+        parking:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARKING
+        paymentType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PAYMENT_TYPE
+        period:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PERIOD
+        preparedness:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PREPAREDNESS
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        regionNotes:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: REGION_NOTES
+        regionid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REGIONID
+        reqDepartment:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REQ_DEPARTMENT
+        reqSubtype:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: REQ_SUBTYPE
+        rings:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RINGS
+        roomHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ROOM_HEIGHT
+        roomsCountMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ROOMS_COUNT_MAX
+        roomsCountMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ROOMS_COUNT_MIN
+        security:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SECURITY
+        shopename:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SHOPENAME
+        shosse:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SHOSSE
+        sourceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SOURCEID
+        squareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MAX
+        squareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MIN
+        standing:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STANDING
+        subprofileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID
+        warehouseType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WAREHOUSE_TYPE
+        furniture:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FURNITURE
+        convertedDate:
+            type: datetime
+            nullable: true
+            column: CONVERTED_DATE
+        importSource:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: IMPORT_SOURCE
+        duplicate:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DUPLICATE
+        countryStatus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COUNTRY_STATUS
+        countryHighway:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COUNTRY_HIGHWAY
+        subdivision:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SUBDIVISION
+        notAvailable:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOT_AVAILABLE
+        isLand:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_LAND
+        isWarehouse:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_WAREHOUSE
+        industrialHighway:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INDUSTRIAL_HIGHWAY
+        isFirst:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_FIRST
+        isRespStorage:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_RESP_STORAGE
+        marketSegment:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: MARKET_SEGMENT
+        fromDate:
+            type: datetime
+            nullable: true
+            column: FROM_DATE
+        toDate:
+            type: datetime
+            nullable: true
+            column: TO_DATE
+        reportForm:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: REPORT_FORM
+        reportLanguage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: REPORT_LANGUAGE
+        cityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CITYID
+        curCommission:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: CUR_COMMISSION
+        valServices:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: VAL_SERVICES
+        valTarget:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: VAL_TARGET
+        valSubtarget:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: VAL_SUBTARGET
+        invSubtype:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INV_SUBTYPE
+        invStage:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INV_STAGE
+        invSubstage:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INV_SUBSTAGE
+        invOwnership:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: INV_OWNERSHIP
+        invCapitalisation:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INV_CAPITALISATION
+        invVatrep:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INV_VATREP
+        invOperatingincome:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INV_OPERATINGINCOME
+        invBook:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INV_BOOK
+        bedroomsMax:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: BEDROOMS_MAX
+        bedroomsMin:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: BEDROOMS_MIN
+        country:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COUNTRY
+        seaview:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SEAVIEW
+        waterfront:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: WATERFRONT
+        invCity:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: INV_CITY
+        invCityType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INV_CITY_TYPE
+        responseid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: RESPONSEID
+        websiteid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: WEBSITEID
+        kfClass:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: KF_CLASS
+        districtid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DISTRICTID
+        retailType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: RETAIL_TYPE
+        retailAgencyContract:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: RETAIL_AGENCY_CONTRACT
+        palletMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PALLET_MIN
+        palletMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PALLET_MAX
+        cbmMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CBM_MIN
+        cbmMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CBM_MAX
+        massMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MASS_MIN
+        massMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MASS_MAX
+        distanceToCity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_TO_CITY
+        storageType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STORAGE_TYPE
+        storageMethod:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STORAGE_METHOD
+        temperature:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TEMPERATURE
+        refferalid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REFFERALID
+        deadline:
+            type: datetime
+            nullable: true
+            column: DEADLINE
+        prStatus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PR_STATUS
+        prCategory:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PR_CATEGORY
+        isRenegotiation:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_RENEGOTIATION
+        budgetRurMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_RUR_MIN
+        budgetRurMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_RUR_MAX
+        budgetEuroMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_EURO_MIN
+        budgetEuroMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_EURO_MAX
+        budgetUsdMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_USD_MIN
+        budgetUsdMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_USD_MAX
+        currency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CURRENCY
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        offNameRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: OFF_NAME_RUS
+        offNameEng:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OFF_NAME_ENG
+        offStatus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OFF_STATUS
+        offStatusKf:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OFF_STATUS_KF
+        offObjType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OFF_OBJ_TYPE
+        offDelivery:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: OFF_DELIVERY
+        offStoreyMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_STOREY_MIN
+        offStoreyMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_STOREY_MAX
+        offTotalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_TOTAL_AREA
+        offRentMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_RENT_MIN
+        offRentMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_RENT_MAX
+        offCostMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_COST_MIN
+        offCostMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_COST_MAX
+        offProvider:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: OFF_PROVIDER
+        offPlaning:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OFF_PLANING
+        offStepToMetro:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_STEP_TO_METRO
+        offParkingMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_PARKING_MIN
+        offParkingMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_PARKING_MAX
+        offBuildStage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OFF_BUILD_STAGE
+        offDelivYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_DELIV_YEAR
+        offDelivQuarter:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: OFF_DELIV_QUARTER
+        offMaxBlockArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFF_MAX_BLOCK_AREA
+        offUpdated:
+            type: datetime
+            nullable: true
+            column: OFF_UPDATED
+        offIsListing:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OFF_IS_LISTING
+        offDistrict:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: OFF_DISTRICT
+        offDistrictMow:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: OFF_DISTRICT_MOW
+        offStreetType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OFF_STREET_TYPE
+        offMetro:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: OFF_METRO
+        offStreetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OFF_STREETID
+        targetAsq:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TARGET_ASQ
+        ipoteka:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IPOTEKA
+        distanceToMkadMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_TO_MKAD_MAX
+        offCostCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OFF_COST_CURRENCY
+    lifecycleCallbacks: {  }

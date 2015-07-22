@@ -1,0 +1,293 @@
+AppBundle\Entity\SpkCntDescription:
+    type: entity
+    table: SPK_CNT_DESCRIPTION
+    uniqueConstraints:
+        SPK_CNT_DESCRIPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        briefRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: BRIEF_RUS
+        briefEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: BRIEF_ENG
+        siteRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SITE_RUS
+        siteEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SITE_ENG
+        houseRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: HOUSE_RUS
+        houseEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: HOUSE_ENG
+        landRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: LAND_RUS
+        landEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: LAND_ENG
+        settlementRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SETTLEMENT_RUS
+        settlementEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SETTLEMENT_ENG
+        advRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADV_RUS
+        advEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADV_ENG
+        planningRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: PLANNING_RUS
+        planningEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: PLANNING_ENG
+        additionalRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADDITIONAL_RUS
+        additionalEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADDITIONAL_ENG
+        ord:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ORD
+        specialOffer:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SPECIAL_OFFER
+        novelty:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOVELTY
+        specialOfferDescriptionRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SPECIAL_OFFER_DESCRIPTION_RUS
+        specialOfferDescriptionEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SPECIAL_OFFER_DESCRIPTION_ENG
+        costnotpublish:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: COSTNOTPUBLISH
+        attachWithSettlement:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ATTACH_WITH_SETTLEMENT
+        weeklyoffer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: WEEKLYOFFER
+        water:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: WATER
+        golf:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: GOLF
+        ski:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SKI
+        equest:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: EQUEST
+        dontShowLease:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DONT_SHOW_LEASE
+        oldPrice:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OLD_PRICE
+        siteStyle:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SITE_STYLE
+        isKeyProperty:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_KEY_PROPERTY
+        plotType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PLOT_TYPE
+        infrastructureType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INFRASTRUCTURE_TYPE
+        oldSale:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OLD_SALE
+        newSale:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: NEW_SALE
+        styleType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STYLE_TYPE
+        forest:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FOREST
+        apartment:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: APARTMENT
+        context:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CONTEXT
+        brochure:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BROCHURE
+        banner:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BANNER
+        bannermanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BANNERMANAGERID
+    lifecycleCallbacks: {  }

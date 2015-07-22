@@ -1,0 +1,23 @@
+AppBundle\Entity\SpkInvestMagistral:
+    type: entity
+    table: SPK_INVEST_MAGISTRAL
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        magistralid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: MAGISTRALID
+    lifecycleCallbacks: {  }

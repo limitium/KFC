@@ -1,0 +1,63 @@
+AppBundle\Entity\SpkRequestsObjects:
+    type: entity
+    table: SPK_REQUESTS_OBJECTS
+    indexes:
+        SPK_REQUESTS_OBJECTS_SPK_REQUESTSID:
+            columns:
+                - SPK_REQUESTSID
+        _dta_index_SPK_REQUESTS_OBJECTS_7_1988202133__K7:
+            columns:
+                - OBJECTID
+        _dta_index_SPK_REQUESTS_OBJECTS_7_1988202133__K2_K7:
+            columns:
+                - SPK_REQUESTSID
+                - OBJECTID
+        _dta_index_SPK_REQUESTS_OBJECTS_7_1988202133__K7_K2:
+            columns:
+                - OBJECTID
+                - SPK_REQUESTSID
+    uniqueConstraints:
+        SPK_REQUESTS_OBJECTS_PRIMARY:
+            columns:
+                - SPK_REQUESTS_OBJECTSID
+    id: {  }
+    fields:
+        spkRequestsObjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTS_OBJECTSID
+        spkRequestsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        objectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OBJECTID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,165 @@
+AppBundle\Entity\SpkOffParking:
+    type: entity
+    table: SPK_OFF_PARKING
+    indexes:
+        _dta_index_SPK_OFF_PARKING_5_192719739__K1_7_8_10_11_17:
+            columns:
+                - SPK_PROPERTYID
+                - UNDERGROUND_PLACE_COUNT
+                - UNDERGROUND_COST
+                - GROUND_PLACE_COUNT
+                - GROUND_COST
+                - KOEF
+        _dta_index_SPK_OFF_PARKING_5_192719739__K7_8_10_11_17:
+            columns:
+                - UNDERGROUND_PLACE_COUNT
+                - UNDERGROUND_COST
+                - GROUND_PLACE_COUNT
+                - GROUND_COST
+                - KOEF
+        _dta_index_SPK_OFF_PARKING_5_192719739__K7_K1_8_10_11_17:
+            columns:
+                - UNDERGROUND_PLACE_COUNT
+                - SPK_PROPERTYID
+                - UNDERGROUND_COST
+                - GROUND_PLACE_COUNT
+                - GROUND_COST
+                - KOEF
+        _dta_index_SPK_OFF_PARKING_5_192719739__K1_7_8:
+            columns:
+                - SPK_PROPERTYID
+                - UNDERGROUND_PLACE_COUNT
+                - UNDERGROUND_COST
+        _dta_index_SPK_OFF_PARKING_5_192719739__K1_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20:
+            columns:
+                - SPK_PROPERTYID
+                - UNDERGROUND_LEVEL_COUNT
+                - UNDERGROUND_PLACE_COUNT
+                - UNDERGROUND_COST
+                - GROUND_LEVEL_COUNT
+                - GROUND_PLACE_COUNT
+                - GROUND_COST
+                - ROOF_LEVEL_COUNT
+                - ROOF_PLACE_COUNT
+                - ROOF_COST
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+                - KOEF
+                - PARKING_COST
+                - LIFT_COUNT_NEW
+                - LIFT_WEIGHT_NEW
+    uniqueConstraints:
+        SPK_OFF_PARKING_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        undergroundLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_LEVEL_COUNT
+        undergroundPlaceCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_PLACE_COUNT
+        undergroundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: UNDERGROUND_COST
+        groundLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GROUND_LEVEL_COUNT
+        groundPlaceCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GROUND_PLACE_COUNT
+        groundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: GROUND_COST
+        roofLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOF_LEVEL_COUNT
+        roofPlaceCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOF_PLACE_COUNT
+        roofCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: ROOF_COST
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        koef:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: KOEF
+        parkingCost:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARKING_COST
+        liftCountNew:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LIFT_COUNT_NEW
+        liftWeightNew:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LIFT_WEIGHT_NEW
+    lifecycleCallbacks: {  }

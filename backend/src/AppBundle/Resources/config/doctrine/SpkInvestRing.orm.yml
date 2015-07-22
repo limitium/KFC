@@ -1,0 +1,23 @@
+AppBundle\Entity\SpkInvestRing:
+    type: entity
+    table: SPK_INVEST_RING
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        ringid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: RINGID
+    lifecycleCallbacks: {  }

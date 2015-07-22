@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkOppReqObjMetro:
+    type: entity
+    table: SPK_OPP_REQ_OBJ_METRO
+    indexes:
+        SPK_OPP_REQ_OBJ_METRO_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_OPP_REQ_OBJ_METRO_PRIMARY:
+            columns:
+                - SPK_OPP_REQ_OBJ_METROID
+    id: {  }
+    fields:
+        spkOppReqObjMetroid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_OPP_REQ_OBJ_METROID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkMetroid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_METROID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkRequestsAgents:
+    type: entity
+    table: SPK_REQUESTS_AGENTS
+    indexes:
+        SPK_REQUESTS_AGENTS_SPK_REQUESTSID:
+            columns:
+                - SPK_REQUESTSID
+    uniqueConstraints:
+        SPK_REQUESTS_AGENTS_PRIMARY:
+            columns:
+                - SPK_REQUESTS_AGENTSID
+    id: {  }
+    fields:
+        spkRequestsAgentsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTS_AGENTSID
+        spkRequestsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+    lifecycleCallbacks: {  }

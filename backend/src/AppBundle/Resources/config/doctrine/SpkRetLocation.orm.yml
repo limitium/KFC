@@ -1,0 +1,126 @@
+AppBundle\Entity\SpkRetLocation:
+    type: entity
+    table: SPK_RET_LOCATION
+    uniqueConstraints:
+        SPK_RET_LOCATION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        cityZone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CITY_ZONE
+        cityDescription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CITY_DESCRIPTION
+        nearMetro:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NEAR_METRO
+        distanceFromMetro:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_FROM_METRO
+        highway:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: HIGHWAY
+        distanceFromRoad:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_FROM_ROAD
+        visualAvailabilityRoad:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: VISUAL_AVAILABILITY_ROAD
+        surroundedBuildingup:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SURROUNDED_BUILDINGUP
+        shattleBus:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SHATTLE_BUS
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        shuttleBusCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SHUTTLE_BUS_COST
+        footAvailability:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FOOT_AVAILABILITY
+        vehicleAvailability:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: VEHICLE_AVAILABILITY
+        visualAvailabilityMetro:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: VISUAL_AVAILABILITY_METRO
+    lifecycleCallbacks: {  }

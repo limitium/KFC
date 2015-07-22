@@ -1,0 +1,126 @@
+AppBundle\Entity\SpkRetConception:
+    type: entity
+    table: SPK_RET_CONCEPTION
+    uniqueConstraints:
+        SPK_RET_CONCEPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        zoneSizeType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ZONE_SIZE_TYPE
+        consistingOf:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONSISTING_OF
+        weekdaysVisitorsMin:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: WEEKDAYS_VISITORS_MIN
+        weekdaysVisitorsMax:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: WEEKDAYS_VISITORS_MAX
+        weekendVisitorsMin:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: WEEKEND_VISITORS_MIN
+        weekendVisitorsMax:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: WEEKEND_VISITORS_MAX
+        foodcortOperators:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: FOODCORT_OPERATORS
+        foodcortTables:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: FOODCORT_TABLES
+        foodcortAreaKitchen:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FOODCORT_AREA_KITCHEN
+        foodcortAreaTables:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FOODCORT_AREA_TABLES
+        additionalServices:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ADDITIONAL_SERVICES
+        workTime:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WORK_TIME
+        contactInfo:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONTACT_INFO
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        conceptionType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONCEPTION_TYPE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,63 @@
+AppBundle\Entity\SpkAddressMetro:
+    type: entity
+    table: SPK_ADDRESS_METRO
+    indexes:
+        SPK_ADDRESS_METRO_SPK_ADDRESSID:
+            columns:
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_METRO_7_1952726009__K7:
+            columns:
+                - SPK_METROID
+        _dta_index_SPK_ADDRESS_METRO_7_1952726009__K2_7:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_METROID
+        _dta_index_SPK_ADDRESS_METRO_7_1952726009__K7_K2:
+            columns:
+                - SPK_METROID
+                - SPK_ADDRESSID
+    uniqueConstraints:
+        SPK_ADDRESS_METRO_PRIMARY:
+            columns:
+                - SPK_ADDRESS_METROID
+    id: {  }
+    fields:
+        spkAddressMetroid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ADDRESS_METROID
+        spkAddressid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ADDRESSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkMetroid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_METROID
+    lifecycleCallbacks: {  }

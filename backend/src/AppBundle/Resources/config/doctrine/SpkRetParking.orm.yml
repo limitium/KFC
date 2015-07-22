@@ -1,0 +1,118 @@
+AppBundle\Entity\SpkRetParking:
+    type: entity
+    table: SPK_RET_PARKING
+    uniqueConstraints:
+        SPK_RET_PARKING_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        undergroundLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_LEVEL_COUNT
+        undergroundPlaceCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: UNDERGROUND_PLACE_COUNT
+        undergroundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: UNDERGROUND_COST
+        groundLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GROUND_LEVEL_COUNT
+        groundPlaceCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: GROUND_PLACE_COUNT
+        groundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: GROUND_COST
+        roofLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOF_LEVEL_COUNT
+        roofPlaceCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ROOF_PLACE_COUNT
+        roofCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: ROOF_COST
+        parkingIndex:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARKING_INDEX
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        multilevelLevelCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: MULTILEVEL_LEVEL_COUNT
+        multilevelPlaceCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: MULTILEVEL_PLACE_COUNT
+        multilevelCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MULTILEVEL_COST
+    lifecycleCallbacks: {  }

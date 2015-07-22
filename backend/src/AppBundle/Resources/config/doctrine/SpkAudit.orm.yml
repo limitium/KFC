@@ -1,0 +1,50 @@
+AppBundle\Entity\SpkAudit:
+    type: entity
+    table: SPK_AUDIT
+    uniqueConstraints:
+        SPK_AUDIT_PRIMARY:
+            columns:
+                - SPK_AUDITID
+    id: {  }
+    fields:
+        spkAuditid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_AUDITID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: USERID
+        logondate:
+            type: datetime
+            nullable: true
+            column: LOGONDATE
+        logoffdate:
+            type: datetime
+            nullable: true
+            column: LOGOFFDATE
+    lifecycleCallbacks: {  }

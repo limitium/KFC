@@ -1,0 +1,66 @@
+AppBundle\Entity\SpkMetro:
+    type: entity
+    table: SPK_METRO
+    indexes:
+        KF_SR_SPK_METROID_incl:
+            columns:
+                - SPK_METROID
+                - METRO_RUS
+                - METRO_ENG
+    uniqueConstraints:
+        SPK_METRO_PRIMARY:
+            columns:
+                - SPK_METROID
+    id: {  }
+    fields:
+        spkMetroid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_METROID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        metroRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: METRO_RUS
+        metroEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: METRO_ENG
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+        cianNumber:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: cian_number
+    lifecycleCallbacks: {  }

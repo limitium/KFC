@@ -1,0 +1,70 @@
+AppBundle\Entity\SpkDistrict:
+    type: entity
+    table: SPK_DISTRICT
+    indexes:
+        KF_SR_SPK_DISTRICTID_incl:
+            columns:
+                - SPK_DISTRICTID
+                - DISTRICT_RUS
+                - DISTRICT_ENG
+    uniqueConstraints:
+        SPK_DISTRICT_PRIMARY:
+            columns:
+                - SPK_DISTRICTID
+    id: {  }
+    fields:
+        spkDistrictid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_DISTRICTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        districtRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DISTRICT_RUS
+        districtEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DISTRICT_ENG
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+        shortDistrictRus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SHORT_DISTRICT_RUS
+        intareaid:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

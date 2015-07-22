@@ -1,0 +1,182 @@
+AppBundle\Entity\SpkStreet:
+    type: entity
+    table: SPK_STREET
+    indexes:
+        KF_SR_IX_STREETID_incl:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+                - STREET_TYPE_RUS
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_7_1847677630__K6_8:
+            columns:
+                - STREET_NAME_RUS
+                - STREET_TYPE_RUS
+        _dta_index_SPK_STREET_7_1847677630__K6_K1_8:
+            columns:
+                - STREET_NAME_RUS
+                - SPK_STREETID
+                - STREET_TYPE_RUS
+        _dta_index_SPK_STREET_7_1847677630__K1_6_8:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_RUS
+                - STREET_TYPE_RUS
+        _dta_index_SPK_STREET_7_1847677630__K6_1:
+            columns:
+                - STREET_NAME_RUS
+                - SPK_STREETID
+        _dta_index_SPK_STREET_7_1847677630__K1_K6:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_RUS
+        _dta_index_SPK_STREET_7_1847677630__K6:
+            columns:
+                - STREET_NAME_RUS
+        _dta_index_SPK_STREET_7_1847677630__K6_K8_K1:
+            columns:
+                - STREET_NAME_RUS
+                - STREET_TYPE_RUS
+                - SPK_STREETID
+        _dta_index_SPK_STREET_7_1847677630__K1_K6_7_9:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_7_1847677630__K6_1_7_9:
+            columns:
+                - STREET_NAME_RUS
+                - SPK_STREETID
+                - STREET_NAME_ENG
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_7_1847677630__K6_1_7_8_9:
+            columns:
+                - STREET_NAME_RUS
+                - SPK_STREETID
+                - STREET_NAME_ENG
+                - STREET_TYPE_RUS
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_7_1847677630__K1_K6_K7:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+        _dta_index_SPK_STREET_7_1847677630__K6_K7_K1:
+            columns:
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+                - SPK_STREETID
+        _dta_index_SPK_STREET_7_1847677630__K6_K7_K1_8_9:
+            columns:
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+                - SPK_STREETID
+                - STREET_TYPE_RUS
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_c_7_1847677630__K6_K7:
+            columns:
+                - STREET_NAME_RUS
+                - STREET_NAME_ENG
+        _dta_index_SPK_STREET_9_1847677630__K1_7_9:
+            columns:
+                - SPK_STREETID
+                - STREET_NAME_ENG
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_9_1847677630__K7_9:
+            columns:
+                - STREET_NAME_ENG
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_9_1847677630__K7_K1_9:
+            columns:
+                - STREET_NAME_ENG
+                - SPK_STREETID
+                - STREET_TYPE_ENG
+        _dta_index_SPK_STREET_5_1847677630__K1_8:
+            columns:
+                - SPK_STREETID
+                - STREET_TYPE_RUS
+        _dta_index_SPK_STREET_5_1847677630__K10_K6_K1:
+            columns:
+                - SPK_CITYID
+                - STREET_NAME_RUS
+                - SPK_STREETID
+        _dta_index_SPK_STREET_5_1847677630__K6_K1_K10:
+            columns:
+                - STREET_NAME_RUS
+                - SPK_STREETID
+                - SPK_CITYID
+        _dta_index_SPK_STREET_c_5_1847677630__K10_K6:
+            columns:
+                - SPK_CITYID
+                - STREET_NAME_RUS
+    uniqueConstraints:
+        SPK_STREET_PRIMARY:
+            columns:
+                - SPK_STREETID
+    id: {  }
+    fields:
+        spkStreetid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_STREETID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        streetNameRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STREET_NAME_RUS
+        streetNameEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STREET_NAME_ENG
+        streetTypeRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STREET_TYPE_RUS
+        streetTypeEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STREET_TYPE_ENG
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+        districtid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DISTRICTID
+    lifecycleCallbacks: {  }

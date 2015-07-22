@@ -1,0 +1,194 @@
+AppBundle\Entity\SpkRetailBuffer:
+    type: entity
+    table: SPK_RETAIL_BUFFER
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        idc:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: IDC
+        profile:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PROFILE
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        subprofile:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SUBPROFILE
+        subprofileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID
+        account:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNT
+        brand:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: BRAND
+        phone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PHONE
+        mobile:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MOBILE
+        contact:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTACT
+        title:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TITLE
+        email:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: EMAIL
+        fullaccount:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: FULLACCOUNT
+        address:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: ADDRESS
+        fax:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FAX
+        web:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WEB
+        production:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PRODUCTION
+        costLevel:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COST_LEVEL
+        currentSections:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CURRENT_SECTIONS
+        workTime:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WORK_TIME
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TARGET
+        sMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: S_MIN
+        sMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: S_MAX
+        budgetMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MIN
+        budgetMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MAX
+        requestNote:
+            type: string
+            nullable: true
+            length: 8000
+            fixed: false
+            column: REQUEST_NOTE
+        additionalNote:
+            type: string
+            nullable: true
+            length: 8000
+            fixed: false
+            column: ADDITIONAL_NOTE
+        sourceCategory:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: SOURCE_CATEGORY
+        importSource:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: IMPORT_SOURCE
+        importid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: IMPORTID
+        requestDate:
+            type: datetime
+            nullable: true
+            column: REQUEST_DATE
+    lifecycleCallbacks: {  }

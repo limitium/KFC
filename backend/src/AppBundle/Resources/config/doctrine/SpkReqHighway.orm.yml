@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkReqHighway:
+    type: entity
+    table: SPK_REQ_HIGHWAY
+    indexes:
+        SPK_REQ_HIGHWAY_SPK_REQ_REQUIREMENTSID:
+            columns:
+                - SPK_REQ_REQUIREMENTSID
+    uniqueConstraints:
+        SPK_REQ_HIGHWAY_PRIMARY:
+            columns:
+                - SPK_REQ_HIGHWAYID
+    id: {  }
+    fields:
+        spkReqHighwayid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQ_HIGHWAYID
+        spkReqRequirementsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQ_REQUIREMENTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        highwayid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: HIGHWAYID
+    lifecycleCallbacks: {  }

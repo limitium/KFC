@@ -1,0 +1,180 @@
+AppBundle\Entity\SpkInvestTech:
+    type: entity
+    table: SPK_INVEST_TECH
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        class:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: CLASS
+        fitOut:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FIT_OUT
+        landGa:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_GA
+        leaseStatus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LEASE_STATUS
+        occupancy:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OCCUPANCY
+        individualSale:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INDIVIDUAL_SALE
+        totalSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_SQM
+        groundSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: GROUND_SQM
+        ugroundSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UGROUND_SQM
+        leaseableSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASEABLE_SQM
+        officeSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQM
+        retailSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RETAIL_SQM
+        hotelSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: HOTEL_SQM
+        complYear:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: COMPL_YEAR
+        landOwnerType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LAND_OWNER_TYPE
+        salePerBlock:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SALE_PER_BLOCK
+        landLeaseTerm:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LAND_LEASE_TERM
+        groundParking:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: GROUND_PARKING
+        ugroundParking:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UGROUND_PARKING
+        multilevelParking:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MULTILEVEL_PARKING
+        reconstrYear:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: RECONSTR_YEAR
+        industrialSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_SQM_
+        bedrooms:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BEDROOMS
+        floor:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FLOOR
+        ufloor:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: UFLOOR
+    lifecycleCallbacks: {  }

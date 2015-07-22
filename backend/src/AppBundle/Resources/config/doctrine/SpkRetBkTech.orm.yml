@@ -1,0 +1,387 @@
+AppBundle\Entity\SpkRetBkTech:
+    type: entity
+    table: SPK_RET_BK_TECH
+    indexes:
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K11_K1_7:
+            columns:
+                - PROFILEID
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_7_11:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - PROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K11_7:
+            columns:
+                - SPK_PROPERTYID
+                - PROFILEID
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K7_K1:
+            columns:
+                - TOTAL_AREA
+                - SPK_PROPERTYID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K7:
+            columns:
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K7:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K11_K1:
+            columns:
+                - PROFILEID
+                - SPK_PROPERTYID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K27_K11_K1_K12_K7_K19_K30:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SPK_PROPERTYID
+                - SUBPROFILEID
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K27_K11_K12_K7_K19_K30:
+            columns:
+                - SPK_PROPERTYID
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K7_K19_K30_11_12_27:
+            columns:
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+                - PROFILEID
+                - SUBPROFILEID
+                - AREAID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K7_K19_K30_K1_11_12_27:
+            columns:
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+                - SPK_PROPERTYID
+                - PROFILEID
+                - SUBPROFILEID
+                - AREAID
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K7_K19_K30:
+            columns:
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K27_K11_K1_K12:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SPK_PROPERTYID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K11_K1_K12_K6_K7:
+            columns:
+                - PROFILEID
+                - SPK_PROPERTYID
+                - SUBPROFILEID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K6_K7_11_12:
+            columns:
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - PROFILEID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K6_K7_K1_11_12:
+            columns:
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - SPK_PROPERTYID
+                - PROFILEID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K11_K12_K6_K7:
+            columns:
+                - SPK_PROPERTYID
+                - PROFILEID
+                - SUBPROFILEID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K6_K7:
+            columns:
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K11_K1_K12:
+            columns:
+                - PROFILEID
+                - SPK_PROPERTYID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_6_7_11_12:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - PROFILEID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K27_K11_K12_K1_6_7_13_14_16_19_30:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ANCHOR
+                - ENTERTAINMENT
+                - INDUSTRIAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K27_K11_K12_6_7_13_14_16_19_30:
+            columns:
+                - SPK_PROPERTYID
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ANCHOR
+                - ENTERTAINMENT
+                - INDUSTRIAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+        _dta_index_SPK_RET_BK_TECH_c_7_2004202190__K27_K11_K12:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+        _dta_index_SPK_RET_BK_TECH_7_2004202190__K1_K27_K11_K12_K7_K19_K30_6_13_14_16:
+            columns:
+                - SPK_PROPERTYID
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - TOTAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+                - STOREY_NUMBER
+                - ANCHOR
+                - ENTERTAINMENT
+                - INDUSTRIAL_AREA
+        _dta_index_SPK_RET_BK_TECH_5_2004202190__K1_K27_K11_K12_6_7_13_14_16_19_30_31:
+            columns:
+                - SPK_PROPERTYID
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ANCHOR
+                - ENTERTAINMENT
+                - INDUSTRIAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+                - STOREY_MAX
+        _dta_index_SPK_RET_BK_TECH_5_2004202190__K27_K11_K12_K1_6_7_13_14_16_19_30_31:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ANCHOR
+                - ENTERTAINMENT
+                - INDUSTRIAL_AREA
+                - OFFICE_AREA
+                - SHOP_NAME
+                - STOREY_MAX
+    uniqueConstraints:
+        SPK_RET_BK_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storeyNumber:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_NUMBER
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        vacant:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: VACANT
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        marketName:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: MARKET_NAME
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        subprofileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID
+        anchor:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ANCHOR
+        entertainment:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ENTERTAINMENT
+        brands:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: BRANDS
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        industrialCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: INDUSTRIAL_COST
+        industrialOutside:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INDUSTRIAL_OUTSIDE
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        officeCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OFFICE_COST
+        officeOutside:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OFFICE_OUTSIDE
+        electricity:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ELECTRICITY
+        water:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WATER
+        gaz:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: GAZ
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        areaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AREAID
+        kfOrder:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: KF_ORDER
+        additionalNeeds:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ADDITIONAL_NEEDS
+        shopName:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SHOP_NAME
+        storeyMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_MAX
+        fitout:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FITOUT
+    lifecycleCallbacks: {  }

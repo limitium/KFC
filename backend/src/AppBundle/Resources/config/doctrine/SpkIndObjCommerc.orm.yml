@@ -1,0 +1,248 @@
+AppBundle\Entity\SpkIndObjCommerc:
+    type: entity
+    table: SPK_IND_OBJ_COMMERC
+    indexes:
+        _dta_index_SPK_IND_OBJ_COMMERC_7_2029250284__K1_K23:
+            columns:
+                - SPK_PROPERTYID
+                - KF_COMMISSION
+        _dta_index_SPK_IND_OBJ_COMMERC_7_2029250284__K23_K1:
+            columns:
+                - KF_COMMISSION
+                - SPK_PROPERTYID
+        _dta_index_SPK_IND_OBJ_COMMERC_7_2029250284__K23:
+            columns:
+                - KF_COMMISSION
+        _dta_index_SPK_IND_OBJ_COMMERC_5_2029250284__K1_17:
+            columns:
+                - SPK_PROPERTYID
+                - SALE_COST_MIN
+        _dta_index_SPK_IND_OBJ_COMMERC_5_2029250284__K1_17_23:
+            columns:
+                - SPK_PROPERTYID
+                - SALE_COST_MIN
+                - KF_COMMISSION
+    uniqueConstraints:
+        SPK_IND_OBJ_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        leaseOfficeMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_OFFICE_MIN
+        leaseOfficeMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_OFFICE_MAX
+        leaseIndustrialMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_INDUSTRIAL_MIN
+        leaseIndustrialMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_INDUSTRIAL_MAX
+        municipalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MUNICIPAL_COST
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPERATIONAL_COST
+        insuranceDeposit:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: INSURANCE_DEPOSIT
+        costPallet:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PALLET
+        loadUnloadCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LOAD_UNLOAD_COST
+        commentsRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_ENG
+        saleCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_COST_MIN
+        saleCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_COST_MAX
+        termOfLease:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TERM_OF_LEASE
+        indexation:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INDEXATION
+        leaseMesoninMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_MESONIN_MIN
+        leaseMesoninMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_MESONIN_MAX
+        kfCommission:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION
+        leaseContract:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: LEASE_CONTRACT
+        leaseIndustrial:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LEASE_INDUSTRIAL
+        minleaseterm:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MINLEASETERM
+        operationExpType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPERATION_EXP_TYPE
+        vatType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAT_TYPE
+        utilityType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: UTILITY_TYPE
+        commercialTerms:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COMMERCIAL_TERMS
+        rentStorageCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: RENT_STORAGE_CURRENCY
+        rentOfficeCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: RENT_OFFICE_CURRENCY
+        rentMezzanineCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: RENT_MEZZANINE_CURRENCY
+        rentIndustrialCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: RENT_INDUSTRIAL_CURRENCY
+        utilityCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: UTILITY_CURRENCY
+        opexCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: OPEX_CURRENCY
+        loadUnloadCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: LOAD_UNLOAD_CURRENCY
+    lifecycleCallbacks: {  }

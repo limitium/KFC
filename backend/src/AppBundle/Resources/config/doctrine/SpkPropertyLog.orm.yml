@@ -1,0 +1,70 @@
+AppBundle\Entity\SpkPropertyLog:
+    type: entity
+    table: SPK_PROPERTY_LOG
+    indexes:
+        SPK_PROPERTY_LOG_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        SPK_PROPERTY_LOG_PRIMARY:
+            columns:
+                - SPK_PROPERTY_LOGID
+    id: {  }
+    fields:
+        spkPropertyLogid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTY_LOGID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        changedField:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CHANGED_FIELD
+        oldValue:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OLD_VALUE
+        newValue:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: NEW_VALUE
+        comments:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COMMENTS
+    lifecycleCallbacks: {  }

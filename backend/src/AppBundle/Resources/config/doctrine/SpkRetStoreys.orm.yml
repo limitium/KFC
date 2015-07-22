@@ -1,0 +1,93 @@
+AppBundle\Entity\SpkRetStoreys:
+    type: entity
+    table: SPK_RET_STOREYS
+    indexes:
+        SPK_RET_STOREYS_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        SPK_RET_STOREYS_PRIMARY:
+            columns:
+                - SPK_RET_STOREYSID
+    id: {  }
+    fields:
+        spkRetStoreysid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_RET_STOREYSID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storeyNumber:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_NUMBER
+        square:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE
+        ceilingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT
+        comments:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COMMENTS
+        saleMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_MIN
+        saleMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_MAX
+        leaseMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_MIN
+        leaseMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_MAX
+    lifecycleCallbacks: {  }

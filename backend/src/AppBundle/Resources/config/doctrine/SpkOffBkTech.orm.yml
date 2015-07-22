@@ -1,0 +1,306 @@
+AppBundle\Entity\SpkOffBkTech:
+    type: entity
+    table: SPK_OFF_BK_TECH
+    indexes:
+        _dta_index_SPK_OFF_BK_TECH_c_5_214291823__K6:
+            columns:
+                - STOREY_NUMBER
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K8_K1:
+            columns:
+                - TOTAL_AREA
+                - SPK_PROPERTYID
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K8:
+            columns:
+                - TOTAL_AREA
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K1_K8:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K1_6_8:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K1_K8_6:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - STOREY_NUMBER
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K6_1:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+        _dta_index_SPK_OFF_BK_TECH_7_214291823__K1_K6:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K1_10:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+                - FREE_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_10:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - FREE_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_10:
+            columns:
+                - STOREY_NUMBER
+                - FREE_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_10:
+            columns:
+                - SPK_PROPERTYID
+                - FREE_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K1_7_8_9_10_20:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_7_8_9_10_20:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_7_8_9_10_20:
+            columns:
+                - STOREY_NUMBER
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K8_K1_6:
+            columns:
+                - TOTAL_AREA
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K8_6:
+            columns:
+                - TOTAL_AREA
+                - STOREY_NUMBER
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K1_K8:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K8:
+            columns:
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_11_12_13_14_15_16_17_18_19:
+            columns:
+                - STOREY_NUMBER
+                - FLOOR_TYPE
+                - CEILING_HEIGHT
+                - VENTILATION
+                - PHONE_LINE_COUNT
+                - TELECOMMUNICATION
+                - PROVIDER
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+                - DECORATION
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_11_12_13_14_15_16_17_18_19:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - FLOOR_TYPE
+                - CEILING_HEIGHT
+                - VENTILATION
+                - PHONE_LINE_COUNT
+                - TELECOMMUNICATION
+                - PROVIDER
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+                - DECORATION
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K1_11_12_13_14_15_16_17_18_19:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+                - FLOOR_TYPE
+                - CEILING_HEIGHT
+                - VENTILATION
+                - PHONE_LINE_COUNT
+                - TELECOMMUNICATION
+                - PROVIDER
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+                - DECORATION
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_8_10:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - FREE_AREA
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_8_20:
+            columns:
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K6_K1_8_20:
+            columns:
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_8_20:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - STOREY_COUNT_MAX
+        _dta_index_SPK_OFF_BK_TECH_5_214291823__K1_K6_8_10_20:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - FREE_AREA
+                - STOREY_COUNT_MAX
+    uniqueConstraints:
+        SPK_OFF_BK_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storeyNumber:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_NUMBER
+        kfClass:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: KF_CLASS
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        leaseArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_AREA
+        freeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_AREA
+        floorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FLOOR_TYPE
+        ceilingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT
+        ventilation:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VENTILATION
+        phoneLineCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PHONE_LINE_COUNT
+        telecommunication:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TELECOMMUNICATION
+        provider:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROVIDER
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        decoration:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DECORATION
+        storeyCountMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_COUNT_MAX
+        complYear:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_YEAR
+        complQuarter:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_QUARTER
+        complMonth:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_MONTH
+        complDay:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_DAY
+    lifecycleCallbacks: {  }

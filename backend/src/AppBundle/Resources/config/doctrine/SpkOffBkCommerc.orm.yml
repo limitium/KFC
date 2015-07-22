@@ -1,0 +1,148 @@
+AppBundle\Entity\SpkOffBkCommerc:
+    type: entity
+    table: SPK_OFF_BK_COMMERC
+    indexes:
+        _dta_index_SPK_OFF_BK_COMMERC_7_1814297523__K6_K1_12_13:
+            columns:
+                - BASE_RENT
+                - SPK_PROPERTYID
+                - COST_MIN
+                - COST_MAX
+        _dta_index_SPK_OFF_BK_COMMERC_7_1814297523__K1_K6_12_13:
+            columns:
+                - SPK_PROPERTYID
+                - BASE_RENT
+                - COST_MIN
+                - COST_MAX
+        _dta_index_SPK_OFF_BK_COMMERC_c_7_1814297523__K6:
+            columns:
+                - BASE_RENT
+        _dta_index_SPK_OFF_BK_COMMERC_7_1814297523__K6_12_13:
+            columns:
+                - BASE_RENT
+                - COST_MIN
+                - COST_MAX
+        _dta_index_SPK_OFF_BK_COMMERC_7_1814297523__K1_6_10_11:
+            columns:
+                - SPK_PROPERTYID
+                - BASE_RENT
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+        _dta_index_SPK_OFF_BK_COMMERC_7_1814297523__K1_K6_10_11_12_13:
+            columns:
+                - SPK_PROPERTYID
+                - BASE_RENT
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+                - COST_MIN
+                - COST_MAX
+        _dta_index_SPK_OFF_BK_COMMERC_5_1814297523__K1_6_7_8_9_10_11_12_13_14_15:
+            columns:
+                - SPK_PROPERTYID
+                - BASE_RENT
+                - INDEXATION_CONDITIONS
+                - OPERATIONAL_COST
+                - OTHER
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+                - COST_MIN
+                - COST_MAX
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+        _dta_index_SPK_OFF_BK_COMMERC_5_1814297523__K1_6:
+            columns:
+                - SPK_PROPERTYID
+                - BASE_RENT
+    uniqueConstraints:
+        SPK_OFF_BK_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        baseRent:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: BASE_RENT
+        indexationConditions:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: INDEXATION_CONDITIONS
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPERATIONAL_COST
+        other:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OTHER
+        costPerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MAX
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        commentsRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_ENG
+    lifecycleCallbacks: {  }

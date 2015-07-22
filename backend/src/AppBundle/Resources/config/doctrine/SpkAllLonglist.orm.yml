@@ -1,0 +1,196 @@
+AppBundle\Entity\SpkAllLonglist:
+    type: entity
+    table: SPK_ALL_LONGLIST
+    indexes:
+        SPK_ALL_LONGLIST_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_ALL_LONGLIST_PRIMARY:
+            columns:
+                - SPK_ALL_LONGLISTID
+    id: {  }
+    fields:
+        spkAllLonglistid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ALL_LONGLISTID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: ACCOUNT_ALL_LONGLIST
+        contactAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: CONTACT_ALL_LONGLIST
+        sectionAllLonglist:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SECTION_ALL_LONGLIST
+        statusAllLonglist:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: STATUS_ALL_LONGLIST
+        datereply:
+            type: datetime
+            nullable: true
+            column: DATEREPLY
+        brand:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: BRAND
+        sqMinAllLonglist:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQ_MIN_ALL_LONGLIST
+        sqMaxAllLonglist:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQ_MAX_ALL_LONGLIST
+        budMinAllLonglist:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUD_MIN_ALL_LONGLIST
+        budMaxAllLonglist:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUD_MAX_ALL_LONGLIST
+        industryAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: INDUSTRY_ALL_LONGLIST
+        profileAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: PROFILE_ALL_LONGLIST
+        subprofileAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: SUBPROFILE_ALL_LONGLIST
+        emailAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: EMAIL_ALL_LONGLIST
+        usernameAllLonglist:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: USERNAME_ALL_LONGLIST
+        dataOtkaza:
+            type: datetime
+            nullable: true
+            column: DATA_OTKAZA
+        dataSoglasia:
+            type: datetime
+            nullable: true
+            column: DATA_SOGLASIA
+        contactidAllLonglist:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID_ALL_LONGLIST
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        brokerCounter:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            column: BROKER_COUNTER
+        commentar:
+            type: string
+            nullable: true
+            length: 1300
+            fixed: false
+            column: COMMENTAR
+        notesComents:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOTES_COMENTS
+        contactManager:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CONTACT_MANAGER
+        industryidAllLonglist:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: INDUSTRYID_ALL_LONGLIST
+        profileidAllLonglist:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID_ALL_LONGLIST
+        subprofileidAllLonglist:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID_ALL_LONGLIST
+    lifecycleCallbacks: {  }

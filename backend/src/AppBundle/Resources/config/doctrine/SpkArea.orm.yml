@@ -1,0 +1,69 @@
+AppBundle\Entity\SpkArea:
+    type: entity
+    table: SPK_AREA
+    indexes:
+        KF_SR_IX_SPK_AREAID_incl:
+            columns:
+                - SPK_AREAID
+                - AREA_RUS
+                - AREA_ENG
+    uniqueConstraints:
+        SPK_AREA_PRIMARY:
+            columns:
+                - SPK_AREAID
+    id: {  }
+    fields:
+        spkAreaid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_AREAID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        areaRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: AREA_RUS
+        areaEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: AREA_ENG
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+        resOrd:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: RES_ORD
+        intareaid:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

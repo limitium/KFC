@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkReqMetro:
+    type: entity
+    table: SPK_REQ_METRO
+    indexes:
+        SPK_REQ_METRO_SPK_REQ_REQUIREMENTSID:
+            columns:
+                - SPK_REQ_REQUIREMENTSID
+    uniqueConstraints:
+        SPK_REQ_METRO_PRIMARY:
+            columns:
+                - SPK_REQ_METROID
+    id: {  }
+    fields:
+        spkReqMetroid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQ_METROID
+        spkReqRequirementsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQ_REQUIREMENTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkMetroid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_METROID
+    lifecycleCallbacks: {  }

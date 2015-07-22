@@ -1,0 +1,70 @@
+AppBundle\Entity\SpkInvestBlocks:
+    type: entity
+    table: SPK_INVEST_BLOCKS
+    indexes:
+        SPK_INVEST_BLOCKS_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        SPK_INVEST_BLOCKS_PRIMARY:
+            columns:
+                - SPK_INVEST_BLOCKSID
+    id: {  }
+    fields:
+        spkInvestBlocksid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_INVEST_BLOCKSID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        floor:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FLOOR
+        availableSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABLE_SQ
+        costSqm:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COST_SQM
+        costSqmCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: COST_SQM_CURRENCY
+    lifecycleCallbacks: {  }
