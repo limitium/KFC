@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new Realestate\MssqlBundle\RealestateMssqlBundle(),
+            new IMAG\LdapBundle\IMAGLdapBundle(),
 
             new AppBundle\AppBundle(),
         );

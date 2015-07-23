@@ -4,8 +4,15 @@ security:
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory:
-            memory: ~
+#        daps_ldap:
+#            id: daps_ldap_user_provider
+        ldap:
+            id: imag_ldap.security.user.provider
+#        in_memory:
+#            memory: ~
+    encoders:
+#        Daps\LdapBundle\Security\User\LdapUser: plaintext
+        IMAG\LdapBundle\User\LdapUser: plaintext
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -13,8 +20,20 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        main:
+        secured_area:
+            pattern:    ^/
+            provider: ldap
+            imag_ldap: ~
             anonymous: ~
+            form_login:
+                login_path: /login
+                check_path: /login_check
+    access_control:
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, role: ROLE_USER}
+#        main:
             # activate different ways to authenticate
 
             # http_basic: ~
@@ -22,3 +41,25 @@ security:
 
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+imag_ldap:
+    client:
+        host: kfsvrmow11.1GO.ru
+        port: 389
+        #    version: 3 # Optional
+        username: svr-webcrm # Optional
+        password: Qq123456
+        #    network_timeout: 10 # Optional
+        #    referrals_enabled: true # Optional
+        #    bind_username_before: true # Optional
+        skip_roles: true # Optional
+
+    user:
+        base_dn: OU=Moscow Office,DC=1GO,DC=RU
+        filter: (objectclass=user) #Optional
+        name_attribute: sAMAccountName
+#    role:
+#        base_dn: OU=Service accounts,OU=Moscow Office,DC=1GO,DC=RU
+#        filter: (ou=group) #Optional
+#        name_attribute: cn
+#        user_attribute: member
+#        user_id: username
