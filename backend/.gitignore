@@ -8,4 +8,9 @@
 /bin/
 /composer.phar
 /vendor/
+/src/AppBundle/Resources/views/Layout/
 /web/bundles/
+/web/js/
+/web/css/
+/web/font/
+/web/components/

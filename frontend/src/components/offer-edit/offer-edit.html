@@ -1,0 +1,141 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="right">
+                <button
+                        ng-disabled="offerEdit.busy"
+                        ng-class="{disabled:offerEdit.busy}"
+                        ng-click="offerEdit.delete()"
+                        class="waves-effect waves-light btn-large red">
+                    <i class="mdi-action-delete left"></i>
+                    Delete
+                </button>
+            </div>
+            <form role="form" name="wifiForm">
+
+                <div class="input-field">
+                    <i class="mdi-action-store prefix"></i>
+                    <input type="text"
+                           name="organizationName"
+                           id="organizationName"
+                           ng-class="{invalid:wifiForm.organizationName.$invalid}"
+                           required="required"
+                           ng-model="offerEdit.offer.organizationName">
+                    <label  class="active" for="wifiname">Organization name</label>
+                </div>
+
+                <div class="file-field input-field">
+                    <input class="file-path validate" type="text"
+                           ng-class="{invalid:wifiForm.avatar.$invalid}"
+                           disabled
+                           ng-model="offerEdit.avatar.file.name"/>
+
+                    <div class="btn">
+                        <span><i class="mdi-action-account-circle"></i></span>
+                        <input type="file"
+                               name="avatar"
+                               valid-file
+                               change-file="offerEdit.avatarChange(event)"
+                               accept="image/png"
+                               ng-model="offerEdit.avatar.file"/>
+                    </div>
+                    <div class="input-field">
+                        <img class="circle" ng-show="offerEdit.avatar.preview" ng-src="{{offerEdit.avatar.preview}}"/>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <i class="mdi-device-network-wifi prefix"></i>
+                    <input type="text"
+                           name="wifiname"
+                           id="wifiname"
+                           ng-class="{invalid:wifiForm.wifiname.$invalid}"
+                           required="required"
+                           ng-model="offerEdit.offer.wifiName">
+
+                    <label class="active" for="wifiname">WIFI name</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="mdi-action-payment prefix"></i>
+                    <input type="text"
+                           name="name"
+                           id="name"
+                           ng-class="{invalid:wifiForm.name.$invalid}"
+                           required="required"
+                           ng-model="offerEdit.offer.name">
+
+                    <label class="active" for="name">Promo name</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="mdi-action-assignment-turned-in prefix"></i>
+                    <input type="checkbox" id="isDisposable" ng-model="offerEdit.offer.isDisposable"/>
+                    <label for="isDisposable">Is disposable</label>
+                </div>
+
+                <div class="file-field input-field">
+                    <input class="file-path validate" type="text"
+                           ng-class="{invalid:wifiForm.image.$invalid}"
+                           disabled
+                           ng-model="offerEdit.image.file.name"/>
+
+                    <div class="btn">
+                        <span><i class="mdi-action-wallet-giftcard"></i></span>
+                        <input type="file"
+                               name="image"
+                               valid-file
+                               change-file="offerEdit.imageChange(event)"
+                               accept="image/png"
+                               ng-model="offerEdit.image.file"/>
+                    </div>
+                    <div class="input-field">
+                        <img ng-show="offerEdit.image.preview" ng-src="{{offerEdit.image.preview}}"/>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <img ng-show="offerEdit.img.preview" ng-src="{{offerEdit.img.preview}}"/>
+                </div>
+
+                <div class="input-field">
+                    <i class="mdi-action-subject prefix"></i>
+                    <textarea id="description"
+                              class="validate materialize-textarea"
+                              name="description"
+                              ng-class="{invalid:wifiForm.description.$invalid}"
+                              ng-model="offerEdit.offer.description"
+                              length="140">
+
+                    </textarea>
+                    <label class="active" for="description">Description</label>
+                </div>
+
+                <div class="input-field">
+                    <div ng-show="offerEdit.busy" class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <a
+                            ng-link="main:offersList"
+                            ng-disabled="offerEdit.busy"
+                            ng-class="{disabled:offerEdit.busy}"
+                            class="waves-effect waves-light btn-large">
+                        <i class="mdi-navigation-arrow-back left"></i>
+                        Cancel
+                    </a>
+                    <button
+                            ng-disabled="!wifiForm.$valid || offerEdit.busy"
+                            ng-class="{disabled:!wifiForm.$valid || offerEdit.busy}"
+                            ng-click="offerEdit.edit()"
+                            class="right waves-effect waves-light btn-large">
+                        <i class="mdi-navigation-check left"></i>
+                        Save
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

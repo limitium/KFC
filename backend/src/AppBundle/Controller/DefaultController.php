@@ -13,15 +13,15 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        $conn = $this->get('database_connection');
-        $users = $conn->fetchAll('SELECT * FROM SPK_INVESTMENT');
-        var_dump($users);
-
-        $em = $this->getDoctrine()->getManager();
-        $offers = $em
-            ->getRepository('AppBundle:Investment')
-            ->findAll();
-        var_dump($offers);
+//        $conn = $this->get('database_connection');
+//        $users = $conn->fetchAll('SELECT * FROM SPK_INVESTMENT');
+//        var_dump($users);
+//
+//        $em = $this->getDoctrine()->getManager();
+//        $offers = $em
+//            ->getRepository('AppBundle:Investment')
+//            ->findAll();
+//        var_dump($offers);
 
         return $this->render('default/index.html.twig');
     }
