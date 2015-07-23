@@ -1,9 +1,0 @@
-AppBundle\Entity\Investment:
-    type: entity
-    table: SPK_INVESTMENT
-    fields:
-        SPK_PROPERTYID:
-            id: true
-            type: string
-        NAME_RUS:
-            type: string
