@@ -1,0 +1,2726 @@
+AppBundle\Entity\SpkAddress:
+    type: entity
+    table: SPK_ADDRESS
+    indexes:
+        KF_SR_IX_SPK_CITYID_SPK_STREETID_incl:
+            columns:
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        SPK_ADDRESS_SPK_CITYID:
+            columns:
+                - SPK_CITYID
+        SPK_ADDRESS_SPK_STREETID:
+            columns:
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_6_7_8_9_10_11_12_13_16:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K13_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_6_7_8_9_10_11_12_13_14_15_16_17_21:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K1_K17_K14_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K1:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_K17_K14_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K13_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K16_K17_K14_K15_K13:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K17_K14_K15_K13_K16_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K17_K14_K15_K13_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K14_K1_K13_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K15_K14_K13_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_6_7_8_9_10_11_12_13_14_15_16:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K15_K14_K1_K13_K16:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K1_K13_6_7_8_9_10_11_12:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_K13_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_K1_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K16_K13:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K16_K1_K13:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K16_K1_K17_K14_K15_K13:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K14_K15_K16_1_6_7_8_9_10_11_12_18:
+            columns:
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15:
+            columns:
+                - SPK_DISTRICTID
+        _dta_index_SPK_ADDRESS_7_1904725838__K14:
+            columns:
+                - SPK_AREAID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K14_K16_1_6_7_8_9_10_11_12_18:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K15_K14_1_6_7_8_9_10_11_12_18:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K15_K14_K16:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_K17_K14_K15_K13_6_7_8_9_10_11_12_18_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K1:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K17_K16_K14_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K17_K1_K16_K14_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K13_K17_K16_K14_K15_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K1_K17_K16_K14_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_K1:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K15_K17_K16_K14_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K14_K1:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K17:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K14_K17_K16_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_K1_K17_K16_K14_K15_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K17_K1:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K15:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+        _dta_index_SPK_ADDRESS_7_1904725838__K14_K1_K17_K16_K15_K13_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K14:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K13:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K17_K16_K14_K15_K13:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K17_K14_K15_K1_K13_K16_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K17_K14_K15_K1_K13_K16:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_14:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_AREAID
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K15_K14_K13_K1_K17_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K13_1_6_7_8_9_10_11_12_14_15_17_21:
+            columns:
+                - SPK_STREETID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_K15_K14_K13_K17_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K16_K13:
+            columns:
+                - SPK_STREETID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K16_K15_K14_K13_K1_K17:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_K1_14_15_16:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K15_K14_K13_K1:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_14_15_16:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K16_K15_K14_K13:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K14_K1_K17_K13_K16:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K15_K14_K17_K13_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_14_15_16_17:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K13_K1_14_15_16_17:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K1_K17_K14_K13_K16_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K15_K17_K14_K13_K16_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K1_K15_K17_K14_K13_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K19:
+            columns:
+                - NEW_ADDRESS
+        _dta_index_SPK_ADDRESS_7_1904725838__K19_K1_K16:
+            columns:
+                - NEW_ADDRESS
+                - SPK_ADDRESSID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_7_1904725838__K19_K1:
+            columns:
+                - NEW_ADDRESS
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_7_1904725838__K15_K14_K16_K6_1_7_8_9_10_11_12_18:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - SPK_ADDRESSID
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_7_1904725838__K16_K15_K14_K6_1_7_8_9_10_11_12_18:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - SPK_ADDRESSID
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_7_1904725838__K6_K15_K14_K16_1_7_8_9_10_11_12_18:
+            columns:
+                - DOM
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_7_1904725838__K14_K15_K16_K6_1_7_8_9_10_11_12_18:
+            columns:
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - SPK_ADDRESSID
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - GISID
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K6:
+            columns:
+                - DOM
+        _dta_index_SPK_ADDRESS_7_1904725838__K1_K14_K15_K13_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_7_1904725838__K14_K15_K1_K13_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_c_7_1904725838__K14_K15_K1_K13_K16:
+            columns:
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K17_K13_K15_K14_K16_6_7_8_9_10_11_12_21:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K24_K17_K14_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_6_7_8_9_10_11_12_13_14_15_16_17_21_23_24:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - DISTANCE_MKAD
+                - KADASTR
+                - OBLASTID
+        _dta_index_SPK_ADDRESS_c_9_1904725838__K1_K24_K17_K14_K13_K15_K16:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_c_9_1904725838__K1_K17_K13_K15_K14_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_9_1904725838__K24_K1_K17_K16_K14_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K16_K1_K24_K17_K14_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K17_K1_K24_K16_K14_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K14_K1_K24_K17_K16_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K17:
+            columns:
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K24_K17_K16_K14_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K24:
+            columns:
+                - OBLASTID
+        _dta_index_SPK_ADDRESS_9_1904725838__K13_K1_K24_K17_K16_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_c_9_1904725838__K1_K24_K17_K16_K14_K13:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_9_1904725838__K6_7_8_9_10_11_12_13_16:
+            columns:
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_9_1904725838__K6_K1_7_8_9_10_11_12_13_16:
+            columns:
+                - DOM
+                - SPK_ADDRESSID
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_9_1904725838__K16_K1_K15_K14_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K15_K1_K16_K14_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K15_K16_K14_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K24:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K16_K15_K14_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K16_1_13_14_15:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+        _dta_index_SPK_ADDRESS_9_1904725838__K24_K1_K16_K15_K14_K13_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K14_K16_K15_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K17_K1_K16_K15_K14_K13_K24_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K13_K16_K15_K14_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K14_K1_K16_K15_K13_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K24_K16_K15_K14_K13_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K16_1_6_7_8_9_10_11_12_13_14_15_17_21_23_24:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - DISTANCE_MKAD
+                - KADASTR
+                - OBLASTID
+        _dta_index_SPK_ADDRESS_9_1904725838__K24_K1:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_9_1904725838__K13_K1_K16_K15_K14_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K1_K17_K16_K15_K14_K13_K24_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - OBLASTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_9_1904725838__K16_K15_K14_K13_K1_K24_K17_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_c_9_1904725838__K16_K15_K14_K13_K1_K24_K17:
+            columns:
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+        KF_SR_IX_SPK_ADDRESSID_incl:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K15_K24_K17_K13_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K24_K17_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K17_K1_K13_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K1_K17_K13_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K1_K24_K17_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K24_K13_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K24_K17_K13_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K1_K24_K17_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K24_K17_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K16_K24_K17_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K1_K24_K17_K13_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K17_K24_K13_K15_K14_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - OBLASTID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K1_K24_K17_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K1_K14_6_7_8_9_10_11_12:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_6_7_8_9_10_11_12_16:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K16_K14_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K1_K16_6_7_8_9_10_11_12:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_6_7_8_9_10_11_12_14_16:
+            columns:
+                - SPK_ADDRESSID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - SPK_AREAID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K1_K16_K24_K17_K13_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K16_K24_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K15_K16_K24_K17_K13_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K1_K16_K17_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K24_K16_K17_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K17_K16_K24_K13_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K16_K24_K17_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K16_K24_K17_K13_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K1_K16_K24_K17_K13_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K1_K16_K24_K17_K15_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K1_K24_K17_K14_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K1_K24_K17_K14_K13_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K15_K24_K17_K14_K13_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K1_K17_K14_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K24_K14_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K1_K24_K17_K14_K13_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K16_K24_K17_K14_K13_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K24_K17_K14_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K17_K24_K14_K13_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K16_K17_K15_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K14_K16_K15_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K24_K17_K15_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K15_K17_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - SPK_HIGHWAYID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K14_K16_K1:
+            columns:
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K17:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K13_K17_K15_K24_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K17_K15_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K14_K16_K1_K17_K15_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K15:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K13:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1_K24:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - OBLASTID
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K14_K16_K1:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K14_K16_K1_K17_K15_K24_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K14_K1_K17_K15_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K14_K16_K1_K17_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_HIGHWAYID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K16:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K16_28:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K14_K16_K15_21:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DISTANCE_MKAD
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K14_K1:
+            columns:
+                - SPK_STREETID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K14_K16_K1:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K16_K1:
+            columns:
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K14_K16_K15_K24_K13_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K14_K16_K1_K15_K24_K13_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_DISTRICTID
+                - OBLASTID
+                - SPK_CITYID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K14_K16_K1:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_STREETID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K1_K24_K17_K13_K15_K16_6_7_8_9_10_11_12_21_23_28:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+                - CENTER_OF_POPULATION
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K14_K1_K24_K17_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K14_K1:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - SPK_ADDRESSID
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K14:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_AREAID
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K14_K24_K17_K15_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K14_K24_K17_K13_K16_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K14_K24_K17_K1_K13_K16_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K14_K24_K1_K13_K16_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K14_K24_K17_K1_K16_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K14_K17_K1_K13_K16_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K14_K24_K17_K1_K13_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K24_K17_K1_K13_K16_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K17_K1_K13_K16_K24_K14_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_HIGHWAYID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K15_K1_K13_K16_K24_K17_K14_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_DISTRICTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K1_K13_K16_K24_K17_K14_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K24_K1_K13_K16_K17_K14_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - OBLASTID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K16_K1_K13_K24_K17_K14_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_STREETID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K13_K1_K16_K24_K17_K14_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_CITYID
+                - SPK_ADDRESSID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_AREAID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+        _dta_index_SPK_ADDRESS_5_1904725838__K14_K1_K13_K16_K24_K17_K15_6_7_8_9_10_11_12_21_23:
+            columns:
+                - SPK_AREAID
+                - SPK_ADDRESSID
+                - SPK_CITYID
+                - SPK_STREETID
+                - OBLASTID
+                - SPK_HIGHWAYID
+                - SPK_DISTRICTID
+                - DOM
+                - KORPUS
+                - STROENIE
+                - DROB
+                - TIRE
+                - LITERA
+                - VLADENIE
+                - DISTANCE_MKAD
+                - KADASTR
+    uniqueConstraints:
+        SPK_ADDRESS_PRIMARY:
+            columns:
+                - SPK_ADDRESSID
+    id: {  }
+    fields:
+        spkAddressid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ADDRESSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        dom:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: DOM
+        korpus:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: KORPUS
+        stroenie:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: STROENIE
+        drob:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: DROB
+        tire:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: TIRE
+        litera:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: LITERA
+        vladenie:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: VLADENIE
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+        spkAreaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_AREAID
+        spkDistrictid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_DISTRICTID
+        spkStreetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_STREETID
+        spkHighwayid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_HIGHWAYID
+        gisid:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: GISID
+        newAddress:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NEW_ADDRESS
+        tempAddress:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TEMP_ADDRESS
+        distanceMkad:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_MKAD
+        importsource:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: IMPORTSOURCE
+        kadastr:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: KADASTR
+        oblastid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OBLASTID
+        latitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LATITUDE
+        longtitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LONGTITUDE
+        accuracy:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ACCURACY
+        centerOfPopulation:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CENTER_OF_POPULATION
+        coordinate:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COORDINATE
+    lifecycleCallbacks: {  }

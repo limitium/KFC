@@ -1,0 +1,304 @@
+AppBundle\Entity\SpkResAptTech:
+    type: entity
+    table: SPK_RES_APT_TECH
+    indexes:
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_12:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ROOMS_COUNT
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_28:
+            columns:
+                - SPK_PROPERTYID
+                - APARTMENT_TYPE
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_12_28:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ROOMS_COUNT
+                - APARTMENT_TYPE
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_9_12_28:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - LIVING_AREA
+                - ROOMS_COUNT
+                - APARTMENT_TYPE
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_12_13_14_15_22_23_28_32_33:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - ROOMS_COUNT
+                - BEDROOMS_COUNT
+                - BATHROOMS_COUNT
+                - FURNITURE
+                - WINDOWS_TYPE
+                - DECORATION
+                - APARTMENT_TYPE
+                - CEILING_HEIGHT
+                - APP_COLOR
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_20_28:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - CAR_PLACE
+                - APARTMENT_TYPE
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_7_8_9_12_20_28:
+            columns:
+                - SPK_PROPERTYID
+                - STOREY_NUMBER
+                - TOTAL_AREA
+                - LIVING_AREA
+                - ROOMS_COUNT
+                - CAR_PLACE
+                - APARTMENT_TYPE
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K8_K7_K1:
+            columns:
+                - TOTAL_AREA
+                - STOREY_NUMBER
+                - SPK_PROPERTYID
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_K8_K7:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - STOREY_NUMBER
+        _dta_index_SPK_RES_APT_TECH_5_1344059874__K1_K8_K7_12:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - STOREY_NUMBER
+                - ROOMS_COUNT
+    uniqueConstraints:
+        SPK_RES_APT_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storeysCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT
+        storeyNumber:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: STOREY_NUMBER
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        ceilingHeightMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MIN
+        ceilingHeightMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MAX
+        roomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOMS_COUNT
+        bedroomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BEDROOMS_COUNT
+        bathroomsCount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BATHROOMS_COUNT
+        furniture:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FURNITURE
+        specialCondition:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SPECIAL_CONDITION
+        views:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VIEWS
+        security:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SECURITY
+        parking:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARKING
+        carPlace:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CAR_PLACE
+        floorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FLOOR_TYPE
+        windowsType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WINDOWS_TYPE
+        decoration:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DECORATION
+        repairType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REPAIR_TYPE
+        repairOld:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REPAIR_OLD
+        design:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DESIGN
+        walls:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WALLS
+        apartmentType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: APARTMENT_TYPE
+        commentsRus:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS_ENG
+        planning:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PLANNING
+        ceilingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT
+        appColor:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: APP_COLOR
+        includeParking:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INCLUDE_PARKING
+        ord:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ORD
+        category:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: CATEGORY
+        categoryLandlord:
+            type: string
+            nullable: true
+            length: 24
+            fixed: false
+            column: CATEGORY_LANDLORD
+    lifecycleCallbacks: {  }

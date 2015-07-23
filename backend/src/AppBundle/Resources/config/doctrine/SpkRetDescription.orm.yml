@@ -1,0 +1,143 @@
+AppBundle\Entity\SpkRetDescription:
+    type: entity
+    table: SPK_RET_DESCRIPTION
+    uniqueConstraints:
+        SPK_RET_DESCRIPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        briefRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: BRIEF_RUS
+        briefEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: BRIEF_ENG
+        siteRus:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SITE_RUS
+        siteEng:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SITE_ENG
+        anchorRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ANCHOR_RUS
+        anchorEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ANCHOR_ENG
+        ord:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ORD
+        specialOffer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SPECIAL_OFFER
+        hideNumber:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: HIDE_NUMBER
+        hideTarea:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: HIDE_TAREA
+        direction:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DIRECTION
+        specialDescriptionRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SPECIAL_DESCRIPTION_RUS
+        specialDescriptionEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SPECIAL_DESCRIPTION_ENG
+        locationDescription:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: LOCATION_DESCRIPTION
+        areaDescription:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: AREA_DESCRIPTION
+        entranceDescription:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: ENTRANCE_DESCRIPTION
+        tenant:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: TENANT
+        shopWindow:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SHOP_WINDOW
+    lifecycleCallbacks: {  }

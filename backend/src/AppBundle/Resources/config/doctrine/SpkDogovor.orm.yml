@@ -1,0 +1,102 @@
+AppBundle\Entity\SpkDogovor:
+    type: entity
+    table: SPK_DOGOVOR
+    indexes:
+        SPK_DOGOVOR_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_DOGOVOR_PRIMARY:
+            columns:
+                - SPK_DOGOVORID
+    id: {  }
+    fields:
+        spkDogovorid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_DOGOVORID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        dogNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DOG_NUMBER
+        signDate:
+            type: datetime
+            nullable: true
+            column: SIGN_DATE
+        closedDate:
+            type: datetime
+            nullable: true
+            column: CLOSED_DATE
+        dogType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DOG_TYPE
+        note:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: NOTE
+        validityDays:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: VALIDITY_DAYS
+        prolongation:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROLONGATION
+        pastPayments:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PAST_PAYMENTS
+        signatory:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SIGNATORY
+        successFee:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SUCCESS_FEE
+    lifecycleCallbacks: {  }

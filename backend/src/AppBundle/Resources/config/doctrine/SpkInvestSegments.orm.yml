@@ -1,0 +1,23 @@
+AppBundle\Entity\SpkInvestSegments:
+    type: entity
+    table: SPK_INVEST_SEGMENTS
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        segmentid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SEGMENTID
+    lifecycleCallbacks: {  }

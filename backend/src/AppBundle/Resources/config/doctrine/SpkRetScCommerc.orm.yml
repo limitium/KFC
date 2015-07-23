@@ -1,0 +1,301 @@
+AppBundle\Entity\SpkRetScCommerc:
+    type: entity
+    table: SPK_RET_SC_COMMERC
+    indexes:
+        _dta_index_SPK_RET_SC_COMMERC_7_637245325__K33_1:
+            columns:
+                - KF_COMMISSION
+                - SPK_PROPERTYID
+        _dta_index_SPK_RET_SC_COMMERC_7_637245325__K1_K33:
+            columns:
+                - SPK_PROPERTYID
+                - KF_COMMISSION
+        _dta_index_SPK_RET_SC_COMMERC_c_7_637245325__K33:
+            columns:
+                - KF_COMMISSION
+        _dta_index_SPK_RET_SC_COMMERC_5_637245325__K1_21:
+            columns:
+                - SPK_PROPERTYID
+                - SALE_COST_MIN
+        _dta_index_SPK_RET_SC_COMMERC_5_637245325__K1_21_33:
+            columns:
+                - SPK_PROPERTYID
+                - SALE_COST_MIN
+                - KF_COMMISSION
+    uniqueConstraints:
+        SPK_RET_SC_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        scTarget:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SC_TARGET
+        investmentVolume:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INVESTMENT_VOLUME
+        goodsTurnover:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: GOODS_TURNOVER
+        buildingCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: BUILDING_COST
+        buildingCostPerSqm:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: BUILDING_COST_PER_SQM
+        leaserCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LEASER_COUNT
+        leaserAnchorCount:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LEASER_ANCHOR_COUNT
+        blockAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BLOCK_AREA_MIN
+        blockAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BLOCK_AREA_MAX
+        termOfLeaseMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TERM_OF_LEASE_MIN
+        termOfLeaseAvg:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TERM_OF_LEASE_AVG
+        termOfLeaseMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TERM_OF_LEASE_MAX
+        leaseCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_COST_MIN
+        leaseCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_COST_MAX
+        leaseCostAvg:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_COST_AVG
+        saleCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_COST_MIN
+        saleCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: SALE_COST_MAX
+        municipalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MUNICIPAL_COST
+        indexationConditions:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: INDEXATION_CONDITIONS
+        advertismentExpenses:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: ADVERTISMENT_EXPENSES
+        decoration:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: DECORATION
+        insuranceDeposit:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: INSURANCE_DEPOSIT
+        prepay:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PREPAY
+        payOrder:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PAY_ORDER
+        contractConditions:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: CONTRACT_CONDITIONS
+        commentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_ENG
+        kfCommission:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION
+        vat:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: VAT
+        valu:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: VALU
+        cur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CUR
+        typ:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TYP
+        listing:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: LISTING
+        usdRate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: USD_RATE
+        eurRate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: EUR_RATE
+        cuRate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CU_RATE
+        buildingCostCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BUILDING_COST_CUR
+        buildingCostSqmCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BUILDING_COST_SQM_CUR
+        rentCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RENT_CUR
+        saleCostCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SALE_COST_CUR
+        municipalCostCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MUNICIPAL_COST_CUR
+    lifecycleCallbacks: {  }

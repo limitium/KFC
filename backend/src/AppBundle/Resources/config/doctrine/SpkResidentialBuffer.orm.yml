@@ -1,0 +1,1191 @@
+AppBundle\Entity\SpkResidentialBuffer:
+    type: entity
+    table: SPK_RESIDENTIAL_BUFFER
+    id: {  }
+    fields:
+        idc:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: IDC
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        parentid:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PARENTID
+        client1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1
+        client1Phone1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1_PHONE1
+        client1Phone2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1_PHONE2
+        client1Phone3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1_PHONE3
+        client1Phone4:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1_PHONE4
+        client1Email:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT1_EMAIL
+        client2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT2
+        client2Phone1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT2_PHONE1
+        client2Phone2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT2_PHONE2
+        client2Phone3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT2_PHONE3
+        client2Phone4:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CLIENT2_PHONE4
+        dom:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: DOM
+        korpus:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: KORPUS
+        stroenie:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: STROENIE
+        drob:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: DROB
+        tire:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: TIRE
+        litera:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: LITERA
+        vladenie:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: VLADENIE
+        propertyNumber:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: PROPERTY_NUMBER
+        propertyEntrance:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: PROPERTY_ENTRANCE
+        cityRus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CITY_RUS
+        cityEng:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CITY_ENG
+        area:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: AREA
+        district:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DISTRICT
+        street:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STREET
+        streetType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STREET_TYPE
+        metro:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: METRO
+        nameRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_RUS
+        nameEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_ENG
+        vnKod:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: VN_KOD
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TARGET
+        propertyType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PROPERTY_TYPE
+        bParkingType1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_TYPE1
+        bParkingEntrance1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_ENTRANCE1
+        bParkingCount1:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_PARKING_COUNT1
+        bParkingComment1:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_PARKING_COMMENT1
+        bParkingType2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_TYPE2
+        bParkingEntrance2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_ENTRANCE2
+        bParkingCount2:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_PARKING_COUNT2
+        bParkingComment2:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_PARKING_COMMENT2
+        bParkingType3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_TYPE3
+        bParkingEntrance3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PARKING_ENTRANCE3
+        bParkingCount3:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_PARKING_COUNT3
+        bParkingComment3:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_PARKING_COMMENT3
+        bBuildingType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_BUILDING_TYPE
+        bBuildingClass:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_BUILDING_CLASS
+        bProgress:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PROGRESS
+        bBuildingStartQuarter:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_BUILDING_START_QUARTER
+        bBuildingStartYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_BUILDING_START_YEAR
+        bBuildingEndQuarter:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_BUILDING_END_QUARTER
+        bBuildingEndYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_BUILDING_END_YEAR
+        bArchitectureStyle:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_ARCHITECTURE_STYLE
+        bConstruction:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_CONSTRUCTION
+        bTotalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_TOTAL_AREA
+        bLivingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_LIVING_AREA
+        bApartmentsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_APARTMENTS_COUNT
+        bApartmentAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_APARTMENT_AREA_MIN
+        bApartmentAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_APARTMENT_AREA_MAX
+        bOssature:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_OSSATURE
+        bOverlap:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_OVERLAP
+        bOutdoorWall:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_OUTDOOR_WALL
+        bStoreysCountMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_STOREYS_COUNT_MIN
+        bStoreysCountMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: B_STOREYS_COUNT_MAX
+        bCeilingHeightMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_CEILING_HEIGHT_MIN
+        bCeilingHeightMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_CEILING_HEIGHT_MAX
+        bPenthouse:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PENTHOUSE
+        bPenthouseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_PENTHOUSE_AREA_MIN
+        bPenthouseAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_PENTHOUSE_AREA_MAX
+        bTownhouse:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_TOWNHOUSE
+        bTownhouseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_TOWNHOUSE_AREA_MIN
+        bTownhouseAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_TOWNHOUSE_AREA_MAX
+        bOperationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: B_OPERATIONAL_COST
+        bLifts:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_LIFTS
+        bPlanning:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_PLANNING
+        bWindows:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: B_WINDOWS
+        bTerritory:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_TERRITORY
+        bTerritoryArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: B_TERRITORY_AREA
+        bSecurity:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: B_SECURITY
+        bTechnicalComments:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: B_TECHNICAL_COMMENTS
+        bInfrastructureComments:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: B_INFRASTRUCTURE_COMMENTS
+        briefCommentsRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_COMMENTS_RUS
+        briefCommentsEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_COMMENTS_ENG
+        siteCommentsRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SITE_COMMENTS_RUS
+        siteCommentsEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SITE_COMMENTS_ENG
+        bPar1:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR1
+        bPar2:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR2
+        bPar3:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR3
+        bPar4:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR4
+        bPar5:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR5
+        bPar6:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR6
+        bPar7:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR7
+        bPar8:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR8
+        bPar9:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR9
+        bPar10:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR10
+        bPar11:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR11
+        bPar12:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR12
+        bPar13:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR13
+        bPar14:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR14
+        bPar15:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR15
+        bPar16:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR16
+        bPar17:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR17
+        bPar18:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR18
+        bPar19:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR19
+        bPar20:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR20
+        bPar21:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR21
+        bPar22:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR22
+        bPar23:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR23
+        bPar24:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR24
+        bPar25:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR25
+        bPar26:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR26
+        bPar27:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR27
+        bPar28:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR28
+        bPar29:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: B_PAR29
+        rent:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: RENT
+        costPerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MAX
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        carPlaceCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: CAR_PLACE_COST
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPERATIONAL_COST
+        commissionTnPers:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMISSION_TN_PERS
+        commissionTn:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COMMISSION_TN
+        commissionLrPers:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMISSION_LR_PERS
+        commissionLr:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COMMISSION_LR
+        contractType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CONTRACT_TYPE
+        storeysCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT
+        storeyNumber:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_NUMBER
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        ceilingHeightMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MIN
+        ceilingHeightMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MAX
+        roomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOMS_COUNT
+        bedroomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BEDROOMS_COUNT
+        bathroomsCount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BATHROOMS_COUNT
+        furniture:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FURNITURE
+        specialCondition:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SPECIAL_CONDITION
+        views:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: VIEWS
+        security:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SECURITY
+        parking:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKING
+        carPlace:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CAR_PLACE
+        floorType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FLOOR_TYPE
+        windowsType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WINDOWS_TYPE
+        decoration:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DECORATION
+        repairType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: REPAIR_TYPE
+        repairOld:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: REPAIR_OLD
+        design:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DESIGN
+        walls:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WALLS
+        apartmentType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: APARTMENT_TYPE
+        planning:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PLANNING
+        aTechnicalComments:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: A_TECHNICAL_COMMENTS
+        aCommercialComments:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: A_COMMERCIAL_COMMENTS
+        aParkingComments:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: A_PARKING_COMMENTS
+        aPar1:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR1
+        aPar2:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR2
+        aPar3:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR3
+        aPar4:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR4
+        aPar5:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR5
+        aPar6:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR6
+        aPar7:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR7
+        aPar8:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR8
+        aPar9:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR9
+        aPar10:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR10
+        aPar11:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR11
+        aPar12:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR12
+        aPar13:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR13
+        aPar14:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR14
+        aPar15:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR15
+        aPar16:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR16
+        aPar17:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR17
+        aPar18:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR18
+        aPar19:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR19
+        aPar20:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR20
+        aPar21:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR21
+        aPar22:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR22
+        aPar23:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR23
+        aPar24:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR24
+        aPar25:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR25
+        aPar26:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR26
+        aPar27:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR27
+        aPar28:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR28
+        aPar29:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR29
+        aPar30:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR30
+        aPar31:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR31
+        aPar32:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR32
+        aPar33:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR33
+        aPar34:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR34
+        aPar35:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR35
+        aPar36:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR36
+        aPar37:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR37
+        aPar38:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR38
+        aPar39:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR39
+        aPar40:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR40
+        aPar41:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR41
+        aPar42:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR42
+        aPar43:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR43
+        aPar44:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR44
+        aPar45:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: A_PAR45
+    lifecycleCallbacks: {  }

@@ -1,0 +1,146 @@
+AppBundle\Entity\SpkCntStCommercTemp:
+    type: entity
+    table: SPK_CNT_ST_COMMERC_TEMP
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        landCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LAND_COST_MIN
+        landCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LAND_COST_MAX
+        houseCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: HOUSE_COST_MIN
+        houseCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: HOUSE_COST_MAX
+        cottageAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COTTAGE_AREA_MIN
+        cottageAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COTTAGE_AREA_MAX
+        townhouseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOWNHOUSE_AREA_MIN
+        townhouseAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOWNHOUSE_AREA_MAX
+        apartmentAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: APARTMENT_AREA_MIN
+        apartmentAreaMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: APARTMENT_AREA_MAX
+        cottageCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COTTAGE_COST_MIN
+        cottageCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COTTAGE_COST_MAX
+        townhouseCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: TOWNHOUSE_COST_MIN
+        townhouseCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: TOWNHOUSE_COST_MAX
+        apartmentCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: APARTMENT_COST_MIN
+        apartmentCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: APARTMENT_COST_MAX
+        kfFee:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_FEE
+    lifecycleCallbacks: {  }

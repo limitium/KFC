@@ -1,0 +1,311 @@
+AppBundle\Entity\SpkCntLhTech:
+    type: entity
+    table: SPK_CNT_LH_TECH
+    indexes:
+        _dta_index_SPK_CNT_LH_TECH_5_560721050__K1_9:
+            columns:
+                - SPK_PROPERTYID
+                - LAND_AREA
+        _dta_index_SPK_CNT_LH_TECH_5_560721050__K1_6_7_8_9_10_11_28_29_31_32_33_36_40_41_42_43:
+            columns:
+                - SPK_PROPERTYID
+                - HOUSE_TYPE
+                - HOUSE_MATERIAL
+                - BUILD_YEAR
+                - LAND_AREA
+                - TOTAL_AREA
+                - LIVING_AREA
+                - STOREY_COUNT_MIN
+                - STOREY_COUNT_MAX
+                - ROOMS_COUNT
+                - BEDROOMS_COUNT
+                - BATHROOMS_COUNT
+                - LEASE_LAND_AREA
+                - FOUNDATION_MATERIAL
+                - LEVEL_COUNT
+                - COMMUNICATION
+                - FURNITURE_MAINVIEW
+        _dta_index_SPK_CNT_LH_TECH_5_560721050__K1_9_10:
+            columns:
+                - SPK_PROPERTYID
+                - LAND_AREA
+                - TOTAL_AREA
+    uniqueConstraints:
+        SPK_CNT_LH_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        houseType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOUSE_TYPE
+        houseMaterial:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOUSE_MATERIAL
+        buildYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BUILD_YEAR
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        sewerage:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SEWERAGE
+        electricity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY
+        water:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WATER
+        garage:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GARAGE
+        roofMaterial:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ROOF_MATERIAL
+        windowsType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WINDOWS_TYPE
+        wallMaterial:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WALL_MATERIAL
+        decoration:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DECORATION
+        relief:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RELIEF
+        pool:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: POOL
+        forest:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FOREST
+        landDesign:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LAND_DESIGN
+        fence:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FENCE
+        additionalBuildings:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ADDITIONAL_BUILDINGS
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        storeyCountMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_COUNT_MIN
+        storeyCountMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY_COUNT_MAX
+        preparedness:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PREPAREDNESS
+        roomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ROOMS_COUNT
+        bedroomsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BEDROOMS_COUNT
+        bathroomsCount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BATHROOMS_COUNT
+        furniture:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FURNITURE
+        market:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: MARKET
+        leaseLandArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_LAND_AREA
+        ceiling:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: CEILING
+        gas:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: GAS
+        purpose:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PURPOSE
+        foundationMaterial:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: FOUNDATION_MATERIAL
+        levelCount:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LEVEL_COUNT
+        communication:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: COMMUNICATION
+        furnitureMainview:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FURNITURE_MAINVIEW
+        window:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WINDOW
+        security:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SECURITY
+        landType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LAND_TYPE
+        categoryLandlord:
+            type: string
+            nullable: true
+            length: 24
+            fixed: false
+            column: CATEGORY_LANDLORD
+    lifecycleCallbacks: {  }

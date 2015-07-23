@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkOppReqObjHigh:
+    type: entity
+    table: SPK_OPP_REQ_OBJ_HIGH
+    indexes:
+        SPK_OPP_REQ_OBJ_HIGH_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_OPP_REQ_OBJ_HIGH_PRIMARY:
+            columns:
+                - SPK_OPP_REQ_OBJ_HIGHID
+    id: {  }
+    fields:
+        spkOppReqObjHighid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_OPP_REQ_OBJ_HIGHID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        highwayid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: HIGHWAYID
+    lifecycleCallbacks: {  }

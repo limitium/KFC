@@ -1,0 +1,77 @@
+AppBundle\Entity\SpkOppProjectTeams:
+    type: entity
+    table: SPK_OPP_PROJECT_TEAMS
+    indexes:
+        SPK_OPP_PROJECT_TEAMS_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+                - BROKER
+    uniqueConstraints:
+        SPK_OPP_PROJECT_TEAMS_PRIMARY:
+            columns:
+                - SPK_OPP_PROJECT_TEAMSID
+    id: {  }
+    fields:
+        spkOppProjectTeamsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_OPP_PROJECT_TEAMSID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userRole:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: USER_ROLE
+        part:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PART
+        notes:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: NOTES
+        broker:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BROKER
+        part2:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PART2
+    lifecycleCallbacks: {  }

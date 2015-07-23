@@ -1,0 +1,305 @@
+AppBundle\Entity\SpkOppReqObjects:
+    type: entity
+    table: SPK_OPP_REQ_OBJECTS
+    indexes:
+        _dta_index_SPK_OPP_REQ_OBJECTS_7_1808725496__K6_7_10_11:
+            columns:
+                - BUDGET_MAX
+                - BUDGET_MIN
+                - SQUARE_MIN
+                - SQUARE_MAX
+        _dta_index_SPK_OPP_REQ_OBJECTS_7_1808725496__K1_6_7_10_11:
+            columns:
+                - OPPORTUNITYID
+                - BUDGET_MAX
+                - BUDGET_MIN
+                - SQUARE_MIN
+                - SQUARE_MAX
+        _dta_index_SPK_OPP_REQ_OBJECTS_7_1808725496__K6_K1_7_10_11:
+            columns:
+                - BUDGET_MAX
+                - OPPORTUNITYID
+                - BUDGET_MIN
+                - SQUARE_MIN
+                - SQUARE_MAX
+    uniqueConstraints:
+        SPK_OPP_REQ_OBJECTS_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        budgetMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MAX
+        budgetMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MIN
+        roomsCountMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ROOMS_COUNT_MIN
+        roomsCountMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ROOMS_COUNT_MAX
+        squareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MIN
+        squareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MAX
+        regionid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REGIONID
+        entryDate:
+            type: datetime
+            nullable: true
+            column: ENTRY_DATE
+        security:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SECURITY
+        isParking:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_PARKING
+        isFurniture:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_FURNITURE
+        isCarPlace:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_CAR_PLACE
+        isDecoration:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_DECORATION
+        market:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: MARKET
+        landSquareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MAX
+        landSquareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MIN
+        objectType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OBJECT_TYPE
+        preparedness:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PREPAREDNESS
+        direction:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DIRECTION
+        distanceToMkad:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_TO_MKAD
+        bedrooms:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BEDROOMS
+        isTimberland:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_TIMBERLAND
+        industryid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: INDUSTRYID
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        subprofileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID
+        parking:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKING
+        decorating:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DECORATING
+        rings:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RINGS
+        kfArea:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: KF_AREA
+        districtid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DISTRICTID
+        warehouseType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WAREHOUSE_TYPE
+        palletMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PALLET_MIN
+        palletMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PALLET_MAX
+        storageType:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: STORAGE_TYPE
+        storageMethod:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: STORAGE_METHOD
+        distanceToCity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISTANCE_TO_CITY
+        isRailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_RAILWAY
+        temperature:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TEMPERATURE
+        isLocalrailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_LOCALRAILWAY
+        streetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: STREETID
+        fitOut:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FIT_OUT
+        leaseExpiry:
+            type: datetime
+            nullable: true
+            column: LEASE_EXPIRY
+    lifecycleCallbacks: {  }

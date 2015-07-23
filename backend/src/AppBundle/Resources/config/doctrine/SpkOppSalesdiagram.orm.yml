@@ -1,0 +1,78 @@
+AppBundle\Entity\SpkOppSalesdiagram:
+    type: entity
+    table: SPK_OPP_SALESDIAGRAM
+    indexes:
+        SPK_OPP_SALESDIAGRAM_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_OPP_SALESDIAGRAM_PRIMARY:
+            columns:
+                - SPK_OPP_SALESDIAGRAMID
+    id: {  }
+    fields:
+        spkOppSalesdiagramid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_OPP_SALESDIAGRAMID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        stage:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STAGE
+        period:
+            type: datetime
+            nullable: true
+            column: PERIOD
+        square:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE
+        sections:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: SECTIONS
+        squareBts:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_BTS
+        sectionsBts:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: SECTIONS_BTS
+    lifecycleCallbacks: {  }

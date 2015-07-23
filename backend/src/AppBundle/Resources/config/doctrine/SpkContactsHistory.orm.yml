@@ -1,0 +1,62 @@
+AppBundle\Entity\SpkContactsHistory:
+    type: entity
+    table: SPK_CONTACTS_HISTORY
+    uniqueConstraints:
+        SPK_CONTACTS_HISTORY_PRIMARY:
+            columns:
+                - SPK_CONTACTS_HISTORYID
+    id: {  }
+    fields:
+        spkContactsHistoryid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_CONTACTS_HISTORYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        workedFrom:
+            type: datetime
+            nullable: true
+            column: WORKED_FROM
+        workedTo:
+            type: datetime
+            nullable: true
+            column: WORKED_TO
+        accountid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACCOUNTID
+        workPosition:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WORK_POSITION
+        contactid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTACTID
+    lifecycleCallbacks: {  }

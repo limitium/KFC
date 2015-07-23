@@ -1,0 +1,738 @@
+AppBundle\Entity\SpkOpportunityDetail:
+    type: entity
+    table: SPK_OPPORTUNITY_DETAIL
+    indexes:
+        KF_SR_IX_ActDate:
+            columns:
+                - ACT_DATE
+                - CONTRACT_TYPE
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_6:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K6_K1:
+            columns:
+                - CONTACTID
+                - OPPORTUNITYID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_K1_K29:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+                - POTENTIAL_COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K29_K35_1:
+            columns:
+                - POTENTIAL_COMMISION_KF
+                - PARENTID
+                - OPPORTUNITYID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_1:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35_K29:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - POTENTIAL_COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35:
+            columns:
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_c_7_717245610__K29:
+            columns:
+                - POTENTIAL_COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_K1_K38_K37_K15_K13_K17_K22_K19_K23_K21_K24_10_16:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+                - SERVICE_ACT_NUMBER
+                - SERVICE_ACT_DATE
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_K1_K15_K13_K17_K22_K19_K23_K21_K24_10_16:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K38_K37_K15_K13_K17_K22_K19_K23_K21_K24_1_10_16_35:
+            columns:
+                - SERVICE_ACT_NUMBER
+                - SERVICE_ACT_DATE
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+                - OPPORTUNITYID
+                - IS_OFFERTA
+                - IS_ACT
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35_K38_K37_K15_K13_K17_K22_K19_K23_K21_K24_10_16:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - SERVICE_ACT_NUMBER
+                - SERVICE_ACT_DATE
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K15_K13_K17_K22_K19_K23_K21_K24_1_10_16_35:
+            columns:
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+                - OPPORTUNITYID
+                - IS_OFFERTA
+                - IS_ACT
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_c_7_717245610__K38_K37_K15_K13_K17_K22_K19_K23_K21_K24:
+            columns:
+                - SERVICE_ACT_NUMBER
+                - SERVICE_ACT_DATE
+                - DOGOVOR_NUMBER
+                - DOGOVOR_DATE
+                - ACT_NUMBER
+                - ACT_DATE
+                - BILL_NUMBER
+                - BILL_DATE
+                - INVOICE_NUMBER
+                - INVOICE_DATE
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K6:
+            columns:
+                - CONTACTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K6_29_35:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - POTENTIAL_COMMISION_KF
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_K1_10_16:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35_10_16:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_10_16_35:
+            columns:
+                - OPPORTUNITYID
+                - IS_OFFERTA
+                - IS_ACT
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_6_10_16_29_35:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - IS_OFFERTA
+                - IS_ACT
+                - POTENTIAL_COMMISION_KF
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35_K6_10_16:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - CONTACTID
+                - IS_OFFERTA
+                - IS_ACT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_6_10_16_35:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - IS_OFFERTA
+                - IS_ACT
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_c_7_717245610__K1_K35_K6:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - CONTACTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_34_35:
+            columns:
+                - OPPORTUNITYID
+                - COMMISION_KF
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K35_K1_34:
+            columns:
+                - PARENTID
+                - OPPORTUNITYID
+                - COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_34:
+            columns:
+                - OPPORTUNITYID
+                - COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_7_717245610__K1_K35_34:
+            columns:
+                - OPPORTUNITYID
+                - PARENTID
+                - COMMISION_KF
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_15:
+            columns:
+                - OPPORTUNITYID
+                - DOGOVOR_NUMBER
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K6_K1_15:
+            columns:
+                - CONTACTID
+                - OPPORTUNITYID
+                - DOGOVOR_NUMBER
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K6_15:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - DOGOVOR_NUMBER
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_6_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_26_33_34_35_36_37_38_41_42:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMPETITORID
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K6_K26_K1_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_33_34_35_36_37_38_41_42:
+            columns:
+                - CONTACTID
+                - COMPETITORID
+                - OPPORTUNITYID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K6_K26_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_33_34_35_36_37_38_41_42:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - COMPETITORID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K6_K1_K26_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_33_34_35_36_37_38_41_42:
+            columns:
+                - CONTACTID
+                - OPPORTUNITYID
+                - COMPETITORID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K22_K1:
+            columns:
+                - ACT_DATE
+                - OPPORTUNITYID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K22:
+            columns:
+                - OPPORTUNITYID
+                - ACT_DATE
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K22_1_35:
+            columns:
+                - ACT_DATE
+                - OPPORTUNITYID
+                - PARENTID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K6_13_15_17_22_33_34_36_44_45:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - DOGOVOR_DATE
+                - DOGOVOR_NUMBER
+                - ACT_NUMBER
+                - ACT_DATE
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - CONTRACT_TYPE
+                - OBJECT_NOT_INDB
+                - TARGET_ACQUISITION
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K6_K1_13_15_17_22_33_34_36_44_45:
+            columns:
+                - CONTACTID
+                - OPPORTUNITYID
+                - DOGOVOR_DATE
+                - DOGOVOR_NUMBER
+                - ACT_NUMBER
+                - ACT_DATE
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - CONTRACT_TYPE
+                - OBJECT_NOT_INDB
+                - TARGET_ACQUISITION
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_6_27:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - OPP_AMOUNT
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K26:
+            columns:
+                - OPPORTUNITYID
+                - COMPETITORID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K26_K1_K6_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_33_34_35_36_37_38_41_42:
+            columns:
+                - COMPETITORID
+                - OPPORTUNITYID
+                - CONTACTID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K26_K1:
+            columns:
+                - COMPETITORID
+                - OPPORTUNITYID
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K26_K6_9_10_13_14_15_16_17_18_19_20_21_22_23_24_25_33_34_35_36_37_38_41_42:
+            columns:
+                - OPPORTUNITYID
+                - COMPETITORID
+                - CONTACTID
+                - IS_DOGOVOR
+                - IS_OFFERTA
+                - DOGOVOR_DATE
+                - OFFERTA_DATE
+                - DOGOVOR_NUMBER
+                - IS_ACT
+                - ACT_NUMBER
+                - IS_BILL
+                - BILL_NUMBER
+                - IS_INVOICE
+                - INVOICE_NUMBER
+                - ACT_DATE
+                - BILL_DATE
+                - INVOICE_DATE
+                - IS_COMPETITOR
+                - COMMISION_TYPE
+                - COMMISION_KF
+                - PARENTID
+                - CONTRACT_TYPE
+                - SERVICE_ACT_DATE
+                - SERVICE_ACT_NUMBER
+                - TENANTPAY_DATE
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_K6_42:
+            columns:
+                - OPPORTUNITYID
+                - CONTACTID
+                - IS_WIP
+        _dta_index_SPK_OPPORTUNITY_DETAIL_5_717245610__K1_42:
+            columns:
+                - OPPORTUNITYID
+                - IS_WIP
+    uniqueConstraints:
+        SPK_OPPORTUNITY_DETAIL_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        resellerContactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: RESELLER_CONTACTID
+        commission:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMISSION
+        isDogovor:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_DOGOVOR
+        isOfferta:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_OFFERTA
+        commitionKf:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMITION_KF
+        isPercent:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_PERCENT
+        dogovorDate:
+            type: datetime
+            nullable: true
+            column: DOGOVOR_DATE
+        offertaDate:
+            type: datetime
+            nullable: true
+            column: OFFERTA_DATE
+        dogovorNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DOGOVOR_NUMBER
+        isAct:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_ACT
+        actNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACT_NUMBER
+        isBill:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_BILL
+        billNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BILL_NUMBER
+        isInvoice:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_INVOICE
+        invoiceNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INVOICE_NUMBER
+        actDate:
+            type: datetime
+            nullable: true
+            column: ACT_DATE
+        billDate:
+            type: datetime
+            nullable: true
+            column: BILL_DATE
+        invoiceDate:
+            type: datetime
+            nullable: true
+            column: INVOICE_DATE
+        isCompetitor:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_COMPETITOR
+        competitorid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: COMPETITORID
+        oppAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPP_AMOUNT
+        potentialCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: POTENTIAL_COST
+        potentialCommisionKf:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: POTENTIAL_COMMISION_KF
+        potentialSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: POTENTIAL_SQUARE
+        potentialCommisionType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: POTENTIAL_COMMISION_TYPE
+        potentialRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: POTENTIAL_RENT
+        commisionType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COMMISION_TYPE
+        commisionKf:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMISION_KF
+        parentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARENTID
+        contractType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONTRACT_TYPE
+        serviceActDate:
+            type: datetime
+            nullable: true
+            column: SERVICE_ACT_DATE
+        serviceActNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SERVICE_ACT_NUMBER
+        isServiceAct:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_SERVICE_ACT
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        tenantpayDate:
+            type: datetime
+            nullable: true
+            column: TENANTPAY_DATE
+        isWip:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_WIP
+        kfCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: KF_CURRENCY
+        objectNotIndb:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OBJECT_NOT_INDB
+        targetAcquisition:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TARGET_ACQUISITION
+        referraldesc:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REFERRALDESC
+        isPrepaymant:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_PREPAYMANT
+        includeVat:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INCLUDE_VAT
+        whopays:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WHOPAYS
+        isInactive:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_INACTIVE
+    lifecycleCallbacks: {  }

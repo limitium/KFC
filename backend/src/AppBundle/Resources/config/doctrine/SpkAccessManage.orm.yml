@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkAccessManage:
+    type: entity
+    table: SPK_ACCESS_MANAGE
+    indexes:
+        SPK_ACCESS_MANAGE_USERID:
+            columns:
+                - USERID
+    uniqueConstraints:
+        SPK_ACCESS_MANAGE_PRIMARY:
+            columns:
+                - SPK_ACCESS_MANAGEID
+    id: {  }
+    fields:
+        spkAccessManageid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ACCESS_MANAGEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        accessType:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: ACCESS_TYPE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,420 @@
+AppBundle\Entity\SpkLandlords:
+    type: entity
+    table: SPK_LANDLORDS
+    indexes:
+        _dta_index_SPK_LANDLORDS_c_5_1678629023__K9D:
+            columns:
+                - PRIMARY_CONTACT
+        SPK_LANDLORDS_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_K2_K8_K10_K14_K11_K12_K13_K9:
+            columns:
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - CONTACTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_K2:
+            columns:
+                - ACCOUNTID
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7:
+            columns:
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_K8_K10_K14_K11_K12_K13_K9_2:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K7_K8_K10_K14_K11_K12_K13_K9:
+            columns:
+                - SPK_PROPERTYID
+                - ACCOUNTID
+                - CONTACTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K7:
+            columns:
+                - SPK_PROPERTYID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_c_7_1678629023__K7_K8_K10_K14_K11_K12_K13_K9:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K8_K7_K10_K14_K11_K12_K13_K9:
+            columns:
+                - SPK_PROPERTYID
+                - CONTACTID
+                - ACCOUNTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K8_K2_K7_K10_K14_K11_K12_K13_K9:
+            columns:
+                - CONTACTID
+                - SPK_PROPERTYID
+                - ACCOUNTID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_K8_K2_K10_K14_K11_K12_K13_K9:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - SPK_PROPERTYID
+                - CONTACT_TYPE
+                - CURRENT_CONTACT
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_c_7_1678629023__K8:
+            columns:
+                - CONTACTID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K8_K7_K9_1_10_11_12_13_14:
+            columns:
+                - SPK_PROPERTYID
+                - CONTACTID
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K8_K7_K2_K9_1_10_11_12_13_14:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K9D_K2_1_7_8_10_11_12_13_14:
+            columns:
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+                - SPK_LANDLORDSID
+                - ACCOUNTID
+                - CONTACTID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_c_7_1678629023__K8_K7:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K8_K7_K2_K9_K14:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K9_K14_K8_K7:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_c_7_1678629023__K9_K14_K2:
+            columns:
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K7_9_14:
+            columns:
+                - SPK_PROPERTYID
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_9_14:
+            columns:
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K7_K2_9_14:
+            columns:
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_7_1678629023__K2_K7_8_9_14:
+            columns:
+                - SPK_PROPERTYID
+                - ACCOUNTID
+                - CONTACTID
+                - PRIMARY_CONTACT
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K7_K9:
+            columns:
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K2_K8_K7:
+            columns:
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+                - CONTACTID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K2:
+            columns:
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K9:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K7_K2_K8:
+            columns:
+                - PRIMARY_CONTACT
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - CONTACTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K8_K9:
+            columns:
+                - CONTACTID
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K7_K9_K2_K8:
+            columns:
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+                - CONTACTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K8_K7:
+            columns:
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K9_K8_K7:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K7_8_9:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K8_K2_K7:
+            columns:
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - SPK_PROPERTYID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K8_K9_K2_K7:
+            columns:
+                - CONTACTID
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K8:
+            columns:
+                - PRIMARY_CONTACT
+                - CONTACTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K7:
+            columns:
+                - PRIMARY_CONTACT
+                - ACCOUNTID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K10:
+            columns:
+                - SPK_PROPERTYID
+                - CONTACT_TYPE
+        _dta_index_SPK_LANDLORDS_5_1678629023__K10_K2:
+            columns:
+                - CONTACT_TYPE
+                - SPK_PROPERTYID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K9_K8_K7_10:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+                - CONTACT_TYPE
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K2_K8_K7_1_10_11_12_13_14:
+            columns:
+                - PRIMARY_CONTACT
+                - SPK_PROPERTYID
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K8_K7_1_10_11_12_13_14:
+            columns:
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K9_K8_K7_1_10_11_12_13_14:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K8_K7_K2_1_10_11_12_13_14:
+            columns:
+                - PRIMARY_CONTACT
+                - CONTACTID
+                - ACCOUNTID
+                - SPK_PROPERTYID
+                - SPK_LANDLORDSID
+                - CONTACT_TYPE
+                - PART_OWNED
+                - STARTDATE
+                - ENDDATE
+                - CURRENT_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K9_K7_1:
+            columns:
+                - PRIMARY_CONTACT
+                - ACCOUNTID
+                - SPK_LANDLORDSID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K2_K9_K7_1:
+            columns:
+                - SPK_PROPERTYID
+                - PRIMARY_CONTACT
+                - ACCOUNTID
+                - SPK_LANDLORDSID
+        _dta_index_SPK_LANDLORDS_5_1678629023__K1_7_9:
+            columns:
+                - SPK_LANDLORDSID
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+        _dta_index_SPK_LANDLORDS_5_1678629023__K1_K2_7_9:
+            columns:
+                - SPK_LANDLORDSID
+                - SPK_PROPERTYID
+                - ACCOUNTID
+                - PRIMARY_CONTACT
+    uniqueConstraints:
+        SPK_LANDLORDS_PRIMARY:
+            columns:
+                - SPK_LANDLORDSID
+    id: {  }
+    fields:
+        spkLandlordsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_LANDLORDSID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        primaryContact:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PRIMARY_CONTACT
+        contactType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTACT_TYPE
+        partOwned:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PART_OWNED
+        startdate:
+            type: datetime
+            nullable: true
+            column: STARTDATE
+        enddate:
+            type: datetime
+            nullable: true
+            column: ENDDATE
+        currentContact:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CURRENT_CONTACT
+    lifecycleCallbacks: {  }

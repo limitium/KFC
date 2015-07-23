@@ -1,0 +1,66 @@
+AppBundle\Entity\SpkInvestCommerc:
+    type: entity
+    table: SPK_INVEST_COMMERC
+    uniqueConstraints:
+        SPK_INVEST_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        vat:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: VAT
+        amount:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: AMOUNT
+        amountCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: AMOUNT_CURRENCY
+        noi:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: NOI
+        noiCurrency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOI_CURRENCY
+    lifecycleCallbacks: {  }

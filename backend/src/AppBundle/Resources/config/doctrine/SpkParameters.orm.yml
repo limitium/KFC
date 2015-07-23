@@ -1,0 +1,160 @@
+AppBundle\Entity\SpkParameters:
+    type: entity
+    table: SPK_PARAMETERS
+    indexes:
+        SPK_PARAMETERS_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+        _dta_index_SPK_PARAMETERS_5_1671677003__K1_K8_K2_K7_K11_K12:
+            columns:
+                - SPK_PARAMETERSID
+                - PARAMETER_TYPE
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - COMMENTS
+                - OPERATOR_NAME
+        _dta_index_SPK_PARAMETERS_5_1671677003__K11_K12_K1_K2_7_8:
+            columns:
+                - COMMENTS
+                - OPERATOR_NAME
+                - SPK_PARAMETERSID
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - PARAMETER_TYPE
+        _dta_index_SPK_PARAMETERS_5_1671677003__K2_K7_K1_K8_K11_K12:
+            columns:
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - SPK_PARAMETERSID
+                - PARAMETER_TYPE
+                - COMMENTS
+                - OPERATOR_NAME
+        _dta_index_SPK_PARAMETERS_5_1671677003__K11_K12_K1_7_8:
+            columns:
+                - COMMENTS
+                - OPERATOR_NAME
+                - SPK_PARAMETERSID
+                - PARAMETERID
+                - PARAMETER_TYPE
+        _dta_index_SPK_PARAMETERS_c_5_1671677003__K11_K12:
+            columns:
+                - COMMENTS
+                - OPERATOR_NAME
+        _dta_index_SPK_PARAMETERS_c_5_1671677003__K2_K7:
+            columns:
+                - SPK_PROPERTYID
+                - PARAMETERID
+        _dta_index_SPK_PARAMETERS_c_5_1671677003__K1_K8:
+            columns:
+                - SPK_PARAMETERSID
+                - PARAMETER_TYPE
+        _dta_index_SPK_PARAMETERS_5_1671677003__K12_K11_K1_7_8:
+            columns:
+                - OPERATOR_NAME
+                - COMMENTS
+                - SPK_PARAMETERSID
+                - PARAMETERID
+                - PARAMETER_TYPE
+        _dta_index_SPK_PARAMETERS_5_1671677003__K12_K11_K1_K2_7_8:
+            columns:
+                - OPERATOR_NAME
+                - COMMENTS
+                - SPK_PARAMETERSID
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - PARAMETER_TYPE
+        _dta_index_SPK_PARAMETERS_5_1671677003__K2_K7_K1_K8_K12_K11:
+            columns:
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - SPK_PARAMETERSID
+                - PARAMETER_TYPE
+                - OPERATOR_NAME
+                - COMMENTS
+        _dta_index_SPK_PARAMETERS_5_1671677003__K1_K8_K2_K7_K12_K11:
+            columns:
+                - SPK_PARAMETERSID
+                - PARAMETER_TYPE
+                - SPK_PROPERTYID
+                - PARAMETERID
+                - OPERATOR_NAME
+                - COMMENTS
+        _dta_index_SPK_PARAMETERS_c_5_1671677003__K12_K11:
+            columns:
+                - OPERATOR_NAME
+                - COMMENTS
+    uniqueConstraints:
+        SPK_PARAMETERS_PRIMARY:
+            columns:
+                - SPK_PARAMETERSID
+    id: {  }
+    fields:
+        spkParametersid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PARAMETERSID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parameterid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARAMETERID
+        parameterType:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: PARAMETER_TYPE
+        isexist:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISEXIST
+        isunknown:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISUNKNOWN
+        comments:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COMMENTS
+        operatorName:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPERATOR_NAME
+    lifecycleCallbacks: {  }

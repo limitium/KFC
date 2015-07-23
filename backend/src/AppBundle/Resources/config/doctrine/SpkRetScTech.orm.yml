@@ -1,0 +1,356 @@
+AppBundle\Entity\SpkRetScTech:
+    type: entity
+    table: SPK_RET_SC_TECH
+    indexes:
+        _dta_index_SPK_RET_SC_TECH_7_610817238__K1_7:
+            columns:
+                - SPK_PROPERTYID
+                - TRADE_AREA
+        _dta_index_SPK_RET_SC_TECH_7_610817238__K1_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_28_29_30_31_32_33_34:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - TRADE_AREA
+                - LEASE_AREA
+                - USE_TRADE_AREA
+                - OFFICE_AREA
+                - INDUSTRIAL_AREA
+                - UNDERGROUND_AREA
+                - FREE_AREA
+                - LAND_AREA
+                - DEVELOPMENT_AREA
+                - BUILDING_START_YEAR
+                - BUILDING_START_NOTE
+                - PLANNING_STARTUP_YEAR
+                - STRARTUP_YEAR
+                - DATE_OPEN_YEAR
+                - DATE_OPEN_NOTE
+                - RECONSTRUCTION_BEGIN_YEAR
+                - RECONSTRUCTION_BEGIN_NOTE
+                - RECONSTRUCTION_END_YEAR
+                - RECONSTRUCTION_END_NOTE
+                - PLANNING_STARTUP_QUARTER
+                - BUILDING_STAGE
+                - HOTEL_AREA
+                - RESIDENTIAL_AREA
+                - EXHIBITION_AREA
+                - PROF_TC
+                - EXP_INCLUDED
+        _dta_index_SPK_RET_SC_TECH_5_610817238__K1_6_8:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - LEASE_AREA
+        _dta_index_SPK_RET_SC_TECH_5_610817238__K1_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_28_29_30_31_32_33_34_35_41_:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - TRADE_AREA
+                - LEASE_AREA
+                - USE_TRADE_AREA
+                - OFFICE_AREA
+                - INDUSTRIAL_AREA
+                - UNDERGROUND_AREA
+                - FREE_AREA
+                - LAND_AREA
+                - DEVELOPMENT_AREA
+                - BUILDING_START_YEAR
+                - BUILDING_START_NOTE
+                - PLANNING_STARTUP_YEAR
+                - STRARTUP_YEAR
+                - DATE_OPEN_YEAR
+                - DATE_OPEN_NOTE
+                - RECONSTRUCTION_BEGIN_YEAR
+                - RECONSTRUCTION_BEGIN_NOTE
+                - RECONSTRUCTION_END_YEAR
+                - RECONSTRUCTION_END_NOTE
+                - PLANNING_STARTUP_QUARTER
+                - BUILDING_STAGE
+                - HOTEL_AREA
+                - RESIDENTIAL_AREA
+                - EXHIBITION_AREA
+                - PROF_TC
+                - EXP_INCLUDED
+                - STOREYS
+                - SHOP_NAME
+                - SALE_AREA
+                - FIRST_LINE
+                - WINDOWS
+    uniqueConstraints:
+        SPK_RET_SC_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        tradeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TRADE_AREA
+        leaseArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_AREA
+        useTradeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: USE_TRADE_AREA
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        undergroundArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UNDERGROUND_AREA
+        freeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_AREA
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        developmentArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEVELOPMENT_AREA
+        buildingStartYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: BUILDING_START_YEAR
+        buildingStartNote:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: BUILDING_START_NOTE
+        planningStartupYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PLANNING_STARTUP_YEAR
+        strartupYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STRARTUP_YEAR
+        dateOpenYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: DATE_OPEN_YEAR
+        dateOpenNote:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DATE_OPEN_NOTE
+        reconstructionBeginYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: RECONSTRUCTION_BEGIN_YEAR
+        reconstructionBeginNote:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: RECONSTRUCTION_BEGIN_NOTE
+        reconstructionEndYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: RECONSTRUCTION_END_YEAR
+        reconstructionEndNote:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: RECONSTRUCTION_END_NOTE
+        rate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RATE
+        entertainmentTotalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ENTERTAINMENT_TOTAL_AREA
+        planningStartupQuarter:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PLANNING_STARTUP_QUARTER
+        buildingStage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BUILDING_STAGE
+        hotelArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: HOTEL_AREA
+        residentialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RESIDENTIAL_AREA
+        exhibitionArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: EXHIBITION_AREA
+        profTc:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PROF_TC
+        expIncluded:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: EXP_INCLUDED
+        storeys:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS
+        basementArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BASEMENT_AREA
+        capArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CAP_AREA
+        firstFloorArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FIRST_FLOOR_AREA
+        seconfFloorArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SECONF_FLOOR_AREA
+        entresolArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ENTRESOL_AREA
+        shopName:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SHOP_NAME
+        saleArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SALE_AREA
+        firstLine:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FIRST_LINE
+        windows:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: WINDOWS
+        electricity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY
+        techComments:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: TECH_COMMENTS
+        houseType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: HOUSE_TYPE
+    lifecycleCallbacks: {  }

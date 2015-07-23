@@ -1,0 +1,99 @@
+AppBundle\Entity\SpkIndInfrastructure:
+    type: entity
+    table: SPK_IND_INFRASTRUCTURE
+    uniqueConstraints:
+        SPK_IND_INFRASTRUCTURE_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        phoneLines:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PHONE_LINES
+        electricity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY
+        truckPlaces:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: TRUCK_PLACES
+        carPlaces:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CAR_PLACES
+        commentsRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMMENTS_ENG
+        carCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CAR_COST
+        truckCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TRUCK_COST
+        isHeating:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_HEATING
+        isRailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_RAILWAY
+        isLocalrailway:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_LOCALRAILWAY
+    lifecycleCallbacks: {  }

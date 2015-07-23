@@ -1,0 +1,58 @@
+AppBundle\Entity\SpkBrokerComment:
+    type: entity
+    table: SPK_BROKER_COMMENT
+    indexes:
+        SPK_BROKER_COMMENT_SPK_ALL_LONGLISTID:
+            columns:
+                - SPK_ALL_LONGLISTID
+    uniqueConstraints:
+        SPK_BROKER_COMMENT_PRIMARY:
+            columns:
+                - SPK_BROKER_COMMENTID
+    id: {  }
+    fields:
+        spkBrokerCommentid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_BROKER_COMMENTID
+        spkAllLonglistid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ALL_LONGLISTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        commentar:
+            type: string
+            nullable: true
+            length: 300
+            fixed: false
+            column: COMMENTAR
+        opportunityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+    lifecycleCallbacks: {  }

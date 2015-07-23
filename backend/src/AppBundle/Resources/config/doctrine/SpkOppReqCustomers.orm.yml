@@ -1,0 +1,158 @@
+AppBundle\Entity\SpkOppReqCustomers:
+    type: entity
+    table: SPK_OPP_REQ_CUSTOMERS
+    uniqueConstraints:
+        SPK_OPP_REQ_CUSTOMERS_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        squareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MIN
+        squareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE_MAX
+        officeSquareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQUARE_MIN
+        officeSquareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_SQUARE_MAX
+        landSquareMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MIN
+        landSquareMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_SQUARE_MAX
+        budgetMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MAX
+        budgetMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET_MIN
+        industry:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: INDUSTRY
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        subprofileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SUBPROFILEID
+        brand:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BRAND
+        sectionName:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SECTION_NAME
+        capitalRaising:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CAPITAL_RAISING
+        buyer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BUYER
+        subtype:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SUBTYPE
+        isSrOnly:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_SR_ONLY
+        dateFrom:
+            type: datetime
+            nullable: true
+            column: DATE_FROM
+        dateTo:
+            type: datetime
+            nullable: true
+            column: DATE_TO
+        emailOnly:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: EMAIL_ONLY
+        notPrivateClient:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOT_PRIVATE_CLIENT
+    lifecycleCallbacks: {  }

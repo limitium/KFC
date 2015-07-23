@@ -1,0 +1,374 @@
+AppBundle\Entity\SpkOffOcCommerc:
+    type: entity
+    table: SPK_OFF_OC_COMMERC
+    indexes:
+        _dta_index_SPK_OFF_OC_COMMERC_7_1193771310__K1_6_7_10_11:
+            columns:
+                - SPK_PROPERTYID
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - COST_MIN
+                - COST_MAX
+        _dta_index_SPK_OFF_OC_COMMERC_7_1193771310__K14_K1:
+            columns:
+                - KF_COMMISION
+                - SPK_PROPERTYID
+        _dta_index_SPK_OFF_OC_COMMERC_7_1193771310__K14:
+            columns:
+                - KF_COMMISION
+        _dta_index_SPK_OFF_OC_COMMERC_7_1193771310__K1_K14:
+            columns:
+                - SPK_PROPERTYID
+                - KF_COMMISION
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_10:
+            columns:
+                - SPK_PROPERTYID
+                - COST_MIN
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K5_K1_6_7_16_20:
+            columns:
+                - MODIFYDATE
+                - SPK_PROPERTYID
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - OPERATIONAL_COST
+                - OPERATING_EXP_TYPE
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K5_6_7_16_20:
+            columns:
+                - MODIFYDATE
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - OPERATIONAL_COST
+                - OPERATING_EXP_TYPE
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_5_6_7_16_20:
+            columns:
+                - SPK_PROPERTYID
+                - MODIFYDATE
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - OPERATIONAL_COST
+                - OPERATING_EXP_TYPE
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_6_7_16_20:
+            columns:
+                - SPK_PROPERTYID
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - OPERATIONAL_COST
+                - OPERATING_EXP_TYPE
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_31_32_33_34_35:
+            columns:
+                - SPK_PROPERTYID
+                - OPP_STRUCTURE
+                - OWNERSHIP_CERT
+                - OWNERSHIP_TYPE
+                - RENTAL_STATUS_ENG
+                - RENTAL_STATUS_RUS
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_6_7_8_9_10_11_14_16_17_18_19_20_21_22_23_24_25_26_27_28_29_30_36_37_40:
+            columns:
+                - SPK_PROPERTYID
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+                - COST_MIN
+                - COST_MAX
+                - KF_COMMISION
+                - OPERATIONAL_COST
+                - ADDITIONAL_COST
+                - DEPOSIT
+                - INDEXATION_CONDITIONS
+                - OPERATING_EXP_TYPE
+                - LEASE_LENGTH
+                - TERM_OF_LEASE_MIN
+                - TERM_OF_LEASE_MAX
+                - FITOUT_COMPENSATION
+                - UTILITY_COST
+                - VAT_TYPE
+                - COMMERCIAL_TERMS
+                - UTILITY_TYPE
+                - RENTAL_HOLIDAYS
+                - YIELD
+                - RENTAL_RATE_AVG
+                - RRA_CUR
+                - COMMERCIAL_TERMS_SALE
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_6_7_8_9_10_11_14_16_18_19_24:
+            columns:
+                - SPK_PROPERTYID
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+                - COST_MIN
+                - COST_MAX
+                - KF_COMMISION
+                - OPERATIONAL_COST
+                - DEPOSIT
+                - INDEXATION_CONDITIONS
+                - FITOUT_COMPENSATION
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_10_14:
+            columns:
+                - SPK_PROPERTYID
+                - COST_MIN
+                - KF_COMMISION
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_5_6_7_8_9_10_11_14_16_18_19_20_24:
+            columns:
+                - SPK_PROPERTYID
+                - MODIFYDATE
+                - LEASE_COST_MIN
+                - LEASE_COST_MAX
+                - COST_PER_SQM_MIN
+                - COST_PER_SQM_MAX
+                - COST_MIN
+                - COST_MAX
+                - KF_COMMISION
+                - OPERATIONAL_COST
+                - DEPOSIT
+                - INDEXATION_CONDITIONS
+                - OPERATING_EXP_TYPE
+                - FITOUT_COMPENSATION
+        _dta_index_SPK_OFF_OC_COMMERC_5_1193771310__K1_20_26:
+            columns:
+                - SPK_PROPERTYID
+                - OPERATING_EXP_TYPE
+                - VAT_TYPE
+    uniqueConstraints:
+        SPK_OFF_OC_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        leaseCostMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_COST_MIN
+        leaseCostMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: LEASE_COST_MAX
+        costPerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MAX
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        commentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_ENG
+        kfCommision:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISION
+        totalAreaKoef:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA_KOEF
+        operationalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPERATIONAL_COST
+        additionalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ADDITIONAL_COST
+        deposit:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT
+        indexationConditions:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INDEXATION_CONDITIONS
+        operatingExpType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OPERATING_EXP_TYPE
+        leaseLength:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LEASE_LENGTH
+        termOfLeaseMin:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TERM_OF_LEASE_MIN
+        termOfLeaseMax:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TERM_OF_LEASE_MAX
+        fitoutCompensation:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FITOUT_COMPENSATION
+        utilityCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UTILITY_COST
+        vatType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAT_TYPE
+        commercialTerms:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMERCIAL_TERMS
+        utilityType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: UTILITY_TYPE
+        rentalHolidays:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RENTAL_HOLIDAYS
+        yield:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: YIELD
+        oppStructure:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPP_STRUCTURE
+        ownershipCert:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OWNERSHIP_CERT
+        ownershipType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OWNERSHIP_TYPE
+        rentalStatusEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RENTAL_STATUS_ENG
+        rentalStatusRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RENTAL_STATUS_RUS
+        rentalRateAvg:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RENTAL_RATE_AVG
+        rraCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RRA_CUR
+        priceTaSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PRICE_TA_SQM
+        priceLaSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PRICE_LA_SQM
+        commercialTermsSale:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMERCIAL_TERMS_SALE
+    lifecycleCallbacks: {  }

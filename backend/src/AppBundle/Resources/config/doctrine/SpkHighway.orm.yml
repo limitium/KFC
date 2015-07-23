@@ -1,0 +1,75 @@
+AppBundle\Entity\SpkHighway:
+    type: entity
+    table: SPK_HIGHWAY
+    indexes:
+        SPK_HIGHWAY_HIGHWAY_NUMBER:
+            columns:
+                - SPK_HIGHWAYID
+                - HIGHWAY_RUS
+                - HIGHWAY_ENG
+    uniqueConstraints:
+        SPK_HIGHWAY_PRIMARY:
+            columns:
+                - SPK_HIGHWAYID
+    id: {  }
+    fields:
+        spkHighwayid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_HIGHWAYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        highwayRus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: HIGHWAY_RUS
+        highwayEng:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: HIGHWAY_ENG
+        highwayNumber:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: HIGHWAY_NUMBER
+        cianNumber:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: CIAN_NUMBER
+        intareaid:
+            type: integer
+            nullable: true
+            unsigned: false
+        ssn:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+    lifecycleCallbacks: {  }

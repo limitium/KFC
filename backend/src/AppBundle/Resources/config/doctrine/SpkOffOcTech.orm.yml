@@ -1,0 +1,528 @@
+AppBundle\Entity\SpkOffOcTech:
+    type: entity
+    table: SPK_OFF_OC_TECH
+    indexes:
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_10_11:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - LEASE_AREA
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_7_8_9_10_41_42:
+            columns:
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - COMPL_YEAR
+                - COMPL_QUARTER
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K7_K1_8_9_10_41_42:
+            columns:
+                - STOREYS_COUNT_MIN
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - COMPL_YEAR
+                - COMPL_QUARTER
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K7_8_9_10_41_42:
+            columns:
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - COMPL_YEAR
+                - COMPL_QUARTER
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_7_8_9_10_12_41:
+            columns:
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - FREE_AREA
+                - COMPL_YEAR
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_7_8_9_10_12_41_42:
+            columns:
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - FREE_AREA
+                - COMPL_YEAR
+                - COMPL_QUARTER
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_6_7_8_9_10_11_12_13_14_15_16_17_18_33_34_37_40_41_42_45_46_47_48_49_50_51_53_56_57:
+            columns:
+                - SPK_PROPERTYID
+                - BUILDING_TYPE
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - USEFUL_AREA
+                - OFFICE_AREA
+                - INDUSTRIAL_AREA
+                - RETAIL_AREA
+                - LIVING_AREA
+                - LEASE_AREA_MIN
+                - RINGS
+                - KF_DISTRICT
+                - LAND_AREA
+                - ACTUALITY
+                - COMPL_YEAR
+                - COMPL_QUARTER
+                - VACANCY_RATE
+                - HOTEL_AREA
+                - NOT_IN_LIST
+                - LISTING
+                - FREE_SALE_AREA
+                - MREF_CLASS
+                - EXPORT_SALE
+                - ORD_LISTING
+                - LAST_FREE_AREA_SALE
+                - Last_free_area_lease
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_7_8_11_12_49:
+            columns:
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - LEASE_AREA
+                - FREE_AREA
+                - FREE_SALE_AREA
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_19_20_21_22_23_24_25_26_27_28_29_30_31_32_35_36_38_39_43_44_54_55:
+            columns:
+                - SPK_PROPERTYID
+                - LIFT_COUNT
+                - LIFT_DESCRIPTION
+                - LIFT_WEIGHT
+                - OVERLAP_WEIGHT
+                - CEILING_HEIGHT_MIN
+                - CEILING_HEIGHT_MAX
+                - VENTILATION
+                - ENERGY_CATEGORY
+                - ELECTRICITY
+                - PROVIDER
+                - PHONE_LINE_COUNT
+                - COMMENTS_RUS
+                - COMMENTS_ENG
+                - FLOOR_TYPE
+                - PLANNING
+                - STOREY_DEEPNESS
+                - STEP_ACCESSIBILITY
+                - COLUMN_STEP
+                - MIN_FLOOR_PLATE
+                - MAX_FLOOR_PLATE
+                - TRANSPORT_ACCESSIBILITY
+                - SHUTTLE_BUS
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_19_21_22_23_24_27_36_43_44:
+            columns:
+                - SPK_PROPERTYID
+                - LIFT_COUNT
+                - LIFT_WEIGHT
+                - OVERLAP_WEIGHT
+                - CEILING_HEIGHT_MIN
+                - CEILING_HEIGHT_MAX
+                - ELECTRICITY
+                - STOREY_DEEPNESS
+                - MIN_FLOOR_PLATE
+                - MAX_FLOOR_PLATE
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_10_11_52:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - LEASE_AREA
+                - COST_NOT_PUBLISH
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_7_8_9_10_11_12_41_42_49:
+            columns:
+                - SPK_PROPERTYID
+                - STOREYS_COUNT_MIN
+                - STOREYS_COUNT_MAX
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - COMPL_YEAR
+                - COMPL_QUARTER
+                - FREE_SALE_AREA
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K12_K9_K1:
+            columns:
+                - FREE_AREA
+                - KF_CLASS
+                - SPK_PROPERTYID
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_K12_K9:
+            columns:
+                - SPK_PROPERTYID
+                - FREE_AREA
+                - KF_CLASS
+        _dta_index_SPK_OFF_OC_TECH_c_5_7007106__K9_K12:
+            columns:
+                - KF_CLASS
+                - FREE_AREA
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_9_10_11_12_52:
+            columns:
+                - SPK_PROPERTYID
+                - KF_CLASS
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - COST_NOT_PUBLISH
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_9:
+            columns:
+                - SPK_PROPERTYID
+                - KF_CLASS
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_10_11_12_33_34_41_42:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - LEASE_AREA
+                - FREE_AREA
+                - RINGS
+                - KF_DISTRICT
+                - COMPL_YEAR
+                - COMPL_QUARTER
+        _dta_index_SPK_OFF_OC_TECH_5_7007106__K1_11_12:
+            columns:
+                - SPK_PROPERTYID
+                - LEASE_AREA
+                - FREE_AREA
+    uniqueConstraints:
+        SPK_OFF_OC_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        buildingType:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: BUILDING_TYPE
+        storeysCountMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS_COUNT_MIN
+        storeysCountMax:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STOREYS_COUNT_MAX
+        kfClass:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: KF_CLASS
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        leaseArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_AREA
+        freeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_AREA
+        usefulArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: USEFUL_AREA
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        retailArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RETAIL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        leaseAreaMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_AREA_MIN
+        liftCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LIFT_COUNT
+        liftDescription:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: LIFT_DESCRIPTION
+        liftWeight:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LIFT_WEIGHT
+        overlapWeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OVERLAP_WEIGHT
+        ceilingHeightMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MIN
+        ceilingHeightMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT_MAX
+        ventilation:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VENTILATION
+        energyCategory:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ENERGY_CATEGORY
+        electricity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY
+        provider:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROVIDER
+        phoneLineCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PHONE_LINE_COUNT
+        commentsRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS_ENG
+        floorType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FLOOR_TYPE
+        rings:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: RINGS
+        kfDistrict:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: KF_DISTRICT
+        planning:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PLANNING
+        storeyDeepness:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STOREY_DEEPNESS
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        stepAccessibility:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STEP_ACCESSIBILITY
+        columnStep:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COLUMN_STEP
+        actuality:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACTUALITY
+        complYear:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_YEAR
+        complQuarter:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPL_QUARTER
+        minFloorPlate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MIN_FLOOR_PLATE
+        maxFloorPlate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MAX_FLOOR_PLATE
+        vacancyRate:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: VACANCY_RATE
+        hotelArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: HOTEL_AREA
+        notInList:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOT_IN_LIST
+        listing:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: LISTING
+        freeSaleArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_SALE_AREA
+        mrefClass:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MREF_CLASS
+        exportSale:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: EXPORT_SALE
+        costNotPublish:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: COST_NOT_PUBLISH
+        ordListing:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ORD_LISTING
+        transportAccessibility:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TRANSPORT_ACCESSIBILITY
+        shuttleBus:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SHUTTLE_BUS
+        lastFreeAreaSale:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAST_FREE_AREA_SALE
+        lastFreeAreaLease:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: Last_free_area_lease
+    lifecycleCallbacks: {  }

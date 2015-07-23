@@ -1,0 +1,148 @@
+AppBundle\Entity\SpkOppObjectsDetail:
+    type: entity
+    table: SPK_OPP_OBJECTS_DETAIL
+    uniqueConstraints:
+        SPK_OPP_OBJECTS_DETAIL_PRIMARY:
+            columns:
+                - SPK_OPP_OBJECTSID
+    id: {  }
+    fields:
+        spkOppObjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_OPP_OBJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        finalRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_RENT
+        finalSquare:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_SQUARE
+        operationalPayments:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPERATIONAL_PAYMENTS
+        depopsitRequest:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOPSIT_REQUEST
+        deposit:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DEPOSIT
+        prepeymentRequest:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPEYMENT_REQUEST
+        prepayment:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PREPAYMENT
+        paymentType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PAYMENT_TYPE
+        percentBlackWhite:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PERCENT_BLACK_WHITE
+        percentOborot:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PERCENT_OBOROT
+        leaseEndDate:
+            type: datetime
+            nullable: true
+            column: LEASE_END_DATE
+        isNds:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_NDS
+        notes:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: NOTES
+        dogovorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DOGOVOR_TYPE
+        finalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_COST
+        finalSqmCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_SQM_COST
+        finalLandSqmCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FINAL_LAND_SQM_COST
+        startRent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: START_RENT
+        startCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: START_COST
+    lifecycleCallbacks: {  }

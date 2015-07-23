@@ -1,0 +1,113 @@
+AppBundle\Entity\SpkInvestDescription:
+    type: entity
+    table: SPK_INVEST_DESCRIPTION
+    uniqueConstraints:
+        SPK_INVEST_DESCRIPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        obremenenie:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: OBREMENENIE
+        potoki:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: POTOKI
+        buildings:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: BUILDINGS
+        buildingsStatus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BUILDINGS_STATUS
+        utilities:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: UTILITIES
+        tenants:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: TENANTS
+        schoolSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SCHOOL_SQ
+        schoolPlace:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SCHOOL_PLACE
+        kindergartenSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KINDERGARTEN_SQ
+        kindergartenPlace:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KINDERGARTEN_PLACE
+        clinicSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CLINIC_SQ
+        mfcSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MFC_SQ
+        fokSq:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FOK_SQ
+    lifecycleCallbacks: {  }

@@ -1,0 +1,137 @@
+AppBundle\Entity\SpkIndDescription:
+    type: entity
+    table: SPK_IND_DESCRIPTION
+    indexes:
+        _dta_index_SPK_IND_DESCRIPTION_5_1559012635__K1_12_13:
+            columns:
+                - SPK_PROPERTYID
+                - TPL
+                - BUILD_TO_SUIT
+    uniqueConstraints:
+        SPK_IND_DESCRIPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        briefRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_RUS
+        briefEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_ENG
+        siteRus:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SITE_RUS
+        siteEng:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SITE_ENG
+        anchorRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ANCHOR_RUS
+        anchorEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ANCHOR_ENG
+        tpl:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TPL
+        buildToSuit:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BUILD_TO_SUIT
+        siteNameRus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SITE_NAME_RUS
+        siteNameEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SITE_NAME_ENG
+        ord:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ORD
+        specialOffer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SPECIAL_OFFER
+        specialOfferDescRus:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SPECIAL_OFFER_DESC_RUS
+        specialOfferDescEng:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: SPECIAL_OFFER_DESC_ENG
+        briefNameRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_NAME_RUS
+        briefNameEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: BRIEF_NAME_ENG
+    lifecycleCallbacks: {  }

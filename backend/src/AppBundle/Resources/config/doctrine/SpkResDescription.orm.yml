@@ -1,0 +1,144 @@
+AppBundle\Entity\SpkResDescription:
+    type: entity
+    table: SPK_RES_DESCRIPTION
+    uniqueConstraints:
+        SPK_RES_DESCRIPTION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        advantageRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADVANTAGE_RUS
+        advantageEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ADVANTAGE_ENG
+        briefCommentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: BRIEF_COMMENTS_RUS
+        briefCommentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: BRIEF_COMMENTS_ENG
+        siteCommentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SITE_COMMENTS_RUS
+        siteCommentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SITE_COMMENTS_ENG
+        brochure:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BROCHURE
+        profoto:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROFOTO
+        brochCompletion:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BROCH_COMPLETION
+        fotoCompletion:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FOTO_COMPLETION
+        urgency:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: URGENCY
+        specialOffer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SPECIAL_OFFER
+        specOfferDescript:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SPEC_OFFER_DESCRIPT
+        isComplex:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_COMPLEX
+        useAddress:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: USE_ADDRESS
+        lifestyle:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: LIFESTYLE
+        banner:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BANNER
+        context:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CONTEXT
+    lifecycleCallbacks: {  }

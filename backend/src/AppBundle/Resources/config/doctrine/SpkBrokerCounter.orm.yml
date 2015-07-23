@@ -1,0 +1,51 @@
+AppBundle\Entity\SpkBrokerCounter:
+    type: entity
+    table: SPK_BROKER_COUNTER
+    indexes:
+        SPK_BROKER_COUNTER_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        SPK_BROKER_COUNTER_PRIMARY:
+            columns:
+                - SPK_BROKER_COUNTERID
+    id: {  }
+    fields:
+        spkBrokerCounterid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_BROKER_COUNTERID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        counter:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COUNTER
+    lifecycleCallbacks: {  }

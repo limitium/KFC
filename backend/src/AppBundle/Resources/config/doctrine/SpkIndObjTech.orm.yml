@@ -1,0 +1,337 @@
+AppBundle\Entity\SpkIndObjTech:
+    type: entity
+    table: SPK_IND_OBJ_TECH
+    indexes:
+        _dta_index_SPK_IND_OBJ_TECH_9_577437131__K1_K44_K43:
+            columns:
+                - SPK_PROPERTYID
+                - COMPLETED_YEAR
+                - COMPLETED_QUATER
+        _dta_index_SPK_IND_OBJ_TECH_9_577437131__K44_K43_1:
+            columns:
+                - COMPLETED_YEAR
+                - COMPLETED_QUATER
+                - SPK_PROPERTYID
+        _dta_index_SPK_IND_OBJ_TECH_c_9_577437131__K44_K43:
+            columns:
+                - COMPLETED_YEAR
+                - COMPLETED_QUATER
+        _dta_index_SPK_IND_OBJ_TECH_5_577437131__K1_7_14:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - FREE_STORAGE_AREA
+        _dta_index_SPK_IND_OBJ_TECH_5_577437131__K1_7_12_14:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+                - LAND_AREA
+                - FREE_STORAGE_AREA
+        _dta_index_SPK_IND_OBJ_TECH_5_577437131__K1_6_8_9_10_11_12_16_37_38_43_44_48_49:
+            columns:
+                - SPK_PROPERTYID
+                - CLASS
+                - INDUSTRIAL_AREA
+                - STORAGE_AREA
+                - OFFICE_AREA
+                - GROUND_AREA
+                - LAND_AREA
+                - ADDITIONAL_AREA
+                - MEZONIN_AREA
+                - BUILDING_TYPE
+                - COMPLETED_QUATER
+                - COMPLETED_YEAR
+                - COMPLETION_STAGE
+                - COMPLETION_DATE
+        _dta_index_SPK_IND_OBJ_TECH_5_577437131__K1_43_44:
+            columns:
+                - SPK_PROPERTYID
+                - COMPLETED_QUATER
+                - COMPLETED_YEAR
+    uniqueConstraints:
+        SPK_IND_OBJ_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        class:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: CLASS
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        storageArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STORAGE_AREA
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        groundArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: GROUND_AREA
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        landTarget:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LAND_TARGET
+        freeStorageArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_STORAGE_AREA
+        freeOfficeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_OFFICE_AREA
+        additionalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ADDITIONAL_AREA
+        storeys:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREYS
+        ceillingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILLING_HEIGHT
+        floorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FLOOR_TYPE
+        floorHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FLOOR_HEIGHT
+        floorWeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FLOOR_WEIGHT
+        columnGrid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COLUMN_GRID
+        lifts:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LIFTS
+        liftsWeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIFTS_WEIGHT
+        docks:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: DOCKS
+        gates:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: GATES
+        commentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_ENG
+        electricity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ELECTRICITY
+        temperature:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TEMPERATURE
+        provider:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROVIDER
+        entryDate:
+            type: datetime
+            nullable: true
+            column: ENTRY_DATE
+        loadUnloadDock:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LOAD_UNLOAD_DOCK
+        availabilityMkad:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABILITY_MKAD
+        airport:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: AIRPORT
+        availabilityAirport:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABILITY_AIRPORT
+        mezoninArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MEZONIN_AREA
+        buildingType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BUILDING_TYPE
+        freeTotalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_TOTAL_AREA
+        freeMezzanineArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_MEZZANINE_AREA
+        freeIndustrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_INDUSTRIAL_AREA
+        temper:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TEMPER
+        completedQuater:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPLETED_QUATER
+        completedYear:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: COMPLETED_YEAR
+        docksType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DOCKS_TYPE
+        gatesType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: GATES_TYPE
+        nenuzhnoePole:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: NENUZHNOE_POLE
+        completionStage:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COMPLETION_STAGE
+        completionDate:
+            type: datetime
+            nullable: true
+            column: COMPLETION_DATE
+    lifecycleCallbacks: {  }

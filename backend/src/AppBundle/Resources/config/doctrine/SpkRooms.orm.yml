@@ -1,0 +1,70 @@
+AppBundle\Entity\SpkRooms:
+    type: entity
+    table: SPK_ROOMS
+    indexes:
+        SPK_ROOMS_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        SPK_ROOMS_PRIMARY:
+            columns:
+                - SPK_ROOMSID
+    id: {  }
+    fields:
+        spkRoomsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_ROOMSID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        room:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ROOM
+        square:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SQUARE
+        comments:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMENTS
+        roomlevel:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ROOMLEVEL
+    lifecycleCallbacks: {  }

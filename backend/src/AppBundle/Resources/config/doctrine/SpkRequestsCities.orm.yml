@@ -1,0 +1,52 @@
+AppBundle\Entity\SpkRequestsCities:
+    type: entity
+    table: SPK_REQUESTS_CITIES
+    indexes:
+        SPK_REQUESTS_CITIES_SPK_REQUESTSID:
+            columns:
+                - SPK_REQUESTSID
+    uniqueConstraints:
+        SPK_REQUESTS_CITIES_PRIMARY:
+            columns:
+                - SPK_REQUESTS_CITIESID
+    id: {  }
+    fields:
+        spkRequestsCitiesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTS_CITIESID
+        spkRequestsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+    lifecycleCallbacks: {  }

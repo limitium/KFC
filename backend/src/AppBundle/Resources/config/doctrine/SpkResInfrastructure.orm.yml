@@ -1,0 +1,123 @@
+AppBundle\Entity\SpkResInfrastructure:
+    type: entity
+    table: SPK_RES_INFRASTRUCTURE
+    uniqueConstraints:
+        SPK_RES_INFRASTRUCTURE_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parkingType1:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARKING_TYPE1
+        parkingEntrance1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKING_ENTRANCE1
+        parkingCount1:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PARKING_COUNT1
+        parkingComment1:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARKING_COMMENT1
+        parkingType2:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARKING_TYPE2
+        parkingEntrance2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKING_ENTRANCE2
+        parkingCount2:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PARKING_COUNT2
+        parkingComment2:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARKING_COMMENT2
+        parkingType3:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARKING_TYPE3
+        parkingEntrance3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKING_ENTRANCE3
+        parkingCount3:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PARKING_COUNT3
+        parkingComment3:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PARKING_COMMENT3
+        commentsRus:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS_ENG
+        washing:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: WASHING
+    lifecycleCallbacks: {  }

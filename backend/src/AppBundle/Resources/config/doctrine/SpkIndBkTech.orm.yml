@@ -1,0 +1,355 @@
+AppBundle\Entity\SpkIndBkTech:
+    type: entity
+    table: SPK_IND_BK_TECH
+    indexes:
+        _dta_index_SPK_IND_BK_TECH_9_83531381__K1_21:
+            columns:
+                - SPK_PROPERTYID
+                - FREE_STORAGE_AREA
+        _dta_index_SPK_IND_BK_TECH_9_83531381__K21_K1:
+            columns:
+                - FREE_STORAGE_AREA
+                - SPK_PROPERTYID
+        _dta_index_SPK_IND_BK_TECH_9_83531381__K21:
+            columns:
+                - FREE_STORAGE_AREA
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K1_16_21_22_25:
+            columns:
+                - SPK_PROPERTYID
+                - INDUSTRIAL_AREA
+                - FREE_STORAGE_AREA
+                - FREE_OFFICE_AREA
+                - MEZONIN_AREA
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K1_16_21_22_23_25:
+            columns:
+                - SPK_PROPERTYID
+                - INDUSTRIAL_AREA
+                - FREE_STORAGE_AREA
+                - FREE_OFFICE_AREA
+                - ADDITIONAL_AREA
+                - MEZONIN_AREA
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K15:
+            columns:
+                - TOTAL_AREA
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K1_K15:
+            columns:
+                - SPK_PROPERTYID
+                - TOTAL_AREA
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K15_K1:
+            columns:
+                - TOTAL_AREA
+                - SPK_PROPERTYID
+        _dta_index_SPK_IND_BK_TECH_5_83531381__K1_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41:
+            columns:
+                - SPK_PROPERTYID
+                - CLASS
+                - TOTAL_AREA
+                - INDUSTRIAL_AREA
+                - STORAGE_AREA
+                - OFFICE_AREA
+                - GROUND_AREA
+                - LAND_AREA
+                - FREE_STORAGE_AREA
+                - FREE_OFFICE_AREA
+                - ADDITIONAL_AREA
+                - BOCK_TYPE
+                - MEZONIN_AREA
+                - GOODS
+                - AVAILABLE_PALETOMEST
+                - TOTAL_AREA_PALETOMEST
+                - AVAILABLE_AREA
+                - AVAILABLE_AREA_M3
+                - TOTAL_AREA_M3
+                - AVAILABLE_AREA_MASS
+                - TOTAL_AREA_MASS
+                - PALLET_TYPE
+                - TEMPERATURE_TYPE
+                - MEZONIN_STORAGE
+                - STORAGE_TYPE
+                - STORAGE_METHOD
+                - PANDUS
+                - PANDUS_NEAR
+                - TPL_SERVICES
+    uniqueConstraints:
+        SPK_IND_BK_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        ceillingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILLING_HEIGHT
+        floorType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FLOOR_TYPE
+        floorHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FLOOR_HEIGHT
+        floorWeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FLOOR_WEIGHT
+        columnGrid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COLUMN_GRID
+        commentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_ENG
+        storey:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: STOREY
+        class:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: CLASS
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        storageArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STORAGE_AREA
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        groundArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: GROUND_AREA
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        freeStorageArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_STORAGE_AREA
+        freeOfficeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_OFFICE_AREA
+        additionalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ADDITIONAL_AREA
+        bockType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: BOCK_TYPE
+        mezoninArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MEZONIN_AREA
+        goods:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: GOODS
+        availablePaletomest:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABLE_PALETOMEST
+        totalAreaPaletomest:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA_PALETOMEST
+        availableArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABLE_AREA
+        availableAreaM3:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABLE_AREA_M3
+        totalAreaM3:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA_M3
+        availableAreaMass:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AVAILABLE_AREA_MASS
+        totalAreaMass:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA_MASS
+        palletType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PALLET_TYPE
+        temperatureType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TEMPERATURE_TYPE
+        mezoninStorage:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: MEZONIN_STORAGE
+        storageType:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: STORAGE_TYPE
+        storageMethod:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: STORAGE_METHOD
+        pandus:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PANDUS
+        pandusNear:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PANDUS_NEAR
+        tplServices:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: TPL_SERVICES
+        landCategory:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: LAND_CATEGORY
+        landUsetype:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: LAND_USETYPE
+        termOfLease:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: TERM_OF_LEASE
+        landAreaSqm:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA_SQM
+        divided:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DIVIDED
+        coordinate:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: COORDINATE
+    lifecycleCallbacks: {  }
