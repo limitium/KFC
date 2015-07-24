@@ -5,9 +5,9 @@ AppBundle\Entity\SpkInvestment:
         SPK_INVESTMENT_PRIMARY:
             columns:
                 - SPK_PROPERTYID
-    id: {  }
     fields:
         spkPropertyid:
+            id: true
             type: string
             nullable: false
             length: 12

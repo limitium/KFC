@@ -1,5 +1,10 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+_welcome:
+    pattern:  /
+    defaults: { _controller: AppBundle:Layout:index }
+
+_main:
+    resource: routing_rest.yml
+    prefix: /api
+
 imag_ldap:
   resource: "@IMAGLdapBundle/Resources/config/routing.yml"

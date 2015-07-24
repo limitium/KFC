@@ -1,10 +1,10 @@
-class OffersList extends Controller
+class InvestmentList extends Controller
   constructor: (@$router, @$http) ->
     @busy = true
 
-OffersList::activate = ->
-  @$http.get('/api/offers')
+InvestmentList::activate = ->
+  @$http.get('/api/investment')
   .success((data, status, headers, config) =>
-    @offers = data;
+    @investments = data;
   )
   .finally(=> @busy = false)

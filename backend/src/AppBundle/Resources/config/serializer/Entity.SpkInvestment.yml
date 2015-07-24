@@ -1,0 +1,17 @@
+AppBundle\Entity\SpkInvestment:
+    exclusion_policy: ALL
+    properties:
+        spkPropertyid:
+            expose: true
+        nameRus:
+            expose: true
+#        Lookups:
+#            expose: true
+#            groups: [List]
+#    virtual_properties:
+#            getImageUrl:
+#                serialized_name: image
+#            getAvatarUrl:
+#                serialized_name: avatar
+#            getViewsCount:
+#                serialized_name: views

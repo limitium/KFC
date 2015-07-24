@@ -1,0 +1,3 @@
+invest:
+    type:     rest
+    resource: AppBundle\Controller\InvestController

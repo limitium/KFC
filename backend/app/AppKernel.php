@@ -19,6 +19,8 @@ class AppKernel extends Kernel
 
             new Realestate\MssqlBundle\RealestateMssqlBundle(),
             new IMAG\LdapBundle\IMAGLdapBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
 
             new AppBundle\AppBundle(),
         );

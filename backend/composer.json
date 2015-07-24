@@ -21,7 +21,10 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "realestateconz/mssql-bundle":"dev-master",
-        "imag/ldap-bundle": "dev-master"
+        "imag/ldap-bundle": "dev-master",
+        "friendsofsymfony/rest-bundle": "^1.5",
+        "jms/serializer-bundle": "^0.13.0",
+        "gedmo/doctrine-extensions": "2.3.*"
 
     },
     "require-dev": {
