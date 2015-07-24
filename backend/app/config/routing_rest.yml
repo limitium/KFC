@@ -1,3 +1,6 @@
 invest:
     type:     rest
     resource: AppBundle\Controller\InvestController
+picklist:
+    type:     rest
+    resource: AppBundle\Controller\PicklistController
