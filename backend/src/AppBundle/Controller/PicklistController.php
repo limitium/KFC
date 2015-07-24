@@ -24,7 +24,6 @@ class PicklistController extends Controller
      */
     public function getPicklistAction(ParamFetcher $params)
     {
-        $em = $this->getDoctrine()->getManager();
         $type = $params->get('type', '');
         $rsm = new ResultSetMapping();
         $rsm->addScalarResult('picklistid', 'picklistid');
@@ -32,7 +31,7 @@ class PicklistController extends Controller
         $rsm->addScalarResult('shorttext', 'shorttext');
         $rsm->addScalarResult('text', 'text');
         $rsm->addScalarResult('shorttext', 'shorttext');
-        $entities = $this->getDoctrine()->getManager()->createNativeQuery("select pp.itemid picklistid,
+        return $this->getDoctrine()->getManager()->createNativeQuery("select pp.itemid picklistid,
                 pp.text picklistname,
                 pc.text,
                 pc.shorttext,
@@ -41,6 +40,5 @@ class PicklistController extends Controller
                 left join picklist pc on pp.itemid = pc.picklistid
                 where pp.picklistid = 'PICKLISTLIST'
                 and pp.text like ?", $rsm)->setParameter(1, $type)->getResult();
-        return $entities;
     }
 }
