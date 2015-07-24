@@ -31,14 +31,20 @@ class PicklistController extends Controller
         $rsm->addScalarResult('shorttext', 'shorttext');
         $rsm->addScalarResult('text', 'text');
         $rsm->addScalarResult('shorttext', 'shorttext');
-        return $this->getDoctrine()->getManager()->createNativeQuery("select pp.itemid picklistid,
+        $em = $this->getDoctrine()->getManager();
+        $nativeQuery = "select pp.itemid picklistid,
                 pp.text picklistname,
                 pc.text,
                 pc.shorttext,
                 pc.itemid
                 from picklist pp
                 left join picklist pc on pp.itemid = pc.picklistid
-                where pp.picklistid = 'PICKLISTLIST'
-                and pp.text like ?", $rsm)->setParameter(1, $type)->getResult();
+                where pp.picklistid = 'PICKLISTLIST'";
+        if ($type) {
+            $nativeQuery .= " and pp.text like ?";
+            return $em->createNativeQuery($nativeQuery, $rsm)->setParameter(1, $type)->getResult();
+        } else {
+            return $em->createNativeQuery($nativeQuery, $rsm)->getResult();
+        }
     }
 }
