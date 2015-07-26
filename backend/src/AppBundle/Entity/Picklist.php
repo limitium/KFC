@@ -57,7 +57,6 @@ class Picklist
 
     /**
      * @var string
-     *
      * @ORM\Column(name="ITEMID", type="string", length=12, nullable=true)
      */
     private $itemid;
