@@ -42,6 +42,7 @@ gulp.task 'vendor', ->
     'node_modules/jquery/dist/jquery.js'
     'node_modules/materialize-css/bin/materialize.js'
     'node_modules/angular/angular.js'
+    'node_modules/angular-resource/angular-resource.min.js'
     'node_modules/angular-new-router/dist/router.es5.js'
     'node_modules/angular-moment/node_modules/moment/moment.js'
     'node_modules/angular-moment/angular-moment.js'

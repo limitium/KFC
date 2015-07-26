@@ -15,11 +15,15 @@ class Main extends Controller
       path: '/offer/edit/:id'
       components:
         main: 'offerEdit'
+    ,
+      path: '/test/all-lists'
+      components:
+        main: 'allLists'
     ]
 
 
 class App extends App
   constructor: ->
-    return ['ngNewRouter','angularMoment']
+    return ['ngNewRouter','angularMoment','ngResource']
 
 

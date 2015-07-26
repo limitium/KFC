@@ -40,7 +40,7 @@ class PickListService
             ->where('p.text LIKE :type')
             ->setParameter('type', $type)
             ->getQuery()
-            ->getResult();
+            ->getOneOrNullResult();
         return $result;
     }
 
