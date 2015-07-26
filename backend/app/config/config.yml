@@ -99,3 +99,9 @@ fos_rest:
     routing_loader:
         default_format: json
     param_fetcher_listener: true
+
+jms_di_extra:
+    locations:
+        all_bundles: false
+        bundles: [AppBundle]
+        directories: ["%kernel.root_dir%/../src"]

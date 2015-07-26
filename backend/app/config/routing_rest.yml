@@ -3,4 +3,4 @@ invest:
     resource: AppBundle\Controller\InvestController
 picklist:
     type:     rest
-    resource: AppBundle\Controller\PicklistController
+    resource: AppBundle\Controller\PickListController

@@ -8,14 +8,27 @@
 
 namespace AppBundle\Service;
 
+use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query\ResultSetMapping;
 
+use JMS\DiExtraBundle\Annotation\Inject;
+use JMS\DiExtraBundle\Annotation\InjectParams;
+use JMS\DiExtraBundle\Annotation\Service;
 
-class PicklistService
+/**
+ * @Service("stein.pick_list")
+ */
+class PickListService
 {
     protected $em;
 
-    public function __construct(\Doctrine\ORM\EntityManager $em)
+    /**
+     * @InjectParams({
+     *     "em" = @Inject("doctrine.orm.entity_manager")
+     * })
+     * @param EntityManager $em
+     */
+    public function __construct(EntityManager $em)
     {
         $this->em = $em;
     }
@@ -45,7 +58,7 @@ class PicklistService
     }
 
     /**
-     * @return \Doctrine\ORM\EntityManager
+     * @return EntityManager
      */
     public function getEm()
     {
@@ -53,7 +66,7 @@ class PicklistService
     }
 
     /**
-     * @param \Doctrine\ORM\EntityManager $em
+     * @param EntityManager $em
      */
     public function setEm($em)
     {
