@@ -2,6 +2,11 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\OneToMany;
+use Doctrine\ORM\Mapping\JoinColumn;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -35,11 +40,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Picklist
 {
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @var string
+     * @Id
+     * @ORM\Column(name="ITEMID", type="string", length=12, nullable=true)
      */
-    private $id;
+    private $itemid;
 
     /**
      * @var string
@@ -49,66 +54,19 @@ class Picklist
     private $text;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="SHORTTEXT", type="string", length=64, nullable=true)
-     */
-    private $shorttext;
+     * @OneToMany(targetEntity="PicklistItem", mappedBy="list", cascade={"all"})
+     **/
+    private $items;
 
     /**
      * @var string
-     * @ORM\Column(name="ITEMID", type="string", length=12, nullable=true)
-     */
-    private $itemid;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="PICKLISTID", type="string", length=12, nullable=true)
      */
     private $picklistid;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="USERID", type="string", length=12, nullable=true)
-     */
-    private $userid;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="DEFAULTINDEX", type="integer", nullable=true)
-     */
-    private $defaultindex;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="MODIFYDATE", type="datetime", nullable=true)
-     */
-    private $modifydate;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="MODIFYUSER", type="string", length=12, nullable=true)
-     */
-    private $modifyuser;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="CREATEDATE", type="datetime", nullable=true)
-     */
-    private $createdate;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="CREATEUSER", type="string", length=12, nullable=true)
-     */
-    private $createuser;
-
+    public function __construct() {
+        $this->items = new ArrayCollection();
+    }
 
 }

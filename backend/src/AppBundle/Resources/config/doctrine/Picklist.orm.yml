@@ -1,0 +1,110 @@
+AppBundle\Entity\Picklist:
+    type: entity
+    oneToMany:
+        items:
+          targetEntity: PicklistItem
+          mappedBy: list
+    table: PICKLIST
+    indexes:
+        KF_SR_IX_PICKLISTID:
+            columns:
+                - PICKLISTID
+                - TEXT
+                - SHORTTEXT
+        KF_SR_IX_ID:
+            columns:
+                - ID
+        _dta_index_PICKLIST_7_1323867783__K1_K2:
+            columns:
+                - ID
+                - TEXT
+        _dta_index_PICKLIST_7_1323867783__K2_1:
+            columns:
+                - TEXT
+                - ID
+        _dta_index_PICKLIST_c_7_1323867783__K2:
+            columns:
+                - TEXT
+        _dta_index_PICKLIST_7_1323867783__K1_K5_2:
+            columns:
+                - ID
+                - PICKLISTID
+                - TEXT
+        _dta_index_PICKLIST_7_1323867783__K5_2:
+            columns:
+                - PICKLISTID
+                - TEXT
+        _dta_index_PICKLIST_7_1323867783__K5_K1_2:
+            columns:
+                - PICKLISTID
+                - ID
+                - TEXT
+        _dta_index_PICKLIST_c_7_1323867783__K5:
+            columns:
+                - PICKLISTID
+        _dta_index_PICKLIST_7_1323867783__K1_2_4:
+            columns:
+                - ID
+                - TEXT
+                - ITEMID
+        _dta_index_PICKLIST_7_1323867783__K2_K1_4:
+            columns:
+                - TEXT
+                - ID
+                - ITEMID
+        _dta_index_PICKLIST_5_1323867783__K2_4:
+            columns:
+                - TEXT
+                - ITEMID
+        _dta_index_PICKLIST_5_1323867783__K1_K4_K2:
+            columns:
+                - ID
+                - ITEMID
+                - TEXT
+        _dta_index_PICKLIST_5_1323867783__K2_K4_K1:
+            columns:
+                - TEXT
+                - ITEMID
+                - ID
+        _dta_index_PICKLIST_5_1323867783__K1_K4:
+            columns:
+                - ID
+                - ITEMID
+        _dta_index_PICKLIST_5_1323867783__K4_K2:
+            columns:
+                - ITEMID
+                - TEXT
+        _dta_index_PICKLIST_5_1323867783__K4_K1_K2:
+            columns:
+                - ITEMID
+                - ID
+                - TEXT
+        _dta_index_PICKLIST_5_1323867783__K4_K1:
+            columns:
+                - ITEMID
+                - ID
+    uniqueConstraints:
+        KF_SR_IX_ITEMID:
+            columns:
+                - ITEMID
+    id:
+        itemid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ITEMID
+    fields:
+        text:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TEXT
+        picklistid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PICKLISTID
+    lifecycleCallbacks: {  }
