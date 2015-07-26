@@ -40,26 +40,31 @@ gulp.task 'scripts', ->
 gulp.task 'vendor', ->
   gulp.src([
     'node_modules/jquery/dist/jquery.js'
-    'node_modules/materialize-css/bin/materialize.js'
+    'node_modules/bootstrap/dist/js/bootstrap.min.js'
     'node_modules/angular/angular.js'
+    'node_modules/angular-ui-bootstrap/ui-bootstrap.min.js'
     'node_modules/angular-resource/angular-resource.min.js'
     'node_modules/angular-new-router/dist/router.es5.js'
     'node_modules/angular-moment/node_modules/moment/moment.js'
     'node_modules/angular-moment/angular-moment.js'
+    'node_modules/angular-sanitize/angular-sanitize.min.js'
+    'node_modules/ui-select/dist/select.min.js'
+
   ])
   .pipe concat('vendor.min.js')
   .pipe gulp.dest(buildFolder+'/js')
 
   gulp.src([
-    'node_modules/materialize-css/bin/materialize.css'
+    'node_modules/bootstrap/dist/css/bootstrap.css'
+    'node_modules/ui-select/dist/select.min.css'
   ])
   .pipe concat('vendor.min.css')
   .pipe(gulp.dest(buildFolder+'/css'))
 
   gulp.src([
-    'node_modules/materialize-css/font/**/*'
+    'node_modules/bootstrap/dist/fonts/**/*'
   ])
-  .pipe(gulp.dest(buildFolder+'/font'))
+  .pipe(gulp.dest(buildFolder+'/fonts'))
 
 gulp.task 'styles', ->
   gulp.src([
