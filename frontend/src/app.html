@@ -10,18 +10,23 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body ng-app="pw" ng-controller="MainController as app">
+<body ng-app="kfc" ng-controller="MainController as app">
 <head>
-    <nav>
-        <div class="nav-wrapper blue lighten-2">
-            <a href="#!" class="brand-logo">KFC</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/logout"><i class="mdi-action-open-in-new"></i></a></li>
-            </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    KFC
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <p class="navbar-text navbar-right"><a href="/logout"><i class="mdi-action-open-in-new"></i></a></p>
+            </div>
         </div>
     </nav>
 </head>
 <main ng-viewport="main">
+
 </main>
 
 <script src="js/vendor.min.js?2"></script>

@@ -22,7 +22,7 @@ gulp.task 'scripts', ->
   gulp.src('./src/**/*.coffee')
   .pipe sourcemaps.init()
   .pipe ngClassify(
-    appName: 'pw'
+    appName: 'kfc'
     controller:
       format: 'upperCamelCase'
       suffix: 'Controller'

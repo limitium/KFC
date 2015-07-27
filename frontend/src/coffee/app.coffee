@@ -8,9 +8,9 @@ class Main extends Controller
       components:
         main:'investmentList'
     ,
-      path: '/offer/new'
+      path: '/investment/new'
       components:
-        main: 'offerNew'
+        main: 'investmentNew'
     ,
       path: '/offer/edit/:id'
       components:
