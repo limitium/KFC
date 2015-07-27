@@ -1,26 +1,14 @@
 <div class="container">
 
     <form class="form-horizontal">
-        <div class="form-group">
-            <div class="col-sm-10">
-                <h3>Activity charge type: {{allLists.selected.activityChargeType}}</h3>
-                <ui-select id="activityChargeSelect" ng-model="allLists.selected.activityChargeType">
+        <div class="form-group" ng-repeat="list in allLists.allLists">
+            <div class="col-sm-6">
+                <p>{{allLists.allLists[$index].text}} {{allLists.selectedAllLists[$index]}}</p>
+                <ui-select ng-model="allLists.selectedAllLists[$index]">
                     <ui-select-match placeholder="Select type...">{{$select.selected.text}}</ui-select-match>
-                    <ui-select-choices repeat="type in allLists.activityChargeType.items | filter:$select.search">
-                        <span ng-bind-html="type.text | highlight: $select.search"></span>
-                        <small ng-bind-html="type.shorttext | highlight: $select.search"></small>
-                    </ui-select-choices>
-                </ui-select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-10">
-                <h3>Activity charge type:</h3>
-                <ui-select id="activityChargeSelect" ng-model="allLists.selected.activityChargeType">
-                    <ui-select-match placeholder="Select type...">{{$select.selected.text}}</ui-select-match>
-                    <ui-select-choices repeat="type in allLists.activityChargeType.items | filter:$select.search">
-                        <span ng-bind-html="type.text | highlight: $select.search"></span>
-                        <small ng-bind-html="type.shorttext | highlight: $select.search"></small>
+                    <ui-select-choices repeat="item in list.items | filter:$select.search">
+                        <span ng-bind-html="item.text | highlight: $select.search"></span>
+                        <small ng-bind-html="item.shorttext | highlight: $select.search"></small>
                     </ui-select-choices>
                 </ui-select>
             </div>
