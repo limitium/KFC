@@ -9,7 +9,6 @@ class InvestmentNew extends Controller
     @busy = true
     @$http.post('/api/investments', @investment)
     .success((data, status, headers, config) =>
-
 #      @$router.parent.navigate('/')
       @ToastService.toast 'Investment created'
     )
