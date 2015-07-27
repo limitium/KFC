@@ -90,3 +90,9 @@ AppBundle\Entity\SpkInvestment:
             fixed: false
             column: SEGMENT
     lifecycleCallbacks: {  }
+    oneToOne:
+        property:
+            targetEntity: AppBundle\Entity\SpkProperty
+            mappedBy: investment
+            cascade:
+                - all

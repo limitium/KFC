@@ -6,220 +6,14 @@ AppBundle\Entity\SpkProperty:
             columns:
                 - SPK_PROPERTYID
                 - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_7_1341247833__K9_K1:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-        _dta_index_SPK_PROPERTY_7_1341247833__K1_K9_6:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-        _dta_index_SPK_PROPERTY_7_1341247833__K9_1_6:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-        _dta_index_SPK_PROPERTY_c_7_1341247833__K9:
-            columns:
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_7_1341247833__K1_6_9:
-            columns:
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_7_1341247833__K1_K9_6_7_8_11_12_13:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-                - WEBADDRESS
-                - REGION_OBJECT
-        _dta_index_SPK_PROPERTY_7_1341247833__K9_K1_6_7_8_11_12_13:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-                - WEBADDRESS
-                - REGION_OBJECT
-        _dta_index_SPK_PROPERTY_7_1341247833__K9_K1_6_7_8_11:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-        _dta_index_SPK_PROPERTY_7_1341247833__K1_K9_6_7_8_11:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_8_1912:
-            columns:
-                - SPK_PROPERTYID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_6_8_9:
-            columns:
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - KF_OBJECT
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_5_1341247833__K8_K1_9:
-            columns:
-                - KF_OBJECT
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_5_1341247833__K8_9:
-            columns:
-                - KF_OBJECT
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_5_1341247833__K9_K1_8:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K9_1_6_8:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K6_K9_1:
-            columns:
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-        _dta_index_SPK_PROPERTY_c_5_1341247833__K6_K9:
-            columns:
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_5_1341247833__K9_K1_6_7_8_11_13:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-                - REGION_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_K9_6_7_8_11_13:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-                - REGION_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K8_K1:
-            columns:
-                - KF_OBJECT
-                - SPK_PROPERTYID
-        _dta_index_SPK_PROPERTY_c_5_1341247833__K8:
-            columns:
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_K9_6_7_8:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K9_K1_6_7_8:
-            columns:
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - EXPORT
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_8_11:
-            columns:
-                - SPK_PROPERTYID
-                - KF_OBJECT
-                - COMPETITOR_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K9_K6_K1:
-            columns:
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - SPK_PROPERTYID
-        _dta_index_SPK_PROPERTY_c_5_1341247833__K9_K6:
-            columns:
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-        _dta_index_SPK_PROPERTY_5_1341247833__K8_K1_11:
-            columns:
-                - KF_OBJECT
-                - SPK_PROPERTYID
-                - COMPETITOR_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_6:
-            columns:
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-        _dta_index_SPK_PROPERTY_5_1341247833__K6_K9_K1_8:
-            columns:
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-                - SPK_PROPERTYID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K6:
-            columns:
-                - ACCOUNTMANAGERID
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_K9_K6_8:
-            columns:
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - ACCOUNTMANAGERID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K6_K1_K9_K8:
-            columns:
-                - ACCOUNTMANAGERID
-                - SPK_PROPERTYID
-                - SPK_ADDRESSID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K8_K1_6_9:
-            columns:
-                - KF_OBJECT
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_K6_K9_K8:
-            columns:
-                - SPK_PROPERTYID
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
-                - KF_OBJECT
-        _dta_index_SPK_PROPERTY_5_1341247833__K6_K1:
-            columns:
-                - ACCOUNTMANAGERID
-                - SPK_PROPERTYID
-        _dta_index_SPK_PROPERTY_5_1341247833__K1_K8_6_9:
-            columns:
-                - SPK_PROPERTYID
-                - KF_OBJECT
-                - ACCOUNTMANAGERID
-                - SPK_ADDRESSID
     uniqueConstraints:
         SPK_PROPERTY_PRIMARY:
             columns:
                 - SPK_PROPERTYID
-    id: {  }
+    id:
+        investment:
+            associationKey: true
     fields:
-        spkPropertyid:
-            type: string
-            nullable: false
-            length: 12
-            fixed: false
-            column: SPK_PROPERTYID
         createuser:
             type: string
             nullable: true
@@ -297,10 +91,19 @@ AppBundle\Entity\SpkProperty:
             nullable: true
             unsigned: false
             column: GPS_ID
-        investment:
+        investmentPl:
             type: string
             nullable: true
             length: 128
             fixed: false
             column: INVESTMENT
     lifecycleCallbacks: {  }
+    oneToOne:
+        investment:
+            targetEntity: AppBundle\Entity\SpkInvestment
+            inversedBy: property
+            joinColumns:
+                SPK_PROPERTYID:
+                    referencedColumnName: SPK_PROPERTYID
+                    onDelete: CASCADE
+                    onUpdate: CASCADE

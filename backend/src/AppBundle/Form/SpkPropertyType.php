@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class SpkInvestmentType extends AbstractType
+class SpkPropertyType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -19,16 +19,18 @@ class SpkInvestmentType extends AbstractType
             ->add('createdate')
             ->add('modifyuser')
             ->add('modifydate')
-            ->add('seccodeid')
-            ->add('id')
-            ->add('nameRus')
-            ->add('nameEng')
-            ->add('propertyType')
-            ->add('status')
-            ->add('comments')
-            ->add('updated')
-            ->add('segment')
-            ->add('property', new SpkPropertyType())
+            ->add('accountmanagerid')
+            ->add('export')
+            ->add('kfObject')
+            ->add('spkAddressid')
+            ->add('importsource')
+            ->add('competitorObject')
+            ->add('webaddress')
+            ->add('regionObject')
+            ->add('oldid')
+            ->add('gpsId')
+            ->add('investmentPl')
+            ->add('investment')
         ;
     }
     
@@ -38,7 +40,7 @@ class SpkInvestmentType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\SpkInvestment',
+            'data_class' => 'AppBundle\Entity\SpkProperty',
             'csrf_protection' => false
         ));
     }

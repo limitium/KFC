@@ -319,4 +319,32 @@ class SpkInvestment
     }
 
 
+    /**
+     * @var \AppBundle\Entity\SpkProperty
+     */
+    private $property;
+
+
+    /**
+     * Set property
+     *
+     * @param \AppBundle\Entity\SpkProperty $property
+     * @return SpkInvestment
+     */
+    public function setProperty(\AppBundle\Entity\SpkProperty $property = null)
+    {
+        $this->property = $property;
+        $property->setInvestment($this);
+        return $this;
+    }
+
+    /**
+     * Get property
+     *
+     * @return \AppBundle\Entity\SpkProperty
+     */
+    public function getProperty()
+    {
+        return $this->property;
+    }
 }

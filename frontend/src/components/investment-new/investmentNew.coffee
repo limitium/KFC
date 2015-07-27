@@ -3,6 +3,9 @@ class InvestmentNew extends Controller
     @investPropertyType = @ListApi.Lists.investPropertyType();
     @investment =
       nameRus: ''
+      property:
+        createuser: ''
+
 
     @busy = false
 

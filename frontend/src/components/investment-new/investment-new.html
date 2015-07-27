@@ -17,6 +17,21 @@
                             placeholder="Name rus">
                 </div>
 
+                <div
+                        class="form-group"
+                        ng-class="{'has-error':investmentForm.Property.createuser.$invalid}"
+                        >
+                    <label class="control-label" for="property.createuser">Property createuser</label>
+                    <input
+                            id="property.createuser"
+                            name="property.createuser"
+                            type="text"
+                            class="form-control"
+                            required="required"
+                            ng-model="investmentNew.investment.property.createuser"
+                            placeholder="Property createuser">
+                </div>
+
                 <div class="form-group">
                     <label class="control-label">Object type</label>
                     <ui-select ng-model="investmentNew.investment.propertyType">
