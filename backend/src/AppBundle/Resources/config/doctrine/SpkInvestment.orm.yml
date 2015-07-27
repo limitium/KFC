@@ -5,14 +5,18 @@ AppBundle\Entity\SpkInvestment:
         SPK_INVESTMENT_PRIMARY:
             columns:
                 - SPK_PROPERTYID
-    fields:
+    id:
         spkPropertyid:
-            id: true
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_PROPERTYID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
+    fields:
         createuser:
             type: string
             nullable: true

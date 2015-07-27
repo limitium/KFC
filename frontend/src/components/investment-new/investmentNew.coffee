@@ -1,14 +1,13 @@
 class InvestmentNew extends Controller
   constructor: (@$rootScope, @$http, @$router, @ToastService)->
     @investment =
-      spk_propertyid: ''
-      name_rus: ''
+      nameRus: ''
 
     @busy = false
 
   add: =>
     @busy = true
-    @$http.post('/api/investment', @investment)
+    @$http.post('/api/investments', @investment)
     .success((data, status, headers, config) =>
 
 #      @$router.parent.navigate('/')
