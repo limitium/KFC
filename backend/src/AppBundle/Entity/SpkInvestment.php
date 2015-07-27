@@ -7,108 +7,316 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * SpkInvestment
  *
- * @ORM\Table(name="SPK_INVESTMENT", uniqueConstraints={@ORM\UniqueConstraint(name="SPK_INVESTMENT_PRIMARY", columns={"SPK_PROPERTYID"})})
- * @ORM\Entity
  */
 class SpkInvestment
 {
     /**
      * @var string
      *
-     * @ORM\Column(name="SPK_PROPERTYID", type="string", length=12, nullable=false)
      */
     private $spkPropertyid;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CREATEUSER", type="string", length=12, nullable=true)
      */
     private $createuser;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="CREATEDATE", type="datetime", nullable=true)
      */
     private $createdate;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="MODIFYUSER", type="string", length=12, nullable=true)
      */
     private $modifyuser;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="MODIFYDATE", type="datetime", nullable=true)
      */
     private $modifydate;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="SECCODEID", type="string", length=12, nullable=true)
      */
     private $seccodeid;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ID", type="string", length=10, nullable=true)
      */
     private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="NAME_RUS", type="string", length=128, nullable=true)
      */
     private $nameRus;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="NAME_ENG", type="string", length=128, nullable=true)
      */
     private $nameEng;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="PROPERTY_TYPE", type="string", length=32, nullable=true)
      */
     private $propertyType;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="STATUS", type="string", length=32, nullable=true)
      */
     private $status;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="COMMENTS", type="string", length=2048, nullable=true)
      */
     private $comments;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="UPDATED", type="datetime", nullable=true)
      */
     private $updated;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="SEGMENT", type="string", length=32, nullable=true)
      */
     private $segment;
+
+    /**
+     * @return string
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * @param string $spkPropertyid
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * @param string $createuser
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * @param \DateTime $createdate
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * @param string $modifyuser
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * @param \DateTime $modifydate
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * @param string $seccodeid
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param string $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNameRus()
+    {
+        return $this->nameRus;
+    }
+
+    /**
+     * @param string $nameRus
+     */
+    public function setNameRus($nameRus)
+    {
+        $this->nameRus = $nameRus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNameEng()
+    {
+        return $this->nameEng;
+    }
+
+    /**
+     * @param string $nameEng
+     */
+    public function setNameEng($nameEng)
+    {
+        $this->nameEng = $nameEng;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPropertyType()
+    {
+        return $this->propertyType;
+    }
+
+    /**
+     * @param string $propertyType
+     */
+    public function setPropertyType($propertyType)
+    {
+        $this->propertyType = $propertyType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param string $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return string
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param string $comments
+     */
+    public function setComments($comments)
+    {
+        $this->comments = $comments;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
+
+    /**
+     * @param \DateTime $updated
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSegment()
+    {
+        return $this->segment;
+    }
+
+    /**
+     * @param string $segment
+     */
+    public function setSegment($segment)
+    {
+        $this->segment = $segment;
+    }
 
 
 }
