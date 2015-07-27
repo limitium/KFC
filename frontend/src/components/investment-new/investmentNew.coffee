@@ -1,5 +1,6 @@
 class InvestmentNew extends Controller
-  constructor: (@$rootScope, @$http, @$router, @ToastService)->
+  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi)->
+    @investPropertyType = @ListApi.Lists.investPropertyType();
     @investment =
       nameRus: ''
 
