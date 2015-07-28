@@ -53,4 +53,13 @@ class User extends LdapUser
     {
         return $this->dbUsername;
     }
+
+    /**
+     * @param string $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 }

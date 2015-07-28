@@ -10,6 +10,7 @@ imports:
 parameters:
     locale: en
     jms_serializer.camel_case_naming_strategy.class: AppBundle\Serializer\Naming\CamelCaseNamingStrategy
+    imag_ldap.security.user.provider.class: AppBundle\Provider\UserProvider
 
 framework:
     #esi:             ~
