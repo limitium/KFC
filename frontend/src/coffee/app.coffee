@@ -2,9 +2,9 @@ class Main extends Controller
   constructor: (@$router) ->
     @$router.config [
       path: '/'
-      redirectTo : '/investment'
+      redirectTo : '/investments'
     ,
-      path: '/investment'
+      path: '/investments'
       components:
         main:'investmentList'
     ,

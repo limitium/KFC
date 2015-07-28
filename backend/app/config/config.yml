@@ -7,6 +7,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    jms_serializer.camel_case_naming_strategy.class: AppBundle\Serializer\Naming\CamelCaseNamingStrategy
 
 framework:
     #esi:             ~
@@ -105,3 +106,7 @@ jms_di_extra:
         all_bundles: false
         bundles: [AppBundle]
         directories: ["%kernel.root_dir%/../src"]
+
+#jms_serializer:
+#    camel_case_naming_strategy:
+#        class:

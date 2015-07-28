@@ -3,7 +3,7 @@ class InvestmentList extends Controller
     @busy = true
 
 InvestmentList::activate = ->
-  @$http.get('/api/investment')
+  @$http.get('/api/investments')
   .success((data, status, headers, config) =>
     @investments = data;
   )

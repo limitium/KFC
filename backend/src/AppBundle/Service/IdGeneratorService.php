@@ -33,7 +33,6 @@ class IdGeneratorService
         $this->host = $host;
         $this->user = $user;
         $this->password = $password;
-        $this->connect();
     }
 
 
@@ -44,6 +43,7 @@ class IdGeneratorService
      */
     public function getId($tableName)
     {
+        $this->connect();
         $sql = "
 DECLARE @NEW_ID VARCHAR(12);
 EXEC SYSDBA.SLXNEWID
@@ -93,6 +93,8 @@ SELECT @NEW_ID as ID
 
     private function connect()
     {
-        $this->connection = mssql_connect($this->host, $this->user, $this->password);
+        if (!$this->connection) {
+            $this->connection = mssql_connect($this->host, $this->user, $this->password);
+        }
     }
 }
