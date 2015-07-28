@@ -97,5 +97,6 @@ gulp.task 'watch', ->
   gulp.watch(['./src/**/*.coffee'], ['scripts'])
   #  gulp.watch(['./frontend/src/less/**/*.less'], ['styles'])
   gulp.watch(['./src/**/*.html'], ['html'])
+  gulp.watch(['./src/**/*.css'], ['styles'])
 
 gulp.task('default', ['server', 'vendor', 'scripts', 'styles', 'html', 'browser-sync', 'watch'])

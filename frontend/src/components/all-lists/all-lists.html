@@ -1,17 +1,26 @@
 <div class="container">
 
     <form class="form-horizontal">
-        <div class="form-group" ng-repeat="list in allLists.allLists">
-            <div class="col-sm-6">
-                <p>{{allLists.allLists[$index].text}} {{allLists.selectedAllLists[$index]}}</p>
-                <ui-select ng-model="allLists.selectedAllLists[$index]">
-                    <ui-select-match placeholder="Select type...">{{$select.selected.text}}</ui-select-match>
-                    <ui-select-choices repeat="item in list.items | filter:$select.search">
-                        <span ng-bind-html="item.text | highlight: $select.search"></span>
-                        <small ng-bind-html="item.shorttext | highlight: $select.search"></small>
-                    </ui-select-choices>
-                </ui-select>
-            </div>
-        </div>
+        <!--<div class="form-group" ng-repeat="list in allLists.allLists">-->
+            <!--<div class="col-sm-6">-->
+                <!--<p>{{allLists.allLists[$index].text}} {{allLists.selectedAllLists[$index]}}</p>-->
+                <!--<ui-select ng-model="allLists.selectedAllLists[$index]">-->
+                    <!--<ui-select-match placeholder="Select type...">{{$select.selected.text}}</ui-select-match>-->
+                    <!--<ui-select-choices repeat="item in list.items | filter:$select.search">-->
+                        <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+                        <!--<small ng-bind-html="item.shorttext | highlight: $select.search"></small>-->
+                    <!--</ui-select-choices>-->
+                <!--</ui-select>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <h3>Array of strings</h3>
+        <ui-select multiple ng-model="allLists.colors" ng-disabled="disabled" style="width: 300px;">
+            <ui-select-match placeholder="Select colors...">{{$item.text}}</ui-select-match>
+            <ui-select-choices repeat="item in allLists.investSegment.items | filter:$select.search">
+            </ui-select-choices>
+        </ui-select>
+
+        {{allLists.colors | json}}
     </form>
 </div>
