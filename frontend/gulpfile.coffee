@@ -49,7 +49,6 @@ gulp.task 'vendor', ->
     'node_modules/angular-moment/angular-moment.js'
     'node_modules/angular-sanitize/angular-sanitize.min.js'
     'node_modules/ui-select/dist/select.min.js'
-
   ])
   .pipe concat('vendor.min.js')
   .pipe gulp.dest(buildFolder+'/js')
@@ -57,12 +56,14 @@ gulp.task 'vendor', ->
   gulp.src([
     'node_modules/bootstrap/dist/css/bootstrap.css'
     'node_modules/ui-select/dist/select.min.css'
+    'node_modules/font-awesome/css/font-awesome.min.css'
   ])
   .pipe concat('vendor.min.css')
   .pipe(gulp.dest(buildFolder+'/css'))
 
   gulp.src([
     'node_modules/bootstrap/dist/fonts/**/*'
+    'node_modules/font-awesome/fonts/**/*'
   ])
   .pipe(gulp.dest(buildFolder+'/fonts'))
 

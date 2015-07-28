@@ -1,4 +1,4 @@
-_welcome:
+fronted_app:
     pattern:  /
     defaults: { _controller: AppBundle:Layout:index }
 
