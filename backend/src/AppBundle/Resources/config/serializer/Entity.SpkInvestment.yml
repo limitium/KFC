@@ -5,6 +5,12 @@ AppBundle\Entity\SpkInvestment:
             expose: true
         nameRus:
             expose: true
+        createdate:
+            expose: true
+        createuser:
+            expose: true
+        modifydate:
+            expose: true
 #        Lookups:
 #            expose: true
 #            groups: [List]

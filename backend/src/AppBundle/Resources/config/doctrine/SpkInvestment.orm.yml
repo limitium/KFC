@@ -27,6 +27,9 @@ AppBundle\Entity\SpkInvestment:
             type: datetime
             nullable: true
             column: CREATEDATE
+            gedmo:
+                timestampable:
+                    on: create
         modifyuser:
             type: string
             nullable: true
@@ -37,6 +40,9 @@ AppBundle\Entity\SpkInvestment:
             type: datetime
             nullable: true
             column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         seccodeid:
             type: string
             nullable: true
