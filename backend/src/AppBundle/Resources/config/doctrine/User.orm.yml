@@ -1,0 +1,29 @@
+AppBundle\Entity\User:
+    type: entity
+    table: USERSECURITY
+    indexes:
+        PK_USERSECURITY:
+            columns:
+                - USERID
+    uniqueConstraints:
+        PK_USERSECURITY:
+            columns:
+                - USERID
+    id:
+        id:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
+    fields:
+        dbUsername:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: USERCODE

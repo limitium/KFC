@@ -67,3 +67,4 @@ imag_ldap:
 #        name_attribute: cn
 #        user_attribute: member
 #        user_id: username
+    user_class: AppBundle\Entity\User
