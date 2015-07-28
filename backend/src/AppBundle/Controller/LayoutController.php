@@ -19,5 +19,7 @@ class LayoutController extends Controller
      */
     public function indexAction()
     {
+        $user = $this->getUser();
+        die;
     }
 }
