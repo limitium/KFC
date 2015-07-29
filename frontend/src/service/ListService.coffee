@@ -25,3 +25,6 @@ class ListTransformer extends Service
       if !@idMapCache[list.itemid]
         @addToIdMapCache(list)
       @idMapCache[list.itemid]
+
+    @getById = (list, itemid) ->
+      @mapToId(list)[itemid]
