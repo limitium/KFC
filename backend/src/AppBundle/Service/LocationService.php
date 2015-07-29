@@ -33,13 +33,13 @@ class LocationService
         $this->em = $em;
     }
 
-    public function findByNameContaining($namePart, $maxResults = 10)
+    public function findCitiesByNameContaining($namePart, $maxResults = 100)
     {
         $result = $this->em
             ->getRepository('AppBundle:SpkCity')->createQueryBuilder('c')
             ->where('c.cityRus LIKE :name')
             ->setParameter('name', '%'.$namePart.'%')
-            ->setMaxRseults($maxResults)
+            ->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
             ->getResult();

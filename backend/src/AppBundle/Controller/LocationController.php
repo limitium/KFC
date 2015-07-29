@@ -32,7 +32,7 @@ class LocationController extends Controller
     public function getCitiesAction(ParamFetcher $params)
     {
         $namePart = $params->get('name', '');
-        return $this->ls->findByNameContaining($namePart);
+        return $this->ls->findCitiesByNameContaining($namePart);
     }
 
 
