@@ -3,8 +3,11 @@
 namespace AppBundle\Doctrine;
 
 use AppBundle\Service\IdGeneratorService;
+use Doctrine\DBAL\Configuration;
+use Doctrine\DBAL\DriverManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Id\AbstractIdGenerator;
+use PDO;
 
 class SpkIdGenerator extends AbstractIdGenerator
 {
@@ -13,7 +16,7 @@ class SpkIdGenerator extends AbstractIdGenerator
 
     function __construct()
     {
-        $this->generator = new IdGeneratorService("mssql","LinuxUser","frank#50");
+        $this->generator = new IdGeneratorService(new PDO("odbc:mssql", "LinuxUser", "frank#50"));
     }
 
     /**
