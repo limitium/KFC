@@ -12,7 +12,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Тип объекта</label>
                     <div class="col-sm-7">
-                        <ui-select ng-model="investmentNew.investment.propertyType" ng-change="investmentNew.onPropertyTypeChange()">
+                        <ui-select ng-model="investmentNew.investment.propertyType" ng-change="investmentNew.reset()">
                             <ui-select-match>{{$select.selected.text}}</ui-select-match>
                             <ui-select-choices
                                     repeat="item.text as item in investmentNew.getInvestPropertyType().items | filter:$select.search">
@@ -22,31 +22,33 @@
                     </div>
                 </div>
                 <div ng-include="investmentNew.currentTemplate"></div>
-                <div class="form-group">
-                    <div class="col-sm-offset-3 col-sm-9">
-                        <a
-                                ng-link="main:investmentList"
-                                ng-disabled="investmentNew.busy"
-                                ng-class="{disabled:investmentNew.busy}"
-                                class="btn btn-default">
-                            <i class="mdi-navigation-arrow-back left"></i>
-                            Cancel
-                        </a>
-                        <button
-                                ng-disabled="!investmentForm.$valid || investmentNew.busy"
-                                ng-class="{disabled:!investmentForm.$valid || investmentNew.busy}"
-                                ng-click="investmentNew.add()"
-                                class="btn btn-primary">
-                            <i class="mdi-navigation-check left"></i>
-                            Add
-                        </button>
-                    </div>
-                </div>
             </form>
         </div>
         <div class="col-sm-4">
             <h4>Resulting investment:</h4>
             {{investmentNew.investment | json}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-offset-9 col-sm-3">
+                <a
+                        ng-link="main:investmentList"
+                        ng-disabled="investmentNew.busy"
+                        ng-class="{disabled:investmentNew.busy}"
+                        class="btn btn-default">
+                    <i class="mdi-navigation-arrow-back left"></i>
+                    Отмена
+                </a>
+                <button
+                        ng-disabled="!investmentForm.$valid || investmentNew.busy"
+                        ng-class="{disabled:!investmentForm.$valid || investmentNew.busy}"
+                        ng-click="investmentNew.add()"
+                        class="btn btn-primary">
+                    <i class="mdi-navigation-check left"></i>
+                    Сохранить
+                </button>
+            </div>
         </div>
     </div>
 </div>
