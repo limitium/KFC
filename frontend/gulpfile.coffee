@@ -42,13 +42,13 @@ gulp.task 'vendor', ->
     'node_modules/jquery/dist/jquery.js'
     'node_modules/bootstrap/dist/js/bootstrap.min.js'
     'node_modules/angular/angular.js'
-    'node_modules/angular-ui-bootstrap/ui-bootstrap.min.js'
+    'node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js'
     'node_modules/angular-resource/angular-resource.min.js'
     'node_modules/angular-new-router/dist/router.es5.js'
     'node_modules/angular-moment/node_modules/moment/moment.js'
     'node_modules/angular-moment/angular-moment.js'
     'node_modules/angular-sanitize/angular-sanitize.min.js'
-    'node_modules/ui-select/dist/select.min.js'
+    'node_modules/ui-select/dist/select.js'
   ])
   .pipe concat('vendor.min.js')
   .pipe gulp.dest(buildFolder+'/js')
@@ -99,4 +99,4 @@ gulp.task 'watch', ->
   gulp.watch(['./src/**/*.html'], ['html'])
   gulp.watch(['./src/**/*.css'], ['styles'])
 
-gulp.task('default', ['server', 'vendor', 'scripts', 'styles', 'html', 'browser-sync', 'watch'])
+gulp.task('default', ['vendor', 'scripts', 'styles', 'html', 'browser-sync', 'watch'])

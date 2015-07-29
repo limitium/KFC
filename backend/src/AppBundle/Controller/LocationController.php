@@ -25,6 +25,15 @@ class LocationController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
+     * @return string
+     */
+    public function getCityAction($id)
+    {
+        return $this->ls->findOneCity($id);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
      * @Rest\QueryParam(name="name", nullable=false)
      * @param ParamFetcher $params
      * @return string
@@ -33,6 +42,18 @@ class LocationController extends Controller
     {
         $namePart = $params->get('name', '');
         return $this->ls->findCitiesByNameContaining($namePart);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getRegionsAction(ParamFetcher $params)
+    {
+        $namePart = $params->get('name', '');
+        return $this->ls->findRegionsByNameContaining($namePart);
     }
 
 

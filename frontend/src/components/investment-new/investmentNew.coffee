@@ -1,5 +1,5 @@
 class InvestmentNew extends Controller
-  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @ListTransformerService)->
+  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService)->
 
     mapAdditionalInvestments = (investSegment) =>
       nMap = @ListTransformerService.mapToName(investSegment)
@@ -24,6 +24,8 @@ class InvestmentNew extends Controller
         propertyType: @investment.propertyType
         encumbrances: []
         investSegments: []
+        location:
+          city: @LocationApi.Cities.get({id: 'Q6UJ9A004W3L'})
 
       @getInvestSegment().$promise.then(mapAdditionalInvestments)
       @additionalSegments = []
@@ -94,20 +96,11 @@ class InvestmentNew extends Controller
       @areTepsVisible = 'без проработок' != @investment.landStatus
 
 
-    @getLocation = (val) ->
-      console.log 'Val', val
-      @$http.get('//maps.googleapis.com/maps/api/geocode/json', {
-        params: {
-          address: val,
-          sensor: false
-        }
-      }).then (response) ->
-        response.data.results.map (item) -> item.formatted_address
+    @getCities = (val) ->
+      @LocationApi.Cities.query({"name": val}).$promise
 
 
-
-
-#   Getters
+    #   Getters
     @getInvestPropertyType = ->
       @investPropertyType ?= @ListApi.Lists.investPropertyType()
     @getKfCurrency = ->

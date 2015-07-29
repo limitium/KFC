@@ -33,10 +33,28 @@ class LocationService
         $this->em = $em;
     }
 
+    public function findOneCity($id)
+    {
+        return $this->em->find('AppBundle:SpkCity', $id);
+    }
+
     public function findCitiesByNameContaining($namePart, $maxResults = 100)
     {
         $result = $this->em
             ->getRepository('AppBundle:SpkCity')->createQueryBuilder('c')
+            ->where('c.cityRus LIKE :name')
+            ->setParameter('name', '%'.$namePart.'%')
+            ->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->getResult();
+        return $result;
+    }
+
+    public function findRegionsByNameContaining($namePart, $maxResults = 100)
+    {
+        $result = $this->em
+            ->getRepository('AppBundle:SpkRegion')->createQueryBuilder('c')
             ->where('c.cityRus LIKE :name')
             ->setParameter('name', '%'.$namePart.'%')
             ->setMaxResults($maxResults)

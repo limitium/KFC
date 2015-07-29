@@ -11,3 +11,7 @@
     position: relative;
     padding-top: 8px;
 }
+
+.typeahead-loading-icon {
+    padding-top: 8px;
+}
