@@ -7,7 +7,7 @@ class InvestmentNew extends Controller
         encumbrances: []
         investSegments: []
 
-      if propertyType.text == 'Здание'
+      if propertyType == 'Здание'
         @additionalSegments = []
         @isIndividualSaleVisible = false
         @isPotokiVisible = false
@@ -26,66 +26,59 @@ class InvestmentNew extends Controller
       objectTypeTemplates = {}
       objectTypeTemplates['Здание'] = '/components/investment-new/building.html'
       objectTypeTemplates['Земельный участок'] = '/components/investment-new/parcel.html'
-      propertyType = @ListTransformerService.getById(@getInvestPropertyType(), @investment.propertyType)
-      initFor(propertyType)
-      @currentTemplate = objectTypeTemplates[propertyType.text]
+      initFor(@investment.propertyType)
+      @currentTemplate = objectTypeTemplates[@investment.propertyType]
 
-    mapAdditionalInvestments = (investment) =>
-      nMap = @ListTransformerService.mapToName(investment)
+    mapAdditionalInvestments = (investSegment) =>
+      nMap = @ListTransformerService.mapToName(investSegment)
       @mainToAdditionalMap = {}
-      @mainToAdditionalMap[nMap['Бизнес центр'].itemid] = [nMap["Торговый центр"], nMap["Склад"]]
-      @mainToAdditionalMap[nMap["Торговый центр"].itemid] = [nMap["Бизнес центр"], nMap["Склад"]]
-      @mainToAdditionalMap[nMap["Административное здание"].itemid] = []
-      @mainToAdditionalMap[nMap["Особняк"].itemid] = []
-      @mainToAdditionalMap[nMap["МФК"].itemid] = [nMap["Бизнес центр"], nMap["Торговый центр"], nMap["Отель"], nMap["Склад"]]
-      @mainToAdditionalMap[nMap["Склад"].itemid] = [nMap["Бизнес центр"]]
-      @mainToAdditionalMap[nMap["Отель"].itemid] = []
+      @mainToAdditionalMap[nMap['Бизнес центр'].text] = [nMap["Торговый центр"], nMap["Склад"]]
+      @mainToAdditionalMap[nMap["Торговый центр"].text] = [nMap["Бизнес центр"], nMap["Склад"]]
+      @mainToAdditionalMap[nMap["Административное здание"].text] = []
+      @mainToAdditionalMap[nMap["Особняк"].text] = []
+      @mainToAdditionalMap[nMap["МФК"].text] = [nMap["Бизнес центр"], nMap["Торговый центр"], nMap["Отель"], nMap["Склад"]]
+      @mainToAdditionalMap[nMap["Склад"].text] = [nMap["Бизнес центр"]]
+      @mainToAdditionalMap[nMap["Отель"].text] = []
 
     checkSqmMainSegment = =>
-      segment = @ListTransformerService.getById(@getInvestSegment(), @investment.segment)
-      @isOfficeSqmVisible = segment.text in ['Бизнес центр', 'Административное здание', 'Особняк']
-      @isRetailSqmVisible = segment.text == 'Торговый центр'
-      @isHotelSqmVisible = segment.text == 'Отель'
-      @isBedroomsVisible = segment.text == 'Отель'
-      @isIndustrialSqmVisible = segment.text == 'Склад'
+      @isOfficeSqmVisible = @investment.segment in ['Бизнес центр', 'Административное здание', 'Особняк']
+      @isRetailSqmVisible = @investment.segment == 'Торговый центр'
+      @isHotelSqmVisible = @investment.segment == 'Отель'
+      @isBedroomsVisible = @investment.segment == 'Отель'
+      @isIndustrialSqmVisible = @investment.segment == 'Склад'
 
 
     @onSegmentChange = ->
       @investment.investSegments = []
       @additionalSegments = @mainToAdditionalMap[@investment.segment]
-      segment = @ListTransformerService.getById(@getInvestSegment(), @investment.segment)
-      @isIndividualSaleVisible = segment.text == 'Бизнес центр'
-      @isPotokiVisible = segment.text == 'Торговый центр'
-
+      @isIndividualSaleVisible = @investment.segment == 'Бизнес центр'
+      @isPotokiVisible = @investment.segment == 'Торговый центр'
       checkSqmMainSegment()
 
     @onAdditionalSegmentChange = ->
-      idMap = @ListTransformerService.mapToId(@getInvestSegment())
-      additionalSegments = (idMap[id] for id in @investment.investSegments)
+      additionalSegments = @investment.investSegments
       @isIndividualSaleVisible = false
       @isPotokiVisible = false
       checkSqmMainSegment()
       for additionalSegment in additionalSegments
-        if additionalSegment.text == 'Бизнес центр'
+        if additionalSegment == 'Бизнес центр'
           @isOfficeSqmVisible = true
           @isIndividualSaleVisible = true
-        if additionalSegment.text == 'Торговый центр'
+        if additionalSegment == 'Торговый центр'
           @isRetailSqmVisible = true
           @isPotokiVisible = true
-        if additionalSegment.text == 'Склад'
+        if additionalSegment == 'Склад'
           @isIndustrialSqmVisible = true
-        if additionalSegment.text == 'Отель'
+        if additionalSegment == 'Отель'
           @isHotelSqmVisible = true
           @isBedroomsVisible = true
 
     @onLeaseStatusChange = ->
-      leaseStatus = @ListTransformerService.getById(@getInvestLeaseStatus(), @investment.leaseStatus)
-      @isTechOccupancyVisible = '% заполнения' == leaseStatus.text
-      @isNoiVisible = '% заполнения' == leaseStatus.text
+      @isTechOccupancyVisible = '% заполнения' == @investment.leaseStatus
+      @isNoiVisible = '% заполнения' == @investment.leaseStatus
 
     @onLandOwnerTypeChange = ->
-      landOwnerType = @ListTransformerService.getById(@getInvestLandLeaseTerm(), @investment.landOwnerType)
-      @isLandLeaseTermVisible = 'аренда до' == landOwnerType.text
+      @isLandLeaseTermVisible = 'аренда до' == @investment.landOwnerType
 
 
 

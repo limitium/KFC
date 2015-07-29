@@ -28,3 +28,6 @@ class ListTransformer extends Service
 
     @getById = (list, itemid) ->
       @mapToId(list)[itemid]
+
+    @getByName = (list, name) ->
+      @mapToName(list)[name]

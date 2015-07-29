@@ -8,7 +8,7 @@
         <ui-select ng-model="investmentNew.investment.amountCurrency">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getKfCurrency().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -34,7 +34,7 @@
         <ui-select ng-model="investmentNew.investment.vat">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestVat().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestVat().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -64,7 +64,7 @@
         <ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestSegment().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestSegment().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -76,7 +76,7 @@
         <ui-select multiple ng-model="investmentNew.investment.investSegments" ng-change="investmentNew.onAdditionalSegmentChange()">
             <ui-select-match>{{$item.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.additionalSegments | filter:$select.search">
+                    repeat="item.text as item in investmentNew.additionalSegments | filter:$select.search">
                 {{item.text}}
             </ui-select-choices>
         </ui-select>
@@ -88,7 +88,7 @@
         <ui-select ng-model="investmentNew.investment.status">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestStatus().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestStatus().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -100,7 +100,7 @@
         <ui-select ng-model="investmentNew.investment.class">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestClass().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestClass().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -112,7 +112,7 @@
         <ui-select ng-model="investmentNew.investment.fitOut">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestFitOut().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestFitOut().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -124,7 +124,7 @@
         <ui-select ng-model="investmentNew.investment.buildingStatus">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestBuildingStatus().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestBuildingStatus().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -150,7 +150,7 @@
         <ui-select multiple ng-model="investmentNew.investment.encumbrances">
             <ui-select-match>{{$item.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestObremenenie().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestObremenenie().items | filter:$select.search">
                 {{item.text}}
             </ui-select-choices>
         </ui-select>
@@ -162,7 +162,7 @@
         <ui-select ng-model="investmentNew.investment.leaseStatus" ng-change="investmentNew.onLeaseStatusChange()">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestLeaseStatus().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestLeaseStatus().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -192,7 +192,7 @@
         <ui-select ng-model="investmentNew.investment.noiCurrency">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getKfCurrency().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
@@ -325,7 +325,7 @@
         <ui-select ng-model="investmentNew.investment.landOwnerType" ng-change="investmentNew.onLandOwnerTypeChange()">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
-                    repeat="item.itemid as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
+                    repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
                 <span ng-bind-html="item.text | highlight: $select.search"></span>
             </ui-select-choices>
         </ui-select>
