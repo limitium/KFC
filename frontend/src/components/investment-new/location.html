@@ -1,0 +1,8 @@
+<h1>TBD</h1>
+<h4>Asynchronous results</h4>
+<pre>Model: {{investmentNew.asyncSelected | json}}</pre>
+<input type="text" ng-model="investmentNew.asyncSelected"
+       placeholder="Locations loaded via $http"
+       typeahead="address for address in investmentNew.getLocation($viewValue)"
+       typeahead-loading="loadingLocations" class="form-control">
+<i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>

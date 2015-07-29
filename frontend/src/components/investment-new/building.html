@@ -205,7 +205,8 @@
         <input type="number" class="form-control" id="potoki" ng-model="investmentNew.investment.potoki">
     </div>
 </div>
-<h3>Местоположение объекта</h3>
+<h3 style="cursor: pointer" ng-click="investmentNew.locationVisible = !investmentNew.locationVisible">Местоположение объекта</h3>
+<div ng-include="investmentNew.locationTemplate" ng-show="investmentNew.locationVisible"></div>
 <h3>ТЭПы</h3>
 <div class="form-group">
     <label for="tech-total-sqm" class="col-sm-4 control-label">Общая площадь (GBA), кв.м,<br/>в том числе:</label>

@@ -4,3 +4,6 @@ invest:
 picklist:
     type:     rest
     resource: AppBundle\Controller\PickListController
+location:
+    type:     rest
+    resource: AppBundle\Controller\LocationController

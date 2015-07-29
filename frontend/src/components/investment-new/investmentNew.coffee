@@ -19,6 +19,7 @@ class InvestmentNew extends Controller
       objectTypeTemplates = {}
       objectTypeTemplates['Здание'] = '/components/investment-new/building.html'
       objectTypeTemplates['Земельный участок'] = '/components/investment-new/parcel.html'
+      @locationTemplate = '/components/investment-new/location.html'
       @investment =
         propertyType: @investment.propertyType
         encumbrances: []
@@ -40,6 +41,7 @@ class InvestmentNew extends Controller
       @isResidentialSqmVisible = false
       @areTepsVisible = true
       @currentTemplate = objectTypeTemplates[@investment.propertyType]
+      @locationVisible = false
 
     @investment =
       propertyType: 'Здание'
@@ -90,6 +92,18 @@ class InvestmentNew extends Controller
 
     @onLandStatusChange = ->
       @areTepsVisible = 'без проработок' != @investment.landStatus
+
+
+    @getLocation = (val) ->
+      console.log 'Val', val
+      @$http.get('//maps.googleapis.com/maps/api/geocode/json', {
+        params: {
+          address: val,
+          sensor: false
+        }
+      }).then (response) ->
+        response.data.results.map (item) -> item.formatted_address
+
 
 
 
