@@ -25,7 +25,8 @@
         "friendsofsymfony/rest-bundle": "^1.5",
         "jms/serializer-bundle": "^0.13.0",
         "gedmo/doctrine-extensions": "2.3.*",
-        "jms/di-extra-bundle": "dev-master"
+        "jms/di-extra-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-master"
 
     },
     "require-dev": {

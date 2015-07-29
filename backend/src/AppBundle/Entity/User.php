@@ -61,5 +61,4 @@ class User extends LdapUser
     {
         $this->id = $id;
     }
-
 }

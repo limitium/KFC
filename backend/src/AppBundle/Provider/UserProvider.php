@@ -44,15 +44,13 @@ class UserProvider extends LdapUserProvider
     public function loadUserByUsername($username)
     {
         $ldapUser = parent::loadUserByUsername($username);
-        $this->mergeFromDb($ldapUser);
-        return $ldapUser;
+        return $this->mergeFromDb($ldapUser);
     }
 
     public function refreshUser(UserInterface $user)
     {
         $ldapUser = parent::refreshUser($user);
-        $this->mergeFromDb($ldapUser);
-        return $ldapUser;
+        return $this->mergeFromDb($ldapUser);
     }
 
     /**
@@ -66,6 +64,7 @@ class UserProvider extends LdapUserProvider
             throw new UsernameNotFoundException();
         }
         $this->merge($ldapUser, $dbUser);
+        return $dbUser;
     }
 
     /**
@@ -89,7 +88,10 @@ class UserProvider extends LdapUserProvider
      */
     private function merge(User $ldapUser, User $dbUser)
     {
-        $ldapUser->setId($dbUser->getId());
-        $ldapUser->setDbUsername($dbUser->getDbUsername());
+        $dbUser->setCn($ldapUser->getCn());
+        $dbUser->setDn($ldapUser->getDn());
+        $dbUser->setRoles($ldapUser->getRoles());
+        $dbUser->setUsername($ldapUser->getUsername());
+        $dbUser->setEmail($ldapUser->getEmail());
     }
 }

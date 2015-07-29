@@ -109,7 +109,10 @@ jms_di_extra:
         all_bundles: false
         bundles: [AppBundle]
         directories: ["%kernel.root_dir%/../src"]
-
+stof_doctrine_extensions:
+    orm:
+        default:
+            blameable: true
 #jms_serializer:
 #    camel_case_naming_strategy:
 #        class:
