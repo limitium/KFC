@@ -1,0 +1,23 @@
+AppBundle\Entity\KfFeeCountryTemp:
+    type: entity
+    table: kf_fee_country_temp
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        propertyType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: property_type
+        fee:
+            type: string
+            nullable: true
+            length: 8000
+            fixed: false
+    lifecycleCallbacks: {  }

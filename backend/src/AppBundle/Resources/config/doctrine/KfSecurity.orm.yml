@@ -1,0 +1,47 @@
+AppBundle\Entity\KfSecurity:
+    type: entity
+    table: KF_SECURITY
+    uniqueConstraints:
+        KF_SECURITY_PRIMARY:
+            columns:
+                - KF_SECURITYID
+    id: {  }
+    fields:
+        kfSecurityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_SECURITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        salesplan:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: SALESPLAN
+    lifecycleCallbacks: {  }

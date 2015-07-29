@@ -1,0 +1,18 @@
+AppBundle\Entity\KfBestArea:
+    type: entity
+    table: kf_best_area
+    id: {  }
+    fields:
+        bestid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BESTID
+        areaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AREAID
+    lifecycleCallbacks: {  }

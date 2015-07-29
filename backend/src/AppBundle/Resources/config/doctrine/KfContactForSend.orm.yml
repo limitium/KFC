@@ -1,0 +1,42 @@
+AppBundle\Entity\KfContactForSend:
+    type: entity
+    table: KF_CONTACT_FOR_SEND
+    uniqueConstraints:
+        KF_CONTACT_FOR_SEND_PRIMARY:
+            columns:
+                - KF_CONTACT_FOR_SENDID
+    id: {  }
+    fields:
+        kfContactForSendid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CONTACT_FOR_SENDID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+    lifecycleCallbacks: {  }

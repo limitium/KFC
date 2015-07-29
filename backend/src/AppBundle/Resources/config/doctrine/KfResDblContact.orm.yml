@@ -1,0 +1,24 @@
+AppBundle\Entity\KfResDblContact:
+    type: entity
+    table: kf_res_dbl_CONTACT
+    id: {  }
+    fields:
+        contactid1:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID1
+        contactid2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID2
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: userID
+    lifecycleCallbacks: {  }

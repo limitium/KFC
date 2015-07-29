@@ -1,0 +1,58 @@
+AppBundle\Entity\KfResidentilModifyid:
+    type: entity
+    table: KF_RESIDENTIL_MODIFYID
+    uniqueConstraints:
+        KF_RESIDENTIL_MODIFYID_PRIMARY:
+            columns:
+                - KF_RESIDENTIL_MODIFYIDID
+    id: {  }
+    fields:
+        kfResidentilModifyidid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_RESIDENTIL_MODIFYIDID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        oldid:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: OLDID
+        newid:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: NEWID
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        spkPhotoid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PHOTOID
+    lifecycleCallbacks: {  }

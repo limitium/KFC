@@ -1,0 +1,73 @@
+AppBundle\Entity\Userview:
+    type: entity
+    table: USERVIEW
+    indexes:
+        XIE1USERVIEW:
+            columns:
+                - USERID
+    uniqueConstraints:
+        XPKUSERVIEW:
+            columns:
+                - USERVIEWID
+    id: {  }
+    fields:
+        userviewid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERVIEWID
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        name:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: NAME
+        defview:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: DEFVIEW
+        data:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: DATA
+        modifieduser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFIEDUSER
+        modifieddate:
+            type: datetime
+            nullable: true
+            column: MODIFIEDDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

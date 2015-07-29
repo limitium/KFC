@@ -1,0 +1,144 @@
+AppBundle\Entity\KfRshIndustrialSlice:
+    type: entity
+    table: kf_rsh_industrial_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        freeTotalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: free_total_area
+        freeOfficeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: free_office_area
+        freeMezoninArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: free_mezonin_area
+        freeIndustrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: free_industrial_area
+        procFreeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PROC_FREE_AREA
+        rentIndustrialMin:
+            type: decimal
+            nullable: true
+            precision: 24
+            scale: 8
+            column: rent_industrial_min
+        rentIndustrialMax:
+            type: decimal
+            nullable: true
+            precision: 24
+            scale: 8
+            column: rent_industrial_max
+        rentOfficeMin:
+            type: decimal
+            nullable: true
+            precision: 24
+            scale: 8
+            column: rent_office_min
+        rentOfficeMax:
+            type: decimal
+            nullable: true
+            precision: 24
+            scale: 8
+            column: rent_office_max
+        minRentMesonin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: MIN_RENT_MESONIN
+        maxRentMesonin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: MAX_RENT_MESONIN
+        opexMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPEX_min
+        opexMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: OPEX_max
+        saleMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: sale_min
+        saleMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: sale_max
+        costPallet:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: cost_pallet
+        lulMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: lul_min
+        lulMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: lul_max
+        insdepMin:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: insdep_min
+        insdepMax:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: insdep_max
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

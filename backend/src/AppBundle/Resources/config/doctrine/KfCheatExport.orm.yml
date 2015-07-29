@@ -1,0 +1,42 @@
+AppBundle\Entity\KfCheatExport:
+    type: entity
+    table: KF_CHEAT_EXPORT
+    uniqueConstraints:
+        KF_CHEAT_EXPORT_PRIMARY:
+            columns:
+                - KF_CHEAT_EXPORTID
+    id: {  }
+    fields:
+        kfCheatExportid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CHEAT_EXPORTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        kfGroup:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_GROUP
+    lifecycleCallbacks: {  }

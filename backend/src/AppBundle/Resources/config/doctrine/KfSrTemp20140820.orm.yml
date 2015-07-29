@@ -1,0 +1,36 @@
+AppBundle\Entity\KfSrTemp20140820:
+    type: entity
+    table: KF_SR_TEMP_20140820
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        oldmanagerid:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+        department:
+            type: string
+            nullable: false
+            length: 11
+            fixed: false
+        segment:
+            type: string
+            nullable: false
+            length: 13
+            fixed: false
+        newmanagerid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,74 @@
+AppBundle\Entity\Usernotification:
+    type: entity
+    table: USERNOTIFICATION
+    indexes:
+        XIE1USERNOTIFICATION:
+            columns:
+                - TOUSERID
+    uniqueConstraints:
+        XPKUSERNOTIFICATION:
+            columns:
+                - NOTIFYID
+    id: {  }
+    fields:
+        notifyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: NOTIFYID
+        activityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACTIVITYID
+        touserid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: TOUSERID
+        fromuserid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: FROMUSERID
+        notes:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NOTES
+        senddate:
+            type: datetime
+            nullable: true
+            column: SENDDATE
+        type:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TYPE
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

@@ -1,0 +1,64 @@
+AppBundle\Entity\KfUserTarget:
+    type: entity
+    table: KF_USER_TARGET
+    uniqueConstraints:
+        KF_USER_TARGET_PRIMARY:
+            columns:
+                - KF_USER_TARGETID
+    id: {  }
+    fields:
+        kfUserTargetid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_USER_TARGETID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        yer:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: YER
+        estimatedAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ESTIMATED_AMOUNT
+        probability:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PROBABILITY
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+    lifecycleCallbacks: {  }

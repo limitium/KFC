@@ -1,0 +1,176 @@
+AppBundle\Entity\Userprofile:
+    type: entity
+    table: USERPROFILE
+    indexes:
+        KF_SR_IX_UserID_incl:
+            columns:
+                - USERID
+                - USERTEXT2
+        _dta_index_USERPROFILE_5_2101582525__K1_K6:
+            columns:
+                - USERID
+                - SPOUSE
+        _dta_index_USERPROFILE_5_2101582525__K6_K1:
+            columns:
+                - SPOUSE
+                - USERID
+        _dta_index_USERPROFILE_5_2101582525__K6:
+            columns:
+                - SPOUSE
+        _dta_index_USERPROFILE_5_2101582525__K1_7:
+            columns:
+                - USERID
+                - SSN
+    id: {  }
+    fields:
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        assetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ASSETID
+        assetdesc:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ASSETDESC
+        hiredate:
+            type: datetime
+            nullable: true
+            column: HIREDATE
+        birthdate:
+            type: datetime
+            nullable: true
+            column: BIRTHDATE
+        spouse:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SPOUSE
+        ssn:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SSN
+        employeenumber:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: EMPLOYEENUMBER
+        userdate1:
+            type: datetime
+            nullable: true
+            column: USERDATE1
+        userdate2:
+            type: datetime
+            nullable: true
+            column: USERDATE2
+        userdate3:
+            type: datetime
+            nullable: true
+            column: USERDATE3
+        userdate4:
+            type: datetime
+            nullable: true
+            column: USERDATE4
+        userdate5:
+            type: datetime
+            nullable: true
+            column: USERDATE5
+        usertext1:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERTEXT1
+        usertext2:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERTEXT2
+        usertext3:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERTEXT3
+        usertext4:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERTEXT4
+        usertext5:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERTEXT5
+        usernum1:
+            type: float
+            nullable: true
+            precision: 24
+            scale: 0
+            column: USERNUM1
+        usernum2:
+            type: float
+            nullable: true
+            precision: 24
+            scale: 0
+            column: USERNUM2
+        usernum3:
+            type: float
+            nullable: true
+            precision: 24
+            scale: 0
+            column: USERNUM3
+        usernum4:
+            type: float
+            nullable: true
+            precision: 24
+            scale: 0
+            column: USERNUM4
+        usernum5:
+            type: float
+            nullable: true
+            precision: 24
+            scale: 0
+            column: USERNUM5
+        notes:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOTES
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

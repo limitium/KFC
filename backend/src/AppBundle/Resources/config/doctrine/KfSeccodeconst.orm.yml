@@ -1,0 +1,16 @@
+AppBundle\Entity\KfSeccodeconst:
+    type: entity
+    table: KF_seccodeconst
+    id: {  }
+    fields:
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        description:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+    lifecycleCallbacks: {  }

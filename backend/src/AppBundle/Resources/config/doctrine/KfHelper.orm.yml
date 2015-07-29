@@ -1,0 +1,28 @@
+AppBundle\Entity\KfHelper:
+    type: entity
+    table: KF_Helper
+    id: {  }
+    fields:
+        kfHelperid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_Helperid
+        createdate:
+            type: date
+            nullable: true
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        modifydate:
+            type: date
+            nullable: true
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,17 @@
+AppBundle\Entity\KfCountryTargetBackup20140728:
+    type: entity
+    table: kf_country_target_backup_20140728
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+    lifecycleCallbacks: {  }

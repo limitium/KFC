@@ -1,0 +1,30 @@
+AppBundle\Entity\KfTempCountryCategoryAbc:
+    type: entity
+    table: kf_temp_country_category_ABC
+    id: {  }
+    fields:
+        id:
+            type: string
+            nullable: true
+            length: 7
+            fixed: false
+            column: ID
+        name:
+            type: string
+            nullable: true
+            length: 27
+            fixed: false
+            column: Name
+        category:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Category
+        market:
+            type: string
+            nullable: true
+            length: 9
+            fixed: false
+            column: Market
+    lifecycleCallbacks: {  }

@@ -1,0 +1,109 @@
+AppBundle\Entity\Virtualfilesystem:
+    type: entity
+    table: VIRTUALFILESYSTEM
+    indexes:
+        VFS_ITEMEXTENSION:
+            columns:
+                - ITEMEXTENSION
+        VFS_ITEMNAME:
+            columns:
+                - ITEMNAME
+        VFS_ITEMPATH:
+            columns:
+                - ITEMPATH
+        VFS_PARENTITEMID:
+            columns:
+                - PARENTITEMID
+    uniqueConstraints:
+        VFS_VFSID_PK:
+            columns:
+                - VIRTUALFILESYSTEMID
+    id: {  }
+    fields:
+        virtualfilesystemid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            column: VIRTUALFILESYSTEMID
+        createuser:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parentitemid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARENTITEMID
+        itemname:
+            type: string
+            nullable: true
+            length: 260
+            fixed: false
+            column: ITEMNAME
+        itempath:
+            type: string
+            nullable: true
+            length: 260
+            fixed: false
+            column: ITEMPATH
+        itemextension:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ITEMEXTENSION
+        isdirectory:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISDIRECTORY
+        isreadonly:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISREADONLY
+        issystem:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISSYSTEM
+        ishidden:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISHIDDEN
+        itemdata:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: ITEMDATA
+        itemattributes:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: ITEMATTRIBUTES
+    lifecycleCallbacks: {  }

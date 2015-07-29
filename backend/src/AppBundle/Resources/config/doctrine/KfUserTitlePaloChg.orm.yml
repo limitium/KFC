@@ -1,0 +1,58 @@
+AppBundle\Entity\KfUserTitlePaloChg:
+    type: entity
+    table: KF_USER_TITLE_PALO_CHG
+    uniqueConstraints:
+        KF_USER_TITLE_PALO_CHG_PRIMARY:
+            columns:
+                - KF_USER_TITLE_PALO_CHGID
+    id: {  }
+    fields:
+        kfUserTitlePaloChgid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_USER_TITLE_PALO_CHGID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        department:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: DEPARTMENT
+        division:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: DIVISION
+        changeDate:
+            type: datetime
+            nullable: true
+            column: CHANGE_DATE
+    lifecycleCallbacks: {  }

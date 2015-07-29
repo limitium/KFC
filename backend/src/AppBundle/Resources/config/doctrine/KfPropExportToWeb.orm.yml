@@ -1,0 +1,32 @@
+AppBundle\Entity\KfPropExportToWeb:
+    type: entity
+    table: KF_PROP_EXPORT_TO_WEB
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        exportdate:
+            type: datetime
+            nullable: false
+            column: EXPORTDATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        senddate:
+            type: datetime
+            nullable: true
+            column: SENDDATE
+    lifecycleCallbacks: {  }

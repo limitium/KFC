@@ -1,0 +1,16 @@
+AppBundle\Entity\KfSrTblContactWoManagers:
+    type: entity
+    table: KF_SR_TBL_CONTACT_WO_MANAGERS
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        managerid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

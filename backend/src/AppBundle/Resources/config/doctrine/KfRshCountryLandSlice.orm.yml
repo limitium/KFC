@@ -1,0 +1,51 @@
+AppBundle\Entity\KfRshCountryLandSlice:
+    type: entity
+    table: kf_rsh_country_land_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ID
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        costPer100Min:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_100_MIN
+        costPer100Max:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_100_MAX
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,58 @@
+AppBundle\Entity\KfReqPropEmails:
+    type: entity
+    table: KF_REQ_PROP_EMAILS
+    indexes:
+        KF_REQ_PROP_EMAILS_SPK_PROPERT:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        KF_REQ_PROP_EMAILS_PRIMARY:
+            columns:
+                - KF_REQ_PROP_EMAILSID
+    id: {  }
+    fields:
+        kfReqPropEmailsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_REQ_PROP_EMAILSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        typeto:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: TYPETO
+    lifecycleCallbacks: {  }

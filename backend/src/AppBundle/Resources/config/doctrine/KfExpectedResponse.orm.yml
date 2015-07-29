@@ -1,0 +1,68 @@
+AppBundle\Entity\KfExpectedResponse:
+    type: entity
+    table: KF_EXPECTED_RESPONSE
+    indexes:
+        KF_EXPECTED_RESPONSE_CAMPAIGNID:
+            columns:
+                - CAMPAIGNID
+    uniqueConstraints:
+        KF_EXPECTED_RESPONSE_PRIMARY:
+            columns:
+                - KF_EXPECTED_RESPONSEID
+    id: {  }
+    fields:
+        kfExpectedResponseid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_EXPECTED_RESPONSEID
+        campaignid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CAMPAIGNID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        monthid:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: MONTHID
+        monthnamerus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MONTHNAMERUS
+        monthnameeng:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MONTHNAMEENG
+        expectedResponse:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: EXPECTED_RESPONSE
+    lifecycleCallbacks: {  }

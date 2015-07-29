@@ -1,0 +1,212 @@
+AppBundle\Entity\KfTenantsBackup:
+    type: entity
+    table: kf_tenants_backup
+    id: {  }
+    fields:
+        spkTenantsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_TENANTSID
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        currentContact:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CURRENT_CONTACT
+        contactType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTACT_TYPE
+        startdate:
+            type: datetime
+            nullable: true
+            column: STARTDATE
+        enddate:
+            type: datetime
+            nullable: true
+            column: ENDDATE
+        area:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AREA
+        period:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PERIOD
+        rentalrate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENTALRATE
+        opexrate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPEXRATE
+        opexinclude:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OPEXINCLUDE
+        opexcur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OPEXCUR
+        vat:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: VAT
+        vatinclude:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: VATINCLUDE
+        indexation:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INDEXATION
+        deposit:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DEPOSIT
+        parkinglots:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PARKINGLOTS
+        parkingrate:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: PARKINGRATE
+        parkingcur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARKINGCUR
+        workplaces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: WORKPLACES
+        comments:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS
+        breakoption:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BREAKOPTION
+        autoprolong:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: AUTOPROLONG
+        rightsublease:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RIGHTSUBLEASE
+        reminder:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: REMINDER
+        manactivityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANACTIVITYID
+        consactivityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONSACTIVITYID
+        penalties:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PENALTIES
+        rentalcur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RENTALCUR
+        smallAddress:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: SMALL_ADDRESS
+    lifecycleCallbacks: {  }

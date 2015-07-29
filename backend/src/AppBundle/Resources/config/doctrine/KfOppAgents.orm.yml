@@ -1,0 +1,58 @@
+AppBundle\Entity\KfOppAgents:
+    type: entity
+    table: KF_OPP_AGENTS
+    indexes:
+        KF_OPP_AGENTS_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_AGENTS_PRIMARY:
+            columns:
+                - KF_OPP_AGENTSID
+    id: {  }
+    fields:
+        kfOppAgentsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_AGENTSID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        agents:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: AGENTS
+    lifecycleCallbacks: {  }

@@ -1,0 +1,54 @@
+AppBundle\Entity\KfRshStreetRetailSlice:
+    type: entity
+    table: kf_rsh_street_retail_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        tradeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TRADE_AREA
+        buildingStage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BUILDING_STAGE
+        avgDefaultRate:
+            type: decimal
+            nullable: true
+            precision: 38
+            scale: 6
+            column: AVG_DEFAULT_RATE
+        avgDefaultCost:
+            type: decimal
+            nullable: true
+            precision: 38
+            scale: 6
+            column: AVG_DEFAULT_COST
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

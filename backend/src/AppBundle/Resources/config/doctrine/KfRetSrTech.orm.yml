@@ -1,0 +1,70 @@
+AppBundle\Entity\KfRetSrTech:
+    type: entity
+    table: KF_RET_SR_TECH
+    indexes:
+        KF_RET_SR_TECH_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    uniqueConstraints:
+        KF_RET_SR_TECH_PRIMARY:
+            columns:
+                - KF_RET_SR_TECHID
+    id: {  }
+    fields:
+        kfRetSrTechid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_RET_SR_TECHID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        storey:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STOREY
+        area:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AREA
+        ceilingHeight:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CEILING_HEIGHT
+        comments:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: COMMENTS
+    lifecycleCallbacks: {  }

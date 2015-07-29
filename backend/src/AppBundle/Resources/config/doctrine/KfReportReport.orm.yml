@@ -1,0 +1,62 @@
+AppBundle\Entity\KfReportReport:
+    type: entity
+    table: KF_REPORT_REPORT
+    uniqueConstraints:
+        KF_REPORT_REPORT_PRIMARY:
+            columns:
+                - KF_REPORT_REPORTID
+    id: {  }
+    fields:
+        kfReportReportid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_REPORT_REPORTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        category:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CATEGORY
+        reportName:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: REPORT_NAME
+        generateDate:
+            type: datetime
+            nullable: true
+            column: GENERATE_DATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        egenerateDate:
+            type: datetime
+            nullable: true
+            column: EGENERATE_DATE
+    lifecycleCallbacks: {  }

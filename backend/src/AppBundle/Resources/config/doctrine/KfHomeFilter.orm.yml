@@ -1,0 +1,62 @@
+AppBundle\Entity\KfHomeFilter:
+    type: entity
+    table: KF_HOME_FILTER
+    id: {  }
+    fields:
+        kfHomeFilterid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_HOME_FILTERID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        filterType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FILTER_TYPE
+        accessType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACCESS_TYPE
+        groupName:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: GROUP_NAME
+        sqltext:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: SQLTEXT
+        ps:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PS
+    lifecycleCallbacks: {  }

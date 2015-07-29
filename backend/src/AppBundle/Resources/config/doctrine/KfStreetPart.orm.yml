@@ -1,0 +1,16 @@
+AppBundle\Entity\KfStreetPart:
+    type: entity
+    table: KF_Street_Part
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+        spkStreetPart:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: spk_street_part
+    lifecycleCallbacks: {  }

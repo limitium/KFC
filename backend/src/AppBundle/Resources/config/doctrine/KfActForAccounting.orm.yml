@@ -1,0 +1,66 @@
+AppBundle\Entity\KfActForAccounting:
+    type: entity
+    table: KF_ACT_FOR_ACCOUNTING
+    uniqueConstraints:
+        KF_ACT_FOR_ACCOUNTING_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        dogovorfilename:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: DOGOVORFILENAME
+        actfilename:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ACTFILENAME
+        dogovorattachid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DOGOVORATTACHID
+        actattachid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACTATTACHID
+    lifecycleCallbacks: {  }

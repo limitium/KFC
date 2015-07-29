@@ -1,0 +1,306 @@
+AppBundle\Entity\Userinfo:
+    type: entity
+    table: USERINFO
+    indexes:
+        KF_SR_IX_UserID_incl:
+            columns:
+                - USERID
+                - USERNAME
+                - DIVISION
+                - LASTNAME
+        KF_SR_IX_DEPARTMENT:
+            columns:
+                - DEPARTMENT
+                - DIVISION
+                - USERID
+        _dta_index_USERINFO_7_286624064__K3_K1:
+            columns:
+                - USERNAME
+                - USERID
+        _dta_index_USERINFO_7_286624064__K1_K3:
+            columns:
+                - USERID
+                - USERNAME
+        _dta_index_USERINFO_c_7_286624064__K3:
+            columns:
+                - USERNAME
+        _dta_index_USERINFO_7_286624064__K1_6:
+            columns:
+                - USERID
+                - DEPARTMENT
+        _dta_index_USERINFO_5_286624064__K6:
+            columns:
+                - DEPARTMENT
+        _dta_index_USERINFO_5_286624064__K1_3_6:
+            columns:
+                - USERID
+                - USERNAME
+                - DEPARTMENT
+        _dta_index_USERINFO_5_286624064__K6_K1_K3:
+            columns:
+                - DEPARTMENT
+                - USERID
+                - USERNAME
+        _dta_index_USERINFO_5_286624064__K1_K6_K3:
+            columns:
+                - USERID
+                - DEPARTMENT
+                - USERNAME
+        _dta_index_USERINFO_5_286624064__K6_K1:
+            columns:
+                - DEPARTMENT
+                - USERID
+        _dta_index_USERINFO_5_286624064__K1_K18_K3:
+            columns:
+                - USERID
+                - LASTNAME
+                - USERNAME
+        _dta_index_USERINFO_5_286624064__K18_K3:
+            columns:
+                - LASTNAME
+                - USERNAME
+        _dta_index_USERINFO_5_286624064__K18_K3_K1:
+            columns:
+                - LASTNAME
+                - USERNAME
+                - USERID
+        _dta_index_USERINFO_5_286624064__K1_3_5_6:
+            columns:
+                - USERID
+                - USERNAME
+                - DIVISION
+                - DEPARTMENT
+        _dta_index_USERINFO_5_286624064__K1_3_18:
+            columns:
+                - USERID
+                - USERNAME
+                - LASTNAME
+    uniqueConstraints:
+        PK_USERINFO:
+            columns:
+                - USERID
+    id: {  }
+    fields:
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        title:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TITLE
+        username:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: USERNAME
+        region:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: REGION
+        division:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DIVISION
+        department:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DEPARTMENT
+        email:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: EMAIL
+        phone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PHONE
+        direct:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DIRECT
+        home:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOME
+        fax:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FAX
+        mobile:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MOBILE
+        pinnumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PINNUMBER
+        pagerterm:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PAGERTERM
+        addressid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ADDRESSID
+        homeaddressid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: HOMEADDRESSID
+        altaddressid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ALTADDRESSID
+        lastname:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LASTNAME
+        firstname:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FIRSTNAME
+        middlename:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MIDDLENAME
+        prefix:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: PREFIX
+        suffix:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: SUFFIX
+        accountinguserid:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: ACCOUNTINGUSERID
+        available:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: AVAILABLE
+        defaultaddknowledge:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DEFAULTADDKNOWLEDGE
+        defectnotify:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DEFECTNOTIFY
+        ticketnotify:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TICKETNOTIFY
+        pagermessagelength:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PAGERMESSAGELENGTH
+        usercompany:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: USERCOMPANY
+        timezone:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TIMEZONE
+        windowssid:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: WINDOWSSID
+        usewindowsauth:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: USEWINDOWSAUTH
+        speedsearchapproval:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SPEEDSEARCHAPPROVAL
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        intranetid:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

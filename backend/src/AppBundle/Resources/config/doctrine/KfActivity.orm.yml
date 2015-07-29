@@ -1,0 +1,66 @@
+AppBundle\Entity\KfActivity:
+    type: entity
+    table: KF_ACTIVITY
+    uniqueConstraints:
+        KF_ACTIVITY_PRIMARY:
+            columns:
+                - ACTIVITYID
+    id: {  }
+    fields:
+        activityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACTIVITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        otheraccountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OTHERACCOUNTID
+        othercontactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OTHERCONTACTID
+        otheraccountname:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: OTHERACCOUNTNAME
+        othercontactname:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: OTHERCONTACTNAME
+        kfFlag:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: KF_FLAG
+    lifecycleCallbacks: {  }

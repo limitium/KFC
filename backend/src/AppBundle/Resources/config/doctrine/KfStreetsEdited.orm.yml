@@ -1,0 +1,48 @@
+AppBundle\Entity\KfStreetsEdited:
+    type: entity
+    table: kf_streets_edited
+    id: {  }
+    fields:
+        streetid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        streetRusOld:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_rus_old
+        streetRusNew:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_rus_new
+        streetid2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        gisid1:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        gisid2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        propertycount1:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        propertycount2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

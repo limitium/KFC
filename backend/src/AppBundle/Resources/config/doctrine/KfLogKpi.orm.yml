@@ -1,0 +1,50 @@
+AppBundle\Entity\KfLogKpi:
+    type: entity
+    table: KF_LOG_KPI
+    uniqueConstraints:
+        KF_LOG_KPI_PRIMARY:
+            columns:
+                - KF_LOG_KPIID
+    id: {  }
+    fields:
+        kfLogKpiid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_LOG_KPIID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        logAction:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LOG_ACTION
+        startDate:
+            type: datetime
+            nullable: true
+            column: START_DATE
+        endDate:
+            type: datetime
+            nullable: true
+            column: END_DATE
+    lifecycleCallbacks: {  }

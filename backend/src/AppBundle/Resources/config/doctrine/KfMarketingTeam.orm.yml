@@ -1,0 +1,70 @@
+AppBundle\Entity\KfMarketingTeam:
+    type: entity
+    table: KF_MARKETING_TEAM
+    indexes:
+        KF_MARKETING_TEAM_KF_MARKETING_PROJECTSID:
+            columns:
+                - KF_MARKETING_PROJECTSID
+    uniqueConstraints:
+        KF_MARKETING_TEAM_PRIMARY:
+            columns:
+                - KF_MARKETING_TEAMID
+    id: {  }
+    fields:
+        kfMarketingTeamid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_TEAMID
+        kfMarketingProjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userRole:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: USER_ROLE
+        part:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PART
+        notes:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: NOTES
+        broker:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BROKER
+    lifecycleCallbacks: {  }

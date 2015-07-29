@@ -1,0 +1,135 @@
+AppBundle\Entity\KfResArcgis:
+    type: entity
+    table: KF_RES_ARCGIS
+    uniqueConstraints:
+        KF_RES_ARCGIS_PRIMARY:
+            columns:
+                - KF_RES_ARCGISID
+    id: {  }
+    fields:
+        kfResArcgisid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_RES_ARCGISID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        compname:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMPNAME
+        id:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ID
+        nameRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_RUS
+        smallAddress:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: SMALL_ADDRESS
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+        areaRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: AREA_RUS
+        buildQuarter:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: BUILD_QUARTER
+        buildYear:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: BUILD_YEAR
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        livingArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LIVING_AREA
+        parking:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: PARKING
+        infrastructure:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: INFRASTRUCTURE
+        builder:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: BUILDER
+        apartmentsCount:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: APARTMENTS_COUNT
+        latitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LATITUDE
+        longtitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LONGTITUDE
+    lifecycleCallbacks: {  }

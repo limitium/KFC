@@ -1,0 +1,11 @@
+AppBundle\Entity\KfLandlordsBackup:
+    type: entity
+    table: kf_landlords_backup
+    id: {  }
+    fields:
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

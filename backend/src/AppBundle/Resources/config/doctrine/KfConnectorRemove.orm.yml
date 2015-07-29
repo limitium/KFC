@@ -1,0 +1,28 @@
+AppBundle\Entity\KfConnectorRemove:
+    type: entity
+    table: kf_connector_remove
+    id: {  }
+    fields:
+        kfConnectorid:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: KF_CONNECTORID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SPK_PROPERTYID
+        createdate:
+            type: datetime
+            nullable: true
+            default: CURRENT_TIMESTAMP
+            column: CREATEDATE
+        isHandle:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: IS_HANDLE
+    lifecycleCallbacks: {  }

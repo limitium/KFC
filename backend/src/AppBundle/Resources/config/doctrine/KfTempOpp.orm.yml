@@ -1,0 +1,54 @@
+AppBundle\Entity\KfTempOpp:
+    type: entity
+    table: KF_TEMP_OPP
+    uniqueConstraints:
+        KF_TEMP_OPP_PRIMARY:
+            columns:
+                - KF_TEMP_OPPID
+    id: {  }
+    fields:
+        kfTempOppid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_TEMP_OPPID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        spkRequestid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTID
+        longlistid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LONGLISTID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,155 @@
+AppBundle\Entity\KfHomeSettings:
+    type: entity
+    table: KF_HOME_SETTINGS
+    uniqueConstraints:
+        KF_HOME_SETTINGS_PRIMARY:
+            columns:
+                - KF_HOME_SETTINGSID
+    id: {  }
+    fields:
+        kfHomeSettingsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_HOME_SETTINGSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        srchInRes:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SRCH_IN_RES
+        srchInAll:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SRCH_IN_ALL
+        activDone:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ACTIV_DONE
+        activFuture:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ACTIV_FUTURE
+        addNoteBln:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ADD_NOTE_BLN
+        addShowBln:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ADD_SHOW_BLN
+        addCallBln:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ADD_CALL_BLN
+        grdsalegroupname:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: GRDSALEGROUPNAME
+        grdsalessql:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: GRDSALESSQL
+        grdhistorygroupname:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: GRDHISTORYGROUPNAME
+        grdhistorysql:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: GRDHISTORYSQL
+        historyactivetabindex:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: HISTORYACTIVETABINDEX
+        srchInGroup:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SRCH_IN_GROUP
+        salesTargetValue:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SALES_TARGET_VALUE
+        typePlan:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TYPE_PLAN
+        whosPlan:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: WHOS_PLAN
+        model:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: MODEL
+        comments:
+            type: string
+            nullable: true
+            length: 4000
+            fixed: false
+            column: COMMENTS
+    lifecycleCallbacks: {  }

@@ -1,0 +1,47 @@
+AppBundle\Entity\KfMonthTable:
+    type: entity
+    table: KF_MONTH_TABLE
+    uniqueConstraints:
+        KF_MONTH_TABLE_PRIMARY:
+            columns:
+                - KF_MONTH_TABLEID
+    id: {  }
+    fields:
+        kfMonthTableid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MONTH_TABLEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        monId:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MON_ID
+        monName:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: MON_NAME
+    lifecycleCallbacks: {  }

@@ -1,0 +1,60 @@
+AppBundle\Entity\KfLists:
+    type: entity
+    table: KF_LISTS
+    uniqueConstraints:
+        KF_LISTS_PRIMARY:
+            columns:
+                - KF_LISTSID
+    id: {  }
+    fields:
+        kfListsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_LISTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        listid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LISTID
+        entityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ENTITYID
+        activecampaignid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACTIVECAMPAIGNID
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+    lifecycleCallbacks: {  }

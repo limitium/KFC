@@ -1,0 +1,70 @@
+AppBundle\Entity\KfAccTelemarketing:
+    type: entity
+    table: KF_ACC_TELEMARKETING
+    indexes:
+        KF_ACC_TELEMARKETING_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+    uniqueConstraints:
+        KF_ACC_TELEMARKETING_PRIMARY:
+            columns:
+                - KF_ACC_TELEMARKETINGID
+    id: {  }
+    fields:
+        kfAccTelemarketingid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_ACC_TELEMARKETINGID
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parameters:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PARAMETERS
+        val:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAL
+        leadsource:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LEADSOURCE
+        kfTeleParametersid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_TELE_PARAMETERSID
+    lifecycleCallbacks: {  }

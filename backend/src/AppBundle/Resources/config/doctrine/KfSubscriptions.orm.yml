@@ -1,0 +1,28 @@
+AppBundle\Entity\KfSubscriptions:
+    type: entity
+    table: KF_SUBSCRIPTIONS
+    uniqueConstraints:
+        PK_KF_SUBSCRIPTIONS:
+            columns:
+                - SUBSCRIPTIONID
+    id: {  }
+    fields:
+        subscriptionid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SUBSCRIPTIONID
+        subscription:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SUBSCRIPTION
+        department:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DEPARTMENT
+    lifecycleCallbacks: {  }

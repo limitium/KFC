@@ -1,0 +1,28 @@
+AppBundle\Entity\KfSubscriptionsSalutation:
+    type: entity
+    table: KF_SUBSCRIPTIONS_SALUTATION
+    id: {  }
+    fields:
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        subscriptionid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SUBSCRIPTIONID
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+    lifecycleCallbacks: {  }

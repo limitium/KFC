@@ -1,0 +1,198 @@
+AppBundle\Entity\Usersecurity:
+    type: entity
+    table: USERSECURITY
+    indexes:
+        KF_SR_IX_DefaultSeccodeID:
+            columns:
+                - DEFAULTSECCODEID
+        KF_SR_IX_ManagerID:
+            columns:
+                - MANAGERID
+        _dta_index_USERSECURITY_5_2133582639__K1_K3:
+            columns:
+                - USERID
+                - TYPE
+        _dta_index_USERSECURITY_5_2133582639__K10:
+            columns:
+                - ADDMEMBERS
+        _dta_index_USERSECURITY_5_2133582639__K10_K3_K1:
+            columns:
+                - ADDMEMBERS
+                - TYPE
+                - USERID
+        _dta_index_USERSECURITY_5_2133582639__K3_K1:
+            columns:
+                - TYPE
+                - USERID
+    id: {  }
+    fields:
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        usercode:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: USERCODE
+        type:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: TYPE
+        accesslevel:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ACCESSLEVEL
+        clientlogptr:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CLIENTLOGPTR
+        hostlogptr:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: HOSTLOGPTR
+        logthreshold:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: LOGTHRESHOLD
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        defaultseccodeid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: DEFAULTSECCODEID
+        addmembers:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ADDMEMBERS
+        delmembers:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: DELMEMBERS
+        createteams:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: CREATETEAMS
+        ismanager:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ISMANAGER
+        functions:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: FUNCTIONS
+        enabled:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ENABLED
+        privateaccountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PRIVATEACCOUNTID
+        primarysite:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PRIMARYSITE
+        lastrnfile:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LASTRNFILE
+        lastsenddate:
+            type: datetime
+            nullable: true
+            column: LASTSENDDATE
+        security:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: SECURITY
+        userpw:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: USERPW
+        supportuser:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: SUPPORTUSER
+        adminrole:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ADMINROLE
+        usertemplate:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: USERTEMPLATE
+        iswebadmin:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISWEBADMIN
+        customerserviceuser:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CUSTOMERSERVICEUSER
+        pwchangedate:
+            type: datetime
+            nullable: true
+            column: PWCHANGEDATE
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

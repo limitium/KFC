@@ -1,0 +1,58 @@
+AppBundle\Entity\KfCampaignBounce:
+    type: entity
+    table: KF_CAMPAIGN_BOUNCE
+    indexes:
+        KF_CAMPAIGN_BOUNCE_CAMPAIGNID:
+            columns:
+                - CAMPAIGNID
+    uniqueConstraints:
+        KF_CAMPAIGN_BOUNCE_PRIMARY:
+            columns:
+                - KF_CAMPAIGN_BOUNCEID
+    id: {  }
+    fields:
+        kfCampaignBounceid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CAMPAIGN_BOUNCEID
+        campaignid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CAMPAIGNID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+    lifecycleCallbacks: {  }

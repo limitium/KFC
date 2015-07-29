@@ -1,0 +1,71 @@
+AppBundle\Entity\KfDivisionSalesplan:
+    type: entity
+    table: KF_DIVISION_SALESPLAN
+    uniqueConstraints:
+        KF_DIVISION_SALESPLAN_PRIMARY:
+            columns:
+                - KF_DIVISION_SALESPLANID
+    id: {  }
+    fields:
+        kfDivisionSalesplanid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_DIVISION_SALESPLANID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        amount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AMOUNT
+        yer:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: YER
+        probability:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PROBABILITY
+        division:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DIVISION
+        department:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DEPARTMENT
+        location:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LOCATION
+    lifecycleCallbacks: {  }

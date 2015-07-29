@@ -1,0 +1,52 @@
+AppBundle\Entity\KfOppServices:
+    type: entity
+    table: KF_OPP_SERVICES
+    indexes:
+        KF_OPP_SERVICES_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_SERVICES_PRIMARY:
+            columns:
+                - KF_OPP_SERVICESID
+    id: {  }
+    fields:
+        kfOppServicesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_SERVICESID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        serviceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SERVICEID
+    lifecycleCallbacks: {  }

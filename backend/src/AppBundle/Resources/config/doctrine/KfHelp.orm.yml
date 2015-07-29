@@ -1,0 +1,42 @@
+AppBundle\Entity\KfHelp:
+    type: entity
+    table: KF_HELP
+    uniqueConstraints:
+        KF_HELP_PRIMARY:
+            columns:
+                - KF_HELPID
+    id: {  }
+    fields:
+        kfHelpid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_HELPID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        notes:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: NOTES
+    lifecycleCallbacks: {  }

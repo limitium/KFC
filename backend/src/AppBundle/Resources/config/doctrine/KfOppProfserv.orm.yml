@@ -1,0 +1,980 @@
+AppBundle\Entity\KfOppProfserv:
+    type: entity
+    table: KF_OPP_PROFSERV
+    indexes:
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K8:
+            columns:
+                - OPPORTUNITYID
+                - PROJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K8_K6_K9:
+            columns:
+                - OPPORTUNITYID
+                - PROJECTID
+                - SECCODEID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K8_1:
+            columns:
+                - PROJECTID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K8_1_6_9:
+            columns:
+                - PROJECTID
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_6_9:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K6_K9_K8:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+                - PROJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K26_K6_K27_K9_K8_K14_K15_K1_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - AREAID
+                - SECCODEID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - OPPORTUNITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K26_K6_K27_K9_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - AREAID
+                - SECCODEID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_6_7_8_9_10_11_12_13_14_15_16_17_19_20_21_22_23_24_25_26_27_28_31:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+                - INDUS_INCLUDEOPEX
+                - PROJECTID
+                - OBJECTID
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - REGIONID
+                - CITYID
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - AREAID
+                - PROFILEID
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K26_K27_K9_K8_K14_K15_K1_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - OPPORTUNITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_7_8_9_10_11_12_13_14_15_16_17_19_20_21_22_23_24_25_26_27_28_31:
+            columns:
+                - OPPORTUNITYID
+                - INDUS_INCLUDEOPEX
+                - PROJECTID
+                - OBJECTID
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - REGIONID
+                - CITYID
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - AREAID
+                - PROFILEID
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K26_K27_K9_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_9:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K8_K9:
+            columns:
+                - OPPORTUNITYID
+                - PROJECTID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K8_1_9:
+            columns:
+                - PROJECTID
+                - OPPORTUNITYID
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K9_K8:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - PROJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K9_K26_K6_K27_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - AREAID
+                - SECCODEID
+                - PROFILEID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1_K26_K6_K27_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - AREAID
+                - SECCODEID
+                - PROFILEID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K14_K15_K1_11_12_19_20_22_23_25_28:
+            columns:
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - OPPORTUNITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_9_11_12_14_15_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REGIONID
+                - CITYID
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K9_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1_K26_K27_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - AREAID
+                - PROFILEID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K9_K26_K27_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - AREAID
+                - PROFILEID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1_K8:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - PROJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9:
+            columns:
+                - OBJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K8:
+            columns:
+                - PROJECTID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K6_K9_K14_K15_K1_11_12_19_20_22_23_25_28:
+            columns:
+                - SECCODEID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - OPPORTUNITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K9_K1_K6_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OBJECTID
+                - OPPORTUNITYID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K14_K6_K9_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - REGIONID
+                - SECCODEID
+                - OBJECTID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K15_K1:
+            columns:
+                - CITYID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K15_K1_K6_K9_K14_11_12_19_20_22_23_25_28:
+            columns:
+                - CITYID
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+                - REGIONID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_6_9_11_12_14_15_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REGIONID
+                - CITYID
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K14_K1_K6_K9_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - REGIONID
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K15_K6_K9_K14_11_12_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - CITYID
+                - SECCODEID
+                - OBJECTID
+                - REGIONID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K14_K1:
+            columns:
+                - REGIONID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K6_K9_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K9_K6_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - OPPORTUNITYID
+                - OBJECTID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K15:
+            columns:
+                - OPPORTUNITYID
+                - CITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K14:
+            columns:
+                - OPPORTUNITYID
+                - REGIONID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K15_K26_K27_K9_K8_K14_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - CITYID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K26_K1:
+            columns:
+                - AREAID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K8_K1_K26_K27_K9_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - PROJECTID
+                - OPPORTUNITYID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K26_K1_K27_K9_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - AREAID
+                - OPPORTUNITYID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K27_K26_K9_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - PROFILEID
+                - AREAID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K27_K1_K26_K9_K8_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - PROFILEID
+                - OPPORTUNITYID
+                - AREAID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K27_K1:
+            columns:
+                - PROFILEID
+                - OPPORTUNITYID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K27:
+            columns:
+                - OPPORTUNITYID
+                - PROFILEID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K8_K26_K27_K9_K14_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - PROJECTID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K15_K1_K26_K27_K9_K8_K14_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - CITYID
+                - OPPORTUNITYID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - REGIONID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K26:
+            columns:
+                - OPPORTUNITYID
+                - AREAID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K14_K1_K26_K27_K9_K8_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - REGIONID
+                - OPPORTUNITYID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K14_K26_K27_K9_K8_K15_7_10_11_12_13_16_17_19_20_21_22_23_24_25_28_31:
+            columns:
+                - OPPORTUNITYID
+                - REGIONID
+                - AREAID
+                - PROFILEID
+                - OBJECTID
+                - PROJECTID
+                - CITYID
+                - INDUS_INCLUDEOPEX
+                - CONSULTINGGROUP
+                - MARKET_SEGMENT
+                - NOTINDB
+                - REPORTFORM
+                - RESEARCHPERIODFROM
+                - RESEARCHPERIODTO
+                - VALSERVICES
+                - TARGET
+                - SUBTARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - PROJECT_SUBSTAGE
+                - OWNERSHIP
+                - INVSERVICES
+                - STORAGE_PERCENT
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K1_K6:
+            columns:
+                - OPPORTUNITYID
+                - SECCODEID
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K6_K1_K9_K14_K15_11_12_19_20_22_23_25_28:
+            columns:
+                - SECCODEID
+                - OPPORTUNITYID
+                - OBJECTID
+                - REGIONID
+                - CITYID
+                - MARKET_SEGMENT
+                - NOTINDB
+                - VALSERVICES
+                - TARGET
+                - ESTCOST
+                - PROJECT_STAGE
+                - OWNERSHIP
+                - INVSERVICES
+        _dta_index_KF_OPP_PROFSERV_5_1789965453__K6_K1:
+            columns:
+                - SECCODEID
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_PROFSERV_PRIMARY:
+            columns:
+                - OPPORTUNITYID
+    id: {  }
+    fields:
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        indusIncludeopex:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INDUS_INCLUDEOPEX
+        projectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROJECTID
+        objectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OBJECTID
+        consultinggroup:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CONSULTINGGROUP
+        marketSegment:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: MARKET_SEGMENT
+        notindb:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: NOTINDB
+        reportform:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: REPORTFORM
+        regionid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REGIONID
+        cityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CITYID
+        researchperiodfrom:
+            type: datetime
+            nullable: true
+            column: RESEARCHPERIODFROM
+        researchperiodto:
+            type: datetime
+            nullable: true
+            column: RESEARCHPERIODTO
+        objectDescription:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: OBJECT_DESCRIPTION
+        valservices:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: VALSERVICES
+        target:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: TARGET
+        subtarget:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SUBTARGET
+        estcost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: ESTCOST
+        projectStage:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROJECT_STAGE
+        projectSubstage:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROJECT_SUBSTAGE
+        ownership:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OWNERSHIP
+        areaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AREAID
+        profileid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROFILEID
+        invservices:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: INVSERVICES
+        invCity:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: INV_CITY
+        invCityType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INV_CITY_TYPE
+        storagePercent:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: STORAGE_PERCENT
+    lifecycleCallbacks: {  }

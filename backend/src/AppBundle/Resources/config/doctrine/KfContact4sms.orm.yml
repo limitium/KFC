@@ -1,0 +1,21 @@
+AppBundle\Entity\KfContact4sms:
+    type: entity
+    table: kf_contact_4sms
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        mobile:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        mobileprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+    lifecycleCallbacks: {  }

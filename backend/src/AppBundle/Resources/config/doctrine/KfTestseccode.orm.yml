@@ -1,0 +1,47 @@
+AppBundle\Entity\KfTestseccode:
+    type: entity
+    table: KF_testseccode
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        sqlvb:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SQLVB
+        entitytype:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        entityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        eventtype:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        entitydepartment:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        result:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

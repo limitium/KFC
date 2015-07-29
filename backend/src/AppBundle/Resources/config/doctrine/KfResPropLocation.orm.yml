@@ -1,0 +1,54 @@
+AppBundle\Entity\KfResPropLocation:
+    type: entity
+    table: KF_RES_PROP_LOCATION
+    uniqueConstraints:
+        KF_RES_PROP_LOCATION_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        longitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LONGITUDE
+        latitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LATITUDE
+    lifecycleCallbacks: {  }

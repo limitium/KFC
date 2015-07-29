@@ -1,0 +1,156 @@
+AppBundle\Entity\KfOffCmpCommerc:
+    type: entity
+    table: KF_OFF_CMP_COMMERC
+    uniqueConstraints:
+        KF_OFF_CMP_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        operatingExpensesType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OPERATING_EXPENSES_TYPE
+        commercialTerms:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: COMMERCIAL_TERMS
+        vat:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: VAT
+        utilityCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: UTILITY_COST
+        utilityType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: UTILITY_TYPE
+        fitOutCompensation:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FIT_OUT_COMPENSATION
+        commentsRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_RUS
+        commentsEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENTS_ENG
+        salePrice:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SALE_PRICE
+        saleCurrency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SALE_CURRENCY
+        yield:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: YIELD
+        oppStructure:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPP_STRUCTURE
+        certificateOwnership:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CERTIFICATE_OWNERSHIP
+        ownershipType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OWNERSHIP_TYPE
+        rentalStatusRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RENTAL_STATUS_RUS
+        rentalStatusEng:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RENTAL_STATUS_ENG
+        rentalRateAvg:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RENTAL_RATE_AVG
+        rraCur:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RRA_CUR
+        commercialTermsSale:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: COMMERCIAL_TERMS_SALE
+    lifecycleCallbacks: {  }

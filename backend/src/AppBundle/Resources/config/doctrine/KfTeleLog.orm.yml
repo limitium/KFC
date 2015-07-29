@@ -1,0 +1,64 @@
+AppBundle\Entity\KfTeleLog:
+    type: entity
+    table: KF_TELE_LOG
+    indexes:
+        KF_TELE_LOG_CONTACTID:
+            columns:
+                - CONTACTID
+    uniqueConstraints:
+        KF_TELE_LOG_PRIMARY:
+            columns:
+                - KF_TELE_LOGID
+    id: {  }
+    fields:
+        kfTeleLogid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_TELE_LOGID
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        status:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STATUS
+        project:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROJECT
+        notes:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: NOTES
+    lifecycleCallbacks: {  }

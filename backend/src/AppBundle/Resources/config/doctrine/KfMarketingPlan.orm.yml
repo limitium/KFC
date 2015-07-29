@@ -1,0 +1,196 @@
+AppBundle\Entity\KfMarketingPlan:
+    type: entity
+    table: KF_MARKETING_PLAN
+    indexes:
+        KF_MARKETING_PLAN_CAMPAIGNID:
+            columns:
+                - CAMPAIGNID
+    uniqueConstraints:
+        KF_MARKETING_PLAN_PRIMARY:
+            columns:
+                - KF_MARKETING_PLANID
+    id: {  }
+    fields:
+        kfMarketingPlanid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PLANID
+        campaignid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CAMPAIGNID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        budgetType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: BUDGET_TYPE
+        month1:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH1
+        month1year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH1YEAR
+        month2:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH2
+        month2year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH2YEAR
+        month3:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH3
+        month3year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH3YEAR
+        month4:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH4
+        month4year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH4YEAR
+        month5:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH5
+        month5year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH5YEAR
+        month6:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH6
+        month6year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH6YEAR
+        month7:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH7
+        month7year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH7YEAR
+        month8:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH8
+        month8year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH8YEAR
+        month9:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH9
+        month9year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH9YEAR
+        month10:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH10
+        month10year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH10YEAR
+        month11:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH11
+        month11year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH11YEAR
+        month12:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MONTH12
+        month12year:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: MONTH12YEAR
+    lifecycleCallbacks: {  }

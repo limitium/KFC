@@ -1,0 +1,54 @@
+AppBundle\Entity\KfDeleted:
+    type: entity
+    table: KF_DELETED
+    uniqueConstraints:
+        KF_DELETED_PRIMARY:
+            columns:
+                - KF_DELETEDID
+    id: {  }
+    fields:
+        kfDeletedid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_DELETEDID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        hostname:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOSTNAME
+        entityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ENTITYID
+        tablename:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TABLENAME
+    lifecycleCallbacks: {  }

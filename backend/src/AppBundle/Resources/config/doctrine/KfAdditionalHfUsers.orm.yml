@@ -1,0 +1,16 @@
+AppBundle\Entity\KfAdditionalHfUsers:
+    type: entity
+    table: kf_additional_hf_users
+    id: {  }
+    fields:
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

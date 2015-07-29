@@ -1,0 +1,77 @@
+AppBundle\Entity\KfCurrencyRates:
+    type: entity
+    table: KF_CURRENCY_RATES
+    indexes:
+        KF_SR_IX_createDatecmp:
+            columns:
+                - CREATEDATE_cmp
+        _dta_index_KF_CURRENCY_RATES_5_567009101__K6_3_7:
+            columns:
+                - CURRENCY
+                - CREATEDATE
+                - CUR_VALUE
+        _dta_index_KF_CURRENCY_RATES_c_5_567009101__K6:
+            columns:
+                - CURRENCY
+        _dta_index_KF_CURRENCY_RATES_5_567009101__K6_7:
+            columns:
+                - CURRENCY
+                - CUR_VALUE
+        KF_SR_IX_CREATEDATE:
+            columns:
+                - CREATEDATE
+    uniqueConstraints:
+        KF_CURRENCY_RATES_PRIMARY:
+            columns:
+                - KF_CURRENCY_RATESID
+    id: {  }
+    fields:
+        kfCurrencyRatesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CURRENCY_RATESID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        currency:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: CURRENCY
+        curValue:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: CUR_VALUE
+        createdateCmp:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CREATEDATE_cmp
+        curDate:
+            type: datetime
+            nullable: true
+            column: CUR_DATE
+    lifecycleCallbacks: {  }

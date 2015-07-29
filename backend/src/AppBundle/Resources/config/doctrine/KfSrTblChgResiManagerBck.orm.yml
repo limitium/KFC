@@ -1,0 +1,37 @@
+AppBundle\Entity\KfSrTblChgResiManagerBck:
+    type: entity
+    table: KF_SR_TBL_CHG_RESI_MANAGER_bck
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        oldmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        department:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        segment:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: Segment
+        newmanagerid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+    lifecycleCallbacks: {  }

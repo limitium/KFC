@@ -1,0 +1,42 @@
+AppBundle\Entity\KfServicetmp:
+    type: entity
+    table: KF_SERVICETMP
+    uniqueConstraints:
+        KF_SERVICETMP_PRIMARY:
+            columns:
+                - KF_SERVICETMPID
+    id: {  }
+    fields:
+        kfServicetmpid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_SERVICETMPID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        kfServiceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_SERVICEID
+    lifecycleCallbacks: {  }

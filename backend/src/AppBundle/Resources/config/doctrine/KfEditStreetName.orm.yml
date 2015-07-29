@@ -1,0 +1,34 @@
+AppBundle\Entity\KfEditStreetName:
+    type: entity
+    table: kf_edit_street_name
+    id: {  }
+    fields:
+        spkStreetRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: spk_street_rus
+        spkStreetRusUpd:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: spk_street_rus_upd
+        stkStreetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: stk_streetid
+        streetTypeRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_type_rus
+        gen:
+            type: smallint
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

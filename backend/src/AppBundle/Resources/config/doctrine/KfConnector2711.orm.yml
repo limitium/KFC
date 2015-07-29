@@ -1,0 +1,31 @@
+AppBundle\Entity\KfConnector2711:
+    type: entity
+    table: KF_CONNECTOR_2711
+    id: {  }
+    fields:
+        kfConnectorid:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: KF_CONNECTORID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        isHandle:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: IS_HANDLE
+        opCode:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: OP_CODE
+    lifecycleCallbacks: {  }

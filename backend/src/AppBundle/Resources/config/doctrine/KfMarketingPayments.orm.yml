@@ -1,0 +1,102 @@
+AppBundle\Entity\KfMarketingPayments:
+    type: entity
+    table: KF_MARKETING_PAYMENTS
+    indexes:
+        KF_MARKETING_PAYMENTS_KF_MARKETING_PROJECTSID:
+            columns:
+                - KF_MARKETING_PROJECTSID
+    uniqueConstraints:
+        KF_MARKETING_PAYMENTS_PRIMARY:
+            columns:
+                - KF_MARKETING_PAYMENTSID
+    id: {  }
+    fields:
+        kfMarketingPaymentsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PAYMENTSID
+        kfMarketingProjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        paymentType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PAYMENT_TYPE
+        actNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACT_NUMBER
+        contractor:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTRACTOR
+        paidDate:
+            type: datetime
+            nullable: true
+            column: PAID_DATE
+        amountInclVat:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AMOUNT_INCL_VAT
+        vatType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: VAT_TYPE
+        vat:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: VAT
+        toAccounting:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TO_ACCOUNTING
+        estimatedDate:
+            type: datetime
+            nullable: true
+            column: ESTIMATED_DATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+    lifecycleCallbacks: {  }

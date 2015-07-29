@@ -1,0 +1,63 @@
+AppBundle\Entity\KfServices:
+    type: entity
+    table: KF_SERVICES
+    indexes:
+        KF_SR_IXKF_SERVICESID_incl:
+            columns:
+                - KF_SERVICESID
+                - SERVICENAME
+                - SERVICE_ENG
+        KF_SR_IX_Servicename:
+            columns:
+                - SERVICENAME
+    uniqueConstraints:
+        KF_SERVICES_PRIMARY:
+            columns:
+                - KF_SERVICESID
+    id: {  }
+    fields:
+        kfServicesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_SERVICESID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        servicename:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SERVICENAME
+        serviceEng:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SERVICE_ENG
+        department:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DEPARTMENT
+    lifecycleCallbacks: {  }

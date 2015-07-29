@@ -1,0 +1,50 @@
+AppBundle\Entity\KfAccTop100:
+    type: entity
+    table: kf_acc_top_100
+    id: {  }
+    fields:
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        account:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+        a3City:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: a3_city
+        a3Address3:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: a3_address3
+        mainphone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        a4Revenue:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: a4_revenue
+        a5Val:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: a5_val
+        industry:
+            type: string
+            nullable: true
+            length: 131
+            fixed: false
+    lifecycleCallbacks: {  }

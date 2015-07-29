@@ -1,0 +1,54 @@
+AppBundle\Entity\KfPropertyVisited:
+    type: entity
+    table: KF_PROPERTY_VISITED
+    uniqueConstraints:
+        KF_PROPERTY_VISITED_PRIMARY:
+            columns:
+                - KF_PROPERTY_VISITEDID
+    id: {  }
+    fields:
+        kfPropertyVisitedid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_PROPERTY_VISITEDID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        visited:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: VISITED
+    lifecycleCallbacks: {  }

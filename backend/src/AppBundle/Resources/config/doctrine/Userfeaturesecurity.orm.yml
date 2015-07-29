@@ -1,0 +1,76 @@
+AppBundle\Entity\Userfeaturesecurity:
+    type: entity
+    table: USERFEATURESECURITY
+    indexes:
+        USERFEATURESEC_FEATURESECID:
+            columns:
+                - FEATURESECURITYID
+    uniqueConstraints:
+        USERFEATURESECURITY_ID_PK:
+            columns:
+                - USERFEATURESECURITYID
+    id: {  }
+    fields:
+        userfeaturesecurityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERFEATURESECURITYID
+        featuresecurityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: FEATURESECURITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        allowadd:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWADD
+        allowedit:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWEDIT
+        allowdelete:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWDELETE
+        familypluginname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FAMILYPLUGINNAME
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,120 @@
+AppBundle\Entity\KfMarketingActs:
+    type: entity
+    table: KF_MARKETING_ACTS
+    indexes:
+        KF_MARKETING_ACTS_KF_MARKETING_PROJECTSID:
+            columns:
+                - KF_MARKETING_PROJECTSID
+    uniqueConstraints:
+        KF_MARKETING_ACTS_PRIMARY:
+            columns:
+                - KF_MARKETING_ACTSID
+    id: {  }
+    fields:
+        kfMarketingActsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_ACTSID
+        kfMarketingProjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        actType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACT_TYPE
+        actNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ACT_NUMBER
+        contractor:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTRACTOR
+        estimatedSignDate:
+            type: datetime
+            nullable: true
+            column: ESTIMATED_SIGN_DATE
+        signDate:
+            type: datetime
+            nullable: true
+            column: SIGN_DATE
+        services:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SERVICES
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+        kfCommission:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION
+        actAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ACT_AMOUNT
+        actVat:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ACT_VAT
+        typeVat:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TYPE_VAT
+        currentuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CURRENTUSER
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+    lifecycleCallbacks: {  }

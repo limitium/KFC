@@ -1,0 +1,78 @@
+AppBundle\Entity\KfMarketPayToTask:
+    type: entity
+    table: KF_MARKET_PAY_TO_TASK
+    uniqueConstraints:
+        KF_MARKET_PAY_TO_TASK_PRIMARY:
+            columns:
+                - KF_MARKET_PAY_TO_TASKID
+    id: {  }
+    fields:
+        kfMarketPayToTaskid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKET_PAY_TO_TASKID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        campaigntaskid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CAMPAIGNTASKID
+        paymentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PAYMENTID
+        taskName:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TASK_NAME
+        taskCostClient:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: TASK_COST_CLIENT
+        taskCostPayCl:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: TASK_COST_PAY_CL
+        taskCostPayKf:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: TASK_COST_PAY_KF
+        paymentType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PAYMENT_TYPE
+    lifecycleCallbacks: {  }

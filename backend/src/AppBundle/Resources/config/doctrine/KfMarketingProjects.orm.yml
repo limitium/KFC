@@ -1,0 +1,206 @@
+AppBundle\Entity\KfMarketingProjects:
+    type: entity
+    table: KF_MARKETING_PROJECTS
+    indexes:
+        KF_SR_IX_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+                - ESTIMATED_CLOSE
+                - SPK_PROPERTYID
+                - NOTES
+                - STAGE
+    uniqueConstraints:
+        KF_MARKETING_PROJECTS_PRIMARY:
+            columns:
+                - KF_MARKETING_PROJECTSID
+    id: {  }
+    fields:
+        kfMarketingProjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+        estimatedClose:
+            type: datetime
+            nullable: true
+            column: ESTIMATED_CLOSE
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        projectType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PROJECT_TYPE
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        notes:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: NOTES
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        projectName:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: PROJECT_NAME
+        leadsourceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEADSOURCEID
+        openedDate:
+            type: datetime
+            nullable: true
+            column: OPENED_DATE
+        stage:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STAGE
+        contractDate:
+            type: datetime
+            nullable: true
+            column: CONTRACT_DATE
+        potentialAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: POTENTIAL_AMOUNT
+        contractNumber:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTRACT_NUMBER
+        budget:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: BUDGET
+        kfCommissionOpen:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION_OPEN
+        kfCommissionClose:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: KF_COMMISSION_CLOSE
+        subcontractsAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SUBCONTRACTS_AMOUNT
+        paymentsAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PAYMENTS_AMOUNT
+        closeprobability:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: CLOSEPROBABILITY
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        commissionPercent:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COMMISSION_PERCENT
+        budgetApproved:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BUDGET_APPROVED
+        isWip:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_WIP
+        department:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: DEPARTMENT
+        division:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: DIVISION
+    lifecycleCallbacks: {  }

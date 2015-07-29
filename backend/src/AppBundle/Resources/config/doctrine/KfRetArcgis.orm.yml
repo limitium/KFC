@@ -1,0 +1,125 @@
+AppBundle\Entity\KfRetArcgis:
+    type: entity
+    table: KF_RET_ARCGIS
+    uniqueConstraints:
+        KF_RET_ARCGIS_PRIMARY:
+            columns:
+                - KF_RET_ARCGISID
+    id: {  }
+    fields:
+        kfRetArcgisid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_RET_ARCGISID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        compname:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMPNAME
+        id:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ID
+        nameRus:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: NAME_RUS
+        smallAddress:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: SMALL_ADDRESS
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATUS
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        tradeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TRADE_AREA
+        conceptionType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONCEPTION_TYPE
+        parking:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: PARKING
+        dateOpenYear:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: DATE_OPEN_YEAR
+        prof:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PROF
+        landlord:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: LANDLORD
+        latitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LATITUDE
+        longtitude:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LONGTITUDE
+    lifecycleCallbacks: {  }

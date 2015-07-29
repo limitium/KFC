@@ -1,0 +1,87 @@
+AppBundle\Entity\KfRshCountryHouseSlice:
+    type: entity
+    table: kf_rsh_country_house_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ID
+        buildingStage:
+            type: string
+            nullable: false
+            length: 14
+            fixed: false
+            column: Building_stage
+        status:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        costPerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MAX
+        costPer100Min:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_100_MIN
+        costPer100Max:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_100_MAX
+        rentMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: RENT_MIN
+        rentMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: RENT_MAX
+        market:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: MARKET
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,16 @@
+AppBundle\Entity\KfTypeStreets:
+    type: entity
+    table: kf_type_streets
+    id: {  }
+    fields:
+        streetTypeRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_type_rus
+        gender:
+            type: smallint
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

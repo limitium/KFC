@@ -1,0 +1,64 @@
+AppBundle\Entity\KfManagmenttoaccount:
+    type: entity
+    table: KF_MANAGMENTTOACCOUNT
+    indexes:
+        KF_MANAGMENTTOACCOUNT_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+    uniqueConstraints:
+        KF_MANAGMENTTOACCOUNT_PRIMARY:
+            columns:
+                - KF_MANAGMENTTOACCOUNTID
+    id: {  }
+    fields:
+        kfManagmenttoaccountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MANAGMENTTOACCOUNTID
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        brokerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BROKERID
+        accountname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNTNAME
+        brokername:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BROKERNAME
+    lifecycleCallbacks: {  }

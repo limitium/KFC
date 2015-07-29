@@ -1,0 +1,48 @@
+AppBundle\Entity\Usertrakngevtantn:
+    type: entity
+    table: USERTRAKNGEVTANTN
+    uniqueConstraints:
+        USERTRAKNGEVTANTN_PRIMARY:
+            columns:
+                - USERTRACKINGEVENTANNOTATIONID
+    id: {  }
+    fields:
+        usertrackingeventannotationid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERTRACKINGEVENTANNOTATIONID
+        usertrackingeventid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERTRACKINGEVENTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        annotation:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ANNOTATION
+    lifecycleCallbacks: {  }

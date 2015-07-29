@@ -1,0 +1,18 @@
+AppBundle\Entity\KfNotDouble:
+    type: entity
+    table: kf_not_double
+    id: {  }
+    fields:
+        id1:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ID_1
+        id2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ID_2
+    lifecycleCallbacks: {  }

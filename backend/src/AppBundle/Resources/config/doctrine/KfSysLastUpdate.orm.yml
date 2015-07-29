@@ -1,0 +1,24 @@
+AppBundle\Entity\KfSysLastUpdate:
+    type: entity
+    table: kf_sys_last_update
+    id: {  }
+    fields:
+        entityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ENTITYID
+        entitytype:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: ENTITYTYPE
+        status:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: STATUS
+    lifecycleCallbacks: {  }

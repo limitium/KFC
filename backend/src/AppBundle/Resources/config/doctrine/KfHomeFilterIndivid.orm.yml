@@ -1,0 +1,52 @@
+AppBundle\Entity\KfHomeFilterIndivid:
+    type: entity
+    table: KF_HOME_FILTER_INDIVID
+    indexes:
+        KF_SR_IX_USERID:
+            columns:
+                - USERID
+    uniqueConstraints:
+        KF_HOME_FILTER_INDIVID_PRIMARY:
+            columns:
+                - KF_HOME_FILTER_INDIVIDID
+    id: {  }
+    fields:
+        kfHomeFilterIndividid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_HOME_FILTER_INDIVIDID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        kfHomeFilterid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_HOME_FILTERID
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+    lifecycleCallbacks: {  }

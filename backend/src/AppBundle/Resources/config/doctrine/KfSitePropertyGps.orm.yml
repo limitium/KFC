@@ -1,0 +1,42 @@
+AppBundle\Entity\KfSitePropertyGps:
+    type: entity
+    table: kf_site_property_gps
+    id: {  }
+    fields:
+        id:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ID
+        slxId:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SLX_ID
+        kfId:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_ID
+        gpsId:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: GPS_ID
+        ptype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+        export:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            default: '0'
+            column: EXPORT
+    lifecycleCallbacks: {  }

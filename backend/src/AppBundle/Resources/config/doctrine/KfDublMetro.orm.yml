@@ -1,0 +1,40 @@
+AppBundle\Entity\KfDublMetro:
+    type: entity
+    table: kf_dubl_metro
+    id: {  }
+    fields:
+        metroRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: metro_rus
+        spkMetroid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_metroid
+        cnt:
+            type: integer
+            nullable: true
+            unsigned: false
+        parentMetroid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: parent_metroID
+        metroRusNew:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: metro_rus_new
+        metroRusOld:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: metro_rus_old
+    lifecycleCallbacks: {  }

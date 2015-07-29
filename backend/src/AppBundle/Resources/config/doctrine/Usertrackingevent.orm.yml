@@ -1,0 +1,58 @@
+AppBundle\Entity\Usertrackingevent:
+    type: entity
+    table: USERTRACKINGEVENT
+    uniqueConstraints:
+        USERTRACKINGEVENT_PRIMARY:
+            columns:
+                - USERTRACKINGEVENTID
+    id: {  }
+    fields:
+        usertrackingeventid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERTRACKINGEVENTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        eventdatetime:
+            type: datetime
+            nullable: true
+            column: EVENTDATETIME
+        userdatatype:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERDATATYPE
+        userdata:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: USERDATA
+        processinstancestatusid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROCESSINSTANCESTATUSID
+    lifecycleCallbacks: {  }

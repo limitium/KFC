@@ -1,0 +1,30 @@
+AppBundle\Entity\KfPropDesc:
+    type: entity
+    table: KF_PROP_DESC
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+        slxid:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: SLXID
+        specialOfferRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: SPECIAL_OFFER_RUS
+    lifecycleCallbacks: {  }

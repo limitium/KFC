@@ -1,0 +1,66 @@
+AppBundle\Entity\KfIndSeo:
+    type: entity
+    table: KF_IND_SEO
+    uniqueConstraints:
+        KF_IND_SEO_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        url:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: URL
+        metaKeywords:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: META_KEYWORDS
+        metaDescription:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: META_DESCRIPTION
+        title:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: TITLE
+    lifecycleCallbacks: {  }

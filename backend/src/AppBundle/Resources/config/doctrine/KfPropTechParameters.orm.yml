@@ -1,0 +1,32 @@
+AppBundle\Entity\KfPropTechParameters:
+    type: entity
+    table: kf_prop_tech_parameters
+    uniqueConstraints:
+        Clustered:
+            columns:
+                - spk_Propertyid
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_Propertyid
+        department:
+            type: string
+            nullable: false
+            length: 11
+            fixed: false
+            column: Department
+        infrastructure:
+            type: string
+            nullable: true
+            length: 2001
+            fixed: false
+        technical:
+            type: string
+            nullable: true
+            length: 2001
+            fixed: false
+    lifecycleCallbacks: {  }

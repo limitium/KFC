@@ -1,0 +1,98 @@
+AppBundle\Entity\KfOppReferrals:
+    type: entity
+    table: KF_OPP_REFERRALS
+    indexes:
+        KF_OPP_REFERRALS_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_REFERRALS_PRIMARY:
+            columns:
+                - KF_OPP_REFERRALSID
+    id: {  }
+    fields:
+        kfOppReferralsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_REFERRALSID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        refManagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REF_MANAGERID
+        department:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DEPARTMENT
+        refDate:
+            type: datetime
+            nullable: true
+            column: REF_DATE
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        notes:
+            type: string
+            nullable: true
+            length: 8000
+            fixed: false
+            column: NOTES
+        region:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: REGION
+    lifecycleCallbacks: {  }

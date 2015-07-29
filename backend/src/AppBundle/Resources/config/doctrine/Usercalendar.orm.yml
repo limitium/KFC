@@ -1,0 +1,86 @@
+AppBundle\Entity\Usercalendar:
+    type: entity
+    table: USERCALENDAR
+    indexes:
+        _dta_index_USERCALENDAR_7_2021582240__K1:
+            columns:
+                - USERID
+        _dta_index_USERCALENDAR_7_2021582240__K5_K1_K2:
+            columns:
+                - ALLOWDELETE
+                - USERID
+                - CALUSERID
+        _dta_index_USERCALENDAR_7_2021582240__K2_K1:
+            columns:
+                - CALUSERID
+                - USERID
+        _dta_index_USERCALENDAR_7_2021582240__K5:
+            columns:
+                - ALLOWDELETE
+        _dta_index_USERCALENDAR_c_7_2021582240__K2:
+            columns:
+                - CALUSERID
+    uniqueConstraints:
+        USERCAL_PRIMARY:
+            columns:
+                - USERID
+                - CALUSERID
+    id: {  }
+    fields:
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        caluserid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CALUSERID
+        allowadd:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWADD
+        allowedit:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWEDIT
+        allowdelete:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWDELETE
+        allowsync:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ALLOWSYNC
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

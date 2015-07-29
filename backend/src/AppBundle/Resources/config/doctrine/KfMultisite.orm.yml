@@ -1,0 +1,63 @@
+AppBundle\Entity\KfMultisite:
+    type: entity
+    table: KF_MULTISITE
+    indexes:
+        KF_MULTISITE_PRIMARY:
+            columns:
+                - KF_MULTISITEID
+        KF_MULTISITE_SPK_PROPERTYID:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        kfMultisiteid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MULTISITEID
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        department:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DEPARTMENT
+        parameters:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: PARAMETERS
+        val:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: VAL
+    lifecycleCallbacks: {  }

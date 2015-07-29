@@ -1,0 +1,266 @@
+AppBundle\Entity\KfIndCmpCommerc:
+    type: entity
+    table: KF_IND_CMP_COMMERC
+    indexes:
+        _dta_index_KF_IND_CMP_COMMERC_5_1304391716__K6_K1_17_18_19_20:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - RENT_MIN
+                - RENT_MAX
+                - COST_MIN
+                - COST_MAX
+        _dta_index_KF_IND_CMP_COMMERC_5_1304391716__K1_K6_17_18_19_20:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - RENT_MIN
+                - RENT_MAX
+                - COST_MIN
+                - COST_MAX
+        _dta_index_KF_IND_CMP_COMMERC_c_5_1304391716__K6:
+            columns:
+                - SECCODEID
+    uniqueConstraints:
+        KF_IND_CMP_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        rentStorageMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_STORAGE_MIN
+        rentStorageMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_STORAGE_MAX
+        rentOffice:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_OFFICE
+        rentOfficeMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_OFFICE_MAX
+        leaseMesoninMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LEASE_MESONIN_MIN
+        leaseMesoninMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LEASE_MESONIN_MAX
+        saleMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_MIN
+        saleMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_MAX
+        municipalCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: MUNICIPAL_COST_MIN
+        municipalCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: MUNICIPAL_COST_MAX
+        rentMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_MIN
+        rentMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENT_MAX
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COST_MAX
+        operationalCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPERATIONAL_COST_MIN
+        operationalCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPERATIONAL_COST_MAX
+        insuranceDepositMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INSURANCE_DEPOSIT_MIN
+        insuranceDepositMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: INSURANCE_DEPOSIT_MAX
+        costPalletMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COST_PALLET_MIN
+        costPalletMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: COST_PALLET_MAX
+        loadUnloadCostMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LOAD_UNLOAD_COST_MIN
+        loadUnloadCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LOAD_UNLOAD_COST_MAX
+        leaseContract:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: LEASE_CONTRACT
+        rateIndexation:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: RATE_INDEXATION
+        infOnDemand:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INF_ON_DEMAND
+        commentRus:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENT_RUS
+        commentEng:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: COMMENT_ENG
+        leaseIndustrialMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LEASE_INDUSTRIAL_MIN
+        leaseIndustrialMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LEASE_INDUSTRIAL_MAX
+        minleaseterm:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MINLEASETERM
+        operationalExpType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: OPERATIONAL_EXP_TYPE
+        vatType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAT_TYPE
+        utilityType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: UTILITY_TYPE
+        commerciaTerms:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COMMERCIA_TERMS
+    lifecycleCallbacks: {  }

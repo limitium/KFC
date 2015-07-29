@@ -1,0 +1,123 @@
+AppBundle\Entity\KfRshOfficeSlice:
+    type: entity
+    table: kf_rsh_office_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        target:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TARGET
+        freeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_AREA
+        freeSaleArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: FREE_SALE_AREA
+        leaseCostMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_COST_MIN
+        leaseCostMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_COST_MAX
+        costPerSqmMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_PER_SQM_MAX
+        costMin:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_MIN
+        costMax:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: COST_MAX
+        operationalCost:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OPERATIONAL_COST
+        operatingExpType:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OPERATING_EXP_TYPE
+        vatType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: VAT_TYPE
+        undergroundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: UNDERGROUND_COST
+        groundCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: GROUND_COST
+        roofCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: ROOF_COST
+        usd:
+            type: decimal
+            nullable: true
+            precision: 18
+            scale: 4
+            column: USD
+        eur:
+            type: decimal
+            nullable: true
+            precision: 18
+            scale: 4
+            column: EUR
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

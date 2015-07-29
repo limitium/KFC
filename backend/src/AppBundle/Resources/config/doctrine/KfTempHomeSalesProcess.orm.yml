@@ -1,0 +1,158 @@
+AppBundle\Entity\KfTempHomeSalesProcess:
+    type: entity
+    table: KF_TEMP_HOME_SALES_PROCESS
+    indexes:
+        KF_IX_CONTACTID:
+            columns:
+                - CONTACTID
+        KF_IX_MEGAID:
+            columns:
+                - MEGAID
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        megaid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: MEGAID
+        opportunityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        type:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TYPE
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        accountrus:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: ACCOUNTRUS
+        namelfrus:
+            type: string
+            nullable: true
+            length: 146
+            fixed: false
+            column: NAMELFRUS
+        dateopened:
+            type: datetime
+            nullable: true
+            column: DATEOPENED
+        opptype:
+            type: string
+            nullable: true
+            length: 321
+            fixed: false
+            column: OPPTYPE
+        step:
+            type: string
+            nullable: true
+            length: 37
+            fixed: false
+            column: STEP
+        phones:
+            type: string
+            nullable: false
+            length: 8000
+            fixed: false
+            column: PHONES
+        email:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            column: EMAIL
+        currency:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CURRENCY
+        actualamount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: ACTUALAMOUNT
+        dateclosed:
+            type: datetime
+            nullable: true
+            column: DATECLOSED
+        isWip:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IS_WIP
+        salesStep:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: SALES_STEP
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        accountmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTMANAGERID
+        poiskAbc:
+            type: string
+            nullable: false
+            length: 1674
+            fixed: false
+            column: POISK_ABC
+        poiskAbcRus:
+            type: string
+            nullable: false
+            length: 516
+            fixed: false
+            column: POISK_ABC_RUS
+        poisk123:
+            type: string
+            nullable: true
+            length: 585
+            fixed: false
+            column: POISK_123
+        poiskEmail:
+            type: string
+            nullable: true
+            length: 388
+            fixed: false
+            column: POISK_EMAIL
+        poiskIds:
+            type: string
+            nullable: true
+            length: 51
+            fixed: false
+            column: POISK_IDS
+        result:
+            type: string
+            nullable: false
+            length: 9
+            fixed: false
+            column: RESULT
+    lifecycleCallbacks: {  }

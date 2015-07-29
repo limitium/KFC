@@ -1,0 +1,258 @@
+AppBundle\Entity\KfHistory2Years:
+    type: entity
+    table: KF_HISTORY_2_YEARS
+    uniqueConstraints:
+        KF_IX_MAIN:
+            columns:
+                - HISTORYID
+                - TYPE
+                - STARTDATE
+                - USERNAME
+                - COMPLETEDDATE
+                - NOTES
+    id: {  }
+    fields:
+        historyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: HISTORYID
+        activityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACTIVITYID
+        type:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: TYPE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        opportunityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        accountname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNTNAME
+        contactname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONTACTNAME
+        opportunityname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OPPORTUNITYNAME
+        priority:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PRIORITY
+        category:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CATEGORY
+        startdate:
+            type: datetime
+            nullable: true
+            column: STARTDATE
+        duration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: DURATION
+        description:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DESCRIPTION
+        processid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PROCESSID
+        processnode:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: PROCESSNODE
+        timeless:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: TIMELESS
+        recurring:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RECURRING
+        activitybasedon:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACTIVITYBASEDON
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        username:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: USERNAME
+        originaldate:
+            type: datetime
+            nullable: true
+            column: ORIGINALDATE
+        result:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: RESULT
+        resultcode:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: RESULTCODE
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        completeddate:
+            type: datetime
+            nullable: true
+            column: COMPLETEDDATE
+        completeduser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: COMPLETEDUSER
+        notes:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: NOTES
+        longnotes:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: LONGNOTES
+        attachment:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ATTACHMENT
+        userdef1:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERDEF1
+        userdef2:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERDEF2
+        userdef3:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: USERDEF3
+        ticketid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: TICKETID
+        ticketnumber:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TICKETNUMBER
+        leadname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: LEADNAME
+        leadid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEADID
+        userdef4:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: USERDEF4
+        kfMarketingProjectsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+    lifecycleCallbacks: {  }

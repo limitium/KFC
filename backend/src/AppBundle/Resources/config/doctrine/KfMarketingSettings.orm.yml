@@ -1,0 +1,42 @@
+AppBundle\Entity\KfMarketingSettings:
+    type: entity
+    table: KF_MARKETING_SETTINGS
+    uniqueConstraints:
+        KF_MARKETING_SETTINGS_PRIMARY:
+            columns:
+                - KF_MARKETING_SETTINGSID
+    id: {  }
+    fields:
+        kfMarketingSettingsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_SETTINGSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        budgetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: BUDGETID
+    lifecycleCallbacks: {  }

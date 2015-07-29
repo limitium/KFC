@@ -1,0 +1,42 @@
+AppBundle\Entity\KfClickFormStat:
+    type: entity
+    table: KF_CLICK_FORM_STAT
+    uniqueConstraints:
+        KF_CLICK_FORM_STAT_PRIMARY:
+            columns:
+                - KF_CLICK_FORM_STATID
+    id: {  }
+    fields:
+        kfClickFormStatid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CLICK_FORM_STATID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        formName:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: FORM_NAME
+    lifecycleCallbacks: {  }

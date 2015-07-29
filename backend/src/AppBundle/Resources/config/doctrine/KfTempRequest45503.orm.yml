@@ -1,0 +1,18 @@
+AppBundle\Entity\KfTempRequest45503:
+    type: entity
+    table: kf_temp_request_45503
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+    lifecycleCallbacks: {  }

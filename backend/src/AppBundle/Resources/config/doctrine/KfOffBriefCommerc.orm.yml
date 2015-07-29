@@ -1,0 +1,283 @@
+AppBundle\Entity\KfOffBriefCommerc:
+    type: entity
+    table: KF_OFF_BRIEF_COMMERC
+    indexes:
+        _dta_index_KF_OFF_BRIEF_COMMERC_5_2125966650__K1_7_14_21:
+            columns:
+                - SPK_PROPERTYID
+                - CURRENCY
+                - OPERATIONAL_COST
+                - OPERATIONAL_COST_MAX
+        _dta_index_KF_OFF_BRIEF_COMMERC_5_2125966650__K1_K6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28_29_30_31_32:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+                - CURRENCY
+                - RENTAL_RATE_MIN
+                - RENTAL_RATE_MAX
+                - SALE_PRICE_MIN
+                - SALE_PRICE_MAX
+                - SALE_PER_SQM_MIN
+                - SALE_PER_SQM_MAX
+                - OPERATIONAL_COST
+                - OTHER_COST
+                - UTILITY_COST
+                - FIT_OUT
+                - PARKING_UNDERGROUND_COST
+                - PARKING_GROUND_COST
+                - PARKING_ROOF_COST
+                - OPERATIONAL_COST_MAX
+                - FIT_OUT_MAX
+                - CRENTAL_RATE
+                - CSALE_PRICE
+                - CSALE_PRICE_SQM
+                - COPERATIONAL_COST
+                - CFIT_OUT
+                - CUTILITY
+                - CROOF_PARKING
+                - CGROUND_PARKING
+                - CUNDER_PARKING
+                - COTHER
+        _dta_index_KF_OFF_BRIEF_COMMERC_5_2125966650__K6_K1_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28_29_30_31_32:
+            columns:
+                - SECCODEID
+                - SPK_PROPERTYID
+                - CURRENCY
+                - RENTAL_RATE_MIN
+                - RENTAL_RATE_MAX
+                - SALE_PRICE_MIN
+                - SALE_PRICE_MAX
+                - SALE_PER_SQM_MIN
+                - SALE_PER_SQM_MAX
+                - OPERATIONAL_COST
+                - OTHER_COST
+                - UTILITY_COST
+                - FIT_OUT
+                - PARKING_UNDERGROUND_COST
+                - PARKING_GROUND_COST
+                - PARKING_ROOF_COST
+                - OPERATIONAL_COST_MAX
+                - FIT_OUT_MAX
+                - CRENTAL_RATE
+                - CSALE_PRICE
+                - CSALE_PRICE_SQM
+                - COPERATIONAL_COST
+                - CFIT_OUT
+                - CUTILITY
+                - CROOF_PARKING
+                - CGROUND_PARKING
+                - CUNDER_PARKING
+                - COTHER
+        _dta_index_KF_OFF_BRIEF_COMMERC_c_5_2125966650__K6:
+            columns:
+                - SECCODEID
+        _dta_index_KF_OFF_BRIEF_COMMERC_c_5_2125966650__K1_K6:
+            columns:
+                - SPK_PROPERTYID
+                - SECCODEID
+        _dta_index_KF_OFF_BRIEF_COMMERC_5_2125966650__K1_8:
+            columns:
+                - SPK_PROPERTYID
+                - RENTAL_RATE_MIN
+        _dta_index_KF_OFF_BRIEF_COMMERC_5_2125966650__K1_7_8_14_21:
+            columns:
+                - SPK_PROPERTYID
+                - CURRENCY
+                - RENTAL_RATE_MIN
+                - OPERATIONAL_COST
+                - OPERATIONAL_COST_MAX
+    uniqueConstraints:
+        KF_OFF_BRIEF_COMMERC_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        currency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CURRENCY
+        rentalRateMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENTAL_RATE_MIN
+        rentalRateMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: RENTAL_RATE_MAX
+        salePriceMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_PRICE_MIN
+        salePriceMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_PRICE_MAX
+        salePerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_PER_SQM_MIN
+        salePerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: SALE_PER_SQM_MAX
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPERATIONAL_COST
+        otherCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OTHER_COST
+        utilityCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: UTILITY_COST
+        fitOut:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: FIT_OUT
+        parkingUndergroundCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: PARKING_UNDERGROUND_COST
+        parkingGroundCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: PARKING_GROUND_COST
+        parkingRoofCost:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: PARKING_ROOF_COST
+        operationalCostMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: OPERATIONAL_COST_MAX
+        fitOutMax:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: FIT_OUT_MAX
+        crentalRate:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CRENTAL_RATE
+        csalePrice:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CSALE_PRICE
+        csalePriceSqm:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CSALE_PRICE_SQM
+        coperationalCost:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COPERATIONAL_COST
+        cfitOut:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CFIT_OUT
+        cutility:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CUTILITY
+        croofParking:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CROOF_PARKING
+        cgroundParking:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CGROUND_PARKING
+        cunderParking:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CUNDER_PARKING
+        cother:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COTHER
+    lifecycleCallbacks: {  }

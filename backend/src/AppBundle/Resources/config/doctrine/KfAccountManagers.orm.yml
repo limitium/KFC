@@ -1,0 +1,52 @@
+AppBundle\Entity\KfAccountManagers:
+    type: entity
+    table: KF_ACCOUNT_MANAGERS
+    indexes:
+        KF_ACCOUNT_MANAGERS_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+    uniqueConstraints:
+        KF_ACCOUNT_MANAGERS_PRIMARY:
+            columns:
+                - KF_ACCOUNT_MANAGERSID
+    id: {  }
+    fields:
+        kfAccountManagersid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_ACCOUNT_MANAGERSID
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,29 @@
+AppBundle\Entity\KfOffBriefStat:
+    type: entity
+    table: KF_OFF_BRIEF_STAT
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        briefRus:
+            type: text
+            nullable: false
+            length: 16
+            fixed: false
+            column: BRIEF_RUS
+        briefEng:
+            type: text
+            nullable: false
+            length: 16
+            fixed: false
+            column: BRIEF_ENG
+        chkSumm:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Chk_summ
+    lifecycleCallbacks: {  }

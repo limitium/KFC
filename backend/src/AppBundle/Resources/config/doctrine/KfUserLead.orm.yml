@@ -1,0 +1,48 @@
+AppBundle\Entity\KfUserLead:
+    type: entity
+    table: KF_USER_LEAD
+    uniqueConstraints:
+        KF_USER_LEAD_PRIMARY:
+            columns:
+                - KF_USER_LEADID
+    id: {  }
+    fields:
+        kfUserLeadid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_USER_LEADID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        leadsourceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEADSOURCEID
+    lifecycleCallbacks: {  }

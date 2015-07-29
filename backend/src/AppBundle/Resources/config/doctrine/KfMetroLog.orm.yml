@@ -1,0 +1,28 @@
+AppBundle\Entity\KfMetroLog:
+    type: entity
+    table: kf_metro_log
+    id: {  }
+    fields:
+        spkMetroidOld:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_metroid_old
+        spkMetroidNew:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_metroid_new
+        dat:
+            type: datetime
+            nullable: true
+            column: Dat
+        spkAddressid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_ADDRESSID
+    lifecycleCallbacks: {  }

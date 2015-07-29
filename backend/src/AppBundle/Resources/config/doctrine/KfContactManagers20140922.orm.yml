@@ -1,0 +1,18 @@
+AppBundle\Entity\KfContactManagers20140922:
+    type: entity
+    table: kf_contact_managers_20140922
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+    lifecycleCallbacks: {  }

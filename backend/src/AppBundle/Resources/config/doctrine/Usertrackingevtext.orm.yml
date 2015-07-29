@@ -1,0 +1,60 @@
+AppBundle\Entity\Usertrackingevtext:
+    type: entity
+    table: USERTRACKINGEVTEXT
+    uniqueConstraints:
+        USERTRACKINGEVTEXT_PRIMARY:
+            columns:
+                - USERTRACKINGEVTEXTID
+    id: {  }
+    fields:
+        usertrackingevtextid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERTRACKINGEVTEXTID
+        usertrackingeventid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERTRACKINGEVENTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        activityname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: ACTIVITYNAME
+        membername:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: MEMBERNAME
+        datavalue:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DATAVALUE
+    lifecycleCallbacks: {  }

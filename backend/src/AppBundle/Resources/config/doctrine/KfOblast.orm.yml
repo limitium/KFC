@@ -1,0 +1,61 @@
+AppBundle\Entity\KfOblast:
+    type: entity
+    table: KF_OBLAST
+    indexes:
+        KF_SR_IX_OBLASTID:
+            columns:
+                - KF_OBLASTID
+                - OBLAST_RUS
+                - OBLAST_ENG
+        KF_SR_IX_OBLAST_RUS:
+            columns:
+                - OBLAST_RUS
+    uniqueConstraints:
+        KF_OBLAST_PRIMARY:
+            columns:
+                - KF_OBLASTID
+    id: {  }
+    fields:
+        kfOblastid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OBLASTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        oblastRus:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: OBLAST_RUS
+        oblastEng:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: OBLAST_ENG
+        intareaid:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

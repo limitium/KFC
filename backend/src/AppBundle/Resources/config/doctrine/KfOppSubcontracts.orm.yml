@@ -1,0 +1,102 @@
+AppBundle\Entity\KfOppSubcontracts:
+    type: entity
+    table: KF_OPP_SUBCONTRACTS
+    indexes:
+        KF_OPP_SUBCONTRACTS_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_SUBCONTRACTS_PRIMARY:
+            columns:
+                - KF_OPP_SUBCONTRACTSID
+    id: {  }
+    fields:
+        kfOppSubcontractsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_SUBCONTRACTSID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        scType:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SC_TYPE
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        department:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DEPARTMENT
+        marketSegment:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: MARKET_SEGMENT
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        potentialSum:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: POTENTIAL_SUM
+        actualSum:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: ACTUAL_SUM
+        forecastDate:
+            type: datetime
+            nullable: true
+            column: FORECAST_DATE
+        actualDate:
+            type: datetime
+            nullable: true
+            column: ACTUAL_DATE
+        notes:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: NOTES
+    lifecycleCallbacks: {  }

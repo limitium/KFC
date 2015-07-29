@@ -1,0 +1,46 @@
+AppBundle\Entity\KfExchangeRates:
+    type: entity
+    table: KF_EXCHANGE_RATES
+    uniqueConstraints:
+        KF_EXCHANGE_RATES_PRIMARY:
+            columns:
+                - KF_EXCHANGE_RATESID
+    id: {  }
+    fields:
+        kfExchangeRatesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_EXCHANGE_RATESID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        rateDate:
+            type: datetime
+            nullable: true
+            column: RATE_DATE
+        rateValue:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RATE_VALUE
+    lifecycleCallbacks: {  }

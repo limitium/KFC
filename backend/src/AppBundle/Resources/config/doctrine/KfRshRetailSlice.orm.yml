@@ -1,0 +1,117 @@
+AppBundle\Entity\KfRshRetailSlice:
+    type: entity
+    table: kf_rsh_retail_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ID
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        leaseArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LEASE_AREA
+        buildingStage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BUILDING_STAGE
+        minRateBig:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MIN_RATE_BIG
+        maxRateBig:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MAX_RATE_BIG
+        minRateLit:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MIN_RATE_LIT
+        maxRateLit:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MAX_RATE_LIT
+        minRateChild:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MIN_RATE_CHILD
+        maxRateChild:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MAX_RATE_CHILD
+        minRateShoues:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MIN_RATE_SHOUES
+        maxRateShoues:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MAX_RATE_SHOUES
+        minRateLeather:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MIN_RATE_LEATHER
+        maxRateLeather:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: MAX_RATE_LEATHER
+        sredVzvLitAnch:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SRED_VZV_LIT_ANCH
+        sredVzvBigAnch:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SRED_VZV_BIG_ANCH
+        avgSaleCost:
+            type: decimal
+            nullable: true
+            precision: 20
+            scale: 6
+            column: AVG_SALE_COST
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

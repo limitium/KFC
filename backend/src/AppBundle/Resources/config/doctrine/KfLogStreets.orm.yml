@@ -1,0 +1,34 @@
+AppBundle\Entity\KfLogStreets:
+    type: entity
+    table: kf_log_streets
+    id: {  }
+    fields:
+        spkStreetidOld:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_streetid_old
+        spkStreetidNew:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_streetid_new
+        dat:
+            type: datetime
+            nullable: true
+            column: Dat
+        streetNameRusOld:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_name_rus_old
+        streetNameRusNew:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_name_rus_new
+    lifecycleCallbacks: {  }

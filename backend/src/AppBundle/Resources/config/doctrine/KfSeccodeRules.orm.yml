@@ -1,0 +1,39 @@
+AppBundle\Entity\KfSeccodeRules:
+    type: entity
+    table: kf_seccode_rules
+    id: {  }
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        eventtype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+        uniquedepartment:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: UniqueDepartment
+        entitydepartment:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: EntityDepartment
+        entitytype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: EntityType
+        seccodedescr:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+    lifecycleCallbacks: {  }

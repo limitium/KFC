@@ -1,0 +1,100 @@
+AppBundle\Entity\KfContactObjSrch:
+    type: entity
+    table: KF_CONTACT_OBJ_SRCH
+    indexes:
+        KF_CONTACT_OBJ_SRCH_CONTACTID:
+            columns:
+                - CONTACTID
+    uniqueConstraints:
+        KF_CONTACT_OBJ_SRCH_PRIMARY:
+            columns:
+                - KF_CONTACT_OBJ_SRCHID
+    id: {  }
+    fields:
+        kfContactObjSrchid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_CONTACT_OBJ_SRCHID
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        showDate:
+            type: datetime
+            nullable: true
+            column: SHOW_DATE
+        interested:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: INTERESTED
+        legalauditdate:
+            type: datetime
+            nullable: true
+            column: LEGALAUDITDATE
+        chosenOne:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CHOSEN_ONE
+        chosenDate:
+            type: datetime
+            nullable: true
+            column: CHOSEN_DATE
+        opportunityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        techauditdate:
+            type: datetime
+            nullable: true
+            column: TECHAUDITDATE
+        offertaDate:
+            type: datetime
+            nullable: true
+            column: OFFERTA_DATE
+        leaseStartDate:
+            type: datetime
+            nullable: true
+            column: LEASE_START_DATE
+    lifecycleCallbacks: {  }

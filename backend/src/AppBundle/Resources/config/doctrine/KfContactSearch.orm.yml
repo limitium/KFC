@@ -1,0 +1,59 @@
+AppBundle\Entity\KfContactSearch:
+    type: entity
+    table: KF_CONTACT_SEARCH
+    id: {  }
+    fields:
+        fiorus:
+            type: string
+            nullable: true
+            length: 130
+            fixed: false
+            column: FIORUS
+        emails:
+            type: string
+            nullable: true
+            length: 388
+            fixed: false
+            column: EMAILS
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+        poisk123:
+            type: string
+            nullable: true
+            length: 585
+            fixed: false
+            column: POISK_123
+        poiskAbc:
+            type: string
+            nullable: true
+            length: 906
+            fixed: false
+            column: POISK_ABC
+        poiskAbcRus:
+            type: string
+            nullable: true
+            length: 516
+            fixed: false
+            column: POISK_ABC_RUS
+        poiskEmail:
+            type: string
+            nullable: true
+            length: 388
+            fixed: false
+            column: POISK_EMAIL
+        points:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: POINTS
+        result:
+            type: string
+            nullable: false
+            length: 9
+            fixed: false
+            column: RESULT
+    lifecycleCallbacks: {  }

@@ -1,0 +1,74 @@
+AppBundle\Entity\Useroptions:
+    type: entity
+    table: USEROPTIONS
+    indexes:
+        IX_USEROPTIONS:
+            columns:
+                - NAME
+                - CATEGORY
+        IX_USEROPTIONS_1:
+            columns:
+                - USERID
+    uniqueConstraints:
+        PK_USEROPTIONS:
+            columns:
+                - OPTIONID
+    id: {  }
+    fields:
+        optionid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            column: OPTIONID
+        name:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            column: NAME
+        category:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            column: CATEGORY
+        userid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: USERID
+        optionvalue:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: OPTIONVALUE
+        locked:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: LOCKED
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

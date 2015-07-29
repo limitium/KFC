@@ -1,0 +1,60 @@
+AppBundle\Entity\KfTempHomeSalesPlanUser:
+    type: entity
+    table: KF_TEMP_HOME_SALES_PLAN_USER
+    id: {  }
+    fields:
+        ssn:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        type:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            column: Type
+        broker:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        yearClosed:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: year_closed
+        amount:
+            type: float
+            nullable: false
+            precision: 53
+            scale: 0
+        planAmount:
+            type: float
+            nullable: false
+            precision: 53
+            scale: 0
+            column: PLAN_AMOUNT
+        planAmountProbability:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PLAN_AMOUNT_PROBABILITY
+        placeDep:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: place_dep
+        placeAll:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: place_all
+        result:
+            type: string
+            nullable: false
+            length: 9
+            fixed: false
+            column: RESULT
+    lifecycleCallbacks: {  }

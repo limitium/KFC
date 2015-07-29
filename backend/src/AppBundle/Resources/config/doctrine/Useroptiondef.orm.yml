@@ -1,0 +1,55 @@
+AppBundle\Entity\Useroptiondef:
+    type: entity
+    table: USEROPTIONDEF
+    uniqueConstraints:
+        IX_USEROPTIONDEF:
+            columns:
+                - NAME
+                - CATEGORY
+    id: {  }
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            column: NAME
+        category:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            column: CATEGORY
+        displayname:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: DISPLAYNAME
+        defvalue:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: DEFVALUE
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

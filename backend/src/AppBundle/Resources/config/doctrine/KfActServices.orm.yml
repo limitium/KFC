@@ -1,0 +1,64 @@
+AppBundle\Entity\KfActServices:
+    type: entity
+    table: KF_ACT_SERVICES
+    indexes:
+        KF_ACT_SERVICES_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_ACT_SERVICES_PRIMARY:
+            columns:
+                - KF_ACT_SERVICESID
+    id: {  }
+    fields:
+        kfActServicesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_ACT_SERVICESID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        service:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: SERVICE
+        serviceAmount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: SERVICE_AMOUNT
+        currency:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CURRENCY
+    lifecycleCallbacks: {  }

@@ -1,0 +1,11 @@
+AppBundle\Entity\KfNullsInMetros:
+    type: entity
+    table: kf_nulls_in_metros
+    id: {  }
+    fields:
+        expr1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Expr1
+    lifecycleCallbacks: {  }

@@ -1,0 +1,69 @@
+AppBundle\Entity\KfDublStreet:
+    type: entity
+    table: kf_dubl_street
+    id: {  }
+    fields:
+        streetNameRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_name_rus
+        streetTypeRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_type_rus
+        spkStreetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_streetid
+        gisid:
+            type: integer
+            nullable: true
+            unsigned: false
+        cnt:
+            type: integer
+            nullable: true
+            unsigned: false
+        parentStreetid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: parent_streetID
+        igisid:
+            type: integer
+            nullable: true
+            unsigned: false
+        icnt:
+            type: integer
+            nullable: true
+            unsigned: false
+        iparentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        streetNameRusNew:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_name_rus_new
+        streetNameRusOld:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: street_name_rus_old
+        spkStreetRusNormalised:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: spk_street_rus_normalised
+    lifecycleCallbacks: {  }

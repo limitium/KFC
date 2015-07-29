@@ -1,0 +1,82 @@
+AppBundle\Entity\KfMarketingLogs:
+    type: entity
+    table: KF_MARKETING_LOGS
+    indexes:
+        KF_MARKETING_LOGS_KF_MARKETING_PROJECTSID:
+            columns:
+                - KF_MARKETING_PROJECTSID
+    uniqueConstraints:
+        KF_MARKETING_LOGS_PRIMARY:
+            columns:
+                - KF_MARKETING_LOGSID
+    id: {  }
+    fields:
+        kfMarketingLogsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_MARKETING_LOGSID
+        kfMarketingProjectsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: KF_MARKETING_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        changedField:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CHANGED_FIELD
+        oldValue:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: OLD_VALUE
+        newValue:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: NEW_VALUE
+        entity:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ENTITY
+        entityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ENTITYID
+        comments:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COMMENTS
+    lifecycleCallbacks: {  }

@@ -1,0 +1,136 @@
+AppBundle\Entity\KfOffCmpTech:
+    type: entity
+    table: KF_OFF_CMP_TECH
+    uniqueConstraints:
+        KF_OFF_CMP_TECH_PRIMARY:
+            columns:
+                - SPK_PROPERTYID
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        rings:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RINGS
+        kfClass:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: KF_CLASS
+        kfDistrict:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: KF_DISTRICT
+        complexType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: COMPLEX_TYPE
+        landArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: LAND_AREA
+        officeArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: OFFICE_AREA
+        industrialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: INDUSTRIAL_AREA
+        retailArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RETAIL_AREA
+        residentialArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: RESIDENTIAL_AREA
+        hotelArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: HOTEL_AREA
+        minBlockArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: MIN_BLOCK_AREA
+        completionQuater:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: COMPLETION_QUATER
+        completionYear:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: COMPLETION_YEAR
+        stepAccessibility:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: STEP_ACCESSIBILITY
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: TOTAL_AREA
+        mrefClass:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MREF_CLASS
+    lifecycleCallbacks: {  }

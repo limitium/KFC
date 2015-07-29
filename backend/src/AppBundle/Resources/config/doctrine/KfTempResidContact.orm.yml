@@ -1,0 +1,34 @@
+AppBundle\Entity\KfTempResidContact:
+    type: entity
+    table: KF_TEMP_RESID_CONTACT
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+        nearActivity:
+            type: datetime
+            nullable: true
+            column: near_activity
+        lastHistory:
+            type: datetime
+            nullable: true
+            column: last_history
+        contCreatedate:
+            type: datetime
+            nullable: true
+            column: cont_createdate
+        resiStatus:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            column: resi_status
+    lifecycleCallbacks: {  }

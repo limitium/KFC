@@ -1,0 +1,52 @@
+AppBundle\Entity\KfOppAreas:
+    type: entity
+    table: KF_OPP_AREAS
+    indexes:
+        KF_OPP_AREAS_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_AREAS_PRIMARY:
+            columns:
+                - KF_OPP_AREASID
+    id: {  }
+    fields:
+        kfOppAreasid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_AREASID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkAreaid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_AREAID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,48 @@
+AppBundle\Entity\KfTempContactEmails:
+    type: entity
+    table: KF_TEMP_CONTACT_EMAILS
+    uniqueConstraints:
+        KF_TEMP_CONTACT_EMAILS_PRIMARY:
+            columns:
+                - KF_TEMP_CONTACT_EMAILSID
+    id: {  }
+    fields:
+        kfTempContactEmailsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_TEMP_CONTACT_EMAILSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        email:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: EMAIL
+    lifecycleCallbacks: {  }

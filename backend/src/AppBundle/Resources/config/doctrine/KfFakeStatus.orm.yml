@@ -1,0 +1,48 @@
+AppBundle\Entity\KfFakeStatus:
+    type: entity
+    table: KF_FAKE_STATUS
+    uniqueConstraints:
+        KF_FAKE_STATUS_PRIMARY:
+            columns:
+                - KF_FAKE_STATUSID
+    id: {  }
+    fields:
+        kfFakeStatusid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_FAKE_STATUSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        status:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STATUS
+        statusType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STATUS_TYPE
+    lifecycleCallbacks: {  }

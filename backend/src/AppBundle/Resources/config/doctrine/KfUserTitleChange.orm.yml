@@ -1,0 +1,58 @@
+AppBundle\Entity\KfUserTitleChange:
+    type: entity
+    table: KF_USER_TITLE_CHANGE
+    uniqueConstraints:
+        KF_USER_TITLE_CHANGE_PRIMARY:
+            columns:
+                - KF_USER_TITLE_CHANGEID
+    id: {  }
+    fields:
+        kfUserTitleChangeid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_USER_TITLE_CHANGEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        department:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: DEPARTMENT
+        division:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: DIVISION
+        changeDate:
+            type: datetime
+            nullable: true
+            column: CHANGE_DATE
+    lifecycleCallbacks: {  }

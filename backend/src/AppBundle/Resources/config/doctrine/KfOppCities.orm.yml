@@ -1,0 +1,52 @@
+AppBundle\Entity\KfOppCities:
+    type: entity
+    table: KF_OPP_CITIES
+    indexes:
+        KF_OPP_CITIES_OPPORTUNITYID:
+            columns:
+                - OPPORTUNITYID
+    uniqueConstraints:
+        KF_OPP_CITIES_PRIMARY:
+            columns:
+                - KF_OPP_CITIESID
+    id: {  }
+    fields:
+        kfOppCitiesid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_OPP_CITIESID
+        opportunityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkCityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_CITYID
+    lifecycleCallbacks: {  }

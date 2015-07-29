@@ -1,0 +1,48 @@
+AppBundle\Entity\KfTeleParameters:
+    type: entity
+    table: KF_TELE_PARAMETERS
+    uniqueConstraints:
+        KF_TELE_PARAMETERS_PRIMARY:
+            columns:
+                - KF_TELE_PARAMETERSID
+    id: {  }
+    fields:
+        kfTeleParametersid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_TELE_PARAMETERSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        parametr:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PARAMETR
+        leadsource:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: LEADSOURCE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,828 @@
+AppBundle\Entity\KfProjects:
+    type: entity
+    table: KF_PROJECTS
+    indexes:
+        KF_SR_IX_CONTACTID_MANAGERID:
+            columns:
+                - CONTACTID
+                - MANAGERID
+        _dta_index_KF_PROJECTS_5_1681441064__K1_12_21_34_38_50_51:
+            columns:
+                - KF_PROJECTSID
+                - STATUS
+                - CONSULTINGGROUP
+                - DATEOPENED
+                - PROJECT_NAME
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K6_K1:
+            columns:
+                - SECCODEID
+                - KF_PROJECTSID
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K13_K7_K8:
+            columns:
+                - KF_PROJECTSID
+                - MANAGERID
+                - ACCOUNTID
+                - CONTACTID
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K7_K1_K13:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - MANAGERID
+        _dta_index_KF_PROJECTS_5_1681441064__K34_K28_K12_K18_K31_K3_K7_9_15_16_26:
+            columns:
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - ACCOUNTID
+                - OBJECTID
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K1_K13_K7:
+            columns:
+                - CONTACTID
+                - KF_PROJECTSID
+                - MANAGERID
+                - ACCOUNTID
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K1_K34_K28_K13_K12_K18_K31_K3_K7_9_15_16_26:
+            columns:
+                - CONTACTID
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - ACCOUNTID
+                - OBJECTID
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K1_K13_K7_K9_K34_K28_K12_K18_K31_K3_15_16_26:
+            columns:
+                - CONTACTID
+                - KF_PROJECTSID
+                - MANAGERID
+                - ACCOUNTID
+                - OBJECTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K34_K28_K13_K12_K18_K31_K3_K7_K8_9_15_16_26:
+            columns:
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - ACCOUNTID
+                - CONTACTID
+                - OBJECTID
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K8_K1_K13_K9_K34_K28_K12_K18_K31_K3_15_16_26:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - KF_PROJECTSID
+                - MANAGERID
+                - OBJECTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K13_K7_K8_K9_K34_K28_K12_K18_K31_K3_15_16_26:
+            columns:
+                - KF_PROJECTSID
+                - MANAGERID
+                - ACCOUNTID
+                - CONTACTID
+                - OBJECTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K7_K1_K13_K9_K34_K28_K12_K18_K31_K3_15_16_26:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - MANAGERID
+                - OBJECTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K9_K34_K28_K12_K18_K31_K3_15_16_26:
+            columns:
+                - ACCOUNTID
+                - OBJECTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K8_K1_K13:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - KF_PROJECTSID
+                - MANAGERID
+        _dta_index_KF_PROJECTS_5_1681441064__K8_K7_K9_K1_K34_K28_K13_K12_K18_K31_K3_15_16_26:
+            columns:
+                - CONTACTID
+                - ACCOUNTID
+                - OBJECTID
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K9_K8_K1_K34_K28_K13_K12_K18_K31_K3_15_16_26:
+            columns:
+                - ACCOUNTID
+                - OBJECTID
+                - CONTACTID
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K9_K8_K7_K1_K34_K28_K13_K12_K18_K31_K3_15_16_26:
+            columns:
+                - OBJECTID
+                - CONTACTID
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K1_K34_K28_K13_K12_K18_K31_K3_8_9_15_16_26:
+            columns:
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - CONTACTID
+                - OBJECTID
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K6_38:
+            columns:
+                - ACCOUNTID
+                - SECCODEID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K7_K6_38:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+                - SECCODEID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K1_6_7_38:
+            columns:
+                - KF_PROJECTSID
+                - SECCODEID
+                - ACCOUNTID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K1_7:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+        _dta_index_KF_PROJECTS_5_1681441064__K6_7_38:
+            columns:
+                - SECCODEID
+                - ACCOUNTID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K1_38:
+            columns:
+                - KF_PROJECTSID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K1_K6_38:
+            columns:
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - SECCODEID
+                - PROJECT_NAME
+        _dta_index_KF_PROJECTS_5_1681441064__K7:
+            columns:
+                - ACCOUNTID
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K1:
+            columns:
+                - ACCOUNTID
+                - KF_PROJECTSID
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K1_K9_K8_K34_K28_K13_K12_K18_K31_K3_15_16_26:
+            columns:
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - OBJECTID
+                - CONTACTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K7_K9_K8_K34_K28_K13_K12_K18_K31_K3_15_16_26:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+                - OBJECTID
+                - CONTACTID
+                - DATEOPENED
+                - PROJECTTYPE
+                - MANAGERID
+                - STATUS
+                - CLOSEDDATE
+                - CURRENTSTAGE
+                - CREATEDATE
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - PAYMENTS
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K7_K6_K36_K37_K32_K8_5_10_12_13_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - CONTACTID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MANAGERID
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K6_K36_K37_K32_5_10_12_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_43_44_45_:
+            columns:
+                - ACCOUNTID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K7_16:
+            columns:
+                - ACCOUNTID
+                - ACTUAL_COMISSION
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K1_K6_K36_K37_K32_K8_5_10_12_13_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_:
+            columns:
+                - ACCOUNTID
+                - KF_PROJECTSID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - CONTACTID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MANAGERID
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K6_K36_K37_K32_K8_K1_5_10_12_13_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_:
+            columns:
+                - ACCOUNTID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - CONTACTID
+                - KF_PROJECTSID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MANAGERID
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K7_K8_K6_K36_K37_K32_5_10_12_13_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+                - CONTACTID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MANAGERID
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+        _dta_index_KF_PROJECTS_5_1681441064__K1_K7_K8_13:
+            columns:
+                - KF_PROJECTSID
+                - ACCOUNTID
+                - CONTACTID
+                - MANAGERID
+        _dta_index_KF_PROJECTS_5_1681441064__K7_K8_K1_K6_K36_K37_K32_5_10_12_13_14_15_16_20_21_22_23_28_29_30_33_34_35_38_39_40_41_42_:
+            columns:
+                - ACCOUNTID
+                - CONTACTID
+                - KF_PROJECTSID
+                - SECCODEID
+                - REGIONID
+                - CITYID
+                - LEADSOURCEID
+                - MODIFYDATE
+                - PROPERTYDESCRIPTION
+                - STATUS
+                - MANAGERID
+                - MARKET_SEGMENT
+                - POTENTIAL_COMISSION
+                - ACTUAL_COMISSION
+                - COMMENTS
+                - CONSULTINGGROUP
+                - REPORTFORM
+                - LANGUAGE_REPORT
+                - PROJECTTYPE
+                - PROJECTSUBTYPE
+                - CONTRACTKF
+                - ESTIMATEDCLOSE
+                - DATEOPENED
+                - PROBABILITY
+                - PROJECT_NAME
+                - CONTRACT_DATE
+                - LOI_DATE
+                - ACT_DATE
+                - INVOICE_DATE
+                - CONTRACT_NUMBER
+                - ACT_NUMBER
+                - INVOICE_NUMBER
+                - STAGE
+                - CURRENCY
+    uniqueConstraints:
+        KF_PROJECTS_PRIMARY:
+            columns:
+                - KF_PROJECTSID
+    id: {  }
+    fields:
+        kfProjectsid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_PROJECTSID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        objectid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OBJECTID
+        propertydescription:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: PROPERTYDESCRIPTION
+        services:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: SERVICES
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        marketSegment:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: MARKET_SEGMENT
+        potentialComission:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: POTENTIAL_COMISSION
+        actualComission:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: ACTUAL_COMISSION
+        signeddate:
+            type: datetime
+            nullable: true
+            column: SIGNEDDATE
+        closeddate:
+            type: datetime
+            nullable: true
+            column: CLOSEDDATE
+        projectDuration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PROJECT_DURATION
+        comments:
+            type: string
+            nullable: true
+            length: 2048
+            fixed: false
+            column: COMMENTS
+        consultinggroup:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: CONSULTINGGROUP
+        reportform:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: REPORTFORM
+        languageReport:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LANGUAGE_REPORT
+        researchperiodfrom:
+            type: datetime
+            nullable: true
+            column: RESEARCHPERIODFROM
+        researchperiodto:
+            type: datetime
+            nullable: true
+            column: RESEARCHPERIODTO
+        payments:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: PAYMENTS
+        balance:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: BALANCE
+        projecttype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PROJECTTYPE
+        projectsubtype:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROJECTSUBTYPE
+        contractkf:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CONTRACTKF
+        currentstage:
+            type: string
+            nullable: true
+            length: 512
+            fixed: false
+            column: CURRENTSTAGE
+        leadsourceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEADSOURCEID
+        estimatedclose:
+            type: datetime
+            nullable: true
+            column: ESTIMATEDCLOSE
+        dateopened:
+            type: datetime
+            nullable: true
+            column: DATEOPENED
+        probability:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PROBABILITY
+        regionid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REGIONID
+        cityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CITYID
+        projectName:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: PROJECT_NAME
+        contractDate:
+            type: datetime
+            nullable: true
+            column: CONTRACT_DATE
+        loiDate:
+            type: datetime
+            nullable: true
+            column: LOI_DATE
+        actDate:
+            type: datetime
+            nullable: true
+            column: ACT_DATE
+        invoiceDate:
+            type: datetime
+            nullable: true
+            column: INVOICE_DATE
+        contractNumber:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: CONTRACT_NUMBER
+        actNumber:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACT_NUMBER
+        invoiceNumber:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: INVOICE_NUMBER
+        legalaccointid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEGALACCOINTID
+        oppissues:
+            type: string
+            nullable: true
+            length: 1024
+            fixed: false
+            column: OPPISSUES
+        spkRequestsid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_REQUESTSID
+        legalCompany:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LEGAL_COMPANY
+        stage:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: STAGE
+        currency:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CURRENCY
+        salesStep:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: SALES_STEP
+        phases:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: PHASES
+    lifecycleCallbacks: {  }

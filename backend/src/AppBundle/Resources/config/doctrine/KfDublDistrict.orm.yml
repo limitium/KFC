@@ -1,0 +1,24 @@
+AppBundle\Entity\KfDublDistrict:
+    type: entity
+    table: kf_DUBL_District
+    id: {  }
+    fields:
+        districtRus:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: district_rus
+        spkDistrictid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_districtid
+        spkParentDistrictid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: spk_parent_districtid
+    lifecycleCallbacks: {  }

@@ -1,0 +1,12 @@
+AppBundle\Entity\KfEmailsFromShemetova:
+    type: entity
+    table: kf_emails_from_shemetova
+    id: {  }
+    fields:
+        email:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: EMAIL
+    lifecycleCallbacks: {  }

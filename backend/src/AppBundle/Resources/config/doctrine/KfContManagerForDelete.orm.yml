@@ -1,0 +1,20 @@
+AppBundle\Entity\KfContManagerForDelete:
+    type: entity
+    table: KF_CONT_MANAGER_FOR_DELETE
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        managerid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        days:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

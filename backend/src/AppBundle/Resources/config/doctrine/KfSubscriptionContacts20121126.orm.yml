@@ -1,0 +1,18 @@
+AppBundle\Entity\KfSubscriptionContacts20121126:
+    type: entity
+    table: kf_subscription_contacts_20121126
+    id: {  }
+    fields:
+        subscriptionid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SUBSCRIPTIONID
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+    lifecycleCallbacks: {  }

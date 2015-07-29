@@ -1,0 +1,16 @@
+AppBundle\Entity\KfTempTableRequest45619:
+    type: entity
+    table: kf_temp_table_request_45619
+    id: {  }
+    fields:
+        id:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+        category:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,16 @@
+AppBundle\Entity\KfOffGrDump:
+    type: entity
+    table: kf_off_gr_dump
+    id: {  }
+    fields:
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        manager:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+    lifecycleCallbacks: {  }

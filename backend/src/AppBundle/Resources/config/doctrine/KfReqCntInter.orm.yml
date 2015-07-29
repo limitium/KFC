@@ -1,0 +1,53 @@
+AppBundle\Entity\KfReqCntInter:
+    type: entity
+    table: KF_REQ_CNT_INTER
+    uniqueConstraints:
+        KF_REQ_CNT_INTER_PRIMARY:
+            columns:
+                - KF_REQ_CNT_INTERID
+    id: {  }
+    fields:
+        kfReqCntInterid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_REQ_CNT_INTERID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        spkPropertyid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SPK_PROPERTYID
+        ord:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: ORD
+        labl:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LABL
+    lifecycleCallbacks: {  }

@@ -1,0 +1,90 @@
+AppBundle\Entity\KfRshResidentialAptSlice:
+    type: entity
+    table: kf_rsh_residential_apt_slice
+    id: {  }
+    fields:
+        spkPropertyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: spk_propertyid
+        id:
+            type: integer
+            nullable: true
+            unsigned: false
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+        totalArea:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: total_area
+        costPerSqmMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MIN
+        costPerSqmMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_PER_SQM_MAX
+        costMin:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MIN
+        costMax:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: COST_MAX
+        operationalCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: operational_cost
+        carPlaceCost:
+            type: decimal
+            nullable: true
+            precision: 15
+            scale: 2
+            column: CAR_PLACE_COST
+        carPlace:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: car_place
+        fitOut:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FIT_OUT
+        furniture:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FURNITURE
+        discount:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: DISCOUNT
+        createdate:
+            type: datetime
+            nullable: false
+            column: CREATEDATE
+    lifecycleCallbacks: {  }

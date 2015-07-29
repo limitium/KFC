@@ -1,0 +1,66 @@
+AppBundle\Entity\KfDepartmentCompany:
+    type: entity
+    table: KF_DEPARTMENT_COMPANY
+    uniqueConstraints:
+        KF_DEPARTMENT_COMPANY_PRIMARY:
+            columns:
+                - KF_DEPARTMENT_COMPANYID
+    id: {  }
+    fields:
+        kfDepartmentCompanyid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: KF_DEPARTMENT_COMPANYID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        department:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DEPARTMENT
+        amountActs:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AMOUNT_ACTS
+        amountPaid:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AMOUNT_PAID
+        numberActs:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: NUMBER_ACTS
+        numberPaid:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: NUMBER_PAID
+    lifecycleCallbacks: {  }
