@@ -1,21 +1,13 @@
 class InvestmentNew extends Controller
   constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @ListTransformerService)->
 
-    @investPropertyType = @ListApi.Lists.investPropertyType();
     initFor = (propertyType) =>
-      if propertyType.text == 'Здание'
-        @kfCurrency = @ListApi.Lists.kfCurrency()
-        @investVat = @ListApi.Lists.investVat()
-        @investSegment = @ListApi.Lists.investSegment()
-        @investSegment.$promise.then(mapAdditionalInvestments)
-        @investStatus = @ListApi.Lists.investStatus()
-        @investClass = @ListApi.Lists.investClass()
-        @investFitOut = @ListApi.Lists.investFitOut()
-        @investBuildingStatus = @ListApi.Lists.investBuildingStatus()
-        @investObremenenie = @ListApi.Lists.investObremenenie()
-        @investLeaseStatus = @ListApi.Lists.investLeaseStatus()
-        @investLandLeaseTerm = @ListApi.Lists.investLandLeaseTerm()
+      @investment =
+        propertyType: propertyType
+        encumbrances: []
+        investSegments: []
 
+      if propertyType.text == 'Здание'
         @additionalSegments = []
         @isIndividualSaleVisible = false
         @isPotokiVisible = false
@@ -27,14 +19,14 @@ class InvestmentNew extends Controller
         @isTechOccupancyVisible = false
         @isNoiVisible = false
         @isLandLeaseTermVisible = false
+        @getInvestSegment().$promise.then(mapAdditionalInvestments)
 
-    @investment = {}
 
     @onPropertyTypeChange = ->
       objectTypeTemplates = {}
       objectTypeTemplates['Здание'] = '/components/investment-new/building.html'
       objectTypeTemplates['Земельный участок'] = '/components/investment-new/parcel.html'
-      propertyType = @ListTransformerService.getById(@investPropertyType, @investment.propertyType)
+      propertyType = @ListTransformerService.getById(@getInvestPropertyType(), @investment.propertyType)
       initFor(propertyType)
       @currentTemplate = objectTypeTemplates[propertyType.text]
 
@@ -50,7 +42,7 @@ class InvestmentNew extends Controller
       @mainToAdditionalMap[nMap["Отель"].itemid] = []
 
     checkSqmMainSegment = =>
-      segment = @ListTransformerService.getById(@investSegment, @investment.segment)
+      segment = @ListTransformerService.getById(@getInvestSegment(), @investment.segment)
       @isOfficeSqmVisible = segment.text in ['Бизнес центр', 'Административное здание', 'Особняк']
       @isRetailSqmVisible = segment.text == 'Торговый центр'
       @isHotelSqmVisible = segment.text == 'Отель'
@@ -61,14 +53,14 @@ class InvestmentNew extends Controller
     @onSegmentChange = ->
       @investment.investSegments = []
       @additionalSegments = @mainToAdditionalMap[@investment.segment]
-      segment = @ListTransformerService.getById(@investSegment, @investment.segment)
+      segment = @ListTransformerService.getById(@getInvestSegment(), @investment.segment)
       @isIndividualSaleVisible = segment.text == 'Бизнес центр'
       @isPotokiVisible = segment.text == 'Торговый центр'
 
       checkSqmMainSegment()
 
     @onAdditionalSegmentChange = ->
-      idMap = @ListTransformerService.mapToId(@investSegment)
+      idMap = @ListTransformerService.mapToId(@getInvestSegment())
       additionalSegments = (idMap[id] for id in @investment.investSegments)
       @isIndividualSaleVisible = false
       @isPotokiVisible = false
@@ -87,13 +79,39 @@ class InvestmentNew extends Controller
           @isBedroomsVisible = true
 
     @onLeaseStatusChange = ->
-      leaseStatus = @ListTransformerService.getById(@investLeaseStatus, @investment.leaseStatus)
+      leaseStatus = @ListTransformerService.getById(@getInvestLeaseStatus(), @investment.leaseStatus)
       @isTechOccupancyVisible = '% заполнения' == leaseStatus.text
       @isNoiVisible = '% заполнения' == leaseStatus.text
 
     @onLandOwnerTypeChange = ->
-      landOwnerType = @ListTransformerService.getById(@investLandLeaseTerm, @investment.landOwnerType)
+      landOwnerType = @ListTransformerService.getById(@getInvestLandLeaseTerm(), @investment.landOwnerType)
       @isLandLeaseTermVisible = 'аренда до' == landOwnerType.text
+
+
+
+#   Getters
+    @getInvestPropertyType = ->
+      @investPropertyType ?= @ListApi.Lists.investPropertyType()
+    @getKfCurrency = ->
+      @kfCurrency ?= @ListApi.Lists.kfCurrency()
+    @getInvestVat = ->
+      @investVat ?= @ListApi.Lists.investVat()
+    @getInvestSegment = ->
+      @investSegment ?= @ListApi.Lists.investSegment()
+    @getInvestStatus = ->
+      @investStatus ?= @ListApi.Lists.investStatus()
+    @getInvestClass = ->
+      @investClass ?= @ListApi.Lists.investClass()
+    @getInvestFitOut = ->
+      @investFitOut ?= @ListApi.Lists.investFitOut()
+    @getInvestBuildingStatus = ->
+      @investBuildingStatus ?= @ListApi.Lists.investBuildingStatus()
+    @getInvestObremenenie = ->
+      @investObremenenie ?= @ListApi.Lists.investObremenenie()
+    @getInvestLeaseStatus = ->
+      @investLeaseStatus ?= @ListApi.Lists.investLeaseStatus()
+    @getInvestLandLeaseTerm = ->
+      @investLandLeaseTerm ?= @ListApi.Lists.investLandLeaseTerm()
 
     @busy = false
 
