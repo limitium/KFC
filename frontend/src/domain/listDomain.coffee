@@ -11,6 +11,7 @@ class ListApi extends Factory
       investClass: {method: 'GET', params: {type: 'INVEST_CLASS'}, isArray: false}
       investFitOut: {method: 'GET', params: {type: 'INVEST_FIT_OUT'}, isArray: false}
       investBuildingStatus: {method: 'GET', params: {type: 'INVEST_BUILDING_STATUS'}, isArray: false}
+      investBuildingStatusZu: {method: 'GET', params: {type: 'INVEST_BUILDING_STATUS_ZU'}, isArray: false}
       investObremenenie: {method: 'GET', params: {type: 'INVEST_OBREMENENIE'}, isArray: false}
       investObremenenieZu: {method: 'GET', params: {type: 'INVEST_OBREMENENIE_ZU'}, isArray: false}
       investLeaseStatus: {method: 'GET', params: {type: 'INVEST_LEASE_STATUS'}, isArray: false}
@@ -19,6 +20,7 @@ class ListApi extends Factory
       availableBuildings: {method: 'GET', params: {type: 'AVAILABLE_BUILDINGS'}, isArray: false}
       investTechnical: {method: 'GET', params: {type: 'INVEST_TECHNICAL'}, isArray: false}
       investLandStatus: {method: 'GET', params: {type: 'INVEST_LAND_STATUS'}, isArray: false}
+      investEntry: {method: 'GET', params: {type: 'INVEST_ENTRY'}, isArray: false}
     })
     }
 

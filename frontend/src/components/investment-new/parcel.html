@@ -1,1 +1,364 @@
-<h1>TBD</h1>
+<h3>Цена актива</h3>
+<div class="form-group">
+    <label for="amount" class="col-sm-3 control-label">Сумма</label>
+    <div class="col-sm-6">
+        <input type="number" class="form-control" id="amount" ng-model="investmentNew.investment.amount">
+    </div>
+    <div class="col-sm-3">
+        <ui-select ng-model="investmentNew.investment.amountCurrency">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label for="tech-total-gla-gsa-per-square" class="col-sm-3 control-label">На кв.м GLA/GSA</label>
+    <div class="col-sm-7">
+        <input type="number" class="form-control" id="tech-total-gla-gsa-per-square"
+               ng-value="investmentNew.investment.amount/(investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +
+                                         investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm)" disabled>
+    </div>
+</div>
+<div class="form-group">
+    <label for="tech-leaseable-sqm-per-square" class="col-sm-3 control-label">На 1 Га</label>
+    <div class="col-sm-7">
+        <input type="number" class="form-control" id="tech-leaseable-sqm-per-square"
+               ng-value="investmentNew.investment.amount/investmentNew.investment.landGa" disabled>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Условия входа</label>
+    <div class="col-sm-7">
+        <ui-select ng-model="investmentNew.investment.entryCondition">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getEntryCondition().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<h3>Характеристики</h3>
+<div class="form-group">
+    <label for="name-rus" class="col-sm-3 control-label">Название</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" id="name-rus"
+               ng-model="investmentNew.investment.nameRus">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Сегмент</label>
+    <div class="col-sm-9">
+        <ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestSegment().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Вспомогательные сегменты</label>
+    <div class="col-sm-9">
+        <ui-select multiple ng-model="investmentNew.investment.investSegments" ng-change="investmentNew.onAdditionalSegmentChange()">
+            <ui-select-match>{{$item.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.additionalSegments | filter:$select.search">
+                {{item.text}}
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Статус</label>
+    <div class="col-sm-9">
+        <ui-select ng-model="investmentNew.investment.status">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestStatus().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label for="cadastrial-number" class="col-sm-3 control-label">Кадастровый номер</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" id="cadastrial-number"
+               ng-model="investmentNew.investment.cadastrialNumber">
+    </div>
+</div>
+<div class="form-group">
+    <label for="permitted-use" class="col-sm-3 control-label">Вид разрешенного использования</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" id="permitted-use"
+               ng-model="investmentNew.investment.permittedUse">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Обременения</label>
+    <div class="col-sm-9">
+        <ui-select multiple ng-model="investmentNew.investment.encumbrances">
+            <ui-select-match>{{$item.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestObremenenieZu().items | filter:$select.search">
+                {{item.text}}
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label for="land-ga" class="col-sm-3 control-label">Земельный участок, Га</label>
+    <div class="col-sm-3">
+        <input type="number" class="form-control" id="land-ga"
+               ng-model="investmentNew.investment.landGa">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Правовой статус</label>
+    <div class="col-sm-3">
+        <ui-select ng-model="investmentNew.investment.landOwnerType" ng-change="investmentNew.onLandOwnerTypeChange()">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <div class="col-sm-2">
+        <input type="number" class="form-control"
+               ng-show="investmentNew.isLandLeaseTermVisible"
+               ng-model="investmentNew.investment.landLeaseTerm">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Наличие строений</label>
+    <div class="col-sm-3">
+        <ui-select ng-model="investmentNew.investment.availableBuildings" ng-change="investmentNew.onAvailableBuildingsChange()">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getAvailableBuildings().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <label for="buildings-sqm" class="col-sm-1 control-label" ng-show="investmentNew.isBuildingsSqmVisible">GBA</label>
+    <div class="col-sm-2">
+        <input type="number" class="form-control"
+               id="buildings-sqm"
+               ng-show="investmentNew.isBuildingsSqmVisible"
+               ng-model="investmentNew.investment.availableBuildingsSqm">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Статус строений</label>
+    <div class="col-sm-9">
+        <ui-select ng-model="investmentNew.investment.buildingStatusZu">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestBuildingStatusZu().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Технические условия</label>
+    <div class="col-sm-9">
+        <ui-select multiple ng-model="investmentNew.investment.technicals">
+            <ui-select-match>{{$item.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestTechnical().items | filter:$select.search">
+                {{item.text}}
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Статус проработки</label>
+    <div class="col-sm-9">
+        <ui-select ng-model="investmentNew.investment.landStatus" ng-change="investmentNew.onLandStatusChange()">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestLandStatus().items | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<h3>Местоположение объекта</h3>
+<h3>ТЭПы</h3>
+<div ng-show="investmentNew.areTepsVisible">
+    <div class="form-group">
+        <label for="tech-density" class="col-sm-4 control-label">Плотность на Га</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="tech-density"
+                   ng-model="investmentNew.investment.techDensity">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tech-total-sqm" class="col-sm-4 control-label">Общая площадь (GBA), кв.м,<br/>в том числе:</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="tech-total-sqm"
+                   ng-value="investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tech-ground-sqm" class="col-sm-4 control-label text-right">Наземная</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="tech-ground-sqm"
+                   ng-model="investmentNew.investment.groundSqm">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tech-uground-sqm" class="col-sm-4 control-label text-right">Подземная</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="tech-uground-sqm"
+                   ng-model="investmentNew.investment.ugroundSqm">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tech-leaseable-sqm" class="col-sm-4 control-label">Полезная/продаваемая площадь (GLA/GSA), кв.м,<br/>в том числе:</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="tech-leaseable-sqm"
+                   ng-value="investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +
+                                         investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm"
+                   disabled>
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isOfficeSqmVisible">
+        <label for="office-sqm" class="col-sm-4 control-label text-right">Офисная</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="office-sqm"
+                   ng-model="investmentNew.investment.officeSqm">
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isRetailSqmVisible">
+        <label for="retail-sqm" class="col-sm-4 control-label text-right">Торговая</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="retail-sqm"
+                   ng-model="investmentNew.investment.retailSqm">
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isHotelSqmVisible">
+        <label for="hotel-sqm" class="col-sm-4 control-label text-right">Гостиничная</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="hotel-sqm"
+                   ng-model="investmentNew.investment.hotelSqm">
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isBedroomsVisible">
+        <label for="bedrooms" class="col-sm-4 control-label text-right">Количество номеров</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="bedrooms"
+                   ng-model="investmentNew.investment.bedrooms">
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isIndustrialSqmVisible">
+        <label for="industrial-sqm" class="col-sm-4 control-label text-right">Складская</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="industrial-sqm"
+                   ng-model="investmentNew.investment.industrialSqm">
+        </div>
+    </div>
+    <div class="form-group" ng-show="investmentNew.isResidentialSqmVisible">
+        <label for="residential-sqm" class="col-sm-4 control-label text-right">Жилая</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="residential-sqm"
+                   ng-model="investmentNew.investment.residentialSqm">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Этажность (наземных / подземных)</label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control"
+                   ng-model="investmentNew.investment.floor">
+        </div>
+        <div class="forward-slash">/</div>
+        <div class="col-sm-3">
+            <input type="text" class="form-control"
+                   ng-model="investmentNew.investment.ufloor">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="parking" class="col-sm-4 control-label">Паркинг, всего м/м,<br/>в том числе:</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="parking"
+                   ng-value="investmentNew.investment.groundParking + investmentNew.investment.ugroundParking +
+                                         investmentNew.investment.multilevelParking" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ground-parking" class="col-sm-4 control-label text-right">Наземный</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="ground-parking"
+                   ng-model="investmentNew.investment.groundParking">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="uground-parking" class="col-sm-4 control-label text-right">Подземный</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="uground-parking"
+                   ng-model="investmentNew.investment.ugroundParking">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="multilevel-parking" class="col-sm-4 control-label text-right">Многоуровневый</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="multilevel-parking"
+                   ng-model="investmentNew.investment.multilevelParking">
+        </div>
+    </div>
+
+    <h4>Социальная инфраструктура:</h4>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Школа (кв.м/мест)</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.schoolSq">
+        </div>
+        <div class="forward-slash">/</div>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.schoolPlace">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">ДОУ (кв.м/мест)</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.kindergartenSq">
+        </div>
+        <div class="forward-slash">/</div>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.kindergartenPlace">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Поликлиника (кв.м)</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.clinicSq">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">МФЦ (кв.м)</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.mfcSq">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">ФОК (кв.м)</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control"
+                   ng-model="investmentNew.investment.fokSq">
+        </div>
+    </div>
+</div>

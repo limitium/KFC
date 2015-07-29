@@ -7,19 +7,21 @@ class InvestmentNew extends Controller
         encumbrances: []
         investSegments: []
 
-      if propertyType == 'Здание'
-        @additionalSegments = []
-        @isIndividualSaleVisible = false
-        @isPotokiVisible = false
-        @isOfficeSqmVisible = false
-        @isRetailSqmVisible = false
-        @isHotelSqmVisible = false
-        @isBedroomsVisible = false
-        @isIndustrialSqmVisible = false
-        @isTechOccupancyVisible = false
-        @isNoiVisible = false
-        @isLandLeaseTermVisible = false
-        @getInvestSegment().$promise.then(mapAdditionalInvestments)
+      @getInvestSegment().$promise.then(mapAdditionalInvestments)
+      @additionalSegments = []
+      @isIndividualSaleVisible = false
+      @isPotokiVisible = false
+      @isOfficeSqmVisible = false
+      @isRetailSqmVisible = false
+      @isHotelSqmVisible = false
+      @isBedroomsVisible = false
+      @isIndustrialSqmVisible = false
+      @isTechOccupancyVisible = false
+      @isNoiVisible = false
+      @isLandLeaseTermVisible = false
+      @isBuildingsSqmVisible = false
+      @isResidentialSqmVisible = false
+      @areTepsVisible = true
 
 
     @onPropertyTypeChange = ->
@@ -39,6 +41,9 @@ class InvestmentNew extends Controller
       @mainToAdditionalMap[nMap["МФК"].text] = [nMap["Бизнес центр"], nMap["Торговый центр"], nMap["Отель"], nMap["Склад"]]
       @mainToAdditionalMap[nMap["Склад"].text] = [nMap["Бизнес центр"]]
       @mainToAdditionalMap[nMap["Отель"].text] = []
+#      Those two don't exist in invest segment picklist
+#      @mainToAdditionalMap[nMap["Жилье"].text] = [nMap["Коммерческие площади"]]
+#      @mainToAdditionalMap[nMap["Апартаменты"].text] = [nMap["Коммерческие площади"]]
 
     checkSqmMainSegment = =>
       @isOfficeSqmVisible = @investment.segment in ['Бизнес центр', 'Административное здание', 'Особняк']
@@ -46,6 +51,7 @@ class InvestmentNew extends Controller
       @isHotelSqmVisible = @investment.segment == 'Отель'
       @isBedroomsVisible = @investment.segment == 'Отель'
       @isIndustrialSqmVisible = @investment.segment == 'Склад'
+      @isResidentialSqmVisible = @investment.segment in ['Жилье', 'Апартаменты']
 
 
     @onSegmentChange = ->
@@ -80,6 +86,12 @@ class InvestmentNew extends Controller
     @onLandOwnerTypeChange = ->
       @isLandLeaseTermVisible = 'аренда до' == @investment.landOwnerType
 
+    @onAvailableBuildingsChange = ->
+      @isBuildingsSqmVisible = 'Да' == @investment.availableBuildings
+
+    @onLandStatusChange = ->
+      @areTepsVisible = 'без проработок' != @investment.landStatus
+
 
 
 #   Getters
@@ -101,10 +113,22 @@ class InvestmentNew extends Controller
       @investBuildingStatus ?= @ListApi.Lists.investBuildingStatus()
     @getInvestObremenenie = ->
       @investObremenenie ?= @ListApi.Lists.investObremenenie()
+    @getInvestObremenenieZu = ->
+      @investObremenenieZu ?= @ListApi.Lists.investObremenenieZu()
     @getInvestLeaseStatus = ->
       @investLeaseStatus ?= @ListApi.Lists.investLeaseStatus()
     @getInvestLandLeaseTerm = ->
       @investLandLeaseTerm ?= @ListApi.Lists.investLandLeaseTerm()
+    @getEntryCondition = ->
+      @entryCondition ?= @ListApi.Lists.investEntry()
+    @getAvailableBuildings = ->
+      @availableBuildings ?= @ListApi.Lists.availableBuildings()
+    @getInvestBuildingStatusZu = ->
+      @investBuildingStatusZu ?= @ListApi.Lists.investBuildingStatusZu()
+    @getInvestTechnical = ->
+      @investTechnical ?= @ListApi.Lists.investTechnical()
+    @getInvestLandStatus = ->
+      @investLandStatus ?= @ListApi.Lists.investLandStatus()
 
     @busy = false
 
