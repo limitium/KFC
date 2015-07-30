@@ -121,7 +121,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Правовой статус</label>
     <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.landOwnerType" ng-change="investmentNew.onLandOwnerTypeChange()">
+        <ui-select ng-model="investmentNew.investment.landOwnerType">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
                     repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
@@ -131,14 +131,14 @@
     </div>
     <div class="col-sm-2">
         <input type="number" class="form-control"
-               ng-show="investmentNew.isLandLeaseTermVisible"
+               ng-show="investmentNew.investment.landOwnerType == 'аренда до'"
                ng-model="investmentNew.investment.landLeaseTerm">
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Наличие строений</label>
     <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.availableBuildings" ng-change="investmentNew.onAvailableBuildingsChange()">
+        <ui-select ng-model="investmentNew.investment.availableBuildings">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
                     repeat="item.text as item in investmentNew.getAvailableBuildings().items | filter:$select.search">
@@ -146,11 +146,11 @@
             </ui-select-choices>
         </ui-select>
     </div>
-    <label for="buildings-sqm" class="col-sm-1 control-label" ng-show="investmentNew.isBuildingsSqmVisible">GBA</label>
+    <label for="buildings-sqm" class="col-sm-1 control-label" ng-show="'Да' == investmentNew.investment.availableBuildings">GBA</label>
     <div class="col-sm-2">
         <input type="number" class="form-control"
                id="buildings-sqm"
-               ng-show="investmentNew.isBuildingsSqmVisible"
+               ng-show="'Да' == investmentNew.investment.availableBuildings"
                ng-model="investmentNew.investment.availableBuildingsSqm">
     </div>
 </div>
@@ -181,7 +181,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Статус проработки</label>
     <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.landStatus" ng-change="investmentNew.onLandStatusChange()">
+        <ui-select ng-model="investmentNew.investment.landStatus">
             <ui-select-match>{{$select.selected.text}}</ui-select-match>
             <ui-select-choices
                     repeat="item.text as item in investmentNew.getInvestLandStatus().items | filter:$select.search">
@@ -193,7 +193,7 @@
 <h3>Местоположение объекта</h3>
 <div ng-include="investmentNew.locationTemplate"></div>
 <h3>ТЭПы</h3>
-<div ng-show="investmentNew.areTepsVisible">
+<div ng-hide="'без проработок' == investmentNew.investment.landStatus">
     <div class="form-group">
         <label for="tech-density" class="col-sm-4 control-label">Плотность на Га</label>
         <div class="col-sm-3">
@@ -231,42 +231,42 @@
                    disabled>
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isOfficeSqmVisible">
+    <div class="form-group" ng-show="investmentNew.anyOfSegmentsSelected(['Бизнес центр', 'Административное здание', 'Особняк'])">
         <label for="office-sqm" class="col-sm-4 control-label text-right">Офисная</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="office-sqm"
                    ng-model="investmentNew.investment.officeSqm">
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isRetailSqmVisible">
+    <div class="form-group" ng-show="investmentNew.isSegmentSelected('Торговый центр')">
         <label for="retail-sqm" class="col-sm-4 control-label text-right">Торговая</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="retail-sqm"
                    ng-model="investmentNew.investment.retailSqm">
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isHotelSqmVisible">
+    <div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">
         <label for="hotel-sqm" class="col-sm-4 control-label text-right">Гостиничная</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="hotel-sqm"
                    ng-model="investmentNew.investment.hotelSqm">
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isBedroomsVisible">
+    <div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">
         <label for="bedrooms" class="col-sm-4 control-label text-right">Количество номеров</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="bedrooms"
                    ng-model="investmentNew.investment.bedrooms">
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isIndustrialSqmVisible">
+    <div class="form-group" ng-show="investmentNew.isSegmentSelected('Склад')">
         <label for="industrial-sqm" class="col-sm-4 control-label text-right">Складская</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="industrial-sqm"
                    ng-model="investmentNew.investment.industrialSqm">
         </div>
     </div>
-    <div class="form-group" ng-show="investmentNew.isResidentialSqmVisible">
+    <div class="form-group" ng-show="investmentNew.anyOfSegmentsSelected(['Жилье', 'Апартаменты'])">
         <label for="residential-sqm" class="col-sm-4 control-label text-right">Жилая</label>
         <div class="col-sm-3">
             <input type="number" class="form-control" id="residential-sqm"

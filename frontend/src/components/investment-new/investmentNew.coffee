@@ -25,80 +25,28 @@ class InvestmentNew extends Controller
         encumbrances: []
         investSegments: []
         location:
+        # Москва
           city: @LocationApi.Cities.get({id: 'Q6UJ9A004W3L'})
 
       @getInvestSegment().$promise.then(mapAdditionalInvestments)
       @additionalSegments = []
-      @isIndividualSaleVisible = false
-      @isPotokiVisible = false
-      @isOfficeSqmVisible = false
-      @isRetailSqmVisible = false
-      @isHotelSqmVisible = false
-      @isBedroomsVisible = false
-      @isIndustrialSqmVisible = false
-      @isTechOccupancyVisible = false
-      @isNoiVisible = false
-      @isLandLeaseTermVisible = false
-      @isBuildingsSqmVisible = false
-      @isResidentialSqmVisible = false
-      @areTepsVisible = true
       @currentTemplate = objectTypeTemplates[@investment.propertyType]
-      @locationVisible = false
 
     @investment =
       propertyType: 'Здание'
 
-    checkSqmMainSegment = =>
-      @isOfficeSqmVisible = @investment.segment in ['Бизнес центр', 'Административное здание', 'Особняк']
-      @isRetailSqmVisible = @investment.segment == 'Торговый центр'
-      @isHotelSqmVisible = @investment.segment == 'Отель'
-      @isBedroomsVisible = @investment.segment == 'Отель'
-      @isIndustrialSqmVisible = @investment.segment == 'Склад'
-      @isResidentialSqmVisible = @investment.segment in ['Жилье', 'Апартаменты']
-
-
     @onSegmentChange = ->
       @investment.investSegments = []
       @additionalSegments = @mainToAdditionalMap[@investment.segment]
-      @isIndividualSaleVisible = @investment.segment == 'Бизнес центр'
-      @isPotokiVisible = @investment.segment == 'Торговый центр'
-      checkSqmMainSegment()
 
-    @onAdditionalSegmentChange = ->
-      additionalSegments = @investment.investSegments
-      @isIndividualSaleVisible = false
-      @isPotokiVisible = false
-      checkSqmMainSegment()
-      for additionalSegment in additionalSegments
-        if additionalSegment == 'Бизнес центр'
-          @isOfficeSqmVisible = true
-          @isIndividualSaleVisible = true
-        if additionalSegment == 'Торговый центр'
-          @isRetailSqmVisible = true
-          @isPotokiVisible = true
-        if additionalSegment == 'Склад'
-          @isIndustrialSqmVisible = true
-        if additionalSegment == 'Отель'
-          @isHotelSqmVisible = true
-          @isBedroomsVisible = true
+    @isSegmentSelected = (segment) ->
+      segment == @investment.segment or segment in @investment.investSegments
 
-    @onLeaseStatusChange = ->
-      @isTechOccupancyVisible = '% заполнения' == @investment.leaseStatus
-      @isNoiVisible = '% заполнения' == @investment.leaseStatus
-
-    @onLandOwnerTypeChange = ->
-      @isLandLeaseTermVisible = 'аренда до' == @investment.landOwnerType
-
-    @onAvailableBuildingsChange = ->
-      @isBuildingsSqmVisible = 'Да' == @investment.availableBuildings
-
-    @onLandStatusChange = ->
-      @areTepsVisible = 'без проработок' != @investment.landStatus
-
-
-    @getCities = (val) ->
-      @LocationApi.Cities.query({"name": val}).$promise
-
+    @anyOfSegmentsSelected = (segments) ->
+      for segment in segments
+        if @isSegmentSelected(segment)
+          return true
+      return false
 
     #   Getters
     @getInvestPropertyType = ->
@@ -135,6 +83,8 @@ class InvestmentNew extends Controller
       @investTechnical ?= @ListApi.Lists.investTechnical()
     @getInvestLandStatus = ->
       @investLandStatus ?= @ListApi.Lists.investLandStatus()
+    @getCities = (val) ->
+      @LocationApi.Cities.query({"name": val}).$promise
 
     @reset()
     @busy = false
