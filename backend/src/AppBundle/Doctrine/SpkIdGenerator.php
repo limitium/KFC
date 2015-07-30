@@ -14,11 +14,6 @@ class SpkIdGenerator extends AbstractIdGenerator
 
     private $generator;
 
-    function __construct()
-    {
-        $this->generator = new IdGeneratorService(new PDO("odbc:mssql", "LinuxUser", "frank#50"));
-    }
-
     /**
      * Generates an identifier for an entity.
      *
@@ -29,6 +24,17 @@ class SpkIdGenerator extends AbstractIdGenerator
      */
     public function generate(EntityManager $em, $entity)
     {
-        return $this->generator->getId($em->getClassMetadata(get_class($entity))->getTableName());
+        return $this->getGenerator()->getId($em->getClassMetadata(get_class($entity))->getTableName());
+    }
+
+    /**
+     * @return IdGeneratorService
+     */
+    private function getGenerator()
+    {
+        if (!$this->generator) {
+            $this->generator = new IdGeneratorService(new PDO("odbc:mssql", "LinuxUser", "frank#50"));
+        }
+        return $this->generator;
     }
 }
