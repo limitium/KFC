@@ -33,7 +33,12 @@ class SpkIdGenerator extends AbstractIdGenerator
     private function getGenerator()
     {
         if (!$this->generator) {
-            $this->generator = new IdGeneratorService(new PDO("odbc:mssql", "LinuxUser", "frank#50"));
+            if (stristr(PHP_OS, 'WIN')) {
+                $dsn = "sqlsrv:server=10.65.103.150 ; Database=Developer";
+            } else {
+                $dsn = "odbc:mssql";
+            }
+            $this->generator = new IdGeneratorService(new PDO($dsn, "LinuxUser", "frank#50"));
         }
         return $this->generator;
     }
