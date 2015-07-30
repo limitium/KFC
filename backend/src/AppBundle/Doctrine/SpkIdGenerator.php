@@ -11,9 +11,10 @@ use PDO;
 
 class SpkIdGenerator extends AbstractIdGenerator
 {
+    const WIN_DSN = "sqlsrv:server=10.65.103.150 ; Database=Developer";
+    const DSN = "odbc:mssql";
 
     private $generator;
-
     /**
      * Generates an identifier for an entity.
      *
@@ -33,13 +34,19 @@ class SpkIdGenerator extends AbstractIdGenerator
     private function getGenerator()
     {
         if (!$this->generator) {
-            if (stristr(PHP_OS, 'WIN')) {
-                $dsn = "sqlsrv:server=10.65.103.150 ; Database=Developer";
-            } else {
-                $dsn = "odbc:mssql";
-            }
+            $dsn = $this->constructDsn();
             $this->generator = new IdGeneratorService(new PDO($dsn, "LinuxUser", "frank#50"));
         }
         return $this->generator;
+    }
+
+
+    private function constructDsn()
+    {
+        if (stristr(PHP_OS, 'WIN')) {
+            return SpkIdGenerator::WIN_DSN;
+        } else {
+            return SpkIdGenerator::DSN;
+        }
     }
 }
