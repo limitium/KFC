@@ -43,10 +43,11 @@ class LocationService
         $result = $this->em
             ->getRepository('AppBundle:SpkCity')->createQueryBuilder('c')
             ->where('c.cityRus LIKE :name')
-            ->setParameter('name', '%'.$namePart.'%')
+            ->setParameter('name', '%' . $namePart . '%')
             ->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
+            ->useResultCache(true, 100500)
             ->getResult();
         return $result;
     }
@@ -56,10 +57,11 @@ class LocationService
         $result = $this->em
             ->getRepository('AppBundle:SpkRegion')->createQueryBuilder('c')
             ->where('c.cityRus LIKE :name')
-            ->setParameter('name', '%'.$namePart.'%')
+            ->setParameter('name', '%' . $namePart . '%')
             ->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
+            ->useResultCache(true, 100500)
             ->getResult();
         return $result;
     }

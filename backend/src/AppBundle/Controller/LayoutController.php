@@ -3,7 +3,6 @@
 namespace AppBundle\Controller;
 
 
-use AppBundle\Service\IdGeneratorService;
 use FOS\RestBundle\Controller\Annotations as Rest;
 
 
@@ -19,5 +18,7 @@ class LayoutController extends Controller
      */
     public function indexAction()
     {
+        $this->get("stein.pick_list")->getListByType("INVEST_LAND_LEASE_TERM");
+        $this->get("stein.location")->findCitiesByNameContaining("моск");
     }
 }

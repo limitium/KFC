@@ -15,11 +15,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class InvestController extends Controller
 {
-    /**
-     * @DI\Inject("stein.db.id_generator")
-     * @var IdGeneratorService
-     */
-    private $generator;
 
     /**
      * @Rest\View(serializerGroups={"Default"})

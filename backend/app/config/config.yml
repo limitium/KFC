@@ -116,3 +116,19 @@ stof_doctrine_extensions:
 #jms_serializer:
 #    camel_case_naming_strategy:
 #        class:
+
+lsw_memcache:
+    pools:
+        default:
+            servers:
+                - { host: 146.148.114.27, tcp_port: 11211, weight: 15 }
+    doctrine:
+#        metadata_cache:
+#            pool: default
+#            entity_manager: default          # the name of your entity_manager connection
+        result_cache:
+            pool: default
+            entity_manager: default  # you may specify multiple entity_managers
+#        query_cache:
+#            pool: default
+#            entity_manager: default
