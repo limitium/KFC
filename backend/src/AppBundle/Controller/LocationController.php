@@ -13,6 +13,7 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Request\ParamFetcher;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use JMS\DiExtraBundle\Annotation as DI;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 
 class LocationController extends Controller
@@ -57,5 +58,15 @@ class LocationController extends Controller
         return $this->ls->findRegionsByNameContaining($namePart);
     }
 
-
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getDistrictsAction(ParamFetcher $params)
+    {
+        $namePart = $params->get('name', '');
+        return $this->ls->findDistrictsByNameContaining($namePart);
+    }
 }

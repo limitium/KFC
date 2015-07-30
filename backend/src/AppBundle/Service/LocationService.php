@@ -55,8 +55,22 @@ class LocationService
     public function findRegionsByNameContaining($namePart, $maxResults = 100)
     {
         $result = $this->em
-            ->getRepository('AppBundle:SpkRegion')->createQueryBuilder('c')
-            ->where('c.cityRus LIKE :name')
+            ->getRepository('AppBundle:KfOblast')->createQueryBuilder('k')
+            ->where('k.oblastRus LIKE :name')
+            ->setParameter('name', '%' . $namePart . '%')
+            ->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+        return $result;
+    }
+
+    public function findDistrictsByNameContaining($namePart, $maxResults = 100)
+    {
+        $result = $this->em
+            ->getRepository('AppBundle:SpkDistrict')->createQueryBuilder('d')
+            ->where('d.districtRus LIKE :name')
             ->setParameter('name', '%' . $namePart . '%')
             ->setMaxResults($maxResults)
             ->distinct()

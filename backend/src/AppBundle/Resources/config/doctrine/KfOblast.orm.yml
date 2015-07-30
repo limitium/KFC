@@ -14,14 +14,14 @@ AppBundle\Entity\KfOblast:
         KF_OBLAST_PRIMARY:
             columns:
                 - KF_OBLASTID
-    id: {  }
-    fields:
+    id:
         kfOblastid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: KF_OBLASTID
+    fields:
         createuser:
             type: string
             nullable: true

@@ -4,7 +4,12 @@ class LocationApi extends Factory
       Cities: $resource('api/cities/:id', {}, {
         query: {method: 'GET', params: {id: ''}, isArray: true}
       })
-      Regions: $resource('api/regions')
-      Districts: $resource('api/districts')
+      Regions: $resource('api/regions/:id', {}, {
+        query: {method: 'GET', params: {id: ''}, isArray: true}
+      })
+      Districts: $resource('api/districts/:id', {}, {
+        query: {method: 'GET', params: {id: ''}, isArray: true}
+      })
+
     }
 

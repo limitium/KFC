@@ -11,14 +11,14 @@ AppBundle\Entity\SpkDistrict:
         SPK_DISTRICT_PRIMARY:
             columns:
                 - SPK_DISTRICTID
-    id: {  }
-    fields:
+    id:
         spkDistrictid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_DISTRICTID
+    fields:
         createuser:
             type: string
             nullable: true

@@ -85,6 +85,10 @@ class InvestmentNew extends Controller
       @investLandStatus ?= @ListApi.Lists.investLandStatus()
     @getCities = (val) ->
       @LocationApi.Cities.query({"name": val}).$promise
+    @getRegions = (val) ->
+      @LocationApi.Regions.query({"name": val}).$promise
+    @getDistricts = (val) ->
+      @LocationApi.Districts.query({"name": val}).$promise
 
     @reset()
     @busy = false
