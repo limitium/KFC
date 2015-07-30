@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 7/26/2015
- * Time: 1:18 PM
- */
 
 namespace AppBundle\Service;
 
@@ -40,6 +34,7 @@ class PickListService
             ->where('p.text LIKE :type')
             ->setParameter('type', $type)
             ->getQuery()
+            ->useResultCache(true, 100500)
             ->getOneOrNullResult();
         return $result;
     }
