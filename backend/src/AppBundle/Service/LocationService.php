@@ -38,11 +38,74 @@ class LocationService
         return $this->em->find('AppBundle:SpkCity', $id);
     }
 
-    public function findCitiesByNameContaining($namePart, $maxResults = 100)
+    public function findCitiesByNameContaining($namePart)
     {
+        return $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
+    }
+
+    public function findRegionsByNameContaining($namePart)
+    {
+        return $this->nameSearchFor('AppBundle:KfOblast', 'oblastRus', $namePart);
+    }
+
+    public function findDistrictsByNameContaining($namePart)
+    {
+        return $this->nameSearchFor('AppBundle:SpkDistrict', 'districtRus', $namePart);
+    }
+
+    public function findHighwaysByNameContaining($namePart)
+    {
+        return $this->nameSearchFor('AppBundle:SpkHighway', 'highwayRus', $namePart);
+    }
+
+    public function findSubways($params)
+    {
+        $namePart = $params->get('name', '');
+        $city = $params->get('city', '');
+        $maxResults = 100;
+        $queryBuilder = $this->em->getRepository('AppBundle:SpkMetro')->createQueryBuilder('m')->where('1=1');
+        if (!empty($namePart)) {
+            $queryBuilder->andWhere('m.metroRus LIKE :name');
+            $queryBuilder->setParameter('name', '%' . $namePart . '%');
+        }
+        if (!empty($city)) {
+            $queryBuilder->andWhere('m.spkCityid = :city');
+            $queryBuilder->setParameter('city', $city);
+        }
+        return $queryBuilder->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+    }
+
+    public function findStreets($params)
+    {
+        $namePart = $params->get('name', '');
+        $city = $params->get('city', '');
+        $maxResults = 100;
+        $queryBuilder = $this->em->getRepository('AppBundle:SpkStreet')->createQueryBuilder('s')->where('1=1');
+        if (!empty($namePart)) {
+            $queryBuilder->andWhere('s.streetNameRus LIKE :name');
+            $queryBuilder->setParameter('name', '%' . $namePart . '%');
+        }
+        if (!empty($city)) {
+            $queryBuilder->andWhere('s.spkCityid = :city');
+            $queryBuilder->setParameter('city', $city);
+        }
+        return $queryBuilder->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+    }
+
+    private function nameSearchFor($entity, $columnName, $namePart)
+    {
+        $maxResults = 100;
         $result = $this->em
-            ->getRepository('AppBundle:SpkCity')->createQueryBuilder('c')
-            ->where('c.cityRus LIKE :name')
+            ->getRepository($entity)->createQueryBuilder('e')
+            ->where('e.'.$columnName.' LIKE :name')
             ->setParameter('name', '%' . $namePart . '%')
             ->setMaxResults($maxResults)
             ->distinct()
@@ -52,33 +115,6 @@ class LocationService
         return $result;
     }
 
-    public function findRegionsByNameContaining($namePart, $maxResults = 100)
-    {
-        $result = $this->em
-            ->getRepository('AppBundle:KfOblast')->createQueryBuilder('k')
-            ->where('k.oblastRus LIKE :name')
-            ->setParameter('name', '%' . $namePart . '%')
-            ->setMaxResults($maxResults)
-            ->distinct()
-            ->getQuery()
-            ->useResultCache(true, 100500)
-            ->getResult();
-        return $result;
-    }
-
-    public function findDistrictsByNameContaining($namePart, $maxResults = 100)
-    {
-        $result = $this->em
-            ->getRepository('AppBundle:SpkDistrict')->createQueryBuilder('d')
-            ->where('d.districtRus LIKE :name')
-            ->setParameter('name', '%' . $namePart . '%')
-            ->setMaxResults($maxResults)
-            ->distinct()
-            ->getQuery()
-            ->useResultCache(true, 100500)
-            ->getResult();
-        return $result;
-    }
 
     /**
      * @return EntityManager
@@ -95,6 +131,7 @@ class LocationService
     {
         $this->em = $em;
     }
+
 
 
 }

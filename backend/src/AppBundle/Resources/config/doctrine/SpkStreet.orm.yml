@@ -115,14 +115,14 @@ AppBundle\Entity\SpkStreet:
         SPK_STREET_PRIMARY:
             columns:
                 - SPK_STREETID
-    id: {  }
-    fields:
+    id:
         spkStreetid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_STREETID
+    fields:
         createuser:
             type: string
             nullable: true

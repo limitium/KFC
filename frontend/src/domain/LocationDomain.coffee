@@ -10,6 +10,15 @@ class LocationApi extends Factory
       Districts: $resource('api/districts/:id', {}, {
         query: {method: 'GET', params: {id: ''}, isArray: true}
       })
+      Highways: $resource('api/highways/:id', {}, {
+        query: {method: 'GET', params: {id: ''}, isArray: true}
+      })
+      Subways: $resource('api/subways/:id', {}, {
+        query: {method: 'GET', params: {id: ''}, isArray: true}
+      })
+      Streets: $resource('api/streets/:id', {}, {
+        query: {method: 'GET', params: {id: ''}, isArray: true}
+      })
 
     }
 

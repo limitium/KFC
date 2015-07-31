@@ -1,8 +1,8 @@
 <div class="form-group">
     <label for="city" class="col-sm-3 control-label">Город</label>
     <div class="col-sm-8">
-        <input id="city" type="text" ng-model="investmentNew.investment.location.city"
-               typeahead="city as city.cityRus for city in investmentNew.getCities($viewValue)"
+        <input id="city" type="text" ng-model="investmentNew.LocationService.location.city"
+               typeahead="city as city.cityRus for city in investmentNew.LocationService.getCities($viewValue)"
                typeahead-wait-ms="300"
                typeahead-loading="loadingCities" class="form-control">
     </div>
@@ -11,8 +11,8 @@
 <div class="form-group">
     <label for="region" class="col-sm-3 control-label">Край/Область</label>
     <div class="col-sm-8">
-        <input id="region" type="text" ng-model="investmentNew.investment.location.region"
-               typeahead="region as region.oblastRus for region in investmentNew.getRegions($viewValue)"
+        <input id="region" type="text" ng-model="investmentNew.LocationService.location.region"
+               typeahead="region as region.oblastRus for region in investmentNew.LocationService.getRegions($viewValue)"
                typeahead-wait-ms="300"
                typeahead-loading="loadingRegions" class="form-control">
     </div>
@@ -21,11 +21,38 @@
 <div class="form-group">
     <label for="district" class="col-sm-3 control-label">Район</label>
     <div class="col-sm-8">
-        <input id="district" type="text" ng-model="investmentNew.investment.location.district"
-               typeahead="district as district.districtRus for district in investmentNew.getDistricts($viewValue)"
+        <input id="district" type="text" ng-model="investmentNew.LocationService.location.district"
+               typeahead="district as district.districtRus for district in investmentNew.LocationService.getDistricts($viewValue)"
                typeahead-wait-ms="300"
                typeahead-loading="loadingDistricts" class="form-control">
     </div>
     <i ng-show="loadingDistricts" class="glyphicon glyphicon-refresh typeahead-loading-icon"></i>
 </div>
 
+<div class="form-group">
+    <label class="col-sm-3 control-label">Метро</label>
+    <div class="col-sm-8">
+        <ui-select multiple ng-model="investmentNew.LocationService.location.subways">
+            <ui-select-match>{{$subway.metroRus}}</ui-select-match>
+            <ui-select-choices
+                    repeat="subway.metroRus as subway in investmentNew.LocationService.getSubways() | filter:$select.search">
+                {{subway.metroRus}}
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Магистрали</label>
+    <div class="col-sm-8">
+        <ui-select multiple ng-model="investmentNew.LocationService.location.magistrals">
+            <ui-select-match>{{$street.streetNameRus}}</ui-select-match>
+            <ui-select-choices
+                    repeat="street.streetNameRus as street in investmentNew.LocationService.getMagistrals() | filter:$select.search">
+                {{street.streetNameRus}}
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+
+{{investmentNew.LocationService.location | json}}
+{{investmentNew.LocationService.getMagistrals() | json}}

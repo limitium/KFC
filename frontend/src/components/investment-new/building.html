@@ -1,334 +1,334 @@
-<h3>Цена актива</h3>
-<div class="form-group">
-    <label for="amount" class="col-sm-3 control-label">Сумма</label>
-    <div class="col-sm-6">
-        <input type="number" class="form-control" id="amount" ng-model="investmentNew.investment.amount">
-    </div>
-    <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.amountCurrency">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-total-sqm-per-square" class="col-sm-3 control-label">на кв.м GBA</label>
-    <div class="col-sm-7">
-        <input type="number" class="form-control" id="tech-total-sqm-per-square"
-               ng-value="investmentNew.investment.amount/(investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm)" disabled>
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-leaseable-sqm-per-square" class="col-sm-3 control-label">на кв.м GLA</label>
-    <div class="col-sm-7">
-        <input type="number" class="form-control" id="tech-leaseable-sqm-per-square"
-               ng-value="investmentNew.investment.amount/(investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +
-                                         investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm)" disabled>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">НДС</label>
-    <div class="col-sm-7">
-        <ui-select ng-model="investmentNew.investment.vat">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestVat().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label for="sale-per-block" class="col-sm-3 control-label">Продажа по блокам</label>
-    <div class="col-sm-9">
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="sale-per-block" ng-model="investmentNew.investment.salePerBlock">
-            </label>
-        </div>
-    </div>
-</div>
-<h3>Характеристики</h3>
-<div class="form-group">
-    <label for="name-rus" class="col-sm-3 control-label">Название</label>
-    <div class="col-sm-9">
-        <input type="text" class="form-control" id="name-rus"
-               ng-model="investmentNew.investment.nameRus">
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Сегмент</label>
-    <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestSegment().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Вспомогательные сегменты</label>
-    <div class="col-sm-9">
-        <ui-select multiple ng-model="investmentNew.investment.investSegments">
-            <ui-select-match>{{$item.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.additionalSegments | filter:$select.search">
-                {{item.text}}
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Статус</label>
-    <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.status">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestStatus().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Класс</label>
-    <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.class">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestClass().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Состояние помещений</label>
-    <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.fitOut">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestFitOut().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Готовность</label>
-    <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.buildingStatus">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestBuildingStatus().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-compl-year" class="col-sm-3 control-label">Год постройки</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-compl-year"
-               ng-model="investmentNew.investment.complYear">
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-reconstr-year" class="col-sm-3 control-label">Год постройки</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-reconstr-year"
-               ng-model="investmentNew.investment.reconstrYear">
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Обременения</label>
-    <div class="col-sm-9">
-        <ui-select multiple ng-model="investmentNew.investment.encumbrances">
-            <ui-select-match>{{$item.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestObremenenie().items | filter:$select.search">
-                {{item.text}}
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Арендный статус</label>
-    <div class="col-sm-4">
-        <ui-select ng-model="investmentNew.investment.leaseStatus">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestLeaseStatus().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-    <div class="col-sm-2">
-        <input type="number" class="form-control" id="tech-occupancy"
-               ng-show="'% заполнения' == investmentNew.investment.leaseStatus"
-               ng-model="investmentNew.investment.techOccupancy">
-    </div>
-</div>
+<!--<h3>Цена актива</h3>-->
+<!--<div class="form-group">-->
+    <!--<label for="amount" class="col-sm-3 control-label">Сумма</label>-->
+    <!--<div class="col-sm-6">-->
+        <!--<input type="number" class="form-control" id="amount" ng-model="investmentNew.investment.amount">-->
+    <!--</div>-->
+    <!--<div class="col-sm-3">-->
+        <!--<ui-select ng-model="investmentNew.investment.amountCurrency">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-total-sqm-per-square" class="col-sm-3 control-label">на кв.м GBA</label>-->
+    <!--<div class="col-sm-7">-->
+        <!--<input type="number" class="form-control" id="tech-total-sqm-per-square"-->
+               <!--ng-value="investmentNew.investment.amount/(investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm)" disabled>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-leaseable-sqm-per-square" class="col-sm-3 control-label">на кв.м GLA</label>-->
+    <!--<div class="col-sm-7">-->
+        <!--<input type="number" class="form-control" id="tech-leaseable-sqm-per-square"-->
+               <!--ng-value="investmentNew.investment.amount/(investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +-->
+                                         <!--investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm)" disabled>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">НДС</label>-->
+    <!--<div class="col-sm-7">-->
+        <!--<ui-select ng-model="investmentNew.investment.vat">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestVat().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="sale-per-block" class="col-sm-3 control-label">Продажа по блокам</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<div class="checkbox">-->
+            <!--<label>-->
+                <!--<input type="checkbox" id="sale-per-block" ng-model="investmentNew.investment.salePerBlock">-->
+            <!--</label>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<h3>Характеристики</h3>-->
+<!--<div class="form-group">-->
+    <!--<label for="name-rus" class="col-sm-3 control-label">Название</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<input type="text" class="form-control" id="name-rus"-->
+               <!--ng-model="investmentNew.investment.nameRus">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Сегмент</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestSegment().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Вспомогательные сегменты</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select multiple ng-model="investmentNew.investment.investSegments">-->
+            <!--<ui-select-match>{{$item.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.additionalSegments | filter:$select.search">-->
+                <!--{{item.text}}-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Статус</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select ng-model="investmentNew.investment.status">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestStatus().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Класс</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<ui-select ng-model="investmentNew.investment.class">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestClass().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Состояние помещений</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select ng-model="investmentNew.investment.fitOut">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestFitOut().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Готовность</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select ng-model="investmentNew.investment.buildingStatus">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestBuildingStatus().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-compl-year" class="col-sm-3 control-label">Год постройки</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-compl-year"-->
+               <!--ng-model="investmentNew.investment.complYear">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-reconstr-year" class="col-sm-3 control-label">Год постройки</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-reconstr-year"-->
+               <!--ng-model="investmentNew.investment.reconstrYear">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Обременения</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<ui-select multiple ng-model="investmentNew.investment.encumbrances">-->
+            <!--<ui-select-match>{{$item.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestObremenenie().items | filter:$select.search">-->
+                <!--{{item.text}}-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Арендный статус</label>-->
+    <!--<div class="col-sm-4">-->
+        <!--<ui-select ng-model="investmentNew.investment.leaseStatus">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestLeaseStatus().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+        <!--<input type="number" class="form-control" id="tech-occupancy"-->
+               <!--ng-show="'% заполнения' == investmentNew.investment.leaseStatus"-->
+               <!--ng-model="investmentNew.investment.techOccupancy">-->
+    <!--</div>-->
+<!--</div>-->
 
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Бизнес центр')">
-    <label for="sale-per-block" class="col-sm-3 control-label">Возможность продажи под конечного пользователя</label>
-    <div class="col-sm-9">
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="individual-sale" ng-model="investmentNew.investment.individualSale">
-            </label>
-        </div>
-    </div>
-</div>
-<div class="form-group" ng-show="'% заполнения' == investmentNew.investment.leaseStatus">
-    <label for="noi" class="col-sm-3 control-label">NOI</label>
-    <div class="col-sm-6">
-        <input type="number" class="form-control" id="noi" ng-model="investmentNew.investment.noi">
-    </div>
-    <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.noiCurrency">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Торговый центр')">
-    <label for="potoki" class="col-sm-3 control-label">Потоки (чел/сутки)</label>
-    <div class="col-sm-6">
-        <input type="number" class="form-control" id="potoki" ng-model="investmentNew.investment.potoki">
-    </div>
-</div>
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Бизнес центр')">-->
+    <!--<label for="sale-per-block" class="col-sm-3 control-label">Возможность продажи под конечного пользователя</label>-->
+    <!--<div class="col-sm-9">-->
+        <!--<div class="checkbox">-->
+            <!--<label>-->
+                <!--<input type="checkbox" id="individual-sale" ng-model="investmentNew.investment.individualSale">-->
+            <!--</label>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="'% заполнения' == investmentNew.investment.leaseStatus">-->
+    <!--<label for="noi" class="col-sm-3 control-label">NOI</label>-->
+    <!--<div class="col-sm-6">-->
+        <!--<input type="number" class="form-control" id="noi" ng-model="investmentNew.investment.noi">-->
+    <!--</div>-->
+    <!--<div class="col-sm-3">-->
+        <!--<ui-select ng-model="investmentNew.investment.noiCurrency">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Торговый центр')">-->
+    <!--<label for="potoki" class="col-sm-3 control-label">Потоки (чел/сутки)</label>-->
+    <!--<div class="col-sm-6">-->
+        <!--<input type="number" class="form-control" id="potoki" ng-model="investmentNew.investment.potoki">-->
+    <!--</div>-->
+<!--</div>-->
 <h3 style="cursor: pointer" ng-click="locationVisible = !locationVisible">Местоположение объекта</h3>
-<div ng-include="investmentNew.locationTemplate" ng-show="locationVisible"></div>
-<h3>ТЭПы</h3>
-<div class="form-group">
-    <label for="tech-total-sqm" class="col-sm-4 control-label">Общая площадь (GBA), кв.м,<br/>в том числе:</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-total-sqm"
-               ng-value="investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm" disabled>
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-ground-sqm" class="col-sm-4 control-label text-right">Наземная</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-ground-sqm"
-               ng-model="investmentNew.investment.groundSqm">
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-uground-sqm" class="col-sm-4 control-label text-right">Подземная</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-uground-sqm"
-               ng-model="investmentNew.investment.ugroundSqm">
-    </div>
-</div>
-<div class="form-group">
-    <label for="tech-leaseable-sqm" class="col-sm-4 control-label">Арендопригодная площадь (GLA), кв.м,<br/>в том числе:</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="tech-leaseable-sqm"
-               ng-value="investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +
-                                         investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm"
-               disabled>
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.anyOfSegmentsSelected(['Бизнес центр', 'Административное здание', 'Особняк'])">
-    <label for="office-sqm" class="col-sm-4 control-label text-right">Офисная</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="office-sqm"
-               ng-model="investmentNew.investment.officeSqm">
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Торговый центр')">
-    <label for="retail-sqm" class="col-sm-4 control-label text-right">Торговая</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="retail-sqm"
-               ng-model="investmentNew.investment.retailSqm">
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">
-    <label for="hotel-sqm" class="col-sm-4 control-label text-right">Гостиничная</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="hotel-sqm"
-               ng-model="investmentNew.investment.hotelSqm">
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">
-    <label for="bedrooms" class="col-sm-4 control-label text-right">Количество номеров</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="bedrooms"
-               ng-model="investmentNew.investment.bedrooms">
-    </div>
-</div>
-<div class="form-group" ng-show="investmentNew.isSegmentSelected('Склад')">
-    <label for="industrial-sqm" class="col-sm-4 control-label text-right">Складская</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="industrial-sqm"
-               ng-model="investmentNew.investment.industrialSqm">
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-4 control-label">Этажность (наземных / подземных)</label>
-    <div class="col-sm-3">
-        <input type="text" class="form-control"
-               ng-model="investmentNew.investment.floor">
-    </div>
-    <div class="forward-slash">/</div>
-    <div class="col-sm-3">
-        <input type="text" class="form-control"
-               ng-model="investmentNew.investment.ufloor">
-    </div>
-</div>
-<div class="form-group">
-    <label for="parking" class="col-sm-4 control-label">Паркинг, всего м/м,<br/>в том числе:</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="parking"
-               ng-value="investmentNew.investment.groundParking + investmentNew.investment.ugroundParking +
-                                         investmentNew.investment.multilevelParking" disabled>
-    </div>
-</div>
-<div class="form-group">
-    <label for="ground-parking" class="col-sm-4 control-label text-right">Наземный</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="ground-parking"
-               ng-model="investmentNew.investment.groundParking">
-    </div>
-</div>
-<div class="form-group">
-    <label for="uground-parking" class="col-sm-4 control-label text-right">Подземный</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="uground-parking"
-               ng-model="investmentNew.investment.ugroundParking">
-    </div>
-</div>
-<div class="form-group">
-    <label for="multilevel-parking" class="col-sm-4 control-label text-right">Многоуровневый</label>
-    <div class="col-sm-3">
-        <input type="number" class="form-control" id="multilevel-parking"
-               ng-model="investmentNew.investment.multilevelParking">
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-4 control-label">Правовой статус</label>
-    <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.landOwnerType">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
-    </div>
-    <div class="col-sm-2">
-        <input type="number" class="form-control"
-               ng-show="investmentNew.investment.landOwnerType == 'аренда до'"
-               ng-model="investmentNew.investment.landLeaseTerm">
-    </div>
-</div>
+<div ng-include="investmentNew.LocationService.template" ng-show="locationVisible"></div>
+<!--<h3>ТЭПы</h3>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-total-sqm" class="col-sm-4 control-label">Общая площадь (GBA), кв.м,<br/>в том числе:</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-total-sqm"-->
+               <!--ng-value="investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm" disabled>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-ground-sqm" class="col-sm-4 control-label text-right">Наземная</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-ground-sqm"-->
+               <!--ng-model="investmentNew.investment.groundSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-uground-sqm" class="col-sm-4 control-label text-right">Подземная</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-uground-sqm"-->
+               <!--ng-model="investmentNew.investment.ugroundSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="tech-leaseable-sqm" class="col-sm-4 control-label">Арендопригодная площадь (GLA), кв.м,<br/>в том числе:</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="tech-leaseable-sqm"-->
+               <!--ng-value="investmentNew.investment.officeSqm + investmentNew.investment.retailSqm +-->
+                                         <!--investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm"-->
+               <!--disabled>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.anyOfSegmentsSelected(['Бизнес центр', 'Административное здание', 'Особняк'])">-->
+    <!--<label for="office-sqm" class="col-sm-4 control-label text-right">Офисная</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="office-sqm"-->
+               <!--ng-model="investmentNew.investment.officeSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Торговый центр')">-->
+    <!--<label for="retail-sqm" class="col-sm-4 control-label text-right">Торговая</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="retail-sqm"-->
+               <!--ng-model="investmentNew.investment.retailSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">-->
+    <!--<label for="hotel-sqm" class="col-sm-4 control-label text-right">Гостиничная</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="hotel-sqm"-->
+               <!--ng-model="investmentNew.investment.hotelSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Отель')">-->
+    <!--<label for="bedrooms" class="col-sm-4 control-label text-right">Количество номеров</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="bedrooms"-->
+               <!--ng-model="investmentNew.investment.bedrooms">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group" ng-show="investmentNew.isSegmentSelected('Склад')">-->
+    <!--<label for="industrial-sqm" class="col-sm-4 control-label text-right">Складская</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="industrial-sqm"-->
+               <!--ng-model="investmentNew.investment.industrialSqm">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-4 control-label">Этажность (наземных / подземных)</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="text" class="form-control"-->
+               <!--ng-model="investmentNew.investment.floor">-->
+    <!--</div>-->
+    <!--<div class="forward-slash">/</div>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="text" class="form-control"-->
+               <!--ng-model="investmentNew.investment.ufloor">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="parking" class="col-sm-4 control-label">Паркинг, всего м/м,<br/>в том числе:</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="parking"-->
+               <!--ng-value="investmentNew.investment.groundParking + investmentNew.investment.ugroundParking +-->
+                                         <!--investmentNew.investment.multilevelParking" disabled>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="ground-parking" class="col-sm-4 control-label text-right">Наземный</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="ground-parking"-->
+               <!--ng-model="investmentNew.investment.groundParking">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="uground-parking" class="col-sm-4 control-label text-right">Подземный</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="uground-parking"-->
+               <!--ng-model="investmentNew.investment.ugroundParking">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label for="multilevel-parking" class="col-sm-4 control-label text-right">Многоуровневый</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<input type="number" class="form-control" id="multilevel-parking"-->
+               <!--ng-model="investmentNew.investment.multilevelParking">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="col-sm-4 control-label">Правовой статус</label>-->
+    <!--<div class="col-sm-3">-->
+        <!--<ui-select ng-model="investmentNew.investment.landOwnerType">-->
+            <!--<ui-select-match>{{$select.selected.text}}</ui-select-match>-->
+            <!--<ui-select-choices-->
+                    <!--repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">-->
+                <!--<span ng-bind-html="item.text | highlight: $select.search"></span>-->
+            <!--</ui-select-choices>-->
+        <!--</ui-select>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+        <!--<input type="number" class="form-control"-->
+               <!--ng-show="investmentNew.investment.landOwnerType == 'аренда до'"-->
+               <!--ng-model="investmentNew.investment.landLeaseTerm">-->
+    <!--</div>-->
+<!--</div>-->

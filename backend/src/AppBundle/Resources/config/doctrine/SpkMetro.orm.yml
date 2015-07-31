@@ -11,14 +11,14 @@ AppBundle\Entity\SpkMetro:
         SPK_METRO_PRIMARY:
             columns:
                 - SPK_METROID
-    id: {  }
-    fields:
+    id:
         spkMetroid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_METROID
+    fields:
         createuser:
             type: string
             nullable: true

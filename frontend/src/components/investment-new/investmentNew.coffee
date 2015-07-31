@@ -1,5 +1,5 @@
 class InvestmentNew extends Controller
-  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService)->
+  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService, @LocationService)->
 
     mapAdditionalInvestments = (investSegment) =>
       nMap = @ListTransformerService.mapToName(investSegment)
@@ -19,15 +19,11 @@ class InvestmentNew extends Controller
       objectTypeTemplates = {}
       objectTypeTemplates['Здание'] = '/components/investment-new/building.html'
       objectTypeTemplates['Земельный участок'] = '/components/investment-new/parcel.html'
-      @locationTemplate = '/components/investment-new/location.html'
       @investment =
         propertyType: @investment.propertyType
         encumbrances: []
         investSegments: []
-        location:
-        # Москва
-          city: @LocationApi.Cities.get({id: 'Q6UJ9A004W3L'})
-
+      @LocationService.reset()
       @getInvestSegment().$promise.then(mapAdditionalInvestments)
       @additionalSegments = []
       @currentTemplate = objectTypeTemplates[@investment.propertyType]
@@ -83,12 +79,6 @@ class InvestmentNew extends Controller
       @investTechnical ?= @ListApi.Lists.investTechnical()
     @getInvestLandStatus = ->
       @investLandStatus ?= @ListApi.Lists.investLandStatus()
-    @getCities = (val) ->
-      @LocationApi.Cities.query({"name": val}).$promise
-    @getRegions = (val) ->
-      @LocationApi.Regions.query({"name": val}).$promise
-    @getDistricts = (val) ->
-      @LocationApi.Districts.query({"name": val}).$promise
 
     @reset()
     @busy = false

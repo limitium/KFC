@@ -69,4 +69,39 @@ class LocationController extends Controller
         $namePart = $params->get('name', '');
         return $this->ls->findDistrictsByNameContaining($namePart);
     }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getHighwaysAction(ParamFetcher $params)
+    {
+        $namePart = $params->get('name', '');
+        return $this->ls->findHighwaysByNameContaining($namePart);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="city", nullable=false, allowBlank=true)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getSubwaysAction(ParamFetcher $params)
+    {
+        return $this->ls->findSubways($params);
+    }
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="city", nullable=false, allowBlank=true)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getStreetsAction(ParamFetcher $params)
+    {
+        return $this->ls->findStreets($params);
+    }
 }

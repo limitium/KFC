@@ -11,14 +11,14 @@ AppBundle\Entity\SpkHighway:
         SPK_HIGHWAY_PRIMARY:
             columns:
                 - SPK_HIGHWAYID
-    id: {  }
-    fields:
+    id:
         spkHighwayid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_HIGHWAYID
+    fields:
         createuser:
             type: string
             nullable: true
