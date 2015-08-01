@@ -14,6 +14,7 @@ use Doctrine\ORM\Query\ResultSetMapping;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
 use JMS\DiExtraBundle\Annotation\Service;
+use JMS\DiExtraBundle\Annotation as DI;
 
 /**
  * @Service("stein.location")
@@ -22,25 +23,32 @@ class LocationService
 {
     protected $em;
 
+    private $ls;
+
+
     /**
      * @InjectParams({
-     *     "em" = @Inject("doctrine.orm.entity_manager")
+     *     "em" = @Inject("doctrine.orm.entity_manager"),
+     *     "ls" = @Inject("stein.list_service")
      * })
      * @param EntityManager $em
      */
-    public function __construct(EntityManager $em)
+    public function __construct(EntityManager $em, ListService $ls)
     {
         $this->em = $em;
+        $this->ls = $ls;
     }
 
     public function findOneCity($id)
     {
-        return $this->em->find('AppBundle:SpkCity', $id);
+        $result = $this->em->find('AppBundle:SpkCity', $id);
+        return $this->ls->transformToListItem($result, 'cityRus', 'spkCityid');
     }
 
     public function findCitiesByNameContaining($namePart)
     {
-        return $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
+        $result = $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
+        return $this->ls->transformToList($result, 'cityRus', 'spkCityid');
     }
 
     public function findRegionsByNameContaining($namePart)
@@ -131,6 +139,24 @@ class LocationService
     {
         $this->em = $em;
     }
+
+    /**
+     * @return ListService
+     */
+    public function getLs()
+    {
+        return $this->ls;
+    }
+
+    /**
+     * @param ListService $ls
+     */
+    public function setLs($ls)
+    {
+        $this->ls = $ls;
+    }
+
+
 
 
 

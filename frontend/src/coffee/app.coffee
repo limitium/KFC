@@ -19,6 +19,10 @@ class Main extends Controller
       path: '/test/all-lists'
       components:
         main: 'allLists'
+    ,
+      path: '/test/components'
+      components:
+        main: 'testComponents'
     ]
 
 
