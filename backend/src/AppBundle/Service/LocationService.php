@@ -80,11 +80,12 @@ class LocationService
             $queryBuilder->andWhere('m.spkCityid = :city');
             $queryBuilder->setParameter('city', $city);
         }
-        return $queryBuilder->setMaxResults($maxResults)
+        $result = $queryBuilder->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getResult();
+        return $this->ls->transformToList($result, 'metroRus', 'spkMetroid');
     }
 
     public function findStreets($params)
@@ -101,11 +102,12 @@ class LocationService
             $queryBuilder->andWhere('s.spkCityid = :city');
             $queryBuilder->setParameter('city', $city);
         }
-        return $queryBuilder->setMaxResults($maxResults)
+        $result = $queryBuilder->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getResult();
+        return $this->ls->transformToList($result, 'streetNameRus', 'spkStreetid');
     }
 
     private function nameSearchFor($entity, $columnName, $namePart)
