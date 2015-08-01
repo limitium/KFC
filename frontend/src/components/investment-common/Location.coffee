@@ -15,12 +15,12 @@ class LocationComponent extends Directive
             subways: []
             magistrals: []
           @LocationApi.Cities.get({id: moscowId}).$promise.then (moscow) =>
-            console.log('Moscow', moscow)
             @model.location.city = moscow
 
         @magistrals = []
         @subways = []
         @getCities = (val) ->
+          console.log 'Get cities'
           @LocationApi.Cities.query({"name": val}).$promise
         @getRegions = (val) ->
           @LocationApi.Regions.query({"name": val}).$promise
@@ -40,6 +40,7 @@ class LocationComponent extends Directive
             @lastMagistralCityId = @model.location.city.spkCityid
             @magistrals = @LocationApi.Streets.query({"city": @model.location.city.spkCityid})
           @magistrals
+
         @init()
     }
 
