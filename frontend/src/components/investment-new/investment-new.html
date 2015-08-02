@@ -6,29 +6,11 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-8">
-            <form role="form" name="investmentForm" class="form-horizontal">
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">Тип объекта</label>
-                    <div class="col-sm-7">
-                        <ui-select ng-model="investmentNew.investment.propertyType" ng-change="investmentNew.reset()">
-                            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-                            <ui-select-choices
-                                    repeat="item.text as item in investmentNew.getInvestPropertyType() | filter:$select.search">
-                                <span ng-bind-html="item.text | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                    </div>
-                </div>
-                <div ng-include="investmentNew.currentTemplate"></div>
-            </form>
-        </div>
-        <div class="col-sm-4">
-            <h4>Resulting investment:</h4>
-            {{investmentNew.investment | json}}
-        </div>
-    </div>
+    <tabset justified="true">
+        <tab heading="Justified"><investment-object-component investment="investmentNew.investment"></investment-object-component></tab>
+        <tab heading="SJ">Short Labeled Justified content</tab>
+        <tab heading="Long Justified">Long Labeled Justified content</tab>
+    </tabset>
     <div class="row">
         <div class="form-group">
             <div class="col-sm-offset-9 col-sm-3">
