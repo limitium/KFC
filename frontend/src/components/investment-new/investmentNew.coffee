@@ -1,5 +1,5 @@
 class InvestmentNew extends Controller
-  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService, @LocationService)->
+  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService)->
 
     mapAdditionalInvestments = (investSegment) =>
       nMap = @ListTransformerService.mapToName(investSegment)
@@ -23,7 +23,6 @@ class InvestmentNew extends Controller
         propertyType: @investment.propertyType
         encumbrances: []
         investSegments: []
-      @LocationService.reset()
       @getInvestSegment().$promise.then(mapAdditionalInvestments)
       @additionalSegments = []
       @currentTemplate = objectTypeTemplates[@investment.propertyType]

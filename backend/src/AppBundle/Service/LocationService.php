@@ -53,17 +53,20 @@ class LocationService
 
     public function findRegionsByNameContaining($namePart)
     {
-        return $this->nameSearchFor('AppBundle:KfOblast', 'oblastRus', $namePart);
+        $result = $this->nameSearchFor('AppBundle:KfOblast', 'oblastRus', $namePart);
+        return $this->ls->transformToList($result, 'oblastRus', 'kfOblastid');
     }
 
     public function findDistrictsByNameContaining($namePart)
     {
-        return $this->nameSearchFor('AppBundle:SpkDistrict', 'districtRus', $namePart);
+        $result = $this->nameSearchFor('AppBundle:SpkDistrict', 'districtRus', $namePart);
+        return $this->ls->transformToList($result, 'districtRus', 'spkDistrictid');
     }
 
     public function findHighwaysByNameContaining($namePart)
     {
-        return $this->nameSearchFor('AppBundle:SpkHighway', 'highwayRus', $namePart);
+        $result = $this->nameSearchFor('AppBundle:SpkHighway', 'highwayRus', $namePart);
+        return $this->ls->transformToList($result, 'highwayRus', 'spkHighwayid');
     }
 
     public function findSubways($params)

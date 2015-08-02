@@ -5,13 +5,7 @@
         <input type="number" class="form-control" id="amount" ng-model="investmentNew.investment.amount">
     </div>
     <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.amountCurrency">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getKfCurrency().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.amountCurrency" items="investmentNew.getKfCurrency()"></common-list>
     </div>
 </div>
 <div class="form-group">
@@ -32,13 +26,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Условия входа</label>
     <div class="col-sm-7">
-        <ui-select ng-model="investmentNew.investment.entryCondition">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getEntryCondition().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.entryCondition" items="investmentNew.getEntryCondition()"></common-list>
     </div>
 </div>
 <h3>Характеристики</h3>
@@ -52,13 +40,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Сегмент</label>
     <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestSegment().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.segment" items="investmentNew.getInvestSegment()" change="investmentNew.onSegmentChange()"></common-list>
     </div>
 </div>
 <div class="form-group">
@@ -76,13 +58,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Статус</label>
     <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.status">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestStatus().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.status" items="investmentNew.getInvestStatus()"></common-list>
     </div>
 </div>
 <div class="form-group">
@@ -102,13 +78,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Обременения</label>
     <div class="col-sm-9">
-        <ui-select multiple ng-model="investmentNew.investment.encumbrances">
-            <ui-select-match>{{$item.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestObremenenieZu().items | filter:$select.search">
-                {{item.text}}
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.encumbrances" items="investmentNew.getInvestObremenenieZu()"></common-list>
     </div>
 </div>
 <div class="form-group">
@@ -121,13 +91,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Правовой статус</label>
     <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.landOwnerType">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestLandLeaseTerm().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.landOwnerType" items="investmentNew.getInvestLandLeaseTerm()"></common-list>
     </div>
     <div class="col-sm-2">
         <input type="number" class="form-control"
@@ -138,13 +102,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Наличие строений</label>
     <div class="col-sm-3">
-        <ui-select ng-model="investmentNew.investment.availableBuildings">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getAvailableBuildings().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.availableBuildings" items="investmentNew.getAvailableBuildings()"></common-list>
     </div>
     <label for="buildings-sqm" class="col-sm-1 control-label" ng-show="'Да' == investmentNew.investment.availableBuildings">GBA</label>
     <div class="col-sm-2">
@@ -157,41 +115,23 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Статус строений</label>
     <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.buildingStatusZu">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestBuildingStatusZu().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.buildingStatusZu" items="investmentNew.getInvestBuildingStatusZu()"></common-list>
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Технические условия</label>
     <div class="col-sm-9">
-        <ui-select multiple ng-model="investmentNew.investment.technicals">
-            <ui-select-match>{{$item.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestTechnical().items | filter:$select.search">
-                {{item.text}}
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.technicals" items="investmentNew.getInvestTechnical()"></common-list>
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Статус проработки</label>
     <div class="col-sm-9">
-        <ui-select ng-model="investmentNew.investment.landStatus">
-            <ui-select-match>{{$select.selected.text}}</ui-select-match>
-            <ui-select-choices
-                    repeat="item.text as item in investmentNew.getInvestLandStatus().items | filter:$select.search">
-                <span ng-bind-html="item.text | highlight: $select.search"></span>
-            </ui-select-choices>
-        </ui-select>
+        <common-list model="investmentNew.investment.landStatus" items="investmentNew.getInvestLandStatus()"></common-list>
     </div>
 </div>
-<h3>Местоположение объекта</h3>
-<div ng-include="investmentNew.LocationService.template"></div>
+<h3 style="cursor: pointer" ng-click="locationVisible = !locationVisible">Местоположение объекта</h3>
+<location-component ng-show="locationVisible" model="investmentNew.investment"></location-component>
 <h3>ТЭПы</h3>
 <div ng-hide="'без проработок' == investmentNew.investment.landStatus">
     <div class="form-group">

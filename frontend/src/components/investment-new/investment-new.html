@@ -15,7 +15,7 @@
                         <ui-select ng-model="investmentNew.investment.propertyType" ng-change="investmentNew.reset()">
                             <ui-select-match>{{$select.selected.text}}</ui-select-match>
                             <ui-select-choices
-                                    repeat="item.text as item in investmentNew.getInvestPropertyType().items | filter:$select.search">
+                                    repeat="item.text as item in investmentNew.getInvestPropertyType() | filter:$select.search">
                                 <span ng-bind-html="item.text | highlight: $select.search"></span>
                             </ui-select-choices>
                         </ui-select>

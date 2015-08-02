@@ -16,15 +16,19 @@ class PickListService
 {
     protected $em;
 
+    private $ls;
+
     /**
      * @InjectParams({
-     *     "em" = @Inject("doctrine.orm.entity_manager")
+     *     "em" = @Inject("doctrine.orm.entity_manager"),
+     *     "ls" = @Inject("stein.list_service")
      * })
      * @param EntityManager $em
      */
-    public function __construct(EntityManager $em)
+    public function __construct(EntityManager $em, ListService $ls)
     {
         $this->em = $em;
+        $this->ls = $ls;
     }
 
     public function getListByType($type)
@@ -36,7 +40,11 @@ class PickListService
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getOneOrNullResult();
-        return $result;
+        if (!is_null($result)) {
+            return $this->ls->transformToList($result->getItems(), 'text', 'itemid');
+        } else {
+            return $result;
+        }
     }
 
     /**

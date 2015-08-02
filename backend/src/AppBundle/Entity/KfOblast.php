@@ -68,5 +68,67 @@ class KfOblast
      */
     private $intareaid;
 
+    /**
+     * @return string
+     */
+    public function getKfOblastid()
+    {
+        return $this->kfOblastid;
+    }
 
+    /**
+     * @return string
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOblastRus()
+    {
+        return $this->oblastRus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOblastEng()
+    {
+        return $this->oblastEng;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIntareaid()
+    {
+        return $this->intareaid;
+    }
 }
