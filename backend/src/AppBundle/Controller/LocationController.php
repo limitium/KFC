@@ -60,14 +60,14 @@ class LocationController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
-     * @Rest\QueryParam(name="name", nullable=false)
+     * @Rest\QueryParam(name="name", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="city", nullable=false, allowBlank=true)
      * @param ParamFetcher $params
      * @return string
      */
     public function getDistrictsAction(ParamFetcher $params)
     {
-        $namePart = $params->get('name', '');
-        return $this->ls->findDistrictsByNameContaining($namePart);
+        return $this->ls->findDistricts($params);
     }
 
     /**

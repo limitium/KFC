@@ -21,6 +21,7 @@ class ListApi extends Factory
       investTechnical: {method: 'GET', params: {type: 'INVEST_TECHNICAL'}, isArray: true, cache: true}
       investLandStatus: {method: 'GET', params: {type: 'INVEST_LAND_STATUS'}, isArray: true, cache: true}
       investEntry: {method: 'GET', params: {type: 'INVEST_ENTRY'}, isArray: true, cache: true}
+      investRings: {method: 'GET', params: {type: 'INVEST_RINGS'}, isArray: true, cache: true}
     })
     }
 

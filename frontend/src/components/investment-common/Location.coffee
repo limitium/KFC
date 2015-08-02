@@ -1,5 +1,5 @@
 class LocationComponent extends Directive
-  constructor: (LocationApi) ->
+  constructor: (LocationApi, ListApi) ->
     return {
       restrict: 'E'
       controllerAs: 'ctrl'
@@ -19,13 +19,19 @@ class LocationComponent extends Directive
 
         @magistrals = []
         @subways = []
+        @districts = []
 
         @getCities = (val) ->
           LocationApi.Cities.query({"name": val}).$promise
+        @getInvestRings = () ->
+          @investRings ?= ListApi.Lists.investRings()
         @getRegions = (val) ->
           LocationApi.Regions.query({"name": val}).$promise
-        @getDistricts = (val) ->
-          LocationApi.Districts.query({"name": val}).$promise
+        @getDistricts = () ->
+          if @model.location.city?.id != @lastDistrictCityId
+            @lastDistrictCityId = @model.location.city.id
+            @districts = LocationApi.Districts.query({"city": @model.location.city.id})
+          @districts
         @getHighways = (val) ->
           LocationApi.Highways.query({"name": val}).$promise
         @getStreets = (val) ->

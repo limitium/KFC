@@ -10,21 +10,73 @@
                   input-size="col-sm-8"
                   model="ctrl.model.location.region"
                   async-getter="ctrl.getRegions"></common-typeahead>
-<common-typeahead id="district"
-                  label="Район"
-                  label-size="col-sm-3"
-                  input-size="col-sm-8"
-                  model="ctrl.model.location.district"
-                  async-getter="ctrl.getDistricts"></common-typeahead>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Район</label>
+    <div class="col-sm-8">
+        <common-list model="ctrl.model.location.district" items="ctrl.getDistricts()"></common-list>
+    </div>
+</div>
+<div class="form-group">
+    <label for="highway-distance" class="col-sm-3 control-label">Шоссе</label>
+    <div class="col-sm-3">
+        <input type="number" class="form-control" id="highway-distance"
+               ng-model="ctrl.model.location.highwayDistance">
+    </div>
+</div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Метро</label>
     <div class="col-sm-8">
         <common-list model="ctrl.model.location.subways" items="ctrl.getSubways()" multiple></common-list>
     </div>
 </div>
+
+<div class="form-group">
+    <label class="col-sm-3 control-label">Улица/Тип</label>
+    <div class="col-sm-5">
+        <input id="streets" type="text" ng-model="ctrl.model.location.street"
+               typeahead="item as item.text for item in ctrl.getStreets($viewValue)"
+               typeahead-wait-ms="300"
+               typeahead-loading="loadingStreets" class="form-control">
+    </div>
+    <div class="col-sm-3">
+        <input type="text" class="form-control"
+               ng-model="ctrl.model.location.streetType">
+    </div>
+    <i ng-show="loadingStreets" class="glyphicon glyphicon-refresh typeahead-loading-icon col-sm-1"></i>
+</div>
+<div class="form-group">
+    <label for="house" class="col-sm-3 control-label">Дом</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control" id="house"
+               ng-model="ctrl.model.location.house">
+    </div>
+    <label for="housing" class="col-sm-3 control-label">Корпус</label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control" id="housing"
+               ng-model="ctrl.model.location.housing">
+    </div>
+</div>
+<div class="form-group">
+    <label for="building" class="col-sm-3 control-label">Строение</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control" id="building"
+               ng-model="ctrl.model.location.building">
+    </div>
+    <label for="drob" class="col-sm-3 control-label">Дробь</label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control" id="drob"
+               ng-model="ctrl.model.location.drob">
+    </div>
+</div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Магистрали</label>
     <div class="col-sm-8">
         <common-list model="ctrl.model.location.magistrals" items="ctrl.getMagistrals()" multiple></common-list>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-3 control-label">Кольца</label>
+    <div class="col-sm-8">
+        <common-list model="ctrl.model.location.investRing" items="ctrl.getInvestRings()"></common-list>
     </div>
 </div>

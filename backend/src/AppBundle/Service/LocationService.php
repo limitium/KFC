@@ -57,9 +57,25 @@ class LocationService
         return $this->ls->transformToList($result, 'oblastRus', 'kfOblastid');
     }
 
-    public function findDistrictsByNameContaining($namePart)
+    public function findDistricts($params)
     {
-        $result = $this->nameSearchFor('AppBundle:SpkDistrict', 'districtRus', $namePart);
+        $namePart = $params->get('name', '');
+        $city = $params->get('city', '');
+        $maxResults = 100;
+        $queryBuilder = $this->em->getRepository('AppBundle:SpkDistrict')->createQueryBuilder('m')->where('1=1');
+        if (!empty($namePart)) {
+            $queryBuilder->andWhere('m.districtRus LIKE :name');
+            $queryBuilder->setParameter('name', '%' . $namePart . '%');
+        }
+        if (!empty($city)) {
+            $queryBuilder->andWhere('m.spkCityid = :city');
+            $queryBuilder->setParameter('city', $city);
+        }
+        $result = $queryBuilder->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
         return $this->ls->transformToList($result, 'districtRus', 'spkDistrictid');
     }
 
