@@ -10,7 +10,7 @@
 </div>
 <div class="form-group">
     <label for="tech-total-sqm-per-square" class="col-sm-3 control-label">на кв.м GBA</label>
-    <div class="col-sm-7">
+    <div class="col-sm-6">
         <input type="number" class="form-control" id="tech-total-sqm-per-square"
                ng-value="investmentNew.investment.amount/(investmentNew.investment.groundSqm + investmentNew.investment.ugroundSqm)" disabled>
     </div>
@@ -23,12 +23,11 @@
                                          investmentNew.investment.hotelSqm + investmentNew.investment.industrialSqm)" disabled>
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">НДС</label>
-    <div class="col-sm-7">
-        <common-list model="investmentNew.investment.vat" items="investmentNew.getInvestVat()"></common-list>
-    </div>
-</div>
+<common-list-field
+        label="НДС"
+        model="investmentNew.investment.vat"
+        items="investmentNew.getInvestVat()">
+</common-list-field>
 <div class="form-group">
     <label for="sale-per-block" class="col-sm-3 control-label">Продажа по блокам</label>
     <div class="col-sm-9">
@@ -59,36 +58,32 @@
         </ui-select>
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Вспомогательные сегменты</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.investSegments" items="investmentNew.additionalSegments" multiple></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Статус</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.status" items="investmentNew.getInvestStatus()"></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Класс</label>
-    <div class="col-sm-3">
-        <common-list model="investmentNew.investment.class" items="investmentNew.getInvestClass()"></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Состояние помещений</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.fitOut" items="investmentNew.getInvestFitOut()"></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Готовность</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.buildingStatus" items="investmentNew.getInvestBuildingStatus()"></common-list>
-    </div>
-</div>
+
+<common-list-field
+        label="Вспомогательные сегменты"
+        model="investmentNew.investment.investSegments"
+        items="investmentNew.additionalSegments" multiple>
+</common-list-field>
+<common-list-field
+        label="Статус"
+        model="investmentNew.investment.status"
+        items="investmentNew.getInvestStatus()">
+</common-list-field>
+<common-list-field
+        label="Класс"
+        model="investmentNew.investment.class"
+        items="investmentNew.getInvestClass()">
+</common-list-field>
+<common-list-field
+        label="Состояние помещений"
+        model="investmentNew.investment.fitOut"
+        items="investmentNew.getInvestFitOut()">
+</common-list-field>
+<common-list-field
+        label="Готовность"
+        model="investmentNew.investment.buildingStatus"
+        items="investmentNew.getInvestBuildingStatus()">
+</common-list-field>
 <div class="form-group">
     <label for="tech-compl-year" class="col-sm-3 control-label">Год постройки</label>
     <div class="col-sm-3">
@@ -103,12 +98,12 @@
                ng-model="investmentNew.investment.reconstrYear">
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Обременения</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.encumbrances" items="investmentNew.getInvestObremenenie()" multiple></common-list>
-    </div>
-</div>
+<common-list-field
+        label="Обременения"
+        model="investmentNew.investment.encumbrances"
+        items="investmentNew.getInvestObremenenie()" multiple>
+</common-list-field>
+
 <div class="form-group">
     <label class="col-sm-3 control-label">Арендный статус</label>
     <div class="col-sm-4">

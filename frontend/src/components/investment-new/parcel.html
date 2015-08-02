@@ -23,12 +23,11 @@
                ng-value="investmentNew.investment.amount/investmentNew.investment.landGa" disabled>
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Условия входа</label>
-    <div class="col-sm-7">
-        <common-list model="investmentNew.investment.entryCondition" items="investmentNew.getEntryCondition()"></common-list>
-    </div>
-</div>
+<common-list-field
+        label="Условия входа"
+        model="investmentNew.investment.entryCondition"
+        items="investmentNew.getEntryCondition()">
+</common-list-field>
 <h3>Характеристики</h3>
 <div class="form-group">
     <label for="name-rus" class="col-sm-3 control-label">Название</label>
@@ -40,7 +39,13 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Сегмент</label>
     <div class="col-sm-9">
-        <common-list model="investmentNew.investment.segment" items="investmentNew.getInvestSegment()" change="investmentNew.onSegmentChange()"></common-list>
+        <ui-select ng-model="investmentNew.investment.segment" ng-change="investmentNew.onSegmentChange()">
+            <ui-select-match>{{$select.selected.text}}</ui-select-match>
+            <ui-select-choices
+                    repeat="item.text as item in investmentNew.getInvestSegment() | filter:$select.search">
+                <span ng-bind-html="item.text | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
     </div>
 </div>
 <div class="form-group">
@@ -55,12 +60,12 @@
         </ui-select>
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Статус</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.status" items="investmentNew.getInvestStatus()"></common-list>
-    </div>
-</div>
+<common-list-field
+        label="Статус"
+        model="investmentNew.investment.status"
+        items="investmentNew.getInvestStatus()">
+</common-list-field>
+
 <div class="form-group">
     <label for="cadastrial-number" class="col-sm-3 control-label">Кадастровый номер</label>
     <div class="col-sm-9">
@@ -75,12 +80,11 @@
                ng-model="investmentNew.investment.permittedUse">
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Обременения</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.encumbrances" items="investmentNew.getInvestObremenenieZu()"></common-list>
-    </div>
-</div>
+<common-list-field
+        label="Обременения"
+        model="investmentNew.investment.encumbrances"
+        items="investmentNew.getInvestObremenenieZu()">
+</common-list-field>
 <div class="form-group">
     <label for="land-ga" class="col-sm-3 control-label">Земельный участок, Га</label>
     <div class="col-sm-3">
@@ -112,24 +116,22 @@
                ng-model="investmentNew.investment.availableBuildingsSqm">
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Статус строений</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.buildingStatusZu" items="investmentNew.getInvestBuildingStatusZu()"></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Технические условия</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.technicals" items="investmentNew.getInvestTechnical()"></common-list>
-    </div>
-</div>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Статус проработки</label>
-    <div class="col-sm-9">
-        <common-list model="investmentNew.investment.landStatus" items="investmentNew.getInvestLandStatus()"></common-list>
-    </div>
-</div>
+<common-list-field
+        label="Статус строений"
+        model="investmentNew.investment.buildingStatusZu"
+        items="investmentNew.getInvestBuildingStatusZu()">
+</common-list-field>
+<common-list-field
+        label="Технические условия"
+        model="investmentNew.investment.technicals"
+        items="investmentNew.getInvestTechnical()">
+</common-list-field>
+<common-list-field
+        label="Статус проработки"
+        model="investmentNew.investment.landStatus"
+        items="investmentNew.getInvestLandStatus()">
+</common-list-field>
+
 <h3 style="cursor: pointer" ng-click="locationVisible = !locationVisible">Местоположение объекта</h3>
 <location-component ng-show="locationVisible" model="investmentNew.investment"></location-component>
 <h3>ТЭПы</h3>
