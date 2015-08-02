@@ -28,6 +28,6 @@ class Main extends Controller
 
 class App extends App
   constructor: ->
-    return ['ngNewRouter','angularMoment','ngResource', 'ui.select', 'ui.bootstrap', 'ngSanitize']
+    return ['ngNewRouter','angularMoment','ngResource', 'ui.select', 'ui.bootstrap', 'ngSanitize', 'datatables', 'datatables.bootstrap']
 
 

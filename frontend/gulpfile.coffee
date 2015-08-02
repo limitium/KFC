@@ -48,6 +48,9 @@ gulp.task 'vendor', ->
     'node_modules/angular-moment/node_modules/moment/moment.js'
     'node_modules/angular-moment/angular-moment.js'
     'node_modules/angular-sanitize/angular-sanitize.min.js'
+    'node_modules/datatables/media/js/jquery.dataTables.min.js'
+    'node_modules/angular-datatables/dist/angular-datatables.min.js'
+    'node_modules/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js'
     'node_modules/ui-select/dist/select.js'
   ])
   .pipe concat('vendor.min.js')
@@ -57,6 +60,8 @@ gulp.task 'vendor', ->
     'node_modules/bootstrap/dist/css/bootstrap.css'
     'node_modules/ui-select/dist/select.min.css'
     'node_modules/font-awesome/css/font-awesome.min.css'
+    'node_modules/datatables/media/css/jquery.dataTables.min.css'
+    'node_modules/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.css'
   ])
   .pipe concat('vendor.min.css')
   .pipe(gulp.dest(buildFolder+'/css'))
