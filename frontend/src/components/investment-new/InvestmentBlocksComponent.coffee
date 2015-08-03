@@ -1,5 +1,5 @@
 class InvestmentBlocksComponent extends Directive
-  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi) ->
+  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi, TableUtils) ->
     return {
     restrict: 'E'
     controllerAs: 'ctrl'
@@ -9,18 +9,9 @@ class InvestmentBlocksComponent extends Directive
       investment: '='
     }
     controller: () ->
-      @dtOptions = DTOptionsBuilder.newOptions()
-        .withBootstrap().withOption('searching', false).withOption('lengthChange', false).withOption('info', false)
-      @dtColumnDefs = [
-        DTColumnDefBuilder.newColumnDef(0)
-        DTColumnDefBuilder.newColumnDef(1)
-        DTColumnDefBuilder.newColumnDef(2)
-        DTColumnDefBuilder.newColumnDef(3)
-        DTColumnDefBuilder.newColumnDef(4)
-        DTColumnDefBuilder.newColumnDef(5)
-        DTColumnDefBuilder.newColumnDef(6)
-        DTColumnDefBuilder.newColumnDef(7).notSortable()
-      ]
+      @dtOptions = TableUtils.createOptions()
+      @dtColumnDefs = TableUtils.createColumns(8)
+
       @plusButtonVisible = true
 
       @investment.blocks = [
