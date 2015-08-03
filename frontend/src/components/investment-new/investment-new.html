@@ -6,6 +6,7 @@
         </div>
     </div>
 
+    {{investmentNew.investment | json}}
     <tabset justified="true">
         <tab heading="Описание"><investment-object-component investment="investmentNew.investment"></investment-object-component></tab>
         <tab heading="Блоки"><investment-blocks-component investment="investmentNew.investment"></investment-blocks-component></tab>

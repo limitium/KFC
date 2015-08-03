@@ -1,6 +1,6 @@
 class InvestmentNew extends Controller
   constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService) ->
-    @invesment = {}
+    @investment = {}
     @busy = false
 
   add: =>

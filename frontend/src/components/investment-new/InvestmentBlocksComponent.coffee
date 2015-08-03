@@ -21,23 +21,24 @@ class InvestmentBlocksComponent extends Directive
         DTColumnDefBuilder.newColumnDef(7).notSortable()
       ]
       @plusButtonVisible = true
-      @blocks = [
-        {
-          floor: 1
-          name: 'Этаж 1 блок 3'
-          availableSq: 1500
-          costSqm: 5000
-          costSqmCurrency: 'USD'
-          vat: 'без учета НДС'
-          status: 'Закрытая продажа'
-        }
+
+      @investment.blocks = [
       ]
 
       @addBlock = ->
-        @blocks.push @blockToAdd
+        @investment.blocks.push @blockToAdd
         @plusButtonVisible = true
+        @blockToAdd = {}
       @removeBlock = (index) ->
-        @blocks.splice(index, 1)
+        @investment.blocks.splice(index, 1)
+
+      #Getters
+      @getVat = ->
+        @vat ?= ListApi.Lists.investVat()
+      @getCurrency = ->
+        @currency ?= ListApi.Lists.kfCurrency()
+      @getStatus = ->
+        @status ?= ListApi.Lists.investStatus()
       return
     }
 
