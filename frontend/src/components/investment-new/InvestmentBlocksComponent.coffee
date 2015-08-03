@@ -10,6 +10,7 @@ class InvestmentBlocksComponent extends Directive
     }
     controller: () ->
       @dtOptions = DTOptionsBuilder.newOptions().withBootstrap()
+      @plusButtonVisible = true
       console.log 'options', @dtOptions
       @persons = [
         {
@@ -22,7 +23,12 @@ class InvestmentBlocksComponent extends Directive
           lastName: 'Leeroy'
         }
       ]
-      return
 
+      @addBlock = ->
+        @persons.push @blockToAdd
+        @plusButtonVisible = true
+      @removeBlock = (index) ->
+        @persons.splice(index, 1)
+      return
     }
 

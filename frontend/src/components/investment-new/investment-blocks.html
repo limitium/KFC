@@ -1,20 +1,50 @@
 <h1>Блоки</h1>
 {{ctrl.persons | json}}
-<table datatable="ng" class="table table-striped table-bordered" dt-options="ctrl.dtOptions">
-    <thead>
-    <tr>
-        <th class="col-sm-6">FirstName</th>
-        <th class="col-sm-6">LastName</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="person in ctrl.persons">
-        <td>
-            <input type="text" class="form-control width-100" ng-model="person.firstName"/>
-        </td>
-        <td>
-            <input type="text" class="form-control width-100" ng-model="person.lastName"/>
-        </td>
-    </tr>
-    </tbody>
-</table>
+<form class="form-inline">
+    <table datatable="ng" class="row-border hover" dt-options="ctrl.dtOptions">
+        <thead>
+        <tr ng-show="ctrl.plusButtonVisible">
+            <th style="border-bottom: 0">
+                <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.plusButtonVisible = false">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </th>
+        </tr>
+        <tr ng-show="!ctrl.plusButtonVisible">
+            <th>
+                <input class="form-control width-100" type="text" name="first-name" ng-model="ctrl.blockToAdd.firstName"
+                       value="">
+            </th>
+            <th>
+                <input class="form-control width-100" type="text" name="last-name" ng-model="ctrl.blockToAdd.lastName"
+                       value="">
+            </th>
+            <th>
+                <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addBlock()">
+                    Добавить
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th class="col-sm-5">FirstName</th>
+            <th class="col-sm-5">LastName</th>
+            <th class="col-sm-2"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="person in ctrl.persons track by $index">
+            <td>
+                <input type="text" class="form-control width-100" ng-model="person.firstName"/>
+            </td>
+            <td>
+                <input type="text" class="form-control width-100" ng-model="person.lastName"/>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger" aria-label="Remove" ng-click="ctrl.removeBlock($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
