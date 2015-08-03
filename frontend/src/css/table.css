@@ -5,3 +5,7 @@ table.dataTable thead th {
 table.dataTable .form-control {
     width: 100%;
 }
+
+table.dataTable thead tr.plus-row th {
+    border-bottom: 0;
+}
