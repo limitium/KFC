@@ -1,5 +1,5 @@
 class InvestmentBlocksComponent extends Directive
-  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi, TableUtils) ->
+  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi, TableUtils, $modal) ->
     return {
     restrict: 'E'
     controllerAs: 'ctrl'
@@ -23,7 +23,6 @@ class InvestmentBlocksComponent extends Directive
         @blockToAdd = {}
       @removeBlock = (index) ->
         @investment.blocks.splice(index, 1)
-
       #Getters
       @getVat = ->
         @vat ?= ListApi.Lists.investVat()
