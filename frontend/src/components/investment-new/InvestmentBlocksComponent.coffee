@@ -9,7 +9,8 @@ class InvestmentBlocksComponent extends Directive
       investment: '='
     }
     controller: () ->
-      @dtOptions = DTOptionsBuilder.newOptions().withBootstrap()
+      @dtOptions = DTOptionsBuilder.newOptions()
+        .withBootstrap().withOption('searching', false).withOption('lengthChange', false).withOption('info', false)
       @dtColumnDefs = [
         DTColumnDefBuilder.newColumnDef(0)
         DTColumnDefBuilder.newColumnDef(1)
