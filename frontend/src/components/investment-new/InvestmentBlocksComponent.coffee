@@ -1,5 +1,5 @@
 class InvestmentBlocksComponent extends Directive
-  constructor: (DTOptionsBuilder, DTColumnBuilder) ->
+  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi) ->
     return {
     restrict: 'E'
     controllerAs: 'ctrl'
@@ -10,25 +10,34 @@ class InvestmentBlocksComponent extends Directive
     }
     controller: () ->
       @dtOptions = DTOptionsBuilder.newOptions().withBootstrap()
+      @dtColumnDefs = [
+        DTColumnDefBuilder.newColumnDef(0)
+        DTColumnDefBuilder.newColumnDef(1)
+        DTColumnDefBuilder.newColumnDef(2)
+        DTColumnDefBuilder.newColumnDef(3)
+        DTColumnDefBuilder.newColumnDef(4)
+        DTColumnDefBuilder.newColumnDef(5)
+        DTColumnDefBuilder.newColumnDef(6)
+        DTColumnDefBuilder.newColumnDef(7).notSortable()
+      ]
       @plusButtonVisible = true
-      console.log 'options', @dtOptions
-      @persons = [
+      @blocks = [
         {
-          firstName: 'Troy'
-          lastName: 'Bennett'
-        }
-        ,
-        {
-          firstName: 'Abed'
-          lastName: 'Leeroy'
+          floor: 1
+          name: 'Этаж 1 блок 3'
+          availableSq: 1500
+          costSqm: 5000
+          costSqmCurrency: 'USD'
+          vat: 'без учета НДС'
+          status: 'Закрытая продажа'
         }
       ]
 
       @addBlock = ->
-        @persons.push @blockToAdd
+        @blocks.push @blockToAdd
         @plusButtonVisible = true
       @removeBlock = (index) ->
-        @persons.splice(index, 1)
+        @blocks.splice(index, 1)
       return
     }
 
