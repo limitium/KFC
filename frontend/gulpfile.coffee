@@ -71,6 +71,14 @@ gulp.task 'vendor', ->
     'node_modules/font-awesome/fonts/**/*'
   ])
   .pipe(gulp.dest(buildFolder+'/fonts'))
+  gulp.src([
+    'node_modules/datatables/media/images/favicon.ico'
+    'node_modules/datatables/media/images/sort_asc.png'
+    'node_modules/datatables/media/images/sort_asc_disabled.png'
+    'node_modules/datatables/media/images/sort_both.png'
+    'node_modules/datatables/media/images/sort_desc.png'
+    'node_modules/datatables/media/images/sort_desc_disabled.png'
+  ]).pipe(gulp.dest(buildFolder + '/images'))
 
 gulp.task 'styles', ->
   gulp.src([

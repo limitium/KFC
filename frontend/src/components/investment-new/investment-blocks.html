@@ -1,16 +1,20 @@
 <h1>Блоки</h1>
-{{ctrl.dtOptions | json}}
+{{ctrl.persons | json}}
 <table datatable="ng" class="table table-striped table-bordered" dt-options="ctrl.dtOptions">
     <thead>
     <tr>
-        <th>FirstName</th>
-        <th>LastName</th>
+        <th class="col-sm-6">FirstName</th>
+        <th class="col-sm-6">LastName</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="person in ctrl.persons">
-        <td>{{ person.firstName }}</td>
-        <td>{{ person.lastName }}</td>
+        <td>
+            <input type="text" class="form-control width-100" ng-model="person.firstName"/>
+        </td>
+        <td>
+            <input type="text" class="form-control width-100" ng-model="person.lastName"/>
+        </td>
     </tr>
     </tbody>
 </table>
