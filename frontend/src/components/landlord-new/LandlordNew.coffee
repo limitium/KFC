@@ -1,5 +1,5 @@
 class LandlordNew extends Controller
-  constructor: (@StateParamsService, @ListApi, @AccountApi) ->
+  constructor: (@StateParamsService, @ListApi, @AccountApi, @LandlordApi) ->
     console.log 'LandlordNew constructor'
     @landlord = {}
 
@@ -13,6 +13,11 @@ class LandlordNew extends Controller
     @onAccountChange = (selectedAccount)->
       @landlord.contact = ''
       @contacts = @AccountApi.Contacts.query({"accountid": selectedAccount.id})
+
+    @save = () ->
+      console.log 'Saving', @landlord
+      @LandlordApi.Landlords.save(@landlord)
+
     return
 
 

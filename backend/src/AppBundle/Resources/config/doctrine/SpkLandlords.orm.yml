@@ -339,14 +339,14 @@ AppBundle\Entity\SpkLandlords:
         SPK_LANDLORDS_PRIMARY:
             columns:
                 - SPK_LANDLORDSID
-    id: {  }
-    fields:
+    id:
         spkLandlordsid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_LANDLORDSID
+    fields:
         spkPropertyid:
             type: string
             nullable: false
