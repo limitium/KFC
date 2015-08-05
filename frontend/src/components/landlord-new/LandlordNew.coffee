@@ -9,8 +9,7 @@ class LandlordNew extends Controller
     @getAccounts = (val) ->
       @AccountApi.Accounts.query({"name": val}).$promise
     @getContacts = (val) ->
-      @AccountApi.Contacts.query({"name": val}).$promise
-
+      @AccountApi.Contacts.query({"name": val, "account": @landlord.account.id}).$promise
     return
 
 

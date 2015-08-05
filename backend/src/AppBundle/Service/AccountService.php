@@ -56,20 +56,33 @@ class AccountService extends NameSearchService
         return $this->ls->transformToList($accounts, $nameColumn, 'accountid');
     }
 
-    public function findContactsByNameContaining($namePart)
+    public function findContacts($params)
     {
+        $namePart = $params->get('name', '');
+        $accountId = $params->get('accountid', '');
         $entity = 'AppBundle:ContactDetail';
         $lastRusNameColumn = 'lastrus';
         $firstRusNameColumn = 'firstrus';
         $middleRusNameColumn = 'middlerus';
         $maxResults = 100;
-        $contacts = $this->em
-            ->getRepository($entity)->createQueryBuilder('e')
-            ->where('e.'.$lastRusNameColumn.' LIKE :name')
-            ->orWhere('e.'.$firstRusNameColumn.' LIKE :name')
-            ->orWhere('e.'.$middleRusNameColumn.' LIKE :name')
-            ->setParameter('name', '%' . $namePart . '%')
-            ->setMaxResults($maxResults)
+        $qb = $this->em->getRepository($entity)->createQueryBuilder('e');
+        if (!empty($accountId)) {
+            $qb->leftJoin('AppBundle:Contact', 'c', 'WITH', 'c.contactid = e.contactid');
+        }
+        $qb->where("1=1");
+        if (!empty($accountId)) {
+            $qb->andWhere("c.accountid= :accountid")->setParameter('accountid', $accountId);
+        }
+        if (!empty($namePart)) {
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->like('e.'.$lastRusNameColumn, ':name'),
+                    $qb->expr()->like('e.'.$firstRusNameColumn, ':name'),
+                    $qb->expr()->like('e.'.$middleRusNameColumn, ':name')
+                    #TODO: Add mobile phone querying
+                ))->setParameter('name', '%' . $namePart . '%');
+        }
+        $contacts = $qb->setMaxResults($maxResults)
             ->distinct()
             ->getQuery()
             ->useResultCache(true, 100500)

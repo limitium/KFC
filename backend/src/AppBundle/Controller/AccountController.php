@@ -39,13 +39,13 @@ class AccountController extends Controller
     /**
      * @Rest\View(serializerGroups={"Default"})
      * @Rest\QueryParam(name="name", nullable=false)
+     * @Rest\QueryParam(name="accountid", nullable=false)
      * @param ParamFetcher $params
      * @return string
      */
     public function getContactsAction(ParamFetcher $params)
     {
-        $namePart = $params->get('name', '');
-        return $this->as->findContactsByNameContaining($namePart);
+        return $this->as->findContacts($params);
     }
 
 }
