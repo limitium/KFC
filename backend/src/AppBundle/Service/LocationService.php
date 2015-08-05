@@ -27,7 +27,7 @@ class LocationService extends NameSearchService
      * @DI\Inject("stein.list_service")
      * @var ListService
      */
-    private $ls;
+    public $ls;
 
 
     /**
@@ -162,9 +162,4 @@ class LocationService extends NameSearchService
     {
         $this->ls = $ls;
     }
-
-
-
-
-
 }

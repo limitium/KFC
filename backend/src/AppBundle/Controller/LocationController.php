@@ -104,4 +104,22 @@ class LocationController extends Controller
     {
         return $this->ls->findStreets($params);
     }
+
+    /**
+     * @return LocationService
+     */
+    public function getLs()
+    {
+        return $this->ls;
+    }
+
+    /**
+     * @param LocationService $ls
+     */
+    public function setLs($ls)
+    {
+        $this->ls = $ls;
+    }
+
+
 }
