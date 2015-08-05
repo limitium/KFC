@@ -27,6 +27,10 @@ class Main extends Controller
       path: '/account/new'
       components:
         main: 'accountNew'
+    ,
+      path: '/landlord/new'
+      components:
+        main: 'landlordNew'
     ]
 
 

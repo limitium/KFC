@@ -1,5 +1,5 @@
 class InvestmentBlocksComponent extends Directive
-  constructor: (DTOptionsBuilder, DTColumnDefBuilder, ListApi, TableUtils, $modal) ->
+  constructor: (ListApi, TableUtils) ->
     return {
     restrict: 'E'
     controllerAs: 'ctrl'

@@ -7,3 +7,6 @@ picklist:
 location:
     type:     rest
     resource: AppBundle\Controller\LocationController
+account:
+    type:     rest
+    resource: AppBundle\Controller\AccountController

@@ -1,1 +1,45 @@
-<h1>Собственники</h1>
+<form class="form-inline">
+    <table datatable="ng" class="row-border hover" dt-options="ctrl.landlordDtOptions" dt-column-defs="ctrl.landlordDtColumnDefs">
+        <thead>
+        <tr class="plus-row">
+            <th>
+                <button type="button" class="btn btn-success" aria-label="Add" ng-link="main:landlordNew">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th class="col-sm-2">Компания</th>
+            <th class="col-sm-2">Контакт</th>
+            <th class="col-sm-3">Тип</th>
+            <th class="col-sm-2">Основной</th>
+            <th class="col-sm-2">Действующий</th>
+            <th class="col-sm-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="landlords in ctrl.investment.landlords track by $index">
+            <td>
+                <input type="text" class="form-control" ng-model="landlord.contact"/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="landlord.contactDetail"/>
+            </td>
+            <td>
+                <input type="number" class="form-control" ng-model="landlord.contactType"/>
+            </td>
+            <td>
+                <input type="checkbox" ng-model="landlord.primaryContact">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="landlord.currentContact">
+            </td>
+            <td class="td-control">
+                <button type="button" class="btn btn-danger" confirmation-delete="ctrl.removeLandlord($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>

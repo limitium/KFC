@@ -1,0 +1,55 @@
+<div class="container">
+    {{landlordNew.landlord | json}}
+    <form role="form" name="landlordForm" class="form-horizontal">
+        <common-list-field
+                label="Тип"
+                model="landlordNew.landlord.contactType"
+                items="landlordNew.getContactTypes()"></common-list-field>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="primary-contact" ng-model="landlordNew.landlord.primaryContact">Основной
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="current-contact" ng-model="landlordNew.landlord.currentContact">Действующий
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Компания</label>
+            <div class="col-sm-7">
+                <input id="accounts" type="text" ng-model="landlordNew.landlord.account"
+                       typeahead="item as item.text for item in landlordNew.getAccounts($viewValue)"
+                       typeahead-wait-ms="300"
+                       typeahead-loading="loadingAccounts" class="form-control">
+            </div>
+            <i ng-show="loadingAccounts" class="glyphicon glyphicon-refresh typeahead-loading-icon col-sm-1"></i>
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="landlordNew.goToNewAccount()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Контакт</label>
+            <div class="col-sm-7">
+                <input id="contacts" type="text" ng-model="landlordNew.landlord.contact"
+                       typeahead="item as item.text for item in landlordNew.getContacts($viewValue)"
+                       typeahead-wait-ms="300"
+                       typeahead-loading="loadingContacts" class="form-control"
+                       ng-disabled="!landlordNew.landlord.account">
+            </div>
+            <i ng-show="loadingContacts" class="glyphicon glyphicon-refresh typeahead-loading-icon col-sm-1"></i>
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="landlordNew.goToNewContact()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </form>
+
+</div>

@@ -19,24 +19,26 @@ use JMS\DiExtraBundle\Annotation as DI;
 /**
  * @Service("stein.location")
  */
-class LocationService
+class LocationService extends NameSearchService
 {
     protected $em;
 
+    /**
+     * @DI\Inject("stein.list_service")
+     * @var ListService
+     */
     private $ls;
 
 
     /**
      * @InjectParams({
      *     "em" = @Inject("doctrine.orm.entity_manager"),
-     *     "ls" = @Inject("stein.list_service")
      * })
      * @param EntityManager $em
      */
-    public function __construct(EntityManager $em, ListService $ls)
+    public function __construct(EntityManager $em)
     {
         $this->em = $em;
-        $this->ls = $ls;
     }
 
     public function findOneCity($id)
@@ -128,22 +130,6 @@ class LocationService
             ->getResult();
         return $this->ls->transformToList($result, 'streetNameRus', 'spkStreetid');
     }
-
-    private function nameSearchFor($entity, $columnName, $namePart)
-    {
-        $maxResults = 100;
-        $result = $this->em
-            ->getRepository($entity)->createQueryBuilder('e')
-            ->where('e.'.$columnName.' LIKE :name')
-            ->setParameter('name', '%' . $namePart . '%')
-            ->setMaxResults($maxResults)
-            ->distinct()
-            ->getQuery()
-            ->useResultCache(true, 100500)
-            ->getResult();
-        return $result;
-    }
-
 
     /**
      * @return EntityManager
