@@ -20,9 +20,9 @@ class ConfirmationDelete extends Directive
 
 class ModalDelete extends Controller
   constructor: ($modalInstance) ->
-  @ok = () ->
-    $modalInstance.close()
-  @cancel = () ->
-    $modalInstance.dismiss 'cancel'
+    @ok = () ->
+      $modalInstance.close()
+    @cancel = () ->
+      $modalInstance.dismiss 'cancel'
 
 
