@@ -10,6 +10,4 @@ class InvestmentOwnersComponent extends Directive
     }
     controller: () ->
       console.log 'TBD'
-
     }
-

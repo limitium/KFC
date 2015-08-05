@@ -1,11 +1,5 @@
 class ConfirmationDelete extends Directive
   constructor: ($modal) ->
-
-    ModalInstanceCtrl = ($scope, $modalInstance) ->
-      $scope.ok = () ->
-        $modalInstance.close();
-      $scope.cancel = () ->
-        $modalInstance.dismiss('cancel')
     return {
       restrict: 'A'
       scope: {
@@ -14,15 +8,21 @@ class ConfirmationDelete extends Directive
       link: (scope, element, attrs) ->
           element.bind 'click', () ->
               modalInstance = $modal.open({
-                animation: true
-                size: 'sm'
-                templateUrl: '/components/common/modals/confirmation-delete.html'
-                controller: ModalInstanceCtrl
+                  animation: true
+                  size: 'sm'
+                  templateUrl: '/components/common/modals/confirmation-delete.html'
+                  controller: 'modalDeleteController as modaldelete'
               })
-
-              modalInstance.result.then( () ->
+              modalInstance.result.then () ->
                 scope.confirmationDelete()
-              , () ->
-              )
           return
     }
+
+class ModalDeleteController extends Controller
+  constructor: ($modalInstance) ->
+  @ok = () ->
+    $modalInstance.close()
+  @cancel = () ->
+    $modalInstance.dismiss 'cancel'
+
+

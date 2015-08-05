@@ -1,5 +1,6 @@
 class InvestmentNew extends Controller
-  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService) ->
+  constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService, @StateParamsService) ->
+    console.log 'InvestmentNew constructor'
     @investment = {}
     @busy = false
 
@@ -16,3 +17,11 @@ class InvestmentNew extends Controller
 
 InvestmentNew::canDeactivate = ->
   !@busy
+
+InvestmentNew::deactivate = ->
+  @StateParamsService.put('key', 'investment')
+  return true
+
+InvestmentNew::activate = ->
+  console.log 'InvestmentNew activate'
+  return true
