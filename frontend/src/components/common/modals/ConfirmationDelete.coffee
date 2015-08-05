@@ -11,7 +11,7 @@ class ConfirmationDelete extends Directive
                   animation: true
                   size: 'sm'
                   templateUrl: '/components/common/modals/confirmation-delete.html'
-                  controller: 'modalDeleteController as modaldelete'
+                  controller: 'ModalDeleteController as modaldelete'
               })
               modalInstance.result.then () ->
                 scope.confirmationDelete()
