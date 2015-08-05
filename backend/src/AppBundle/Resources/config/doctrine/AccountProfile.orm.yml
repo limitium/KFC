@@ -1,0 +1,102 @@
+AppBundle\Entity\AccountProfile:
+    type: entity
+    table: ACCOUNT_PROFILE
+    indexes:
+        ACCOUNT_PROFILE_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K9:
+            columns:
+                - SUBPROFILEID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K8:
+            columns:
+                - PROFILEID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K7:
+            columns:
+                - AREAID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K9_K7_K8_K2:
+            columns:
+                - SUBPROFILEID
+                - AREAID
+                - PROFILEID
+                - ACCOUNTID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K8_K7_K9_K2:
+            columns:
+                - PROFILEID
+                - AREAID
+                - SUBPROFILEID
+                - ACCOUNTID
+        _dta_index_ACCOUNT_PROFILE_7_903674267__K7_K8_K9_K2:
+            columns:
+                - AREAID
+                - PROFILEID
+                - SUBPROFILEID
+                - ACCOUNTID
+        _dta_index_ACCOUNT_PROFILE_9_903674267__K8_K2:
+            columns:
+                - PROFILEID
+                - ACCOUNTID
+        _dta_index_ACCOUNT_PROFILE_9_903674267__K2_8:
+            columns:
+                - ACCOUNTID
+                - PROFILEID
+    uniqueConstraints:
+        ACCOUNT_PROFILE_PRIMARY:
+            columns:
+                - ACCOUNT_PROFILEID
+    id: {  }
+    fields:
+        accountProfileid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNT_PROFILEID
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        areaid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: AREAID
+        profileid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PROFILEID
+        subprofileid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SUBPROFILEID
+    lifecycleCallbacks: {  }

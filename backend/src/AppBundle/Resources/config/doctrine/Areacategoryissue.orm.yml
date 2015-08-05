@@ -1,0 +1,82 @@
+AppBundle\Entity\Areacategoryissue:
+    type: entity
+    table: AREACATEGORYISSUE
+    indexes:
+        AREACATEGORYISSUE_AREA:
+            columns:
+                - AREA
+        AREACATEGORYISSUE_CATEGORY:
+            columns:
+                - CATEGORY
+        AREACATEGORYISSUE_ISSUE:
+            columns:
+                - ISSUE
+    uniqueConstraints:
+        AREACATEGORYISSUE_PRIMARY:
+            columns:
+                - AREACATEGORYISSUEID
+    id: {  }
+    fields:
+        areacategoryissueid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: AREACATEGORYISSUEID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        area:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: AREA
+        category:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CATEGORY
+        issue:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ISSUE
+        ticket:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TICKET
+        defect:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DEFECT
+        customer:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: CUSTOMER
+    lifecycleCallbacks: {  }

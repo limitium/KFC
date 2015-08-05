@@ -42,14 +42,49 @@ class AccountService extends NameSearchService
 
     public function findAccountsByNameContaining($namePart)
     {
-        $result = $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
-        return $this->ls->transformToList($result, 'cityRus', 'spkCityid');
+        $entity = 'AppBundle:Account';
+        $nameColumn = 'account';
+        $maxResults = 100;
+        $accounts = $this->em
+            ->getRepository($entity)->createQueryBuilder('e')
+            ->where('e.'.$nameColumn.' LIKE :name')
+            ->setParameter('name', '%' . $namePart . '%')
+            ->setMaxResults($maxResults)
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+        return $this->ls->transformToList($accounts, $nameColumn, 'accountid');
     }
 
     public function findContactsByNameContaining($namePart)
     {
-        $result = $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
-        return $this->ls->transformToList($result, 'cityRus', 'spkCityid');
+        $entity = 'AppBundle:ContactDetail';
+        $lastRusNameColumn = 'lastrus';
+        $firstRusNameColumn = 'firstrus';
+        $middleRusNameColumn = 'middlerus';
+        $maxResults = 100;
+        $contacts = $this->em
+            ->getRepository($entity)->createQueryBuilder('e')
+            ->where('e.'.$lastRusNameColumn.' LIKE :name')
+            ->orWhere('e.'.$firstRusNameColumn.' LIKE :name')
+            ->orWhere('e.'.$middleRusNameColumn.' LIKE :name')
+            ->setParameter('name', '%' . $namePart . '%')
+            ->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+
+        $result = array();
+        foreach ($contacts as $contact) {
+            $id = $contact->getContactid();
+            $array = array($contact->getFirstrus(), $contact->getMiddlerus(), $contact->getLastrus());
+            $name = implode(' ', array_filter($array));
+            $result[] = new ListItem($id, $name);
+        }
+        return $result;
+
+        return $this->ls->transformToList($result, 'cityRus', 'contactid');
     }
 
 

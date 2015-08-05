@@ -1,0 +1,48 @@
+AppBundle\Entity\Area:
+    type: entity
+    table: AREA
+    uniqueConstraints:
+        AREA_PRIMARY:
+            columns:
+                - AREAID
+    id: {  }
+    fields:
+        areaid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: AREAID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        areaname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: AREANAME
+        areanamerus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: AREANAMERUS
+    lifecycleCallbacks: {  }

@@ -1,0 +1,36 @@
+AppBundle\Entity\AccDoublesNew:
+    type: entity
+    table: Acc_Doubles_New
+    id: {  }
+    fields:
+        number:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: Number
+        accountid1:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AccountID1
+        accountid2:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: AccountID2
+        numacc:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: NumAcc
+        numweb:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: NumWeb
+    lifecycleCallbacks: {  }

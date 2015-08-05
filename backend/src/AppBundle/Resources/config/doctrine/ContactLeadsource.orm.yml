@@ -1,0 +1,58 @@
+AppBundle\Entity\ContactLeadsource:
+    type: entity
+    table: CONTACT_LEADSOURCE
+    indexes:
+        XIE1CONTACT_LEADSOURCE:
+            columns:
+                - CONTACTID
+        _dta_index_CONTACT_LEADSOURCE_7_245575913__K2:
+            columns:
+                - LEADSOURCEID
+        _dta_index_CONTACT_LEADSOURCE_7_245575913__K2_K1:
+            columns:
+                - LEADSOURCEID
+                - CONTACTID
+    uniqueConstraints:
+        XPKCONTACT_LEADSOURCE:
+            columns:
+                - CONTACTID
+                - LEADSOURCEID
+    id: {  }
+    fields:
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+        leadsourceid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: LEADSOURCEID
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        leaddate:
+            type: datetime
+            nullable: true
+            column: LEADDATE
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+    lifecycleCallbacks: {  }

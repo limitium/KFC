@@ -1,0 +1,501 @@
+AppBundle\Entity\Account:
+    type: entity
+    table: ACCOUNT
+    indexes:
+        KF_SR_IX_MAINPHONE:
+            columns:
+                - MAINPHONE
+        _dta_index_ACCOUNT_5_1076914908__K1_3_11:
+            columns:
+                - ACCOUNTID
+                - ACCOUNT
+                - MAINPHONE
+        _dta_index_ACCOUNT_5_1101299033__K1_21:
+            columns:
+                - ACCOUNTID
+                - WEBADDRESS
+    uniqueConstraints:
+        KF_SR_IX_ACCOUNTID:
+            columns:
+                - ACCOUNTID
+    id:
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+    fields:
+        type:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TYPE
+        account:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNT
+        division:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DIVISION
+        siccode:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SICCODE
+        parentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARENTID
+        description:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: DESCRIPTION
+        addressid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ADDRESSID
+        shippingid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SHIPPINGID
+        region:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: REGION
+        mainphone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MAINPHONE
+        alternatephone:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ALTERNATEPHONE
+        fax:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FAX
+        tollfree:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TOLLFREE
+        tollfree2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TOLLFREE2
+        otherphone1:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OTHERPHONE1
+        otherphone2:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OTHERPHONE2
+        otherphone3:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OTHERPHONE3
+        email:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: EMAIL
+        emailtype:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: EMAILTYPE
+        webaddress:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WEBADDRESS
+        seccodeid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SECCODEID
+        revenue:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: REVENUE
+        employees:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: EMPLOYEES
+        industry:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: INDUSTRY
+        creditrating:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CREDITRATING
+        notes:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOTES
+        status:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: STATUS
+        accountmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTMANAGERID
+        regionalmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: REGIONALMANAGERID
+        divisionalmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DIVISIONALMANAGERID
+        nationalaccount:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NATIONALACCOUNT
+        targetaccount:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TARGETACCOUNT
+        territory:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TERRITORY
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        accountUc:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNT_UC
+        aka:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: AKA
+        currencycode:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: CURRENCYCODE
+        internalaccountno:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: INTERNALACCOUNTNO
+        externalaccountno:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: EXTERNALACCOUNTNO
+        parentaccountno:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PARENTACCOUNTNO
+        alternatekeyprefix:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: ALTERNATEKEYPREFIX
+        alternatekeysuffix:
+            type: string
+            nullable: true
+            length: 24
+            fixed: false
+            column: ALTERNATEKEYSUFFIX
+        defaultticketseccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: DEFAULTTICKETSECCODEID
+        notifydefects:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOTIFYDEFECTS
+        notifyonclose:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOTIFYONCLOSE
+        notifyonstatus:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NOTIFYONSTATUS
+        shortnotes:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: SHORTNOTES
+        userfield1:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD1
+        userfield2:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD2
+        userfield3:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD3
+        userfield4:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD4
+        userfield5:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD5
+        userfield6:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD6
+        userfield7:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD7
+        userfield8:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD8
+        userfield9:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD9
+        userfield10:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD10
+        campaignid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CAMPAIGNID
+        donotsolicit:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: DONOTSOLICIT
+        score:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SCORE
+        ticker:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: TICKER
+        subtype:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: SUBTYPE
+        leadsourceid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LEADSOURCEID
+        importsource:
+            type: string
+            nullable: true
+            length: 1025
+            fixed: false
+            column: IMPORTSOURCE
+        engineerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ENGINEERID
+        salesengineerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SALESENGINEERID
+        relationship:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RELATIONSHIP
+        lasthistoryby:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: LASTHISTORYBY
+        lasthistorydate:
+            type: datetime
+            nullable: true
+            column: LASTHISTORYDATE
+        businessdescription:
+            type: string
+            nullable: true
+            length: 2000
+            fixed: false
+            column: BUSINESSDESCRIPTION
+        webaddress2:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WEBADDRESS2
+        webaddress3:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WEBADDRESS3
+        webaddress4:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WEBADDRESS4
+        tin:
+            type: string
+            nullable: true
+            length: 14
+            fixed: false
+            column: TIN
+        employees2:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: EMPLOYEES2
+        managerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGERID
+        manager:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MANAGER
+    lifecycleCallbacks: {  }

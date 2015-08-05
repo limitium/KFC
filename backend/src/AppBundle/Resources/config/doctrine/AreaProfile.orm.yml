@@ -1,0 +1,58 @@
+AppBundle\Entity\AreaProfile:
+    type: entity
+    table: AREA_PROFILE
+    indexes:
+        AREA_PROFILE_AREAID:
+            columns:
+                - AREAID
+    uniqueConstraints:
+        AREA_PROFILE_PRIMARY:
+            columns:
+                - AREA_PROFILEID
+    id: {  }
+    fields:
+        areaProfileid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: AREA_PROFILEID
+        areaid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: AREAID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        profilename:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PROFILENAME
+        profilenamerus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PROFILENAMERUS
+    lifecycleCallbacks: {  }

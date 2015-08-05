@@ -1,0 +1,76 @@
+AppBundle\Entity\Contactresponse:
+    type: entity
+    table: CONTACTRESPONSE
+    indexes:
+        CONTACTRESPONSE_CAMPAIGNID:
+            columns:
+                - CAMPAIGNID
+        CONTACTRESPONSE_CONTACTID:
+            columns:
+                - CONTACTID
+    uniqueConstraints:
+        CONTACTRESPONSE_PRIMARY:
+            columns:
+                - CONTACTRESPONSEID
+    id: {  }
+    fields:
+        contactresponseid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTRESPONSEID
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        responsedate:
+            type: datetime
+            nullable: true
+            column: RESPONSEDATE
+        responsemethod:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: RESPONSEMETHOD
+        campaignid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CAMPAIGNID
+        campaigncontactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CAMPAIGNCONTACTID
+        responded:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RESPONDED
+    lifecycleCallbacks: {  }

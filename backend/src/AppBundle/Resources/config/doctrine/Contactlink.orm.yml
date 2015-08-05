@@ -1,0 +1,93 @@
+AppBundle\Entity\Contactlink:
+    type: entity
+    table: CONTACTLINK
+    indexes:
+        XIE1CONTACTLINK:
+            columns:
+                - CONTACTID
+    uniqueConstraints:
+        XPKCONTACTLINK:
+            columns:
+                - CONTACTLINKID
+    id: {  }
+    fields:
+        contactlinkid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTLINKID
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+        rcseqno:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: RCSEQNO
+        rccommandstring:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: RCCOMMANDSTRING
+        rcdesc:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: RCDESC
+        rcserverid:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: RCSERVERID
+        rcinventorypath:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RCINVENTORYPATH
+        rcapplicationpath:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RCAPPLICATIONPATH
+        rcnicid:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: RCNICID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        rcparameterstring:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: RCPARAMETERSTRING
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+    lifecycleCallbacks: {  }

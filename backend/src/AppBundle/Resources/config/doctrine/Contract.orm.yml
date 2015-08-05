@@ -1,0 +1,229 @@
+AppBundle\Entity\Contract:
+    type: entity
+    table: CONTRACT
+    uniqueConstraints:
+        PK_CONTRACT:
+            columns:
+                - CONTRACTID
+        XAK1CONTRACT:
+            columns:
+                - ACCOUNTID
+                - CONTRACTID
+    id: {  }
+    fields:
+        contractid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTRACTID
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        servicecode:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SERVICECODE
+        typecode:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: TYPECODE
+        purchasedate:
+            type: datetime
+            nullable: true
+            column: PURCHASEDATE
+        period:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: PERIOD
+        startdate:
+            type: datetime
+            nullable: true
+            column: STARTDATE
+        endingdate:
+            type: datetime
+            nullable: true
+            column: ENDINGDATE
+        contractleft:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CONTRACTLEFT
+        blanket:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: BLANKET
+        firstcall:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FIRSTCALL
+        firstticket:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FIRSTTICKET
+        graceperiod:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: GRACEPERIOD
+        firstdate:
+            type: datetime
+            nullable: true
+            column: FIRSTDATE
+        amount:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: AMOUNT
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        notes:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOTES
+        userfield1:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD1
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        userfield2:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD2
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        userfield3:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD3
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        userfield4:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD4
+        userfield5:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD5
+        userfield6:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD6
+        userfield7:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD7
+        userfield8:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD8
+        userfield9:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD9
+        userfield10:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD10
+        remaining:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: REMAINING
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        listprice:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: LISTPRICE
+        ponumber:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PONUMBER
+        discount:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: DISCOUNT
+        isactive:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: ISACTIVE
+        referenceno:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: REFERENCENO
+        seccodeid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SECCODEID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,219 @@
+AppBundle\Entity\Accountproduct:
+    type: entity
+    table: ACCOUNTPRODUCT
+    indexes:
+        XAK1ACCOUNTPRODUCT:
+            columns:
+                - ACCOUNTID
+                - PRODUCTID
+    uniqueConstraints:
+        XPKACCOUNTPRODUCT:
+            columns:
+                - ACCOUNTPRODUCTID
+    id: {  }
+    fields:
+        accountproductid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTPRODUCTID
+        accountid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        productid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PRODUCTID
+        accountproductparentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTPRODUCTPARENTID
+        serialnumber:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: SERIALNUMBER
+        userfield1:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD1
+        userfield2:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD2
+        userfield3:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD3
+        userfield4:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD4
+        userfield5:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD5
+        userfield6:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD6
+        userfield7:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD7
+        userfield8:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD8
+        userfield9:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD9
+        userfield10:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: USERFIELD10
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        returned:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: RETURNED
+        evaluation:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: EVALUATION
+        opportunityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPORTUNITYID
+        oppproductid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OPPPRODUCTID
+        quantity:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: QUANTITY
+        salesorderid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: SALESORDERID
+        prddescription:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: PRDDESCRIPTION
+        productname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: PRODUCTNAME
+        actualid:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ACTUALID
+        notes:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: NOTES
+        contactid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONTACTID
+        assetcode:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: ASSETCODE
+        location:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: LOCATION
+        environment:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ENVIRONMENT
+        assetsystem:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ASSETSYSTEM
+        assetversion:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ASSETVERSION
+    lifecycleCallbacks: {  }

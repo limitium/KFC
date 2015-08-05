@@ -1,0 +1,84 @@
+AppBundle\Entity\Association:
+    type: entity
+    table: ASSOCIATION
+    indexes:
+        XIE1ASSOCIATION:
+            columns:
+                - FROMID
+        XIE2ASSOCIATION:
+            columns:
+                - TOID
+    uniqueConstraints:
+        XPKASSOCIATION:
+            columns:
+                - ASSOCIATIONID
+    id: {  }
+    fields:
+        associationid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ASSOCIATIONID
+        accountassociation:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ACCOUNTASSOCIATION
+        fromid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: FROMID
+        toid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: TOID
+        forwardrelation:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: FORWARDRELATION
+        backrelation:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: BACKRELATION
+        forwardnotes:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FORWARDNOTES
+        backnotes:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: BACKNOTES
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+    lifecycleCallbacks: {  }

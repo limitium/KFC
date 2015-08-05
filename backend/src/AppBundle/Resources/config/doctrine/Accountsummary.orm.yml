@@ -1,0 +1,70 @@
+AppBundle\Entity\Accountsummary:
+    type: entity
+    table: ACCOUNTSUMMARY
+    indexes:
+        XIE1ACCOUNTSUMMARY:
+            columns:
+                - ACCOUNT
+        XIE2ACCOUNTSUMMARY:
+            columns:
+                - SECCODEID
+        ACCOUNTSUMMARY_PARENTID:
+            columns:
+                - PARENTID
+    uniqueConstraints:
+        XPKACCOUNTSUMMARY:
+            columns:
+                - ACCOUNTID
+    id: {  }
+    fields:
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTID
+        type:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TYPE
+        account:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: ACCOUNT
+        seccodeid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: SECCODEID
+        parentid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PARENTID
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

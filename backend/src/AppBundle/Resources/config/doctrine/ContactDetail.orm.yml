@@ -1,0 +1,926 @@
+AppBundle\Entity\ContactDetail:
+    type: entity
+    table: CONTACT_DETAIL
+    indexes:
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_7_8_9:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_8_9:
+            columns:
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_K1_8_9:
+            columns:
+                - FIRSTRUS
+                - CONTACTID
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_7_942626401__K11_K7_K8_K9_K23_K22_K12_K14_K20_K27_K28_1:
+            columns:
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SEX
+                - NATIONALITY
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - FAXPREFIX
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - CONTACTID
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_K11_K7_K8_K9_K23_K22_K12_K14_K20_K27_K28:
+            columns:
+                - CONTACTID
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SEX
+                - NATIONALITY
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - FAXPREFIX
+                - LEADSOURSE
+                - WORK_INDUSTRY
+        _dta_index_CONTACT_DETAIL_c_7_942626401__K11_K7_K8_K9_K23_K22_K12_K14_K20_K27_K28:
+            columns:
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SEX
+                - NATIONALITY
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - FAXPREFIX
+                - LEADSOURSE
+                - WORK_INDUSTRY
+        _dta_index_CONTACT_DETAIL_7_942626401__K12_14:
+            columns:
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12_14:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K12_K1_14:
+            columns:
+                - WORKPREFIX
+                - CONTACTID
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_14:
+            columns:
+                - CONTACTID
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_7_8_9_12_14:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_8_9_12_14:
+            columns:
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_K1_8_9_12_14:
+            columns:
+                - FIRSTRUS
+                - CONTACTID
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_7_8_9_12_14_16:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_7_8_9_14:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12_14_16:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12_13_14_15_16_17:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+                - WORKSUFIX
+                - MOBILEPREFIX
+                - MOBILESUFIX
+                - HOMEPREFIX
+                - HOMESUFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_7_8_9_27:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - LEADSOURSE
+        _dta_index_CONTACT_DETAIL_7_942626401__K12_14_16_20:
+            columns:
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+                - FAXPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K12_K1_14_16_20:
+            columns:
+                - WORKPREFIX
+                - CONTACTID
+                - MOBILEPREFIX
+                - HOMEPREFIX
+                - FAXPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12_14_16_20:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+                - FAXPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_12_14_16_18:
+            columns:
+                - CONTACTID
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+                - OTHERPREFIX
+        _dta_index_CONTACT_DETAIL_7_942626401__K1_K7_8_9_11_12_14_18_20_22_23:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - OTHERPREFIX
+                - FAXPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_K1_8_9_11_12_14_18_20_22_23:
+            columns:
+                - FIRSTRUS
+                - CONTACTID
+                - MIDDLERUS
+                - LASTRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - OTHERPREFIX
+                - FAXPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_7_942626401__K7_8_9_11_12_14_18_20_22_23:
+            columns:
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - OTHERPREFIX
+                - FAXPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_c_7_942626401__K7:
+            columns:
+                - FIRSTRUS
+        _dta_index_CONTACT_DETAIL_9_942626401__K11_K7_K8_K9_K12_K20_K14_K22_K23_1:
+            columns:
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - FAXPREFIX
+                - MOBILEPREFIX
+                - NATIONALITY
+                - SEX
+                - CONTACTID
+        _dta_index_CONTACT_DETAIL_9_942626401__K1_K11_K7_K8_K9_K12_K20_K14_K22_K23:
+            columns:
+                - CONTACTID
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - FAXPREFIX
+                - MOBILEPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_c_9_942626401__K11_K7_K8_K9_K12_K20_K14_K22_K23:
+            columns:
+                - PREFIXRUS
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - FAXPREFIX
+                - MOBILEPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_9_942626401__K1_7_8_9_22_23:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_7_8_9_12_22_23:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - NATIONALITY
+                - SEX
+        _dta_index_CONTACT_DETAIL_5_942626401__K42:
+            columns:
+                - TITLE_TYPE
+        _dta_index_CONTACT_DETAIL_5_942626401__K31:
+            columns:
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K31_K42_K1:
+            columns:
+                - NON_DELIVERED
+                - TITLE_TYPE
+                - CONTACTID
+        _dta_index_CONTACT_DETAIL_5_942626401__K31_K42:
+            columns:
+                - NON_DELIVERED
+                - TITLE_TYPE
+        _dta_index_CONTACT_DETAIL_5_942626401__K31_K1_K42_7_8_9:
+            columns:
+                - NON_DELIVERED
+                - CONTACTID
+                - TITLE_TYPE
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K31_K42_7_8_9:
+            columns:
+                - CONTACTID
+                - NON_DELIVERED
+                - TITLE_TYPE
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K31_K42:
+            columns:
+                - CONTACTID
+                - NON_DELIVERED
+                - TITLE_TYPE
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K31_7_8_9:
+            columns:
+                - CONTACTID
+                - NON_DELIVERED
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K31_K42_K1_7_8_9:
+            columns:
+                - NON_DELIVERED
+                - TITLE_TYPE
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K31_K1_7_8_9:
+            columns:
+                - NON_DELIVERED
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K42_K1_K31_7_8_9:
+            columns:
+                - TITLE_TYPE
+                - CONTACTID
+                - NON_DELIVERED
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K14:
+            columns:
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K12:
+            columns:
+                - WORKPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_7_8_9_12_22_23_31_42:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - WORKPREFIX
+                - NATIONALITY
+                - SEX
+                - NON_DELIVERED
+                - TITLE_TYPE
+        _dta_index_CONTACT_DETAIL_5_942626401__K7_K8_K9_K22_K30_1:
+            columns:
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - NATIONALITY
+                - UNSUBSCRIBE
+                - CONTACTID
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K7_K8_K9_K22_K30:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - NATIONALITY
+                - UNSUBSCRIBE
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K9:
+            columns:
+                - CONTACTID
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K9_K1:
+            columns:
+                - LASTRUS
+                - CONTACTID
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K9_7_8:
+            columns:
+                - CONTACTID
+                - LASTRUS
+                - FIRSTRUS
+                - MIDDLERUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K9_K1_7_8:
+            columns:
+                - LASTRUS
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K9:
+            columns:
+                - LASTRUS
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_12:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - WORKPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_32_33_34_35_36_37_38_39_40_41_42_43:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SUFFIXRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - WORKSUFIX
+                - MOBILEPREFIX
+                - MOBILESUFIX
+                - HOMEPREFIX
+                - HOMESUFIX
+                - OTHERPREFIX
+                - OTHERSUFIX
+                - FAXPREFIX
+                - FAXSUFIX
+                - INDUSTRIALMANAGERID
+                - RESIDENTIALMANAGERID
+                - COUNTRYMANAGERID
+                - RETAILMANAGERID
+                - OFFICEMANAGERID
+                - VALUATIONMANAGERID
+                - INVESTMENTMANAGERID
+                - CONSULTINGMANAGERID
+                - RESEARCHMANAGERID
+                - MARKETINGMANAGERID
+                - TITLE_TYPE
+                - KEYCLIENT
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_7_8_9_10_11_13_14_15_16_17_18_19_20_21_32_33_34_35_36_37_38_39_40_41_42_43:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SUFFIXRUS
+                - PREFIXRUS
+                - WORKSUFIX
+                - MOBILEPREFIX
+                - MOBILESUFIX
+                - HOMEPREFIX
+                - HOMESUFIX
+                - OTHERPREFIX
+                - OTHERSUFIX
+                - FAXPREFIX
+                - FAXSUFIX
+                - INDUSTRIALMANAGERID
+                - RESIDENTIALMANAGERID
+                - COUNTRYMANAGERID
+                - RETAILMANAGERID
+                - OFFICEMANAGERID
+                - VALUATIONMANAGERID
+                - INVESTMENTMANAGERID
+                - CONSULTINGMANAGERID
+                - RESEARCHMANAGERID
+                - MARKETINGMANAGERID
+                - TITLE_TYPE
+                - KEYCLIENT
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_K1_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_32_33_34_35_36_37_38_39_40_41_42_43:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - SUFFIXRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - WORKSUFIX
+                - MOBILEPREFIX
+                - MOBILESUFIX
+                - HOMEPREFIX
+                - HOMESUFIX
+                - OTHERPREFIX
+                - OTHERSUFIX
+                - FAXPREFIX
+                - FAXSUFIX
+                - INDUSTRIALMANAGERID
+                - RESIDENTIALMANAGERID
+                - COUNTRYMANAGERID
+                - RETAILMANAGERID
+                - OFFICEMANAGERID
+                - VALUATIONMANAGERID
+                - INVESTMENTMANAGERID
+                - CONSULTINGMANAGERID
+                - RESEARCHMANAGERID
+                - MARKETINGMANAGERID
+                - TITLE_TYPE
+                - KEYCLIENT
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_K1_12:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - CONTACTID
+                - WORKPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_12_14_16:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - WORKPREFIX
+                - MOBILEPREFIX
+                - HOMEPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_K1_14_16:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - CONTACTID
+                - MOBILEPREFIX
+                - HOMEPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_16:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - HOMEPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_12_14:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - WORKPREFIX
+                - MOBILEPREFIX
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_23_25_26_27_28_29:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - SEX
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - HASANIMALS
+        _dta_index_CONTACT_DETAIL_5_942626401__K25_26_27_28_29_30_31:
+            columns:
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_23:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - SEX
+        _dta_index_CONTACT_DETAIL_5_942626401__K23_K1_25_26_27_28_29_30_31:
+            columns:
+                - SEX
+                - CONTACTID
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K23_25_26_27_28_29_30_31:
+            columns:
+                - SEX
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K23_30_31:
+            columns:
+                - SEX
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_25_26_27_28_29:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - WORK_INDUSTRY
+                - HASANIMALS
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_K30_K31_23_25_26_27_29:
+            columns:
+                - CONTACTID
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - SEX
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - HASANIMALS
+        _dta_index_CONTACT_DETAIL_5_942626401__K30_K31_25_26_27_29:
+            columns:
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - HASANIMALS
+        _dta_index_CONTACT_DETAIL_5_942626401__K23_25_26_27_29_30_31:
+            columns:
+                - SEX
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K23_K1_25_26_27_29_30_31:
+            columns:
+                - SEX
+                - CONTACTID
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K25_26_27_29_30_31:
+            columns:
+                - FAMILY
+                - NUMBER_OF_CHILDREN
+                - LEADSOURSE
+                - HASANIMALS
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+        _dta_index_CONTACT_DETAIL_5_942626401__K1_22:
+            columns:
+                - CONTACTID
+                - NATIONALITY
+    uniqueConstraints:
+        CONTACT_DETAIL_PRIMARY:
+            columns:
+                - CONTACTID
+        KF_SR_IX_FIONAME:
+            columns:
+                - CONTACTID
+                - FIRSTRUS
+                - MIDDLERUS
+                - LASTRUS
+                - TITLERUS
+                - SUFFIXRUS
+                - PREFIXRUS
+                - WORKPREFIX
+                - WORKSUFIX
+                - MOBILEPREFIX
+                - MOBILESUFIX
+                - HOMEPREFIX
+                - HOMESUFIX
+                - OTHERPREFIX
+                - OTHERSUFIX
+                - FAXPREFIX
+                - FAXSUFIX
+                - NATIONALITY
+                - SEX
+                - UNSUBSCRIBE
+                - NON_DELIVERED
+                - TITLE_TYPE
+                - KEYCLIENT
+    id:
+        contactid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTACTID
+    fields:
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        titlerus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TITLERUS
+        firstrus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FIRSTRUS
+        middlerus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MIDDLERUS
+        lastrus:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: LASTRUS
+        suffixrus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SUFFIXRUS
+        prefixrus:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: PREFIXRUS
+        workprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WORKPREFIX
+        worksufix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: WORKSUFIX
+        mobileprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MOBILEPREFIX
+        mobilesufix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: MOBILESUFIX
+        homeprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOMEPREFIX
+        homesufix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: HOMESUFIX
+        otherprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OTHERPREFIX
+        othersufix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: OTHERSUFIX
+        faxprefix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FAXPREFIX
+        faxsufix:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: FAXSUFIX
+        nationality:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: NATIONALITY
+        sex:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: SEX
+        age:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: AGE
+        family:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: FAMILY
+        numberOfChildren:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: NUMBER_OF_CHILDREN
+        leadsourse:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: LEADSOURSE
+        workIndustry:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: WORK_INDUSTRY
+        hasanimals:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: HASANIMALS
+        unsubscribe:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: UNSUBSCRIBE
+        nonDelivered:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: NON_DELIVERED
+        industrialmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: INDUSTRIALMANAGERID
+        residentialmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: RESIDENTIALMANAGERID
+        countrymanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: COUNTRYMANAGERID
+        retailmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: RETAILMANAGERID
+        officemanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: OFFICEMANAGERID
+        valuationmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: VALUATIONMANAGERID
+        investmentmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: INVESTMENTMANAGERID
+        consultingmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CONSULTINGMANAGERID
+        researchmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: RESEARCHMANAGERID
+        marketingmanagerid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MARKETINGMANAGERID
+        titleType:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TITLE_TYPE
+        keyclient:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: KEYCLIENT
+        sendSms:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: SEND_SMS
+    lifecycleCallbacks: {  }

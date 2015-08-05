@@ -1,0 +1,29 @@
+AppBundle\Entity\AccDoubles:
+    type: entity
+    table: Acc_Doubles
+    id: {  }
+    fields:
+        rank:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: RANK
+        accountid1:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: ACCOUNTID_1
+        accountid2:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: ACCOUNTID_2
+        result:
+            type: string
+            nullable: false
+            length: 9
+            fixed: false
+            column: RESULT
+    lifecycleCallbacks: {  }

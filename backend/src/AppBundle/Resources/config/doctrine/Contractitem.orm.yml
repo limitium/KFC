@@ -1,0 +1,53 @@
+AppBundle\Entity\Contractitem:
+    type: entity
+    table: CONTRACTITEM
+    indexes:
+        XAK1CONTRACTITEM:
+            columns:
+                - CONTRACTID
+                - ACCOUNTPRODUCTID
+    uniqueConstraints:
+        XPKCONTRACTITEM:
+            columns:
+                - CONTRACTITEMID
+    id: {  }
+    fields:
+        contractitemid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTRACTITEMID
+        contractid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTRACTID
+        accountproductid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: ACCOUNTPRODUCTID
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+    lifecycleCallbacks: {  }

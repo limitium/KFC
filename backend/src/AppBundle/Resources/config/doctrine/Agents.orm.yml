@@ -1,0 +1,107 @@
+AppBundle\Entity\Agents:
+    type: entity
+    table: AGENTS
+    uniqueConstraints:
+        XPKAGENTS:
+            columns:
+                - AGENTID
+    id: {  }
+    fields:
+        agentid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: AGENTID
+        agentname:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: AGENTNAME
+        enabled:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ENABLED
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+        userid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: USERID
+        groupid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: GROUPID
+        hostid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: HOSTID
+        nextrun:
+            type: datetime
+            nullable: true
+            column: NEXTRUN
+        period:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PERIOD
+        periodspec:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PERIODSPEC
+        perioddata:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PERIODDATA
+        iterations:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ITERATIONS
+        data:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+            column: DATA
+        email:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: EMAIL
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

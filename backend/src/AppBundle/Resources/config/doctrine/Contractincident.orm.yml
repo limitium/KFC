@@ -1,0 +1,72 @@
+AppBundle\Entity\Contractincident:
+    type: entity
+    table: CONTRACTINCIDENT
+    indexes:
+        XAK1CONTRACTINCIDENT:
+            columns:
+                - CONTRACTID
+                - TICKETID
+                - TICKETACTIVITYID
+    uniqueConstraints:
+        PK_CONTRACTINCIDENT:
+            columns:
+                - CONTRACTINCIDENTID
+    id: {  }
+    fields:
+        contractincidentid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTRACTINCIDENTID
+        contractid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: CONTRACTID
+        ticketid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: TICKETID
+        ticketactivityid:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: TICKETACTIVITYID
+        hours:
+            type: float
+            nullable: true
+            precision: 53
+            scale: 0
+            column: HOURS
+        dollars:
+            type: decimal
+            nullable: true
+            precision: 17
+            scale: 4
+            column: DOLLARS
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }

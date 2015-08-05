@@ -1,0 +1,154 @@
+AppBundle\Entity\Address:
+    type: entity
+    table: ADDRESS
+    indexes:
+        XIE6ADDRESS:
+            columns:
+                - ENTITYID
+        _dta_index_ADDRESS_5_377104434__K1_5_6_7_8_9_11:
+            columns:
+                - ADDRESSID
+                - ADDRESS1
+                - ADDRESS2
+                - CITY
+                - STATE
+                - POSTALCODE
+                - COUNTRY
+        _dta_index_ADDRESS_5_377104434__K1_K7_K20:
+            columns:
+                - ADDRESSID
+                - CITY
+                - ADDRESS3
+    uniqueConstraints:
+        XPKADDRESS:
+            columns:
+                - ADDRESSID
+    id: {  }
+    fields:
+        addressid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ADDRESSID
+        entityid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ENTITYID
+        type:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TYPE
+        description:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: DESCRIPTION
+        address1:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ADDRESS1
+        address2:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ADDRESS2
+        city:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: CITY
+        state:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: STATE
+        postalcode:
+            type: string
+            nullable: true
+            length: 24
+            fixed: false
+            column: POSTALCODE
+        county:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COUNTY
+        country:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: COUNTRY
+        isprimary:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ISPRIMARY
+        ismailing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ISMAILING
+        salutation:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: SALUTATION
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        routing:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ROUTING
+        address3:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+            column: ADDRESS3
+        address4:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: ADDRESS4
+        timezone:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TIMEZONE
+    lifecycleCallbacks: {  }

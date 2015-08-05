@@ -1,0 +1,16 @@
+AppBundle\Entity\Accountofficesmanagerid:
+    type: entity
+    table: accountofficesmanagerid
+    id: {  }
+    fields:
+        accountid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+        officesmanagerid:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+    lifecycleCallbacks: {  }

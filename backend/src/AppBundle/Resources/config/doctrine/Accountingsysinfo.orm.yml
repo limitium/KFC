@@ -1,0 +1,93 @@
+AppBundle\Entity\Accountingsysinfo:
+    type: entity
+    table: ACCOUNTINGSYSINFO
+    uniqueConstraints:
+        XPKACCOUNTINGSYSINFO:
+            columns:
+                - ACCOUNTINGSYSINFOID
+    id: {  }
+    fields:
+        accountingsysinfoid:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: ACCOUNTINGSYSINFOID
+        accountcompany:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: ACCOUNTCOMPANY
+        currentaccountingperiod:
+            type: string
+            nullable: true
+            length: 6
+            fixed: false
+            column: CURRENTACCOUNTINGPERIOD
+        lastextractdate:
+            type: datetime
+            nullable: true
+            column: LASTEXTRACTDATE
+        transportpassword:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TRANSPORTPASSWORD
+        transportname:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: TRANSPORTNAME
+        transportshortname:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TRANSPORTSHORTNAME
+        transportcomponent:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TRANSPORTCOMPONENT
+        transportdatabase:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TRANSPORTDATABASE
+        transportusername:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: TRANSPORTUSERNAME
+        productdatafeed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PRODUCTDATAFEED
+        modifydate:
+            type: datetime
+            nullable: true
+            column: MODIFYDATE
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
+        createdate:
+            type: datetime
+            nullable: true
+            column: CREATEDATE
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
+    lifecycleCallbacks: {  }
