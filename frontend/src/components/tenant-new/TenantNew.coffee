@@ -1,30 +1,28 @@
-class LandlordNew extends Controller
+class TenantNew extends Controller
   constructor: (@StateParamsService, @ListApi, @AccountApi, @$router) ->
-    console.log 'LandlordNew constructor'
-    @landlord = {}
-
     #   Getters
     @getContactTypes = ->
-      @contactType ?= @ListApi.Lists.contactType()
+      @contactType ?= @ListApi.Lists.tenantContactType()
     @getAccounts = (val) ->
       @AccountApi.Accounts.query({"name": val}).$promise
 
-    @contacts = []
     @onAccountChange = (selectedAccount)->
-      @landlord.contact = ''
+      @tenant.contact = ''
       @contacts = @AccountApi.Contacts.query({"accountid": selectedAccount.id})
 
     @save = () ->
       investment = @StateParamsService.get('investment')
-      if !investment.landlords
-        investment.landlords = []
-      investment.landlords.push @landlord
+      if !investment.tenants
+        investment.tenants = []
+      investment.tenants.push @tenant
       @$router.navigate('/investment/new')
     return
 
 
-LandlordNew::deactivate = ->
+TenantNew::deactivate = ->
   return true
 
-LandlordNew::activate = ->
+TenantNew::activate = ->
+  @tenant = {}
+  @contacts = []
   return true

@@ -1,0 +1,82 @@
+<div class="container">
+    {{tenantNew.tenant | json}}
+    <form role="form" name="tenantForm" class="form-horizontal">
+        <common-list-field
+                label="Тип"
+                model="tenantNew.tenant.contactType"
+                items="tenantNew.getContactTypes()"></common-list-field>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="primary-contact" ng-model="tenantNew.tenant.primaryContact">Основной
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="current-contact" ng-model="tenantNew.tenant.currentContact">Действующий
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Компания</label>
+            <div class="col-sm-7">
+                <input id="accounts" type="text" ng-model="tenantNew.tenant.account" typeahead-on-select="tenantNew.onAccountChange($item)"
+                       typeahead="item as item.text for item in tenantNew.getAccounts($viewValue)"
+                       typeahead-wait-ms="300"
+                       typeahead-loading="loadingAccounts" class="form-control">
+            </div>
+            <i ng-show="loadingAccounts" class="glyphicon glyphicon-refresh typeahead-loading-icon col-sm-1"></i>
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="tenantNew.goToNewAccount()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Контакт</label>
+            <div class="col-sm-7">
+                <ui-select ng-model="tenantNew.tenant.contact" ng-disabled="tenantNew.contacts.length == 0">
+                    <ui-select-match>{{$select.selected.text}}</ui-select-match>
+                    <ui-select-choices
+                            repeat="item.text as item in tenantNew.contacts | filter:$select.search">
+                        <span ng-bind-html="item.text | highlight: $select.search"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="tenantNew.goToNewContact()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Начало срока</label>
+            <div class="col-sm-2">
+                <p class="input-group">
+                    <input type="date" class="form-control" ng-model="tenantNew.tenant.startDate"/>
+                </p>
+            </div>
+            <label class="col-sm-2 control-label text-right">Конец срока</label>
+            <div class="col-sm-3">
+                <p class="input-group">
+                    <input type="date" class="form-control" ng-model="tenantNew.tenant.endDate"/>
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Площадь, м2</label>
+            <div class="col-sm-2">
+                <p class="input-group">
+                    <input type="number" class="form-control" ng-model="tenantNew.tenant.area"/>
+                </p>
+            </div>
+            <a type="button" class="btn btn-success" aria-label="Add" ng-link="main:investmentNew" ng-click="tenantNew.save()">
+                Сохранить
+            </a>
+        </div>
+    </form>
+
+</div>

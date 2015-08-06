@@ -1,13 +1,16 @@
-<form class="form-inline">
+<form class="form-horizontal">
+    <div class="row">
+        <div class="col-sm-2">
+            <label class="control-label">Собственники</label>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.goToNewLandlord()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
     <table datatable="ng" class="row-border hover" dt-options="ctrl.landlordDtOptions" dt-column-defs="ctrl.landlordDtColumnDefs">
         <thead>
-        <tr class="plus-row">
-            <th>
-                <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.goToNewLandlord()">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-            </th>
-        </tr>
         <tr>
             <th class="col-sm-2">Компания</th>
             <th class="col-sm-2">Контакт</th>
@@ -38,6 +41,61 @@
             </td>
             <td class="td-control">
                 <button type="button" class="btn btn-danger" confirmation-delete="ctrl.removeLandlord($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <label class="control-label">Арендаторы</label>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.goToNewTenant()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <table datatable="ng" class="row-border hover" dt-options="ctrl.tenantDtOptions" dt-column-defs="ctrl.tenantDtColumnDefs">
+        <thead>
+        <tr>
+            <th class="col-sm-2">Компания</th>
+            <th class="col-sm-2">Контакт</th>
+            <th class="col-sm-1">Начало срока</th>
+            <th class="col-sm-1">Конец срока</th>
+            <th class="col-sm-1">Площадь, м2</th>
+            <th class="col-sm-2">Основной</th>
+            <th class="col-sm-2">Действующий</th>
+            <th class="col-sm-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tenant in ctrl.investment.tenants track by $index">
+            <td>
+                <input type="text" class="form-control" ng-model="tenant.account.text" disabled/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="tenant.contact" disabled/>
+            </td>
+            <td>
+                <input type="date" ng-model="tenant.startDate"/>
+            </td>
+            <td>
+                <input type="date" ng-model="tenant.endDate"/>
+            </td>
+            <td>
+                <input type="number" ng-model="tenant.area">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="tenant.primaryContact">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="tenant.currentContact">
+            </td>
+            <td class="td-control">
+                <button type="button" class="btn btn-danger" confirmation-delete="ctrl.removeTenant($index)">
                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </button>
             </td>
