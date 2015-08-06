@@ -7,6 +7,30 @@
     </div>
 
     {{investmentNew.investment | json}}
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-offset-9 col-sm-3">
+                <div class="btn-group pull-right">
+                    <button
+                            ng-disabled="investmentNew.busy"
+                            ng-class="{disabled:investmentNew.busy}"
+                            ng-click="investmentNew.add()"
+                            class="btn btn-success">
+                        <i class="mdi-navigation-check left"></i>
+                        Сохранить
+                    </button>
+                    <a
+                            ng-link="main:investmentList"
+                            ng-disabled="investmentNew.busy"
+                            ng-class="{disabled:investmentNew.busy}"
+                            class="btn btn-default">
+                        <i class="mdi-navigation-arrow-back left"></i>
+                        Отмена
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <tabset justified="true">
         <tab heading="Описание" active="investmentNew.tabs['object-tab'].active"><investment-object-component investment="investmentNew.investment"></investment-object-component></tab>
         <tab heading="Блоки" active="investmentNew.tabs['blocks-tab'].active"><investment-blocks-component investment="investmentNew.investment"></investment-blocks-component></tab>
@@ -14,26 +38,5 @@
         <tab heading="Фото" active="investmentNew.tabs['photo-tab'].active"><investment-picture-component investment="investmentNew.investment"></investment-picture-component></tab>
         <tab heading="Дополнительно" active="investmentNew.tabs['extra-tab'].active"><investment-extra-component investment="investmentNew.investment"></investment-extra-component></tab>
     </tabset>
-    <div class="row">
-        <div class="form-group">
-            <div class="col-sm-offset-9 col-sm-3">
-                <a
-                        ng-link="main:investmentList"
-                        ng-disabled="investmentNew.busy"
-                        ng-class="{disabled:investmentNew.busy}"
-                        class="btn btn-default">
-                    <i class="mdi-navigation-arrow-back left"></i>
-                    Отмена
-                </a>
-                <button
-                        ng-disabled="!investmentForm.$valid || investmentNew.busy"
-                        ng-class="{disabled:!investmentForm.$valid || investmentNew.busy}"
-                        ng-click="investmentNew.add()"
-                        class="btn btn-primary">
-                    <i class="mdi-navigation-check left"></i>
-                    Сохранить
-                </button>
-            </div>
-        </div>
-    </div>
+
 </div>
