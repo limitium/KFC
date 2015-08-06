@@ -12,6 +12,10 @@ class InvestmentOwnersComponent extends Directive
         @landlordDtOptions = TableUtils.createOptions()
         @landlordDtColumnDefs = TableUtils.createColumns(6)
 
+        if not @investment.landlords
+          @investment.landlords = []
+
+
         @removeLandlord = (index) ->
           @investment.landlords.splice(index, 1)
 
@@ -21,11 +25,9 @@ class InvestmentOwnersComponent extends Directive
           StateParamsService.put('from-tab', 'owners-tab')
           $router.navigate('/landlord/new')
 
-        @getLandlords = ->
-          if not @investment.landlords
-            @investment.landlords = []
-          @investment.landlords
-
+        #Getters
+        @getContactTypes = ->
+          @contactType ?= ListApi.Lists.contactType()
 
         return
     }

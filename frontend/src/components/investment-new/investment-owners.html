@@ -18,15 +18,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="landlords in ctrl.getLandlords() track by $index">
+        <tr ng-repeat="landlord in ctrl.investment.landlords track by $index">
             <td>
-                <input type="text" class="form-control" ng-model="landlord.contact"/>
+                <input type="text" class="form-control" ng-model="landlord.account.text" disabled/>
             </td>
             <td>
-                <input type="text" class="form-control" ng-model="landlord.contactDetail"/>
+                <input type="text" class="form-control" ng-model="landlord.contact" disabled/>
             </td>
             <td>
-                <input type="number" class="form-control" ng-model="landlord.contactType"/>
+                <common-list
+                        model="landlord.contactType"
+                        items="ctrl.getContactTypes()"></common-list>
             </td>
             <td>
                 <input type="checkbox" ng-model="landlord.primaryContact">
