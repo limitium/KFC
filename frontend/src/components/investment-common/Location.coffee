@@ -12,8 +12,10 @@ class LocationComponent extends Directive
         @init = () ->
           moscowId = 'Q6UJ9A004W3L'
           @model.location =
-            subways: []
-            magistrals: []
+            metro:
+              subways: []
+            investLocation:
+              magistrals: []
           LocationApi.Cities.get({id: moscowId}).$promise.then (moscow) =>
             @model.location.city = moscow
 

@@ -39,7 +39,7 @@
         <div class="form-group">
             <label class="col-sm-3 control-label">Контакт</label>
             <div class="col-sm-7">
-                <ui-select ng-model="tenantNew.tenant.contact" ng-disabled="tenantNew.contacts.length == 0">
+                <ui-select ng-model="tenantNew.tenant.contactDetail" ng-disabled="tenantNew.contacts.length == 0">
                     <ui-select-match>{{$select.selected.text}}</ui-select-match>
                     <ui-select-choices
                             repeat="item.text as item in tenantNew.contacts | filter:$select.search">

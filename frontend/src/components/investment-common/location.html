@@ -8,7 +8,7 @@
                   label="Край/Область"
                   label-size="col-sm-3"
                   input-size="col-sm-8"
-                  model="ctrl.model.location.region"
+                  model="ctrl.model.location.oblast"
                   async-getter="ctrl.getRegions"></common-typeahead>
 <div class="form-group">
     <label class="col-sm-3 control-label">Район</label>
@@ -20,13 +20,13 @@
     <label for="highway-distance" class="col-sm-3 control-label">Шоссе</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="highway-distance"
-               ng-model="ctrl.model.location.highwayDistance">
+               ng-model="ctrl.model.location.distanceMkad">
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-3 control-label">Метро</label>
     <div class="col-sm-8">
-        <common-list model="ctrl.model.location.subways" items="ctrl.getSubways()" multiple></common-list>
+        <common-list model="ctrl.model.location.metro.subways" items="ctrl.getSubways()" multiple></common-list>
     </div>
 </div>
 
@@ -48,19 +48,19 @@
     <label for="house" class="col-sm-3 control-label">Дом</label>
     <div class="col-sm-3">
         <input type="text" class="form-control" id="house"
-               ng-model="ctrl.model.location.house">
+               ng-model="ctrl.model.location.dom">
     </div>
     <label for="housing" class="col-sm-3 control-label">Корпус</label>
     <div class="col-sm-2">
         <input type="text" class="form-control" id="housing"
-               ng-model="ctrl.model.location.housing">
+               ng-model="ctrl.model.location.korpus">
     </div>
 </div>
 <div class="form-group">
     <label for="building" class="col-sm-3 control-label">Строение</label>
     <div class="col-sm-3">
         <input type="text" class="form-control" id="building"
-               ng-model="ctrl.model.location.building">
+               ng-model="ctrl.model.location.stroenie">
     </div>
     <label for="drob" class="col-sm-3 control-label">Дробь</label>
     <div class="col-sm-2">
@@ -71,7 +71,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Магистрали</label>
     <div class="col-sm-8">
-        <common-list model="ctrl.model.location.magistrals" items="ctrl.getMagistrals()" multiple></common-list>
+        <common-list model="ctrl.model.location.investLocation.magistrals" items="ctrl.getMagistrals()" multiple></common-list>
     </div>
 </div>
 <div class="form-group">

@@ -2,30 +2,30 @@
 <div class="form-group">
     <label for="amount" class="col-sm-3 control-label">Сумма</label>
     <div class="col-sm-6">
-        <input type="number" class="form-control" id="amount" ng-model="investmentObject.investment.amount">
+        <input type="number" class="form-control" id="amount" ng-model="investmentObject.investment.commerc.amount">
     </div>
     <div class="col-sm-3">
-        <common-list model="investmentObject.investment.amountCurrency" items="investmentObject.getKfCurrency()"></common-list>
+        <common-list model="investmentObject.investment.commerc.amountCurrency" items="investmentObject.getKfCurrency()"></common-list>
     </div>
 </div>
 <div class="form-group">
     <label for="tech-total-sqm-per-square" class="col-sm-3 control-label">на кв.м GBA</label>
     <div class="col-sm-6">
         <input type="number" class="form-control" id="tech-total-sqm-per-square"
-               ng-value="investmentObject.investment.amount/(investmentObject.investment.groundSqm + investmentObject.investment.ugroundSqm)" disabled>
+               ng-value="investmentObject.investment.commerc.amount/(investmentObject.investment.tech.groundSqm + investmentObject.investment.tech.ugroundSqm)" disabled>
     </div>
 </div>
 <div class="form-group">
     <label for="tech-leaseable-sqm-per-square" class="col-sm-3 control-label">на кв.м GLA</label>
     <div class="col-sm-6">
         <input type="number" class="form-control" id="tech-leaseable-sqm-per-square"
-               ng-value="investmentObject.investment.amount/(investmentObject.investment.officeSqm + investmentObject.investment.retailSqm +
-                                         investmentObject.investment.hotelSqm + investmentObject.investment.industrialSqm)" disabled>
+               ng-value="investmentObject.investment.commerc.amount/(investmentObject.investment.tech.officeSqm + investmentObject.investment.tech.retailSqm +
+                                         investmentObject.investment.tech.hotelSqm + investmentObject.investment.tech.industrialSqm)" disabled>
     </div>
 </div>
 <common-list-field
         label="НДС"
-        model="investmentObject.investment.vat"
+        model="investmentObject.investment.commerc.vat"
         items="investmentObject.getInvestVat()">
 </common-list-field>
 <div class="form-group">
@@ -33,7 +33,7 @@
     <div class="col-sm-9">
         <div class="checkbox">
             <label>
-                <input type="checkbox" id="sale-per-block" ng-model="investmentObject.investment.salePerBlock">
+                <input type="checkbox" id="sale-per-block" ng-model="investmentObject.investment.tech.salePerBlock">
             </label>
         </div>
     </div>
@@ -71,31 +71,31 @@
 </common-list-field>
 <common-list-field
         label="Класс"
-        model="investmentObject.investment.class"
+        model="investmentObject.investment.tech.class"
         items="investmentObject.getInvestClass()">
 </common-list-field>
 <common-list-field
         label="Состояние помещений"
-        model="investmentObject.investment.fitOut"
+        model="investmentObject.investment.tech.fitOut"
         items="investmentObject.getInvestFitOut()">
 </common-list-field>
 <common-list-field
         label="Готовность"
-        model="investmentObject.investment.buildingStatus"
+        model="investmentObject.investment.tech.buildingStatus"
         items="investmentObject.getInvestBuildingStatus()">
 </common-list-field>
 <div class="form-group">
     <label for="tech-compl-year" class="col-sm-3 control-label">Год постройки</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-compl-year"
-               ng-model="investmentObject.investment.complYear">
+               ng-model="investmentObject.investment.tech.complYear">
     </div>
 </div>
 <div class="form-group">
     <label for="tech-reconstr-year" class="col-sm-3 control-label">Год постройки</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-reconstr-year"
-               ng-model="investmentObject.investment.reconstrYear">
+               ng-model="investmentObject.investment.tech.reconstrYear">
     </div>
 </div>
 <common-list-field
@@ -107,12 +107,12 @@
 <div class="form-group">
     <label class="col-sm-3 control-label">Арендный статус</label>
     <div class="col-sm-4">
-        <common-list model="investmentObject.investment.leaseStatus" items="investmentObject.getInvestLeaseStatus()"></common-list>
+        <common-list model="investmentObject.investment.tech.leaseStatus" items="investmentObject.getInvestLeaseStatus()"></common-list>
     </div>
     <div class="col-sm-2">
         <input type="number" class="form-control" id="tech-occupancy"
-               ng-show="'% заполнения' == investmentObject.investment.leaseStatus"
-               ng-model="investmentObject.investment.techOccupancy">
+               ng-show="'% заполнения' == investmentObject.investment.tech.leaseStatus"
+               ng-model="investmentObject.investment.tech.occupancy">
     </div>
 </div>
 
@@ -121,24 +121,24 @@
     <div class="col-sm-9">
         <div class="checkbox">
             <label>
-                <input type="checkbox" id="individual-sale" ng-model="investmentObject.investment.individualSale">
+                <input type="checkbox" id="individual-sale" ng-model="investmentObject.investment.tech.individualSale">
             </label>
         </div>
     </div>
 </div>
-<div class="form-group" ng-show="'% заполнения' == investmentObject.investment.leaseStatus">
+<div class="form-group" ng-show="'% заполнения' == investmentObject.investment.tech.leaseStatus">
     <label for="noi" class="col-sm-3 control-label">NOI</label>
     <div class="col-sm-6">
-        <input type="number" class="form-control" id="noi" ng-model="investmentObject.investment.noi">
+        <input type="number" class="form-control" id="noi" ng-model="investmentObject.investment.commerc.noi">
     </div>
     <div class="col-sm-3">
-        <common-list model="investmentObject.investment.noiCurrency" items="investmentObject.getKfCurrency()"></common-list>
+        <common-list model="investmentObject.investment.commerc.noiCurrency" items="investmentObject.getKfCurrency()"></common-list>
     </div>
 </div>
 <div class="form-group" ng-show="investmentObject.isSegmentSelected('Торговый центр')">
     <label for="potoki" class="col-sm-3 control-label">Потоки (чел/сутки)</label>
     <div class="col-sm-6">
-        <input type="number" class="form-control" id="potoki" ng-model="investmentObject.investment.potoki">
+        <input type="number" class="form-control" id="potoki" ng-model="investmentObject.investment.description.potoki">
     </div>
 </div>
 <h3 style="cursor: pointer" ng-click="locationVisible = !locationVisible">Местоположение объекта</h3>
@@ -148,29 +148,29 @@
     <label for="tech-total-sqm" class="col-sm-4 control-label">Общая площадь (GBA), кв.м,<br/>в том числе:</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-total-sqm"
-               ng-value="investmentObject.investment.groundSqm + investmentObject.investment.ugroundSqm" disabled>
+               ng-value="investmentObject.investment.tech.groundSqm + investmentObject.investment.tech.ugroundSqm" disabled>
     </div>
 </div>
 <div class="form-group">
     <label for="tech-ground-sqm" class="col-sm-4 control-label text-right">Наземная</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-ground-sqm"
-               ng-model="investmentObject.investment.groundSqm">
+               ng-model="investmentObject.investment.tech.groundSqm">
     </div>
 </div>
 <div class="form-group">
     <label for="tech-uground-sqm" class="col-sm-4 control-label text-right">Подземная</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-uground-sqm"
-               ng-model="investmentObject.investment.ugroundSqm">
+               ng-model="investmentObject.investment.tech.ugroundSqm">
     </div>
 </div>
 <div class="form-group">
     <label for="tech-leaseable-sqm" class="col-sm-4 control-label">Арендопригодная площадь (GLA), кв.м,<br/>в том числе:</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="tech-leaseable-sqm"
-               ng-value="investmentObject.investment.officeSqm + investmentObject.investment.retailSqm +
-                                         investmentObject.investment.hotelSqm + investmentObject.investment.industrialSqm"
+               ng-value="investmentObject.investment.tech.officeSqm + investmentObject.investment.tech.retailSqm +
+                                         investmentObject.investment.tech.hotelSqm + investmentObject.investment.tech.industrialSqm"
                disabled>
     </div>
 </div>
@@ -178,86 +178,93 @@
     <label for="office-sqm" class="col-sm-4 control-label text-right">Офисная</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="office-sqm"
-               ng-model="investmentObject.investment.officeSqm">
+               ng-model="investmentObject.investment.tech.officeSqm">
     </div>
 </div>
 <div class="form-group" ng-show="investmentObject.isSegmentSelected('Торговый центр')">
     <label for="retail-sqm" class="col-sm-4 control-label text-right">Торговая</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="retail-sqm"
-               ng-model="investmentObject.investment.retailSqm">
+               ng-model="investmentObject.investment.tech.retailSqm">
     </div>
 </div>
 <div class="form-group" ng-show="investmentObject.isSegmentSelected('Отель')">
     <label for="hotel-sqm" class="col-sm-4 control-label text-right">Гостиничная</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="hotel-sqm"
-               ng-model="investmentObject.investment.hotelSqm">
+               ng-model="investmentObject.investment.tech.hotelSqm">
     </div>
 </div>
 <div class="form-group" ng-show="investmentObject.isSegmentSelected('Отель')">
     <label for="bedrooms" class="col-sm-4 control-label text-right">Количество номеров</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="bedrooms"
-               ng-model="investmentObject.investment.bedrooms">
+               ng-model="investmentObject.investment.tech.bedrooms">
     </div>
 </div>
 <div class="form-group" ng-show="investmentObject.isSegmentSelected('Склад')">
     <label for="industrial-sqm" class="col-sm-4 control-label text-right">Складская</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="industrial-sqm"
-               ng-model="investmentObject.investment.industrialSqm">
+               ng-model="investmentObject.investment.tech.industrialSqm">
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-4 control-label">Этажность (наземных / подземных)</label>
     <div class="col-sm-3">
         <input type="text" class="form-control"
-               ng-model="investmentObject.investment.floor">
+               ng-model="investmentObject.investment.tech.floor">
     </div>
     <div class="forward-slash">/</div>
     <div class="col-sm-3">
         <input type="text" class="form-control"
-               ng-model="investmentObject.investment.ufloor">
+               ng-model="investmentObject.investment.tech.ufloor">
     </div>
 </div>
 <div class="form-group">
     <label for="parking" class="col-sm-4 control-label">Паркинг, всего м/м,<br/>в том числе:</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="parking"
-               ng-value="investmentObject.investment.groundParking + investmentObject.investment.ugroundParking +
-                                         investmentObject.investment.multilevelParking" disabled>
+               ng-value="investmentObject.investment.tech.groundParking + investmentObject.investment.tech.ugroundParking +
+                                         investmentObject.investment.tech.multilevelParking" disabled>
     </div>
 </div>
 <div class="form-group">
     <label for="ground-parking" class="col-sm-4 control-label text-right">Наземный</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="ground-parking"
-               ng-model="investmentObject.investment.groundParking">
+               ng-model="investmentObject.investment.tech.groundParking">
     </div>
 </div>
 <div class="form-group">
     <label for="uground-parking" class="col-sm-4 control-label text-right">Подземный</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="uground-parking"
-               ng-model="investmentObject.investment.ugroundParking">
+               ng-model="investmentObject.investment.tech.ugroundParking">
     </div>
 </div>
 <div class="form-group">
     <label for="multilevel-parking" class="col-sm-4 control-label text-right">Многоуровневый</label>
     <div class="col-sm-3">
         <input type="number" class="form-control" id="multilevel-parking"
-               ng-model="investmentObject.investment.multilevelParking">
+               ng-model="investmentObject.investment.tech.multilevelParking">
+    </div>
+</div>
+<div class="form-group">
+    <label for="land-ga" class="col-sm-4 control-label">Земельный участок, Га</label>
+    <div class="col-sm-3">
+        <input type="number" class="form-control" id="land-ga"
+               ng-model="investmentObject.investment.tech.landGa">
     </div>
 </div>
 <div class="form-group">
     <label class="col-sm-4 control-label">Правовой статус</label>
     <div class="col-sm-3">
-        <common-list model="investmentObject.investment.landOwnerType" items="investmentObject.getInvestLandLeaseTerm()"></common-list>
+        <common-list model="investmentObject.investment.tech.landOwnerType" items="investmentObject.getInvestLandLeaseTerm()"></common-list>
     </div>
     <div class="col-sm-2">
         <input type="number" class="form-control"
-               ng-show="investmentObject.investment.landOwnerType == 'аренда до'"
-               ng-model="investmentObject.investment.landLeaseTerm">
+               ng-show="investmentObject.investment.tech.landOwnerType == 'аренда до'"
+               ng-model="investmentObject.investment.tech.landLeaseTerm">
     </div>
 </div>
