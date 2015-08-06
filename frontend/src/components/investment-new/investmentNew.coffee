@@ -1,7 +1,5 @@
 class InvestmentNew extends Controller
   constructor: (@$rootScope, @$http, @$router, @ToastService, @ListApi, @LocationApi, @ListTransformerService, @StateParamsService) ->
-    console.log 'InvestmentNew constructor'
-    @investment = {}
     @busy = false
 
   add: =>
@@ -19,9 +17,28 @@ InvestmentNew::canDeactivate = ->
   !@busy
 
 InvestmentNew::deactivate = ->
-  @StateParamsService.put('key', 'investment')
   return true
 
 InvestmentNew::activate = ->
-  console.log 'InvestmentNew activate'
+  @tabs =
+    'object-tab':
+      active: true
+    'blocks-tab':
+      active: false
+    'owners-tab':
+      active: false
+    'photo-tab':
+      active: false
+    'extra-tab':
+      active: false
+  if @StateParamsService.get('redirect')
+    @StateParamsService.put('redirect', false)
+    @investment = @StateParamsService.get('investment')
+    activeTab = @StateParamsService.get('from-tab')
+    @tabs[activeTab].active = true
+  else
+    @investment = {}
+    @tabs['object-tab'].active = true
+
+
   return true

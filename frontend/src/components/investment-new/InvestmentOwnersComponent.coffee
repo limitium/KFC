@@ -1,5 +1,5 @@
 class InvestmentOwnersComponent extends Directive
-  constructor: (ListApi, TableUtils) ->
+  constructor: (ListApi, TableUtils, StateParamsService, $router) ->
     return {
       restrict: 'E'
       controllerAs: 'ctrl'
@@ -12,15 +12,20 @@ class InvestmentOwnersComponent extends Directive
         @landlordDtOptions = TableUtils.createOptions()
         @landlordDtColumnDefs = TableUtils.createColumns(6)
 
-        @investment.landlords = [
-        ]
-
-        @addLandlord = ->
-          if not @investment.landlords
-            @investment.landlords = []
-
         @removeLandlord = (index) ->
           @investment.landlords.splice(index, 1)
+
+        @goToNewLandlord = ->
+          StateParamsService.put('redirect', true)
+          StateParamsService.put('investment', @investment)
+          StateParamsService.put('from-tab', 'owners-tab')
+          $router.navigate('/landlord/new')
+
+        @getLandlords = ->
+          if not @investment.landlords
+            @investment.landlords = []
+          @investment.landlords
+
 
         return
     }

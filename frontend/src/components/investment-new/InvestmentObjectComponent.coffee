@@ -27,16 +27,13 @@ class InvestmentObjectComponent extends Directive
           objectTypeTemplates = {}
           objectTypeTemplates['Здание'] = '/components/investment-new/building.html'
           objectTypeTemplates['Земельный участок'] = '/components/investment-new/parcel.html'
-          @investment =
-            propertyType: @investment.propertyType
-            encumbrances: []
-            investSegments: []
+          @investment.encumbrances = []
+          @investment.investSegments = []
           @getInvestSegment().$promise.then(mapAdditionalInvestments)
           @additionalSegments = []
           @currentTemplate = objectTypeTemplates[@investment.propertyType]
 
-        @investment =
-          propertyType: 'Здание'
+        @investment.propertyType = 'Здание'
 
         @onSegmentChange = ->
           @investment.investSegments = []

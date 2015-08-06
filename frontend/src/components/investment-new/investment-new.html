@@ -8,11 +8,11 @@
 
     {{investmentNew.investment | json}}
     <tabset justified="true">
-        <tab heading="Описание"><investment-object-component investment="investmentNew.investment"></investment-object-component></tab>
-        <tab heading="Блоки"><investment-blocks-component investment="investmentNew.investment"></investment-blocks-component></tab>
-        <tab heading="Собственники и Арендаторы"><investment-owners-component investment="investmentNew.investment"></investment-owners-component></tab>
-        <tab heading="Фото"><investment-picture-component investment="investmentNew.investment"></investment-picture-component></tab>
-        <tab heading="Дополнительно"><investment-extra-component investment="investmentNew.investment"></investment-extra-component></tab>
+        <tab heading="Описание" active="investmentNew.tabs['object-tab'].active"><investment-object-component investment="investmentNew.investment"></investment-object-component></tab>
+        <tab heading="Блоки" active="investmentNew.tabs['blocks-tab'].active"><investment-blocks-component investment="investmentNew.investment"></investment-blocks-component></tab>
+        <tab heading="Собственники и Арендаторы" active="investmentNew.tabs['owners-tab'].active"><investment-owners-component investment="investmentNew.investment"></investment-owners-component></tab>
+        <tab heading="Фото" active="investmentNew.tabs['photo-tab'].active"><investment-picture-component investment="investmentNew.investment"></investment-picture-component></tab>
+        <tab heading="Дополнительно" active="investmentNew.tabs['extra-tab'].active"><investment-extra-component investment="investmentNew.investment"></investment-extra-component></tab>
     </tabset>
     <div class="row">
         <div class="form-group">

@@ -1,5 +1,5 @@
 class LandlordNew extends Controller
-  constructor: (@StateParamsService, @ListApi, @AccountApi, @LandlordApi) ->
+  constructor: (@StateParamsService, @ListApi, @AccountApi, @LandlordApi, @$router) ->
     console.log 'LandlordNew constructor'
     @landlord = {}
 
@@ -15,16 +15,16 @@ class LandlordNew extends Controller
       @contacts = @AccountApi.Contacts.query({"accountid": selectedAccount.id})
 
     @save = () ->
-      console.log 'Saving', @landlord
-      @LandlordApi.Landlords.save(@landlord)
-
+      investment = @StateParamsService.get('investment')
+      if !investment.landlords
+        investment.landlords = []
+      investment.landlords.push @landlord
+      @$router.navigate('/investment/new')
     return
 
 
 LandlordNew::deactivate = ->
-  console.log 'LandlordNew::deactivate'
   return true
 
 LandlordNew::activate = ->
-  console.log 'LandlordNew::activate'
   return true

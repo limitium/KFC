@@ -14,8 +14,8 @@ class InvestmentBlocksComponent extends Directive
 
       @plusButtonVisible = true
 
-      @investment.blocks = [
-      ]
+      if not @investment.blocks
+        @investment.blocks = []
 
       @addBlock = ->
         if not @investment.blocks

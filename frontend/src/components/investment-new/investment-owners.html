@@ -3,7 +3,7 @@
         <thead>
         <tr class="plus-row">
             <th>
-                <button type="button" class="btn btn-success" aria-label="Add" ng-link="main:landlordNew">
+                <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.goToNewLandlord()">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 </button>
             </th>
@@ -18,7 +18,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="landlords in ctrl.investment.landlords track by $index">
+        <tr ng-repeat="landlords in ctrl.getLandlords() track by $index">
             <td>
                 <input type="text" class="form-control" ng-model="landlord.contact"/>
             </td>
