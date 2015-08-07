@@ -1,0 +1,91 @@
+{
+  "landlords": [
+    {
+      "primaryContact": true,
+      "account": {
+        "id": "A6UJ9A00HTY5",
+        "text": "Avalkom "
+      },
+      "contactType": "Owner",
+      "contact": "",
+      "startDate": "2015-08-05T21:00:00.000Z",
+      "endDate": "2015-08-25T21:00:00.000Z",
+      "contactDetail": "???? ????????"
+    }
+  ],
+  "tenants": [
+    {
+      "contactType": "ABN",
+      "primaryContact": true,
+      "currentContact": true,
+      "account": {
+        "id": "A6UJ9A00HTY5",
+        "text": "Avalkom "
+      },
+      "contact": "",
+      "area": 4,
+      "startDate": "2015-08-19T21:00:00.000Z",
+      "endDate": "2015-08-23T21:00:00.000Z",
+      "contactDetail": "????? ???????? ?????"
+    }
+  ],
+  "propertyType": "??????",
+  "encumbrances": [],
+  "investSegments": [],
+  "blocks": [
+    {
+      "floor": 2,
+      "name": "fsd",
+      "availableSq": 2,
+      "costSqm": 2,
+      "costSqmCurrency": "USD",
+      "vat": "??????? ???",
+      "status": "???????? ???????"
+    }
+  ],
+  "commerc": {
+    "amount": 123,
+    "amountCurrency": "USD",
+    "vat": "??????? ???"
+  },
+  "tech": {
+    "salePerBlock": true,
+    "class": "A",
+    "fitOut": "????????? ??????",
+    "buildingStatus": "?????? ? ????????????",
+    "complYear": 1234,
+    "reconstrYear": 1234,
+    "leaseStatus": "????????",
+    "individualSale": true,
+    "groundSqm": 33,
+    "ugroundSqm": 33,
+    "officeSqm": 33,
+    "retailSqm": 33,
+    "industrialSqm": 33,
+    "floor": "33",
+    "ufloor": "33",
+    "groundParking": 33,
+    "ugroundParking": 33,
+    "multilevelParking": 33,
+    "landGa": 31,
+    "landOwnerType": "?? ????????"
+  },
+  "location": {
+    "metro": {
+      "subways": []
+    },
+    "investLocation": {
+      "magistrals": []
+    },
+    "city": {
+      "id": "Q6UJ9A004W3L",
+      "text": "??????"
+    }
+  },
+  "nameRus": "TEST",
+  "segment": "?????? ?????",
+  "status": "???????? ???????",
+  "description": {
+    "potoki": 116
+  }
+}

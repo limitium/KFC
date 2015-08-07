@@ -12,6 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class InvestControllerTest extends WebTestCase
 {
+    private $client;
 
     public function setUp()
     {
@@ -28,6 +29,26 @@ class InvestControllerTest extends WebTestCase
 
         $this->assertJsonResponse($response, 200);
         $this->assertEquals($expected, $content);
+    }
+
+    public function testPostInvestment()
+    {
+        $investmentJson = file_get_contents("investment.json");
+
+        $crawler = $this->client->request(
+            'POST',
+            '/api/investments',
+            array(),
+            array(),
+            array('CONTENT_TYPE' => 'application/json'),
+            $investmentJson
+        );
+        $response = $this->client->getResponse();
+        $content = $this->client->getResponse()->getContent();
+        $data = json_decode($content, true);
+        if (count($data['errors']['errors']) > 0) {
+            $this->fail($data['errors']['errors'][0]);
+        }
     }
 
 
