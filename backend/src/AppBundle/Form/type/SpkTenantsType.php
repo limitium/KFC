@@ -13,7 +13,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
-class SpkInvestBlocksType extends AbstractType
+class SpkTenantsType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -22,16 +22,17 @@ class SpkInvestBlocksType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add("spkInvestBlocksid")
-            ->add("createuser")
-            ->add("createdate")
-            ->add("modifyuser")
-            ->add("modifydate")
-            ->add("floor")
-            ->add("availableSq")
-            ->add("costSqm")
-            ->add("costSqmCurrency")
-            ->add("investment");
+            ->add('id', 'text', array(
+                'required' => false
+            ))
+            ->add('contactType')
+            ->add('primaryContact')
+            ->add('currentContact')
+            ->add('account')
+            ->add('contactDetail')
+            ->add('startDate')
+            ->add('endDate')
+            ->add('area');
     }
 
     /**
@@ -40,7 +41,7 @@ class SpkInvestBlocksType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\SpkInvestBlocks',
+            'data_class' => 'AppBundle\Form\TenantDTO',
             'csrf_protection' => false
         ));
     }
@@ -50,6 +51,6 @@ class SpkInvestBlocksType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return 'tenants';
     }
 }

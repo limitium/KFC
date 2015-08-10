@@ -9,23 +9,15 @@
 namespace AppBundle\Service;
 
 
-class ListItem
-{
-    private $id;
+use AppBundle\Form\IdentifiableDTO;
 
+class ListItem extends IdentifiableDTO
+{
     private $text;
 
     public function __construct($id, $text) {
         $this->id = $id;
         $this->text = $text;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 
     /**

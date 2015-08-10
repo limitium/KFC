@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\SpkInvestment;
+use AppBundle\Form\SpkInvestmentDTO;
 use AppBundle\Form\SpkInvestmentType;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\View\View;
@@ -45,7 +46,7 @@ class InvestController extends Controller
      */
     public function postInvestmentAction(Request $request)
     {
-        $investment = new SpkInvestment();
+        $investment = new SpkInvestmentDTO();
         $form = $this->createForm(new SpkInvestmentType(), $investment);
         return $this->processForm($form, $request, $investment);
     }
