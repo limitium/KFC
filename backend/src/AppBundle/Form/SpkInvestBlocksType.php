@@ -13,7 +13,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
-class SpkLandlordsType extends AbstractType
+class SpkInvestBlocksType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -22,20 +22,16 @@ class SpkLandlordsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('spkLandlordsid')
-            ->add('spkPropertyid')
-            ->add('createuser')
-            ->add('createdate')
-            ->add('modifyuser')
-            ->add('modifydate')
-            ->add('accountid')
-            ->add('contactid')
-            ->add('primaryContact')
-            ->add('contactType')
-            ->add('partOwned')
-            ->add('startdate')
-            ->add('enddate')
-            ->add('currentContact');
+            ->add("spkInvestBlocksid")
+            ->add("createuser")
+            ->add("createdate")
+            ->add("modifyuser")
+            ->add("modifydate")
+            ->add("floor")
+            ->add("availableSq")
+            ->add("costSqm")
+            ->add("costSqmCurrency")
+            ->add("investment");
     }
 
     /**
@@ -44,7 +40,7 @@ class SpkLandlordsType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\SpkLandlords',
+            'data_class' => 'AppBundle\Entity\SpkInvestBlocks',
             'csrf_protection' => false
         ));
     }
@@ -54,6 +50,6 @@ class SpkLandlordsType extends AbstractType
      */
     public function getName()
     {
-        return 'landlords';
+        return 'blocks';
     }
 }

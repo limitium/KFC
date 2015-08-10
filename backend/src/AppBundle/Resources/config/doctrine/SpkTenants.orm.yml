@@ -9,14 +9,14 @@ AppBundle\Entity\SpkTenants:
         SPK_TENANTS_PRIMARY:
             columns:
                 - SPK_TENANTSID
-    id: {  }
-    fields:
+    id:
         spkTenantsid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_TENANTSID
+    fields:
         spkPropertyid:
             type: string
             nullable: true

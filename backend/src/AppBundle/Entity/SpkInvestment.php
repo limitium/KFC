@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -93,6 +94,17 @@ class SpkInvestment
      *
      */
     private $segment;
+
+    private $landlords;
+    private $tenants;
+    private $blocks;
+
+    public function __construct()
+    {
+        $this->landlords = new ArrayCollection();
+        $this->tenants = new ArrayCollection();
+        $this->blocks = new ArrayCollection();
+    }
 
     /**
      * @return string
@@ -369,7 +381,7 @@ class SpkInvestment
     /**
      * Get createdBy
      *
-     * @return \AppBundle\Entity\User 
+     * @return \AppBundle\Entity\User
      */
     public function getCreatedBy()
     {
@@ -397,10 +409,33 @@ class SpkInvestment
     /**
      * Get updatedBy
      *
-     * @return \AppBundle\Entity\User 
+     * @return \AppBundle\Entity\User
      */
     public function getUpdatedBy()
     {
         return $this->updatedBy;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getLandlords()
+    {
+        return $this->landlords;
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTenants()
+    {
+        return $this->tenants;
+    }
+    /**
+     * @return ArrayCollection
+     */
+    public function getBlocks()
+    {
+        return $this->blocks;
     }
 }

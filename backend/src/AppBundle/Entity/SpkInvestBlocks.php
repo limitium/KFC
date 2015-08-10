@@ -16,11 +16,7 @@ class SpkInvestBlocks
      */
     private $spkInvestBlocksid;
 
-    /**
-     * @var string
-     *
-     */
-    private $spkPropertyid;
+    private $investment;
 
     /**
      * @var string
@@ -301,4 +297,29 @@ class SpkInvestBlocks
     {
         return $this->costSqmCurrency;
     }
+
+    /**
+     * Set investment
+     *
+     * @param \AppBundle\Entity\Spkinvestment $investment
+     * @return SpkInvestment
+     */
+    public function setInvestment(\AppBundle\Entity\SpkInvestment $investment = null)
+    {
+        $this->investment = $investment;
+        $investment->setInvestment($this);
+        return $this;
+    }
+
+    /**
+     * Get investment
+     *
+     * @return \AppBundle\Entity\SpkInvestment
+     */
+    public function getInvestment()
+    {
+        return $this->investment;
+    }
+
+
 }

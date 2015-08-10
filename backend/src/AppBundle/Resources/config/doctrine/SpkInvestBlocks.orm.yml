@@ -1,6 +1,13 @@
 AppBundle\Entity\SpkInvestBlocks:
     type: entity
     table: SPK_INVEST_BLOCKS
+    manyToOne:
+        investment:
+          targetEntity: SpkInvestment
+          inversedBy: blocks
+          joinColumn:
+            name: SPK_PROPERTYID
+            referencedColumnName: SPK_INVEST_BLOCKSID
     indexes:
         SPK_INVEST_BLOCKS_SPK_PROPERTYID:
             columns:
@@ -9,20 +16,14 @@ AppBundle\Entity\SpkInvestBlocks:
         SPK_INVEST_BLOCKS_PRIMARY:
             columns:
                 - SPK_INVEST_BLOCKSID
-    id: {  }
-    fields:
+    id:
         spkInvestBlocksid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_INVEST_BLOCKSID
-        spkPropertyid:
-            type: string
-            nullable: false
-            length: 12
-            fixed: false
-            column: SPK_PROPERTYID
+    fields:
         createuser:
             type: string
             nullable: true

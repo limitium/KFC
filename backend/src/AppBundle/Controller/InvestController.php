@@ -58,9 +58,9 @@ class InvestController extends Controller
         if ($form->isValid()) {
 
             $statusCode = $investment->getSpkPropertyid() ? 204 : 201;
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($investment);
-            $em->flush();
+//            $em = $this->getDoctrine()->getManager();
+//            $em->persist($investment);
+//            $em->flush();
 
             $response = new Response();
             $response->setStatusCode($statusCode);

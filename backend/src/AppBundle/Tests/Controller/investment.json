@@ -1,21 +1,26 @@
 {
-  "landlords": [
+  "propertyType": "Здание",
+  "encumbrances": [
+    "кредит"
+  ],
+  "investSegments": [
+    "Торговый центр",
+    "Склад"
+  ],
+  "blocks": [
     {
-      "primaryContact": true,
-      "account": {
-        "id": "A6UJ9A00HTY5",
-        "text": "Avalkom "
-      },
-      "contactType": "Owner",
-      "contact": "",
-      "startDate": "2015-08-05T21:00:00.000Z",
-      "endDate": "2015-08-25T21:00:00.000Z",
-      "contactDetail": "???? ????????"
+      "floor": 23,
+      "name": "42",
+      "availableSq": 324,
+      "costSqm": 234,
+      "costSqmCurrency": "USD",
+      "vat": "включая НДС",
+      "status": "Открытая продажа"
     }
   ],
-  "tenants": [
+  "landlords": [
     {
-      "contactType": "ABN",
+      "contactType": "Управляющая компания/ Management Company",
       "primaryContact": true,
       "currentContact": true,
       "account": {
@@ -23,69 +28,91 @@
         "text": "Avalkom "
       },
       "contact": "",
-      "area": 4,
-      "startDate": "2015-08-19T21:00:00.000Z",
-      "endDate": "2015-08-23T21:00:00.000Z",
-      "contactDetail": "????? ???????? ?????"
+      "startDate": "2015-08-25T21:00:00.000Z",
+      "endDate": "2015-08-08T21:00:00.000Z",
+      "contactDetail": "Юлия Королева"
     }
   ],
-  "propertyType": "??????",
-  "encumbrances": [],
-  "investSegments": [],
-  "blocks": [
+  "tenants": [
     {
-      "floor": 2,
-      "name": "fsd",
-      "availableSq": 2,
-      "costSqm": 2,
-      "costSqmCurrency": "USD",
-      "vat": "??????? ???",
-      "status": "???????? ???????"
+      "contactType": "JLL",
+      "primaryContact": true,
+      "currentContact": true,
+      "account": {
+        "id": "A6UJ9A00HTY5",
+        "text": "Avalkom "
+      },
+      "contact": "",
+      "startDate": "2015-08-03T21:00:00.000Z",
+      "endDate": "2015-08-30T21:00:00.000Z",
+      "area": 324,
+      "contactDetail": "Игорь Иванович Дядюк"
     }
   ],
+  "location": {
+    "metro": {
+      "subways": [
+        "Тверская"
+      ]
+    },
+    "investLocation": {
+      "magistrals": [
+        "Ухтомский"
+      ]
+    },
+    "city": {
+      "id": "Q6UJ9A004W3L",
+      "text": "Москва"
+    },
+    "oblast": {
+      "id": "Q6UJ9A00MWOZ",
+      "text": "Калужская область"
+    },
+    "district": "Западный адм.округ",
+    "distanceMkad": 33,
+    "street": {
+      "id": "Q6UJ9A003IS9",
+      "text": "Тверская"
+    },
+    "streetType": "улица",
+    "dom": "453",
+    "korpus": "543",
+    "stroenie": "435",
+    "drob": "453",
+    "investRing": "СК"
+  },
   "commerc": {
-    "amount": 123,
+    "amount": 234,
     "amountCurrency": "USD",
-    "vat": "??????? ???"
+    "vat": "не применим"
   },
   "tech": {
     "salePerBlock": true,
     "class": "A",
-    "fitOut": "????????? ??????",
-    "buildingStatus": "?????? ? ????????????",
+    "fitOut": "требуется ремонт",
+    "buildingStatus": "идет строительство",
     "complYear": 1234,
-    "reconstrYear": 1234,
-    "leaseStatus": "????????",
+    "reconstrYear": 1224,
+    "leaseStatus": "свободно",
     "individualSale": true,
-    "groundSqm": 33,
-    "ugroundSqm": 33,
-    "officeSqm": 33,
-    "retailSqm": 33,
-    "industrialSqm": 33,
-    "floor": "33",
-    "ufloor": "33",
-    "groundParking": 33,
-    "ugroundParking": 33,
-    "multilevelParking": 33,
-    "landGa": 31,
-    "landOwnerType": "?? ????????"
+    "groundSqm": 234,
+    "ugroundSqm": 234,
+    "officeSqm": 234,
+    "retailSqm": 234,
+    "industrialSqm": 234,
+    "floor": "234",
+    "ufloor": "234",
+    "groundParking": 232,
+    "ugroundParking": 234,
+    "multilevelParking": 234,
+    "landGa": 233,
+    "landOwnerType": "аренда до",
+    "landLeaseTerm": 234
   },
-  "location": {
-    "metro": {
-      "subways": []
-    },
-    "investLocation": {
-      "magistrals": []
-    },
-    "city": {
-      "id": "Q6UJ9A004W3L",
-      "text": "??????"
-    }
-  },
-  "nameRus": "TEST",
-  "segment": "?????? ?????",
-  "status": "???????? ???????",
+  "nameRus": "test",
+  "segment": "Бизнес центр",
+  "status": "Открытая продажа",
   "description": {
-    "potoki": 116
+    "potoki": 34
   }
 }
