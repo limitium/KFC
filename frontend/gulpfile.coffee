@@ -71,14 +71,22 @@ gulp.task 'vendor', ->
     'node_modules/font-awesome/fonts/**/*'
   ])
   .pipe(gulp.dest(buildFolder+'/fonts'))
+
   gulp.src([
-    'node_modules/datatables/media/images/favicon.ico'
+#    'node_modules/datatables/media/images/favicon.ico'
     'node_modules/datatables/media/images/sort_asc.png'
     'node_modules/datatables/media/images/sort_asc_disabled.png'
     'node_modules/datatables/media/images/sort_both.png'
     'node_modules/datatables/media/images/sort_desc.png'
     'node_modules/datatables/media/images/sort_desc_disabled.png'
   ]).pipe(gulp.dest(buildFolder + '/images'))
+
+gulp.task 'images', ->
+  gulp.src([
+    './src/images/**/*'
+  ])
+  .pipe(gulp.dest(buildFolder + '/images'))
+
 
 gulp.task 'styles', ->
   gulp.src([
@@ -112,4 +120,4 @@ gulp.task 'watch', ->
   gulp.watch(['./src/**/*.html'], ['html'])
   gulp.watch(['./src/**/*.css'], ['styles'])
 
-gulp.task('default', ['vendor', 'scripts', 'styles', 'html', 'browser-sync', 'watch'])
+gulp.task('default', ['vendor', 'scripts', 'images','styles', 'html', 'browser-sync', 'watch'])
