@@ -124,5 +124,111 @@ class LocationDTO extends IdentifiableDTO
         return $this->investRing;
     }
 
+    /**
+     * @param mixed $metro
+     */
+    public function setMetro($metro)
+    {
+        $this->metro = $metro;
+    }
+
+    /**
+     * @param mixed $investLocation
+     */
+    public function setInvestLocation($investLocation)
+    {
+        $this->investLocation = $investLocation;
+    }
+
+    /**
+     * @param mixed $city
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
+
+    /**
+     * @param mixed $oblast
+     */
+    public function setOblast($oblast)
+    {
+        $this->oblast = $oblast;
+    }
+
+    /**
+     * @param mixed $district
+     */
+    public function setDistrict($district)
+    {
+        $this->district = $district;
+    }
+
+    /**
+     * @param mixed $distanceMkad
+     */
+    public function setDistanceMkad($distanceMkad)
+    {
+        $this->distanceMkad = $distanceMkad;
+    }
+
+    /**
+     * @param mixed $street
+     */
+    public function setStreet($street)
+    {
+        $this->street = $street;
+    }
+
+    /**
+     * @param mixed $streetType
+     */
+    public function setStreetType($streetType)
+    {
+        $this->streetType = $streetType;
+    }
+
+    /**
+     * @param mixed $dom
+     */
+    public function setDom($dom)
+    {
+        $this->dom = $dom;
+    }
+
+    /**
+     * @param mixed $korpus
+     */
+    public function setKorpus($korpus)
+    {
+        $this->korpus = $korpus;
+    }
+
+    /**
+     * @param mixed $stroenie
+     */
+    public function setStroenie($stroenie)
+    {
+        $this->stroenie = $stroenie;
+    }
+
+    /**
+     * @param mixed $drob
+     */
+    public function setDrob($drob)
+    {
+        $this->drob = $drob;
+    }
+
+    /**
+     * @param mixed $investRing
+     */
+    public function setInvestRing($investRing)
+    {
+        $this->investRing = $investRing;
+    }
+
+
+
 
 }

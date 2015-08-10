@@ -52,6 +52,6 @@ class SpkLocationType extends AbstractType
      */
     public function getName()
     {
-        return 'location';
+        return '';
     }
 }

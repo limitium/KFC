@@ -70,5 +70,63 @@ class BlockDTO extends IdentifiableDTO
         return $this->status;
     }
 
+    /**
+     * @param mixed $floor
+     */
+    public function setFloor($floor)
+    {
+        $this->floor = $floor;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @param mixed $availableSq
+     */
+    public function setAvailableSq($availableSq)
+    {
+        $this->availableSq = $availableSq;
+    }
+
+    /**
+     * @param mixed $costSqm
+     */
+    public function setCostSqm($costSqm)
+    {
+        $this->costSqm = $costSqm;
+    }
+
+    /**
+     * @param mixed $costSqmCurrency
+     */
+    public function setCostSqmCurrency($costSqmCurrency)
+    {
+        $this->costSqmCurrency = $costSqmCurrency;
+    }
+
+    /**
+     * @param mixed $vat
+     */
+    public function setVat($vat)
+    {
+        $this->vat = $vat;
+    }
+
+    /**
+     * @param mixed $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+
+
 
 }

@@ -48,6 +48,6 @@ class SpkInvestBlocksType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return '';
     }
 }

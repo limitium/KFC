@@ -34,12 +34,8 @@ class SpkInvestmentType extends AbstractType
                 'type' => new SpkInvestBlocksType(),
                 'allow_add' => true
             ))
-            ->add('encumbrances', 'collection', array(
-                'type' => 'text'
-            ))
-            ->add('investSegments', 'collection', array(
-                'type' => 'text'
-            ))
+            ->add('encumbrances')
+            ->add('investSegments')
             ->add('location', new SpkLocationType())
             ->add('commerc', new SpkCommercType())
             ->add('tech', new SpkTechType())
@@ -74,6 +70,6 @@ class SpkInvestmentType extends AbstractType
      */
     public function getName()
     {
-        return 'investment';
+        return '';
     }
 }

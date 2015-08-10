@@ -22,4 +22,14 @@ class MetroDTO extends IdentifiableDTO
     {
         return $this->subways;
     }
+
+    /**
+     * @param ArrayCollection $subways
+     */
+    public function setSubways($subways)
+    {
+        $this->subways = $subways;
+    }
+
+
 }

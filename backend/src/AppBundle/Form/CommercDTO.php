@@ -34,5 +34,31 @@ class CommercDTO extends IdentifiableDTO
         return $this->vat;
     }
 
+    /**
+     * @param mixed $amount
+     */
+    public function setAmount($amount)
+    {
+        $this->amount = $amount;
+    }
+
+    /**
+     * @param mixed $amountCurrency
+     */
+    public function setAmountCurrency($amountCurrency)
+    {
+        $this->amountCurrency = $amountCurrency;
+    }
+
+    /**
+     * @param mixed $vat
+     */
+    public function setVat($vat)
+    {
+        $this->vat = $vat;
+    }
+
+
+
 
 }

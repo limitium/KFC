@@ -20,9 +20,7 @@ class SpkMetroType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('subways', 'collection', array(
-                'type' => 'text',
-            ));
+            ->add('subways');
     }
 
     /**

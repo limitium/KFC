@@ -28,7 +28,7 @@ class SpkTenantsType extends AbstractType
             ->add('contactType')
             ->add('primaryContact')
             ->add('currentContact')
-            ->add('account')
+            ->add('account', new ListItemType())
             ->add('contactDetail')
             ->add('startDate')
             ->add('endDate')
@@ -51,6 +51,6 @@ class SpkTenantsType extends AbstractType
      */
     public function getName()
     {
-        return 'tenants';
+        return '';
     }
 }

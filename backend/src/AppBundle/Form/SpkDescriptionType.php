@@ -39,6 +39,6 @@ class SpkDescriptionType extends AbstractType
      */
     public function getName()
     {
-        return 'description';
+        return '';
     }
 }

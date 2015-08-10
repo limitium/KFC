@@ -19,9 +19,7 @@ class SpkInvestLocationType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('magistrals', 'collection', array(
-                'type' => 'text',
-            ));
+            ->add('magistrals');
     }
 
     /**

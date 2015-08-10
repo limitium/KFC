@@ -79,6 +79,72 @@ class TenantDTO extends IdentifiableDTO
         return $this->area;
     }
 
+    /**
+     * @param mixed $contactType
+     */
+    public function setContactType($contactType)
+    {
+        $this->contactType = $contactType;
+    }
+
+    /**
+     * @param mixed $primaryContact
+     */
+    public function setPrimaryContact($primaryContact)
+    {
+        $this->primaryContact = $primaryContact;
+    }
+
+    /**
+     * @param mixed $currentContact
+     */
+    public function setCurrentContact($currentContact)
+    {
+        $this->currentContact = $currentContact;
+    }
+
+    /**
+     * @param mixed $account
+     */
+    public function setAccount($account)
+    {
+        $this->account = $account;
+    }
+
+    /**
+     * @param mixed $contactDetail
+     */
+    public function setContactDetail($contactDetail)
+    {
+        $this->contactDetail = $contactDetail;
+    }
+
+    /**
+     * @param mixed $startDate
+     */
+    public function setStartDate($startDate)
+    {
+        $this->startDate = $startDate;
+    }
+
+    /**
+     * @param mixed $endDate
+     */
+    public function setEndDate($endDate)
+    {
+        $this->endDate = $endDate;
+    }
+
+    /**
+     * @param mixed $area
+     */
+    public function setArea($area)
+    {
+        $this->area = $area;
+    }
+
+
+
 
 
 }

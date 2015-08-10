@@ -4,6 +4,8 @@
 namespace AppBundle\Form;
 
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 class InvestLocationDTO extends IdentifiableDTO
 {
     private $magistrals;
@@ -20,4 +22,14 @@ class InvestLocationDTO extends IdentifiableDTO
     {
         return $this->magistrals;
     }
+
+    /**
+     * @param ArrayCollection $magistrals
+     */
+    public function setMagistrals($magistrals)
+    {
+        $this->magistrals = $magistrals;
+    }
+
+
 }

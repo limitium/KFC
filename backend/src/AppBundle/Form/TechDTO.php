@@ -196,4 +196,174 @@ class TechDTO extends IdentifiableDTO
         return $this->landLeaseTerm;
     }
 
+    /**
+     * @param mixed $salePerBlock
+     */
+    public function setSalePerBlock($salePerBlock)
+    {
+        $this->salePerBlock = $salePerBlock;
+    }
+
+    /**
+     * @param mixed $class
+     */
+    public function setClass($class)
+    {
+        $this->class = $class;
+    }
+
+    /**
+     * @param mixed $fitOut
+     */
+    public function setFitOut($fitOut)
+    {
+        $this->fitOut = $fitOut;
+    }
+
+    /**
+     * @param mixed $buildingStatus
+     */
+    public function setBuildingStatus($buildingStatus)
+    {
+        $this->buildingStatus = $buildingStatus;
+    }
+
+    /**
+     * @param mixed $complYear
+     */
+    public function setComplYear($complYear)
+    {
+        $this->complYear = $complYear;
+    }
+
+    /**
+     * @param mixed $reconstrYear
+     */
+    public function setReconstrYear($reconstrYear)
+    {
+        $this->reconstrYear = $reconstrYear;
+    }
+
+    /**
+     * @param mixed $leaseStatus
+     */
+    public function setLeaseStatus($leaseStatus)
+    {
+        $this->leaseStatus = $leaseStatus;
+    }
+
+    /**
+     * @param mixed $individualSale
+     */
+    public function setIndividualSale($individualSale)
+    {
+        $this->individualSale = $individualSale;
+    }
+
+    /**
+     * @param mixed $groundSqm
+     */
+    public function setGroundSqm($groundSqm)
+    {
+        $this->groundSqm = $groundSqm;
+    }
+
+    /**
+     * @param mixed $ugroundSqm
+     */
+    public function setUgroundSqm($ugroundSqm)
+    {
+        $this->ugroundSqm = $ugroundSqm;
+    }
+
+    /**
+     * @param mixed $officeSqm
+     */
+    public function setOfficeSqm($officeSqm)
+    {
+        $this->officeSqm = $officeSqm;
+    }
+
+    /**
+     * @param mixed $retailSqm
+     */
+    public function setRetailSqm($retailSqm)
+    {
+        $this->retailSqm = $retailSqm;
+    }
+
+    /**
+     * @param mixed $industrialSqm
+     */
+    public function setIndustrialSqm($industrialSqm)
+    {
+        $this->industrialSqm = $industrialSqm;
+    }
+
+    /**
+     * @param mixed $floor
+     */
+    public function setFloor($floor)
+    {
+        $this->floor = $floor;
+    }
+
+    /**
+     * @param mixed $ufloor
+     */
+    public function setUfloor($ufloor)
+    {
+        $this->ufloor = $ufloor;
+    }
+
+    /**
+     * @param mixed $groundParking
+     */
+    public function setGroundParking($groundParking)
+    {
+        $this->groundParking = $groundParking;
+    }
+
+    /**
+     * @param mixed $ugroundParking
+     */
+    public function setUgroundParking($ugroundParking)
+    {
+        $this->ugroundParking = $ugroundParking;
+    }
+
+    /**
+     * @param mixed $multilevelParking
+     */
+    public function setMultilevelParking($multilevelParking)
+    {
+        $this->multilevelParking = $multilevelParking;
+    }
+
+    /**
+     * @param mixed $landGa
+     */
+    public function setLandGa($landGa)
+    {
+        $this->landGa = $landGa;
+    }
+
+    /**
+     * @param mixed $landOwnerType
+     */
+    public function setLandOwnerType($landOwnerType)
+    {
+        $this->landOwnerType = $landOwnerType;
+    }
+
+    /**
+     * @param mixed $landLeaseTerm
+     */
+    public function setLandLeaseTerm($landLeaseTerm)
+    {
+        $this->landLeaseTerm = $landLeaseTerm;
+    }
+
+
+
 }

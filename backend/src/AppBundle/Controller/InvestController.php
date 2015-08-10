@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\SpkInvestment;
 use AppBundle\Form\SpkInvestmentDTO;
 use AppBundle\Form\SpkInvestmentType;
+use AppBundle\Form\TestDTO;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\View\View;
 use JMS\DiExtraBundle\Annotation as DI;

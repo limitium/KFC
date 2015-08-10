@@ -15,4 +15,14 @@ class DescriptionDTO extends IdentifiableDTO
     {
         return $this->potoki;
     }
+
+    /**
+     * @param mixed $potoki
+     */
+    public function setPotoki($potoki)
+    {
+        $this->potoki = $potoki;
+    }
+
+
 }

@@ -10,9 +10,15 @@ class PickListItemDTO extends IdentifiableDTO
 {
     private $text;
 
-    public function __construct($id, $text) {
-        $this->id = $id;
-        $this->text = $text;
+    public function __construct() {
+
+    }
+
+    public static function create($id, $text) {
+        $instance = new self();
+        $instance->id = $id;
+        $instance->text = $text;
+        return $instance;
     }
 
     /**
@@ -22,4 +28,14 @@ class PickListItemDTO extends IdentifiableDTO
     {
         return $this->text;
     }
+
+    /**
+     * @param mixed $text
+     */
+    public function setText($text)
+    {
+        $this->text = $text;
+    }
+
+
 }

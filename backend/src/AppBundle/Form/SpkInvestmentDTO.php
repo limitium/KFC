@@ -134,6 +134,112 @@ class SpkInvestmentDTO extends MutableDTO
         return $this->description;
     }
 
+    /**
+     * @param mixed $nameRus
+     */
+    public function setNameRus($nameRus)
+    {
+        $this->nameRus = $nameRus;
+    }
+
+    /**
+     * @param mixed $propertyType
+     */
+    public function setPropertyType($propertyType)
+    {
+        $this->propertyType = $propertyType;
+    }
+
+    /**
+     * @param mixed $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @param mixed $segment
+     */
+    public function setSegment($segment)
+    {
+        $this->segment = $segment;
+    }
+
+    /**
+     * @param ArrayCollection $landlords
+     */
+    public function setLandlords($landlords)
+    {
+        $this->landlords = $landlords;
+    }
+
+    /**
+     * @param ArrayCollection $tenants
+     */
+    public function setTenants($tenants)
+    {
+        $this->tenants = $tenants;
+    }
+
+    /**
+     * @param ArrayCollection $blocks
+     */
+    public function setBlocks($blocks)
+    {
+        $this->blocks = $blocks;
+    }
+
+    /**
+     * @param ArrayCollection $encumbrances
+     */
+    public function setEncumbrances($encumbrances)
+    {
+        $this->encumbrances = $encumbrances;
+    }
+
+    /**
+     * @param ArrayCollection $investSegments
+     */
+    public function setInvestSegments($investSegments)
+    {
+        $this->investSegments = $investSegments;
+    }
+
+    /**
+     * @param mixed $location
+     */
+    public function setLocation($location)
+    {
+        $this->location = $location;
+    }
+
+    /**
+     * @param mixed $commerc
+     */
+    public function setCommerc($commerc)
+    {
+        $this->commerc = $commerc;
+    }
+
+    /**
+     * @param mixed $tech
+     */
+    public function setTech($tech)
+    {
+        $this->tech = $tech;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+
+
 
 
 }
