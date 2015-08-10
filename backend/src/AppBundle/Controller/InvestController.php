@@ -51,7 +51,7 @@ class InvestController extends Controller
         return $this->processForm($form, $request, $investment);
     }
 
-    private function processForm(Form $form, Request $request, SpkInvestment $investment)
+    private function processForm(Form $form, Request $request, SpkInvestmentDTO $investment)
     {
 
         $form->handleRequest($request);

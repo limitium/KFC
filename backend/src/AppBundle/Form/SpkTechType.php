@@ -59,6 +59,6 @@ class SpkTechType extends AbstractType
      */
     public function getName()
     {
-        return 'landlords';
+        return 'tech';
     }
 }

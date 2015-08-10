@@ -1,10 +1,13 @@
 <?php
 
 
-namespace AppBundle\Form\type;
+namespace AppBundle\Form;
 
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class SpkMetroType extends AbstractType
+class ListItemType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,9 +19,7 @@ class SpkMetroType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('subways', 'collection', array(
-                'type' => 'text',
-            ));
+            ->add('text');
     }
 
     /**
@@ -27,7 +28,7 @@ class SpkMetroType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Form\MetroDTO',
+            'data_class' => 'AppBundle\Form\PickListItemDTO',
             'csrf_protection' => false
         ));
     }
@@ -37,6 +38,6 @@ class SpkMetroType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return 'list';
     }
 }

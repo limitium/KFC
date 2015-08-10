@@ -41,7 +41,7 @@ class ListService
     {
         $id = $this->accessor->getValue($item, $idProp);
         $name = $this->accessor->getValue($item, $nameProp);
-        return new ListItem($id, $name);
+        return new ListItemDTO($id, $name);
     }
 
 }

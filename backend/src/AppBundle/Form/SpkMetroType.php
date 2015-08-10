@@ -1,10 +1,14 @@
 <?php
 
 
-namespace AppBundle\Form\type;
+namespace AppBundle\Form;
 
 
-class ListItemType extends AbstractType
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+
+class SpkMetroType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,7 +20,9 @@ class ListItemType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('text');
+            ->add('subways', 'collection', array(
+                'type' => 'text',
+            ));
     }
 
     /**
@@ -25,7 +31,7 @@ class ListItemType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Form\ListItem',
+            'data_class' => 'AppBundle\Form\MetroDTO',
             'csrf_protection' => false
         ));
     }
@@ -35,6 +41,6 @@ class ListItemType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return 'metro';
     }
 }

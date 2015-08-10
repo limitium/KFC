@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AppBundle\Form\type;
+namespace AppBundle\Form;
 
 
 use Symfony\Component\Form\AbstractType;
@@ -52,6 +52,6 @@ class SpkLocationType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return 'location';
     }
 }

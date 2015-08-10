@@ -2,7 +2,6 @@
 
 namespace AppBundle\Form;
 
-use AppBundle\Form\type\SpkLocationType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -65,7 +64,7 @@ class SpkInvestmentType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\SpkInvestment',
+            'data_class' => 'AppBundle\Form\SpkInvestmentDTO',
             'csrf_protection' => false
         ));
     }
@@ -75,6 +74,6 @@ class SpkInvestmentType extends AbstractType
      */
     public function getName()
     {
-        return '';
+        return 'investment';
     }
 }

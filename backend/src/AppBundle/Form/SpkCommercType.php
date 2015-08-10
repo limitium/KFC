@@ -41,6 +41,6 @@ class SpkCommercType extends AbstractType
      */
     public function getName()
     {
-        return 'landlords';
+        return 'commerc';
     }
 }

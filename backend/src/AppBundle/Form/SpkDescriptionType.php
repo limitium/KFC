@@ -1,10 +1,14 @@
 <?php
 
 
-namespace AppBundle\Form\type;
+namespace AppBundle\Form;
+
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
-class SpkInvestLocationType extends AbstractType
+class SpkDescriptionType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,9 +20,7 @@ class SpkInvestLocationType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('magistrals', 'collection', array(
-                'type' => 'text',
-            ));
+            ->add("potoki");
     }
 
     /**
@@ -27,7 +29,7 @@ class SpkInvestLocationType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Form\InvestLocationDTO',
+            'data_class' => 'appbundle\Form\DescriptionDTO',
             'csrf_protection' => false
         ));
     }
@@ -37,6 +39,6 @@ class SpkInvestLocationType extends AbstractType
      */
     public function getName()
     {
-        return 'blocks';
+        return 'description';
     }
 }

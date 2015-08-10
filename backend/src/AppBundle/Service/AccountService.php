@@ -93,7 +93,7 @@ class AccountService extends NameSearchService
             $id = $contact->getContactid();
             $array = array($contact->getFirstrus(), $contact->getMiddlerus(), $contact->getLastrus());
             $name = implode(' ', array_filter($array));
-            $result[] = new ListItem($id, $name);
+            $result[] = new ListItemDTO($id, $name);
         }
         return $result;
 
