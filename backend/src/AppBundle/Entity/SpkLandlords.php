@@ -16,11 +16,7 @@ class SpkLandlords
      */
     private $spkLandlordsid;
 
-    /**
-     * @var string
-     *
-     */
-    private $spkPropertyid;
+    private $investment;
 
     /**
      * @var string
@@ -117,29 +113,6 @@ class SpkLandlords
     public function getSpkLandlordsid()
     {
         return $this->spkLandlordsid;
-    }
-
-    /**
-     * Set spkPropertyid
-     *
-     * @param string $spkPropertyid
-     * @return SpkLandlords
-     */
-    public function setSpkPropertyid($spkPropertyid)
-    {
-        $this->spkPropertyid = $spkPropertyid;
-
-        return $this;
-    }
-
-    /**
-     * Get spkPropertyid
-     *
-     * @return string 
-     */
-    public function getSpkPropertyid()
-    {
-        return $this->spkPropertyid;
     }
 
     /**
@@ -417,6 +390,24 @@ class SpkLandlords
     {
         return $this->currentContact;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getInvestment()
+    {
+        return $this->investment;
+    }
+
+    /**
+     * @param mixed $investment
+     */
+    public function setInvestment($investment)
+    {
+        $this->investment = $investment;
+    }
+
+
 
 
 }

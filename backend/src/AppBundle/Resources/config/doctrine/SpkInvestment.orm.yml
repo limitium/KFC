@@ -94,6 +94,20 @@ AppBundle\Entity\SpkInvestment:
         blocks:
             targetEntity: AppBundle\Entity\SpkInvestBlocks
             mappedBy: investment
+            cascade:
+                - all
+    oneToMany:
+        encumbrances:
+            targetEntity: AppBundle\Entity\SpkInvestEncumbrances
+            mappedBy: investment
+            cascade:
+                - all
+    oneToMany:
+        investSegments:
+            targetEntity: AppBundle\Entity\SpkInvestSegments
+            mappedBy: investment
+            cascade:
+                - all
     manyToMany:
         landlords:
           targetEntity: AppBundle\Entity\SpkLandlords
@@ -105,6 +119,8 @@ AppBundle\Entity\SpkInvestment:
               inverseJoinColumns:
                 spkLandlordsid:
                   referencedColumnName: SPK_LANDLORDSID
+          cascade:
+              - all
     manyToMany:
         tenants:
           targetEntity: AppBundle\Entity\SpkTenants
@@ -116,6 +132,8 @@ AppBundle\Entity\SpkInvestment:
               inverseJoinColumns:
                 spkTenantsid:
                   referencedColumnName: SPK_TENANTSID
+          cascade:
+              - all
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

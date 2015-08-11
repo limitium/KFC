@@ -1,19 +1,24 @@
 AppBundle\Entity\SpkInvestSegments:
     type: entity
     table: SPK_INVEST_SEGMENTS
-    id: {  }
-    fields:
+    manyToOne:
+        investment:
+          targetEntity: SpkInvestment
+          inversedBy: investSegments
+          joinColumn:
+            name: SPK_PROPERTYID
+            referencedColumnName: SPK_PROPERTYID
+    id:
         id:
             type: integer
             nullable: false
             unsigned: false
             column: ID
-        spkPropertyid:
-            type: string
-            nullable: false
-            length: 12
-            fixed: false
-            column: SPK_PROPERTYID
+        generator:
+            strategy: CUSTOM
+        customIdGenerator:
+            class: AppBundle\Doctrine\SpkIdGenerator
+    fields:
         segmentid:
             type: string
             nullable: false

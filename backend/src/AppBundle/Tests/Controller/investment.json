@@ -20,7 +20,10 @@
   ],
   "landlords": [
     {
-      "contactType": "Управляющая компания/ Management Company",
+      "contactType": {
+        "id": "0",
+        "text": "Управляющая компания/ Management Company"
+      },
       "primaryContact": true,
       "currentContact": true,
       "account": {
@@ -34,7 +37,10 @@
   ],
   "tenants": [
     {
-      "contactType": "JLL",
+      "contactType": {
+        "id": "0",
+        "text": "JLL"
+      },
       "primaryContact": true,
       "currentContact": true,
       "account": {

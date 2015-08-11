@@ -98,12 +98,16 @@ class SpkInvestment
     private $landlords;
     private $tenants;
     private $blocks;
+    private $encumbrances;
+    private $investSegments;
 
     public function __construct()
     {
         $this->landlords = new ArrayCollection();
         $this->tenants = new ArrayCollection();
         $this->blocks = new ArrayCollection();
+        $this->encumbrances = new ArrayCollection();
+        $this->investSegments = new ArrayCollection();
     }
 
     /**
@@ -438,4 +442,65 @@ class SpkInvestment
     {
         return $this->blocks;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getEncumbrances()
+    {
+        return $this->encumbrances;
+    }
+
+    /**
+     * @param ArrayCollection $encumbrances
+     */
+    public function setEncumbrances($encumbrances)
+    {
+        $this->encumbrances = $encumbrances;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getInvestSegments()
+    {
+        return $this->investSegments;
+    }
+
+    /**
+     * @param ArrayCollection $investSegments
+     */
+    public function setInvestSegments($investSegments)
+    {
+        $this->investSegments = $investSegments;
+    }
+
+    /**
+     * @param ArrayCollection $landlords
+     */
+    public function setLandlords($landlords)
+    {
+        $this->landlords = $landlords;
+    }
+
+    /**
+     * @param ArrayCollection $tenants
+     */
+    public function setTenants($tenants)
+    {
+        $this->tenants = $tenants;
+    }
+
+    /**
+     * @param ArrayCollection $blocks
+     */
+    public function setBlocks($blocks)
+    {
+        $this->blocks = $blocks;
+    }
+
+
+
+
+
 }

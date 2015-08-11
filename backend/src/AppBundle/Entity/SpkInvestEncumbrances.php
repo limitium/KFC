@@ -17,10 +17,9 @@ class SpkInvestEncumbrances
     private $id;
 
     /**
-     * @var string
-     *
+     * @var \AppBundle\Entity\SpkInvestment
      */
-    private $spkPropertyid;
+    private $investment;
 
     /**
      * @var string
@@ -54,29 +53,6 @@ class SpkInvestEncumbrances
     }
 
     /**
-     * Set spkPropertyid
-     *
-     * @param string $spkPropertyid
-     * @return SpkInvestEncumbrances
-     */
-    public function setSpkPropertyid($spkPropertyid)
-    {
-        $this->spkPropertyid = $spkPropertyid;
-
-        return $this;
-    }
-
-    /**
-     * Get spkPropertyid
-     *
-     * @return string 
-     */
-    public function getSpkPropertyid()
-    {
-        return $this->spkPropertyid;
-    }
-
-    /**
      * Set encumbranceid
      *
      * @param string $encumbranceid
@@ -98,4 +74,28 @@ class SpkInvestEncumbrances
     {
         return $this->encumbranceid;
     }
+
+    /**
+     * Set investment
+     *
+     * @param \AppBundle\Entity\SpkInvestment $investment
+     * @return SpkProperty
+     */
+    public function setInvestment(\AppBundle\Entity\SpkInvestment $investment)
+    {
+        $this->investment = $investment;
+
+        return $this;
+    }
+
+    /**
+     * Get investment
+     *
+     * @return \AppBundle\Entity\SpkInvestment
+     */
+    public function getInvestment()
+    {
+        return $this->investment;
+    }
+
 }

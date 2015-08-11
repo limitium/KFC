@@ -8,17 +8,9 @@
 
 namespace AppBundle\Tests\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class InvestControllerTest extends WebTestCase
+class InvestControllerTest extends DatabaseTest
 {
-    private $client;
-
-    public function setUp()
-    {
-        $this->client = static::createClient();
-    }
-
     public function testGetInvestment()
     {
         $id = 'TKCISI6VIIZW';
@@ -46,6 +38,9 @@ class InvestControllerTest extends WebTestCase
         $response = $this->client->getResponse();
         $content = $this->client->getResponse()->getContent();
         $data = json_decode($content, true);
+        if ($data['error']) {
+            $this->fail($data['error']['exception'][0]['message']);
+        }
         if (count($data['errors']['errors']) > 0) {
             $this->fail($data['errors']['errors'][0]);
         }

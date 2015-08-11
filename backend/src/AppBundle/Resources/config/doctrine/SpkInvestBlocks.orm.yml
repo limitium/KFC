@@ -23,27 +23,26 @@ AppBundle\Entity\SpkInvestBlocks:
             length: 12
             fixed: false
             column: SPK_INVEST_BLOCKSID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
+
     fields:
-        createuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: CREATEUSER
         createdate:
             type: datetime
             nullable: true
             column: CREATEDATE
-        modifyuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: MODIFYUSER
+            gedmo:
+                timestampable:
+                    on: create
         modifydate:
             type: datetime
             nullable: true
             column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         floor:
             type: string
             nullable: true

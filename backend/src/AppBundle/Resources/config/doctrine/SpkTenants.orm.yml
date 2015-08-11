@@ -16,13 +16,11 @@ AppBundle\Entity\SpkTenants:
             length: 12
             fixed: false
             column: SPK_TENANTSID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
     fields:
-        spkPropertyid:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: SPK_PROPERTYID
         createuser:
             type: string
             nullable: true
@@ -33,6 +31,9 @@ AppBundle\Entity\SpkTenants:
             type: datetime
             nullable: true
             column: CREATEDATE
+            gedmo:
+                timestampable:
+                    on: create
         modifyuser:
             type: string
             nullable: true
@@ -43,6 +44,9 @@ AppBundle\Entity\SpkTenants:
             type: datetime
             nullable: true
             column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         accountid:
             type: string
             nullable: true

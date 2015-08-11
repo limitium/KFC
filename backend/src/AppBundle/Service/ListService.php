@@ -8,6 +8,7 @@
 
 namespace AppBundle\Service;
 
+use AppBundle\Form\PickListItemDTO;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
 use JMS\DiExtraBundle\Annotation\Service;
@@ -41,7 +42,7 @@ class ListService
     {
         $id = $this->accessor->getValue($item, $idProp);
         $name = $this->accessor->getValue($item, $nameProp);
-        return new ListItemDTO($id, $name);
+        return PickListItemDTO::create($id, $name);
     }
 
 }

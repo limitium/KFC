@@ -25,7 +25,7 @@ class SpkTenantsType extends AbstractType
             ->add('id', 'text', array(
                 'required' => false
             ))
-            ->add('contactType')
+            ->add('contactType', new ListItemType())
             ->add('primaryContact')
             ->add('currentContact')
             ->add('account', new ListItemType())

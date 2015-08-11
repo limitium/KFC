@@ -19,6 +19,13 @@ class InvestController extends Controller
 {
 
     /**
+     * @DI\Inject("stein.investment_service")
+     * @var InvestmentService
+     */
+    public $investmentService;
+
+
+    /**
      * @Rest\View(serializerGroups={"Default"})
      */
     public function getInvestmentsAction()
@@ -58,11 +65,8 @@ class InvestController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
-
-            $statusCode = $investment->getSpkPropertyid() ? 204 : 201;
-//            $em = $this->getDoctrine()->getManager();
-//            $em->persist($investment);
-//            $em->flush();
+            $statusCode = $investment->getId() ? 204 : 201;
+            $resultInvestment = $this->investmentService->saveOrUpdate($investment);
 
             $response = new Response();
             $response->setStatusCode($statusCode);
@@ -70,7 +74,7 @@ class InvestController extends Controller
             if ($statusCode == 201) {
                 $response->headers->set('Location',
                     $this->generateUrl(
-                        'get_investment', array('investment' => $investment->getSpkPropertyid()),
+                        'get_investment', array('investment' => $resultInvestment->getId()),
                         true // absolute
                     )
                 );
