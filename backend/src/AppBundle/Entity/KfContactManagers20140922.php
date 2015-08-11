@@ -27,4 +27,50 @@ class KfContactManagers20140922
     private $managerid;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfContactManagers20140922
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfContactManagers20140922
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
 }

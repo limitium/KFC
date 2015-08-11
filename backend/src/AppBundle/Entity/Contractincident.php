@@ -83,4 +83,234 @@ class Contractincident
     private $createuser;
 
 
+
+    /**
+     * Set contractincidentid
+     *
+     * @param string $contractincidentid
+     * @return Contractincident
+     */
+    public function setContractincidentid($contractincidentid)
+    {
+        $this->contractincidentid = $contractincidentid;
+
+        return $this;
+    }
+
+    /**
+     * Get contractincidentid
+     *
+     * @return string 
+     */
+    public function getContractincidentid()
+    {
+        return $this->contractincidentid;
+    }
+
+    /**
+     * Set contractid
+     *
+     * @param string $contractid
+     * @return Contractincident
+     */
+    public function setContractid($contractid)
+    {
+        $this->contractid = $contractid;
+
+        return $this;
+    }
+
+    /**
+     * Get contractid
+     *
+     * @return string 
+     */
+    public function getContractid()
+    {
+        return $this->contractid;
+    }
+
+    /**
+     * Set ticketid
+     *
+     * @param string $ticketid
+     * @return Contractincident
+     */
+    public function setTicketid($ticketid)
+    {
+        $this->ticketid = $ticketid;
+
+        return $this;
+    }
+
+    /**
+     * Get ticketid
+     *
+     * @return string 
+     */
+    public function getTicketid()
+    {
+        return $this->ticketid;
+    }
+
+    /**
+     * Set ticketactivityid
+     *
+     * @param string $ticketactivityid
+     * @return Contractincident
+     */
+    public function setTicketactivityid($ticketactivityid)
+    {
+        $this->ticketactivityid = $ticketactivityid;
+
+        return $this;
+    }
+
+    /**
+     * Get ticketactivityid
+     *
+     * @return string 
+     */
+    public function getTicketactivityid()
+    {
+        return $this->ticketactivityid;
+    }
+
+    /**
+     * Set hours
+     *
+     * @param float $hours
+     * @return Contractincident
+     */
+    public function setHours($hours)
+    {
+        $this->hours = $hours;
+
+        return $this;
+    }
+
+    /**
+     * Get hours
+     *
+     * @return float 
+     */
+    public function getHours()
+    {
+        return $this->hours;
+    }
+
+    /**
+     * Set dollars
+     *
+     * @param string $dollars
+     * @return Contractincident
+     */
+    public function setDollars($dollars)
+    {
+        $this->dollars = $dollars;
+
+        return $this;
+    }
+
+    /**
+     * Get dollars
+     *
+     * @return string 
+     */
+    public function getDollars()
+    {
+        return $this->dollars;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return Contractincident
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return Contractincident
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return Contractincident
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return Contractincident
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
 }

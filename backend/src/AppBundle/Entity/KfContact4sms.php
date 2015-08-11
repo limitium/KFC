@@ -34,4 +34,73 @@ class KfContact4sms
     private $mobileprefix;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfContact4sms
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set mobile
+     *
+     * @param string $mobile
+     * @return KfContact4sms
+     */
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+
+        return $this;
+    }
+
+    /**
+     * Get mobile
+     *
+     * @return string 
+     */
+    public function getMobile()
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * Set mobileprefix
+     *
+     * @param string $mobileprefix
+     * @return KfContact4sms
+     */
+    public function setMobileprefix($mobileprefix)
+    {
+        $this->mobileprefix = $mobileprefix;
+
+        return $this;
+    }
+
+    /**
+     * Get mobileprefix
+     *
+     * @return string 
+     */
+    public function getMobileprefix()
+    {
+        return $this->mobileprefix;
+    }
 }

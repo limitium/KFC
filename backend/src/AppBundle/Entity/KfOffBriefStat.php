@@ -41,4 +41,96 @@ class KfOffBriefStat
     private $chkSumm;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfOffBriefStat
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set briefRus
+     *
+     * @param string $briefRus
+     * @return KfOffBriefStat
+     */
+    public function setBriefRus($briefRus)
+    {
+        $this->briefRus = $briefRus;
+
+        return $this;
+    }
+
+    /**
+     * Get briefRus
+     *
+     * @return string 
+     */
+    public function getBriefRus()
+    {
+        return $this->briefRus;
+    }
+
+    /**
+     * Set briefEng
+     *
+     * @param string $briefEng
+     * @return KfOffBriefStat
+     */
+    public function setBriefEng($briefEng)
+    {
+        $this->briefEng = $briefEng;
+
+        return $this;
+    }
+
+    /**
+     * Get briefEng
+     *
+     * @return string 
+     */
+    public function getBriefEng()
+    {
+        return $this->briefEng;
+    }
+
+    /**
+     * Set chkSumm
+     *
+     * @param integer $chkSumm
+     * @return KfOffBriefStat
+     */
+    public function setChkSumm($chkSumm)
+    {
+        $this->chkSumm = $chkSumm;
+
+        return $this;
+    }
+
+    /**
+     * Get chkSumm
+     *
+     * @return integer 
+     */
+    public function getChkSumm()
+    {
+        return $this->chkSumm;
+    }
 }

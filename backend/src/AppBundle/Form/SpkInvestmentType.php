@@ -21,37 +21,26 @@ class SpkInvestmentType extends AbstractType
             ->add('nameRus')
             ->add('propertyType')
             ->add('status')
-            ->add('segment')
-            ->add('landlords', 'collection', array(
-                'type' => new SpkLandlordsType(),
-                'allow_add' => true
-            ))
-            ->add('tenants', 'collection', array(
-                'type' => new SpkTenantsType(),
-                'allow_add' => true
-            ))
+//            ->add('segment')
+//            ->add('landlords', 'collection', array(
+//                'type' => new SpkLandlordsType(),
+//                'allow_add' => true
+//            ))
+//            ->add('tenants', 'collection', array(
+//                'type' => new SpkTenantsType(),
+//                'allow_add' => true
+//            ))
             ->add('blocks', 'collection', array(
                 'type' => new SpkInvestBlocksType(),
                 'allow_add' => true
             ))
-            ->add('encumbrances')
-            ->add('investSegments')
-            ->add('location', new SpkLocationType())
-            ->add('commerc', new SpkCommercType())
-            ->add('tech', new SpkTechType())
-            ->add('description', new SpkDescriptionType())
-            ->add('createuser', 'text', array(
-                'required' => false
-            ))
-            ->add('createdate', 'text', array(
-                'required' => false
-            ))
-            ->add('modifyuser', 'text', array(
-                'required' => false
-            ))
-            ->add('modifydate', 'text', array(
-                'required' => false
-            ));
+//            ->add('encumbrances')
+//            ->add('investSegments')
+//            ->add('location', new SpkLocationType())
+//            ->add('commerc', new SpkCommercType())
+//            ->add('tech', new SpkTechType())
+//            ->add('description', new SpkDescriptionType())
+            ;
     }
     
     /**
@@ -60,8 +49,9 @@ class SpkInvestmentType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Form\SpkInvestmentDTO',
-            'csrf_protection' => false
+            'data_class' => 'AppBundle\Entity\SpkInvestment',
+            'csrf_protection' => false,
+            'allow_extra_fields' => true
         ));
     }
 

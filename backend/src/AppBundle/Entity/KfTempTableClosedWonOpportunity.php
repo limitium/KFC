@@ -27,4 +27,50 @@ class KfTempTableClosedWonOpportunity
     private $status;
 
 
+
+    /**
+     * Set opportunityid
+     *
+     * @param string $opportunityid
+     * @return KfTempTableClosedWonOpportunity
+     */
+    public function setOpportunityid($opportunityid)
+    {
+        $this->opportunityid = $opportunityid;
+
+        return $this;
+    }
+
+    /**
+     * Get opportunityid
+     *
+     * @return string 
+     */
+    public function getOpportunityid()
+    {
+        return $this->opportunityid;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfTempTableClosedWonOpportunity
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
 }

@@ -27,4 +27,50 @@ class KfSysUpdateParamTable
     private $createdate;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfSysUpdateParamTable
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfSysUpdateParamTable
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
 }

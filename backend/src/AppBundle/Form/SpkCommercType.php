@@ -31,7 +31,7 @@ class SpkCommercType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'appbundle\Form\CommercDTO',
+            'data_class' => 'AppBundle\Form\CommercDTO',
             'csrf_protection' => false
         ));
     }

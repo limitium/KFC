@@ -49,7 +49,7 @@ class SpkTechType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'appbundle\Form\TechDTO',
+            'data_class' => 'AppBundle\Form\TechDTO',
             'csrf_protection' => false
         ));
     }

@@ -83,4 +83,234 @@ class KfReportReport
     private $egenerateDate;
 
 
+
+    /**
+     * Set kfReportReportid
+     *
+     * @param string $kfReportReportid
+     * @return KfReportReport
+     */
+    public function setKfReportReportid($kfReportReportid)
+    {
+        $this->kfReportReportid = $kfReportReportid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfReportReportid
+     *
+     * @return string 
+     */
+    public function getKfReportReportid()
+    {
+        return $this->kfReportReportid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfReportReport
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfReportReport
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfReportReport
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfReportReport
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set category
+     *
+     * @param string $category
+     * @return KfReportReport
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return string 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Set reportName
+     *
+     * @param string $reportName
+     * @return KfReportReport
+     */
+    public function setReportName($reportName)
+    {
+        $this->reportName = $reportName;
+
+        return $this;
+    }
+
+    /**
+     * Get reportName
+     *
+     * @return string 
+     */
+    public function getReportName()
+    {
+        return $this->reportName;
+    }
+
+    /**
+     * Set generateDate
+     *
+     * @param \DateTime $generateDate
+     * @return KfReportReport
+     */
+    public function setGenerateDate($generateDate)
+    {
+        $this->generateDate = $generateDate;
+
+        return $this;
+    }
+
+    /**
+     * Get generateDate
+     *
+     * @return \DateTime 
+     */
+    public function getGenerateDate()
+    {
+        return $this->generateDate;
+    }
+
+    /**
+     * Set userid
+     *
+     * @param string $userid
+     * @return KfReportReport
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+
+        return $this;
+    }
+
+    /**
+     * Get userid
+     *
+     * @return string 
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * Set egenerateDate
+     *
+     * @param \DateTime $egenerateDate
+     * @return KfReportReport
+     */
+    public function setEgenerateDate($egenerateDate)
+    {
+        $this->egenerateDate = $egenerateDate;
+
+        return $this;
+    }
+
+    /**
+     * Get egenerateDate
+     *
+     * @return \DateTime 
+     */
+    public function getEgenerateDate()
+    {
+        return $this->egenerateDate;
+    }
 }

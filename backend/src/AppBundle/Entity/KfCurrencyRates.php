@@ -76,4 +76,211 @@ class KfCurrencyRates
     private $curDate;
 
 
+
+    /**
+     * Set kfCurrencyRatesid
+     *
+     * @param string $kfCurrencyRatesid
+     * @return KfCurrencyRates
+     */
+    public function setKfCurrencyRatesid($kfCurrencyRatesid)
+    {
+        $this->kfCurrencyRatesid = $kfCurrencyRatesid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfCurrencyRatesid
+     *
+     * @return string 
+     */
+    public function getKfCurrencyRatesid()
+    {
+        return $this->kfCurrencyRatesid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfCurrencyRates
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfCurrencyRates
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfCurrencyRates
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfCurrencyRates
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set currency
+     *
+     * @param string $currency
+     * @return KfCurrencyRates
+     */
+    public function setCurrency($currency)
+    {
+        $this->currency = $currency;
+
+        return $this;
+    }
+
+    /**
+     * Get currency
+     *
+     * @return string 
+     */
+    public function getCurrency()
+    {
+        return $this->currency;
+    }
+
+    /**
+     * Set curValue
+     *
+     * @param float $curValue
+     * @return KfCurrencyRates
+     */
+    public function setCurValue($curValue)
+    {
+        $this->curValue = $curValue;
+
+        return $this;
+    }
+
+    /**
+     * Get curValue
+     *
+     * @return float 
+     */
+    public function getCurValue()
+    {
+        return $this->curValue;
+    }
+
+    /**
+     * Set createdateCmp
+     *
+     * @param string $createdateCmp
+     * @return KfCurrencyRates
+     */
+    public function setCreatedateCmp($createdateCmp)
+    {
+        $this->createdateCmp = $createdateCmp;
+
+        return $this;
+    }
+
+    /**
+     * Get createdateCmp
+     *
+     * @return string 
+     */
+    public function getCreatedateCmp()
+    {
+        return $this->createdateCmp;
+    }
+
+    /**
+     * Set curDate
+     *
+     * @param \DateTime $curDate
+     * @return KfCurrencyRates
+     */
+    public function setCurDate($curDate)
+    {
+        $this->curDate = $curDate;
+
+        return $this;
+    }
+
+    /**
+     * Get curDate
+     *
+     * @return \DateTime 
+     */
+    public function getCurDate()
+    {
+        return $this->curDate;
+    }
 }

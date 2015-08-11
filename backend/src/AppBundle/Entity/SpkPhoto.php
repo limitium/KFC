@@ -6,102 +6,74 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * SpkPhoto
- *
  */
 class SpkPhoto
 {
     /**
      * @var string
-     *
      */
     private $spkPhotoid;
 
     /**
-     * @var string
-     *
-     */
-    private $spkPropertyid;
-
-    /**
-     * @var string
-     *
-     */
-    private $createuser;
-
-    /**
      * @var \DateTime
-     *
      */
     private $createdate;
 
     /**
-     * @var string
-     *
-     */
-    private $modifyuser;
-
-    /**
      * @var \DateTime
-     *
      */
     private $modifydate;
 
     /**
      * @var string
-     *
      */
     private $description;
 
     /**
      * @var string
-     *
      */
     private $photoType;
 
     /**
      * @var integer
-     *
      */
     private $photoOrder;
 
     /**
      * @var string
-     *
      */
     private $brief;
 
     /**
      * @var string
-     *
      */
     private $filename;
 
     /**
      * @var integer
-     *
      */
     private $siteOrder;
 
     /**
      * @var integer
-     *
      */
     private $briefOrder;
 
-
+    /**
+     * @var \AppBundle\Entity\SpkInvestment
+     */
+    private $investment;
 
     /**
-     * Set spkPhotoid
-     *
-     * @param string $spkPhotoid
-     * @return SpkPhoto
+     * @var \AppBundle\Entity\User
      */
-    public function setSpkPhotoid($spkPhotoid)
-    {
-        $this->spkPhotoid = $spkPhotoid;
+    private $createdBy;
 
-        return $this;
-    }
+    /**
+     * @var \AppBundle\Entity\User
+     */
+    private $updatedBy;
+
 
     /**
      * Get spkPhotoid
@@ -111,52 +83,6 @@ class SpkPhoto
     public function getSpkPhotoid()
     {
         return $this->spkPhotoid;
-    }
-
-    /**
-     * Set spkPropertyid
-     *
-     * @param string $spkPropertyid
-     * @return SpkPhoto
-     */
-    public function setSpkPropertyid($spkPropertyid)
-    {
-        $this->spkPropertyid = $spkPropertyid;
-
-        return $this;
-    }
-
-    /**
-     * Get spkPropertyid
-     *
-     * @return string 
-     */
-    public function getSpkPropertyid()
-    {
-        return $this->spkPropertyid;
-    }
-
-    /**
-     * Set createuser
-     *
-     * @param string $createuser
-     * @return SpkPhoto
-     */
-    public function setCreateuser($createuser)
-    {
-        $this->createuser = $createuser;
-
-        return $this;
-    }
-
-    /**
-     * Get createuser
-     *
-     * @return string 
-     */
-    public function getCreateuser()
-    {
-        return $this->createuser;
     }
 
     /**
@@ -180,29 +106,6 @@ class SpkPhoto
     public function getCreatedate()
     {
         return $this->createdate;
-    }
-
-    /**
-     * Set modifyuser
-     *
-     * @param string $modifyuser
-     * @return SpkPhoto
-     */
-    public function setModifyuser($modifyuser)
-    {
-        $this->modifyuser = $modifyuser;
-
-        return $this;
-    }
-
-    /**
-     * Get modifyuser
-     *
-     * @return string 
-     */
-    public function getModifyuser()
-    {
-        return $this->modifyuser;
     }
 
     /**
@@ -387,5 +290,74 @@ class SpkPhoto
     public function getBriefOrder()
     {
         return $this->briefOrder;
+    }
+
+    /**
+     * Set investment
+     *
+     * @param \AppBundle\Entity\SpkInvestment $investment
+     * @return SpkPhoto
+     */
+    public function setInvestment(\AppBundle\Entity\SpkInvestment $investment = null)
+    {
+        $this->investment = $investment;
+
+        return $this;
+    }
+
+    /**
+     * Get investment
+     *
+     * @return \AppBundle\Entity\SpkInvestment 
+     */
+    public function getInvestment()
+    {
+        return $this->investment;
+    }
+
+    /**
+     * Set createdBy
+     *
+     * @param \AppBundle\Entity\User $createdBy
+     * @return SpkPhoto
+     */
+    public function setCreatedBy(\AppBundle\Entity\User $createdBy = null)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy
+     *
+     * @return \AppBundle\Entity\User 
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * Set updatedBy
+     *
+     * @param \AppBundle\Entity\User $updatedBy
+     * @return SpkPhoto
+     */
+    public function setUpdatedBy(\AppBundle\Entity\User $updatedBy = null)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy
+     *
+     * @return \AppBundle\Entity\User 
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
     }
 }

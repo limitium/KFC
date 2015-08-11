@@ -9,40 +9,32 @@ AppBundle\Entity\SpkPhoto:
         SPK_PHOTO_PRIMARY:
             columns:
                 - SPK_PHOTOID
-    id: {  }
-    fields:
+    id:
         spkPhotoid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: SPK_PHOTOID
-        spkPropertyid:
-            type: string
-            nullable: false
-            length: 12
-            fixed: false
-            column: SPK_PROPERTYID
-        createuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: CREATEUSER
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
+    fields:
         createdate:
             type: datetime
             nullable: true
             column: CREATEDATE
-        modifyuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: MODIFYUSER
+            gedmo:
+                timestampable:
+                    on: create
         modifydate:
             type: datetime
             nullable: true
             column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         description:
             type: string
             nullable: true
@@ -83,3 +75,28 @@ AppBundle\Entity\SpkPhoto:
             unsigned: false
             column: BRIEF_ORDER
     lifecycleCallbacks: {  }
+    manyToOne:
+        investment:
+            targetEntity: AppBundle\Entity\SpkInvestment
+            inversedBy: property
+            joinColumns:
+                SPK_PROPERTYID:
+                    referencedColumnName: SPK_PROPERTYID
+                    onDelete: CASCADE
+                    onUpdate: CASCADE
+        createdBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: CREATEUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: create
+        updatedBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: MODIFYUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: update

@@ -27,4 +27,50 @@ class KfCountryTargetBackup20140728
     private $target;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfCountryTargetBackup20140728
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set target
+     *
+     * @param string $target
+     * @return KfCountryTargetBackup20140728
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+
+        return $this;
+    }
+
+    /**
+     * Get target
+     *
+     * @return string 
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
 }

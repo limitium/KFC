@@ -76,4 +76,211 @@ class KfUserSalesplan
     private $userid;
 
 
+
+    /**
+     * Set kfUserSalesplanid
+     *
+     * @param string $kfUserSalesplanid
+     * @return KfUserSalesplan
+     */
+    public function setKfUserSalesplanid($kfUserSalesplanid)
+    {
+        $this->kfUserSalesplanid = $kfUserSalesplanid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfUserSalesplanid
+     *
+     * @return string 
+     */
+    public function getKfUserSalesplanid()
+    {
+        return $this->kfUserSalesplanid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfUserSalesplan
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfUserSalesplan
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfUserSalesplan
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfUserSalesplan
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set amount
+     *
+     * @param float $amount
+     * @return KfUserSalesplan
+     */
+    public function setAmount($amount)
+    {
+        $this->amount = $amount;
+
+        return $this;
+    }
+
+    /**
+     * Get amount
+     *
+     * @return float 
+     */
+    public function getAmount()
+    {
+        return $this->amount;
+    }
+
+    /**
+     * Set yer
+     *
+     * @param integer $yer
+     * @return KfUserSalesplan
+     */
+    public function setYer($yer)
+    {
+        $this->yer = $yer;
+
+        return $this;
+    }
+
+    /**
+     * Get yer
+     *
+     * @return integer 
+     */
+    public function getYer()
+    {
+        return $this->yer;
+    }
+
+    /**
+     * Set probability
+     *
+     * @param float $probability
+     * @return KfUserSalesplan
+     */
+    public function setProbability($probability)
+    {
+        $this->probability = $probability;
+
+        return $this;
+    }
+
+    /**
+     * Get probability
+     *
+     * @return float 
+     */
+    public function getProbability()
+    {
+        return $this->probability;
+    }
+
+    /**
+     * Set userid
+     *
+     * @param string $userid
+     * @return KfUserSalesplan
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+
+        return $this;
+    }
+
+    /**
+     * Get userid
+     *
+     * @return string 
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
 }

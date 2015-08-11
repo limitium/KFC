@@ -97,4 +97,280 @@ class Association
     private $modifyuser;
 
 
+
+    /**
+     * Set associationid
+     *
+     * @param string $associationid
+     * @return Association
+     */
+    public function setAssociationid($associationid)
+    {
+        $this->associationid = $associationid;
+
+        return $this;
+    }
+
+    /**
+     * Get associationid
+     *
+     * @return string 
+     */
+    public function getAssociationid()
+    {
+        return $this->associationid;
+    }
+
+    /**
+     * Set accountassociation
+     *
+     * @param integer $accountassociation
+     * @return Association
+     */
+    public function setAccountassociation($accountassociation)
+    {
+        $this->accountassociation = $accountassociation;
+
+        return $this;
+    }
+
+    /**
+     * Get accountassociation
+     *
+     * @return integer 
+     */
+    public function getAccountassociation()
+    {
+        return $this->accountassociation;
+    }
+
+    /**
+     * Set fromid
+     *
+     * @param string $fromid
+     * @return Association
+     */
+    public function setFromid($fromid)
+    {
+        $this->fromid = $fromid;
+
+        return $this;
+    }
+
+    /**
+     * Get fromid
+     *
+     * @return string 
+     */
+    public function getFromid()
+    {
+        return $this->fromid;
+    }
+
+    /**
+     * Set toid
+     *
+     * @param string $toid
+     * @return Association
+     */
+    public function setToid($toid)
+    {
+        $this->toid = $toid;
+
+        return $this;
+    }
+
+    /**
+     * Get toid
+     *
+     * @return string 
+     */
+    public function getToid()
+    {
+        return $this->toid;
+    }
+
+    /**
+     * Set forwardrelation
+     *
+     * @param string $forwardrelation
+     * @return Association
+     */
+    public function setForwardrelation($forwardrelation)
+    {
+        $this->forwardrelation = $forwardrelation;
+
+        return $this;
+    }
+
+    /**
+     * Get forwardrelation
+     *
+     * @return string 
+     */
+    public function getForwardrelation()
+    {
+        return $this->forwardrelation;
+    }
+
+    /**
+     * Set backrelation
+     *
+     * @param string $backrelation
+     * @return Association
+     */
+    public function setBackrelation($backrelation)
+    {
+        $this->backrelation = $backrelation;
+
+        return $this;
+    }
+
+    /**
+     * Get backrelation
+     *
+     * @return string 
+     */
+    public function getBackrelation()
+    {
+        return $this->backrelation;
+    }
+
+    /**
+     * Set forwardnotes
+     *
+     * @param string $forwardnotes
+     * @return Association
+     */
+    public function setForwardnotes($forwardnotes)
+    {
+        $this->forwardnotes = $forwardnotes;
+
+        return $this;
+    }
+
+    /**
+     * Get forwardnotes
+     *
+     * @return string 
+     */
+    public function getForwardnotes()
+    {
+        return $this->forwardnotes;
+    }
+
+    /**
+     * Set backnotes
+     *
+     * @param string $backnotes
+     * @return Association
+     */
+    public function setBacknotes($backnotes)
+    {
+        $this->backnotes = $backnotes;
+
+        return $this;
+    }
+
+    /**
+     * Get backnotes
+     *
+     * @return string 
+     */
+    public function getBacknotes()
+    {
+        return $this->backnotes;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return Association
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return Association
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return Association
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return Association
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
 }

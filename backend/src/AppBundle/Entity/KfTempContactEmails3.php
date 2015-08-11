@@ -27,4 +27,50 @@ class KfTempContactEmails3
     private $email;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfTempContactEmails3
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     * @return KfTempContactEmails3
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string 
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
 }

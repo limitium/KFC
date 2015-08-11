@@ -111,4 +111,326 @@ class KfRshCountryHouseSlice
     private $createdate;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfRshCountryHouseSlice
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set id
+     *
+     * @param string $id
+     * @return KfRshCountryHouseSlice
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return string 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set buildingStage
+     *
+     * @param string $buildingStage
+     * @return KfRshCountryHouseSlice
+     */
+    public function setBuildingStage($buildingStage)
+    {
+        $this->buildingStage = $buildingStage;
+
+        return $this;
+    }
+
+    /**
+     * Get buildingStage
+     *
+     * @return string 
+     */
+    public function getBuildingStage()
+    {
+        return $this->buildingStage;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfRshCountryHouseSlice
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set costMin
+     *
+     * @param string $costMin
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostMin($costMin)
+    {
+        $this->costMin = $costMin;
+
+        return $this;
+    }
+
+    /**
+     * Get costMin
+     *
+     * @return string 
+     */
+    public function getCostMin()
+    {
+        return $this->costMin;
+    }
+
+    /**
+     * Set costMax
+     *
+     * @param string $costMax
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostMax($costMax)
+    {
+        $this->costMax = $costMax;
+
+        return $this;
+    }
+
+    /**
+     * Get costMax
+     *
+     * @return string 
+     */
+    public function getCostMax()
+    {
+        return $this->costMax;
+    }
+
+    /**
+     * Set costPerSqmMin
+     *
+     * @param string $costPerSqmMin
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostPerSqmMin($costPerSqmMin)
+    {
+        $this->costPerSqmMin = $costPerSqmMin;
+
+        return $this;
+    }
+
+    /**
+     * Get costPerSqmMin
+     *
+     * @return string 
+     */
+    public function getCostPerSqmMin()
+    {
+        return $this->costPerSqmMin;
+    }
+
+    /**
+     * Set costPerSqmMax
+     *
+     * @param string $costPerSqmMax
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostPerSqmMax($costPerSqmMax)
+    {
+        $this->costPerSqmMax = $costPerSqmMax;
+
+        return $this;
+    }
+
+    /**
+     * Get costPerSqmMax
+     *
+     * @return string 
+     */
+    public function getCostPerSqmMax()
+    {
+        return $this->costPerSqmMax;
+    }
+
+    /**
+     * Set costPer100Min
+     *
+     * @param string $costPer100Min
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostPer100Min($costPer100Min)
+    {
+        $this->costPer100Min = $costPer100Min;
+
+        return $this;
+    }
+
+    /**
+     * Get costPer100Min
+     *
+     * @return string 
+     */
+    public function getCostPer100Min()
+    {
+        return $this->costPer100Min;
+    }
+
+    /**
+     * Set costPer100Max
+     *
+     * @param string $costPer100Max
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCostPer100Max($costPer100Max)
+    {
+        $this->costPer100Max = $costPer100Max;
+
+        return $this;
+    }
+
+    /**
+     * Get costPer100Max
+     *
+     * @return string 
+     */
+    public function getCostPer100Max()
+    {
+        return $this->costPer100Max;
+    }
+
+    /**
+     * Set rentMin
+     *
+     * @param string $rentMin
+     * @return KfRshCountryHouseSlice
+     */
+    public function setRentMin($rentMin)
+    {
+        $this->rentMin = $rentMin;
+
+        return $this;
+    }
+
+    /**
+     * Get rentMin
+     *
+     * @return string 
+     */
+    public function getRentMin()
+    {
+        return $this->rentMin;
+    }
+
+    /**
+     * Set rentMax
+     *
+     * @param string $rentMax
+     * @return KfRshCountryHouseSlice
+     */
+    public function setRentMax($rentMax)
+    {
+        $this->rentMax = $rentMax;
+
+        return $this;
+    }
+
+    /**
+     * Get rentMax
+     *
+     * @return string 
+     */
+    public function getRentMax()
+    {
+        return $this->rentMax;
+    }
+
+    /**
+     * Set market
+     *
+     * @param string $market
+     * @return KfRshCountryHouseSlice
+     */
+    public function setMarket($market)
+    {
+        $this->market = $market;
+
+        return $this;
+    }
+
+    /**
+     * Get market
+     *
+     * @return string 
+     */
+    public function getMarket()
+    {
+        return $this->market;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfRshCountryHouseSlice
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
 }

@@ -27,4 +27,50 @@ class Accountofficesmanagerid
     private $officesmanagerid;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return Accountofficesmanagerid
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set officesmanagerid
+     *
+     * @param string $officesmanagerid
+     * @return Accountofficesmanagerid
+     */
+    public function setOfficesmanagerid($officesmanagerid)
+    {
+        $this->officesmanagerid = $officesmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get officesmanagerid
+     *
+     * @return string 
+     */
+    public function getOfficesmanagerid()
+    {
+        return $this->officesmanagerid;
+    }
 }

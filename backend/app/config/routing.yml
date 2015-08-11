@@ -4,6 +4,7 @@ fronted_app:
 
 _main:
     resource: routing_rest.yml
+    type: rest
     prefix: /api
 
 imag_ldap:

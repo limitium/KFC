@@ -27,4 +27,50 @@ class KfOffGrDump
     private $manager;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfOffGrDump
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set manager
+     *
+     * @param string $manager
+     * @return KfOffGrDump
+     */
+    public function setManager($manager)
+    {
+        $this->manager = $manager;
+
+        return $this;
+    }
+
+    /**
+     * Get manager
+     *
+     * @return string 
+     */
+    public function getManager()
+    {
+        return $this->manager;
+    }
 }

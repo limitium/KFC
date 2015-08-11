@@ -265,4 +265,832 @@ class Accountdetail
     private $otherOffice;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return Accountdetail
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return Accountdetail
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return Accountdetail
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return Accountdetail
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return Accountdetail
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set accountrus
+     *
+     * @param string $accountrus
+     * @return Accountdetail
+     */
+    public function setAccountrus($accountrus)
+    {
+        $this->accountrus = $accountrus;
+
+        return $this;
+    }
+
+    /**
+     * Get accountrus
+     *
+     * @return string 
+     */
+    public function getAccountrus()
+    {
+        return $this->accountrus;
+    }
+
+    /**
+     * Set acccomment
+     *
+     * @param string $acccomment
+     * @return Accountdetail
+     */
+    public function setAcccomment($acccomment)
+    {
+        $this->acccomment = $acccomment;
+
+        return $this;
+    }
+
+    /**
+     * Get acccomment
+     *
+     * @return string 
+     */
+    public function getAcccomment()
+    {
+        return $this->acccomment;
+    }
+
+    /**
+     * Set weaknesses
+     *
+     * @param string $weaknesses
+     * @return Accountdetail
+     */
+    public function setWeaknesses($weaknesses)
+    {
+        $this->weaknesses = $weaknesses;
+
+        return $this;
+    }
+
+    /**
+     * Get weaknesses
+     *
+     * @return string 
+     */
+    public function getWeaknesses()
+    {
+        return $this->weaknesses;
+    }
+
+    /**
+     * Set strengths
+     *
+     * @param string $strengths
+     * @return Accountdetail
+     */
+    public function setStrengths($strengths)
+    {
+        $this->strengths = $strengths;
+
+        return $this;
+    }
+
+    /**
+     * Get strengths
+     *
+     * @return string 
+     */
+    public function getStrengths()
+    {
+        return $this->strengths;
+    }
+
+    /**
+     * Set strategy
+     *
+     * @param string $strategy
+     * @return Accountdetail
+     */
+    public function setStrategy($strategy)
+    {
+        $this->strategy = $strategy;
+
+        return $this;
+    }
+
+    /**
+     * Get strategy
+     *
+     * @return string 
+     */
+    public function getStrategy()
+    {
+        return $this->strategy;
+    }
+
+    /**
+     * Set rating
+     *
+     * @param integer $rating
+     * @return Accountdetail
+     */
+    public function setRating($rating)
+    {
+        $this->rating = $rating;
+
+        return $this;
+    }
+
+    /**
+     * Get rating
+     *
+     * @return integer 
+     */
+    public function getRating()
+    {
+        return $this->rating;
+    }
+
+    /**
+     * Set products
+     *
+     * @param string $products
+     * @return Accountdetail
+     */
+    public function setProducts($products)
+    {
+        $this->products = $products;
+
+        return $this;
+    }
+
+    /**
+     * Get products
+     *
+     * @return string 
+     */
+    public function getProducts()
+    {
+        return $this->products;
+    }
+
+    /**
+     * Set industrialmanagerid
+     *
+     * @param string $industrialmanagerid
+     * @return Accountdetail
+     */
+    public function setIndustrialmanagerid($industrialmanagerid)
+    {
+        $this->industrialmanagerid = $industrialmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get industrialmanagerid
+     *
+     * @return string 
+     */
+    public function getIndustrialmanagerid()
+    {
+        return $this->industrialmanagerid;
+    }
+
+    /**
+     * Set residentialmanagerid
+     *
+     * @param string $residentialmanagerid
+     * @return Accountdetail
+     */
+    public function setResidentialmanagerid($residentialmanagerid)
+    {
+        $this->residentialmanagerid = $residentialmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get residentialmanagerid
+     *
+     * @return string 
+     */
+    public function getResidentialmanagerid()
+    {
+        return $this->residentialmanagerid;
+    }
+
+    /**
+     * Set countryhousemanagerid
+     *
+     * @param string $countryhousemanagerid
+     * @return Accountdetail
+     */
+    public function setCountryhousemanagerid($countryhousemanagerid)
+    {
+        $this->countryhousemanagerid = $countryhousemanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get countryhousemanagerid
+     *
+     * @return string 
+     */
+    public function getCountryhousemanagerid()
+    {
+        return $this->countryhousemanagerid;
+    }
+
+    /**
+     * Set retailmanagerid
+     *
+     * @param string $retailmanagerid
+     * @return Accountdetail
+     */
+    public function setRetailmanagerid($retailmanagerid)
+    {
+        $this->retailmanagerid = $retailmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get retailmanagerid
+     *
+     * @return string 
+     */
+    public function getRetailmanagerid()
+    {
+        return $this->retailmanagerid;
+    }
+
+    /**
+     * Set officesmanagerid
+     *
+     * @param string $officesmanagerid
+     * @return Accountdetail
+     */
+    public function setOfficesmanagerid($officesmanagerid)
+    {
+        $this->officesmanagerid = $officesmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get officesmanagerid
+     *
+     * @return string 
+     */
+    public function getOfficesmanagerid()
+    {
+        return $this->officesmanagerid;
+    }
+
+    /**
+     * Set assessmentmanagerid
+     *
+     * @param string $assessmentmanagerid
+     * @return Accountdetail
+     */
+    public function setAssessmentmanagerid($assessmentmanagerid)
+    {
+        $this->assessmentmanagerid = $assessmentmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get assessmentmanagerid
+     *
+     * @return string 
+     */
+    public function getAssessmentmanagerid()
+    {
+        return $this->assessmentmanagerid;
+    }
+
+    /**
+     * Set investmentmanagerid
+     *
+     * @param string $investmentmanagerid
+     * @return Accountdetail
+     */
+    public function setInvestmentmanagerid($investmentmanagerid)
+    {
+        $this->investmentmanagerid = $investmentmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get investmentmanagerid
+     *
+     * @return string 
+     */
+    public function getInvestmentmanagerid()
+    {
+        return $this->investmentmanagerid;
+    }
+
+    /**
+     * Set consultingmanagerid
+     *
+     * @param string $consultingmanagerid
+     * @return Accountdetail
+     */
+    public function setConsultingmanagerid($consultingmanagerid)
+    {
+        $this->consultingmanagerid = $consultingmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get consultingmanagerid
+     *
+     * @return string 
+     */
+    public function getConsultingmanagerid()
+    {
+        return $this->consultingmanagerid;
+    }
+
+    /**
+     * Set marketreseachmanagerid
+     *
+     * @param string $marketreseachmanagerid
+     * @return Accountdetail
+     */
+    public function setMarketreseachmanagerid($marketreseachmanagerid)
+    {
+        $this->marketreseachmanagerid = $marketreseachmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get marketreseachmanagerid
+     *
+     * @return string 
+     */
+    public function getMarketreseachmanagerid()
+    {
+        return $this->marketreseachmanagerid;
+    }
+
+    /**
+     * Set marketingmanagerid
+     *
+     * @param string $marketingmanagerid
+     * @return Accountdetail
+     */
+    public function setMarketingmanagerid($marketingmanagerid)
+    {
+        $this->marketingmanagerid = $marketingmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get marketingmanagerid
+     *
+     * @return string 
+     */
+    public function getMarketingmanagerid()
+    {
+        return $this->marketingmanagerid;
+    }
+
+    /**
+     * Set mainprefix
+     *
+     * @param string $mainprefix
+     * @return Accountdetail
+     */
+    public function setMainprefix($mainprefix)
+    {
+        $this->mainprefix = $mainprefix;
+
+        return $this;
+    }
+
+    /**
+     * Get mainprefix
+     *
+     * @return string 
+     */
+    public function getMainprefix()
+    {
+        return $this->mainprefix;
+    }
+
+    /**
+     * Set mainsufix
+     *
+     * @param string $mainsufix
+     * @return Accountdetail
+     */
+    public function setMainsufix($mainsufix)
+    {
+        $this->mainsufix = $mainsufix;
+
+        return $this;
+    }
+
+    /**
+     * Get mainsufix
+     *
+     * @return string 
+     */
+    public function getMainsufix()
+    {
+        return $this->mainsufix;
+    }
+
+    /**
+     * Set faxprefix
+     *
+     * @param string $faxprefix
+     * @return Accountdetail
+     */
+    public function setFaxprefix($faxprefix)
+    {
+        $this->faxprefix = $faxprefix;
+
+        return $this;
+    }
+
+    /**
+     * Get faxprefix
+     *
+     * @return string 
+     */
+    public function getFaxprefix()
+    {
+        return $this->faxprefix;
+    }
+
+    /**
+     * Set faxsufix
+     *
+     * @param string $faxsufix
+     * @return Accountdetail
+     */
+    public function setFaxsufix($faxsufix)
+    {
+        $this->faxsufix = $faxsufix;
+
+        return $this;
+    }
+
+    /**
+     * Get faxsufix
+     *
+     * @return string 
+     */
+    public function getFaxsufix()
+    {
+        return $this->faxsufix;
+    }
+
+    /**
+     * Set tollprefix
+     *
+     * @param string $tollprefix
+     * @return Accountdetail
+     */
+    public function setTollprefix($tollprefix)
+    {
+        $this->tollprefix = $tollprefix;
+
+        return $this;
+    }
+
+    /**
+     * Get tollprefix
+     *
+     * @return string 
+     */
+    public function getTollprefix()
+    {
+        return $this->tollprefix;
+    }
+
+    /**
+     * Set tollsufix
+     *
+     * @param string $tollsufix
+     * @return Accountdetail
+     */
+    public function setTollsufix($tollsufix)
+    {
+        $this->tollsufix = $tollsufix;
+
+        return $this;
+    }
+
+    /**
+     * Get tollsufix
+     *
+     * @return string 
+     */
+    public function getTollsufix()
+    {
+        return $this->tollsufix;
+    }
+
+    /**
+     * Set brand
+     *
+     * @param string $brand
+     * @return Accountdetail
+     */
+    public function setBrand($brand)
+    {
+        $this->brand = $brand;
+
+        return $this;
+    }
+
+    /**
+     * Get brand
+     *
+     * @return string 
+     */
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+
+    /**
+     * Set fullname
+     *
+     * @param string $fullname
+     * @return Accountdetail
+     */
+    public function setFullname($fullname)
+    {
+        $this->fullname = $fullname;
+
+        return $this;
+    }
+
+    /**
+     * Get fullname
+     *
+     * @return string 
+     */
+    public function getFullname()
+    {
+        return $this->fullname;
+    }
+
+    /**
+     * Set isrussian
+     *
+     * @param string $isrussian
+     * @return Accountdetail
+     */
+    public function setIsrussian($isrussian)
+    {
+        $this->isrussian = $isrussian;
+
+        return $this;
+    }
+
+    /**
+     * Get isrussian
+     *
+     * @return string 
+     */
+    public function getIsrussian()
+    {
+        return $this->isrussian;
+    }
+
+    /**
+     * Set ind
+     *
+     * @param integer $ind
+     * @return Accountdetail
+     */
+    public function setInd($ind)
+    {
+        $this->ind = $ind;
+
+        return $this;
+    }
+
+    /**
+     * Get ind
+     *
+     * @return integer 
+     */
+    public function getInd()
+    {
+        return $this->ind;
+    }
+
+    /**
+     * Set numberOfStores
+     *
+     * @param integer $numberOfStores
+     * @return Accountdetail
+     */
+    public function setNumberOfStores($numberOfStores)
+    {
+        $this->numberOfStores = $numberOfStores;
+
+        return $this;
+    }
+
+    /**
+     * Get numberOfStores
+     *
+     * @return integer 
+     */
+    public function getNumberOfStores()
+    {
+        return $this->numberOfStores;
+    }
+
+    /**
+     * Set reffered
+     *
+     * @param string $reffered
+     * @return Accountdetail
+     */
+    public function setReffered($reffered)
+    {
+        $this->reffered = $reffered;
+
+        return $this;
+    }
+
+    /**
+     * Get reffered
+     *
+     * @return string 
+     */
+    public function getReffered()
+    {
+        return $this->reffered;
+    }
+
+    /**
+     * Set accNationallity
+     *
+     * @param string $accNationallity
+     * @return Accountdetail
+     */
+    public function setAccNationallity($accNationallity)
+    {
+        $this->accNationallity = $accNationallity;
+
+        return $this;
+    }
+
+    /**
+     * Get accNationallity
+     *
+     * @return string 
+     */
+    public function getAccNationallity()
+    {
+        return $this->accNationallity;
+    }
+
+    /**
+     * Set otherOffice
+     *
+     * @param string $otherOffice
+     * @return Accountdetail
+     */
+    public function setOtherOffice($otherOffice)
+    {
+        $this->otherOffice = $otherOffice;
+
+        return $this;
+    }
+
+    /**
+     * Get otherOffice
+     *
+     * @return string 
+     */
+    public function getOtherOffice()
+    {
+        return $this->otherOffice;
+    }
 }

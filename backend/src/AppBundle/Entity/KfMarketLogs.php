@@ -97,4 +97,280 @@ class KfMarketLogs
     private $entityid;
 
 
+
+    /**
+     * Set kfMarketLogsid
+     *
+     * @param string $kfMarketLogsid
+     * @return KfMarketLogs
+     */
+    public function setKfMarketLogsid($kfMarketLogsid)
+    {
+        $this->kfMarketLogsid = $kfMarketLogsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketLogsid
+     *
+     * @return string 
+     */
+    public function getKfMarketLogsid()
+    {
+        return $this->kfMarketLogsid;
+    }
+
+    /**
+     * Set kfMarketingProjectsid
+     *
+     * @param string $kfMarketingProjectsid
+     * @return KfMarketLogs
+     */
+    public function setKfMarketingProjectsid($kfMarketingProjectsid)
+    {
+        $this->kfMarketingProjectsid = $kfMarketingProjectsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketingProjectsid
+     *
+     * @return string 
+     */
+    public function getKfMarketingProjectsid()
+    {
+        return $this->kfMarketingProjectsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfMarketLogs
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfMarketLogs
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfMarketLogs
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfMarketLogs
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set changedField
+     *
+     * @param string $changedField
+     * @return KfMarketLogs
+     */
+    public function setChangedField($changedField)
+    {
+        $this->changedField = $changedField;
+
+        return $this;
+    }
+
+    /**
+     * Get changedField
+     *
+     * @return string 
+     */
+    public function getChangedField()
+    {
+        return $this->changedField;
+    }
+
+    /**
+     * Set oldValue
+     *
+     * @param string $oldValue
+     * @return KfMarketLogs
+     */
+    public function setOldValue($oldValue)
+    {
+        $this->oldValue = $oldValue;
+
+        return $this;
+    }
+
+    /**
+     * Get oldValue
+     *
+     * @return string 
+     */
+    public function getOldValue()
+    {
+        return $this->oldValue;
+    }
+
+    /**
+     * Set newValue
+     *
+     * @param string $newValue
+     * @return KfMarketLogs
+     */
+    public function setNewValue($newValue)
+    {
+        $this->newValue = $newValue;
+
+        return $this;
+    }
+
+    /**
+     * Get newValue
+     *
+     * @return string 
+     */
+    public function getNewValue()
+    {
+        return $this->newValue;
+    }
+
+    /**
+     * Set comments
+     *
+     * @param string $comments
+     * @return KfMarketLogs
+     */
+    public function setComments($comments)
+    {
+        $this->comments = $comments;
+
+        return $this;
+    }
+
+    /**
+     * Get comments
+     *
+     * @return string 
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * Set entity
+     *
+     * @param string $entity
+     * @return KfMarketLogs
+     */
+    public function setEntity($entity)
+    {
+        $this->entity = $entity;
+
+        return $this;
+    }
+
+    /**
+     * Get entity
+     *
+     * @return string 
+     */
+    public function getEntity()
+    {
+        return $this->entity;
+    }
+
+    /**
+     * Set entityid
+     *
+     * @param string $entityid
+     * @return KfMarketLogs
+     */
+    public function setEntityid($entityid)
+    {
+        $this->entityid = $entityid;
+
+        return $this;
+    }
+
+    /**
+     * Get entityid
+     *
+     * @return string 
+     */
+    public function getEntityid()
+    {
+        return $this->entityid;
+    }
 }

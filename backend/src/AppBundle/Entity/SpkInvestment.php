@@ -108,6 +108,7 @@ class SpkInvestment
         $this->blocks = new ArrayCollection();
         $this->encumbrances = new ArrayCollection();
         $this->investSegments = new ArrayCollection();
+        $this->photos = new ArrayCollection();
     }
 
     /**
@@ -503,4 +504,157 @@ class SpkInvestment
 
 
 
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $photos;
+
+
+    /**
+     * Add blocks
+     *
+     * @param \AppBundle\Entity\SpkInvestBlocks $blocks
+     * @return SpkInvestment
+     */
+    public function addBlock(\AppBundle\Entity\SpkInvestBlocks $blocks)
+    {
+        $this->blocks[] = $blocks;
+
+        return $this;
+    }
+
+    /**
+     * Remove blocks
+     *
+     * @param \AppBundle\Entity\SpkInvestBlocks $blocks
+     */
+    public function removeBlock(\AppBundle\Entity\SpkInvestBlocks $blocks)
+    {
+        $this->blocks->removeElement($blocks);
+    }
+
+    /**
+     * Add encumbrances
+     *
+     * @param \AppBundle\Entity\SpkInvestEncumbrances $encumbrances
+     * @return SpkInvestment
+     */
+    public function addEncumbrance(\AppBundle\Entity\SpkInvestEncumbrances $encumbrances)
+    {
+        $this->encumbrances[] = $encumbrances;
+
+        return $this;
+    }
+
+    /**
+     * Remove encumbrances
+     *
+     * @param \AppBundle\Entity\SpkInvestEncumbrances $encumbrances
+     */
+    public function removeEncumbrance(\AppBundle\Entity\SpkInvestEncumbrances $encumbrances)
+    {
+        $this->encumbrances->removeElement($encumbrances);
+    }
+
+    /**
+     * Add investSegments
+     *
+     * @param \AppBundle\Entity\SpkInvestSegments $investSegments
+     * @return SpkInvestment
+     */
+    public function addInvestSegment(\AppBundle\Entity\SpkInvestSegments $investSegments)
+    {
+        $this->investSegments[] = $investSegments;
+
+        return $this;
+    }
+
+    /**
+     * Remove investSegments
+     *
+     * @param \AppBundle\Entity\SpkInvestSegments $investSegments
+     */
+    public function removeInvestSegment(\AppBundle\Entity\SpkInvestSegments $investSegments)
+    {
+        $this->investSegments->removeElement($investSegments);
+    }
+
+    /**
+     * Add photos
+     *
+     * @param \AppBundle\Entity\SpkPhoto $photos
+     * @return SpkInvestment
+     */
+    public function addPhoto(\AppBundle\Entity\SpkPhoto $photos)
+    {
+        $this->photos[] = $photos;
+
+        return $this;
+    }
+
+    /**
+     * Remove photos
+     *
+     * @param \AppBundle\Entity\SpkPhoto $photos
+     */
+    public function removePhoto(\AppBundle\Entity\SpkPhoto $photos)
+    {
+        $this->photos->removeElement($photos);
+    }
+
+    /**
+     * Get photos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPhotos()
+    {
+        return $this->photos;
+    }
+
+    /**
+     * Add landlords
+     *
+     * @param \AppBundle\Entity\SpkLandlords $landlords
+     * @return SpkInvestment
+     */
+    public function addLandlord(\AppBundle\Entity\SpkLandlords $landlords)
+    {
+        $this->landlords[] = $landlords;
+
+        return $this;
+    }
+
+    /**
+     * Remove landlords
+     *
+     * @param \AppBundle\Entity\SpkLandlords $landlords
+     */
+    public function removeLandlord(\AppBundle\Entity\SpkLandlords $landlords)
+    {
+        $this->landlords->removeElement($landlords);
+    }
+
+    /**
+     * Add tenants
+     *
+     * @param \AppBundle\Entity\SpkTenants $tenants
+     * @return SpkInvestment
+     */
+    public function addTenant(\AppBundle\Entity\SpkTenants $tenants)
+    {
+        $this->tenants[] = $tenants;
+
+        return $this;
+    }
+
+    /**
+     * Remove tenants
+     *
+     * @param \AppBundle\Entity\SpkTenants $tenants
+     */
+    public function removeTenant(\AppBundle\Entity\SpkTenants $tenants)
+    {
+        $this->tenants->removeElement($tenants);
+    }
 }

@@ -20,4 +20,27 @@ class KfNullsInMetros
     private $expr1;
 
 
+
+    /**
+     * Set expr1
+     *
+     * @param integer $expr1
+     * @return KfNullsInMetros
+     */
+    public function setExpr1($expr1)
+    {
+        $this->expr1 = $expr1;
+
+        return $this;
+    }
+
+    /**
+     * Get expr1
+     *
+     * @return integer 
+     */
+    public function getExpr1()
+    {
+        return $this->expr1;
+    }
 }

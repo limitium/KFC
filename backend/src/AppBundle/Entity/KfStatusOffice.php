@@ -62,4 +62,165 @@ class KfStatusOffice
     private $division;
 
 
+
+    /**
+     * Set kfStatusOfficeid
+     *
+     * @param string $kfStatusOfficeid
+     * @return KfStatusOffice
+     */
+    public function setKfStatusOfficeid($kfStatusOfficeid)
+    {
+        $this->kfStatusOfficeid = $kfStatusOfficeid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfStatusOfficeid
+     *
+     * @return string 
+     */
+    public function getKfStatusOfficeid()
+    {
+        return $this->kfStatusOfficeid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfStatusOffice
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfStatusOffice
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfStatusOffice
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfStatusOffice
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfStatusOffice
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set division
+     *
+     * @param string $division
+     * @return KfStatusOffice
+     */
+    public function setDivision($division)
+    {
+        $this->division = $division;
+
+        return $this;
+    }
+
+    /**
+     * Get division
+     *
+     * @return string 
+     */
+    public function getDivision()
+    {
+        return $this->division;
+    }
 }

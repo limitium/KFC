@@ -7,15 +7,15 @@ AppBundle\Entity\SpkInvestBlocks:
           inversedBy: blocks
           joinColumn:
             name: SPK_PROPERTYID
-            referencedColumnName: SPK_INVEST_BLOCKSID
+            referencedColumnName: SPK_PROPERTYID
     indexes:
         SPK_INVEST_BLOCKS_SPK_PROPERTYID:
             columns:
                 - SPK_PROPERTYID
-    uniqueConstraints:
-        SPK_INVEST_BLOCKS_PRIMARY:
-            columns:
-                - SPK_INVEST_BLOCKSID
+#    uniqueConstraints:
+#        SPK_INVEST_BLOCKS_PRIMARY:
+#            columns:
+#                - SPK_INVEST_BLOCKSID
     id:
         spkInvestBlocksid:
             type: string

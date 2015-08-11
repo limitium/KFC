@@ -41,4 +41,96 @@ class KfTempCountryCategoryAbc
     private $market;
 
 
+
+    /**
+     * Set id
+     *
+     * @param string $id
+     * @return KfTempCountryCategoryAbc
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return string 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return KfTempCountryCategoryAbc
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set category
+     *
+     * @param string $category
+     * @return KfTempCountryCategoryAbc
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return string 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Set market
+     *
+     * @param string $market
+     * @return KfTempCountryCategoryAbc
+     */
+    public function setMarket($market)
+    {
+        $this->market = $market;
+
+        return $this;
+    }
+
+    /**
+     * Get market
+     *
+     * @return string 
+     */
+    public function getMarket()
+    {
+        return $this->market;
+    }
 }

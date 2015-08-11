@@ -34,4 +34,73 @@ class KfSysLastUpdate
     private $status;
 
 
+
+    /**
+     * Set entityid
+     *
+     * @param string $entityid
+     * @return KfSysLastUpdate
+     */
+    public function setEntityid($entityid)
+    {
+        $this->entityid = $entityid;
+
+        return $this;
+    }
+
+    /**
+     * Get entityid
+     *
+     * @return string 
+     */
+    public function getEntityid()
+    {
+        return $this->entityid;
+    }
+
+    /**
+     * Set entitytype
+     *
+     * @param string $entitytype
+     * @return KfSysLastUpdate
+     */
+    public function setEntitytype($entitytype)
+    {
+        $this->entitytype = $entitytype;
+
+        return $this;
+    }
+
+    /**
+     * Get entitytype
+     *
+     * @return string 
+     */
+    public function getEntitytype()
+    {
+        return $this->entitytype;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfSysLastUpdate
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
 }

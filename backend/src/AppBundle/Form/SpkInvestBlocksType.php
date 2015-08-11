@@ -22,14 +22,13 @@ class SpkInvestBlocksType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add("id")
             ->add("floor")
-            ->add("name")
             ->add("availableSq")
             ->add("costSqm")
             ->add("costSqmCurrency")
-            ->add("vat")
-            ->add("status");
+//            ->add("vat")
+//            ->add("status")
+        ;
     }
 
     /**
@@ -38,8 +37,9 @@ class SpkInvestBlocksType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Form\BlockDTO',
-            'csrf_protection' => false
+            'data_class' => 'AppBundle\Entity\SpkInvestBlocks',
+            'csrf_protection' => false,
+            'allow_extra_fields' => true
         ));
     }
 

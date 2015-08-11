@@ -76,4 +76,211 @@ class KfResidentilModifyid
     private $spkPhotoid;
 
 
+
+    /**
+     * Set kfResidentilModifyidid
+     *
+     * @param string $kfResidentilModifyidid
+     * @return KfResidentilModifyid
+     */
+    public function setKfResidentilModifyidid($kfResidentilModifyidid)
+    {
+        $this->kfResidentilModifyidid = $kfResidentilModifyidid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfResidentilModifyidid
+     *
+     * @return string 
+     */
+    public function getKfResidentilModifyidid()
+    {
+        return $this->kfResidentilModifyidid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfResidentilModifyid
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfResidentilModifyid
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfResidentilModifyid
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfResidentilModifyid
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set oldid
+     *
+     * @param integer $oldid
+     * @return KfResidentilModifyid
+     */
+    public function setOldid($oldid)
+    {
+        $this->oldid = $oldid;
+
+        return $this;
+    }
+
+    /**
+     * Get oldid
+     *
+     * @return integer 
+     */
+    public function getOldid()
+    {
+        return $this->oldid;
+    }
+
+    /**
+     * Set newid
+     *
+     * @param integer $newid
+     * @return KfResidentilModifyid
+     */
+    public function setNewid($newid)
+    {
+        $this->newid = $newid;
+
+        return $this;
+    }
+
+    /**
+     * Get newid
+     *
+     * @return integer 
+     */
+    public function getNewid()
+    {
+        return $this->newid;
+    }
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfResidentilModifyid
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set spkPhotoid
+     *
+     * @param string $spkPhotoid
+     * @return KfResidentilModifyid
+     */
+    public function setSpkPhotoid($spkPhotoid)
+    {
+        $this->spkPhotoid = $spkPhotoid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPhotoid
+     *
+     * @return string 
+     */
+    public function getSpkPhotoid()
+    {
+        return $this->spkPhotoid;
+    }
 }

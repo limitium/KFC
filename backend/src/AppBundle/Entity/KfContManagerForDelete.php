@@ -34,4 +34,73 @@ class KfContManagerForDelete
     private $days;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfContManagerForDelete
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfContManagerForDelete
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
+
+    /**
+     * Set days
+     *
+     * @param integer $days
+     * @return KfContManagerForDelete
+     */
+    public function setDays($days)
+    {
+        $this->days = $days;
+
+        return $this;
+    }
+
+    /**
+     * Get days
+     *
+     * @return integer 
+     */
+    public function getDays()
+    {
+        return $this->days;
+    }
 }

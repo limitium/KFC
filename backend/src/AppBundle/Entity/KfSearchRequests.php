@@ -55,4 +55,142 @@ class KfSearchRequests
     private $searchRequests;
 
 
+
+    /**
+     * Set kfSearchRequestsid
+     *
+     * @param string $kfSearchRequestsid
+     * @return KfSearchRequests
+     */
+    public function setKfSearchRequestsid($kfSearchRequestsid)
+    {
+        $this->kfSearchRequestsid = $kfSearchRequestsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfSearchRequestsid
+     *
+     * @return string 
+     */
+    public function getKfSearchRequestsid()
+    {
+        return $this->kfSearchRequestsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfSearchRequests
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfSearchRequests
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfSearchRequests
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfSearchRequests
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set searchRequests
+     *
+     * @param string $searchRequests
+     * @return KfSearchRequests
+     */
+    public function setSearchRequests($searchRequests)
+    {
+        $this->searchRequests = $searchRequests;
+
+        return $this;
+    }
+
+    /**
+     * Get searchRequests
+     *
+     * @return string 
+     */
+    public function getSearchRequests()
+    {
+        return $this->searchRequests;
+    }
 }

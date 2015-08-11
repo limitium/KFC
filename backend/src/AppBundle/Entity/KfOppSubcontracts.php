@@ -125,4 +125,372 @@ class KfOppSubcontracts
     private $notes;
 
 
+
+    /**
+     * Set kfOppSubcontractsid
+     *
+     * @param string $kfOppSubcontractsid
+     * @return KfOppSubcontracts
+     */
+    public function setKfOppSubcontractsid($kfOppSubcontractsid)
+    {
+        $this->kfOppSubcontractsid = $kfOppSubcontractsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfOppSubcontractsid
+     *
+     * @return string 
+     */
+    public function getKfOppSubcontractsid()
+    {
+        return $this->kfOppSubcontractsid;
+    }
+
+    /**
+     * Set opportunityid
+     *
+     * @param string $opportunityid
+     * @return KfOppSubcontracts
+     */
+    public function setOpportunityid($opportunityid)
+    {
+        $this->opportunityid = $opportunityid;
+
+        return $this;
+    }
+
+    /**
+     * Get opportunityid
+     *
+     * @return string 
+     */
+    public function getOpportunityid()
+    {
+        return $this->opportunityid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfOppSubcontracts
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfOppSubcontracts
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfOppSubcontracts
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfOppSubcontracts
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set scType
+     *
+     * @param string $scType
+     * @return KfOppSubcontracts
+     */
+    public function setScType($scType)
+    {
+        $this->scType = $scType;
+
+        return $this;
+    }
+
+    /**
+     * Get scType
+     *
+     * @return string 
+     */
+    public function getScType()
+    {
+        return $this->scType;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfOppSubcontracts
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set department
+     *
+     * @param string $department
+     * @return KfOppSubcontracts
+     */
+    public function setDepartment($department)
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    /**
+     * Get department
+     *
+     * @return string 
+     */
+    public function getDepartment()
+    {
+        return $this->department;
+    }
+
+    /**
+     * Set marketSegment
+     *
+     * @param string $marketSegment
+     * @return KfOppSubcontracts
+     */
+    public function setMarketSegment($marketSegment)
+    {
+        $this->marketSegment = $marketSegment;
+
+        return $this;
+    }
+
+    /**
+     * Get marketSegment
+     *
+     * @return string 
+     */
+    public function getMarketSegment()
+    {
+        return $this->marketSegment;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfOppSubcontracts
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
+
+    /**
+     * Set potentialSum
+     *
+     * @param string $potentialSum
+     * @return KfOppSubcontracts
+     */
+    public function setPotentialSum($potentialSum)
+    {
+        $this->potentialSum = $potentialSum;
+
+        return $this;
+    }
+
+    /**
+     * Get potentialSum
+     *
+     * @return string 
+     */
+    public function getPotentialSum()
+    {
+        return $this->potentialSum;
+    }
+
+    /**
+     * Set actualSum
+     *
+     * @param string $actualSum
+     * @return KfOppSubcontracts
+     */
+    public function setActualSum($actualSum)
+    {
+        $this->actualSum = $actualSum;
+
+        return $this;
+    }
+
+    /**
+     * Get actualSum
+     *
+     * @return string 
+     */
+    public function getActualSum()
+    {
+        return $this->actualSum;
+    }
+
+    /**
+     * Set forecastDate
+     *
+     * @param \DateTime $forecastDate
+     * @return KfOppSubcontracts
+     */
+    public function setForecastDate($forecastDate)
+    {
+        $this->forecastDate = $forecastDate;
+
+        return $this;
+    }
+
+    /**
+     * Get forecastDate
+     *
+     * @return \DateTime 
+     */
+    public function getForecastDate()
+    {
+        return $this->forecastDate;
+    }
+
+    /**
+     * Set actualDate
+     *
+     * @param \DateTime $actualDate
+     * @return KfOppSubcontracts
+     */
+    public function setActualDate($actualDate)
+    {
+        $this->actualDate = $actualDate;
+
+        return $this;
+    }
+
+    /**
+     * Get actualDate
+     *
+     * @return \DateTime 
+     */
+    public function getActualDate()
+    {
+        return $this->actualDate;
+    }
+
+    /**
+     * Set notes
+     *
+     * @param string $notes
+     * @return KfOppSubcontracts
+     */
+    public function setNotes($notes)
+    {
+        $this->notes = $notes;
+
+        return $this;
+    }
+
+    /**
+     * Get notes
+     *
+     * @return string 
+     */
+    public function getNotes()
+    {
+        return $this->notes;
+    }
 }

@@ -62,4 +62,165 @@ class KfTempContactEmails
     private $email;
 
 
+
+    /**
+     * Set kfTempContactEmailsid
+     *
+     * @param string $kfTempContactEmailsid
+     * @return KfTempContactEmails
+     */
+    public function setKfTempContactEmailsid($kfTempContactEmailsid)
+    {
+        $this->kfTempContactEmailsid = $kfTempContactEmailsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfTempContactEmailsid
+     *
+     * @return string 
+     */
+    public function getKfTempContactEmailsid()
+    {
+        return $this->kfTempContactEmailsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfTempContactEmails
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfTempContactEmails
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfTempContactEmails
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfTempContactEmails
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfTempContactEmails
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     * @return KfTempContactEmails
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string 
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
 }

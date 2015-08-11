@@ -6,6 +6,7 @@ use AppBundle\Entity\SpkInvestment;
 use AppBundle\Form\SpkInvestmentDTO;
 use AppBundle\Form\SpkInvestmentType;
 use AppBundle\Form\TestDTO;
+use AppBundle\Service\InvestmentService;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\View\View;
 use JMS\DiExtraBundle\Annotation as DI;
@@ -54,19 +55,26 @@ class InvestController extends Controller
      */
     public function postInvestmentAction(Request $request)
     {
-        $investment = new SpkInvestmentDTO();
+        $investment = new SpkInvestment();
         $form = $this->createForm(new SpkInvestmentType(), $investment);
         return $this->processForm($form, $request, $investment);
     }
 
-    private function processForm(Form $form, Request $request, SpkInvestmentDTO $investment)
+    private function processForm(Form $form, Request $request, SpkInvestment $investment)
     {
 
         $form->handleRequest($request);
 
         if ($form->isValid()) {
             $statusCode = $investment->getId() ? 204 : 201;
-            $resultInvestment = $this->investmentService->saveOrUpdate($investment);
+
+            $em = $this->getDoctrine()->getManager();
+            foreach($investment->getBlocks() as $block){
+                $block->setInvestment($investment);
+            }
+
+            $em->persist($investment);
+            $em->flush();
 
             $response = new Response();
             $response->setStatusCode($statusCode);
@@ -74,7 +82,7 @@ class InvestController extends Controller
             if ($statusCode == 201) {
                 $response->headers->set('Location',
                     $this->generateUrl(
-                        'get_investment', array('investment' => $resultInvestment->getId()),
+                        'get_investment', array('investment' => $investment->getId()),
                         true // absolute
                     )
                 );

@@ -62,4 +62,165 @@ class KfAccountManagers
     private $managerid;
 
 
+
+    /**
+     * Set kfAccountManagersid
+     *
+     * @param string $kfAccountManagersid
+     * @return KfAccountManagers
+     */
+    public function setKfAccountManagersid($kfAccountManagersid)
+    {
+        $this->kfAccountManagersid = $kfAccountManagersid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfAccountManagersid
+     *
+     * @return string 
+     */
+    public function getKfAccountManagersid()
+    {
+        return $this->kfAccountManagersid;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfAccountManagers
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfAccountManagers
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfAccountManagers
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfAccountManagers
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfAccountManagers
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfAccountManagers
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
 }

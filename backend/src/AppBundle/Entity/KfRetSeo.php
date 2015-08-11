@@ -97,4 +97,280 @@ class KfRetSeo
     private $siteNameEng;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfRetSeo
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfRetSeo
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfRetSeo
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfRetSeo
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfRetSeo
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfRetSeo
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return KfRetSeo
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * Set metaKeywords
+     *
+     * @param string $metaKeywords
+     * @return KfRetSeo
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->metaKeywords = $metaKeywords;
+
+        return $this;
+    }
+
+    /**
+     * Get metaKeywords
+     *
+     * @return string 
+     */
+    public function getMetaKeywords()
+    {
+        return $this->metaKeywords;
+    }
+
+    /**
+     * Set metaDescription
+     *
+     * @param string $metaDescription
+     * @return KfRetSeo
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->metaDescription = $metaDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get metaDescription
+     *
+     * @return string 
+     */
+    public function getMetaDescription()
+    {
+        return $this->metaDescription;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return KfRetSeo
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set siteNameRus
+     *
+     * @param string $siteNameRus
+     * @return KfRetSeo
+     */
+    public function setSiteNameRus($siteNameRus)
+    {
+        $this->siteNameRus = $siteNameRus;
+
+        return $this;
+    }
+
+    /**
+     * Get siteNameRus
+     *
+     * @return string 
+     */
+    public function getSiteNameRus()
+    {
+        return $this->siteNameRus;
+    }
+
+    /**
+     * Set siteNameEng
+     *
+     * @param string $siteNameEng
+     * @return KfRetSeo
+     */
+    public function setSiteNameEng($siteNameEng)
+    {
+        $this->siteNameEng = $siteNameEng;
+
+        return $this;
+    }
+
+    /**
+     * Get siteNameEng
+     *
+     * @return string 
+     */
+    public function getSiteNameEng()
+    {
+        return $this->siteNameEng;
+    }
 }

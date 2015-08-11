@@ -69,4 +69,188 @@ class AreaProfile
     private $profilenamerus;
 
 
+
+    /**
+     * Set areaProfileid
+     *
+     * @param string $areaProfileid
+     * @return AreaProfile
+     */
+    public function setAreaProfileid($areaProfileid)
+    {
+        $this->areaProfileid = $areaProfileid;
+
+        return $this;
+    }
+
+    /**
+     * Get areaProfileid
+     *
+     * @return string 
+     */
+    public function getAreaProfileid()
+    {
+        return $this->areaProfileid;
+    }
+
+    /**
+     * Set areaid
+     *
+     * @param string $areaid
+     * @return AreaProfile
+     */
+    public function setAreaid($areaid)
+    {
+        $this->areaid = $areaid;
+
+        return $this;
+    }
+
+    /**
+     * Get areaid
+     *
+     * @return string 
+     */
+    public function getAreaid()
+    {
+        return $this->areaid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return AreaProfile
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return AreaProfile
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return AreaProfile
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return AreaProfile
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set profilename
+     *
+     * @param string $profilename
+     * @return AreaProfile
+     */
+    public function setProfilename($profilename)
+    {
+        $this->profilename = $profilename;
+
+        return $this;
+    }
+
+    /**
+     * Get profilename
+     *
+     * @return string 
+     */
+    public function getProfilename()
+    {
+        return $this->profilename;
+    }
+
+    /**
+     * Set profilenamerus
+     *
+     * @param string $profilenamerus
+     * @return AreaProfile
+     */
+    public function setProfilenamerus($profilenamerus)
+    {
+        $this->profilenamerus = $profilenamerus;
+
+        return $this;
+    }
+
+    /**
+     * Get profilenamerus
+     *
+     * @return string 
+     */
+    public function getProfilenamerus()
+    {
+        return $this->profilenamerus;
+    }
 }

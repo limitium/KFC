@@ -69,4 +69,188 @@ class KfCampaignBounce
     private $status;
 
 
+
+    /**
+     * Set kfCampaignBounceid
+     *
+     * @param string $kfCampaignBounceid
+     * @return KfCampaignBounce
+     */
+    public function setKfCampaignBounceid($kfCampaignBounceid)
+    {
+        $this->kfCampaignBounceid = $kfCampaignBounceid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfCampaignBounceid
+     *
+     * @return string 
+     */
+    public function getKfCampaignBounceid()
+    {
+        return $this->kfCampaignBounceid;
+    }
+
+    /**
+     * Set campaignid
+     *
+     * @param string $campaignid
+     * @return KfCampaignBounce
+     */
+    public function setCampaignid($campaignid)
+    {
+        $this->campaignid = $campaignid;
+
+        return $this;
+    }
+
+    /**
+     * Get campaignid
+     *
+     * @return string 
+     */
+    public function getCampaignid()
+    {
+        return $this->campaignid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfCampaignBounce
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfCampaignBounce
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfCampaignBounce
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfCampaignBounce
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfCampaignBounce
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfCampaignBounce
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
 }

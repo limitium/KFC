@@ -40,7 +40,7 @@ class SpkLandlordsType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'appbundle\Form\LandlordDTO',
+            'data_class' => 'AppBundle\Form\LandlordDTO',
             'csrf_protection' => false
         ));
     }

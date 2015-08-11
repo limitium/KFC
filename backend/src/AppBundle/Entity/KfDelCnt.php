@@ -27,4 +27,50 @@ class KfDelCnt
     private $seccodeid;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfDelCnt
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfDelCnt
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
 }

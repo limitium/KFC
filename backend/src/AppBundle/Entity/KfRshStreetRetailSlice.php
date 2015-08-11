@@ -76,4 +76,211 @@ class KfRshStreetRetailSlice
     private $createdate;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfRshStreetRetailSlice
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     * @return KfRshStreetRetailSlice
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfRshStreetRetailSlice
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set target
+     *
+     * @param string $target
+     * @return KfRshStreetRetailSlice
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+
+        return $this;
+    }
+
+    /**
+     * Get target
+     *
+     * @return string 
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+
+    /**
+     * Set tradeArea
+     *
+     * @param float $tradeArea
+     * @return KfRshStreetRetailSlice
+     */
+    public function setTradeArea($tradeArea)
+    {
+        $this->tradeArea = $tradeArea;
+
+        return $this;
+    }
+
+    /**
+     * Get tradeArea
+     *
+     * @return float 
+     */
+    public function getTradeArea()
+    {
+        return $this->tradeArea;
+    }
+
+    /**
+     * Set buildingStage
+     *
+     * @param string $buildingStage
+     * @return KfRshStreetRetailSlice
+     */
+    public function setBuildingStage($buildingStage)
+    {
+        $this->buildingStage = $buildingStage;
+
+        return $this;
+    }
+
+    /**
+     * Get buildingStage
+     *
+     * @return string 
+     */
+    public function getBuildingStage()
+    {
+        return $this->buildingStage;
+    }
+
+    /**
+     * Set avgDefaultRate
+     *
+     * @param string $avgDefaultRate
+     * @return KfRshStreetRetailSlice
+     */
+    public function setAvgDefaultRate($avgDefaultRate)
+    {
+        $this->avgDefaultRate = $avgDefaultRate;
+
+        return $this;
+    }
+
+    /**
+     * Get avgDefaultRate
+     *
+     * @return string 
+     */
+    public function getAvgDefaultRate()
+    {
+        return $this->avgDefaultRate;
+    }
+
+    /**
+     * Set avgDefaultCost
+     *
+     * @param string $avgDefaultCost
+     * @return KfRshStreetRetailSlice
+     */
+    public function setAvgDefaultCost($avgDefaultCost)
+    {
+        $this->avgDefaultCost = $avgDefaultCost;
+
+        return $this;
+    }
+
+    /**
+     * Get avgDefaultCost
+     *
+     * @return string 
+     */
+    public function getAvgDefaultCost()
+    {
+        return $this->avgDefaultCost;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfRshStreetRetailSlice
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
 }

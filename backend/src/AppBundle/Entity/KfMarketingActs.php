@@ -146,4 +146,441 @@ class KfMarketingActs
     private $contactid;
 
 
+
+    /**
+     * Set kfMarketingActsid
+     *
+     * @param string $kfMarketingActsid
+     * @return KfMarketingActs
+     */
+    public function setKfMarketingActsid($kfMarketingActsid)
+    {
+        $this->kfMarketingActsid = $kfMarketingActsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketingActsid
+     *
+     * @return string 
+     */
+    public function getKfMarketingActsid()
+    {
+        return $this->kfMarketingActsid;
+    }
+
+    /**
+     * Set kfMarketingProjectsid
+     *
+     * @param string $kfMarketingProjectsid
+     * @return KfMarketingActs
+     */
+    public function setKfMarketingProjectsid($kfMarketingProjectsid)
+    {
+        $this->kfMarketingProjectsid = $kfMarketingProjectsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketingProjectsid
+     *
+     * @return string 
+     */
+    public function getKfMarketingProjectsid()
+    {
+        return $this->kfMarketingProjectsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfMarketingActs
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfMarketingActs
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfMarketingActs
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfMarketingActs
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set actType
+     *
+     * @param string $actType
+     * @return KfMarketingActs
+     */
+    public function setActType($actType)
+    {
+        $this->actType = $actType;
+
+        return $this;
+    }
+
+    /**
+     * Get actType
+     *
+     * @return string 
+     */
+    public function getActType()
+    {
+        return $this->actType;
+    }
+
+    /**
+     * Set actNumber
+     *
+     * @param string $actNumber
+     * @return KfMarketingActs
+     */
+    public function setActNumber($actNumber)
+    {
+        $this->actNumber = $actNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get actNumber
+     *
+     * @return string 
+     */
+    public function getActNumber()
+    {
+        return $this->actNumber;
+    }
+
+    /**
+     * Set contractor
+     *
+     * @param string $contractor
+     * @return KfMarketingActs
+     */
+    public function setContractor($contractor)
+    {
+        $this->contractor = $contractor;
+
+        return $this;
+    }
+
+    /**
+     * Get contractor
+     *
+     * @return string 
+     */
+    public function getContractor()
+    {
+        return $this->contractor;
+    }
+
+    /**
+     * Set estimatedSignDate
+     *
+     * @param \DateTime $estimatedSignDate
+     * @return KfMarketingActs
+     */
+    public function setEstimatedSignDate($estimatedSignDate)
+    {
+        $this->estimatedSignDate = $estimatedSignDate;
+
+        return $this;
+    }
+
+    /**
+     * Get estimatedSignDate
+     *
+     * @return \DateTime 
+     */
+    public function getEstimatedSignDate()
+    {
+        return $this->estimatedSignDate;
+    }
+
+    /**
+     * Set signDate
+     *
+     * @param \DateTime $signDate
+     * @return KfMarketingActs
+     */
+    public function setSignDate($signDate)
+    {
+        $this->signDate = $signDate;
+
+        return $this;
+    }
+
+    /**
+     * Get signDate
+     *
+     * @return \DateTime 
+     */
+    public function getSignDate()
+    {
+        return $this->signDate;
+    }
+
+    /**
+     * Set services
+     *
+     * @param string $services
+     * @return KfMarketingActs
+     */
+    public function setServices($services)
+    {
+        $this->services = $services;
+
+        return $this;
+    }
+
+    /**
+     * Get services
+     *
+     * @return string 
+     */
+    public function getServices()
+    {
+        return $this->services;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfMarketingActs
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set kfCommission
+     *
+     * @param float $kfCommission
+     * @return KfMarketingActs
+     */
+    public function setKfCommission($kfCommission)
+    {
+        $this->kfCommission = $kfCommission;
+
+        return $this;
+    }
+
+    /**
+     * Get kfCommission
+     *
+     * @return float 
+     */
+    public function getKfCommission()
+    {
+        return $this->kfCommission;
+    }
+
+    /**
+     * Set actAmount
+     *
+     * @param float $actAmount
+     * @return KfMarketingActs
+     */
+    public function setActAmount($actAmount)
+    {
+        $this->actAmount = $actAmount;
+
+        return $this;
+    }
+
+    /**
+     * Get actAmount
+     *
+     * @return float 
+     */
+    public function getActAmount()
+    {
+        return $this->actAmount;
+    }
+
+    /**
+     * Set actVat
+     *
+     * @param float $actVat
+     * @return KfMarketingActs
+     */
+    public function setActVat($actVat)
+    {
+        $this->actVat = $actVat;
+
+        return $this;
+    }
+
+    /**
+     * Get actVat
+     *
+     * @return float 
+     */
+    public function getActVat()
+    {
+        return $this->actVat;
+    }
+
+    /**
+     * Set typeVat
+     *
+     * @param string $typeVat
+     * @return KfMarketingActs
+     */
+    public function setTypeVat($typeVat)
+    {
+        $this->typeVat = $typeVat;
+
+        return $this;
+    }
+
+    /**
+     * Get typeVat
+     *
+     * @return string 
+     */
+    public function getTypeVat()
+    {
+        return $this->typeVat;
+    }
+
+    /**
+     * Set currentuser
+     *
+     * @param string $currentuser
+     * @return KfMarketingActs
+     */
+    public function setCurrentuser($currentuser)
+    {
+        $this->currentuser = $currentuser;
+
+        return $this;
+    }
+
+    /**
+     * Get currentuser
+     *
+     * @return string 
+     */
+    public function getCurrentuser()
+    {
+        return $this->currentuser;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfMarketingActs
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
 }

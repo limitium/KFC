@@ -27,4 +27,50 @@ class KfAdditionalHfUsers
     private $userid;
 
 
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfAdditionalHfUsers
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
+
+    /**
+     * Set userid
+     *
+     * @param string $userid
+     * @return KfAdditionalHfUsers
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+
+        return $this;
+    }
+
+    /**
+     * Get userid
+     *
+     * @return string 
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
 }

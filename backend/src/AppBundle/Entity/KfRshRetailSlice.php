@@ -146,4 +146,441 @@ class KfRshRetailSlice
     private $createdate;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfRshRetailSlice
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     * @return KfRshRetailSlice
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set totalArea
+     *
+     * @param float $totalArea
+     * @return KfRshRetailSlice
+     */
+    public function setTotalArea($totalArea)
+    {
+        $this->totalArea = $totalArea;
+
+        return $this;
+    }
+
+    /**
+     * Get totalArea
+     *
+     * @return float 
+     */
+    public function getTotalArea()
+    {
+        return $this->totalArea;
+    }
+
+    /**
+     * Set leaseArea
+     *
+     * @param float $leaseArea
+     * @return KfRshRetailSlice
+     */
+    public function setLeaseArea($leaseArea)
+    {
+        $this->leaseArea = $leaseArea;
+
+        return $this;
+    }
+
+    /**
+     * Get leaseArea
+     *
+     * @return float 
+     */
+    public function getLeaseArea()
+    {
+        return $this->leaseArea;
+    }
+
+    /**
+     * Set buildingStage
+     *
+     * @param string $buildingStage
+     * @return KfRshRetailSlice
+     */
+    public function setBuildingStage($buildingStage)
+    {
+        $this->buildingStage = $buildingStage;
+
+        return $this;
+    }
+
+    /**
+     * Get buildingStage
+     *
+     * @return string 
+     */
+    public function getBuildingStage()
+    {
+        return $this->buildingStage;
+    }
+
+    /**
+     * Set minRateBig
+     *
+     * @param string $minRateBig
+     * @return KfRshRetailSlice
+     */
+    public function setMinRateBig($minRateBig)
+    {
+        $this->minRateBig = $minRateBig;
+
+        return $this;
+    }
+
+    /**
+     * Get minRateBig
+     *
+     * @return string 
+     */
+    public function getMinRateBig()
+    {
+        return $this->minRateBig;
+    }
+
+    /**
+     * Set maxRateBig
+     *
+     * @param string $maxRateBig
+     * @return KfRshRetailSlice
+     */
+    public function setMaxRateBig($maxRateBig)
+    {
+        $this->maxRateBig = $maxRateBig;
+
+        return $this;
+    }
+
+    /**
+     * Get maxRateBig
+     *
+     * @return string 
+     */
+    public function getMaxRateBig()
+    {
+        return $this->maxRateBig;
+    }
+
+    /**
+     * Set minRateLit
+     *
+     * @param string $minRateLit
+     * @return KfRshRetailSlice
+     */
+    public function setMinRateLit($minRateLit)
+    {
+        $this->minRateLit = $minRateLit;
+
+        return $this;
+    }
+
+    /**
+     * Get minRateLit
+     *
+     * @return string 
+     */
+    public function getMinRateLit()
+    {
+        return $this->minRateLit;
+    }
+
+    /**
+     * Set maxRateLit
+     *
+     * @param string $maxRateLit
+     * @return KfRshRetailSlice
+     */
+    public function setMaxRateLit($maxRateLit)
+    {
+        $this->maxRateLit = $maxRateLit;
+
+        return $this;
+    }
+
+    /**
+     * Get maxRateLit
+     *
+     * @return string 
+     */
+    public function getMaxRateLit()
+    {
+        return $this->maxRateLit;
+    }
+
+    /**
+     * Set minRateChild
+     *
+     * @param string $minRateChild
+     * @return KfRshRetailSlice
+     */
+    public function setMinRateChild($minRateChild)
+    {
+        $this->minRateChild = $minRateChild;
+
+        return $this;
+    }
+
+    /**
+     * Get minRateChild
+     *
+     * @return string 
+     */
+    public function getMinRateChild()
+    {
+        return $this->minRateChild;
+    }
+
+    /**
+     * Set maxRateChild
+     *
+     * @param string $maxRateChild
+     * @return KfRshRetailSlice
+     */
+    public function setMaxRateChild($maxRateChild)
+    {
+        $this->maxRateChild = $maxRateChild;
+
+        return $this;
+    }
+
+    /**
+     * Get maxRateChild
+     *
+     * @return string 
+     */
+    public function getMaxRateChild()
+    {
+        return $this->maxRateChild;
+    }
+
+    /**
+     * Set minRateShoues
+     *
+     * @param string $minRateShoues
+     * @return KfRshRetailSlice
+     */
+    public function setMinRateShoues($minRateShoues)
+    {
+        $this->minRateShoues = $minRateShoues;
+
+        return $this;
+    }
+
+    /**
+     * Get minRateShoues
+     *
+     * @return string 
+     */
+    public function getMinRateShoues()
+    {
+        return $this->minRateShoues;
+    }
+
+    /**
+     * Set maxRateShoues
+     *
+     * @param string $maxRateShoues
+     * @return KfRshRetailSlice
+     */
+    public function setMaxRateShoues($maxRateShoues)
+    {
+        $this->maxRateShoues = $maxRateShoues;
+
+        return $this;
+    }
+
+    /**
+     * Get maxRateShoues
+     *
+     * @return string 
+     */
+    public function getMaxRateShoues()
+    {
+        return $this->maxRateShoues;
+    }
+
+    /**
+     * Set minRateLeather
+     *
+     * @param string $minRateLeather
+     * @return KfRshRetailSlice
+     */
+    public function setMinRateLeather($minRateLeather)
+    {
+        $this->minRateLeather = $minRateLeather;
+
+        return $this;
+    }
+
+    /**
+     * Get minRateLeather
+     *
+     * @return string 
+     */
+    public function getMinRateLeather()
+    {
+        return $this->minRateLeather;
+    }
+
+    /**
+     * Set maxRateLeather
+     *
+     * @param string $maxRateLeather
+     * @return KfRshRetailSlice
+     */
+    public function setMaxRateLeather($maxRateLeather)
+    {
+        $this->maxRateLeather = $maxRateLeather;
+
+        return $this;
+    }
+
+    /**
+     * Get maxRateLeather
+     *
+     * @return string 
+     */
+    public function getMaxRateLeather()
+    {
+        return $this->maxRateLeather;
+    }
+
+    /**
+     * Set sredVzvLitAnch
+     *
+     * @param float $sredVzvLitAnch
+     * @return KfRshRetailSlice
+     */
+    public function setSredVzvLitAnch($sredVzvLitAnch)
+    {
+        $this->sredVzvLitAnch = $sredVzvLitAnch;
+
+        return $this;
+    }
+
+    /**
+     * Get sredVzvLitAnch
+     *
+     * @return float 
+     */
+    public function getSredVzvLitAnch()
+    {
+        return $this->sredVzvLitAnch;
+    }
+
+    /**
+     * Set sredVzvBigAnch
+     *
+     * @param float $sredVzvBigAnch
+     * @return KfRshRetailSlice
+     */
+    public function setSredVzvBigAnch($sredVzvBigAnch)
+    {
+        $this->sredVzvBigAnch = $sredVzvBigAnch;
+
+        return $this;
+    }
+
+    /**
+     * Get sredVzvBigAnch
+     *
+     * @return float 
+     */
+    public function getSredVzvBigAnch()
+    {
+        return $this->sredVzvBigAnch;
+    }
+
+    /**
+     * Set avgSaleCost
+     *
+     * @param string $avgSaleCost
+     * @return KfRshRetailSlice
+     */
+    public function setAvgSaleCost($avgSaleCost)
+    {
+        $this->avgSaleCost = $avgSaleCost;
+
+        return $this;
+    }
+
+    /**
+     * Get avgSaleCost
+     *
+     * @return string 
+     */
+    public function getAvgSaleCost()
+    {
+        return $this->avgSaleCost;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfRshRetailSlice
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
 }

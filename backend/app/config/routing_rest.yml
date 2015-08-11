@@ -1,6 +1,10 @@
 invest:
     type:     rest
     resource: AppBundle\Controller\InvestController
+photo:
+    type:     rest
+    parent:   invest
+    resource: AppBundle\Controller\PhotoController
 picklist:
     type:     rest
     resource: AppBundle\Controller\PickListController

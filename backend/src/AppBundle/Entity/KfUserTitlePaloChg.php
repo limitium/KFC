@@ -76,4 +76,211 @@ class KfUserTitlePaloChg
     private $changeDate;
 
 
+
+    /**
+     * Set kfUserTitlePaloChgid
+     *
+     * @param string $kfUserTitlePaloChgid
+     * @return KfUserTitlePaloChg
+     */
+    public function setKfUserTitlePaloChgid($kfUserTitlePaloChgid)
+    {
+        $this->kfUserTitlePaloChgid = $kfUserTitlePaloChgid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfUserTitlePaloChgid
+     *
+     * @return string 
+     */
+    public function getKfUserTitlePaloChgid()
+    {
+        return $this->kfUserTitlePaloChgid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfUserTitlePaloChg
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfUserTitlePaloChg
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfUserTitlePaloChg
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfUserTitlePaloChg
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set userid
+     *
+     * @param string $userid
+     * @return KfUserTitlePaloChg
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+
+        return $this;
+    }
+
+    /**
+     * Get userid
+     *
+     * @return string 
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * Set department
+     *
+     * @param string $department
+     * @return KfUserTitlePaloChg
+     */
+    public function setDepartment($department)
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    /**
+     * Get department
+     *
+     * @return string 
+     */
+    public function getDepartment()
+    {
+        return $this->department;
+    }
+
+    /**
+     * Set division
+     *
+     * @param string $division
+     * @return KfUserTitlePaloChg
+     */
+    public function setDivision($division)
+    {
+        $this->division = $division;
+
+        return $this;
+    }
+
+    /**
+     * Get division
+     *
+     * @return string 
+     */
+    public function getDivision()
+    {
+        return $this->division;
+    }
+
+    /**
+     * Set changeDate
+     *
+     * @param \DateTime $changeDate
+     * @return KfUserTitlePaloChg
+     */
+    public function setChangeDate($changeDate)
+    {
+        $this->changeDate = $changeDate;
+
+        return $this;
+    }
+
+    /**
+     * Get changeDate
+     *
+     * @return \DateTime 
+     */
+    public function getChangeDate()
+    {
+        return $this->changeDate;
+    }
 }

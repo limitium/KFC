@@ -27,4 +27,50 @@ class KfTypeStreets
     private $gender;
 
 
+
+    /**
+     * Set streetTypeRus
+     *
+     * @param string $streetTypeRus
+     * @return KfTypeStreets
+     */
+    public function setStreetTypeRus($streetTypeRus)
+    {
+        $this->streetTypeRus = $streetTypeRus;
+
+        return $this;
+    }
+
+    /**
+     * Get streetTypeRus
+     *
+     * @return string 
+     */
+    public function getStreetTypeRus()
+    {
+        return $this->streetTypeRus;
+    }
+
+    /**
+     * Set gender
+     *
+     * @param integer $gender
+     * @return KfTypeStreets
+     */
+    public function setGender($gender)
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    /**
+     * Get gender
+     *
+     * @return integer 
+     */
+    public function getGender()
+    {
+        return $this->gender;
+    }
 }

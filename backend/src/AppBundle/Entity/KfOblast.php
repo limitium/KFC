@@ -131,4 +131,108 @@ class KfOblast
     {
         return $this->intareaid;
     }
+
+    /**
+     * Set kfOblastid
+     *
+     * @param string $kfOblastid
+     * @return KfOblast
+     */
+    public function setKfOblastid($kfOblastid)
+    {
+        $this->kfOblastid = $kfOblastid;
+
+        return $this;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfOblast
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfOblast
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfOblast
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfOblast
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Set oblastRus
+     *
+     * @param string $oblastRus
+     * @return KfOblast
+     */
+    public function setOblastRus($oblastRus)
+    {
+        $this->oblastRus = $oblastRus;
+
+        return $this;
+    }
+
+    /**
+     * Set oblastEng
+     *
+     * @param string $oblastEng
+     * @return KfOblast
+     */
+    public function setOblastEng($oblastEng)
+    {
+        $this->oblastEng = $oblastEng;
+
+        return $this;
+    }
+
+    /**
+     * Set intareaid
+     *
+     * @param integer $intareaid
+     * @return KfOblast
+     */
+    public function setIntareaid($intareaid)
+    {
+        $this->intareaid = $intareaid;
+
+        return $this;
+    }
 }

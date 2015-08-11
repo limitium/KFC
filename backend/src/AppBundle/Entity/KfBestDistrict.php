@@ -27,4 +27,50 @@ class KfBestDistrict
     private $metroid;
 
 
+
+    /**
+     * Set bestid
+     *
+     * @param string $bestid
+     * @return KfBestDistrict
+     */
+    public function setBestid($bestid)
+    {
+        $this->bestid = $bestid;
+
+        return $this;
+    }
+
+    /**
+     * Get bestid
+     *
+     * @return string 
+     */
+    public function getBestid()
+    {
+        return $this->bestid;
+    }
+
+    /**
+     * Set metroid
+     *
+     * @param string $metroid
+     * @return KfBestDistrict
+     */
+    public function setMetroid($metroid)
+    {
+        $this->metroid = $metroid;
+
+        return $this;
+    }
+
+    /**
+     * Get metroid
+     *
+     * @return string 
+     */
+    public function getMetroid()
+    {
+        return $this->metroid;
+    }
 }

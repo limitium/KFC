@@ -29,7 +29,7 @@ class SpkDescriptionType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'appbundle\Form\DescriptionDTO',
+            'data_class' => 'AppBundle\Form\DescriptionDTO',
             'csrf_protection' => false
         ));
     }

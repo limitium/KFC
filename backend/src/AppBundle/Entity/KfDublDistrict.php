@@ -34,4 +34,73 @@ class KfDublDistrict
     private $spkParentDistrictid;
 
 
+
+    /**
+     * Set districtRus
+     *
+     * @param string $districtRus
+     * @return KfDublDistrict
+     */
+    public function setDistrictRus($districtRus)
+    {
+        $this->districtRus = $districtRus;
+
+        return $this;
+    }
+
+    /**
+     * Get districtRus
+     *
+     * @return string 
+     */
+    public function getDistrictRus()
+    {
+        return $this->districtRus;
+    }
+
+    /**
+     * Set spkDistrictid
+     *
+     * @param string $spkDistrictid
+     * @return KfDublDistrict
+     */
+    public function setSpkDistrictid($spkDistrictid)
+    {
+        $this->spkDistrictid = $spkDistrictid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkDistrictid
+     *
+     * @return string 
+     */
+    public function getSpkDistrictid()
+    {
+        return $this->spkDistrictid;
+    }
+
+    /**
+     * Set spkParentDistrictid
+     *
+     * @param string $spkParentDistrictid
+     * @return KfDublDistrict
+     */
+    public function setSpkParentDistrictid($spkParentDistrictid)
+    {
+        $this->spkParentDistrictid = $spkParentDistrictid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkParentDistrictid
+     *
+     * @return string 
+     */
+    public function getSpkParentDistrictid()
+    {
+        return $this->spkParentDistrictid;
+    }
 }

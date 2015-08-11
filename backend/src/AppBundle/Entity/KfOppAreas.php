@@ -62,4 +62,165 @@ class KfOppAreas
     private $spkAreaid;
 
 
+
+    /**
+     * Set kfOppAreasid
+     *
+     * @param string $kfOppAreasid
+     * @return KfOppAreas
+     */
+    public function setKfOppAreasid($kfOppAreasid)
+    {
+        $this->kfOppAreasid = $kfOppAreasid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfOppAreasid
+     *
+     * @return string 
+     */
+    public function getKfOppAreasid()
+    {
+        return $this->kfOppAreasid;
+    }
+
+    /**
+     * Set opportunityid
+     *
+     * @param string $opportunityid
+     * @return KfOppAreas
+     */
+    public function setOpportunityid($opportunityid)
+    {
+        $this->opportunityid = $opportunityid;
+
+        return $this;
+    }
+
+    /**
+     * Get opportunityid
+     *
+     * @return string 
+     */
+    public function getOpportunityid()
+    {
+        return $this->opportunityid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfOppAreas
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfOppAreas
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfOppAreas
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfOppAreas
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set spkAreaid
+     *
+     * @param string $spkAreaid
+     * @return KfOppAreas
+     */
+    public function setSpkAreaid($spkAreaid)
+    {
+        $this->spkAreaid = $spkAreaid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkAreaid
+     *
+     * @return string 
+     */
+    public function getSpkAreaid()
+    {
+        return $this->spkAreaid;
+    }
 }

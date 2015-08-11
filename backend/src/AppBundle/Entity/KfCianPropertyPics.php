@@ -83,4 +83,234 @@ class KfCianPropertyPics
     private $ptype;
 
 
+
+    /**
+     * Set id
+     *
+     * @param string $id
+     * @return KfCianPropertyPics
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return string 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set slxId
+     *
+     * @param string $slxId
+     * @return KfCianPropertyPics
+     */
+    public function setSlxId($slxId)
+    {
+        $this->slxId = $slxId;
+
+        return $this;
+    }
+
+    /**
+     * Get slxId
+     *
+     * @return string 
+     */
+    public function getSlxId()
+    {
+        return $this->slxId;
+    }
+
+    /**
+     * Set kfId
+     *
+     * @param string $kfId
+     * @return KfCianPropertyPics
+     */
+    public function setKfId($kfId)
+    {
+        $this->kfId = $kfId;
+
+        return $this;
+    }
+
+    /**
+     * Get kfId
+     *
+     * @return string 
+     */
+    public function getKfId()
+    {
+        return $this->kfId;
+    }
+
+    /**
+     * Set gpsId
+     *
+     * @param string $gpsId
+     * @return KfCianPropertyPics
+     */
+    public function setGpsId($gpsId)
+    {
+        $this->gpsId = $gpsId;
+
+        return $this;
+    }
+
+    /**
+     * Get gpsId
+     *
+     * @return string 
+     */
+    public function getGpsId()
+    {
+        return $this->gpsId;
+    }
+
+    /**
+     * Set photoId
+     *
+     * @param string $photoId
+     * @return KfCianPropertyPics
+     */
+    public function setPhotoId($photoId)
+    {
+        $this->photoId = $photoId;
+
+        return $this;
+    }
+
+    /**
+     * Get photoId
+     *
+     * @return string 
+     */
+    public function getPhotoId()
+    {
+        return $this->photoId;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfCianPropertyPics
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set serverLink
+     *
+     * @param string $serverLink
+     * @return KfCianPropertyPics
+     */
+    public function setServerLink($serverLink)
+    {
+        $this->serverLink = $serverLink;
+
+        return $this;
+    }
+
+    /**
+     * Get serverLink
+     *
+     * @return string 
+     */
+    public function getServerLink()
+    {
+        return $this->serverLink;
+    }
+
+    /**
+     * Set fileSize
+     *
+     * @param string $fileSize
+     * @return KfCianPropertyPics
+     */
+    public function setFileSize($fileSize)
+    {
+        $this->fileSize = $fileSize;
+
+        return $this;
+    }
+
+    /**
+     * Get fileSize
+     *
+     * @return string 
+     */
+    public function getFileSize()
+    {
+        return $this->fileSize;
+    }
+
+    /**
+     * Set export
+     *
+     * @param string $export
+     * @return KfCianPropertyPics
+     */
+    public function setExport($export)
+    {
+        $this->export = $export;
+
+        return $this;
+    }
+
+    /**
+     * Get export
+     *
+     * @return string 
+     */
+    public function getExport()
+    {
+        return $this->export;
+    }
+
+    /**
+     * Set ptype
+     *
+     * @param string $ptype
+     * @return KfCianPropertyPics
+     */
+    public function setPtype($ptype)
+    {
+        $this->ptype = $ptype;
+
+        return $this;
+    }
+
+    /**
+     * Get ptype
+     *
+     * @return string 
+     */
+    public function getPtype()
+    {
+        return $this->ptype;
+    }
 }

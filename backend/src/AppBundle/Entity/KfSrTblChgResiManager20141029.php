@@ -55,4 +55,142 @@ class KfSrTblChgResiManager20141029
     private $newmanagerid;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set oldmanagerid
+     *
+     * @param string $oldmanagerid
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setOldmanagerid($oldmanagerid)
+    {
+        $this->oldmanagerid = $oldmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get oldmanagerid
+     *
+     * @return string 
+     */
+    public function getOldmanagerid()
+    {
+        return $this->oldmanagerid;
+    }
+
+    /**
+     * Set department
+     *
+     * @param string $department
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setDepartment($department)
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    /**
+     * Get department
+     *
+     * @return string 
+     */
+    public function getDepartment()
+    {
+        return $this->department;
+    }
+
+    /**
+     * Set segment
+     *
+     * @param string $segment
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setSegment($segment)
+    {
+        $this->segment = $segment;
+
+        return $this;
+    }
+
+    /**
+     * Get segment
+     *
+     * @return string 
+     */
+    public function getSegment()
+    {
+        return $this->segment;
+    }
+
+    /**
+     * Set newmanagerid
+     *
+     * @param string $newmanagerid
+     * @return KfSrTblChgResiManager20141029
+     */
+    public function setNewmanagerid($newmanagerid)
+    {
+        $this->newmanagerid = $newmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get newmanagerid
+     *
+     * @return string 
+     */
+    public function getNewmanagerid()
+    {
+        return $this->newmanagerid;
+    }
 }

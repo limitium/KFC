@@ -76,4 +76,211 @@ class KfContactSearch
     private $result;
 
 
+
+    /**
+     * Set fiorus
+     *
+     * @param string $fiorus
+     * @return KfContactSearch
+     */
+    public function setFiorus($fiorus)
+    {
+        $this->fiorus = $fiorus;
+
+        return $this;
+    }
+
+    /**
+     * Get fiorus
+     *
+     * @return string 
+     */
+    public function getFiorus()
+    {
+        return $this->fiorus;
+    }
+
+    /**
+     * Set emails
+     *
+     * @param string $emails
+     * @return KfContactSearch
+     */
+    public function setEmails($emails)
+    {
+        $this->emails = $emails;
+
+        return $this;
+    }
+
+    /**
+     * Get emails
+     *
+     * @return string 
+     */
+    public function getEmails()
+    {
+        return $this->emails;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfContactSearch
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set poisk123
+     *
+     * @param string $poisk123
+     * @return KfContactSearch
+     */
+    public function setPoisk123($poisk123)
+    {
+        $this->poisk123 = $poisk123;
+
+        return $this;
+    }
+
+    /**
+     * Get poisk123
+     *
+     * @return string 
+     */
+    public function getPoisk123()
+    {
+        return $this->poisk123;
+    }
+
+    /**
+     * Set poiskAbc
+     *
+     * @param string $poiskAbc
+     * @return KfContactSearch
+     */
+    public function setPoiskAbc($poiskAbc)
+    {
+        $this->poiskAbc = $poiskAbc;
+
+        return $this;
+    }
+
+    /**
+     * Get poiskAbc
+     *
+     * @return string 
+     */
+    public function getPoiskAbc()
+    {
+        return $this->poiskAbc;
+    }
+
+    /**
+     * Set poiskAbcRus
+     *
+     * @param string $poiskAbcRus
+     * @return KfContactSearch
+     */
+    public function setPoiskAbcRus($poiskAbcRus)
+    {
+        $this->poiskAbcRus = $poiskAbcRus;
+
+        return $this;
+    }
+
+    /**
+     * Get poiskAbcRus
+     *
+     * @return string 
+     */
+    public function getPoiskAbcRus()
+    {
+        return $this->poiskAbcRus;
+    }
+
+    /**
+     * Set poiskEmail
+     *
+     * @param string $poiskEmail
+     * @return KfContactSearch
+     */
+    public function setPoiskEmail($poiskEmail)
+    {
+        $this->poiskEmail = $poiskEmail;
+
+        return $this;
+    }
+
+    /**
+     * Get poiskEmail
+     *
+     * @return string 
+     */
+    public function getPoiskEmail()
+    {
+        return $this->poiskEmail;
+    }
+
+    /**
+     * Set points
+     *
+     * @param integer $points
+     * @return KfContactSearch
+     */
+    public function setPoints($points)
+    {
+        $this->points = $points;
+
+        return $this;
+    }
+
+    /**
+     * Get points
+     *
+     * @return integer 
+     */
+    public function getPoints()
+    {
+        return $this->points;
+    }
+
+    /**
+     * Set result
+     *
+     * @param string $result
+     * @return KfContactSearch
+     */
+    public function setResult($result)
+    {
+        $this->result = $result;
+
+        return $this;
+    }
+
+    /**
+     * Get result
+     *
+     * @return string 
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
 }

@@ -83,4 +83,234 @@ class KfMarketingTeam
     private $broker;
 
 
+
+    /**
+     * Set kfMarketingTeamid
+     *
+     * @param string $kfMarketingTeamid
+     * @return KfMarketingTeam
+     */
+    public function setKfMarketingTeamid($kfMarketingTeamid)
+    {
+        $this->kfMarketingTeamid = $kfMarketingTeamid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketingTeamid
+     *
+     * @return string 
+     */
+    public function getKfMarketingTeamid()
+    {
+        return $this->kfMarketingTeamid;
+    }
+
+    /**
+     * Set kfMarketingProjectsid
+     *
+     * @param string $kfMarketingProjectsid
+     * @return KfMarketingTeam
+     */
+    public function setKfMarketingProjectsid($kfMarketingProjectsid)
+    {
+        $this->kfMarketingProjectsid = $kfMarketingProjectsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfMarketingProjectsid
+     *
+     * @return string 
+     */
+    public function getKfMarketingProjectsid()
+    {
+        return $this->kfMarketingProjectsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfMarketingTeam
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfMarketingTeam
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfMarketingTeam
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfMarketingTeam
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set userRole
+     *
+     * @param string $userRole
+     * @return KfMarketingTeam
+     */
+    public function setUserRole($userRole)
+    {
+        $this->userRole = $userRole;
+
+        return $this;
+    }
+
+    /**
+     * Get userRole
+     *
+     * @return string 
+     */
+    public function getUserRole()
+    {
+        return $this->userRole;
+    }
+
+    /**
+     * Set part
+     *
+     * @param float $part
+     * @return KfMarketingTeam
+     */
+    public function setPart($part)
+    {
+        $this->part = $part;
+
+        return $this;
+    }
+
+    /**
+     * Get part
+     *
+     * @return float 
+     */
+    public function getPart()
+    {
+        return $this->part;
+    }
+
+    /**
+     * Set notes
+     *
+     * @param string $notes
+     * @return KfMarketingTeam
+     */
+    public function setNotes($notes)
+    {
+        $this->notes = $notes;
+
+        return $this;
+    }
+
+    /**
+     * Get notes
+     *
+     * @return string 
+     */
+    public function getNotes()
+    {
+        return $this->notes;
+    }
+
+    /**
+     * Set broker
+     *
+     * @param string $broker
+     * @return KfMarketingTeam
+     */
+    public function setBroker($broker)
+    {
+        $this->broker = $broker;
+
+        return $this;
+    }
+
+    /**
+     * Get broker
+     *
+     * @return string 
+     */
+    public function getBroker()
+    {
+        return $this->broker;
+    }
 }

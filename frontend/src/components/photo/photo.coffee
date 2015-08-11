@@ -1,0 +1,1 @@
+class Photo extends Controller

@@ -27,4 +27,50 @@ class KfSubscriptionsContacts
     private $contactid;
 
 
+
+    /**
+     * Set subscriptionid
+     *
+     * @param string $subscriptionid
+     * @return KfSubscriptionsContacts
+     */
+    public function setSubscriptionid($subscriptionid)
+    {
+        $this->subscriptionid = $subscriptionid;
+
+        return $this;
+    }
+
+    /**
+     * Get subscriptionid
+     *
+     * @return string 
+     */
+    public function getSubscriptionid()
+    {
+        return $this->subscriptionid;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfSubscriptionsContacts
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
 }

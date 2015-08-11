@@ -41,4 +41,96 @@ class AccDoubles
     private $result;
 
 
+
+    /**
+     * Set rank
+     *
+     * @param integer $rank
+     * @return AccDoubles
+     */
+    public function setRank($rank)
+    {
+        $this->rank = $rank;
+
+        return $this;
+    }
+
+    /**
+     * Get rank
+     *
+     * @return integer 
+     */
+    public function getRank()
+    {
+        return $this->rank;
+    }
+
+    /**
+     * Set accountid1
+     *
+     * @param string $accountid1
+     * @return AccDoubles
+     */
+    public function setAccountid1($accountid1)
+    {
+        $this->accountid1 = $accountid1;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid1
+     *
+     * @return string 
+     */
+    public function getAccountid1()
+    {
+        return $this->accountid1;
+    }
+
+    /**
+     * Set accountid2
+     *
+     * @param string $accountid2
+     * @return AccDoubles
+     */
+    public function setAccountid2($accountid2)
+    {
+        $this->accountid2 = $accountid2;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid2
+     *
+     * @return string 
+     */
+    public function getAccountid2()
+    {
+        return $this->accountid2;
+    }
+
+    /**
+     * Set result
+     *
+     * @param string $result
+     * @return AccDoubles
+     */
+    public function setResult($result)
+    {
+        $this->result = $result;
+
+        return $this;
+    }
+
+    /**
+     * Get result
+     *
+     * @return string 
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
 }

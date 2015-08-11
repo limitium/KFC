@@ -27,4 +27,50 @@ class KfAccountManagerBackup
     private $accountmanagerid;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfAccountManagerBackup
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set accountmanagerid
+     *
+     * @param string $accountmanagerid
+     * @return KfAccountManagerBackup
+     */
+    public function setAccountmanagerid($accountmanagerid)
+    {
+        $this->accountmanagerid = $accountmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountmanagerid
+     *
+     * @return string 
+     */
+    public function getAccountmanagerid()
+    {
+        return $this->accountmanagerid;
+    }
 }

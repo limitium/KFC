@@ -83,4 +83,234 @@ class KfIndSeo
     private $title;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfIndSeo
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfIndSeo
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfIndSeo
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfIndSeo
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfIndSeo
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfIndSeo
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return KfIndSeo
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * Set metaKeywords
+     *
+     * @param string $metaKeywords
+     * @return KfIndSeo
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->metaKeywords = $metaKeywords;
+
+        return $this;
+    }
+
+    /**
+     * Get metaKeywords
+     *
+     * @return string 
+     */
+    public function getMetaKeywords()
+    {
+        return $this->metaKeywords;
+    }
+
+    /**
+     * Set metaDescription
+     *
+     * @param string $metaDescription
+     * @return KfIndSeo
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->metaDescription = $metaDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get metaDescription
+     *
+     * @return string 
+     */
+    public function getMetaDescription()
+    {
+        return $this->metaDescription;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return KfIndSeo
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
 }

@@ -230,4 +230,717 @@ class KfOppProfserv
     private $storagePercent;
 
 
+
+    /**
+     * Set opportunityid
+     *
+     * @param string $opportunityid
+     * @return KfOppProfserv
+     */
+    public function setOpportunityid($opportunityid)
+    {
+        $this->opportunityid = $opportunityid;
+
+        return $this;
+    }
+
+    /**
+     * Get opportunityid
+     *
+     * @return string 
+     */
+    public function getOpportunityid()
+    {
+        return $this->opportunityid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfOppProfserv
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfOppProfserv
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfOppProfserv
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfOppProfserv
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfOppProfserv
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set indusIncludeopex
+     *
+     * @param string $indusIncludeopex
+     * @return KfOppProfserv
+     */
+    public function setIndusIncludeopex($indusIncludeopex)
+    {
+        $this->indusIncludeopex = $indusIncludeopex;
+
+        return $this;
+    }
+
+    /**
+     * Get indusIncludeopex
+     *
+     * @return string 
+     */
+    public function getIndusIncludeopex()
+    {
+        return $this->indusIncludeopex;
+    }
+
+    /**
+     * Set projectid
+     *
+     * @param string $projectid
+     * @return KfOppProfserv
+     */
+    public function setProjectid($projectid)
+    {
+        $this->projectid = $projectid;
+
+        return $this;
+    }
+
+    /**
+     * Get projectid
+     *
+     * @return string 
+     */
+    public function getProjectid()
+    {
+        return $this->projectid;
+    }
+
+    /**
+     * Set objectid
+     *
+     * @param string $objectid
+     * @return KfOppProfserv
+     */
+    public function setObjectid($objectid)
+    {
+        $this->objectid = $objectid;
+
+        return $this;
+    }
+
+    /**
+     * Get objectid
+     *
+     * @return string 
+     */
+    public function getObjectid()
+    {
+        return $this->objectid;
+    }
+
+    /**
+     * Set consultinggroup
+     *
+     * @param string $consultinggroup
+     * @return KfOppProfserv
+     */
+    public function setConsultinggroup($consultinggroup)
+    {
+        $this->consultinggroup = $consultinggroup;
+
+        return $this;
+    }
+
+    /**
+     * Get consultinggroup
+     *
+     * @return string 
+     */
+    public function getConsultinggroup()
+    {
+        return $this->consultinggroup;
+    }
+
+    /**
+     * Set marketSegment
+     *
+     * @param string $marketSegment
+     * @return KfOppProfserv
+     */
+    public function setMarketSegment($marketSegment)
+    {
+        $this->marketSegment = $marketSegment;
+
+        return $this;
+    }
+
+    /**
+     * Get marketSegment
+     *
+     * @return string 
+     */
+    public function getMarketSegment()
+    {
+        return $this->marketSegment;
+    }
+
+    /**
+     * Set notindb
+     *
+     * @param string $notindb
+     * @return KfOppProfserv
+     */
+    public function setNotindb($notindb)
+    {
+        $this->notindb = $notindb;
+
+        return $this;
+    }
+
+    /**
+     * Get notindb
+     *
+     * @return string 
+     */
+    public function getNotindb()
+    {
+        return $this->notindb;
+    }
+
+    /**
+     * Set reportform
+     *
+     * @param string $reportform
+     * @return KfOppProfserv
+     */
+    public function setReportform($reportform)
+    {
+        $this->reportform = $reportform;
+
+        return $this;
+    }
+
+    /**
+     * Get reportform
+     *
+     * @return string 
+     */
+    public function getReportform()
+    {
+        return $this->reportform;
+    }
+
+    /**
+     * Set regionid
+     *
+     * @param string $regionid
+     * @return KfOppProfserv
+     */
+    public function setRegionid($regionid)
+    {
+        $this->regionid = $regionid;
+
+        return $this;
+    }
+
+    /**
+     * Get regionid
+     *
+     * @return string 
+     */
+    public function getRegionid()
+    {
+        return $this->regionid;
+    }
+
+    /**
+     * Set cityid
+     *
+     * @param string $cityid
+     * @return KfOppProfserv
+     */
+    public function setCityid($cityid)
+    {
+        $this->cityid = $cityid;
+
+        return $this;
+    }
+
+    /**
+     * Get cityid
+     *
+     * @return string 
+     */
+    public function getCityid()
+    {
+        return $this->cityid;
+    }
+
+    /**
+     * Set researchperiodfrom
+     *
+     * @param \DateTime $researchperiodfrom
+     * @return KfOppProfserv
+     */
+    public function setResearchperiodfrom($researchperiodfrom)
+    {
+        $this->researchperiodfrom = $researchperiodfrom;
+
+        return $this;
+    }
+
+    /**
+     * Get researchperiodfrom
+     *
+     * @return \DateTime 
+     */
+    public function getResearchperiodfrom()
+    {
+        return $this->researchperiodfrom;
+    }
+
+    /**
+     * Set researchperiodto
+     *
+     * @param \DateTime $researchperiodto
+     * @return KfOppProfserv
+     */
+    public function setResearchperiodto($researchperiodto)
+    {
+        $this->researchperiodto = $researchperiodto;
+
+        return $this;
+    }
+
+    /**
+     * Get researchperiodto
+     *
+     * @return \DateTime 
+     */
+    public function getResearchperiodto()
+    {
+        return $this->researchperiodto;
+    }
+
+    /**
+     * Set objectDescription
+     *
+     * @param string $objectDescription
+     * @return KfOppProfserv
+     */
+    public function setObjectDescription($objectDescription)
+    {
+        $this->objectDescription = $objectDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get objectDescription
+     *
+     * @return string 
+     */
+    public function getObjectDescription()
+    {
+        return $this->objectDescription;
+    }
+
+    /**
+     * Set valservices
+     *
+     * @param string $valservices
+     * @return KfOppProfserv
+     */
+    public function setValservices($valservices)
+    {
+        $this->valservices = $valservices;
+
+        return $this;
+    }
+
+    /**
+     * Get valservices
+     *
+     * @return string 
+     */
+    public function getValservices()
+    {
+        return $this->valservices;
+    }
+
+    /**
+     * Set target
+     *
+     * @param string $target
+     * @return KfOppProfserv
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+
+        return $this;
+    }
+
+    /**
+     * Get target
+     *
+     * @return string 
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+
+    /**
+     * Set subtarget
+     *
+     * @param string $subtarget
+     * @return KfOppProfserv
+     */
+    public function setSubtarget($subtarget)
+    {
+        $this->subtarget = $subtarget;
+
+        return $this;
+    }
+
+    /**
+     * Get subtarget
+     *
+     * @return string 
+     */
+    public function getSubtarget()
+    {
+        return $this->subtarget;
+    }
+
+    /**
+     * Set estcost
+     *
+     * @param string $estcost
+     * @return KfOppProfserv
+     */
+    public function setEstcost($estcost)
+    {
+        $this->estcost = $estcost;
+
+        return $this;
+    }
+
+    /**
+     * Get estcost
+     *
+     * @return string 
+     */
+    public function getEstcost()
+    {
+        return $this->estcost;
+    }
+
+    /**
+     * Set projectStage
+     *
+     * @param string $projectStage
+     * @return KfOppProfserv
+     */
+    public function setProjectStage($projectStage)
+    {
+        $this->projectStage = $projectStage;
+
+        return $this;
+    }
+
+    /**
+     * Get projectStage
+     *
+     * @return string 
+     */
+    public function getProjectStage()
+    {
+        return $this->projectStage;
+    }
+
+    /**
+     * Set projectSubstage
+     *
+     * @param string $projectSubstage
+     * @return KfOppProfserv
+     */
+    public function setProjectSubstage($projectSubstage)
+    {
+        $this->projectSubstage = $projectSubstage;
+
+        return $this;
+    }
+
+    /**
+     * Get projectSubstage
+     *
+     * @return string 
+     */
+    public function getProjectSubstage()
+    {
+        return $this->projectSubstage;
+    }
+
+    /**
+     * Set ownership
+     *
+     * @param string $ownership
+     * @return KfOppProfserv
+     */
+    public function setOwnership($ownership)
+    {
+        $this->ownership = $ownership;
+
+        return $this;
+    }
+
+    /**
+     * Get ownership
+     *
+     * @return string 
+     */
+    public function getOwnership()
+    {
+        return $this->ownership;
+    }
+
+    /**
+     * Set areaid
+     *
+     * @param string $areaid
+     * @return KfOppProfserv
+     */
+    public function setAreaid($areaid)
+    {
+        $this->areaid = $areaid;
+
+        return $this;
+    }
+
+    /**
+     * Get areaid
+     *
+     * @return string 
+     */
+    public function getAreaid()
+    {
+        return $this->areaid;
+    }
+
+    /**
+     * Set profileid
+     *
+     * @param string $profileid
+     * @return KfOppProfserv
+     */
+    public function setProfileid($profileid)
+    {
+        $this->profileid = $profileid;
+
+        return $this;
+    }
+
+    /**
+     * Get profileid
+     *
+     * @return string 
+     */
+    public function getProfileid()
+    {
+        return $this->profileid;
+    }
+
+    /**
+     * Set invservices
+     *
+     * @param string $invservices
+     * @return KfOppProfserv
+     */
+    public function setInvservices($invservices)
+    {
+        $this->invservices = $invservices;
+
+        return $this;
+    }
+
+    /**
+     * Get invservices
+     *
+     * @return string 
+     */
+    public function getInvservices()
+    {
+        return $this->invservices;
+    }
+
+    /**
+     * Set invCity
+     *
+     * @param string $invCity
+     * @return KfOppProfserv
+     */
+    public function setInvCity($invCity)
+    {
+        $this->invCity = $invCity;
+
+        return $this;
+    }
+
+    /**
+     * Get invCity
+     *
+     * @return string 
+     */
+    public function getInvCity()
+    {
+        return $this->invCity;
+    }
+
+    /**
+     * Set invCityType
+     *
+     * @param string $invCityType
+     * @return KfOppProfserv
+     */
+    public function setInvCityType($invCityType)
+    {
+        $this->invCityType = $invCityType;
+
+        return $this;
+    }
+
+    /**
+     * Get invCityType
+     *
+     * @return string 
+     */
+    public function getInvCityType()
+    {
+        return $this->invCityType;
+    }
+
+    /**
+     * Set storagePercent
+     *
+     * @param string $storagePercent
+     * @return KfOppProfserv
+     */
+    public function setStoragePercent($storagePercent)
+    {
+        $this->storagePercent = $storagePercent;
+
+        return $this;
+    }
+
+    /**
+     * Get storagePercent
+     *
+     * @return string 
+     */
+    public function getStoragePercent()
+    {
+        return $this->storagePercent;
+    }
 }

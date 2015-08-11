@@ -307,7 +307,6 @@ class SpkInvestBlocks
     public function setInvestment(\AppBundle\Entity\SpkInvestment $investment = null)
     {
         $this->investment = $investment;
-        $investment->setInvestment($this);
         return $this;
     }
 

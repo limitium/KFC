@@ -27,4 +27,50 @@ class KfTempTableRequest45619
     private $category;
 
 
+
+    /**
+     * Set id
+     *
+     * @param string $id
+     * @return KfTempTableRequest45619
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return string 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set category
+     *
+     * @param string $category
+     * @return KfTempTableRequest45619
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return string 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
 }

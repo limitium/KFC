@@ -41,4 +41,96 @@ class KfPropTechParameters
     private $technical;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfPropTechParameters
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set department
+     *
+     * @param string $department
+     * @return KfPropTechParameters
+     */
+    public function setDepartment($department)
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    /**
+     * Get department
+     *
+     * @return string 
+     */
+    public function getDepartment()
+    {
+        return $this->department;
+    }
+
+    /**
+     * Set infrastructure
+     *
+     * @param string $infrastructure
+     * @return KfPropTechParameters
+     */
+    public function setInfrastructure($infrastructure)
+    {
+        $this->infrastructure = $infrastructure;
+
+        return $this;
+    }
+
+    /**
+     * Get infrastructure
+     *
+     * @return string 
+     */
+    public function getInfrastructure()
+    {
+        return $this->infrastructure;
+    }
+
+    /**
+     * Set technical
+     *
+     * @param string $technical
+     * @return KfPropTechParameters
+     */
+    public function setTechnical($technical)
+    {
+        $this->technical = $technical;
+
+        return $this;
+    }
+
+    /**
+     * Get technical
+     *
+     * @return string 
+     */
+    public function getTechnical()
+    {
+        return $this->technical;
+    }
 }

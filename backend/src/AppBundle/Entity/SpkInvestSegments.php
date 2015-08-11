@@ -98,4 +98,88 @@ class SpkInvestSegments
     {
         return $this->segmentid;
     }
+    /**
+     * @var string
+     */
+    private $generator;
+
+    /**
+     * @var string
+     */
+    private $customIdGenerator;
+
+    /**
+     * @var \AppBundle\Entity\SpkInvestment
+     */
+    private $investment;
+
+
+    /**
+     * Set generator
+     *
+     * @param string $generator
+     * @return SpkInvestSegments
+     */
+    public function setGenerator($generator)
+    {
+        $this->generator = $generator;
+
+        return $this;
+    }
+
+    /**
+     * Get generator
+     *
+     * @return string 
+     */
+    public function getGenerator()
+    {
+        return $this->generator;
+    }
+
+    /**
+     * Set customIdGenerator
+     *
+     * @param string $customIdGenerator
+     * @return SpkInvestSegments
+     */
+    public function setCustomIdGenerator($customIdGenerator)
+    {
+        $this->customIdGenerator = $customIdGenerator;
+
+        return $this;
+    }
+
+    /**
+     * Get customIdGenerator
+     *
+     * @return string 
+     */
+    public function getCustomIdGenerator()
+    {
+        return $this->customIdGenerator;
+    }
+
+    /**
+     * Set investment
+     *
+     * @param \AppBundle\Entity\SpkInvestment $investment
+     * @return SpkInvestSegments
+     */
+    public function setInvestment(\AppBundle\Entity\SpkInvestment $investment = null)
+    {
+        $this->investment = $investment;
+
+        return $this;
+    }
+
+    /**
+     * Get investment
+     *
+     * @return \AppBundle\Entity\SpkInvestment 
+     */
+    public function getInvestment()
+    {
+        return $this->investment;
+    }
 }

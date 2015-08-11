@@ -27,4 +27,50 @@ class KfSeccodeconst
     private $description;
 
 
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfSeccodeconst
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return KfSeccodeconst
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
 }

@@ -20,4 +20,27 @@ class KfGetTrueOpps
     private $accountid;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfGetTrueOpps
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
 }

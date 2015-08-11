@@ -384,4 +384,1223 @@ class KfProjects
     private $phases;
 
 
+
+    /**
+     * Set kfProjectsid
+     *
+     * @param string $kfProjectsid
+     * @return KfProjects
+     */
+    public function setKfProjectsid($kfProjectsid)
+    {
+        $this->kfProjectsid = $kfProjectsid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfProjectsid
+     *
+     * @return string 
+     */
+    public function getKfProjectsid()
+    {
+        return $this->kfProjectsid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfProjects
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfProjects
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfProjects
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfProjects
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfProjects
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfProjects
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfProjects
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set objectid
+     *
+     * @param string $objectid
+     * @return KfProjects
+     */
+    public function setObjectid($objectid)
+    {
+        $this->objectid = $objectid;
+
+        return $this;
+    }
+
+    /**
+     * Get objectid
+     *
+     * @return string 
+     */
+    public function getObjectid()
+    {
+        return $this->objectid;
+    }
+
+    /**
+     * Set propertydescription
+     *
+     * @param string $propertydescription
+     * @return KfProjects
+     */
+    public function setPropertydescription($propertydescription)
+    {
+        $this->propertydescription = $propertydescription;
+
+        return $this;
+    }
+
+    /**
+     * Get propertydescription
+     *
+     * @return string 
+     */
+    public function getPropertydescription()
+    {
+        return $this->propertydescription;
+    }
+
+    /**
+     * Set services
+     *
+     * @param string $services
+     * @return KfProjects
+     */
+    public function setServices($services)
+    {
+        $this->services = $services;
+
+        return $this;
+    }
+
+    /**
+     * Get services
+     *
+     * @return string 
+     */
+    public function getServices()
+    {
+        return $this->services;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfProjects
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfProjects
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
+
+    /**
+     * Set marketSegment
+     *
+     * @param string $marketSegment
+     * @return KfProjects
+     */
+    public function setMarketSegment($marketSegment)
+    {
+        $this->marketSegment = $marketSegment;
+
+        return $this;
+    }
+
+    /**
+     * Get marketSegment
+     *
+     * @return string 
+     */
+    public function getMarketSegment()
+    {
+        return $this->marketSegment;
+    }
+
+    /**
+     * Set potentialComission
+     *
+     * @param string $potentialComission
+     * @return KfProjects
+     */
+    public function setPotentialComission($potentialComission)
+    {
+        $this->potentialComission = $potentialComission;
+
+        return $this;
+    }
+
+    /**
+     * Get potentialComission
+     *
+     * @return string 
+     */
+    public function getPotentialComission()
+    {
+        return $this->potentialComission;
+    }
+
+    /**
+     * Set actualComission
+     *
+     * @param string $actualComission
+     * @return KfProjects
+     */
+    public function setActualComission($actualComission)
+    {
+        $this->actualComission = $actualComission;
+
+        return $this;
+    }
+
+    /**
+     * Get actualComission
+     *
+     * @return string 
+     */
+    public function getActualComission()
+    {
+        return $this->actualComission;
+    }
+
+    /**
+     * Set signeddate
+     *
+     * @param \DateTime $signeddate
+     * @return KfProjects
+     */
+    public function setSigneddate($signeddate)
+    {
+        $this->signeddate = $signeddate;
+
+        return $this;
+    }
+
+    /**
+     * Get signeddate
+     *
+     * @return \DateTime 
+     */
+    public function getSigneddate()
+    {
+        return $this->signeddate;
+    }
+
+    /**
+     * Set closeddate
+     *
+     * @param \DateTime $closeddate
+     * @return KfProjects
+     */
+    public function setCloseddate($closeddate)
+    {
+        $this->closeddate = $closeddate;
+
+        return $this;
+    }
+
+    /**
+     * Get closeddate
+     *
+     * @return \DateTime 
+     */
+    public function getCloseddate()
+    {
+        return $this->closeddate;
+    }
+
+    /**
+     * Set projectDuration
+     *
+     * @param integer $projectDuration
+     * @return KfProjects
+     */
+    public function setProjectDuration($projectDuration)
+    {
+        $this->projectDuration = $projectDuration;
+
+        return $this;
+    }
+
+    /**
+     * Get projectDuration
+     *
+     * @return integer 
+     */
+    public function getProjectDuration()
+    {
+        return $this->projectDuration;
+    }
+
+    /**
+     * Set comments
+     *
+     * @param string $comments
+     * @return KfProjects
+     */
+    public function setComments($comments)
+    {
+        $this->comments = $comments;
+
+        return $this;
+    }
+
+    /**
+     * Get comments
+     *
+     * @return string 
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * Set consultinggroup
+     *
+     * @param string $consultinggroup
+     * @return KfProjects
+     */
+    public function setConsultinggroup($consultinggroup)
+    {
+        $this->consultinggroup = $consultinggroup;
+
+        return $this;
+    }
+
+    /**
+     * Get consultinggroup
+     *
+     * @return string 
+     */
+    public function getConsultinggroup()
+    {
+        return $this->consultinggroup;
+    }
+
+    /**
+     * Set reportform
+     *
+     * @param string $reportform
+     * @return KfProjects
+     */
+    public function setReportform($reportform)
+    {
+        $this->reportform = $reportform;
+
+        return $this;
+    }
+
+    /**
+     * Get reportform
+     *
+     * @return string 
+     */
+    public function getReportform()
+    {
+        return $this->reportform;
+    }
+
+    /**
+     * Set languageReport
+     *
+     * @param string $languageReport
+     * @return KfProjects
+     */
+    public function setLanguageReport($languageReport)
+    {
+        $this->languageReport = $languageReport;
+
+        return $this;
+    }
+
+    /**
+     * Get languageReport
+     *
+     * @return string 
+     */
+    public function getLanguageReport()
+    {
+        return $this->languageReport;
+    }
+
+    /**
+     * Set researchperiodfrom
+     *
+     * @param \DateTime $researchperiodfrom
+     * @return KfProjects
+     */
+    public function setResearchperiodfrom($researchperiodfrom)
+    {
+        $this->researchperiodfrom = $researchperiodfrom;
+
+        return $this;
+    }
+
+    /**
+     * Get researchperiodfrom
+     *
+     * @return \DateTime 
+     */
+    public function getResearchperiodfrom()
+    {
+        return $this->researchperiodfrom;
+    }
+
+    /**
+     * Set researchperiodto
+     *
+     * @param \DateTime $researchperiodto
+     * @return KfProjects
+     */
+    public function setResearchperiodto($researchperiodto)
+    {
+        $this->researchperiodto = $researchperiodto;
+
+        return $this;
+    }
+
+    /**
+     * Get researchperiodto
+     *
+     * @return \DateTime 
+     */
+    public function getResearchperiodto()
+    {
+        return $this->researchperiodto;
+    }
+
+    /**
+     * Set payments
+     *
+     * @param string $payments
+     * @return KfProjects
+     */
+    public function setPayments($payments)
+    {
+        $this->payments = $payments;
+
+        return $this;
+    }
+
+    /**
+     * Get payments
+     *
+     * @return string 
+     */
+    public function getPayments()
+    {
+        return $this->payments;
+    }
+
+    /**
+     * Set balance
+     *
+     * @param string $balance
+     * @return KfProjects
+     */
+    public function setBalance($balance)
+    {
+        $this->balance = $balance;
+
+        return $this;
+    }
+
+    /**
+     * Get balance
+     *
+     * @return string 
+     */
+    public function getBalance()
+    {
+        return $this->balance;
+    }
+
+    /**
+     * Set projecttype
+     *
+     * @param string $projecttype
+     * @return KfProjects
+     */
+    public function setProjecttype($projecttype)
+    {
+        $this->projecttype = $projecttype;
+
+        return $this;
+    }
+
+    /**
+     * Get projecttype
+     *
+     * @return string 
+     */
+    public function getProjecttype()
+    {
+        return $this->projecttype;
+    }
+
+    /**
+     * Set projectsubtype
+     *
+     * @param string $projectsubtype
+     * @return KfProjects
+     */
+    public function setProjectsubtype($projectsubtype)
+    {
+        $this->projectsubtype = $projectsubtype;
+
+        return $this;
+    }
+
+    /**
+     * Get projectsubtype
+     *
+     * @return string 
+     */
+    public function getProjectsubtype()
+    {
+        return $this->projectsubtype;
+    }
+
+    /**
+     * Set contractkf
+     *
+     * @param string $contractkf
+     * @return KfProjects
+     */
+    public function setContractkf($contractkf)
+    {
+        $this->contractkf = $contractkf;
+
+        return $this;
+    }
+
+    /**
+     * Get contractkf
+     *
+     * @return string 
+     */
+    public function getContractkf()
+    {
+        return $this->contractkf;
+    }
+
+    /**
+     * Set currentstage
+     *
+     * @param string $currentstage
+     * @return KfProjects
+     */
+    public function setCurrentstage($currentstage)
+    {
+        $this->currentstage = $currentstage;
+
+        return $this;
+    }
+
+    /**
+     * Get currentstage
+     *
+     * @return string 
+     */
+    public function getCurrentstage()
+    {
+        return $this->currentstage;
+    }
+
+    /**
+     * Set leadsourceid
+     *
+     * @param string $leadsourceid
+     * @return KfProjects
+     */
+    public function setLeadsourceid($leadsourceid)
+    {
+        $this->leadsourceid = $leadsourceid;
+
+        return $this;
+    }
+
+    /**
+     * Get leadsourceid
+     *
+     * @return string 
+     */
+    public function getLeadsourceid()
+    {
+        return $this->leadsourceid;
+    }
+
+    /**
+     * Set estimatedclose
+     *
+     * @param \DateTime $estimatedclose
+     * @return KfProjects
+     */
+    public function setEstimatedclose($estimatedclose)
+    {
+        $this->estimatedclose = $estimatedclose;
+
+        return $this;
+    }
+
+    /**
+     * Get estimatedclose
+     *
+     * @return \DateTime 
+     */
+    public function getEstimatedclose()
+    {
+        return $this->estimatedclose;
+    }
+
+    /**
+     * Set dateopened
+     *
+     * @param \DateTime $dateopened
+     * @return KfProjects
+     */
+    public function setDateopened($dateopened)
+    {
+        $this->dateopened = $dateopened;
+
+        return $this;
+    }
+
+    /**
+     * Get dateopened
+     *
+     * @return \DateTime 
+     */
+    public function getDateopened()
+    {
+        return $this->dateopened;
+    }
+
+    /**
+     * Set probability
+     *
+     * @param float $probability
+     * @return KfProjects
+     */
+    public function setProbability($probability)
+    {
+        $this->probability = $probability;
+
+        return $this;
+    }
+
+    /**
+     * Get probability
+     *
+     * @return float 
+     */
+    public function getProbability()
+    {
+        return $this->probability;
+    }
+
+    /**
+     * Set regionid
+     *
+     * @param string $regionid
+     * @return KfProjects
+     */
+    public function setRegionid($regionid)
+    {
+        $this->regionid = $regionid;
+
+        return $this;
+    }
+
+    /**
+     * Get regionid
+     *
+     * @return string 
+     */
+    public function getRegionid()
+    {
+        return $this->regionid;
+    }
+
+    /**
+     * Set cityid
+     *
+     * @param string $cityid
+     * @return KfProjects
+     */
+    public function setCityid($cityid)
+    {
+        $this->cityid = $cityid;
+
+        return $this;
+    }
+
+    /**
+     * Get cityid
+     *
+     * @return string 
+     */
+    public function getCityid()
+    {
+        return $this->cityid;
+    }
+
+    /**
+     * Set projectName
+     *
+     * @param string $projectName
+     * @return KfProjects
+     */
+    public function setProjectName($projectName)
+    {
+        $this->projectName = $projectName;
+
+        return $this;
+    }
+
+    /**
+     * Get projectName
+     *
+     * @return string 
+     */
+    public function getProjectName()
+    {
+        return $this->projectName;
+    }
+
+    /**
+     * Set contractDate
+     *
+     * @param \DateTime $contractDate
+     * @return KfProjects
+     */
+    public function setContractDate($contractDate)
+    {
+        $this->contractDate = $contractDate;
+
+        return $this;
+    }
+
+    /**
+     * Get contractDate
+     *
+     * @return \DateTime 
+     */
+    public function getContractDate()
+    {
+        return $this->contractDate;
+    }
+
+    /**
+     * Set loiDate
+     *
+     * @param \DateTime $loiDate
+     * @return KfProjects
+     */
+    public function setLoiDate($loiDate)
+    {
+        $this->loiDate = $loiDate;
+
+        return $this;
+    }
+
+    /**
+     * Get loiDate
+     *
+     * @return \DateTime 
+     */
+    public function getLoiDate()
+    {
+        return $this->loiDate;
+    }
+
+    /**
+     * Set actDate
+     *
+     * @param \DateTime $actDate
+     * @return KfProjects
+     */
+    public function setActDate($actDate)
+    {
+        $this->actDate = $actDate;
+
+        return $this;
+    }
+
+    /**
+     * Get actDate
+     *
+     * @return \DateTime 
+     */
+    public function getActDate()
+    {
+        return $this->actDate;
+    }
+
+    /**
+     * Set invoiceDate
+     *
+     * @param \DateTime $invoiceDate
+     * @return KfProjects
+     */
+    public function setInvoiceDate($invoiceDate)
+    {
+        $this->invoiceDate = $invoiceDate;
+
+        return $this;
+    }
+
+    /**
+     * Get invoiceDate
+     *
+     * @return \DateTime 
+     */
+    public function getInvoiceDate()
+    {
+        return $this->invoiceDate;
+    }
+
+    /**
+     * Set contractNumber
+     *
+     * @param string $contractNumber
+     * @return KfProjects
+     */
+    public function setContractNumber($contractNumber)
+    {
+        $this->contractNumber = $contractNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get contractNumber
+     *
+     * @return string 
+     */
+    public function getContractNumber()
+    {
+        return $this->contractNumber;
+    }
+
+    /**
+     * Set actNumber
+     *
+     * @param string $actNumber
+     * @return KfProjects
+     */
+    public function setActNumber($actNumber)
+    {
+        $this->actNumber = $actNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get actNumber
+     *
+     * @return string 
+     */
+    public function getActNumber()
+    {
+        return $this->actNumber;
+    }
+
+    /**
+     * Set invoiceNumber
+     *
+     * @param string $invoiceNumber
+     * @return KfProjects
+     */
+    public function setInvoiceNumber($invoiceNumber)
+    {
+        $this->invoiceNumber = $invoiceNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get invoiceNumber
+     *
+     * @return string 
+     */
+    public function getInvoiceNumber()
+    {
+        return $this->invoiceNumber;
+    }
+
+    /**
+     * Set legalaccointid
+     *
+     * @param string $legalaccointid
+     * @return KfProjects
+     */
+    public function setLegalaccointid($legalaccointid)
+    {
+        $this->legalaccointid = $legalaccointid;
+
+        return $this;
+    }
+
+    /**
+     * Get legalaccointid
+     *
+     * @return string 
+     */
+    public function getLegalaccointid()
+    {
+        return $this->legalaccointid;
+    }
+
+    /**
+     * Set oppissues
+     *
+     * @param string $oppissues
+     * @return KfProjects
+     */
+    public function setOppissues($oppissues)
+    {
+        $this->oppissues = $oppissues;
+
+        return $this;
+    }
+
+    /**
+     * Get oppissues
+     *
+     * @return string 
+     */
+    public function getOppissues()
+    {
+        return $this->oppissues;
+    }
+
+    /**
+     * Set spkRequestsid
+     *
+     * @param string $spkRequestsid
+     * @return KfProjects
+     */
+    public function setSpkRequestsid($spkRequestsid)
+    {
+        $this->spkRequestsid = $spkRequestsid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkRequestsid
+     *
+     * @return string 
+     */
+    public function getSpkRequestsid()
+    {
+        return $this->spkRequestsid;
+    }
+
+    /**
+     * Set legalCompany
+     *
+     * @param string $legalCompany
+     * @return KfProjects
+     */
+    public function setLegalCompany($legalCompany)
+    {
+        $this->legalCompany = $legalCompany;
+
+        return $this;
+    }
+
+    /**
+     * Get legalCompany
+     *
+     * @return string 
+     */
+    public function getLegalCompany()
+    {
+        return $this->legalCompany;
+    }
+
+    /**
+     * Set stage
+     *
+     * @param string $stage
+     * @return KfProjects
+     */
+    public function setStage($stage)
+    {
+        $this->stage = $stage;
+
+        return $this;
+    }
+
+    /**
+     * Get stage
+     *
+     * @return string 
+     */
+    public function getStage()
+    {
+        return $this->stage;
+    }
+
+    /**
+     * Set currency
+     *
+     * @param string $currency
+     * @return KfProjects
+     */
+    public function setCurrency($currency)
+    {
+        $this->currency = $currency;
+
+        return $this;
+    }
+
+    /**
+     * Get currency
+     *
+     * @return string 
+     */
+    public function getCurrency()
+    {
+        return $this->currency;
+    }
+
+    /**
+     * Set salesStep
+     *
+     * @param integer $salesStep
+     * @return KfProjects
+     */
+    public function setSalesStep($salesStep)
+    {
+        $this->salesStep = $salesStep;
+
+        return $this;
+    }
+
+    /**
+     * Get salesStep
+     *
+     * @return integer 
+     */
+    public function getSalesStep()
+    {
+        return $this->salesStep;
+    }
+
+    /**
+     * Set phases
+     *
+     * @param string $phases
+     * @return KfProjects
+     */
+    public function setPhases($phases)
+    {
+        $this->phases = $phases;
+
+        return $this;
+    }
+
+    /**
+     * Get phases
+     *
+     * @return string 
+     */
+    public function getPhases()
+    {
+        return $this->phases;
+    }
 }

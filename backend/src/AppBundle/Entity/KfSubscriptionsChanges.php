@@ -48,4 +48,119 @@ class KfSubscriptionsChanges
     private $notes;
 
 
+
+    /**
+     * Set subscriptionid
+     *
+     * @param string $subscriptionid
+     * @return KfSubscriptionsChanges
+     */
+    public function setSubscriptionid($subscriptionid)
+    {
+        $this->subscriptionid = $subscriptionid;
+
+        return $this;
+    }
+
+    /**
+     * Get subscriptionid
+     *
+     * @return string 
+     */
+    public function getSubscriptionid()
+    {
+        return $this->subscriptionid;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfSubscriptionsChanges
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfSubscriptionsChanges
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set entityid
+     *
+     * @param string $entityid
+     * @return KfSubscriptionsChanges
+     */
+    public function setEntityid($entityid)
+    {
+        $this->entityid = $entityid;
+
+        return $this;
+    }
+
+    /**
+     * Get entityid
+     *
+     * @return string 
+     */
+    public function getEntityid()
+    {
+        return $this->entityid;
+    }
+
+    /**
+     * Set notes
+     *
+     * @param string $notes
+     * @return KfSubscriptionsChanges
+     */
+    public function setNotes($notes)
+    {
+        $this->notes = $notes;
+
+        return $this;
+    }
+
+    /**
+     * Get notes
+     *
+     * @return string 
+     */
+    public function getNotes()
+    {
+        return $this->notes;
+    }
 }

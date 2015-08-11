@@ -1274,4 +1274,1096 @@ class Contact
 
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return Contact
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return Contact
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return Contact
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Set account
+     *
+     * @param string $account
+     * @return Contact
+     */
+    public function setAccount($account)
+    {
+        $this->account = $account;
+
+        return $this;
+    }
+
+    /**
+     * Set department
+     *
+     * @param string $department
+     * @return Contact
+     */
+    public function setDepartment($department)
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    /**
+     * Set isprimary
+     *
+     * @param integer $isprimary
+     * @return Contact
+     */
+    public function setIsprimary($isprimary)
+    {
+        $this->isprimary = $isprimary;
+
+        return $this;
+    }
+
+    /**
+     * Set lastname
+     *
+     * @param string $lastname
+     * @return Contact
+     */
+    public function setLastname($lastname)
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    /**
+     * Set firstname
+     *
+     * @param string $firstname
+     * @return Contact
+     */
+    public function setFirstname($firstname)
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    /**
+     * Set middlename
+     *
+     * @param string $middlename
+     * @return Contact
+     */
+    public function setMiddlename($middlename)
+    {
+        $this->middlename = $middlename;
+
+        return $this;
+    }
+
+    /**
+     * Set prefix
+     *
+     * @param string $prefix
+     * @return Contact
+     */
+    public function setPrefix($prefix)
+    {
+        $this->prefix = $prefix;
+
+        return $this;
+    }
+
+    /**
+     * Set suffix
+     *
+     * @param string $suffix
+     * @return Contact
+     */
+    public function setSuffix($suffix)
+    {
+        $this->suffix = $suffix;
+
+        return $this;
+    }
+
+    /**
+     * Set addressid
+     *
+     * @param string $addressid
+     * @return Contact
+     */
+    public function setAddressid($addressid)
+    {
+        $this->addressid = $addressid;
+
+        return $this;
+    }
+
+    /**
+     * Set shippingid
+     *
+     * @param string $shippingid
+     * @return Contact
+     */
+    public function setShippingid($shippingid)
+    {
+        $this->shippingid = $shippingid;
+
+        return $this;
+    }
+
+    /**
+     * Set workphone
+     *
+     * @param string $workphone
+     * @return Contact
+     */
+    public function setWorkphone($workphone)
+    {
+        $this->workphone = $workphone;
+
+        return $this;
+    }
+
+    /**
+     * Set homephone
+     *
+     * @param string $homephone
+     * @return Contact
+     */
+    public function setHomephone($homephone)
+    {
+        $this->homephone = $homephone;
+
+        return $this;
+    }
+
+    /**
+     * Set fax
+     *
+     * @param string $fax
+     * @return Contact
+     */
+    public function setFax($fax)
+    {
+        $this->fax = $fax;
+
+        return $this;
+    }
+
+    /**
+     * Set mobile
+     *
+     * @param string $mobile
+     * @return Contact
+     */
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+
+        return $this;
+    }
+
+    /**
+     * Set pager
+     *
+     * @param string $pager
+     * @return Contact
+     */
+    public function setPager($pager)
+    {
+        $this->pager = $pager;
+
+        return $this;
+    }
+
+    /**
+     * Set pinnumber
+     *
+     * @param string $pinnumber
+     * @return Contact
+     */
+    public function setPinnumber($pinnumber)
+    {
+        $this->pinnumber = $pinnumber;
+
+        return $this;
+    }
+
+    /**
+     * Set pagernumeric
+     *
+     * @param string $pagernumeric
+     * @return Contact
+     */
+    public function setPagernumeric($pagernumeric)
+    {
+        $this->pagernumeric = $pagernumeric;
+
+        return $this;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     * @return Contact
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Set secondaryemail
+     *
+     * @param string $secondaryemail
+     * @return Contact
+     */
+    public function setSecondaryemail($secondaryemail)
+    {
+        $this->secondaryemail = $secondaryemail;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress
+     *
+     * @param string $webaddress
+     * @return Contact
+     */
+    public function setWebaddress($webaddress)
+    {
+        $this->webaddress = $webaddress;
+
+        return $this;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Contact
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return Contact
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Set assistant
+     *
+     * @param string $assistant
+     * @return Contact
+     */
+    public function setAssistant($assistant)
+    {
+        $this->assistant = $assistant;
+
+        return $this;
+    }
+
+    /**
+     * Set birthday
+     *
+     * @param \DateTime $birthday
+     * @return Contact
+     */
+    public function setBirthday($birthday)
+    {
+        $this->birthday = $birthday;
+
+        return $this;
+    }
+
+    /**
+     * Set spouse
+     *
+     * @param string $spouse
+     * @return Contact
+     */
+    public function setSpouse($spouse)
+    {
+        $this->spouse = $spouse;
+
+        return $this;
+    }
+
+    /**
+     * Set spousebirthday
+     *
+     * @param \DateTime $spousebirthday
+     * @return Contact
+     */
+    public function setSpousebirthday($spousebirthday)
+    {
+        $this->spousebirthday = $spousebirthday;
+
+        return $this;
+    }
+
+    /**
+     * Set alumni
+     *
+     * @param string $alumni
+     * @return Contact
+     */
+    public function setAlumni($alumni)
+    {
+        $this->alumni = $alumni;
+
+        return $this;
+    }
+
+    /**
+     * Set yeargraduated
+     *
+     * @param integer $yeargraduated
+     * @return Contact
+     */
+    public function setYeargraduated($yeargraduated)
+    {
+        $this->yeargraduated = $yeargraduated;
+
+        return $this;
+    }
+
+    /**
+     * Set interests
+     *
+     * @param string $interests
+     * @return Contact
+     */
+    public function setInterests($interests)
+    {
+        $this->interests = $interests;
+
+        return $this;
+    }
+
+    /**
+     * Set previousemployer
+     *
+     * @param string $previousemployer
+     * @return Contact
+     */
+    public function setPreviousemployer($previousemployer)
+    {
+        $this->previousemployer = $previousemployer;
+
+        return $this;
+    }
+
+    /**
+     * Set directions
+     *
+     * @param string $directions
+     * @return Contact
+     */
+    public function setDirections($directions)
+    {
+        $this->directions = $directions;
+
+        return $this;
+    }
+
+    /**
+     * Set reportsto
+     *
+     * @param string $reportsto
+     * @return Contact
+     */
+    public function setReportsto($reportsto)
+    {
+        $this->reportsto = $reportsto;
+
+        return $this;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return Contact
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Set accountmanagerid
+     *
+     * @param string $accountmanagerid
+     * @return Contact
+     */
+    public function setAccountmanagerid($accountmanagerid)
+    {
+        $this->accountmanagerid = $accountmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set regionalmanagerid
+     *
+     * @param string $regionalmanagerid
+     * @return Contact
+     */
+    public function setRegionalmanagerid($regionalmanagerid)
+    {
+        $this->regionalmanagerid = $regionalmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set divisionalmanagerid
+     *
+     * @param string $divisionalmanagerid
+     * @return Contact
+     */
+    public function setDivisionalmanagerid($divisionalmanagerid)
+    {
+        $this->divisionalmanagerid = $divisionalmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return Contact
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return Contact
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return Contact
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return Contact
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return Contact
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Set referral
+     *
+     * @param string $referral
+     * @return Contact
+     */
+    public function setReferral($referral)
+    {
+        $this->referral = $referral;
+
+        return $this;
+    }
+
+    /**
+     * Set lastnameUc
+     *
+     * @param string $lastnameUc
+     * @return Contact
+     */
+    public function setLastnameUc($lastnameUc)
+    {
+        $this->lastnameUc = $lastnameUc;
+
+        return $this;
+    }
+
+    /**
+     * Set initials
+     *
+     * @param string $initials
+     * @return Contact
+     */
+    public function setInitials($initials)
+    {
+        $this->initials = $initials;
+
+        return $this;
+    }
+
+    /**
+     * Set alternatekeyprefix
+     *
+     * @param string $alternatekeyprefix
+     * @return Contact
+     */
+    public function setAlternatekeyprefix($alternatekeyprefix)
+    {
+        $this->alternatekeyprefix = $alternatekeyprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set alternatekeysuffix
+     *
+     * @param string $alternatekeysuffix
+     * @return Contact
+     */
+    public function setAlternatekeysuffix($alternatekeysuffix)
+    {
+        $this->alternatekeysuffix = $alternatekeysuffix;
+
+        return $this;
+    }
+
+    /**
+     * Set locationcode
+     *
+     * @param string $locationcode
+     * @return Contact
+     */
+    public function setLocationcode($locationcode)
+    {
+        $this->locationcode = $locationcode;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield1
+     *
+     * @param string $userfield1
+     * @return Contact
+     */
+    public function setUserfield1($userfield1)
+    {
+        $this->userfield1 = $userfield1;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield2
+     *
+     * @param string $userfield2
+     * @return Contact
+     */
+    public function setUserfield2($userfield2)
+    {
+        $this->userfield2 = $userfield2;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield3
+     *
+     * @param string $userfield3
+     * @return Contact
+     */
+    public function setUserfield3($userfield3)
+    {
+        $this->userfield3 = $userfield3;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield4
+     *
+     * @param string $userfield4
+     * @return Contact
+     */
+    public function setUserfield4($userfield4)
+    {
+        $this->userfield4 = $userfield4;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield5
+     *
+     * @param string $userfield5
+     * @return Contact
+     */
+    public function setUserfield5($userfield5)
+    {
+        $this->userfield5 = $userfield5;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield6
+     *
+     * @param string $userfield6
+     * @return Contact
+     */
+    public function setUserfield6($userfield6)
+    {
+        $this->userfield6 = $userfield6;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield7
+     *
+     * @param string $userfield7
+     * @return Contact
+     */
+    public function setUserfield7($userfield7)
+    {
+        $this->userfield7 = $userfield7;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield8
+     *
+     * @param string $userfield8
+     * @return Contact
+     */
+    public function setUserfield8($userfield8)
+    {
+        $this->userfield8 = $userfield8;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield9
+     *
+     * @param string $userfield9
+     * @return Contact
+     */
+    public function setUserfield9($userfield9)
+    {
+        $this->userfield9 = $userfield9;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield10
+     *
+     * @param string $userfield10
+     * @return Contact
+     */
+    public function setUserfield10($userfield10)
+    {
+        $this->userfield10 = $userfield10;
+
+        return $this;
+    }
+
+    /**
+     * Set webpassword
+     *
+     * @param string $webpassword
+     * @return Contact
+     */
+    public function setWebpassword($webpassword)
+    {
+        $this->webpassword = $webpassword;
+
+        return $this;
+    }
+
+    /**
+     * Set webusername
+     *
+     * @param string $webusername
+     * @return Contact
+     */
+    public function setWebusername($webusername)
+    {
+        $this->webusername = $webusername;
+
+        return $this;
+    }
+
+    /**
+     * Set weight
+     *
+     * @param string $weight
+     * @return Contact
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Set donotsolicit
+     *
+     * @param integer $donotsolicit
+     * @return Contact
+     */
+    public function setDonotsolicit($donotsolicit)
+    {
+        $this->donotsolicit = $donotsolicit;
+
+        return $this;
+    }
+
+    /**
+     * Set score
+     *
+     * @param string $score
+     * @return Contact
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+
+        return $this;
+    }
+
+    /**
+     * Set email3
+     *
+     * @param string $email3
+     * @return Contact
+     */
+    public function setEmail3($email3)
+    {
+        $this->email3 = $email3;
+
+        return $this;
+    }
+
+    /**
+     * Set donotemail
+     *
+     * @param string $donotemail
+     * @return Contact
+     */
+    public function setDonotemail($donotemail)
+    {
+        $this->donotemail = $donotemail;
+
+        return $this;
+    }
+
+    /**
+     * Set donotphone
+     *
+     * @param string $donotphone
+     * @return Contact
+     */
+    public function setDonotphone($donotphone)
+    {
+        $this->donotphone = $donotphone;
+
+        return $this;
+    }
+
+    /**
+     * Set donotmail
+     *
+     * @param string $donotmail
+     * @return Contact
+     */
+    public function setDonotmail($donotmail)
+    {
+        $this->donotmail = $donotmail;
+
+        return $this;
+    }
+
+    /**
+     * Set donotfax
+     *
+     * @param string $donotfax
+     * @return Contact
+     */
+    public function setDonotfax($donotfax)
+    {
+        $this->donotfax = $donotfax;
+
+        return $this;
+    }
+
+    /**
+     * Set importsource
+     *
+     * @param string $importsource
+     * @return Contact
+     */
+    public function setImportsource($importsource)
+    {
+        $this->importsource = $importsource;
+
+        return $this;
+    }
+
+    /**
+     * Set subtype
+     *
+     * @param string $subtype
+     * @return Contact
+     */
+    public function setSubtype($subtype)
+    {
+        $this->subtype = $subtype;
+
+        return $this;
+    }
+
+    /**
+     * Set otherphone
+     *
+     * @param string $otherphone
+     * @return Contact
+     */
+    public function setOtherphone($otherphone)
+    {
+        $this->otherphone = $otherphone;
+
+        return $this;
+    }
+
+    /**
+     * Set preferredContact
+     *
+     * @param string $preferredContact
+     * @return Contact
+     */
+    public function setPreferredContact($preferredContact)
+    {
+        $this->preferredContact = $preferredContact;
+
+        return $this;
+    }
+
+    /**
+     * Set webpasswordhint
+     *
+     * @param string $webpasswordhint
+     * @return Contact
+     */
+    public function setWebpasswordhint($webpasswordhint)
+    {
+        $this->webpasswordhint = $webpasswordhint;
+
+        return $this;
+    }
+
+    /**
+     * Set isserviceauthorized
+     *
+     * @param string $isserviceauthorized
+     * @return Contact
+     */
+    public function setIsserviceauthorized($isserviceauthorized)
+    {
+        $this->isserviceauthorized = $isserviceauthorized;
+
+        return $this;
+    }
+
+    /**
+     * Set cuisinepref
+     *
+     * @param string $cuisinepref
+     * @return Contact
+     */
+    public function setCuisinepref($cuisinepref)
+    {
+        $this->cuisinepref = $cuisinepref;
+
+        return $this;
+    }
+
+    /**
+     * Set children
+     *
+     * @param string $children
+     * @return Contact
+     */
+    public function setChildren($children)
+    {
+        $this->children = $children;
+
+        return $this;
+    }
+
+    /**
+     * Set lasthistorydate
+     *
+     * @param \DateTime $lasthistorydate
+     * @return Contact
+     */
+    public function setLasthistorydate($lasthistorydate)
+    {
+        $this->lasthistorydate = $lasthistorydate;
+
+        return $this;
+    }
+
+    /**
+     * Set lasthistoryby
+     *
+     * @param string $lasthistoryby
+     * @return Contact
+     */
+    public function setLasthistoryby($lasthistoryby)
+    {
+        $this->lasthistoryby = $lasthistoryby;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress2
+     *
+     * @param string $webaddress2
+     * @return Contact
+     */
+    public function setWebaddress2($webaddress2)
+    {
+        $this->webaddress2 = $webaddress2;
+
+        return $this;
+    }
+
+    /**
+     * Set salutation
+     *
+     * @param string $salutation
+     * @return Contact
+     */
+    public function setSalutation($salutation)
+    {
+        $this->salutation = $salutation;
+
+        return $this;
+    }
+
+    /**
+     * Set subscriberid
+     *
+     * @param string $subscriberid
+     * @return Contact
+     */
+    public function setSubscriberid($subscriberid)
+    {
+        $this->subscriberid = $subscriberid;
+
+        return $this;
+    }
+
+    /**
+     * Set categories
+     *
+     * @param string $categories
+     * @return Contact
+     */
+    public function setCategories($categories)
+    {
+        $this->categories = $categories;
+
+        return $this;
+    }
 }

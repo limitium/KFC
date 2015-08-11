@@ -55,4 +55,142 @@ class KfDublMetro
     private $metroRusOld;
 
 
+
+    /**
+     * Set metroRus
+     *
+     * @param string $metroRus
+     * @return KfDublMetro
+     */
+    public function setMetroRus($metroRus)
+    {
+        $this->metroRus = $metroRus;
+
+        return $this;
+    }
+
+    /**
+     * Get metroRus
+     *
+     * @return string 
+     */
+    public function getMetroRus()
+    {
+        return $this->metroRus;
+    }
+
+    /**
+     * Set spkMetroid
+     *
+     * @param string $spkMetroid
+     * @return KfDublMetro
+     */
+    public function setSpkMetroid($spkMetroid)
+    {
+        $this->spkMetroid = $spkMetroid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkMetroid
+     *
+     * @return string 
+     */
+    public function getSpkMetroid()
+    {
+        return $this->spkMetroid;
+    }
+
+    /**
+     * Set cnt
+     *
+     * @param integer $cnt
+     * @return KfDublMetro
+     */
+    public function setCnt($cnt)
+    {
+        $this->cnt = $cnt;
+
+        return $this;
+    }
+
+    /**
+     * Get cnt
+     *
+     * @return integer 
+     */
+    public function getCnt()
+    {
+        return $this->cnt;
+    }
+
+    /**
+     * Set parentMetroid
+     *
+     * @param string $parentMetroid
+     * @return KfDublMetro
+     */
+    public function setParentMetroid($parentMetroid)
+    {
+        $this->parentMetroid = $parentMetroid;
+
+        return $this;
+    }
+
+    /**
+     * Get parentMetroid
+     *
+     * @return string 
+     */
+    public function getParentMetroid()
+    {
+        return $this->parentMetroid;
+    }
+
+    /**
+     * Set metroRusNew
+     *
+     * @param string $metroRusNew
+     * @return KfDublMetro
+     */
+    public function setMetroRusNew($metroRusNew)
+    {
+        $this->metroRusNew = $metroRusNew;
+
+        return $this;
+    }
+
+    /**
+     * Get metroRusNew
+     *
+     * @return string 
+     */
+    public function getMetroRusNew()
+    {
+        return $this->metroRusNew;
+    }
+
+    /**
+     * Set metroRusOld
+     *
+     * @param string $metroRusOld
+     * @return KfDublMetro
+     */
+    public function setMetroRusOld($metroRusOld)
+    {
+        $this->metroRusOld = $metroRusOld;
+
+        return $this;
+    }
+
+    /**
+     * Get metroRusOld
+     *
+     * @return string 
+     */
+    public function getMetroRusOld()
+    {
+        return $this->metroRusOld;
+    }
 }

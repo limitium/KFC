@@ -76,4 +76,211 @@ class AccountProfile
     private $subprofileid;
 
 
+
+    /**
+     * Set accountProfileid
+     *
+     * @param string $accountProfileid
+     * @return AccountProfile
+     */
+    public function setAccountProfileid($accountProfileid)
+    {
+        $this->accountProfileid = $accountProfileid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountProfileid
+     *
+     * @return string 
+     */
+    public function getAccountProfileid()
+    {
+        return $this->accountProfileid;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return AccountProfile
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return AccountProfile
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return AccountProfile
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return AccountProfile
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return AccountProfile
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set areaid
+     *
+     * @param string $areaid
+     * @return AccountProfile
+     */
+    public function setAreaid($areaid)
+    {
+        $this->areaid = $areaid;
+
+        return $this;
+    }
+
+    /**
+     * Get areaid
+     *
+     * @return string 
+     */
+    public function getAreaid()
+    {
+        return $this->areaid;
+    }
+
+    /**
+     * Set profileid
+     *
+     * @param string $profileid
+     * @return AccountProfile
+     */
+    public function setProfileid($profileid)
+    {
+        $this->profileid = $profileid;
+
+        return $this;
+    }
+
+    /**
+     * Get profileid
+     *
+     * @return string 
+     */
+    public function getProfileid()
+    {
+        return $this->profileid;
+    }
+
+    /**
+     * Set subprofileid
+     *
+     * @param string $subprofileid
+     * @return AccountProfile
+     */
+    public function setSubprofileid($subprofileid)
+    {
+        $this->subprofileid = $subprofileid;
+
+        return $this;
+    }
+
+    /**
+     * Get subprofileid
+     *
+     * @return string 
+     */
+    public function getSubprofileid()
+    {
+        return $this->subprofileid;
+    }
 }

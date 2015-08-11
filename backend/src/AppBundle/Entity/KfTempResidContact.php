@@ -55,4 +55,142 @@ class KfTempResidContact
     private $resiStatus;
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return KfTempResidContact
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Get contactid
+     *
+     * @return string 
+     */
+    public function getContactid()
+    {
+        return $this->contactid;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return KfTempResidContact
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Get managerid
+     *
+     * @return string 
+     */
+    public function getManagerid()
+    {
+        return $this->managerid;
+    }
+
+    /**
+     * Set nearActivity
+     *
+     * @param \DateTime $nearActivity
+     * @return KfTempResidContact
+     */
+    public function setNearActivity($nearActivity)
+    {
+        $this->nearActivity = $nearActivity;
+
+        return $this;
+    }
+
+    /**
+     * Get nearActivity
+     *
+     * @return \DateTime 
+     */
+    public function getNearActivity()
+    {
+        return $this->nearActivity;
+    }
+
+    /**
+     * Set lastHistory
+     *
+     * @param \DateTime $lastHistory
+     * @return KfTempResidContact
+     */
+    public function setLastHistory($lastHistory)
+    {
+        $this->lastHistory = $lastHistory;
+
+        return $this;
+    }
+
+    /**
+     * Get lastHistory
+     *
+     * @return \DateTime 
+     */
+    public function getLastHistory()
+    {
+        return $this->lastHistory;
+    }
+
+    /**
+     * Set contCreatedate
+     *
+     * @param \DateTime $contCreatedate
+     * @return KfTempResidContact
+     */
+    public function setContCreatedate($contCreatedate)
+    {
+        $this->contCreatedate = $contCreatedate;
+
+        return $this;
+    }
+
+    /**
+     * Get contCreatedate
+     *
+     * @return \DateTime 
+     */
+    public function getContCreatedate()
+    {
+        return $this->contCreatedate;
+    }
+
+    /**
+     * Set resiStatus
+     *
+     * @param string $resiStatus
+     * @return KfTempResidContact
+     */
+    public function setResiStatus($resiStatus)
+    {
+        $this->resiStatus = $resiStatus;
+
+        return $this;
+    }
+
+    /**
+     * Get resiStatus
+     *
+     * @return string 
+     */
+    public function getResiStatus()
+    {
+        return $this->resiStatus;
+    }
 }

@@ -237,4 +237,740 @@ class KfOffBriefCommerc
     private $cother;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfOffBriefCommerc
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfOffBriefCommerc
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfOffBriefCommerc
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfOffBriefCommerc
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfOffBriefCommerc
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return KfOffBriefCommerc
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Get seccodeid
+     *
+     * @return string 
+     */
+    public function getSeccodeid()
+    {
+        return $this->seccodeid;
+    }
+
+    /**
+     * Set currency
+     *
+     * @param string $currency
+     * @return KfOffBriefCommerc
+     */
+    public function setCurrency($currency)
+    {
+        $this->currency = $currency;
+
+        return $this;
+    }
+
+    /**
+     * Get currency
+     *
+     * @return string 
+     */
+    public function getCurrency()
+    {
+        return $this->currency;
+    }
+
+    /**
+     * Set rentalRateMin
+     *
+     * @param string $rentalRateMin
+     * @return KfOffBriefCommerc
+     */
+    public function setRentalRateMin($rentalRateMin)
+    {
+        $this->rentalRateMin = $rentalRateMin;
+
+        return $this;
+    }
+
+    /**
+     * Get rentalRateMin
+     *
+     * @return string 
+     */
+    public function getRentalRateMin()
+    {
+        return $this->rentalRateMin;
+    }
+
+    /**
+     * Set rentalRateMax
+     *
+     * @param string $rentalRateMax
+     * @return KfOffBriefCommerc
+     */
+    public function setRentalRateMax($rentalRateMax)
+    {
+        $this->rentalRateMax = $rentalRateMax;
+
+        return $this;
+    }
+
+    /**
+     * Get rentalRateMax
+     *
+     * @return string 
+     */
+    public function getRentalRateMax()
+    {
+        return $this->rentalRateMax;
+    }
+
+    /**
+     * Set salePriceMin
+     *
+     * @param string $salePriceMin
+     * @return KfOffBriefCommerc
+     */
+    public function setSalePriceMin($salePriceMin)
+    {
+        $this->salePriceMin = $salePriceMin;
+
+        return $this;
+    }
+
+    /**
+     * Get salePriceMin
+     *
+     * @return string 
+     */
+    public function getSalePriceMin()
+    {
+        return $this->salePriceMin;
+    }
+
+    /**
+     * Set salePriceMax
+     *
+     * @param string $salePriceMax
+     * @return KfOffBriefCommerc
+     */
+    public function setSalePriceMax($salePriceMax)
+    {
+        $this->salePriceMax = $salePriceMax;
+
+        return $this;
+    }
+
+    /**
+     * Get salePriceMax
+     *
+     * @return string 
+     */
+    public function getSalePriceMax()
+    {
+        return $this->salePriceMax;
+    }
+
+    /**
+     * Set salePerSqmMin
+     *
+     * @param string $salePerSqmMin
+     * @return KfOffBriefCommerc
+     */
+    public function setSalePerSqmMin($salePerSqmMin)
+    {
+        $this->salePerSqmMin = $salePerSqmMin;
+
+        return $this;
+    }
+
+    /**
+     * Get salePerSqmMin
+     *
+     * @return string 
+     */
+    public function getSalePerSqmMin()
+    {
+        return $this->salePerSqmMin;
+    }
+
+    /**
+     * Set salePerSqmMax
+     *
+     * @param string $salePerSqmMax
+     * @return KfOffBriefCommerc
+     */
+    public function setSalePerSqmMax($salePerSqmMax)
+    {
+        $this->salePerSqmMax = $salePerSqmMax;
+
+        return $this;
+    }
+
+    /**
+     * Get salePerSqmMax
+     *
+     * @return string 
+     */
+    public function getSalePerSqmMax()
+    {
+        return $this->salePerSqmMax;
+    }
+
+    /**
+     * Set operationalCost
+     *
+     * @param string $operationalCost
+     * @return KfOffBriefCommerc
+     */
+    public function setOperationalCost($operationalCost)
+    {
+        $this->operationalCost = $operationalCost;
+
+        return $this;
+    }
+
+    /**
+     * Get operationalCost
+     *
+     * @return string 
+     */
+    public function getOperationalCost()
+    {
+        return $this->operationalCost;
+    }
+
+    /**
+     * Set otherCost
+     *
+     * @param string $otherCost
+     * @return KfOffBriefCommerc
+     */
+    public function setOtherCost($otherCost)
+    {
+        $this->otherCost = $otherCost;
+
+        return $this;
+    }
+
+    /**
+     * Get otherCost
+     *
+     * @return string 
+     */
+    public function getOtherCost()
+    {
+        return $this->otherCost;
+    }
+
+    /**
+     * Set utilityCost
+     *
+     * @param string $utilityCost
+     * @return KfOffBriefCommerc
+     */
+    public function setUtilityCost($utilityCost)
+    {
+        $this->utilityCost = $utilityCost;
+
+        return $this;
+    }
+
+    /**
+     * Get utilityCost
+     *
+     * @return string 
+     */
+    public function getUtilityCost()
+    {
+        return $this->utilityCost;
+    }
+
+    /**
+     * Set fitOut
+     *
+     * @param string $fitOut
+     * @return KfOffBriefCommerc
+     */
+    public function setFitOut($fitOut)
+    {
+        $this->fitOut = $fitOut;
+
+        return $this;
+    }
+
+    /**
+     * Get fitOut
+     *
+     * @return string 
+     */
+    public function getFitOut()
+    {
+        return $this->fitOut;
+    }
+
+    /**
+     * Set parkingUndergroundCost
+     *
+     * @param string $parkingUndergroundCost
+     * @return KfOffBriefCommerc
+     */
+    public function setParkingUndergroundCost($parkingUndergroundCost)
+    {
+        $this->parkingUndergroundCost = $parkingUndergroundCost;
+
+        return $this;
+    }
+
+    /**
+     * Get parkingUndergroundCost
+     *
+     * @return string 
+     */
+    public function getParkingUndergroundCost()
+    {
+        return $this->parkingUndergroundCost;
+    }
+
+    /**
+     * Set parkingGroundCost
+     *
+     * @param string $parkingGroundCost
+     * @return KfOffBriefCommerc
+     */
+    public function setParkingGroundCost($parkingGroundCost)
+    {
+        $this->parkingGroundCost = $parkingGroundCost;
+
+        return $this;
+    }
+
+    /**
+     * Get parkingGroundCost
+     *
+     * @return string 
+     */
+    public function getParkingGroundCost()
+    {
+        return $this->parkingGroundCost;
+    }
+
+    /**
+     * Set parkingRoofCost
+     *
+     * @param string $parkingRoofCost
+     * @return KfOffBriefCommerc
+     */
+    public function setParkingRoofCost($parkingRoofCost)
+    {
+        $this->parkingRoofCost = $parkingRoofCost;
+
+        return $this;
+    }
+
+    /**
+     * Get parkingRoofCost
+     *
+     * @return string 
+     */
+    public function getParkingRoofCost()
+    {
+        return $this->parkingRoofCost;
+    }
+
+    /**
+     * Set operationalCostMax
+     *
+     * @param string $operationalCostMax
+     * @return KfOffBriefCommerc
+     */
+    public function setOperationalCostMax($operationalCostMax)
+    {
+        $this->operationalCostMax = $operationalCostMax;
+
+        return $this;
+    }
+
+    /**
+     * Get operationalCostMax
+     *
+     * @return string 
+     */
+    public function getOperationalCostMax()
+    {
+        return $this->operationalCostMax;
+    }
+
+    /**
+     * Set fitOutMax
+     *
+     * @param string $fitOutMax
+     * @return KfOffBriefCommerc
+     */
+    public function setFitOutMax($fitOutMax)
+    {
+        $this->fitOutMax = $fitOutMax;
+
+        return $this;
+    }
+
+    /**
+     * Get fitOutMax
+     *
+     * @return string 
+     */
+    public function getFitOutMax()
+    {
+        return $this->fitOutMax;
+    }
+
+    /**
+     * Set crentalRate
+     *
+     * @param string $crentalRate
+     * @return KfOffBriefCommerc
+     */
+    public function setCrentalRate($crentalRate)
+    {
+        $this->crentalRate = $crentalRate;
+
+        return $this;
+    }
+
+    /**
+     * Get crentalRate
+     *
+     * @return string 
+     */
+    public function getCrentalRate()
+    {
+        return $this->crentalRate;
+    }
+
+    /**
+     * Set csalePrice
+     *
+     * @param string $csalePrice
+     * @return KfOffBriefCommerc
+     */
+    public function setCsalePrice($csalePrice)
+    {
+        $this->csalePrice = $csalePrice;
+
+        return $this;
+    }
+
+    /**
+     * Get csalePrice
+     *
+     * @return string 
+     */
+    public function getCsalePrice()
+    {
+        return $this->csalePrice;
+    }
+
+    /**
+     * Set csalePriceSqm
+     *
+     * @param string $csalePriceSqm
+     * @return KfOffBriefCommerc
+     */
+    public function setCsalePriceSqm($csalePriceSqm)
+    {
+        $this->csalePriceSqm = $csalePriceSqm;
+
+        return $this;
+    }
+
+    /**
+     * Get csalePriceSqm
+     *
+     * @return string 
+     */
+    public function getCsalePriceSqm()
+    {
+        return $this->csalePriceSqm;
+    }
+
+    /**
+     * Set coperationalCost
+     *
+     * @param string $coperationalCost
+     * @return KfOffBriefCommerc
+     */
+    public function setCoperationalCost($coperationalCost)
+    {
+        $this->coperationalCost = $coperationalCost;
+
+        return $this;
+    }
+
+    /**
+     * Get coperationalCost
+     *
+     * @return string 
+     */
+    public function getCoperationalCost()
+    {
+        return $this->coperationalCost;
+    }
+
+    /**
+     * Set cfitOut
+     *
+     * @param string $cfitOut
+     * @return KfOffBriefCommerc
+     */
+    public function setCfitOut($cfitOut)
+    {
+        $this->cfitOut = $cfitOut;
+
+        return $this;
+    }
+
+    /**
+     * Get cfitOut
+     *
+     * @return string 
+     */
+    public function getCfitOut()
+    {
+        return $this->cfitOut;
+    }
+
+    /**
+     * Set cutility
+     *
+     * @param string $cutility
+     * @return KfOffBriefCommerc
+     */
+    public function setCutility($cutility)
+    {
+        $this->cutility = $cutility;
+
+        return $this;
+    }
+
+    /**
+     * Get cutility
+     *
+     * @return string 
+     */
+    public function getCutility()
+    {
+        return $this->cutility;
+    }
+
+    /**
+     * Set croofParking
+     *
+     * @param string $croofParking
+     * @return KfOffBriefCommerc
+     */
+    public function setCroofParking($croofParking)
+    {
+        $this->croofParking = $croofParking;
+
+        return $this;
+    }
+
+    /**
+     * Get croofParking
+     *
+     * @return string 
+     */
+    public function getCroofParking()
+    {
+        return $this->croofParking;
+    }
+
+    /**
+     * Set cgroundParking
+     *
+     * @param string $cgroundParking
+     * @return KfOffBriefCommerc
+     */
+    public function setCgroundParking($cgroundParking)
+    {
+        $this->cgroundParking = $cgroundParking;
+
+        return $this;
+    }
+
+    /**
+     * Get cgroundParking
+     *
+     * @return string 
+     */
+    public function getCgroundParking()
+    {
+        return $this->cgroundParking;
+    }
+
+    /**
+     * Set cunderParking
+     *
+     * @param string $cunderParking
+     * @return KfOffBriefCommerc
+     */
+    public function setCunderParking($cunderParking)
+    {
+        $this->cunderParking = $cunderParking;
+
+        return $this;
+    }
+
+    /**
+     * Get cunderParking
+     *
+     * @return string 
+     */
+    public function getCunderParking()
+    {
+        return $this->cunderParking;
+    }
+
+    /**
+     * Set cother
+     *
+     * @param string $cother
+     * @return KfOffBriefCommerc
+     */
+    public function setCother($cother)
+    {
+        $this->cother = $cother;
+
+        return $this;
+    }
+
+    /**
+     * Get cother
+     *
+     * @return string 
+     */
+    public function getCother()
+    {
+        return $this->cother;
+    }
 }

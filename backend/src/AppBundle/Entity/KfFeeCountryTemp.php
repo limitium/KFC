@@ -34,4 +34,73 @@ class KfFeeCountryTemp
     private $fee;
 
 
+
+    /**
+     * Set spkPropertyid
+     *
+     * @param string $spkPropertyid
+     * @return KfFeeCountryTemp
+     */
+    public function setSpkPropertyid($spkPropertyid)
+    {
+        $this->spkPropertyid = $spkPropertyid;
+
+        return $this;
+    }
+
+    /**
+     * Get spkPropertyid
+     *
+     * @return string 
+     */
+    public function getSpkPropertyid()
+    {
+        return $this->spkPropertyid;
+    }
+
+    /**
+     * Set propertyType
+     *
+     * @param string $propertyType
+     * @return KfFeeCountryTemp
+     */
+    public function setPropertyType($propertyType)
+    {
+        $this->propertyType = $propertyType;
+
+        return $this;
+    }
+
+    /**
+     * Get propertyType
+     *
+     * @return string 
+     */
+    public function getPropertyType()
+    {
+        return $this->propertyType;
+    }
+
+    /**
+     * Set fee
+     *
+     * @param string $fee
+     * @return KfFeeCountryTemp
+     */
+    public function setFee($fee)
+    {
+        $this->fee = $fee;
+
+        return $this;
+    }
+
+    /**
+     * Get fee
+     *
+     * @return string 
+     */
+    public function getFee()
+    {
+        return $this->fee;
+    }
 }

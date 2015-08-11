@@ -27,4 +27,50 @@ class KfNotDoubleTabl
     private $id2;
 
 
+
+    /**
+     * Set id1
+     *
+     * @param string $id1
+     * @return KfNotDoubleTabl
+     */
+    public function setId1($id1)
+    {
+        $this->id1 = $id1;
+
+        return $this;
+    }
+
+    /**
+     * Get id1
+     *
+     * @return string 
+     */
+    public function getId1()
+    {
+        return $this->id1;
+    }
+
+    /**
+     * Set id2
+     *
+     * @param string $id2
+     * @return KfNotDoubleTabl
+     */
+    public function setId2($id2)
+    {
+        $this->id2 = $id2;
+
+        return $this;
+    }
+
+    /**
+     * Get id2
+     *
+     * @return string 
+     */
+    public function getId2()
+    {
+        return $this->id2;
+    }
 }

@@ -27,4 +27,50 @@ class KfMergeRestore
     private $oldId;
 
 
+
+    /**
+     * Set newId
+     *
+     * @param string $newId
+     * @return KfMergeRestore
+     */
+    public function setNewId($newId)
+    {
+        $this->newId = $newId;
+
+        return $this;
+    }
+
+    /**
+     * Get newId
+     *
+     * @return string 
+     */
+    public function getNewId()
+    {
+        return $this->newId;
+    }
+
+    /**
+     * Set oldId
+     *
+     * @param string $oldId
+     * @return KfMergeRestore
+     */
+    public function setOldId($oldId)
+    {
+        $this->oldId = $oldId;
+
+        return $this;
+    }
+
+    /**
+     * Get oldId
+     *
+     * @return string 
+     */
+    public function getOldId()
+    {
+        return $this->oldId;
+    }
 }

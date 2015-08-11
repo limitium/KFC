@@ -1230,4 +1230,1057 @@ class Account
 
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return Account
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return Account
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Set account
+     *
+     * @param string $account
+     * @return Account
+     */
+    public function setAccount($account)
+    {
+        $this->account = $account;
+
+        return $this;
+    }
+
+    /**
+     * Set division
+     *
+     * @param string $division
+     * @return Account
+     */
+    public function setDivision($division)
+    {
+        $this->division = $division;
+
+        return $this;
+    }
+
+    /**
+     * Set siccode
+     *
+     * @param string $siccode
+     * @return Account
+     */
+    public function setSiccode($siccode)
+    {
+        $this->siccode = $siccode;
+
+        return $this;
+    }
+
+    /**
+     * Set parentid
+     *
+     * @param string $parentid
+     * @return Account
+     */
+    public function setParentid($parentid)
+    {
+        $this->parentid = $parentid;
+
+        return $this;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Account
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Set addressid
+     *
+     * @param string $addressid
+     * @return Account
+     */
+    public function setAddressid($addressid)
+    {
+        $this->addressid = $addressid;
+
+        return $this;
+    }
+
+    /**
+     * Set shippingid
+     *
+     * @param string $shippingid
+     * @return Account
+     */
+    public function setShippingid($shippingid)
+    {
+        $this->shippingid = $shippingid;
+
+        return $this;
+    }
+
+    /**
+     * Set region
+     *
+     * @param string $region
+     * @return Account
+     */
+    public function setRegion($region)
+    {
+        $this->region = $region;
+
+        return $this;
+    }
+
+    /**
+     * Set mainphone
+     *
+     * @param string $mainphone
+     * @return Account
+     */
+    public function setMainphone($mainphone)
+    {
+        $this->mainphone = $mainphone;
+
+        return $this;
+    }
+
+    /**
+     * Set alternatephone
+     *
+     * @param string $alternatephone
+     * @return Account
+     */
+    public function setAlternatephone($alternatephone)
+    {
+        $this->alternatephone = $alternatephone;
+
+        return $this;
+    }
+
+    /**
+     * Set fax
+     *
+     * @param string $fax
+     * @return Account
+     */
+    public function setFax($fax)
+    {
+        $this->fax = $fax;
+
+        return $this;
+    }
+
+    /**
+     * Set tollfree
+     *
+     * @param string $tollfree
+     * @return Account
+     */
+    public function setTollfree($tollfree)
+    {
+        $this->tollfree = $tollfree;
+
+        return $this;
+    }
+
+    /**
+     * Set tollfree2
+     *
+     * @param string $tollfree2
+     * @return Account
+     */
+    public function setTollfree2($tollfree2)
+    {
+        $this->tollfree2 = $tollfree2;
+
+        return $this;
+    }
+
+    /**
+     * Set otherphone1
+     *
+     * @param string $otherphone1
+     * @return Account
+     */
+    public function setOtherphone1($otherphone1)
+    {
+        $this->otherphone1 = $otherphone1;
+
+        return $this;
+    }
+
+    /**
+     * Set otherphone2
+     *
+     * @param string $otherphone2
+     * @return Account
+     */
+    public function setOtherphone2($otherphone2)
+    {
+        $this->otherphone2 = $otherphone2;
+
+        return $this;
+    }
+
+    /**
+     * Set otherphone3
+     *
+     * @param string $otherphone3
+     * @return Account
+     */
+    public function setOtherphone3($otherphone3)
+    {
+        $this->otherphone3 = $otherphone3;
+
+        return $this;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     * @return Account
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Set emailtype
+     *
+     * @param string $emailtype
+     * @return Account
+     */
+    public function setEmailtype($emailtype)
+    {
+        $this->emailtype = $emailtype;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress
+     *
+     * @param string $webaddress
+     * @return Account
+     */
+    public function setWebaddress($webaddress)
+    {
+        $this->webaddress = $webaddress;
+
+        return $this;
+    }
+
+    /**
+     * Set seccodeid
+     *
+     * @param string $seccodeid
+     * @return Account
+     */
+    public function setSeccodeid($seccodeid)
+    {
+        $this->seccodeid = $seccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Set revenue
+     *
+     * @param string $revenue
+     * @return Account
+     */
+    public function setRevenue($revenue)
+    {
+        $this->revenue = $revenue;
+
+        return $this;
+    }
+
+    /**
+     * Set employees
+     *
+     * @param integer $employees
+     * @return Account
+     */
+    public function setEmployees($employees)
+    {
+        $this->employees = $employees;
+
+        return $this;
+    }
+
+    /**
+     * Set industry
+     *
+     * @param string $industry
+     * @return Account
+     */
+    public function setIndustry($industry)
+    {
+        $this->industry = $industry;
+
+        return $this;
+    }
+
+    /**
+     * Set creditrating
+     *
+     * @param string $creditrating
+     * @return Account
+     */
+    public function setCreditrating($creditrating)
+    {
+        $this->creditrating = $creditrating;
+
+        return $this;
+    }
+
+    /**
+     * Set notes
+     *
+     * @param string $notes
+     * @return Account
+     */
+    public function setNotes($notes)
+    {
+        $this->notes = $notes;
+
+        return $this;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return Account
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Set accountmanagerid
+     *
+     * @param string $accountmanagerid
+     * @return Account
+     */
+    public function setAccountmanagerid($accountmanagerid)
+    {
+        $this->accountmanagerid = $accountmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set regionalmanagerid
+     *
+     * @param string $regionalmanagerid
+     * @return Account
+     */
+    public function setRegionalmanagerid($regionalmanagerid)
+    {
+        $this->regionalmanagerid = $regionalmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set divisionalmanagerid
+     *
+     * @param string $divisionalmanagerid
+     * @return Account
+     */
+    public function setDivisionalmanagerid($divisionalmanagerid)
+    {
+        $this->divisionalmanagerid = $divisionalmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set nationalaccount
+     *
+     * @param string $nationalaccount
+     * @return Account
+     */
+    public function setNationalaccount($nationalaccount)
+    {
+        $this->nationalaccount = $nationalaccount;
+
+        return $this;
+    }
+
+    /**
+     * Set targetaccount
+     *
+     * @param string $targetaccount
+     * @return Account
+     */
+    public function setTargetaccount($targetaccount)
+    {
+        $this->targetaccount = $targetaccount;
+
+        return $this;
+    }
+
+    /**
+     * Set territory
+     *
+     * @param string $territory
+     * @return Account
+     */
+    public function setTerritory($territory)
+    {
+        $this->territory = $territory;
+
+        return $this;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return Account
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return Account
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return Account
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return Account
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Set accountUc
+     *
+     * @param string $accountUc
+     * @return Account
+     */
+    public function setAccountUc($accountUc)
+    {
+        $this->accountUc = $accountUc;
+
+        return $this;
+    }
+
+    /**
+     * Set aka
+     *
+     * @param string $aka
+     * @return Account
+     */
+    public function setAka($aka)
+    {
+        $this->aka = $aka;
+
+        return $this;
+    }
+
+    /**
+     * Set currencycode
+     *
+     * @param string $currencycode
+     * @return Account
+     */
+    public function setCurrencycode($currencycode)
+    {
+        $this->currencycode = $currencycode;
+
+        return $this;
+    }
+
+    /**
+     * Set internalaccountno
+     *
+     * @param string $internalaccountno
+     * @return Account
+     */
+    public function setInternalaccountno($internalaccountno)
+    {
+        $this->internalaccountno = $internalaccountno;
+
+        return $this;
+    }
+
+    /**
+     * Set externalaccountno
+     *
+     * @param string $externalaccountno
+     * @return Account
+     */
+    public function setExternalaccountno($externalaccountno)
+    {
+        $this->externalaccountno = $externalaccountno;
+
+        return $this;
+    }
+
+    /**
+     * Set parentaccountno
+     *
+     * @param string $parentaccountno
+     * @return Account
+     */
+    public function setParentaccountno($parentaccountno)
+    {
+        $this->parentaccountno = $parentaccountno;
+
+        return $this;
+    }
+
+    /**
+     * Set alternatekeyprefix
+     *
+     * @param string $alternatekeyprefix
+     * @return Account
+     */
+    public function setAlternatekeyprefix($alternatekeyprefix)
+    {
+        $this->alternatekeyprefix = $alternatekeyprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set alternatekeysuffix
+     *
+     * @param string $alternatekeysuffix
+     * @return Account
+     */
+    public function setAlternatekeysuffix($alternatekeysuffix)
+    {
+        $this->alternatekeysuffix = $alternatekeysuffix;
+
+        return $this;
+    }
+
+    /**
+     * Set defaultticketseccodeid
+     *
+     * @param string $defaultticketseccodeid
+     * @return Account
+     */
+    public function setDefaultticketseccodeid($defaultticketseccodeid)
+    {
+        $this->defaultticketseccodeid = $defaultticketseccodeid;
+
+        return $this;
+    }
+
+    /**
+     * Set notifydefects
+     *
+     * @param string $notifydefects
+     * @return Account
+     */
+    public function setNotifydefects($notifydefects)
+    {
+        $this->notifydefects = $notifydefects;
+
+        return $this;
+    }
+
+    /**
+     * Set notifyonclose
+     *
+     * @param string $notifyonclose
+     * @return Account
+     */
+    public function setNotifyonclose($notifyonclose)
+    {
+        $this->notifyonclose = $notifyonclose;
+
+        return $this;
+    }
+
+    /**
+     * Set notifyonstatus
+     *
+     * @param string $notifyonstatus
+     * @return Account
+     */
+    public function setNotifyonstatus($notifyonstatus)
+    {
+        $this->notifyonstatus = $notifyonstatus;
+
+        return $this;
+    }
+
+    /**
+     * Set shortnotes
+     *
+     * @param string $shortnotes
+     * @return Account
+     */
+    public function setShortnotes($shortnotes)
+    {
+        $this->shortnotes = $shortnotes;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield1
+     *
+     * @param string $userfield1
+     * @return Account
+     */
+    public function setUserfield1($userfield1)
+    {
+        $this->userfield1 = $userfield1;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield2
+     *
+     * @param string $userfield2
+     * @return Account
+     */
+    public function setUserfield2($userfield2)
+    {
+        $this->userfield2 = $userfield2;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield3
+     *
+     * @param string $userfield3
+     * @return Account
+     */
+    public function setUserfield3($userfield3)
+    {
+        $this->userfield3 = $userfield3;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield4
+     *
+     * @param string $userfield4
+     * @return Account
+     */
+    public function setUserfield4($userfield4)
+    {
+        $this->userfield4 = $userfield4;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield5
+     *
+     * @param string $userfield5
+     * @return Account
+     */
+    public function setUserfield5($userfield5)
+    {
+        $this->userfield5 = $userfield5;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield6
+     *
+     * @param string $userfield6
+     * @return Account
+     */
+    public function setUserfield6($userfield6)
+    {
+        $this->userfield6 = $userfield6;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield7
+     *
+     * @param string $userfield7
+     * @return Account
+     */
+    public function setUserfield7($userfield7)
+    {
+        $this->userfield7 = $userfield7;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield8
+     *
+     * @param string $userfield8
+     * @return Account
+     */
+    public function setUserfield8($userfield8)
+    {
+        $this->userfield8 = $userfield8;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield9
+     *
+     * @param string $userfield9
+     * @return Account
+     */
+    public function setUserfield9($userfield9)
+    {
+        $this->userfield9 = $userfield9;
+
+        return $this;
+    }
+
+    /**
+     * Set userfield10
+     *
+     * @param string $userfield10
+     * @return Account
+     */
+    public function setUserfield10($userfield10)
+    {
+        $this->userfield10 = $userfield10;
+
+        return $this;
+    }
+
+    /**
+     * Set campaignid
+     *
+     * @param string $campaignid
+     * @return Account
+     */
+    public function setCampaignid($campaignid)
+    {
+        $this->campaignid = $campaignid;
+
+        return $this;
+    }
+
+    /**
+     * Set donotsolicit
+     *
+     * @param string $donotsolicit
+     * @return Account
+     */
+    public function setDonotsolicit($donotsolicit)
+    {
+        $this->donotsolicit = $donotsolicit;
+
+        return $this;
+    }
+
+    /**
+     * Set score
+     *
+     * @param string $score
+     * @return Account
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+
+        return $this;
+    }
+
+    /**
+     * Set ticker
+     *
+     * @param string $ticker
+     * @return Account
+     */
+    public function setTicker($ticker)
+    {
+        $this->ticker = $ticker;
+
+        return $this;
+    }
+
+    /**
+     * Set subtype
+     *
+     * @param string $subtype
+     * @return Account
+     */
+    public function setSubtype($subtype)
+    {
+        $this->subtype = $subtype;
+
+        return $this;
+    }
+
+    /**
+     * Set leadsourceid
+     *
+     * @param string $leadsourceid
+     * @return Account
+     */
+    public function setLeadsourceid($leadsourceid)
+    {
+        $this->leadsourceid = $leadsourceid;
+
+        return $this;
+    }
+
+    /**
+     * Set importsource
+     *
+     * @param string $importsource
+     * @return Account
+     */
+    public function setImportsource($importsource)
+    {
+        $this->importsource = $importsource;
+
+        return $this;
+    }
+
+    /**
+     * Set engineerid
+     *
+     * @param string $engineerid
+     * @return Account
+     */
+    public function setEngineerid($engineerid)
+    {
+        $this->engineerid = $engineerid;
+
+        return $this;
+    }
+
+    /**
+     * Set salesengineerid
+     *
+     * @param string $salesengineerid
+     * @return Account
+     */
+    public function setSalesengineerid($salesengineerid)
+    {
+        $this->salesengineerid = $salesengineerid;
+
+        return $this;
+    }
+
+    /**
+     * Set relationship
+     *
+     * @param integer $relationship
+     * @return Account
+     */
+    public function setRelationship($relationship)
+    {
+        $this->relationship = $relationship;
+
+        return $this;
+    }
+
+    /**
+     * Set lasthistoryby
+     *
+     * @param string $lasthistoryby
+     * @return Account
+     */
+    public function setLasthistoryby($lasthistoryby)
+    {
+        $this->lasthistoryby = $lasthistoryby;
+
+        return $this;
+    }
+
+    /**
+     * Set lasthistorydate
+     *
+     * @param \DateTime $lasthistorydate
+     * @return Account
+     */
+    public function setLasthistorydate($lasthistorydate)
+    {
+        $this->lasthistorydate = $lasthistorydate;
+
+        return $this;
+    }
+
+    /**
+     * Set businessdescription
+     *
+     * @param string $businessdescription
+     * @return Account
+     */
+    public function setBusinessdescription($businessdescription)
+    {
+        $this->businessdescription = $businessdescription;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress2
+     *
+     * @param string $webaddress2
+     * @return Account
+     */
+    public function setWebaddress2($webaddress2)
+    {
+        $this->webaddress2 = $webaddress2;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress3
+     *
+     * @param string $webaddress3
+     * @return Account
+     */
+    public function setWebaddress3($webaddress3)
+    {
+        $this->webaddress3 = $webaddress3;
+
+        return $this;
+    }
+
+    /**
+     * Set webaddress4
+     *
+     * @param string $webaddress4
+     * @return Account
+     */
+    public function setWebaddress4($webaddress4)
+    {
+        $this->webaddress4 = $webaddress4;
+
+        return $this;
+    }
+
+    /**
+     * Set tin
+     *
+     * @param string $tin
+     * @return Account
+     */
+    public function setTin($tin)
+    {
+        $this->tin = $tin;
+
+        return $this;
+    }
+
+    /**
+     * Set employees2
+     *
+     * @param string $employees2
+     * @return Account
+     */
+    public function setEmployees2($employees2)
+    {
+        $this->employees2 = $employees2;
+
+        return $this;
+    }
+
+    /**
+     * Set managerid
+     *
+     * @param string $managerid
+     * @return Account
+     */
+    public function setManagerid($managerid)
+    {
+        $this->managerid = $managerid;
+
+        return $this;
+    }
+
+    /**
+     * Set manager
+     *
+     * @param string $manager
+     * @return Account
+     */
+    public function setManager($manager)
+    {
+        $this->manager = $manager;
+
+        return $this;
+    }
 }

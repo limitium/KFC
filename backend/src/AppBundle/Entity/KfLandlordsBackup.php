@@ -20,4 +20,27 @@ class KfLandlordsBackup
     private $accountid;
 
 
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfLandlordsBackup
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
 }

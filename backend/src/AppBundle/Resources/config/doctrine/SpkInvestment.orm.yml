@@ -96,15 +96,18 @@ AppBundle\Entity\SpkInvestment:
             mappedBy: investment
             cascade:
                 - all
-    oneToMany:
         encumbrances:
             targetEntity: AppBundle\Entity\SpkInvestEncumbrances
             mappedBy: investment
             cascade:
                 - all
-    oneToMany:
-        investSegments:
-            targetEntity: AppBundle\Entity\SpkInvestSegments
+#        investSegments:
+#            targetEntity: AppBundle\Entity\SpkInvestSegments
+#            mappedBy: investment
+#            cascade:
+#                - all
+        photos:
+            targetEntity: AppBundle\Entity\SpkPhoto
             mappedBy: investment
             cascade:
                 - all
@@ -121,7 +124,6 @@ AppBundle\Entity\SpkInvestment:
                   referencedColumnName: SPK_LANDLORDSID
           cascade:
               - all
-    manyToMany:
         tenants:
           targetEntity: AppBundle\Entity\SpkTenants
           joinTable:

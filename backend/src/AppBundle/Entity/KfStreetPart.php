@@ -27,4 +27,50 @@ class KfStreetPart
     private $spkStreetPart;
 
 
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     * @return KfStreetPart
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set spkStreetPart
+     *
+     * @param string $spkStreetPart
+     * @return KfStreetPart
+     */
+    public function setSpkStreetPart($spkStreetPart)
+    {
+        $this->spkStreetPart = $spkStreetPart;
+
+        return $this;
+    }
+
+    /**
+     * Get spkStreetPart
+     *
+     * @return string 
+     */
+    public function getSpkStreetPart()
+    {
+        return $this->spkStreetPart;
+    }
 }

@@ -62,4 +62,165 @@ class KfFakeStatus
     private $statusType;
 
 
+
+    /**
+     * Set kfFakeStatusid
+     *
+     * @param string $kfFakeStatusid
+     * @return KfFakeStatus
+     */
+    public function setKfFakeStatusid($kfFakeStatusid)
+    {
+        $this->kfFakeStatusid = $kfFakeStatusid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfFakeStatusid
+     *
+     * @return string 
+     */
+    public function getKfFakeStatusid()
+    {
+        return $this->kfFakeStatusid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfFakeStatus
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfFakeStatus
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfFakeStatus
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfFakeStatus
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     * @return KfFakeStatus
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string 
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set statusType
+     *
+     * @param string $statusType
+     * @return KfFakeStatus
+     */
+    public function setStatusType($statusType)
+    {
+        $this->statusType = $statusType;
+
+        return $this;
+    }
+
+    /**
+     * Get statusType
+     *
+     * @return string 
+     */
+    public function getStatusType()
+    {
+        return $this->statusType;
+    }
 }

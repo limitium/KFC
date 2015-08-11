@@ -675,4 +675,576 @@ class ContactDetail
 
 
 
+
+    /**
+     * Set contactid
+     *
+     * @param string $contactid
+     * @return ContactDetail
+     */
+    public function setContactid($contactid)
+    {
+        $this->contactid = $contactid;
+
+        return $this;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return ContactDetail
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return ContactDetail
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return ContactDetail
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return ContactDetail
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Set titlerus
+     *
+     * @param string $titlerus
+     * @return ContactDetail
+     */
+    public function setTitlerus($titlerus)
+    {
+        $this->titlerus = $titlerus;
+
+        return $this;
+    }
+
+    /**
+     * Set firstrus
+     *
+     * @param string $firstrus
+     * @return ContactDetail
+     */
+    public function setFirstrus($firstrus)
+    {
+        $this->firstrus = $firstrus;
+
+        return $this;
+    }
+
+    /**
+     * Set middlerus
+     *
+     * @param string $middlerus
+     * @return ContactDetail
+     */
+    public function setMiddlerus($middlerus)
+    {
+        $this->middlerus = $middlerus;
+
+        return $this;
+    }
+
+    /**
+     * Set lastrus
+     *
+     * @param string $lastrus
+     * @return ContactDetail
+     */
+    public function setLastrus($lastrus)
+    {
+        $this->lastrus = $lastrus;
+
+        return $this;
+    }
+
+    /**
+     * Set suffixrus
+     *
+     * @param string $suffixrus
+     * @return ContactDetail
+     */
+    public function setSuffixrus($suffixrus)
+    {
+        $this->suffixrus = $suffixrus;
+
+        return $this;
+    }
+
+    /**
+     * Set prefixrus
+     *
+     * @param string $prefixrus
+     * @return ContactDetail
+     */
+    public function setPrefixrus($prefixrus)
+    {
+        $this->prefixrus = $prefixrus;
+
+        return $this;
+    }
+
+    /**
+     * Set workprefix
+     *
+     * @param string $workprefix
+     * @return ContactDetail
+     */
+    public function setWorkprefix($workprefix)
+    {
+        $this->workprefix = $workprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set worksufix
+     *
+     * @param string $worksufix
+     * @return ContactDetail
+     */
+    public function setWorksufix($worksufix)
+    {
+        $this->worksufix = $worksufix;
+
+        return $this;
+    }
+
+    /**
+     * Set mobileprefix
+     *
+     * @param string $mobileprefix
+     * @return ContactDetail
+     */
+    public function setMobileprefix($mobileprefix)
+    {
+        $this->mobileprefix = $mobileprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set mobilesufix
+     *
+     * @param string $mobilesufix
+     * @return ContactDetail
+     */
+    public function setMobilesufix($mobilesufix)
+    {
+        $this->mobilesufix = $mobilesufix;
+
+        return $this;
+    }
+
+    /**
+     * Set homeprefix
+     *
+     * @param string $homeprefix
+     * @return ContactDetail
+     */
+    public function setHomeprefix($homeprefix)
+    {
+        $this->homeprefix = $homeprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set homesufix
+     *
+     * @param string $homesufix
+     * @return ContactDetail
+     */
+    public function setHomesufix($homesufix)
+    {
+        $this->homesufix = $homesufix;
+
+        return $this;
+    }
+
+    /**
+     * Set otherprefix
+     *
+     * @param string $otherprefix
+     * @return ContactDetail
+     */
+    public function setOtherprefix($otherprefix)
+    {
+        $this->otherprefix = $otherprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set othersufix
+     *
+     * @param string $othersufix
+     * @return ContactDetail
+     */
+    public function setOthersufix($othersufix)
+    {
+        $this->othersufix = $othersufix;
+
+        return $this;
+    }
+
+    /**
+     * Set faxprefix
+     *
+     * @param string $faxprefix
+     * @return ContactDetail
+     */
+    public function setFaxprefix($faxprefix)
+    {
+        $this->faxprefix = $faxprefix;
+
+        return $this;
+    }
+
+    /**
+     * Set faxsufix
+     *
+     * @param string $faxsufix
+     * @return ContactDetail
+     */
+    public function setFaxsufix($faxsufix)
+    {
+        $this->faxsufix = $faxsufix;
+
+        return $this;
+    }
+
+    /**
+     * Set nationality
+     *
+     * @param string $nationality
+     * @return ContactDetail
+     */
+    public function setNationality($nationality)
+    {
+        $this->nationality = $nationality;
+
+        return $this;
+    }
+
+    /**
+     * Set sex
+     *
+     * @param string $sex
+     * @return ContactDetail
+     */
+    public function setSex($sex)
+    {
+        $this->sex = $sex;
+
+        return $this;
+    }
+
+    /**
+     * Set age
+     *
+     * @param float $age
+     * @return ContactDetail
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+
+        return $this;
+    }
+
+    /**
+     * Set family
+     *
+     * @param string $family
+     * @return ContactDetail
+     */
+    public function setFamily($family)
+    {
+        $this->family = $family;
+
+        return $this;
+    }
+
+    /**
+     * Set numberOfChildren
+     *
+     * @param integer $numberOfChildren
+     * @return ContactDetail
+     */
+    public function setNumberOfChildren($numberOfChildren)
+    {
+        $this->numberOfChildren = $numberOfChildren;
+
+        return $this;
+    }
+
+    /**
+     * Set leadsourse
+     *
+     * @param string $leadsourse
+     * @return ContactDetail
+     */
+    public function setLeadsourse($leadsourse)
+    {
+        $this->leadsourse = $leadsourse;
+
+        return $this;
+    }
+
+    /**
+     * Set workIndustry
+     *
+     * @param string $workIndustry
+     * @return ContactDetail
+     */
+    public function setWorkIndustry($workIndustry)
+    {
+        $this->workIndustry = $workIndustry;
+
+        return $this;
+    }
+
+    /**
+     * Set hasanimals
+     *
+     * @param string $hasanimals
+     * @return ContactDetail
+     */
+    public function setHasanimals($hasanimals)
+    {
+        $this->hasanimals = $hasanimals;
+
+        return $this;
+    }
+
+    /**
+     * Set unsubscribe
+     *
+     * @param string $unsubscribe
+     * @return ContactDetail
+     */
+    public function setUnsubscribe($unsubscribe)
+    {
+        $this->unsubscribe = $unsubscribe;
+
+        return $this;
+    }
+
+    /**
+     * Set nonDelivered
+     *
+     * @param string $nonDelivered
+     * @return ContactDetail
+     */
+    public function setNonDelivered($nonDelivered)
+    {
+        $this->nonDelivered = $nonDelivered;
+
+        return $this;
+    }
+
+    /**
+     * Set industrialmanagerid
+     *
+     * @param string $industrialmanagerid
+     * @return ContactDetail
+     */
+    public function setIndustrialmanagerid($industrialmanagerid)
+    {
+        $this->industrialmanagerid = $industrialmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set residentialmanagerid
+     *
+     * @param string $residentialmanagerid
+     * @return ContactDetail
+     */
+    public function setResidentialmanagerid($residentialmanagerid)
+    {
+        $this->residentialmanagerid = $residentialmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set countrymanagerid
+     *
+     * @param string $countrymanagerid
+     * @return ContactDetail
+     */
+    public function setCountrymanagerid($countrymanagerid)
+    {
+        $this->countrymanagerid = $countrymanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set retailmanagerid
+     *
+     * @param string $retailmanagerid
+     * @return ContactDetail
+     */
+    public function setRetailmanagerid($retailmanagerid)
+    {
+        $this->retailmanagerid = $retailmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set officemanagerid
+     *
+     * @param string $officemanagerid
+     * @return ContactDetail
+     */
+    public function setOfficemanagerid($officemanagerid)
+    {
+        $this->officemanagerid = $officemanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set valuationmanagerid
+     *
+     * @param string $valuationmanagerid
+     * @return ContactDetail
+     */
+    public function setValuationmanagerid($valuationmanagerid)
+    {
+        $this->valuationmanagerid = $valuationmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set investmentmanagerid
+     *
+     * @param string $investmentmanagerid
+     * @return ContactDetail
+     */
+    public function setInvestmentmanagerid($investmentmanagerid)
+    {
+        $this->investmentmanagerid = $investmentmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set consultingmanagerid
+     *
+     * @param string $consultingmanagerid
+     * @return ContactDetail
+     */
+    public function setConsultingmanagerid($consultingmanagerid)
+    {
+        $this->consultingmanagerid = $consultingmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set researchmanagerid
+     *
+     * @param string $researchmanagerid
+     * @return ContactDetail
+     */
+    public function setResearchmanagerid($researchmanagerid)
+    {
+        $this->researchmanagerid = $researchmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set marketingmanagerid
+     *
+     * @param string $marketingmanagerid
+     * @return ContactDetail
+     */
+    public function setMarketingmanagerid($marketingmanagerid)
+    {
+        $this->marketingmanagerid = $marketingmanagerid;
+
+        return $this;
+    }
+
+    /**
+     * Set titleType
+     *
+     * @param string $titleType
+     * @return ContactDetail
+     */
+    public function setTitleType($titleType)
+    {
+        $this->titleType = $titleType;
+
+        return $this;
+    }
+
+    /**
+     * Set keyclient
+     *
+     * @param string $keyclient
+     * @return ContactDetail
+     */
+    public function setKeyclient($keyclient)
+    {
+        $this->keyclient = $keyclient;
+
+        return $this;
+    }
+
+    /**
+     * Set sendSms
+     *
+     * @param string $sendSms
+     * @return ContactDetail
+     */
+    public function setSendSms($sendSms)
+    {
+        $this->sendSms = $sendSms;
+
+        return $this;
+    }
 }

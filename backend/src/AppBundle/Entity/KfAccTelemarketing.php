@@ -83,4 +83,234 @@ class KfAccTelemarketing
     private $kfTeleParametersid;
 
 
+
+    /**
+     * Set kfAccTelemarketingid
+     *
+     * @param string $kfAccTelemarketingid
+     * @return KfAccTelemarketing
+     */
+    public function setKfAccTelemarketingid($kfAccTelemarketingid)
+    {
+        $this->kfAccTelemarketingid = $kfAccTelemarketingid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfAccTelemarketingid
+     *
+     * @return string 
+     */
+    public function getKfAccTelemarketingid()
+    {
+        return $this->kfAccTelemarketingid;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param string $accountid
+     * @return KfAccTelemarketing
+     */
+    public function setAccountid($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string 
+     */
+    public function getAccountid()
+    {
+        return $this->accountid;
+    }
+
+    /**
+     * Set createuser
+     *
+     * @param string $createuser
+     * @return KfAccTelemarketing
+     */
+    public function setCreateuser($createuser)
+    {
+        $this->createuser = $createuser;
+
+        return $this;
+    }
+
+    /**
+     * Get createuser
+     *
+     * @return string 
+     */
+    public function getCreateuser()
+    {
+        return $this->createuser;
+    }
+
+    /**
+     * Set createdate
+     *
+     * @param \DateTime $createdate
+     * @return KfAccTelemarketing
+     */
+    public function setCreatedate($createdate)
+    {
+        $this->createdate = $createdate;
+
+        return $this;
+    }
+
+    /**
+     * Get createdate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedate()
+    {
+        return $this->createdate;
+    }
+
+    /**
+     * Set modifyuser
+     *
+     * @param string $modifyuser
+     * @return KfAccTelemarketing
+     */
+    public function setModifyuser($modifyuser)
+    {
+        $this->modifyuser = $modifyuser;
+
+        return $this;
+    }
+
+    /**
+     * Get modifyuser
+     *
+     * @return string 
+     */
+    public function getModifyuser()
+    {
+        return $this->modifyuser;
+    }
+
+    /**
+     * Set modifydate
+     *
+     * @param \DateTime $modifydate
+     * @return KfAccTelemarketing
+     */
+    public function setModifydate($modifydate)
+    {
+        $this->modifydate = $modifydate;
+
+        return $this;
+    }
+
+    /**
+     * Get modifydate
+     *
+     * @return \DateTime 
+     */
+    public function getModifydate()
+    {
+        return $this->modifydate;
+    }
+
+    /**
+     * Set parameters
+     *
+     * @param string $parameters
+     * @return KfAccTelemarketing
+     */
+    public function setParameters($parameters)
+    {
+        $this->parameters = $parameters;
+
+        return $this;
+    }
+
+    /**
+     * Get parameters
+     *
+     * @return string 
+     */
+    public function getParameters()
+    {
+        return $this->parameters;
+    }
+
+    /**
+     * Set val
+     *
+     * @param string $val
+     * @return KfAccTelemarketing
+     */
+    public function setVal($val)
+    {
+        $this->val = $val;
+
+        return $this;
+    }
+
+    /**
+     * Get val
+     *
+     * @return string 
+     */
+    public function getVal()
+    {
+        return $this->val;
+    }
+
+    /**
+     * Set leadsource
+     *
+     * @param string $leadsource
+     * @return KfAccTelemarketing
+     */
+    public function setLeadsource($leadsource)
+    {
+        $this->leadsource = $leadsource;
+
+        return $this;
+    }
+
+    /**
+     * Get leadsource
+     *
+     * @return string 
+     */
+    public function getLeadsource()
+    {
+        return $this->leadsource;
+    }
+
+    /**
+     * Set kfTeleParametersid
+     *
+     * @param string $kfTeleParametersid
+     * @return KfAccTelemarketing
+     */
+    public function setKfTeleParametersid($kfTeleParametersid)
+    {
+        $this->kfTeleParametersid = $kfTeleParametersid;
+
+        return $this;
+    }
+
+    /**
+     * Get kfTeleParametersid
+     *
+     * @return string 
+     */
+    public function getKfTeleParametersid()
+    {
+        return $this->kfTeleParametersid;
+    }
 }
