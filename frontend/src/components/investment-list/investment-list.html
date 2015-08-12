@@ -38,7 +38,7 @@
                         multiple
                         label="Сегмент"
                         model="investmentList.search.segments"
-                        items="investmentList.getSegments()">
+                        items="investmentList.getInvestSegment()">
                 </common-list-field>
             </div>
 
@@ -67,7 +67,7 @@
                         multiple
                         label="Статус"
                         model="investmentList.search.statuses"
-                        items="investmentList.getStatuses()">
+                        items="investmentList.getInvestStatus()">
                 </common-list-field>
             </div>
 
@@ -88,7 +88,7 @@
                         multiple
                         label="Кольца"
                         model="investmentList.search.rings"
-                        items="investmentList.getRings()">
+                        items="investmentList.getInvestRings()">
                 </common-list-field>
             </div>
             <div class="col-sm-4">
@@ -96,7 +96,7 @@
                         multiple
                         label="Арендный статус"
                         model="investmentList.search.leaseStatuses"
-                        items="investmentList.getLeaseStatuses()">
+                        items="investmentList.getInvestLeaseStatus()">
                 </common-list-field>
             </div>
 
@@ -140,10 +140,9 @@
             </div>
             <div class="col-sm-3">
                 <common-list-field
-                        multiple
                         label="Валюта"
                         model="investmentList.search.currencies"
-                        items="investmentList.getCurrencies()">
+                        items="investmentList.getKfCurrency()">
                 </common-list-field>
             </div>
 
@@ -151,4 +150,4 @@
     </form>
     <div class="row">
     </div>
-</div>
+</div>                                                 `
