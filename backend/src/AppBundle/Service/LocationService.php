@@ -99,16 +99,15 @@ class LocationService extends NameSearchService
     public function findSubways($params)
     {
         $namePart = $params->get('name', '');
-        $city = $params->get('city', '');
+        $cities = $params->get('cities', '');
         $maxResults = 100;
         $queryBuilder = $this->em->getRepository('AppBundle:SpkMetro')->createQueryBuilder('m')->where('1=1');
         if (!empty($namePart)) {
             $queryBuilder->andWhere('m.metroRus LIKE :name');
             $queryBuilder->setParameter('name', '%' . $namePart . '%');
         }
-        if (!empty($city)) {
-            $queryBuilder->andWhere('m.spkCityid = :city');
-            $queryBuilder->setParameter('city', $city);
+        if (!empty($cities)) {
+            $queryBuilder->add('where', $queryBuilder->expr()->in('m.spkCityid', $cities));
         }
         $result = $queryBuilder->setMaxResults($maxResults)
             ->distinct()

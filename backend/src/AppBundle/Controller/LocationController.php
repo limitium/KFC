@@ -85,7 +85,7 @@ class LocationController extends Controller
     /**
      * @Rest\View(serializerGroups={"Default"})
      * @Rest\QueryParam(name="name", nullable=false, allowBlank=true)
-     * @Rest\QueryParam(name="city", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="cities", nullable=false, allowBlank=true)
      * @param ParamFetcher $params
      * @return string
      */
