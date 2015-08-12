@@ -1,0 +1,18 @@
+<div>
+    <div class="file-field input-field">
+        <div class="btn">
+            <span><i class="mdi-action-account-circle"></i></span>
+            <input type="file"
+                   name="avatar"
+                   valid-file
+                   change-file="investmentPicture.onPhotosToUploadChanged(event)"
+                   required="required"
+                   accept=".png,.jpeg,.jpg"
+                   ng-model="investmentPicture.photosToUpload"
+                   multiple/>
+        </div>
+        <div class="input-field">
+            <img class="circle" ng-show="offerNew.avatar.preview" ng-src="{{offerNew.avatar.preview}}"/>
+        </div>
+    </div>
+</div>

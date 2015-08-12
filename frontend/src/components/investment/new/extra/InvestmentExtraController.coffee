@@ -1,0 +1,2 @@
+class InvestmentExtra extends Controller
+

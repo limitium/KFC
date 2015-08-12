@@ -1,0 +1,105 @@
+<form class="form-horizontal">
+    <div class="row">
+        <div class="col-sm-2">
+            <label class="control-label">Собственники</label>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="investmentOwners.goToNewLandlord()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <table datatable="ng" class="row-border hover" dt-options="investmentOwners.landlordDtOptions" dt-column-defs="investmentOwners.landlordDtColumnDefs">
+        <thead>
+        <tr>
+            <th class="col-sm-2">Компания</th>
+            <th class="col-sm-2">Контакт</th>
+            <th class="col-sm-3">Тип</th>
+            <th class="col-sm-2">Основной</th>
+            <th class="col-sm-2">Действующий</th>
+            <th class="col-sm-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="landlord in investmentOwners.investment.landlords track by $index">
+            <td>
+                <input type="text" class="form-control" ng-model="landlord.account.text" disabled/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="landlord.contactDetail" disabled/>
+            </td>
+            <td>
+                <common-list
+                        model="landlord.contactType"
+                        items="investmentOwners.getContactTypes()"></common-list>
+            </td>
+            <td>
+                <input type="checkbox" ng-model="landlord.primaryContact">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="landlord.currentContact">
+            </td>
+            <td class="td-control">
+                <button type="button" class="btn btn-danger" confirmation-delete="investmentOwners.removeLandlord($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <label class="control-label">Арендаторы</label>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-success" aria-label="Add" ng-click="investmentOwners.goToNewTenant()">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <table datatable="ng" class="row-border hover" dt-options="investmentOwners.tenantDtOptions" dt-column-defs="investmentOwners.tenantDtColumnDefs">
+        <thead>
+        <tr>
+            <th class="col-sm-2">Компания</th>
+            <th class="col-sm-2">Контакт</th>
+            <th class="col-sm-1">Начало срока</th>
+            <th class="col-sm-1">Конец срока</th>
+            <th class="col-sm-1">Площадь, м2</th>
+            <th class="col-sm-2">Основной</th>
+            <th class="col-sm-2">Действующий</th>
+            <th class="col-sm-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tenant in investmentOwners.investment.tenants track by $index">
+            <td>
+                <input type="text" class="form-control" ng-model="tenant.account.text" disabled/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="tenant.contactDetail" disabled/>
+            </td>
+            <td>
+                <input type="date" ng-model="tenant.startDate"/>
+            </td>
+            <td>
+                <input type="date" ng-model="tenant.endDate"/>
+            </td>
+            <td>
+                <input type="number" ng-model="tenant.area">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="tenant.primaryContact">
+            </td>
+            <td>
+                <input type="checkbox" ng-model="tenant.currentContact">
+            </td>
+            <td class="td-control">
+                <button type="button" class="btn btn-danger" confirmation-delete="investmentOwners.removeTenant($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>

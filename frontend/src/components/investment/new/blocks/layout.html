@@ -1,0 +1,86 @@
+<form class="form-inline">
+    <table datatable="ng" class="row-border hover" dt-options="investmentBlocks.dtOptions" dt-column-defs="investmentBlocks.dtColumnDefs">
+        <thead>
+        <tr ng-show="ctrl.plusButtonVisible" class="control-row">
+            <th>
+                <button type="button" class="btn btn-success" aria-label="Add" ng-click="investmentBlocks.plusButtonVisible = false">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </th>
+        </tr>
+        <tr ng-show="!investmentBlocks.plusButtonVisible">
+            <th>
+                <input class="form-control" type="number" ng-model="investmentBlocks.blockToAdd.floor">
+            </th>
+            <th>
+                <input class="form-control" type="text" ng-model="investmentBlocks.blockToAdd.name">
+            </th>
+            <th>
+                <input class="form-control" type="number" ng-model="investmentBlocks.blockToAdd.availableSq">
+            </th>
+            <th>
+                <input class="form-control" type="number" ng-model="investmentBlocks.blockToAdd.costSqm">
+            </th>
+            <th>
+                <common-list model="investmentBlocks.blockToAdd.costSqmCurrency" items="investmentBlocks.getCurrency()"></common-list>
+            </th>
+            <th>
+                <common-list model="investmentBlocks.blockToAdd.vat" items="investmentBlocks.getVat()"></common-list>
+            </th>
+            <th>
+                <common-list model="investmentBlocks.blockToAdd.status" items="investmentBlocks.getStatus()"></common-list>
+            </th>
+            <th>
+                <div class="btn-group" role="group" aria-label="add-block-control-buttons">
+                    <button type="button" class="btn btn-success" aria-label="Add" ng-click="investmentBlocks.addBlock()">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </button>
+                    <!--<button type="button" class="btn btn-default" aria-label="Cancel" ng-click="investmentBlocks.plusButtonVisible = true">-->
+                        <!--<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>-->
+                    <!--</button>-->
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th class="col-sm-1">Этаж</th>
+            <th class="col-sm-2">Название</th>
+            <th class="col-sm-1">Площадь, м2</th>
+            <th class="col-sm-1">Цена, м2</th>
+            <th class="col-sm-1">Валюта</th>
+            <th class="col-sm-2">НДС</th>
+            <th class="col-sm-2">Статус</th>
+            <th class="col-sm-2"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="block in investmentBlocks.investment.blocks track by $index">
+            <td>
+                <input type="number" class="form-control" ng-model="block.floor"/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="block.nameRus"/>
+            </td>
+            <td>
+                <input type="number" class="form-control" ng-model="block.availableSq"/>
+            </td>
+            <td>
+                <input type="number" class="form-control" ng-model="block.costSqm"/>
+            </td>
+            <td>
+                <common-list model="block.costSqmCurrency" items="investmentBlocks.getCurrency()"></common-list>
+            </td>
+            <td>
+                <common-list model="block.vat" items="investmentBlocks.getVat()"></common-list>
+            </td>
+            <td>
+                <common-list model="block.status" items="investmentBlocks.getStatus()"></common-list>
+            </td>
+            <td class="td-control">
+                <button type="button" class="btn btn-danger" confirmation-delete="investmentBlocks.removeBlock($index)">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
