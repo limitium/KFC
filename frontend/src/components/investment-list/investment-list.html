@@ -1,20 +1,154 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <a ng-link="main:investmentNew" class="btn btn-primary">+</a>
-            <a ng-link="main:allLists" class="btn btn-primary">L</a>
-        </div>
-    </div>
-    <div class="row">
-        <div ng-show="investmentList.busy" class="progress">
-            <div class="indeterminate"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div ng-repeat="investment in investmentList.investments | orderBy:'-created_at'">
-            <div class="col l12">
-                {{investment}}
+    <form role="form" name="searchForm" class="form-horizontal">
+        <div class="form-group">
+            <label for="name-address" class="control-label col-sm-12">Название, адрес</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name-address" ng-model="investmentList.search.nameAddress">
+            </div>
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Класс"
+                        model="investmentList.search.classes"
+                        items="investmentList.getInvestClass()">
+                </common-list-field>
+            </div>
+            <label class="col-sm-1 control-label text-right">GBA, м2</label>
+            <label class="col-sm-1 control-label text-right">от</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.gba.from">
+            </div>
+
+            <label class="col-sm-1 control-label text-right">до</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.gba.to">
             </div>
         </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Город"
+                        model="investmentList.search.cities"
+                        items="investmentList.getCities()">
+                </common-list-field>
+            </div>
+            <div class="col-sm-4">
+                <common-list-field
+                        multiple
+                        label="Сегмент"
+                        model="investmentList.search.segments"
+                        items="investmentList.getSegments()">
+                </common-list-field>
+            </div>
+
+            <label class="col-sm-1 control-label text-right">GLA, м2</label>
+            <label class="col-sm-1 control-label text-right">от</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.gla.from">
+            </div>
+
+            <label class="col-sm-1 control-label text-right">до</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.gla.to">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Округ"
+                        model="investmentList.search.districts"
+                        items="investmentList.getDistricts()">
+                </common-list-field>
+            </div>
+            <div class="col-sm-4">
+                <common-list-field
+                        multiple
+                        label="Статус"
+                        model="investmentList.search.statuses"
+                        items="investmentList.getStatuses()">
+                </common-list-field>
+            </div>
+
+            <label class="col-sm-1 control-label text-right">Участок, Га</label>
+            <label class="col-sm-1 control-label text-right">от</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.landGa.from">
+            </div>
+
+            <label class="col-sm-1 control-label text-right">до</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.landGa.to">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Кольца"
+                        model="investmentList.search.rings"
+                        items="investmentList.getRings()">
+                </common-list-field>
+            </div>
+            <div class="col-sm-4">
+                <common-list-field
+                        multiple
+                        label="Арендный статус"
+                        model="investmentList.search.leaseStatuses"
+                        items="investmentList.getLeaseStatuses()">
+                </common-list-field>
+            </div>
+
+            <label class="col-sm-1 control-label text-right">Цена</label>
+            <label class="col-sm-1 control-label text-right">от</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.amount.from">
+            </div>
+            <label class="col-sm-1 control-label text-right">до</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.amount.to">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Метро"
+                        model="investmentList.search.subways"
+                        items="investmentList.getSubways()">
+                </common-list-field>
+            </div>
+            <div class="col-sm-4">
+            </div>
+
+            <label class="col-sm-1 control-label text-right">Цена за м2</label>
+            <label class="col-sm-1 control-label text-right">от</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.sqm.from">
+            </div>
+            <label class="col-sm-1 control-label text-right">до</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control" ng-model="investmentList.search.sqm.to">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-3">
+                <button type="button" class="btn btn-primary" aria-label="Add" ng-click="investmentList.search()">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-sm-3">
+                <common-list-field
+                        multiple
+                        label="Валюта"
+                        model="investmentList.search.currencies"
+                        items="investmentList.getCurrencies()">
+                </common-list-field>
+            </div>
+
+        </div>
+    </form>
+    <div class="row">
     </div>
 </div>
