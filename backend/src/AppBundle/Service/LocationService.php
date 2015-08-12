@@ -12,6 +12,7 @@ use AppBundle\Entity\SpkCity;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query\ResultSetMapping;
 
+use FOS\RestBundle\Request\ParamFetcher;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
 use JMS\DiExtraBundle\Annotation\Service;
@@ -68,19 +69,19 @@ class LocationService extends NameSearchService
         return $this->ls->transformToList($result, 'oblastRus', 'kfOblastid');
     }
 
-    public function findDistricts($params)
+    public function findDistricts(ParamFetcher $params)
     {
         $namePart = $params->get('name', '');
-        $city = $params->get('city', '');
+        $cities = $params->get('cities', '');
         $maxResults = 100;
         $queryBuilder = $this->em->getRepository('AppBundle:SpkDistrict')->createQueryBuilder('m')->where('1=1');
         if (!empty($namePart)) {
             $queryBuilder->andWhere('m.districtRus LIKE :name');
             $queryBuilder->setParameter('name', '%' . $namePart . '%');
         }
-        if (!empty($city)) {
-            $queryBuilder->andWhere('m.spkCityid = :city');
-            $queryBuilder->setParameter('city', $city);
+        if (!empty($cities)) {
+            $queryBuilder->andWhere('m.spkCityid IN :cities');
+            $queryBuilder->setParameter('cities', $cities);
         }
         $result = $queryBuilder->setMaxResults($maxResults)
             ->distinct()

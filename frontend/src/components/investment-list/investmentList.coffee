@@ -1,5 +1,5 @@
 class InvestmentList extends Controller
-  constructor: (@$router, @$http, @ListApi, @LocationApi) ->
+  constructor: (@$router, @$http, @ListApi, @LocationApi, @ListTransformerService) ->
     #Getters
     @getInvestStatus = ->
       @investStatus ?= @ListApi.Lists.investStatus()
@@ -16,7 +16,12 @@ class InvestmentList extends Controller
     @getInvestRings = () ->
       @investRings ?= @ListApi.Lists.investRings()
     @getDistricts = () ->
-      @districts ?= @LocationApi.Districts.query()
+      if @search.cities.length > 0 and @search.cities != @lastDistrictSearchCities
+        @lastDistrictSearchCities = @search.cities
+        citiesIds = @ListTransformerService.getIdsByNames(@cities, @search.cities)
+        console.log 'cities ids', citiesIds
+        @districts = @LocationApi.Districts.query({"cities": citiesIds})
+      @districts
     @getSubways = () ->
       @districts ?= @LocationApi.Subways.query()
 

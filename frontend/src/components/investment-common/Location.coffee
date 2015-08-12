@@ -32,7 +32,7 @@ class LocationComponent extends Directive
         @getDistricts = () ->
           if @model.location?.city?.id != @lastDistrictCityId
             @lastDistrictCityId = @model.location.city.id
-            @districts = LocationApi.Districts.query({"city": @model.location.city.id})
+            @districts = LocationApi.Districts.query({"cities": [@model.location.city.id]})
           @districts
         @getHighways = (val) ->
           LocationApi.Highways.query({"name": val}).$promise
