@@ -19,12 +19,16 @@ class PhotoController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
+     * @param SpkInvestment $investment
+     * @return
      */
     public function getPhotosAction(SpkInvestment $investment)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        return $em->getRepository('AppBundle:SpkPhoto')->findAll();
+        return $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('AppBundle:SpkPhoto')
+            ->findByInvestment($investment);
     }
 
     /**
@@ -46,7 +50,7 @@ class PhotoController extends Controller
 
         if ($form->isValid()) {
 
-            $statusCode = $photo->getSpkPhotoid() ? 204 : 201;
+            $statusCode = $photo->getSpkPhotoId() ? 204 : 201;
             $em = $this->getDoctrine()->getManager();
             $em->persist($photo);
             $em->flush();
@@ -57,7 +61,7 @@ class PhotoController extends Controller
             if ($statusCode == 201) {
                 $response->headers->set('Location',
                     $this->generateUrl(
-                        'get_photo', array('photo' => $photo->getSpkPhotoid()),
+                        'get_photo', array('photo' => $photo->getSpkPhotoId()),
                         true // absolute
                     )
                 );

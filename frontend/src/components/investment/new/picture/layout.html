@@ -1,18 +1,30 @@
 <div>
-    <div class="file-field input-field">
-        <div class="btn">
-            <span><i class="mdi-action-account-circle"></i></span>
-            <input type="file"
+    <table class="table table-bordered">
+        <tr ng-repeat="photo in investmentPicture.photos">
+            <td>{{photo.filename}}</td>
+        </tr>
+    </table>
+    <hr/>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputFile">Фото</label>
+            <input id="exampleInputFile"
+                   type="file"
                    name="avatar"
-                   valid-file
-                   change-file="investmentPicture.onPhotosToUploadChanged(event)"
+                   change-file="investmentPicture.onFilesChanged(event)"
                    required="required"
                    accept=".png,.jpeg,.jpg"
-                   ng-model="investmentPicture.photosToUpload"
+                   ng-model="investmentPicture.files"
                    multiple/>
+
+            <p class="help-block">Выбрать фото для загрузки</p>
         </div>
-        <div class="input-field">
-            <img class="circle" ng-show="offerNew.avatar.preview" ng-src="{{offerNew.avatar.preview}}"/>
+        <div class="form-group">
+            <span ng-repeat="photo in investmentPicture.photosToUpload">
+                <span><img style="max-height: 60px;max-width:60px" ng-show="photo.preview" ng-src="{{photo.preview}}"/></span>
+                <span><a href="#" ng-click="event.preventDefalut()"><i class="fa fa-remove fa-3"></i></a></span>
+            </span>
         </div>
-    </div>
+        <button class="btn btn-default">Загрузить</button>
+    </form>
 </div>

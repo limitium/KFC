@@ -12,7 +12,7 @@ class SpkPhoto
     /**
      * @var string
      */
-    private $spkPhotoid;
+    private $spkPhotoId;
 
     /**
      * @var \DateTime
@@ -76,13 +76,13 @@ class SpkPhoto
 
 
     /**
-     * Get spkPhotoid
+     * Get spkPhotoId
      *
      * @return string 
      */
-    public function getSpkPhotoid()
+    public function getSpkPhotoId()
     {
-        return $this->spkPhotoid;
+        return $this->spkPhotoId;
     }
 
     /**

@@ -10,7 +10,7 @@ AppBundle\Entity\SpkPhoto:
             columns:
                 - SPK_PHOTOID
     id:
-        spkPhotoid:
+        spkPhotoId:
             type: string
             nullable: false
             length: 12
