@@ -80,8 +80,7 @@ class LocationService extends NameSearchService
             $queryBuilder->setParameter('name', '%' . $namePart . '%');
         }
         if (!empty($cities)) {
-            $queryBuilder->andWhere('m.spkCityid IN :cities');
-            $queryBuilder->setParameter('cities', $cities);
+            $queryBuilder->add('where', $queryBuilder->expr()->in('m.spkCityid', $cities));
         }
         $result = $queryBuilder->setMaxResults($maxResults)
             ->distinct()

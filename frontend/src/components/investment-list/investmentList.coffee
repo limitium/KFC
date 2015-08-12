@@ -20,7 +20,7 @@ class InvestmentList extends Controller
         @lastDistrictSearchCities = @search.cities
         citiesIds = @ListTransformerService.getIdsByNames(@cities, @search.cities)
         console.log 'cities ids', citiesIds
-        @districts = @LocationApi.Districts.query({"cities": citiesIds})
+        @districts = @LocationApi.Districts.query({"cities[]": citiesIds})
       @districts
     @getSubways = () ->
       @districts ?= @LocationApi.Subways.query()
