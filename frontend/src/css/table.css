@@ -10,6 +10,6 @@ table.dataTable .form-control {
     width: 100%;
 }
 
-table.dataTable thead tr.plus-row th {
+table.dataTable thead tr.control-row th {
     border-bottom: 0;
 }

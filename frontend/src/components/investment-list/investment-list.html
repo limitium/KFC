@@ -1,17 +1,18 @@
 <div class="container">
-    {{investmentList.search | json}}
+    {{investmentList.criteria | json}}
+    {{investmentList.investments | json}}
     <form role="form" name="searchForm" class="form-horizontal">
         <div class="form-group">
             <label for="name-address" class="control-label col-sm-12">Название, адрес</label>
 
             <div class="col-sm-4">
-                <input type="text" class="form-control" id="name-address" ng-model="investmentList.search.nameAddress">
+                <input type="text" class="form-control" id="name-address" ng-model="investmentList.criteria.nameAddress">
             </div>
             <div class="col-sm-3">
                 <common-list-field
                         multiple
                         label="Класс"
-                        model="investmentList.search.classes"
+                        model="investmentList.criteria.classes"
                         items="investmentList.getInvestClass()">
                 </common-list-field>
             </div>
@@ -19,13 +20,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.gba.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gba.from">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.gba.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gba.to">
             </div>
         </div>
         <div class="form-group">
@@ -33,10 +34,10 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Город</label>
                     <div class="col-sm-9">
-                        <ui-select ng-model="investmentList.search.cities" ng-change="investmentList.onCitiesChange()" multiple>
+                        <ui-select ng-model="investmentList.criteria.cities" ng-change="investmentList.onCitiesChange()" multiple>
                             <ui-select-match>{{$item.text}}</ui-select-match>
                             <ui-select-choices
-                                    repeat="item.text as item in investmentList.getCities() | filter:$select.search">
+                                    repeat="item.text as item in investmentList.getCities() | filter:$select.criteria">
                                 {{item.text}}
                             </ui-select-choices>
                         </ui-select>
@@ -47,7 +48,7 @@
                 <common-list-field
                         multiple
                         label="Сегмент"
-                        model="investmentList.search.segments"
+                        model="investmentList.criteria.segments"
                         items="investmentList.getInvestSegment()">
                 </common-list-field>
             </div>
@@ -56,13 +57,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.gla.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gla.from">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.gla.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gla.to">
             </div>
         </div>
         <div class="form-group">
@@ -70,7 +71,7 @@
                 <common-list-field
                         multiple
                         label="Округ"
-                        model="investmentList.search.districts"
+                        model="investmentList.criteria.districts"
                         items="investmentList.getDistricts()">
                 </common-list-field>
             </div>
@@ -78,7 +79,7 @@
                 <common-list-field
                         multiple
                         label="Статус"
-                        model="investmentList.search.statuses"
+                        model="investmentList.criteria.statuses"
                         items="investmentList.getInvestStatus()">
                 </common-list-field>
             </div>
@@ -87,13 +88,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.landGa.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.landGa.from">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.landGa.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.landGa.to">
             </div>
         </div>
         <div class="form-group">
@@ -101,7 +102,7 @@
                 <common-list-field
                         multiple
                         label="Кольца"
-                        model="investmentList.search.rings"
+                        model="investmentList.criteria.rings"
                         items="investmentList.getInvestRings()">
                 </common-list-field>
             </div>
@@ -109,7 +110,7 @@
                 <common-list-field
                         multiple
                         label="Арендный статус"
-                        model="investmentList.search.leaseStatuses"
+                        model="investmentList.criteria.leaseStatuses"
                         items="investmentList.getInvestLeaseStatus()">
                 </common-list-field>
             </div>
@@ -118,12 +119,12 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.amount.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.amount.from">
             </div>
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.amount.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.amount.to">
             </div>
         </div>
         <div class="form-group">
@@ -131,7 +132,7 @@
                 <common-list-field
                         multiple
                         label="Метро"
-                        model="investmentList.search.subways"
+                        model="investmentList.criteria.subways"
                         items="investmentList.getSubways()">
                 </common-list-field>
             </div>
@@ -142,24 +143,24 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.sqm.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.sqm.from">
             </div>
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.search.sqm.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.sqm.to">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-4 col-sm-offset-3">
-                <button type="button" class="btn btn-primary" aria-label="Add" ng-click="investmentList.search()">
+                <button type="button" class="btn btn-primary" aria-label="Add" ng-click="investmentList.doSearch()">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="col-sm-3">
                 <common-list-field
                         label="Валюта"
-                        model="investmentList.search.currencies"
+                        model="investmentList.criteria.currencies"
                         items="investmentList.getKfCurrency()">
                 </common-list-field>
             </div>
@@ -167,5 +168,74 @@
         </div>
     </form>
     <div class="row">
+        <table datatable="ng" class="row-border hover" dt-options="investmentList.dtOptions" dt-column-defs="investmentList.dtColumnDefs">
+            <thead>
+            <tr class="control-row">
+                <th>
+                    <button type="button" class="btn btn-default" aria-label="Print">
+                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span>Брифы
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th style="width: 2%"></th>
+                <th >Название</th>
+                <th >Адрес</th>
+                <th >Класс</th>
+                <th >Сегмент</th>
+                <th >Ар. статус</th>
+                <th >GBA,м2</th>
+                <th >GLA,м2</th>
+                <th >Цена,$</th>
+                <th >$ за м2 GBA</th>
+                <th >$ за м2 GLA</th>
+                <th >Изменен</th>
+                <th >Менеджер</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="investment in investmentList.investments track by $index">
+                <td style="width: 2%">
+                    <input type="checkbox" ng-model="investment.checked">
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="investment.test"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>                                                 `

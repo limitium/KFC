@@ -1,8 +1,25 @@
 class InvestmentList extends Controller
-  constructor: (@$router, @$http, @ListApi, @LocationApi, @ListTransformerService) ->
+  constructor: (@$router, @$http, @ListApi, @LocationApi, @ListTransformerService, @TableUtils) ->
+
+    @dtOptions = @TableUtils.createOptions()
+    @dtColumnDefs = @TableUtils.createColumns(13)
+    @investments = []
+
+    @doSearch = () ->
+      @investments = [
+        {
+          "checked": false,
+          "test": 123
+        },
+        {
+          "checked": true,
+          "test": 666
+        }
+      ]
+      return
 
     @onCitiesChange = ->
-      citiesIds = @ListTransformerService.getIdsByNames(@cities, @search.cities)
+      citiesIds = @ListTransformerService.getIdsByNames(@cities, @criteria.cities)
       @districts = @LocationApi.Districts.query({"cities[]": citiesIds})
       @subways = @LocationApi.Subways.query({"cities[]": citiesIds})
 
