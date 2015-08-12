@@ -36,8 +36,21 @@ abstract class NameSearchService
         $result = $this->em
             ->getRepository($entity)->createQueryBuilder('e')
             ->where('e.'.$columnName.' LIKE :name')
+            ->orderBy('e.'.$columnName, 'ASC')
             ->setParameter('name', '%' . $namePart . '%')
             ->setMaxResults($maxResults)
+            ->distinct()
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
+        return $result;
+    }
+
+    protected function findAll($entity, $columnName)
+    {
+        $result = $this->em
+            ->getRepository($entity)->createQueryBuilder('e')
+            ->orderBy('e.'.$columnName, 'ASC')
             ->distinct()
             ->getQuery()
             ->useResultCache(true, 100500)

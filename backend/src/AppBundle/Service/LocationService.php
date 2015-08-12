@@ -8,6 +8,7 @@
 
 namespace AppBundle\Service;
 
+use AppBundle\Entity\SpkCity;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query\ResultSetMapping;
 
@@ -21,6 +22,9 @@ use JMS\DiExtraBundle\Annotation as DI;
  */
 class LocationService extends NameSearchService
 {
+    const CITY_MOSCOW_ID = "Q6UJ9A004W3L";
+
+
     protected $em;
 
     /**
@@ -49,7 +53,12 @@ class LocationService extends NameSearchService
 
     public function findCitiesByNameContaining($namePart)
     {
-        $result = $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
+        if (!empty($namePart)) {
+            $result = $this->nameSearchFor('AppBundle:SpkCity', 'cityRus', $namePart);
+        } else {
+            $result = $this->findAll('AppBundle:SpkCity', 'cityRus');
+        }
+        $result = $this->moveMoscowToFirstPosition($result);
         return $this->ls->transformToList($result, 'cityRus', 'spkCityid');
     }
 
@@ -161,5 +170,24 @@ class LocationService extends NameSearchService
     public function setLs($ls)
     {
         $this->ls = $ls;
+    }
+
+    private function moveMoscowToFirstPosition($cities)
+    {
+        for ($i = 0; $i < sizeof($cities); $i++) {
+            /** @var SpkCity $city */
+            $city = $cities[$i];
+            if ($city->getSpkCityid() == LocationService::CITY_MOSCOW_ID) {
+                $cities = $this->moveElement($cities, $i, 0);
+                break;
+            }
+        }
+        return $cities;
+    }
+
+    private function moveElement($array, $from, $to) {
+        $out = array_splice($array, $from, 1);
+        array_splice($array, $to, 0, $out);
+        return $array;
     }
 }
