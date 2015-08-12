@@ -12,4 +12,7 @@ class LandlordRoutes extends Config
       url: "/new"
       templateUrl: "/components/landlord/new/layout.html"
       controller: "LandlordNewController as landlordNew"
+      params:
+        investment: null
+        redirectTo: null
     )

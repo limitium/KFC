@@ -44,7 +44,7 @@ gulp.task 'vendor', ->
     'node_modules/angular/angular.js'
     'node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js'
     'node_modules/angular-resource/angular-resource.min.js'
-    'node_modules/ui-router/angular-ui-router.js'
+    'node_modules/angular-ui-router/release/angular-ui-router.js'
     'node_modules/angular-moment/node_modules/moment/moment.js'
     'node_modules/angular-moment/angular-moment.js'
     'node_modules/angular-sanitize/angular-sanitize.min.js'

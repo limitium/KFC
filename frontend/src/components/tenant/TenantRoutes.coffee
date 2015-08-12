@@ -12,4 +12,7 @@ class TenantRoutes extends Config
       url: "/new"
       templateUrl: "/components/tenant/new/layout.html"
       controller: "TenantNewController as tenantNew"
+      params:
+        investment: null
+        redirectTo: null
     )

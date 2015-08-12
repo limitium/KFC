@@ -1,5 +1,5 @@
 class InvestmentOwners extends Controller
-  constructor: (@$state, InvestmentService, ListApi, TableUtils) ->
+  constructor: (@$state, InvestmentService, @ListApi, TableUtils) ->
     @investment = InvestmentService.investment
     @landlordDtOptions = TableUtils.createOptions()
     @landlordDtColumnDefs = TableUtils.createColumns(6)
@@ -18,10 +18,11 @@ class InvestmentOwners extends Controller
     @investment.tenants.splice(index, 1)
 
   redirectTo: (state) =>
-    @$state.go(state)
-#      StateParamsService.put('redirect', true)
-#      StateParamsService.put('investment', @investment)
-#      StateParamsService.put('from-tab', 'owners-tab')
+    @$state.go(
+      state,
+      redirectTo: @$state.current.name
+      investment: @investment
+    )
 
   goToNewLandlord: =>
     @redirectTo('landlord.new')
@@ -31,7 +32,7 @@ class InvestmentOwners extends Controller
 
   #Getters
   getContactTypes: =>
-    @contactType ?= ListApi.Lists.contactType()
+    @contactType ?= @ListApi.Lists.contactType()
   getTenantContactTypes: =>
-    @tenantContactType ?= ListApi.Lists.tenantContactType()
+    @tenantContactType ?= @ListApi.Lists.tenantContactType()
 
