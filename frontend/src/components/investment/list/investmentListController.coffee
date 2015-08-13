@@ -1,7 +1,7 @@
 class InvestmentList extends Controller
   constructor: (@$http, @ListApi, @LocationApi, @ListTransformerService, @TableUtils) ->
     @dtOptions = @TableUtils.createOptions()
-    @dtColumnDefs = @TableUtils.createColumns(13)
+    @dtColumnDefs = @TableUtils.createColumnsWithControlColumn(13, 0)
     @investments = []
 
     @doSearch = () ->

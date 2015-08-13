@@ -18,8 +18,10 @@ class TableUtils extends Factory
           .withOption('info', false)
           .withOption('language', @language)
       createColumns: (colNo) ->
+        return @createColumnsWithControlColumn(colNo, colNo - 1)
+      createColumnsWithControlColumn: (colNo, controlColumnIndex) ->
         result = ( DTColumnDefBuilder.newColumnDef(col) for col in [0..colNo - 1])
-        result.push(DTColumnDefBuilder.newColumnDef(colNo - 1).notSortable())
+        result[controlColumnIndex] = DTColumnDefBuilder.newColumnDef(controlColumnIndex).notSortable();
         return result
     }
 
