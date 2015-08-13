@@ -15,6 +15,8 @@ use AppBundle\Form\SpkInvestmentDTO;
 use AppBundle\Form\TenantDTO;
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
+use EntityManager55c9a3e050a67_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager;
+use FOS\RestBundle\Request\ParamFetcher;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
 use JMS\DiExtraBundle\Annotation\Service;
@@ -32,7 +34,7 @@ class InvestmentService
     const INVEST_SEGMENTS_LIST = "INVEST_SEGMENT";
     /**
      * @DI\Inject("doctrine.orm.entity_manager")
-     * @var InvestmentService
+     * @var EntityManager
      */
     public $em;
 
@@ -41,6 +43,19 @@ class InvestmentService
      * @var PickListService
      */
     public $pickListService;
+
+    /**
+     * @param ParamFetcher $params
+     * @return array
+     */
+    public function findByCriteria(ParamFetcher $params)
+    {
+        $qb = $this->em->getRepository('AppBundle:SpkInvestment')->createQueryBuilder('i');
+        return $qb->setMaxResults(100)
+            ->getQuery()
+            ->getResult();
+    }
+
 
 
     public function saveOrUpdate(SpkInvestmentDTO $investment)
@@ -173,4 +188,5 @@ class InvestmentService
     {
         $this->em = $em;
     }
+
 }

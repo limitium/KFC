@@ -1,21 +1,8 @@
 class InvestmentList extends Controller
-  constructor: (@$http, @ListApi, @LocationApi, @ListTransformerService, @TableUtils) ->
+  constructor: (@$http, @ListApi, @LocationApi, @ListTransformerService, @TableUtils, @InvestmentApi) ->
     @dtOptions = @TableUtils.createOptions()
     @dtColumnDefs = @TableUtils.createColumnsWithControlColumn(13, 0)
     @investments = []
-
-    @doSearch = () ->
-      @investments = [
-        {
-          "checked": false,
-          "test": 123
-        },
-        {
-          "checked": true,
-          "test": 666
-        }
-      ]
-      return
 
     @onCitiesChange = ->
       citiesIds = @ListTransformerService.getIdsByNames(@cities, @criteria.cities)
@@ -41,6 +28,11 @@ class InvestmentList extends Controller
       @districts ?= []
     @getSubways = () ->
       @subways ?= []
+
+  doSearch: () =>
+    @investments = @InvestmentApi.Investments.query(@criteria)
+    return
+
 
 InvestmentList::activate = ->
   @criteria =

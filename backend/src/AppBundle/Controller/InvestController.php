@@ -8,6 +8,7 @@ use AppBundle\Form\SpkInvestmentType;
 use AppBundle\Form\TestDTO;
 use AppBundle\Service\InvestmentService;
 use FOS\RestBundle\Controller\Annotations as Rest;
+use FOS\RestBundle\Request\ParamFetcher;
 use FOS\RestBundle\View\View;
 use JMS\DiExtraBundle\Annotation as DI;
 
@@ -28,14 +29,32 @@ class InvestController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="nameAddress", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="cities", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="districts", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="investRings", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="subways", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="segments", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="classes", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="statuses", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="leaseStatuses", nullable=false, allowBlank=true, array=true)
+     * @Rest\QueryParam(name="gbaFrom", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="gbaTo", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="glaFrom", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="glaTo", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="landGaFrom", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="amountFrom", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="amountTo", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="sqmFrom", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="sqmTo", nullable=false, allowBlank=true)
+     * @Rest\QueryParam(name="currency", nullable=false, allowBlank=true)
+     * @param ParamFetcher $params
+     *
+     * @return array
      */
-    public function getInvestmentsAction()
+    public function getInvestmentsAction(ParamFetcher $params)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        return $em
-            ->getRepository('AppBundle:SpkInvestment')
-            ->findAll();
+        return $this->investmentService->findByCriteria($params);
     }
 
     /**

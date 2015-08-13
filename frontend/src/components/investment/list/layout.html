@@ -20,13 +20,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.gba.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gbaFrom">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.gba.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.gbaTo">
             </div>
         </div>
         <div class="form-group">
@@ -57,13 +57,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.gla.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.glaFrom">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.gla.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.glaTo">
             </div>
         </div>
         <div class="form-group">
@@ -88,13 +88,13 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.landGa.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.landGaFrom">
             </div>
 
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.landGa.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.landGaTo">
             </div>
         </div>
         <div class="form-group">
@@ -119,12 +119,12 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.amount.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.amountFrom">
             </div>
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.amount.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.amountTo">
             </div>
         </div>
         <div class="form-group">
@@ -143,12 +143,12 @@
             <label class="col-sm-1 control-label text-right">от</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.sqm.from">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.sqmFrom">
             </div>
             <label class="col-sm-1 control-label text-right">до</label>
 
             <div class="col-sm-1">
-                <input type="number" class="form-control" ng-model="investmentList.criteria.sqm.to">
+                <input type="number" class="form-control" ng-model="investmentList.criteria.sqmTo">
             </div>
         </div>
         <div class="form-group">
@@ -160,7 +160,7 @@
             <div class="col-sm-3">
                 <common-list-field
                         label="Валюта"
-                        model="investmentList.criteria.currencies"
+                        model="investmentList.criteria.currency"
                         items="investmentList.getKfCurrency()">
                 </common-list-field>
             </div>
@@ -168,15 +168,11 @@
         </div>
     </form>
     <div class="row">
+        <button type="button" class="btn btn-default" aria-label="Print">
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>Брифы
+        </button>
         <table datatable="ng" class="row-border hover" dt-options="investmentList.dtOptions" dt-column-defs="investmentList.dtColumnDefs">
             <thead>
-            <tr class="control-row">
-                <th>
-                    <button type="button" class="btn btn-default" aria-label="Print">
-                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span>Брифы
-                    </button>
-                </th>
-            </tr>
             <tr>
                 <th></th>
                 <th>Название</th>
@@ -199,43 +195,43 @@
                     <input type="checkbox" ng-model="investment.checked">
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
                 <td>
-                    <input type="text" class="form-control" ng-model="investment.test"/>
+                    {{investment.nameRus}}
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-</div>                                                 `
+</div>
