@@ -36,7 +36,7 @@ class InvestmentRoutes extends Config
     )
     .state("investment.new.picture",
       url: "/picture"
-      templateUrl: "/components/investment/new/picture/layout.html"
+      templateUrl: "/components/investment/new/picture/investment-new-picture.html"
       controller: "InvestmentPictureController as investmentPicture"
     )
 

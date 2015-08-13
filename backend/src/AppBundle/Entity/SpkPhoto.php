@@ -58,6 +58,10 @@ class SpkPhoto
      * @var integer
      */
     private $briefOrder;
+    /**
+     * @var string
+     */
+    private $encoded;
 
     /**
      * @var \AppBundle\Entity\SpkInvestment
@@ -78,7 +82,7 @@ class SpkPhoto
     /**
      * Get spkPhotoId
      *
-     * @return string 
+     * @return string
      */
     public function getSpkPhotoId()
     {
@@ -101,7 +105,7 @@ class SpkPhoto
     /**
      * Get createdate
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreatedate()
     {
@@ -124,7 +128,7 @@ class SpkPhoto
     /**
      * Get modifydate
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getModifydate()
     {
@@ -147,7 +151,7 @@ class SpkPhoto
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -170,7 +174,7 @@ class SpkPhoto
     /**
      * Get photoType
      *
-     * @return string 
+     * @return string
      */
     public function getPhotoType()
     {
@@ -193,7 +197,7 @@ class SpkPhoto
     /**
      * Get photoOrder
      *
-     * @return integer 
+     * @return integer
      */
     public function getPhotoOrder()
     {
@@ -216,7 +220,7 @@ class SpkPhoto
     /**
      * Get brief
      *
-     * @return string 
+     * @return string
      */
     public function getBrief()
     {
@@ -239,7 +243,7 @@ class SpkPhoto
     /**
      * Get filename
      *
-     * @return string 
+     * @return string
      */
     public function getFilename()
     {
@@ -262,7 +266,7 @@ class SpkPhoto
     /**
      * Get siteOrder
      *
-     * @return integer 
+     * @return integer
      */
     public function getSiteOrder()
     {
@@ -285,7 +289,7 @@ class SpkPhoto
     /**
      * Get briefOrder
      *
-     * @return integer 
+     * @return integer
      */
     public function getBriefOrder()
     {
@@ -308,7 +312,7 @@ class SpkPhoto
     /**
      * Get investment
      *
-     * @return \AppBundle\Entity\SpkInvestment 
+     * @return \AppBundle\Entity\SpkInvestment
      */
     public function getInvestment()
     {
@@ -331,7 +335,7 @@ class SpkPhoto
     /**
      * Get createdBy
      *
-     * @return \AppBundle\Entity\User 
+     * @return \AppBundle\Entity\User
      */
     public function getCreatedBy()
     {
@@ -354,10 +358,27 @@ class SpkPhoto
     /**
      * Get updatedBy
      *
-     * @return \AppBundle\Entity\User 
+     * @return \AppBundle\Entity\User
      */
     public function getUpdatedBy()
     {
         return $this->updatedBy;
     }
+
+    /**
+     * @return string
+     */
+    public function getEncoded()
+    {
+        return $this->encoded;
+    }
+
+    /**
+     * @param string $encoded
+     */
+    public function setEncoded($encoded)
+    {
+        $this->encoded = $encoded;
+    }
+
 }

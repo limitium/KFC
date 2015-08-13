@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\SpkInvestment;
+use AppBundle\Form\SpkPhotoUploadType;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -11,6 +12,7 @@ use FOS\RestBundle\View\View;
 use JMS\DiExtraBundle\Annotation as DI;
 use AppBundle\Entity\SpkPhoto;
 use AppBundle\Form\SpkPhotoType;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  */
@@ -32,18 +34,30 @@ class PhotoController extends Controller
     }
 
     /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @param SpkInvestment $investment
+     * @param SpkPhoto $photo
+     * @return SpkPhoto
+     */
+    public function getPhotoAction(SpkInvestment $investment, SpkPhoto $photo)
+    {
+        return $photo;
+    }
+
+    /**
      * @Rest\View
+     * @param SpkInvestment $investment
      * @param Request $request
-     * @return View|Response
+     * @return Response|View
      */
     public function postPhotoAction(SpkInvestment $investment, Request $request)
     {
         $entity = new SpkPhoto();
-        $form = $this->createForm(new SpkPhotoType(), $entity);
-        return $this->processForm($form, $request, $entity);
+        $form = $this->createForm(new SpkPhotoUploadType(), $entity);
+        return $this->processForm($investment, $form, $request, $entity);
     }
 
-    private function processForm(Form $form, Request $request, SpkPhoto $photo)
+    private function processForm(SpkInvestment $investment, Form $form, Request $request, SpkPhoto $photo)
     {
 
         $form->handleRequest($request);
@@ -52,6 +66,8 @@ class PhotoController extends Controller
 
             $statusCode = $photo->getSpkPhotoId() ? 204 : 201;
             $em = $this->getDoctrine()->getManager();
+            $photo->setInvestment($investment);
+            $this->upload($photo->getEncoded());
             $em->persist($photo);
             $em->flush();
 
@@ -61,8 +77,7 @@ class PhotoController extends Controller
             if ($statusCode == 201) {
                 $response->headers->set('Location',
                     $this->generateUrl(
-                        'get_photo', array('photo' => $photo->getSpkPhotoId()),
-                        true // absolute
+                        'get_investment_photo', ['investment' => $investment->getSpkPropertyid(), 'photo' => $photo->getSpkPhotoId()]
                     )
                 );
             }
@@ -70,6 +85,38 @@ class PhotoController extends Controller
             return $response;
         }
         return View::create($form, 400);
+    }
+
+    private function upload($imgDataUrl)
+    {
+        list($type, $data) = explode(';', $imgDataUrl);
+        list(, $data) = explode(',', $data);
+        $decodedData = base64_decode($data);
+        $hash = md5($decodedData);
+        $hash = md5($hash . microtime(1));
+
+        $fileName = $this->getImageName($hash);
+        file_put_contents($fileName, $decodedData);
+        return $hash;
+    }
+
+    /**
+     * @param $hash
+     * @return string
+     */
+    private function getImageName($hash)
+    {
+        $uploadPath = $this->get('kernel')->getRootDir() . '/../web/public/';
+
+        $fileName = $uploadPath . $hash . '.png';
+        return $fileName;
+    }
+
+    private function deleteImage($image)
+    {
+        if ($image) {
+            unlink($this->getImageName($image->getHash()));
+        }
     }
 //
 //    /**
