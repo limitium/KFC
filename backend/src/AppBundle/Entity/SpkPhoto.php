@@ -381,4 +381,8 @@ class SpkPhoto
         $this->encoded = $encoded;
     }
 
+    public function getUrl()
+    {
+        return "/public/" . $this->description . ".png";
+    }
 }

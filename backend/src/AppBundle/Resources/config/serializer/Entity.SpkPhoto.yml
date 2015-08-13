@@ -3,14 +3,14 @@ AppBundle\Entity\SpkPhoto:
     properties:
         spkPhotoId:
             expose: true
-        filename:
-            expose: true
+#        filename:
+#            expose: true
 #        Lookups:
 #            expose: true
 #            groups: [List]
-#    virtual_properties:
-#            getImageUrl:
-#                serialized_name: image
+    virtual_properties:
+            getUrl:
+                serialized_name: url
 #            getAvatarUrl:
 #                serialized_name: avatar
 #            getViewsCount:

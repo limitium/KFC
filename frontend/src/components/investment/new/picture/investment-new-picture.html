@@ -1,6 +1,7 @@
 <div>
     <table class="table table-bordered">
         <tr ng-repeat="photo in investmentPicture.photos">
+            <td><img ng-src="{{photo.url}}" alt=""/></td>
             <td>{{photo.filename}}</td>
         </tr>
     </table>

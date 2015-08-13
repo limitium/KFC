@@ -67,7 +67,11 @@ class PhotoController extends Controller
             $statusCode = $photo->getSpkPhotoId() ? 204 : 201;
             $em = $this->getDoctrine()->getManager();
             $photo->setInvestment($investment);
-            $this->upload($photo->getEncoded());
+            if ($photo->getEncoded()) {
+                $hash = $this->upload($photo->getEncoded());
+                $photo->setDescription($hash);
+                $photo->setFilename($this->getImageName($hash));
+            }
             $em->persist($photo);
             $em->flush();
 

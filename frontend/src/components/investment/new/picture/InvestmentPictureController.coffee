@@ -4,7 +4,7 @@ class InvestmentPicture extends Controller
     @photos = []
     @photosToUpload = []
     @investmentId = "Q6UJ9A00VYQB"
-#    @loadPhoto()
+    @loadPhoto()
 
   loadPhoto: ->
     photos = @InvestmentPhoto.query investmentId: @investmentId, =>
@@ -38,3 +38,4 @@ class InvestmentPicture extends Controller
           , ()=>
             console.log 'er'
             @removeFile(file)
+
