@@ -116,87 +116,26 @@ class PhotoController extends Controller
         return $fileName;
     }
 
-    private function deleteImage($image)
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @param SpkInvestment $investment
+     * @param SpkPhoto $photo
+     * @return SpkPhoto
+     */
+    public function deletePhotoAction(SpkInvestment $investment, SpkPhoto $photo)
     {
-        if ($image) {
-            unlink($this->getImageName($image->getHash()));
+        $em = $this->getDoctrine()->getManager();
+        $this->deleteImage($photo->getDescription());
+        $em->remove($photo);
+        $em->flush();
+        return $photo;
+    }
+
+    private function deleteImage($hash)
+    {
+        if (file_exists($this->getImageName($hash))) {
+            unlink($this->getImageName($hash));
         }
     }
-//
-//    /**
-//     * Edits an existing SpkPhoto entity.
-//     *
-//     * @Route("/{id}", name="spkphoto_update")
-//     * @Method("PUT")
-//     * @Template("AppBundle:SpkPhoto:edit.html.twig")
-//     */
-//    public function updateAction(Request $request, $id)
-//    {
-//        $em = $this->getDoctrine()->getManager();
-//
-//        $entity = $em->getRepository('AppBundle:SpkPhoto')->find($id);
-//
-//        if (!$entity) {
-//            throw $this->createNotFoundException('Unable to find SpkPhoto entity.');
-//        }
-//
-//        $deleteForm = $this->createDeleteForm($id);
-//        $editForm = $this->createEditForm($entity);
-//        $editForm->handleRequest($request);
-//
-//        if ($editForm->isValid()) {
-//            $em->flush();
-//
-//            return $this->redirect($this->generateUrl('spkphoto_edit', array('id' => $id)));
-//        }
-//
-//        return array(
-//            'entity' => $entity,
-//            'edit_form' => $editForm->createView(),
-//            'delete_form' => $deleteForm->createView(),
-//        );
-//    }
-//
-//    /**
-//     * Deletes a SpkPhoto entity.
-//     *
-//     * @Route("/{id}", name="spkphoto_delete")
-//     * @Method("DELETE")
-//     */
-//    public function deleteAction(Request $request, $id)
-//    {
-//        $form = $this->createDeleteForm($id);
-//        $form->handleRequest($request);
-//
-//        if ($form->isValid()) {
-//            $em = $this->getDoctrine()->getManager();
-//            $entity = $em->getRepository('AppBundle:SpkPhoto')->find($id);
-//
-//            if (!$entity) {
-//                throw $this->createNotFoundException('Unable to find SpkPhoto entity.');
-//            }
-//
-//            $em->remove($entity);
-//            $em->flush();
-//        }
-//
-//        return $this->redirect($this->generateUrl('spkphoto'));
-//    }
-//
-//    /**
-//     * Creates a form to delete a SpkPhoto entity by id.
-//     *
-//     * @param mixed $id The entity id
-//     *
-//     * @return \Symfony\Component\Form\Form The form
-//     */
-//    private function createDeleteForm($id)
-//    {
-//        return $this->createFormBuilder()
-//            ->setAction($this->generateUrl('spkphoto_delete', array('id' => $id)))
-//            ->setMethod('DELETE')
-//            ->add('submit', 'submit', array('label' => 'Delete'))
-//            ->getForm();
-//    }
 
 }

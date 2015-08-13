@@ -1,9 +1,17 @@
 <div>
     <table class="table table-bordered">
-        <tr ng-repeat="photo in investmentPicture.photos">
-            <td><img ng-src="{{photo.url}}" alt=""/></td>
-            <td>{{photo.filename}}</td>
-        </tr>
+        <span ng-repeat="photo in investmentPicture.photos">
+            <span><img style="max-height: 60px;max-width:60px;margin-left: 10px" ng-src="{{photo.url}}" alt=""/></span>
+            <span ng-hide="photo.isDeleting">
+                    <a href="#"
+                       ng-click="investmentPicture.deletePhoto(photo);$event.preventDefault()">
+                        <i class="fa fa-remove fa-3"></i>
+                    </a>
+                </span>
+                <span ng-show="photo.isDeleting">
+                    <i class="fa fa-spinner fa-pulse"></i>
+                </span>
+        </span>
     </table>
     <hr/>
     <form>

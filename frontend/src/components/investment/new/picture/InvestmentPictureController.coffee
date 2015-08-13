@@ -24,6 +24,21 @@ class InvestmentPicture extends Controller
   removeFile: (file)=>
     @photosToUpload.splice(@photosToUpload.indexOf(file), 1)
 
+  removePhoto: (photo)=>
+    @photos.splice(@photos.indexOf(photo), 1)
+
+  deletePhoto: (photo)=>
+    photo.isDeleting = true
+    @InvestmentPhoto.delete
+      investmentId: @investmentId
+    ,
+      photo
+    , =>
+      @removePhoto(photo)
+    , =>
+      console.log 'er'
+      photo.isDeleting = false
+
   upload: =>
     for file in @photosToUpload
       do (file) =>
@@ -35,7 +50,7 @@ class InvestmentPicture extends Controller
           , =>
             @removeFile(file)
             @photos.push photo
-          , ()=>
+          , =>
             console.log 'er'
             @removeFile(file)
 
