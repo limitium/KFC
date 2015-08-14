@@ -9,7 +9,7 @@ class LandlordNew extends Controller
     @contactType ?= @ListApi.Lists.contactType()
 
   getAccounts: (val) ->
-    @AccountApi.Accounts.query(name: val).$promise
+    @AccountApi.list(name: val).$promise
 
   onAccountChange: (selectedAccount)->
     @landlord.contact = ''

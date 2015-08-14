@@ -21,9 +21,28 @@ class AccountController extends Controller
      * @param ParamFetcher $params
      * @return string
      */
-    public function getAccountsAction(ParamFetcher $params)
+    public function getAccountsListAction(ParamFetcher $params)
     {
         $namePart = $params->get('name', '');
         return $this->as->findAccountsByNameContaining($namePart);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getAccountsSearchAction(ParamFetcher $params)
+    {
+        $namePart = $params->get('name', '');
+        return $this->em
+            ->getRepository('AppBundle:Account')->createQueryBuilder('e')
+            ->where('e.account LIKE :name')
+            ->setParameter('name', '%' . $namePart . '%')
+            ->setMaxResults(100)
+            ->getQuery()
+            ->useResultCache(true, 100500)
+            ->getResult();
     }
 }

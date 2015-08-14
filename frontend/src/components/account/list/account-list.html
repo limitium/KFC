@@ -5,9 +5,9 @@
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="exampleInputName2">Компания</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+                        <input type="text" class="form-control" id="exampleInputName2" ng-model="query">
                     </div>
-                    <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+                    <button ng-click="ctrl.search(query)" class="btn btn-success"><i class="fa fa-search"></i></button>
                     <a href="#" ui-sref="company.new" class="btn btn-default"><i class="fa fa-plus-circle"></i></a>
                 </form>
             </div>
@@ -17,8 +17,8 @@
         <div class="col-md-12">
             <table datatable="ng"
                    class="row-border hover"
-                   dt-options="companyList.dtOptions"
-                   dt-column-defs="companyList.dtColumnDefs">
+                   dt-options="ctrl.dtOptions"
+                   dt-column-defs="ctrl.dtColumnDefs">
                 <thead>
                 <tr>
                     <th>Компания/Группа</th>
@@ -28,7 +28,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="company in companyList.companies track by $index">
+                <tr ng-repeat="company in ctrl.companies track by $index">
                     <td>
                         {{company.nameRus}}
                     </td>
