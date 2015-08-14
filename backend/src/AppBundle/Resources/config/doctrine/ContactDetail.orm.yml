@@ -291,8 +291,8 @@ AppBundle\Entity\ContactDetail:
             targetEntity: AppBundle\Entity\Contact
             inversedBy: contactDetail
             joinColumns:
-                SPK_PROPERTYID:
-                    referencedColumnName: SPK_CONTACTID
+                CONTACTID:
+                    referencedColumnName: CONTACTID
                     onDelete: CASCADE
                     onUpdate: CASCADE
     manyToOne:

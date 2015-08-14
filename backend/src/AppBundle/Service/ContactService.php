@@ -87,15 +87,16 @@ class ContactService
 
         $qb = $this->em->getRepository($entity)->createQueryBuilder('c');
         if (!empty($name)) {
+            $qb->join('c.contactDetail', 'cd');
             $qb->andWhere(
                 $qb->expr()->orX(
                     $qb->expr()->like('c.firstname', ':name'),
                     $qb->expr()->like('c.lastname', ':name'),
                     $qb->expr()->like('c.middlename', ':name'),
-                    $qb->expr()->like('c.contactDetail.firstrus', ':name'),
-                    $qb->expr()->like('c.contactDetail.middlerus', ':name'),
-                    $qb->expr()->like('c.contactDetail.lastrus', ':name')
-//                    $qb->expr()->like('c.account', ':name')
+                    $qb->expr()->like('cd.firstrus', ':name'),
+                    $qb->expr()->like('cd.middlerus', ':name'),
+                    $qb->expr()->like('cd.lastrus', ':name'),
+                    $qb->expr()->like('c.accountName', ':name')
                 )
             )->setParameter('name', $name);
         }
