@@ -5,7 +5,9 @@ namespace AppBundle\Tests\Controller;
 
 
 use Doctrine\ORM\EntityManager;
+use Symfony\Bundle\FrameworkBundle\Client;
 use \Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Symfony\Component\Routing\Router;
 
 /**
  * Helper class to help manager transaction for each test,
@@ -14,13 +16,19 @@ use \Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 abstract class DatabaseTest extends WebTestCase
 {
     /**
-     * helper to acccess EntityManager
+     * @var EntityManager
      */
     protected $em;
+
     /**
-     * Helper to access test Client
+     * @var Client
      */
     protected $client;
+
+    /**
+     * @var Router
+     */
+    protected $router;
 
     /**
      * Before each test we start a new transaction
@@ -30,6 +38,7 @@ abstract class DatabaseTest extends WebTestCase
     {
         parent::setUp();
         $this->client = $this->createClient();
+        $this->router = $this->client->getContainer()->get('router');
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
@@ -43,7 +52,7 @@ abstract class DatabaseTest extends WebTestCase
     protected function tearDown()
     {
         parent::tearDown();
-        $this->em->rollback();
-        $this->em->close();
+//        $this->em->rollback();
+//        $this->em->close();
     }
 }
