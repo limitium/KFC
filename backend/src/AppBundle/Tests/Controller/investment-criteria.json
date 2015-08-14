@@ -1,0 +1,46 @@
+{
+  "nameAddress": "123",
+  "classes": [
+    "A",
+    "B+"
+  ],
+  "gbaFrom": 1,
+  "gbaTo": 2,
+  "glaFrom": 3,
+  "glaTo": 4,
+  "landGaFrom": 5,
+  "landGaTo": 6,
+  "amountFrom": 7,
+  "amountTo": 8,
+  "sqmFrom": 9,
+  "sqmTo": 10,
+  "cities": [
+    "Москва",
+    "Абакан"
+  ],
+  "segments": [
+    "Бизнес центр",
+    "Административное здание"
+  ],
+  "statuses": [
+    "Открытая продажа",
+    "Не продается"
+  ],
+  "leaseStatuses": [
+    "свободно",
+    "% заполнения"
+  ],
+  "subways": [
+    "Тверская",
+    "Кантемировская"
+  ],
+  "rings": [
+    "СК",
+    "ТТК"
+  ],
+  "districts": [
+    "Западный адм.округ",
+    "Восточный адм.округ"
+  ],
+  "currency": "USD"
+}

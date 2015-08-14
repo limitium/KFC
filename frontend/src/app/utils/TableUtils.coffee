@@ -17,8 +17,9 @@ class TableUtils extends Factory
           .withOption('lengthChange', false)
           .withOption('info', false)
           .withOption('language', @language)
-      createColumns: (colNo) ->
+      createColumnsWithDefaultControlColumn: (colNo) ->
         return @createColumnsWithControlColumn(colNo, colNo - 1)
+      createColumns: (colNo) -> (DTColumnDefBuilder.newColumnDef(col) for col in [0..colNo - 1])
       createColumnsWithControlColumn: (colNo, controlColumnIndex) ->
         result = ( DTColumnDefBuilder.newColumnDef(col) for col in [0..colNo - 1])
         result[controlColumnIndex] = DTColumnDefBuilder.newColumnDef(controlColumnIndex).notSortable();

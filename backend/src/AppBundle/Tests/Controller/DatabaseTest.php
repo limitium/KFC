@@ -33,6 +33,7 @@ abstract class DatabaseTest extends WebTestCase
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
+//        $this->em->beginTransaction();
     }
 
     /**

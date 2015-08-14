@@ -1,0 +1,49 @@
+<div class="container">
+    {{ctrl.criteria | json}}
+    {{ctrl.contacts | json}}
+    <div class="well">
+        <div class="row">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="search-name">Компания, ФИО</label>
+                    <input type="text" class="form-control" id="search-name" ng-model="ctrl.criteria.name">
+                </div>
+                <div class="form-group">
+                    <label for="search-email">Телефон, e-mail</label>
+                    <input type="text" class="form-control" id="search-email" ng-model="ctrl.criteria.email">
+                </div>
+                <a class="btn btn-primary" ng-click="ctrl.doSearch()">
+                    <i class="icon-search"></i>
+                </a>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <table datatable="ng" class="row-border hover table-stripe " dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs">
+            <thead>
+            <tr>
+                <th>Компания / группа</th>
+                <th>Персона</th>
+                <th>Телефоны</th>
+                <th>e-mail</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="contact in ctrl.contacts track by $index">
+                <td>
+                    {{contact.company}}
+                </td>
+                <td>
+                    {{contact.person}}
+                </td>
+                <td>
+                    {{contact.phone}}
+                </td>
+                <td>
+                    {{contact.email}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

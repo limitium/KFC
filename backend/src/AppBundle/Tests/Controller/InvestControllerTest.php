@@ -23,11 +23,27 @@ class InvestControllerTest extends DatabaseTest
         $this->assertEquals($expected, $content);
     }
 
+    public function testGetInvestmentsByCriteria()
+    {
+        $criteriaJson = file_get_contents("investment-criteria.json");
+        $this->client->request(
+            'GET',
+            '/api/investments',
+            array(),
+            array(),
+            array('CONTENT_TYPE' => 'application/json'),
+            $criteriaJson
+        );
+        $response = $this->client->getResponse();
+        $content = $this->client->getResponse()->getContent();
+        $data = json_decode($content, true);
+    }
+
     public function testPostInvestment()
     {
         $investmentJson = file_get_contents("investment.json");
 
-        $crawler = $this->client->request(
+        $this->client->request(
             'POST',
             '/api/investments',
             array(),

@@ -2,9 +2,9 @@ class InvestmentOwners extends Controller
   constructor: (@$state, InvestmentService, @ListApi, TableUtils) ->
     @investment = InvestmentService.investment
     @landlordDtOptions = TableUtils.createOptions()
-    @landlordDtColumnDefs = TableUtils.createColumns(6)
+    @landlordDtColumnDefs = TableUtils.createColumnsWithDefaultControlColumn(6)
     @tenantDtOptions = TableUtils.createOptions()
-    @tenantDtColumnDefs = TableUtils.createColumns(8)
+    @tenantDtColumnDefs = TableUtils.createColumnsWithDefaultControlColumn(8)
 
     if not @investment.landlords
       @investment.landlords = []

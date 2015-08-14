@@ -2,7 +2,7 @@ class InvestmentBlocks extends Controller
   constructor: (InvestmentService, ListApi, TableUtils) ->
     @investment = InvestmentService.investment
     @dtOptions = TableUtils.createOptions()
-    @dtColumnDefs = TableUtils.createColumns(8)
+    @dtColumnDefs = TableUtils.createColumnsWithDefaultControlColumn(8)
 
     @plusButtonVisible = true
 
