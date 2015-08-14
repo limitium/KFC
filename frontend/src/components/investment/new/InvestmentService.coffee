@@ -5,6 +5,7 @@ class Investment extends Service
 
     @add = =>
       @busy = true
+      #todo: change to resource
       @$http.post('/api/investments', @investment)
       .success((data, status, headers, config) =>
   #      @$router.parent.navigate('/')
