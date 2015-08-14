@@ -524,7 +524,7 @@ AppBundle\Entity\Contact:
             fixed: false
             column: CATEGORIES
     oneToOne:
-        contact:
+        contactDetail:
             targetEntity: AppBundle\Entity\ContactDetail
             mappedBy: contact
             cascade:

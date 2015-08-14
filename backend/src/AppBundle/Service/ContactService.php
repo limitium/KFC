@@ -89,12 +89,13 @@ class ContactService
         if (!empty($name)) {
             $qb->andWhere(
                 $qb->expr()->orX(
-                    $qb->expr()->like('c.lastrus', ':name'),
-                    $qb->expr()->like('c.firstrus', ':name'),
+                    $qb->expr()->like('c.firstname', ':name'),
+                    $qb->expr()->like('c.lastname', ':name'),
+                    $qb->expr()->like('c.middlename', ':name'),
                     $qb->expr()->like('c.contactDetail.firstrus', ':name'),
                     $qb->expr()->like('c.contactDetail.middlerus', ':name'),
-                    $qb->expr()->like('c.contactDetail.lastrus', ':name'),
-                    $qb->expr()->like('c.account', ':name')
+                    $qb->expr()->like('c.contactDetail.lastrus', ':name')
+//                    $qb->expr()->like('c.account', ':name')
                 )
             )->setParameter('name', $name);
         }
