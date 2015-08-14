@@ -1,6 +1,4 @@
 <div class="container">
-    {{ctrl.criteria | json}}
-    {{ctrl.contacts | json}}
     <div class="well">
         <div class="row">
             <form class="form-inline">
@@ -31,13 +29,13 @@
             <tbody>
             <tr ng-repeat="contact in ctrl.contacts track by $index">
                 <td>
-                    {{contact.company}}
+                    {{contact.accountName}}
                 </td>
                 <td>
-                    {{contact.person}}
+                    {{contact.lastname}} {{contact.firstname}} {{contact.middlename}}
                 </td>
                 <td>
-                    {{contact.phone}}
+                    {{contact.workphone}}
                 </td>
                 <td>
                     {{contact.email}}

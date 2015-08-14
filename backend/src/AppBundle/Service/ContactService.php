@@ -104,6 +104,10 @@ class ContactService
             $qb->andWhere(
                 $qb->expr()->orX(
                     $qb->expr()->like('c.email', ':email'),
+                    $qb->expr()->like('c.workphone', ':email'),
+                    $qb->expr()->like('c.homephone', ':email'),
+                    $qb->expr()->like('c.donotphone', ':email'),
+                    $qb->expr()->like('c.otherphone', ':email'),
                     $qb->expr()->like('c.secondaryEmail', ':email'),
                     $qb->expr()->like('c.email3', ':email')
                 )
