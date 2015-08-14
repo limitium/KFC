@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class SpkPhotoType extends AbstractType
+class SpkPhotoUploadType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -15,13 +15,7 @@ class SpkPhotoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('description')
-            ->add('photoType')
-            ->add('photoOrder')
-            ->add('brief')
-            ->add('siteOrder')
-            ->add('briefOrder')
-            ->add('investment')
+            ->add('encoded')
         ;
     }
 
