@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Компания</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+                    <a href="#" ui-sref="company.new" class="btn btn-default"><i class="fa fa-plus-circle"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table datatable="ng"
+                   class="row-border hover"
+                   dt-options="companyList.dtOptions"
+                   dt-column-defs="companyList.dtColumnDefs">
+                <thead>
+                <tr>
+                    <th>Компания/Группа</th>
+                    <th>Телефон</th>
+                    <th>Факс</th>
+                    <th>Сайт</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="company in companyList.companies track by $index">
+                    <td>
+                        {{company.nameRus}}
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

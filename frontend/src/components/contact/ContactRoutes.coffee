@@ -11,3 +11,8 @@ class ContactRoutes extends Config
       templateUrl: "/components/contact/list/contact-list-layout.html"
       controller: "ContactListController as ctrl"
     )
+    .state("contact.my",
+      url: "/my"
+      templateUrl: "/components/contact/my/contact-my.html"
+      controller: "ContactMyController as ctrl"
+    )

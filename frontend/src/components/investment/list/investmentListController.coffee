@@ -3,6 +3,16 @@ class InvestmentList extends Controller
     @dtOptions = @TableUtils.createOptions()
     @dtColumnDefs = @TableUtils.createColumnsWithControlColumn(13, 0)
     @investments = []
+    @criteria =
+      classes: []
+      cities: []
+      segments: []
+      districts: []
+      statuses: []
+      rings: []
+      leaseStatuses: []
+      subways: []
+      currencies: []
 
     @onCitiesChange = ->
       citiesIds = @ListTransformerService.getIdsByNames(@cities, @criteria.cities)
@@ -32,19 +42,3 @@ class InvestmentList extends Controller
   doSearch: () =>
     @investments = @InvestmentApi.Investments.query(@criteria)
     return
-
-
-InvestmentList::activate = ->
-  @criteria =
-    classes: []
-    cities: []
-    segments: []
-    districts: []
-    statuses: []
-    rings: []
-    leaseStatuses: []
-    subways: []
-    currencies: []
-
-
-
