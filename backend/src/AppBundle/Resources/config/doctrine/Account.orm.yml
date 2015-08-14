@@ -1,19 +1,6 @@
 AppBundle\Entity\Account:
     type: entity
     table: ACCOUNT
-    indexes:
-        KF_SR_IX_MAINPHONE:
-            columns:
-                - MAINPHONE
-        _dta_index_ACCOUNT_5_1076914908__K1_3_11:
-            columns:
-                - ACCOUNTID
-                - ACCOUNT
-                - MAINPHONE
-        _dta_index_ACCOUNT_5_1101299033__K1_21:
-            columns:
-                - ACCOUNTID
-                - WEBADDRESS
     uniqueConstraints:
         KF_SR_IX_ACCOUNTID:
             columns:
@@ -223,26 +210,20 @@ AppBundle\Entity\Account:
             length: 64
             fixed: false
             column: TERRITORY
-        createuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: CREATEUSER
-        modifyuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: MODIFYUSER
         createdate:
             type: datetime
             nullable: true
             column: CREATEDATE
+            gedmo:
+                timestampable:
+                    on: create
         modifydate:
             type: datetime
             nullable: true
             column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         accountUc:
             type: string
             nullable: true
@@ -498,4 +479,27 @@ AppBundle\Entity\Account:
             length: 12
             fixed: false
             column: MANAGER
+    oneToMany:
+        contacts:
+            targetEntity: AppBundle\Entity\Contact
+            mappedBy: contact
+            cascade:
+                - all
+    manyToOne:
+        createdBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: CREATEUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: create
+        updatedBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: MODIFYUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: update
     lifecycleCallbacks: {  }

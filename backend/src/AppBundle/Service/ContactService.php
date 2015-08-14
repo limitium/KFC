@@ -81,44 +81,37 @@ class ContactService
 
     public function findByCriteria(ParamFetcher $params)
     {
-        $namePart = $params->get('name', '');
-        $accountId = $params->get('accountid', '');
-        $entity = 'AppBundle:ContactDetail';
-        $lastRusNameColumn = 'lastrus';
-        $firstRusNameColumn = 'firstrus';
-        $middleRusNameColumn = 'middlerus';
-        $maxResults = 100;
-        $qb = $this->em->getRepository($entity)->createQueryBuilder('e');
-        if (!empty($accountId)) {
-            $qb->leftJoin('AppBundle:Contact', 'c', 'WITH', 'c.contactid = e.contactid');
-        }
-        $qb->where("1=1");
-        if (!empty($accountId)) {
-            $qb->andWhere("c.accountid= :accountid")->setParameter('accountid', $accountId);
-        }
-        if (!empty($namePart)) {
+        $name = $params->get('name', '');
+        $email = $params->get('email', '');
+        $entity = 'AppBundle:Contact';
+
+        $qb = $this->em->getRepository($entity)->createQueryBuilder('c');
+        if (!empty($name)) {
             $qb->andWhere(
                 $qb->expr()->orX(
-                    $qb->expr()->like('e.'.$lastRusNameColumn, ':name'),
-                    $qb->expr()->like('e.'.$firstRusNameColumn, ':name'),
-                    $qb->expr()->like('e.'.$middleRusNameColumn, ':name')
-                #TODO: Add mobile phone querying
-                ))->setParameter('name', '%' . $namePart . '%');
+                    $qb->expr()->like('c.lastrus', ':name'),
+                    $qb->expr()->like('c.firstrus', ':name'),
+                    $qb->expr()->like('c.contactDetail.firstrus', ':name'),
+                    $qb->expr()->like('c.contactDetail.middlerus', ':name'),
+                    $qb->expr()->like('c.contactDetail.lastrus', ':name'),
+                    $qb->expr()->like('c.account', ':name')
+                )
+            )->setParameter('name', $name);
         }
-        $contacts = $qb->setMaxResults($maxResults)
-            ->distinct()
+        if (!empty($email)) {
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->like('c.email', ':email'),
+                    $qb->expr()->like('c.secondaryEmail', ':email'),
+                    $qb->expr()->like('c.email3', ':email')
+                )
+            )->setParameter('email', $email);
+        }
+        $contacts = $qb
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getResult();
-
-        $result = array();
-        foreach ($contacts as $contact) {
-            $id = $contact->getContactid();
-            $array = array($contact->getFirstrus(), $contact->getMiddlerus(), $contact->getLastrus());
-            $name = implode(' ', array_filter($array));
-            $result[] = new ListItemDTO($id, $name);
-        }
-        return $result;
+        return $contacts;
     }
 
 
