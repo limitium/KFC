@@ -8,7 +8,7 @@
                         <input type="text" class="form-control" id="exampleInputName2" ng-model="query">
                     </div>
                     <button ng-click="ctrl.search(query)" class="btn btn-success"><i class="fa fa-search"></i></button>
-                    <a href="#" ui-sref="company.new" class="btn btn-default"><i class="fa fa-plus-circle"></i></a>
+                    <a href="#" ui-sref="account.new" class="btn btn-default"><i class="fa fa-plus-circle"></i></a>
                 </form>
             </div>
         </div>
@@ -28,15 +28,18 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="company in ctrl.companies track by $index">
+                <tr ng-repeat="account in ctrl.accounts track by $index">
                     <td>
-                        {{company.nameRus}}
+                        {{account.account}}
                     </td>
                     <td>
+                        {{account.mainphone}}
                     </td>
                     <td>
+                        {{account.fax}}
                     </td>
                     <td>
+                        {{account.webaddress}}
                     </td>
                 </tr>
                 </tbody>

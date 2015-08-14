@@ -36,7 +36,7 @@ class AccountController extends Controller
     public function getAccountsSearchAction(ParamFetcher $params)
     {
         $namePart = $params->get('name', '');
-        return $this->em
+        return $this->getDoctrine()->getManager()
             ->getRepository('AppBundle:Account')->createQueryBuilder('e')
             ->where('e.account LIKE :name')
             ->setParameter('name', '%' . $namePart . '%')

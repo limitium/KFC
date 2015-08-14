@@ -1,7 +1,9 @@
 class AccountList extends Controller
-  constructor: (@TableUtils) ->
+  constructor: (@TableUtils, @AccountApi) ->
     @dtOptions = @TableUtils.createOptions().withOption('searching', true)
     @dtColumnDefs = @TableUtils.createColumnsWithDefaultControlColumn(4)
-    @companies = []
+    @accounts = []
 
   search: (query)=>
+    @accounts.length = 0
+    @accounts = @AccountApi.search name: query

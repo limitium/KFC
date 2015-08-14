@@ -18,7 +18,5 @@ class LayoutController extends Controller
      */
     public function indexAction()
     {
-        $this->get("stein.pick_list")->getListByType("INVEST_LAND_LEASE_TERM");
-        $this->get("stein.location")->findCitiesByNameContaining("моск");
     }
 }
