@@ -10,6 +10,12 @@ class ContactList extends Controller
         person: 'Leeroy'
         phone: '322'
         email: 'nobody@nowhere.com'
+      },
+      {
+        company: 'Wipe inc.'
+        person: 'Leeroy'
+        phone: '322'
+        email: 'nobody@nowhere.com'
       }
     ]
     return
