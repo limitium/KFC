@@ -7,9 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Account
- *
- * @ORM\Table(name="ACCOUNT", uniqueConstraints={@ORM\UniqueConstraint(name="KF_SR_IX_ACCOUNTID", columns={"ACCOUNTID"})}, indexes={@ORM\Index(name="KF_SR_IX_MAINPHONE", columns={"MAINPHONE"}), @ORM\Index(name="_dta_index_ACCOUNT_5_1076914908__K1_3_11", columns={"ACCOUNTID", "ACCOUNT", "MAINPHONE"}), @ORM\Index(name="_dta_index_ACCOUNT_5_1101299033__K1_21", columns={"ACCOUNTID", "WEBADDRESS"})})
- * @ORM\Entity
  */
 class Account
 {

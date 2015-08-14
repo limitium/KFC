@@ -111,7 +111,6 @@ class ContactService
         }
         $contacts = $qb
             ->getQuery()
-            ->useResultCache(true, 100500)
             ->getResult();
         return $contacts;
     }

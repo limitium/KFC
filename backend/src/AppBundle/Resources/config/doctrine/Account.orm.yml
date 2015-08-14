@@ -482,7 +482,7 @@ AppBundle\Entity\Account:
     oneToMany:
         contacts:
             targetEntity: AppBundle\Entity\Contact
-            mappedBy: contact
+            mappedBy: account
             cascade:
                 - all
     manyToOne:

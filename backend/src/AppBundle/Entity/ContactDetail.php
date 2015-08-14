@@ -6,9 +6,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * ContactDetail
- *
- * @ORM\Table(name="CONTACT_DETAIL", uniqueConstraints={@ORM\UniqueConstraint(name="CONTACT_DETAIL_PRIMARY", columns={"CONTACTID"}), @ORM\UniqueConstraint(name="KF_SR_IX_FIONAME", columns={"CONTACTID", "FIRSTRUS", "MIDDLERUS", "LASTRUS", "TITLERUS", "SUFFIXRUS", "PREFIXRUS", "WORKPREFIX", "WORKSUFIX", "MOBILEPREFIX", "MOBILESUFIX", "HOMEPREFIX", "HOMESUFIX", "OTHERPREFIX", "OTHERSUFIX", "FAXPREFIX", "FAXSUFIX", "NATIONALITY", "SEX", "UNSUBSCRIBE", "NON_DELIVERED", "TITLE_TYPE", "KEYCLIENT"})}})
- * @ORM\Entity
  */
 class ContactDetail
 {
