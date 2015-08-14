@@ -19,6 +19,19 @@ class ContactController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @Rest\QueryParam(name="accountid", nullable=false)
+     * @Rest\QueryParam(name="email", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
+    public function getContactsSearchAction(ParamFetcher $params)
+    {
+        return $this->contactService->findByCriteria($params);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
      * @Rest\QueryParam(name="typeahead", nullable=false)
      * @Rest\QueryParam(name="name", nullable=false)
      * @Rest\QueryParam(name="accountid", nullable=false)
@@ -26,14 +39,9 @@ class ContactController extends Controller
      * @param ParamFetcher $params
      * @return string
      */
-    public function getContactsAction(ParamFetcher $params)
+    public function getContactsHintAction(ParamFetcher $params)
     {
-        $isTypeahead = $params->get('typeahead', '');
-        if (!empty($isTypeahead) && $isTypeahead) {
-            return $this->contactService->findByName($params);
-        } else {
-            return $this->contactService->findByCriteria($params);
-        }
+        return $this->contactService->findByName($params);
     }
 
 }

@@ -6,13 +6,13 @@ class ContactApi extends Factory
     ,
       search:
         method: "GET"
-        url: "/api/contacts"
+        url: "/api/contacts/search"
         params:
           name: ""
         isArray: true
       hint:
         method: "GET"
-        url: "/api/contacts"
+        url: "/api/contacts/hint"
         params:
           name: ""
           typeahead: true
