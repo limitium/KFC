@@ -16,15 +16,6 @@ class AccountController extends Controller
      */
     private $as;
 
-    /**
-     * @Rest\View(serializerGroups={"Default"})
-     * @param Account $account
-     * @return Account
-     */
-    public function getAccountAction(Account $account)
-    {
-        return $account;
-    }
 
     /**
      * @Rest\View(serializerGroups={"Default"})
@@ -55,5 +46,15 @@ class AccountController extends Controller
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getResult();
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @param Account $account
+     * @return Account
+     */
+    public function getAccountAction(Account $account)
+    {
+        return $account;
     }
 }
