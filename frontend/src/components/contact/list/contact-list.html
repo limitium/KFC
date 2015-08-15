@@ -1,49 +1,55 @@
 <div class="container">
-    <div class="well">
-        <div class="row">
-            <form class="form-inline" ng-submit="ctrl.doSearch()">
-                <div class="form-group">
-                    <label for="search-name">Компания, ФИО</label>
-                    <input type="text" class="form-control" id="search-name" ng-model="ctrl.criteria.name" focus-me>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well">
+                <div class="row">
+                    <form class="form-inline" ng-submit="ctrl.doSearch()">
+                        <div class="form-group">
+                            <label for="search-name">Компания, ФИО</label>
+                            <input type="text" class="form-control" id="search-name" ng-model="ctrl.criteria.name" focus-me>
+                        </div>
+                        <div class="form-group">
+                            <label for="search-email">Телефон, e-mail</label>
+                            <input type="text" class="form-control" id="search-email" ng-model="ctrl.criteria.email">
+                        </div>
+                        <button class="btn btn-success" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="search-email">Телефон, e-mail</label>
-                    <input type="text" class="form-control" id="search-email" ng-model="ctrl.criteria.email">
-                </div>
-                <button class="btn btn-success" type="submit">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
+            </div>
         </div>
     </div>
     <div class="row">
-        <table datatable="ng" class="row-border hover table table-striped " dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs">
-            <thead>
-            <tr>
-                <th>Компания / группа</th>
-                <th>Персона</th>
-                <th>Телефоны</th>
-                <th>e-mail</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="contact in ctrl.contacts track by $index">
-                <td>
-                    <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
-                </td>
-                <td>
-                    <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}} {{contact.firstname}} {{contact.middlename}}</a>
-                </td>
-                <td>
-                    {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
-                </td>
-                <td>
-                    <a ng-href="mailto:{{contact.email}}">{{contact.email}}</a>
-                    <a ng-href="mailto:{{contact.secondaryEmail}}">{{contact.secondaryEmail}}</a>
-                    <a ng-href="mailto:{{contact.email3}}">{{contact.email3}}</a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="col-md-12">
+            <table datatable="ng" class="row-border hover table table-striped " dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs">
+                <thead>
+                <tr>
+                    <th>Компания / группа</th>
+                    <th>Персона</th>
+                    <th>Телефоны</th>
+                    <th>e-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="contact in ctrl.contacts track by $index">
+                    <td>
+                        <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}} {{contact.firstname}} {{contact.middlename}}</a>
+                    </td>
+                    <td>
+                        {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
+                    </td>
+                    <td>
+                        <a ng-href="mailto:{{contact.email}}">{{contact.email}}</a>
+                        <a ng-href="mailto:{{contact.secondaryEmail}}">{{contact.secondaryEmail}}</a>
+                        <a ng-href="mailto:{{contact.email3}}">{{contact.email3}}</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
