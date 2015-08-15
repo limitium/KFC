@@ -12,7 +12,7 @@ class ContactRoutes extends Config
       controller: "ContactListController as ctrl"
     )
     .state("contact.edit",
-      url: "/:id"
+      url: "/edit/:id"
       templateUrl: "/components/contact/edit/contact-edit.html"
       controller: "ContactEditController as ctrl"
     )
