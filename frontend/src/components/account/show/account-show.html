@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{ctrl.account.account}}</h1>
+
+            <div>
+                <ul class="nav nav-tabs nav-justified">
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="account.show.info">Описание</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="account.show.contacts">Контакты</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="account.show.history">История</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div ui-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
