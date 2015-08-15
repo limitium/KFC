@@ -30,7 +30,7 @@
                 <tbody>
                 <tr ng-repeat="account in ctrl.accounts track by $index">
                     <td>
-                        {{account.account}}
+                        <a ui-sref="account.show.info({id:account.accountid})" href="#">{{account.account}}</a>
                     </td>
                     <td>
                         {{account.mainphone}}
@@ -39,7 +39,7 @@
                         {{account.fax}}
                     </td>
                     <td>
-                        {{account.webaddress}}
+                        <a ng-href="{{account.webaddress}}">{{account.webaddress}}</a>
                     </td>
                 </tr>
                 </tbody>

@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Account;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Request\ParamFetcher;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -14,6 +15,7 @@ class AccountController extends Controller
      * @var AccountService
      */
     private $as;
+
 
     /**
      * @Rest\View(serializerGroups={"Default"})
@@ -44,5 +46,15 @@ class AccountController extends Controller
             ->getQuery()
             ->useResultCache(true, 100500)
             ->getResult();
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @param Account $account
+     * @return Account
+     */
+    public function getAccountAction(Account $account)
+    {
+        return $account;
     }
 }

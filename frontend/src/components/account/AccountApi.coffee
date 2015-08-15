@@ -2,7 +2,7 @@ class AccountApi extends Factory
   constructor: (Resource) ->
     return Resource(
       "/api/accounts/:id"
-    , id: "@accountId"
+    , id: "@accountid"
     ,
       list:
         method: "GET"
