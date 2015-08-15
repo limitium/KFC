@@ -10,4 +10,5 @@ class ContactList extends Controller
     @doSearch()
   doSearch: () =>
     @contacts = @ContactApi.search(@criteria)
+    console.log 'Contacts', @contacts
 

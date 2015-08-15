@@ -35,10 +35,12 @@
                     <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}} {{contact.firstname}} {{contact.middlename}}</a>
                 </td>
                 <td>
-                    {{contact.workphone}}
+                    {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
                 </td>
                 <td>
-                    {{contact.email}}
+                    <a ng-href="mailto:{{contact.email}}">{{contact.email}}</a>
+                    <a ng-href="mailto:{{contact.secondaryEmail}}">{{contact.secondaryEmail}}</a>
+                    <a ng-href="mailto:{{contact.email3}}">{{contact.email3}}</a>
                 </td>
             </tr>
             </tbody>
