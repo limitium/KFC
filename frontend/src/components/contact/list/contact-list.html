@@ -1,18 +1,18 @@
 <div class="container">
     <div class="well">
         <div class="row">
-            <form class="form-inline">
+            <form class="form-inline" ng-submit="ctrl.doSearch()">
                 <div class="form-group">
                     <label for="search-name">Компания, ФИО</label>
-                    <input type="text" class="form-control" id="search-name" ng-model="ctrl.criteria.name">
+                    <input type="text" class="form-control" id="search-name" ng-model="ctrl.criteria.name" focus-me>
                 </div>
                 <div class="form-group">
                     <label for="search-email">Телефон, e-mail</label>
                     <input type="text" class="form-control" id="search-email" ng-model="ctrl.criteria.email">
                 </div>
-                <a class="btn btn-success" ng-click="ctrl.doSearch()">
+                <button class="btn btn-success" type="submit">
                     <i class="fa fa-search"></i>
-                </a>
+                </button>
             </form>
         </div>
     </div>
@@ -29,10 +29,10 @@
             <tbody>
             <tr ng-repeat="contact in ctrl.contacts track by $index">
                 <td>
-                    {{contact.accountName}}
+                    <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
                 </td>
                 <td>
-                    {{contact.lastname}} {{contact.firstname}} {{contact.middlename}}
+                    <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}} {{contact.firstname}} {{contact.middlename}}</a>
                 </td>
                 <td>
                     {{contact.workphone}}

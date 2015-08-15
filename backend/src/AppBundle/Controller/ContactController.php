@@ -32,7 +32,6 @@ class ContactController extends Controller
 
     /**
      * @Rest\View(serializerGroups={"Default"})
-     * @Rest\QueryParam(name="typeahead", nullable=false)
      * @Rest\QueryParam(name="name", nullable=false)
      * @Rest\QueryParam(name="accountid", nullable=false)
      * @Rest\QueryParam(name="email", nullable=false)

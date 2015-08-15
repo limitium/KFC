@@ -15,6 +15,5 @@ class ContactApi extends Factory
         url: "/api/contacts/hint"
         params:
           name: ""
-          typeahead: true
         isArray: true
     )

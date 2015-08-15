@@ -8,8 +8,13 @@ class ContactRoutes extends Config
     )
     .state("contact.list",
       url: "/list"
-      templateUrl: "/components/contact/list/contact-list-layout.html"
+      templateUrl: "/components/contact/list/contact-list.html"
       controller: "ContactListController as ctrl"
+    )
+    .state("contact.edit",
+      url: "/:id"
+      templateUrl: "/components/contact/edit/contact-edit.html"
+      controller: "ContactEditController as ctrl"
     )
     .state("contact.my",
       url: "/my"
