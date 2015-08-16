@@ -12,9 +12,14 @@ class ContactRoutes extends Config
       controller: "ContactListController as ctrl"
     )
     .state("contact.edit",
-      url: "/edit/:id"
+      url: "/{id:[0-9A-Z]{12}}"
       templateUrl: "/components/contact/edit/contact-edit.html"
       controller: "ContactEditController as ctrl"
+    )
+    .state("contact.new",
+      url: "/new"
+      templateUrl: "/components/contact/new/contact-new.html"
+      controller: "ContactNewController as ctrl"
     )
     .state("contact.my",
       url: "/my"
