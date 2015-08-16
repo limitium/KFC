@@ -1,5 +1,11 @@
 class ContactEdit extends Controller
   constructor: (@$http, @ListApi, @ListTransformerService, @TableUtils, @ContactApi, @$stateParams) ->
-    @contact =
-      contactid: @$stateParams.id
+    if @$stateParams.id == 'new'
+      @contact =
+        contactid: ''
+    else
+      #Load it
+      @contact =
+        contactid: @$stateParams.id
+
 

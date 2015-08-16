@@ -38,7 +38,7 @@
                         <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
                     </td>
                     <td>
-                        <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact | fullname}}</a>
+                        <a ui-sref="contact.createupdate({id: contact.contactid})" href="#">{{contact | fullname}}</a>
                     </td>
                     <td>
                         {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
