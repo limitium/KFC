@@ -1,4 +1,4 @@
-class ContactEdit extends Controller
+class ContactCreateUpdate extends Controller
   constructor: (@$http, @ListApi, @ListTransformerService, @TableUtils, @ContactApi, @$stateParams) ->
     if @$stateParams.id == 'new'
       @contact =

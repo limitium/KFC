@@ -31,9 +31,25 @@
         <div class="col-md-12">
             <ul class="nav nav-tabs nav-justified">
                 <li ui-sref-active="active">
-                    <a href="#" ui-sref="contact.editupdate.description">Описание</a>
+                    <a href="#" ui-sref="contact.createupdate.description">Описание</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href="#" ui-sref="contact.createupdate.history">История</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href="#" ui-sref="contact.createupdate.subscription">Подписки</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href="#" ui-sref="contact.createupdate.application">Заявки</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href="#" ui-sref="contact.createupdate.object">Объекты</a>
                 </li>
             </ul>
+            <div class="tab-content">
+                <div ui-view>
+                </div>
+            </div>
         </div>
     </div>
 </div>

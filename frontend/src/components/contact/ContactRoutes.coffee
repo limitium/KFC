@@ -13,8 +13,34 @@ class ContactRoutes extends Config
     )
     .state("contact.createupdate",
       url: "/{id:[0-9A-Z]{12}|new}"
-      templateUrl: "/components/contact/common/create-or-update.html"
-      controller: "ContactEditController as ctrl"
+      abstract: true
+      templateUrl: "/components/contact/createupdate/contact-create-update.html"
+      controller: "ContactCreateUpdateController as ctrl"
+    )
+    .state("contact.createupdate.description",
+      url: "/description"
+      templateUrl: "/components/contact/createupdate/description/contact-description.html"
+      controller: "ContactDescriptionController as ctrl"
+    )
+    .state("contact.createupdate.history",
+      url: "/history"
+      templateUrl: "/components/contact/createupdate/history/contact-history.html"
+      controller: "ContactHistoryController as ctrl"
+    )
+    .state("contact.createupdate.subscription",
+      url: "/subscription"
+      templateUrl: "/components/contact/createupdate/subscription/contact-subscription.html"
+      controller: "ContactSubscriptionController as ctrl"
+    )
+    .state("contact.createupdate.application",
+      url: "/application"
+      templateUrl: "/components/contact/createupdate/application/contact-application.html"
+      controller: "ContactApplicationController as ctrl"
+    )
+    .state("contact.createupdate.object",
+      url: "/object"
+      templateUrl: "/components/contact/createupdate/object/contact-object.html"
+      controller: "ContactObjectController as ctrl"
     )
     .state("contact.my",
       url: "/my"
