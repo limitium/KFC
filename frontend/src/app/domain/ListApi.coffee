@@ -24,6 +24,8 @@ class ListApi extends Factory
       investRings: {method: 'GET', params: {type: 'INVEST_RINGS'}, isArray: true, cache: true}
       contactType: {method: 'GET', params: {type: 'Landlord Type'}, isArray: true, cache: true}
       tenantContactType: {method: 'GET', params: {type: 'Tenant Type'}, isArray: true, cache: true}
+      sex: {method: 'GET', params: {type: 'Sex'}, isArray: true, cache: true}
+      language: {method: 'GET', params: {type: 'KF Language Report'}, isArray: true, cache: true}
 
     })
     }
