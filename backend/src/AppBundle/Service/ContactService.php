@@ -120,5 +120,4 @@ class ContactService
         return $contacts;
     }
 
-
 }

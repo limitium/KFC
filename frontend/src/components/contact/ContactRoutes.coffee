@@ -16,6 +16,15 @@ class ContactRoutes extends Config
       abstract: true
       templateUrl: "/components/contact/createupdate/contact-create-update.html"
       controller: "ContactCreateUpdateController as ctrl"
+      resolve: {
+        contact: ['ContactApi', '$stateParams', (ContactApi, $stateParams) ->
+          if $stateParams.id == 'new'
+            return {
+            }
+          else
+            return ContactApi.get id: $stateParams.id
+        ]
+      }
     )
     .state("contact.createupdate.description",
       url: "/description"

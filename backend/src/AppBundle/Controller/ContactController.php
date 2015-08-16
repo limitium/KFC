@@ -3,6 +3,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Contact;
 use AppBundle\Service\ContactService;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Request\ParamFetcher;
@@ -41,6 +42,16 @@ class ContactController extends Controller
     public function getContactsHintAction(ParamFetcher $params)
     {
         return $this->contactService->findByName($params);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @param Contact $contact
+     * @return Contact
+     */
+    public function getContactAction(Contact $contact)
+    {
+        return $contact;
     }
 
 }
