@@ -1,5 +1,4 @@
-class ContactEdit extends Controller
+class ApplicationNew extends Controller
   constructor: (@$http, @ListApi, @ListTransformerService, @TableUtils, @ContactApi, @$stateParams) ->
-    @contact =
-      contactid: @$stateParams.id
+    @contactid = @$stateParams.contactid;
 

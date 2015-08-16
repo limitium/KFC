@@ -3,3 +3,5 @@ class ContactNew extends Controller
     @contact =
       contactid: ''
 
+    console.log 'TBD'
+

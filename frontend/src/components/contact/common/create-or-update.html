@@ -13,11 +13,11 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="btn-group" role="group" aria-label="...">
-                <a href="#" ui-sref="contact.new" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                <a href="#" ui-sref="contact.new" class="btn btn-default"><i class="fa fa-bell"></i></a>
-                <a href="#" ui-sref="contact.new" class="btn btn-default"><i class="fa fa-home"></i></a>
-                <a href="#" ui-sref="contact.new" class="btn btn-default"><i class="fa fa-plus"></i></a>
+            <div class="btn-group" role="group">
+                <a href="#" ui-sref="contact.note.new({contactid: ctrl.contact.contactid})" class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-pencil"></i></a>
+                <a href="#" ui-sref="contact.ring.new({contactid: ctrl.contact.contactid})" class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-bell"></i></a>
+                <a href="#" ui-sref="contact.presentation.new({contactid: ctrl.contact.contactid})" class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-home"></i></a>
+                <a href="#" ui-sref="contact.application.new({contactid: ctrl.contact.contactid})" class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-plus"></i></a>
             </div>
         </div>
     </div>
