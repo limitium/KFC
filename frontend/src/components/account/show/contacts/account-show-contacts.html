@@ -15,8 +15,7 @@
                 <tbody>
                 <tr ng-repeat="contact in ctrl.account.contacts track by $index">
                     <td>
-                        <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}}
-                            {{contact.firstname}} {{contact.middlename}}</a>
+                        <a ui-sref="contact.createupdate.description({id: contact.contactid})" href="#">{{contact | fullname}}</a>
                     </td>
                     <td>
                         {{contact.title}}
