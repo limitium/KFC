@@ -12,6 +12,8 @@ class ContactApi extends Factory
         isArray: true
       update:
         method: 'PUT'
+        params:
+          id: '@id'
       hint:
         method: "GET"
         url: "/api/contacts/hint"

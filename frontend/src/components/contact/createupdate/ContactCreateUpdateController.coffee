@@ -3,5 +3,5 @@ class ContactCreateUpdate extends Controller
 
   saveOrUpdate: ->
     console.log 'Saving', @contact
-    if @contact.contactid != '' then @ContactApi.update(@contact) else @ContactApi.save(@contact)
+    if @contact.contactid then @ContactApi.update(@contact, {id: @contact.contactid}) else @ContactApi.save(@contact)
 

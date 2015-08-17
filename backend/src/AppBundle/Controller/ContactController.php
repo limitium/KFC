@@ -10,8 +10,8 @@ use FOS\RestBundle\Controller\Annotations\View;
 use FOS\RestBundle\Request\ParamFetcher;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use JMS\DiExtraBundle\Annotation as DI;
-use Symfony\Component\BrowserKit\Request;
-use Symfony\Component\BrowserKit\Response;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ContactController extends Controller
 {
@@ -56,24 +56,24 @@ class ContactController extends Controller
     {
         return $contact;
     }
-
     /**
      * @Rest\View
      * @param Contact $contact
      * @param Request $request
      * @return View|Response
      */
-    public function putContactAction(Contact $contact, Request $request)
+    public function putContactsAction(Contact $contact, Request $request)
     {
         return $contact;
     }
+
 
     /**
      * @Rest\View
      * @param Request $request
      * @return View|Response
      */
-    public function postContactAction(Request $request)
+    public function postContactsAction(Request $request)
     {
         $contact = new Contact();
 //        $form = $this->createForm(new SpkInvestmentType(), $investment);
