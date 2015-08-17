@@ -44,6 +44,19 @@ class ContactController extends Controller
      * @param ParamFetcher $params
      * @return string
      */
+    public function getContactsMyAction(ParamFetcher $params)
+    {
+        return $this->contactService->findByCurrentUser($params);
+    }
+
+    /**
+     * @Rest\View(serializerGroups={"Default"})
+     * @Rest\QueryParam(name="name", nullable=false)
+     * @Rest\QueryParam(name="accountid", nullable=false)
+     * @Rest\QueryParam(name="email", nullable=false)
+     * @param ParamFetcher $params
+     * @return string
+     */
     public function getContactsHintAction(ParamFetcher $params)
     {
         return $this->contactService->findByName($params);

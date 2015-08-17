@@ -1,5 +1,5 @@
 class ContactMy extends Controller
-  constructor: (@TableUtils) ->
+  constructor: (@TableUtils, @ContactApi) ->
     @dtOptions = @TableUtils.createOptions().withOption('searching', true)
     @dtColumnDefs = @TableUtils.createColumnsWithDefaultControlColumn(4)
-    @contacts = []
+    @contacts = @ContactApi.my();

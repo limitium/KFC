@@ -12,6 +12,7 @@ use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
 use JMS\DiExtraBundle\Annotation\Service;
 use JMS\DiExtraBundle\Annotation as DI;
+use Symfony\Component\Security\Core\SecurityContext;
 
 /**
  * @Service("stein.contact")
@@ -27,8 +28,14 @@ class ContactService
     public $ls;
 
     /**
+     * @DI\Inject("security.context")
+     * @var SecurityContext
+     */
+    public $securityContext;
+
+    /**
      * @InjectParams({
-     *     "em" = @Inject("doctrine.orm.entity_manager"),
+     *     "em" = @Inject("doctrine.orm.entity_manager")
      * })
      * @param EntityManager $em
      */
@@ -115,7 +122,38 @@ class ContactService
         }
         $contacts = $qb
             ->getQuery()
-            ->useResultCache(true, 100500)
+//            ->useResultCache(true, 100500)
+            ->getResult();
+        return $contacts;
+    }
+
+    public function findByCurrentUser($params)
+    {
+//        $user = $this->securityContext->getToken()->getUser();
+        $user = 'U6UJ9A00006S';
+        if ($user == 'anon.') {
+            return array();
+        }
+
+        $entity = 'AppBundle:Contact';
+        $qb = $this->em->getRepository($entity)->createQueryBuilder('c');
+        $qb->join('c.contactDetail', 'cd');
+        $qb->andWhere(
+            $qb->expr()->orX(
+                $qb->expr()->like('cd.industrialmanagerid', ':user'),
+                $qb->expr()->like('cd.residentialmanagerid', ':user'),
+                $qb->expr()->like('cd.countrymanagerid', ':user'),
+                $qb->expr()->like('cd.retailmanagerid', ':user'),
+                $qb->expr()->like('cd.officemanagerid', ':user'),
+                $qb->expr()->like('cd.valuationmanagerid', ':user'),
+                $qb->expr()->like('cd.investmentmanagerid', ':user'),
+                $qb->expr()->like('cd.consultingmanagerid', ':user'),
+                $qb->expr()->like('cd.researchmanagerid', ':user'),
+                $qb->expr()->like('cd.marketingmanagerid', ':user')
+            )
+        )->setParameter('user', $user);
+        $contacts = $qb
+            ->getQuery()
             ->getResult();
         return $contacts;
     }

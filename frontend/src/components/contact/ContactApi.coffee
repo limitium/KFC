@@ -10,6 +10,10 @@ class ContactApi extends Factory
         params:
           name: ""
         isArray: true
+      my:
+        method: "GET"
+        url: "/api/contacts/my"
+        isArray: true
       update:
         method: 'PUT'
         params:

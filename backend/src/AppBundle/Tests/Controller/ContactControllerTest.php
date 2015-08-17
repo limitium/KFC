@@ -14,8 +14,19 @@ class ContactControllerTest extends DatabaseTest
         $criteriaArray = json_decode($criteriaJson, true);
         $this->client->request(
             'GET',
-            '/api/contacts',
+            '/api/contacts/search',
             $criteriaArray
+        );
+        $content = $this->client->getResponse()->getContent();
+        $data = json_decode($content, true);
+    }
+
+    public function testGetMy()
+    {
+        $this->client->request(
+            'GET',
+            '/api/contacts/my',
+            array()
         );
         $content = $this->client->getResponse()->getContent();
         $data = json_decode($content, true);
