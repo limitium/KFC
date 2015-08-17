@@ -68,3 +68,5 @@ imag_ldap:
 #        user_attribute: member
 #        user_id: username
     user_class: AppBundle\Entity\User
+
+#     Test user: moscow/Qq12345
