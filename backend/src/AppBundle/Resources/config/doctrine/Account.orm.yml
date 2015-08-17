@@ -483,6 +483,12 @@ AppBundle\Entity\Account:
             length: 12
             fixed: false
             column: MANAGER
+    oneToOne:
+        accountDetail:
+            targetEntity: AppBundle\Entity\Accountdetail
+            mappedBy: account
+            cascade:
+                - all
     oneToMany:
         contacts:
             targetEntity: AppBundle\Entity\Contact

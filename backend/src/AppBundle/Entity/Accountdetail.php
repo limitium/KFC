@@ -12,6 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Accountdetail
 {
+
+    private $account;
     /**
      * @var string
      *
@@ -1093,4 +1095,79 @@ class Accountdetail
     {
         return $this->otherOffice;
     }
+
+    /**
+     * @var \AppBundle\Entity\User
+     */
+    private $createdBy;
+
+
+    /**
+     * Set createdBy
+     *
+     * @param \AppBundle\Entity\User $createdBy
+     * @return SpkInvestment
+     */
+    public function setCreatedBy(\AppBundle\Entity\User $createdBy = null)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+    /**
+     * @var \AppBundle\Entity\User
+     */
+    private $updatedBy;
+
+
+    /**
+     * Set updatedBy
+     *
+     * @param \AppBundle\Entity\User $updatedBy
+     * @return SpkInvestment
+     */
+    public function setUpdatedBy(\AppBundle\Entity\User $updatedBy = null)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAccount()
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param mixed $account
+     */
+    public function setAccount($account)
+    {
+        $this->account = $account;
+    }
+
+
 }

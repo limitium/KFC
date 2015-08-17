@@ -5,7 +5,7 @@
                 <dl class="dl-horizontal">
                     <dt>Компания</dt>
                     <dd><a ui-sref="account.edit({id: ctrl.contact.accountid})"
-                           href="#">{{ctrl.contact.accountName}}</a></dd>
+                           href="#">{{ctrl.contact.account.account}} / {{ctrl.contact.account.accountDetail.accountrus}}</a></dd>
                     <dt>Контакт</dt>
                     <dd>{{ctrl.contact | fullname}}</dd>
                 </dl>
@@ -16,13 +16,13 @@
         <div class="col-md-12">
             <div class="btn-group" role="group">
                 <a href="#" ui-sref="contact.note.new({contactid: ctrl.contact.contactid})" class="btn btn-default"
-                   ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-pencil"></i></a>
+                   ng-disabled="ctrl.contact.contactid == ''">Заметка <i class="fa fa-pencil"></i></a>
                 <a href="#" ui-sref="contact.ring.new({contactid: ctrl.contact.contactid})" class="btn btn-default"
-                   ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-bell"></i></a>
+                   ng-disabled="ctrl.contact.contactid == ''">Звонок <i class="fa fa-bell"></i></a>
                 <a href="#" ui-sref="contact.presentation.new({contactid: ctrl.contact.contactid})"
-                   class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-home"></i></a>
+                   class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''">Показ <i class="fa fa-home"></i></a>
                 <a href="#" ui-sref="contact.application.new({contactid: ctrl.contact.contactid})"
-                   class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''"><i class="fa fa-plus"></i></a>
+                   class="btn btn-default" ng-disabled="ctrl.contact.contactid == ''">Заявка <i class="fa fa-plus"></i></a>
             </div>
         </div>
     </div>

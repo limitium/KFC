@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Account
 {
+    private $accountDetail;
     /**
      * @var string
      *
@@ -2364,5 +2365,23 @@ class Account
     {
         return $this->updatedBy;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getAccountDetail()
+    {
+        return $this->accountDetail;
+    }
+
+    /**
+     * @param mixed $accountDetail
+     */
+    public function setAccountDetail($accountDetail)
+    {
+        $this->accountDetail = $accountDetail;
+    }
+
+
 
 }
