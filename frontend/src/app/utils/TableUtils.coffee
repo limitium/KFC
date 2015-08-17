@@ -2,6 +2,7 @@ class TableUtils extends Factory
   constructor: (DTOptionsBuilder, DTColumnDefBuilder) ->
     @language = {
       "emptyTable":     "Нет записей",
+      "search":         "Фильтр",
       "paginate": {
         "first":      "Первая",
         "last":       "Последняя",

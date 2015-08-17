@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -606,6 +607,14 @@ class Contact
      * @ORM\Column(name="CATEGORIES", type="string", length=255, nullable=true)
      */
     private $categories;
+
+    private $managers;
+
+    public function __construct()
+    {
+        $this->managers = new ArrayCollection();
+    }
+
 
     /**
      * @return string
@@ -2458,8 +2467,19 @@ class Contact
         $this->accountName = $accountName;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getManagers()
+    {
+        return $this->managers;
+    }
 
-
-
-
+    /**
+     * @param mixed $managers
+     */
+    public function setManagers($managers)
+    {
+        $this->managers = $managers;
+    }
 }

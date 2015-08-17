@@ -20,3 +20,6 @@ contact:
 landlord:
     type:     rest
     resource: AppBundle\Controller\LandlordController
+userinfo:
+    type:     rest
+    resource: AppBundle\Controller\UserinfoController

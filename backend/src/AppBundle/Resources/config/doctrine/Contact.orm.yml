@@ -541,11 +541,13 @@ AppBundle\Entity\Contact:
             name: KF_CONTACT_MANAGERS
             joinColumns:
               contactid:
-                referencedColumnName: contactid
+                referencedColumnName: CONTACTID
             inverseJoinColumns:
-              userid:
-                referencedColumnName: managerid
+              managerid:
+                referencedColumnName: USERID
                 unique: true
+          cascade:
+              - all
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

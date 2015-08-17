@@ -107,56 +107,69 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <h4>Менеджеры контакта</h4>
-        <hr/>
-        <form class="form-inline">
-            <table datatable="ng" class="row-border hover" dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs">
-                <thead>
-                <tr ng-hide="ctrl.addRow" class="control-row">
-                    <th>
-                        <button type="button" class="btn btn-default" aria-label="Add" ng-click="ctrl.addRow = true">
-                            <i class="fa fa-plus"></i>
-                        </button>
-                    </th>
-                </tr>
-                <tr ng-show="ctrl.addRow">
-                    <th>
-                        <input class="form-control" type="number" ng-model="ctrl.managerToAdd.floor">
-                    </th>
-                    <th>
-                        <div class="btn-group" role="group" aria-label="add-block-control-buttons">
-                            <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()">
-                                <i class="fa fa-check"></i>
-                            </button>
-                        </div>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Департамент</th>
-                    <th>Подразделение</th>
-                    <th>Менеджер</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr ng-repeat="manager in ctrl.contact.contactManagers track by $index">
-                    <td>
-                        <input type="number" class="form-control" ng-model="manager."/>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" ng-model="block.nameRus"/>
-                    </td>
-                    <td>
-                        <input type="number" class="form-control" ng-model="block.availableSq"/>
-                    </td>
-                    <td class="td-control">
-                        <button type="button" class="btn btn-danger" confirmation-delete="ctrl.removeManager($index)">
-                            <i class="fa fa-close"></i>
-                        </button>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Менеджеры контакта</h4>
+                {{ctrl.contact.managers | json}}
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div ng-hide="ctrl.addRow" class="col-md-4">
+                <button type="button" class="btn btn-default" aria-label="Add" ng-click="ctrl.addRow = true">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+
+            <div ng-show="ctrl.addRow" class="col-md-6">
+                <div class="col-sm-7">
+                    <input type="text" ng-model="ctrl.newManagerName" typeahead-on-select="ctrl.onNewManagerSelect($item)"
+                           typeahead="item as [item.username, item.department, item.division].join(' ') for item in ctrl.getManagers($viewValue)"
+                           typeahead-wait-ms="300"
+                           typeahead-loading="loadingManagers" class="form-control">
+                    <i ng-show="loadingManagers" class="fa fa-refresh col-sm-1"></i>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()">
+                        <i class="fa fa-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <table datatable="ng" class="row-border hover" dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs">
+                        <thead>
+                        <tr>
+                            <th>Департамент</th>
+                            <th>Подразделение</th>
+                            <th>Менеджер</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="manager in ctrl.contact.managers track by $index">
+                            <td>
+                                {{manager.department}}
+                            </td>
+                            <td>
+                                {{manager.division}}
+                            </td>
+                            <td>
+                                {{manager.username}}
+                            </td>
+                            <td class="td-control">
+                                <button type="button" class="btn btn-danger" confirmation-delete="ctrl.removeManager($index)">
+                                    <i class="fa fa-close"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
     </div>
 </div>
