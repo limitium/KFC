@@ -37,6 +37,10 @@ AppBundle\Entity\ContactDetail:
             length: 12
             fixed: false
             column: CONTACTID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
     fields:
         createdate:
             type: datetime

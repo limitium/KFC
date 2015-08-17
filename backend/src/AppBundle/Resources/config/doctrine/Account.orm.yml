@@ -12,6 +12,10 @@ AppBundle\Entity\Account:
             length: 12
             fixed: false
             column: ACCOUNTID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
     fields:
         type:
             type: string
