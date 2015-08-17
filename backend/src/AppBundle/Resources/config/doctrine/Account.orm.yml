@@ -489,6 +489,11 @@ AppBundle\Entity\Account:
             mappedBy: account
             cascade:
                 - all
+#        histories:
+#            targetEntity: AppBundle\Entity\History
+#            mappedBy: account
+#            cascade:
+#                - all
     oneToOne:
         detail:
             targetEntity: AppBundle\Entity\Accountdetail
