@@ -8,6 +8,9 @@ php app/console doctrine:mapping:import --force AppBundle yml
 php app/console doctrine:mapping:convert yml ./src
 php app/console doctrine:generate:entities ./src
 
+Symfony commands:
+php app/console cache:clear --env=dev
+
 
 This one DOESN'T WORK:
 php app/console doctrine:mapping:import --force AppBundle xml --filter="profiles"
