@@ -12,8 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Accountdetail
 {
-
-    private $account;
     /**
      * @var string
      *
@@ -1095,79 +1093,32 @@ class Accountdetail
     {
         return $this->otherOffice;
     }
-
     /**
-     * @var \AppBundle\Entity\User
+     * @var \AppBundle\Entity\Account
      */
-    private $createdBy;
+    private $account;
 
 
     /**
-     * Set createdBy
+     * Set account
      *
-     * @param \AppBundle\Entity\User $createdBy
-     * @return SpkInvestment
+     * @param \AppBundle\Entity\Account $account
+     * @return Accountdetail
      */
-    public function setCreatedBy(\AppBundle\Entity\User $createdBy = null)
+    public function setAccount(\AppBundle\Entity\Account $account = null)
     {
-        $this->createdBy = $createdBy;
+        $this->account = $account;
 
         return $this;
     }
 
     /**
-     * Get createdBy
+     * Get account
      *
-     * @return \AppBundle\Entity\User
-     */
-    public function getCreatedBy()
-    {
-        return $this->createdBy;
-    }
-    /**
-     * @var \AppBundle\Entity\User
-     */
-    private $updatedBy;
-
-
-    /**
-     * Set updatedBy
-     *
-     * @param \AppBundle\Entity\User $updatedBy
-     * @return SpkInvestment
-     */
-    public function setUpdatedBy(\AppBundle\Entity\User $updatedBy = null)
-    {
-        $this->updatedBy = $updatedBy;
-
-        return $this;
-    }
-
-    /**
-     * Get updatedBy
-     *
-     * @return \AppBundle\Entity\User
-     */
-    public function getUpdatedBy()
-    {
-        return $this->updatedBy;
-    }
-
-    /**
-     * @return mixed
+     * @return \AppBundle\Entity\Account 
      */
     public function getAccount()
     {
         return $this->account;
     }
-
-    /**
-     * @param mixed $account
-     */
-    public function setAccount($account)
-    {
-        $this->account = $account;
-    }
-
-
 }

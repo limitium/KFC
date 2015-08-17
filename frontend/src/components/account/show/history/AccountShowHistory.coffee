@@ -1,5 +1,5 @@
 class AccountShowHistory extends Controller
-  constructor: (@TableUtils) ->
+  constructor: (@account,@TableUtils) ->
     @histories = []
     @dtOptions = @TableUtils.createOptions().withOption('searching', true)
     @dtColumnDefs = @TableUtils.createColumns(6)

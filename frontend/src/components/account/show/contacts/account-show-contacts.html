@@ -5,7 +5,6 @@
                    dt-column-defs="ctrl.dtColumnDefs">
                 <thead>
                 <tr>
-                    <th>Компания / группа</th>
                     <th>Персона</th>
                     <th>Должность</th>
                     <th>Раб. телефон</th>
@@ -14,27 +13,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="contact in ctrl.contacts track by $index">
+                <tr ng-repeat="contact in ctrl.account.contacts track by $index">
                     <td>
-                        <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
+                        <a ui-sref="contact.createupdate.description({id: contact.contactid})" href="#">{{contact | fullname}}</a>
                     </td>
                     <td>
-                        <a ui-sref="contact.edit({id: contact.contactid})" href="#">{{contact.lastname}}
-                            {{contact.firstname}} {{contact.middlename}}</a>
+                        {{contact.title}}
                     </td>
                     <td>
-                        {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
+                        {{(contact.contactDetail.workprefix + contact.workphone) | phone}}
                     </td>
                     <td>
-                        {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
+                        {{(contact.contactDetail.mobileprefix + contact.mobilephone) | phone}}
                     </td>
                     <td>
-                        {{(contact.contactDetail.mobileprefix + contact.mobile) | phone}}
-                    </td>
-                    <td>
-                        <a ng-href="mailto:{{contact.email}}">{{contact.email}}</a>
-                        <a ng-href="mailto:{{contact.secondaryEmail}}">{{contact.secondaryEmail}}</a>
-                        <a ng-href="mailto:{{contact.email3}}">{{contact.email3}}</a>
+                        <a ng-href="mailto:{{contact.secondaryemail}}">{{contact.secondaryemail}}</a>
                     </td>
                 </tr>
                 </tbody>

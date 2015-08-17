@@ -19,6 +19,7 @@
                     </form>
                 </div>
             </div>
+            <line-progress show="ctrl.ContactApi.isBusy"></line-progress>
         </div>
     </div>
     <div class="row">
@@ -35,7 +36,7 @@
                 <tbody>
                 <tr ng-repeat="contact in ctrl.contacts track by $index">
                     <td>
-                        <a ui-sref="account.edit({id: contact.accountid})" href="#">{{contact.accountName}}</a>
+                        <a ui-sref="account.show.info({id: contact.accountid})" href="#">{{contact.accountName}}</a>
                     </td>
                     <td>
                         <a ui-sref="contact.createupdate.description({id: contact.contactid})" href="#">{{contact | fullname}}</a>

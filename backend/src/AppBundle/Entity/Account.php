@@ -10,7 +10,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Account
 {
-    private $accountDetail;
     /**
      * @var string
      *
@@ -588,7 +587,7 @@ class Account
         $this->contacts = new ArrayCollection();
     }
 
-        /**
+    /**
      * @return string
      */
     public function getAccountid()
@@ -2367,21 +2366,54 @@ class Account
     }
 
     /**
-     * @return mixed
+     * @var \AppBundle\Entity\Accountdetail
      */
-    public function getAccountDetail()
+    private $detail;
+
+
+    /**
+     * Set detail
+     *
+     * @param \AppBundle\Entity\Accountdetail $detail
+     * @return Account
+     */
+    public function setDetail(\AppBundle\Entity\Accountdetail $detail = null)
     {
-        return $this->accountDetail;
+        $this->detail = $detail;
+
+        return $this;
     }
 
     /**
-     * @param mixed $accountDetail
+     * Get detail
+     *
+     * @return \AppBundle\Entity\Accountdetail
      */
-    public function setAccountDetail($accountDetail)
+    public function getDetail()
     {
-        $this->accountDetail = $accountDetail;
+        return $this->detail;
     }
 
+    /**
+     * Add contacts
+     *
+     * @param \AppBundle\Entity\Contact $contacts
+     * @return Account
+     */
+    public function addContact(\AppBundle\Entity\Contact $contacts)
+    {
+        $this->contacts[] = $contacts;
 
+        return $this;
+    }
 
+    /**
+     * Remove contacts
+     *
+     * @param \AppBundle\Entity\Contact $contacts
+     */
+    public function removeContact(\AppBundle\Entity\Contact $contacts)
+    {
+        $this->contacts->removeElement($contacts);
+    }
 }

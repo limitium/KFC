@@ -1,10 +1,6 @@
 AppBundle\Entity\Accountdetail:
     type: entity
     table: ACCOUNTDETAIL
-    uniqueConstraints:
-        ACCOUNTDETAIL_PRIMARY:
-            columns:
-                - ACCOUNTID
     id:
         accountid:
             type: string
@@ -12,25 +8,27 @@ AppBundle\Entity\Accountdetail:
             length: 12
             fixed: false
             column: ACCOUNTID
-            generator:
-                strategy: CUSTOM
-            customIdGenerator:
-                class: AppBundle\Doctrine\SpkIdGenerator
     fields:
+        createuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: CREATEUSER
         createdate:
             type: datetime
             nullable: true
             column: CREATEDATE
-            gedmo:
-                timestampable:
-                    on: create
+        modifyuser:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: MODIFYUSER
         modifydate:
             type: datetime
             nullable: true
             column: MODIFYDATE
-            gedmo:
-                timestampable:
-                    on: update
         accountrus:
             type: string
             nullable: true
@@ -214,31 +212,13 @@ AppBundle\Entity\Accountdetail:
             length: 32
             fixed: false
             column: OTHER_OFFICE
-    oneToOne:
-        account:
-            targetEntity: AppBundle\Entity\Account
-            inversedBy: accountDetail
-            joinColumns:
-                ACCOUNTID:
-                    referencedColumnName: ACCOUNTID
-                    onDelete: CASCADE
-                    onUpdate: CASCADE
-    manyToOne:
-        createdBy:
-            targetEntity: AppBundle\Entity\User
-            joinColumn:
-                name: CREATEUSER
-                referencedColumnName: USERID
-            gedmo:
-                blameable:
-                    on: create
-        updatedBy:
-            targetEntity: AppBundle\Entity\User
-            joinColumn:
-                name: MODIFYUSER
-                referencedColumnName: USERID
-            gedmo:
-                blameable:
-                    on: update
-
     lifecycleCallbacks: {  }
+    oneToOne:
+            account:
+                targetEntity: AppBundle\Entity\Account
+                inversedBy: detail
+                joinColumns:
+                    ACCOUNTID:
+                        referencedColumnName: ACCOUNTID
+                        onDelete: CASCADE
+                        onUpdate: CASCADE

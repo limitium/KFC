@@ -1,5 +1,5 @@
 class AccountShowContacts extends Controller
-  constructor: (@TableUtils) ->
+  constructor: (@account, @TableUtils) ->
     @contacts = []
     @dtOptions = @TableUtils.createOptions().withOption('searching', true)
-    @dtColumnDefs = @TableUtils.createColumns(6)
+    @dtColumnDefs = @TableUtils.createColumns(5)
