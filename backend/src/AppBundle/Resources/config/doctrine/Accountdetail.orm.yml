@@ -1,152 +1,14 @@
 AppBundle\Entity\Accountdetail:
     type: entity
     table: ACCOUNTDETAIL
-    indexes:
-        KF_SR_IX_ACCOUNTRUS:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_K6_K23_K25:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K23_K25_1:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_c_7_886294217__K6_K23_K25:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K1:
-            columns:
-                - ACCOUNTRUS
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6:
-            columns:
-                - ACCOUNTRUS
-        _dta_index_ACCOUNTDETAIL_7_886294217__K29_K30:
-            columns:
-                - BRAND
-                - FULLNAME
-        _dta_index_ACCOUNTDETAIL_7_886294217__K29_K30_K1:
-            columns:
-                - BRAND
-                - FULLNAME
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_K29_K30:
-            columns:
-                - ACCOUNTID
-                - BRAND
-                - FULLNAME
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_30:
-            columns:
-                - ACCOUNTID
-                - FULLNAME
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_23:
-            columns:
-                - ACCOUNTID
-                - MAINPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K23_K1:
-            columns:
-                - MAINPREFIX
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_7_886294217__K23:
-            columns:
-                - MAINPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K23_K25_K27_K1:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-                - TOLLPREFIX
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K23_K25_K27:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-                - TOLLPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_K6_K23_K25_K27:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - FAXPREFIX
-                - TOLLPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K1_6_25:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-                - FAXPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_25:
-            columns:
-                - ACCOUNTRUS
-                - FAXPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K1_25:
-            columns:
-                - ACCOUNTRUS
-                - ACCOUNTID
-                - FAXPREFIX
-        _dta_index_ACCOUNTDETAIL_7_886294217__K6_K1_23_25_27:
-            columns:
-                - ACCOUNTRUS
-                - ACCOUNTID
-                - MAINPREFIX
-                - FAXPREFIX
-                - TOLLPREFIX
-        _dta_index_ACCOUNTDETAIL_9_886294217__K6_1_23:
-            columns:
-                - ACCOUNTRUS
-                - ACCOUNTID
-                - MAINPREFIX
-        _dta_index_ACCOUNTDETAIL_9_886294217__K1_K6_23:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-                - MAINPREFIX
-        _dta_index_ACCOUNTDETAIL_5_886294217__K1_6_29:
-            columns:
-                - ACCOUNTID
-                - ACCOUNTRUS
-                - BRAND
-        _dta_index_ACCOUNTDETAIL_5_886294217__K6_K23_1:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_c_5_886294217__K6_K23:
-            columns:
-                - ACCOUNTRUS
-                - MAINPREFIX
-        _dta_index_ACCOUNTDETAIL_5_886294217__K35_K1:
-            columns:
-                - ACC_NATIONALLITY
-                - ACCOUNTID
-        _dta_index_ACCOUNTDETAIL_5_886294217__K1_35:
-            columns:
-                - ACCOUNTID
-                - ACC_NATIONALLITY
-        _dta_index_ACCOUNTDETAIL_5_886294217__K35:
-            columns:
-                - ACC_NATIONALLITY
-    uniqueConstraints:
-        ACCOUNTDETAIL_PRIMARY:
-            columns:
-                - ACCOUNTID
-    id: {  }
-    fields:
+    id:
         accountid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: ACCOUNTID
+    fields:
         createuser:
             type: string
             nullable: true
@@ -351,3 +213,12 @@ AppBundle\Entity\Accountdetail:
             fixed: false
             column: OTHER_OFFICE
     lifecycleCallbacks: {  }
+    oneToOne:
+            account:
+                targetEntity: AppBundle\Entity\Account
+                inversedBy: detail
+                joinColumns:
+                    ACCOUNTID:
+                        referencedColumnName: ACCOUNTID
+                        onDelete: CASCADE
+                        onUpdate: CASCADE

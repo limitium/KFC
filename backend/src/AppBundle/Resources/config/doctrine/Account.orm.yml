@@ -489,6 +489,12 @@ AppBundle\Entity\Account:
             mappedBy: account
             cascade:
                 - all
+    oneToOne:
+        detail:
+            targetEntity: AppBundle\Entity\Accountdetail
+            mappedBy: account
+            cascade:
+                - all
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

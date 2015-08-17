@@ -23,6 +23,11 @@ class AccountRoutes extends Config
       templateUrl: "/components/account/show/account-show.html"
       controller: "AccountShowController as ctrl"
       abstract: true
+      resolve: {
+        account: ['AccountApi', '$stateParams', (AccountApi, $stateParams) ->
+          AccountApi.get id: $stateParams.id
+        ]
+      }
     )
     .state("account.show.info",
       url: "/info"

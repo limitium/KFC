@@ -2365,4 +2365,55 @@ class Account
         return $this->updatedBy;
     }
 
+    /**
+     * @var \AppBundle\Entity\Accountdetail
+     */
+    private $detail;
+
+
+    /**
+     * Set detail
+     *
+     * @param \AppBundle\Entity\Accountdetail $detail
+     * @return Account
+     */
+    public function setDetail(\AppBundle\Entity\Accountdetail $detail = null)
+    {
+        $this->detail = $detail;
+
+        return $this;
+    }
+
+    /**
+     * Get detail
+     *
+     * @return \AppBundle\Entity\Accountdetail 
+     */
+    public function getDetail()
+    {
+        return $this->detail;
+    }
+
+    /**
+     * Add contacts
+     *
+     * @param \AppBundle\Entity\Contact $contacts
+     * @return Account
+     */
+    public function addContact(\AppBundle\Entity\Contact $contacts)
+    {
+        $this->contacts[] = $contacts;
+
+        return $this;
+    }
+
+    /**
+     * Remove contacts
+     *
+     * @param \AppBundle\Entity\Contact $contacts
+     */
+    public function removeContact(\AppBundle\Entity\Contact $contacts)
+    {
+        $this->contacts->removeElement($contacts);
+    }
 }

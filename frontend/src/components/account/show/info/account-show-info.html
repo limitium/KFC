@@ -3,23 +3,23 @@
         <div class="col-md-12">
             <dl class="dl-horizontal">
                 <dt>Название (рус)</dt>
-                <dd>...</dd>
+                <dd>{{ctrl.account.detail.accountrus}}</dd>
                 <dt>Название (eng)</dt>
-                <dd>...</dd>
+                <dd>{{ctrl.account.account}}</dd>
                 <dt>Телефон</dt>
-                <dd>...</dd>
+                <dd>{{(ctrl.account.detail.mainprefix+ctrl.account.mainphone|phone)}}</dd>
                 <dt>Факс</dt>
-                <dd>...</dd>
+                <dd>{{(ctrl.account.detail.faxprefix+ctrl.account.fax)|phone}}</dd>
                 <dt>Доп. телефон</dt>
-                <dd>...</dd>
+                <dd>{{(ctrl.account.detail.tollprefix+ctrl.account.tollfree)|phone}}</dd>
                 <dt>Сайт</dt>
-                <dd>...</dd>
+                <dd>{{ctrl.account.webaddress}}</dd>
                 <dt>Адрес</dt>
                 <dd>...</dd>
                 <dt>Тип</dt>
-                <dd>...</dd>
+                <dd>{{ctrl.account.type}}</dd>
                 <dt>Статус</dt>
-                <dd>...</dd>
+                <dd>{{ctrl.account.status}}</dd>
                 <dt>Консультанты</dt>
                 <dd>...</dd>
             </dl>

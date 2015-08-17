@@ -1093,4 +1093,32 @@ class Accountdetail
     {
         return $this->otherOffice;
     }
+    /**
+     * @var \AppBundle\Entity\Account
+     */
+    private $account;
+
+
+    /**
+     * Set account
+     *
+     * @param \AppBundle\Entity\Account $account
+     * @return Accountdetail
+     */
+    public function setAccount(\AppBundle\Entity\Account $account = null)
+    {
+        $this->account = $account;
+
+        return $this;
+    }
+
+    /**
+     * Get account
+     *
+     * @return \AppBundle\Entity\Account 
+     */
+    public function getAccount()
+    {
+        return $this->account;
+    }
 }

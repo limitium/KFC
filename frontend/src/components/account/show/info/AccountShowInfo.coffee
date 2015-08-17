@@ -1,2 +1,2 @@
 class AccountShowInfo extends Controller
-  constructor: (@TableUtils) ->
+  constructor: (@account) ->
