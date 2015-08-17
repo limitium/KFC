@@ -1,92 +1,22 @@
 AppBundle\Entity\Userinfo:
     type: entity
     table: USERINFO
-    indexes:
-        KF_SR_IX_UserID_incl:
-            columns:
-                - USERID
-                - USERNAME
-                - DIVISION
-                - LASTNAME
-        KF_SR_IX_DEPARTMENT:
-            columns:
-                - DEPARTMENT
-                - DIVISION
-                - USERID
-        _dta_index_USERINFO_7_286624064__K3_K1:
-            columns:
-                - USERNAME
-                - USERID
-        _dta_index_USERINFO_7_286624064__K1_K3:
-            columns:
-                - USERID
-                - USERNAME
-        _dta_index_USERINFO_c_7_286624064__K3:
-            columns:
-                - USERNAME
-        _dta_index_USERINFO_7_286624064__K1_6:
-            columns:
-                - USERID
-                - DEPARTMENT
-        _dta_index_USERINFO_5_286624064__K6:
-            columns:
-                - DEPARTMENT
-        _dta_index_USERINFO_5_286624064__K1_3_6:
-            columns:
-                - USERID
-                - USERNAME
-                - DEPARTMENT
-        _dta_index_USERINFO_5_286624064__K6_K1_K3:
-            columns:
-                - DEPARTMENT
-                - USERID
-                - USERNAME
-        _dta_index_USERINFO_5_286624064__K1_K6_K3:
-            columns:
-                - USERID
-                - DEPARTMENT
-                - USERNAME
-        _dta_index_USERINFO_5_286624064__K6_K1:
-            columns:
-                - DEPARTMENT
-                - USERID
-        _dta_index_USERINFO_5_286624064__K1_K18_K3:
-            columns:
-                - USERID
-                - LASTNAME
-                - USERNAME
-        _dta_index_USERINFO_5_286624064__K18_K3:
-            columns:
-                - LASTNAME
-                - USERNAME
-        _dta_index_USERINFO_5_286624064__K18_K3_K1:
-            columns:
-                - LASTNAME
-                - USERNAME
-                - USERID
-        _dta_index_USERINFO_5_286624064__K1_3_5_6:
-            columns:
-                - USERID
-                - USERNAME
-                - DIVISION
-                - DEPARTMENT
-        _dta_index_USERINFO_5_286624064__K1_3_18:
-            columns:
-                - USERID
-                - USERNAME
-                - LASTNAME
     uniqueConstraints:
         PK_USERINFO:
             columns:
                 - USERID
-    id: {  }
-    fields:
+    id:
         userid:
             type: string
             nullable: false
             length: 12
             fixed: false
             column: USERID
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: AppBundle\Doctrine\SpkIdGenerator
+    fields:
         title:
             type: string
             nullable: true
@@ -279,28 +209,39 @@ AppBundle\Entity\Userinfo:
             length: 1
             fixed: false
             column: SPEEDSEARCHAPPROVAL
-        modifydate:
-            type: datetime
-            nullable: true
-            column: MODIFYDATE
-        modifyuser:
-            type: string
-            nullable: true
-            length: 12
-            fixed: false
-            column: MODIFYUSER
         createdate:
             type: datetime
             nullable: true
             column: CREATEDATE
-        createuser:
-            type: string
+            gedmo:
+                timestampable:
+                    on: create
+        modifydate:
+            type: datetime
             nullable: true
-            length: 12
-            fixed: false
-            column: CREATEUSER
+            column: MODIFYDATE
+            gedmo:
+                timestampable:
+                    on: update
         intranetid:
             type: integer
             nullable: true
             unsigned: false
+    manyToOne:
+        createdBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: CREATEUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: create
+        updatedBy:
+            targetEntity: AppBundle\Entity\User
+            joinColumn:
+                name: MODIFYUSER
+                referencedColumnName: USERID
+            gedmo:
+                blameable:
+                    on: update
     lifecycleCallbacks: {  }

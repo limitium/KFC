@@ -534,6 +534,18 @@ AppBundle\Entity\Contact:
             mappedBy: contact
             cascade:
                 - all
+    manyToMany:
+        managers:
+          targetEntity: AppBundle\Entity\Userinfo
+          joinTable:
+            name: KF_CONTACT_MANAGERS
+            joinColumns:
+              contactid:
+                referencedColumnName: contactid
+            inverseJoinColumns:
+              userid:
+                referencedColumnName: managerid
+                unique: true
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

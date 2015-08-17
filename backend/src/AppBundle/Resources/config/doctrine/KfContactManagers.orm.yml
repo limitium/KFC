@@ -1,21 +1,6 @@
 AppBundle\Entity\KfContactManagers:
     type: entity
     table: KF_CONTACT_MANAGERS
-    indexes:
-        _dta_index_KF_CONTACT_MANAGERS_9_1409440095__K2_K1:
-            columns:
-                - MANAGERID
-                - CONTACTID
-        _dta_index_KF_CONTACT_MANAGERS_9_1409440095__K2:
-            columns:
-                - MANAGERID
-        _dta_index_KF_CONTACT_MANAGERS_9_1409440095__K1:
-            columns:
-                - CONTACTID
-        _dta_index_KF_CONTACT_MANAGERS_9_1409440095__K1_K2:
-            columns:
-                - CONTACTID
-                - MANAGERID
     id: {  }
     fields:
         contactid:

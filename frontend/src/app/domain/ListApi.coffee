@@ -26,10 +26,19 @@ class ListApi extends Factory
       tenantContactType: {method: 'GET', params: {type: 'Tenant Type'}, isArray: true, cache: true}
       sex: {method: 'GET', params: {type: 'Sex'}, isArray: true, cache: true}
       language: {method: 'GET', params: {type: 'KF Language Report'}, isArray: true, cache: true}
+      title: {method: 'GET', params: {type: 'Title'}, isArray: true, cache: true}
+      titleType: {method: 'GET', params: {type: 'KF Title Type'}, isArray: true, cache: true}
+      contactStatus: {method: 'GET', params: {type: 'Contact Status'}, isArray: true, cache: true}
     })
     getLanguage: ->
       @_language ?= @Lists.language()
     getSex: ->
       @_sex ?= @Lists.sex()
+    getTitle: ->
+      @_title ?= @Lists.title()
+    getTitleType: ->
+      @_titleType ?= @Lists.titleType()
+    getContactStatus: ->
+      @_contactStatus ?= @Lists.contactStatus()
     }
 
