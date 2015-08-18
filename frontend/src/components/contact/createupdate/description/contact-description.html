@@ -123,14 +123,14 @@
 
             <div ng-show="ctrl.addRow" class="col-md-6">
                 <div class="col-sm-7">
-                    <input type="text" ng-model="ctrl.newManagerName" typeahead-on-select="ctrl.onNewManagerSelect($item)"
+                    <input type="text" ng-model="ctrl.managerToAdd" typeahead-on-select="ctrl.onNewManagerSelect($item)"
                            typeahead="item as [item.username, item.department, item.division].join(' ') for item in ctrl.getManagers($viewValue)"
-                           typeahead-wait-ms="300"
+                           typeahead-wait-ms="500"
                            typeahead-loading="loadingManagers" class="form-control">
                     <i ng-show="loadingManagers" class="fa fa-refresh col-sm-1"></i>
                 </div>
                 <div class="col-sm-4">
-                    <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()">
+                    <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()" ng-disabled="!ctrl.canAddManager()">
                         <i class="fa fa-check"></i>
                     </button>
                 </div>
