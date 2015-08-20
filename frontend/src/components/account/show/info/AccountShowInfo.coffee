@@ -1,2 +1,2 @@
 class AccountShowInfo extends Controller
-  constructor: (@account) ->
+  constructor: (@account,@ListApi) ->
