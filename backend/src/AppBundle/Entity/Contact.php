@@ -2482,4 +2482,27 @@ class Contact
     {
         $this->managers = $managers;
     }
+
+    /**
+     * Add managers
+     *
+     * @param \AppBundle\Entity\Userinfo $managers
+     * @return Contact
+     */
+    public function addManager(\AppBundle\Entity\Userinfo $managers)
+    {
+        $this->managers[] = $managers;
+
+        return $this;
+    }
+
+    /**
+     * Remove managers
+     *
+     * @param \AppBundle\Entity\Userinfo $managers
+     */
+    public function removeManager(\AppBundle\Entity\Userinfo $managers)
+    {
+        $this->managers->removeElement($managers);
+    }
 }

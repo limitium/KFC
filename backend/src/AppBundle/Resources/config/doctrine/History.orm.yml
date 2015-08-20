@@ -261,4 +261,10 @@ AppBundle\Entity\History:
             gedmo:
                 blameable:
                     on: update
+        account:
+          targetEntity: AppBundle\Entity\Account
+          inversedBy: histories
+          joinColumn:
+            name: ACCOUNTID
+            referencedColumnName: ACCOUNTID
     lifecycleCallbacks: {  }
