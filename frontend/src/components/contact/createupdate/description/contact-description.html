@@ -121,18 +121,23 @@
                 </button>
             </div>
 
-            <div ng-show="ctrl.addRow" class="col-md-6">
-                <div class="col-sm-7">
-                    <input type="text" ng-model="ctrl.managerToAdd" typeahead-on-select="ctrl.onNewManagerSelect($item)"
-                           typeahead="item as [item.username, item.department, item.division].join(' ') for item in ctrl.getManagers($viewValue)"
-                           typeahead-wait-ms="500"
-                           typeahead-loading="loadingManagers" class="form-control">
-                    <i ng-show="loadingManagers" class="fa fa-refresh col-sm-1"></i>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()" ng-disabled="!ctrl.canAddManager()">
-                        <i class="fa fa-check"></i>
-                    </button>
+            <div ng-show="ctrl.addRow" class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-group has-feedback">
+                            <input type="text" ng-model="ctrl.typedManager" typeahead-on-select="ctrl.onNewManagerSelect($item)"
+                                   typeahead="item as item.username for item in ctrl.getManagers($viewValue)"
+                                   typeahead-wait-ms="500"
+                                   typeahead-loading="loadingManagers"
+                                   class="form-control">
+                            <span class="form-control-feedback"><i ng-show="loadingManagers" class="fa fa-refresh fa-spin"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-success" aria-label="Add" ng-click="ctrl.addManager()" ng-disabled="!ctrl.canAddManager()">
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
