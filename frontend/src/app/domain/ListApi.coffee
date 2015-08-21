@@ -32,19 +32,7 @@ class ListApi extends Factory
       accountType: {method: 'GET', params: {type: 'Account Type'}, isArray: true, cache: true}
       accountStatus: {method: 'GET', params: {type: 'Account Status'}, isArray: true, cache: true}
     })
-    getLanguage: ->
-      @_language ?= @Lists.language()
-    getSex: ->
-      @_sex ?= @Lists.sex()
-    getTitle: ->
-      @_title ?= @Lists.title()
-    getTitleType: ->
-      @_titleType ?= @Lists.titleType()
-    getContactStatus: ->
-      @_contactStatus ?= @Lists.contactStatus()
-    getAccountType:->
-      @_accountType ?= @Lists.accountType()
-    getAccountStatus:->
-      @_accountStatus ?= @Lists.accountStatus()
+    getItems: (listName)->
+      @['_' + listName] ?= @Lists.query type: listName
     }
 

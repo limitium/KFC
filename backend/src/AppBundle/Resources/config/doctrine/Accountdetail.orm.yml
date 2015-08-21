@@ -70,12 +70,6 @@ AppBundle\Entity\Accountdetail:
             length: 64
             fixed: false
             column: PRODUCTS
-        industrialmanagerid:
-            type: string
-            nullable: true
-            length: 32
-            fixed: false
-            column: INDUSTRIALMANAGERID
         residentialmanagerid:
             type: string
             nullable: true
@@ -88,36 +82,12 @@ AppBundle\Entity\Accountdetail:
             length: 32
             fixed: false
             column: COUNTRYHOUSEMANAGERID
-        retailmanagerid:
-            type: string
-            nullable: true
-            length: 32
-            fixed: false
-            column: RETAILMANAGERID
-        officesmanagerid:
-            type: string
-            nullable: true
-            length: 32
-            fixed: false
-            column: OFFICESMANAGERID
         assessmentmanagerid:
             type: string
             nullable: true
             length: 32
             fixed: false
             column: ASSESSMENTMANAGERID
-        investmentmanagerid:
-            type: string
-            nullable: true
-            length: 32
-            fixed: false
-            column: INVESTMENTMANAGERID
-        consultingmanagerid:
-            type: string
-            nullable: true
-            length: 32
-            fixed: false
-            column: CONSULTINGMANAGERID
         marketreseachmanagerid:
             type: string
             nullable: true
@@ -222,3 +192,29 @@ AppBundle\Entity\Accountdetail:
                         referencedColumnName: ACCOUNTID
                         onDelete: CASCADE
                         onUpdate: CASCADE
+    manyToOne:
+            officeManager:
+                targetEntity: AppBundle\Entity\Userinfo
+                joinColumn:
+                    name: OFFICESMANAGERID
+                    referencedColumnName: USERID
+            invetmentManager:
+                targetEntity: AppBundle\Entity\Userinfo
+                joinColumn:
+                    name: INVESTMENTMANAGERID
+                    referencedColumnName: USERID
+            industrialManager:
+                targetEntity: AppBundle\Entity\Userinfo
+                joinColumn:
+                    name: INDUSTRIALMANAGERID
+                    referencedColumnName: USERID
+            retailManager:
+                targetEntity: AppBundle\Entity\Userinfo
+                joinColumn:
+                    name: RETAILMANAGERID
+                    referencedColumnName: USERID
+            consultingManager:
+                targetEntity: AppBundle\Entity\Userinfo
+                joinColumn:
+                    name: CONSULTINGMANAGERID
+                    referencedColumnName: USERID

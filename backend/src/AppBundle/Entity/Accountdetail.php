@@ -1121,4 +1121,144 @@ class Accountdetail
     {
         return $this->account;
     }
+    /**
+     * @var \AppBundle\Entity\Userinfo
+     */
+    private $officeManager;
+
+    /**
+     * @var \AppBundle\Entity\Userinfo
+     */
+    private $invetmentManager;
+
+    /**
+     * @var \AppBundle\Entity\Userinfo
+     */
+    private $industrialManager;
+
+    /**
+     * @var \AppBundle\Entity\Userinfo
+     */
+    private $retailManager;
+
+    /**
+     * @var \AppBundle\Entity\Userinfo
+     */
+    private $consultingManager;
+
+
+    /**
+     * Set officeManager
+     *
+     * @param \AppBundle\Entity\Userinfo $officeManager
+     * @return Accountdetail
+     */
+    public function setOfficeManager(\AppBundle\Entity\Userinfo $officeManager = null)
+    {
+        $this->officeManager = $officeManager;
+
+        return $this;
+    }
+
+    /**
+     * Get officeManager
+     *
+     * @return \AppBundle\Entity\Userinfo 
+     */
+    public function getOfficeManager()
+    {
+        return $this->officeManager;
+    }
+
+    /**
+     * Set invetmentManager
+     *
+     * @param \AppBundle\Entity\Userinfo $invetmentManager
+     * @return Accountdetail
+     */
+    public function setInvetmentManager(\AppBundle\Entity\Userinfo $invetmentManager = null)
+    {
+        $this->invetmentManager = $invetmentManager;
+
+        return $this;
+    }
+
+    /**
+     * Get invetmentManager
+     *
+     * @return \AppBundle\Entity\Userinfo 
+     */
+    public function getInvetmentManager()
+    {
+        return $this->invetmentManager;
+    }
+
+    /**
+     * Set industrialManager
+     *
+     * @param \AppBundle\Entity\Userinfo $industrialManager
+     * @return Accountdetail
+     */
+    public function setIndustrialManager(\AppBundle\Entity\Userinfo $industrialManager = null)
+    {
+        $this->industrialManager = $industrialManager;
+
+        return $this;
+    }
+
+    /**
+     * Get industrialManager
+     *
+     * @return \AppBundle\Entity\Userinfo 
+     */
+    public function getIndustrialManager()
+    {
+        return $this->industrialManager;
+    }
+
+    /**
+     * Set retailManager
+     *
+     * @param \AppBundle\Entity\Userinfo $retailManager
+     * @return Accountdetail
+     */
+    public function setRetailManager(\AppBundle\Entity\Userinfo $retailManager = null)
+    {
+        $this->retailManager = $retailManager;
+
+        return $this;
+    }
+
+    /**
+     * Get retailManager
+     *
+     * @return \AppBundle\Entity\Userinfo 
+     */
+    public function getRetailManager()
+    {
+        return $this->retailManager;
+    }
+
+    /**
+     * Set consultingManager
+     *
+     * @param \AppBundle\Entity\Userinfo $consultingManager
+     * @return Accountdetail
+     */
+    public function setConsultingManager(\AppBundle\Entity\Userinfo $consultingManager = null)
+    {
+        $this->consultingManager = $consultingManager;
+
+        return $this;
+    }
+
+    /**
+     * Get consultingManager
+     *
+     * @return \AppBundle\Entity\Userinfo 
+     */
+    public function getConsultingManager()
+    {
+        return $this->consultingManager;
+    }
 }
