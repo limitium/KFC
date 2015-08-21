@@ -3,7 +3,9 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Userinfo;
 use AppBundle\Form\ContactType;
+use Doctrine\Common\Collections\ArrayCollection;
 use FOS\RestBundle\View\View;
 use AppBundle\Entity\Contact;
 use AppBundle\Service\ContactService;
@@ -83,7 +85,6 @@ class ContactController extends Controller
         return $this->processForm($form, $request, $contact);
     }
 
-
     /**
      * @Rest\View
      * @param Request $request
@@ -103,9 +104,7 @@ class ContactController extends Controller
 
         if ($form->isValid()) {
             $statusCode = $contact->getContactid() ? 204 : 201;
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($contact);
-            $em->flush();
+            $this->contactService->saveOrUpdate($contact);
 
             $response = new Response();
             $response->setStatusCode($statusCode);

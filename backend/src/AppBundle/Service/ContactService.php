@@ -4,6 +4,8 @@
 namespace AppBundle\Service;
 
 
+use AppBundle\Entity\Contact;
+use AppBundle\Entity\Userinfo;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query\ResultSetMapping;
 
@@ -43,6 +45,22 @@ class ContactService
     {
         $this->em = $em;
     }
+
+    public function saveOrUpdate(Contact $contact)
+    {
+        $newManagersIds = array();
+        /** @var Userinfo $manager */
+        foreach($contact->getManagers() as $manager) {
+            $newManagersIds[] = $manager->getUserid();
+        }
+        $newManagers = $this->em->getRepository('AppBundle:Userinfo')->findby( array('userid' => $newManagersIds), array('userid' => 'DESC'));
+        $contact->setManagers($newManagers);
+        $result = $this->em->merge($contact);
+        $this->em->flush();
+        return $result;
+    }
+
+
 
     public function findByName(ParamFetcher $params)
     {

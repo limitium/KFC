@@ -546,8 +546,8 @@ AppBundle\Entity\Contact:
               managerid:
                 referencedColumnName: USERID
                 unique: true
-          cascade:
-              - all
+#          orphanRemoval: true
+
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

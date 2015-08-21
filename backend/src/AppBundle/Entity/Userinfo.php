@@ -1060,4 +1060,14 @@ class Userinfo
     {
         return $this->updatedBy;
     }
+
+    /**
+     * @param string $userid
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+    }
+
+
 }

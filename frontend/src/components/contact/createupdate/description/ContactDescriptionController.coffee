@@ -29,6 +29,9 @@ class ContactDescription extends Controller
     @addRow = false
     @contact.managers.push(@managerToAdd)
     @managerToAdd = undefined
+  removeManager: (indexToRemove) ->
+    @contact.managers.splice(indexToRemove, 1)
+    @contact.managers = []
   onNewManagerSelect: (manager) ->
     @rebuildExcludedDepartments()
 
