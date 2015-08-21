@@ -14,13 +14,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="history in ctrl.histories track by $index">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr ng-repeat="history in ctrl.account.histories track by $index">
+                    <td>{{history.completeddate | date}}</td>
+                    <td>{{history.contactname}}</td>
+                    <td>{{history.createdBy.dbUsername}}</td>
+                    <td>{{history.type}}</td>
+                    <td>{{history.description}}</td>
+                    <td>{{history.longnotes}}</td>
                 </tr>
                 </tbody>
             </table>

@@ -2484,23 +2484,25 @@ class Contact
     }
 
     /**
-     * Remove Manager
+     * Add managers
      *
-     * @param \AppBundle\Entity\Userinfo $manager
+     * @param \AppBundle\Entity\Userinfo $managers
+     * @return Contact
      */
-    public function removeManager(\AppBundle\Entity\Userinfo $manager)
+    public function addManager(\AppBundle\Entity\Userinfo $managers)
     {
-        $this->managers->removeElement($manager);
+        $this->managers[] = $managers;
+
+        return $this;
     }
 
     /**
-     * Add manager
+     * Remove managers
      *
-     * @param \AppBundle\Entity\Userinfo $manager
+     * @param \AppBundle\Entity\Userinfo $managers
      */
-    public function addManager(\AppBundle\Entity\Userinfo $manager)
+    public function removeManager(\AppBundle\Entity\Userinfo $managers)
     {
-        $this->managers->add($manager);
+        $this->managers->removeElement($managers);
     }
 }
-

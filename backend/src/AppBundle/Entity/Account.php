@@ -585,6 +585,7 @@ class Account
     public function __construct()
     {
         $this->contacts = new ArrayCollection();
+        $this->histories= new ArrayCollection();
     }
 
     /**
@@ -2415,5 +2416,43 @@ class Account
     public function removeContact(\AppBundle\Entity\Contact $contacts)
     {
         $this->contacts->removeElement($contacts);
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $histories;
+
+
+    /**
+     * Add histories
+     *
+     * @param \AppBundle\Entity\History $histories
+     * @return Account
+     */
+    public function addHistory(\AppBundle\Entity\History $histories)
+    {
+        $this->histories[] = $histories;
+
+        return $this;
+    }
+
+    /**
+     * Remove histories
+     *
+     * @param \AppBundle\Entity\History $histories
+     */
+    public function removeHistory(\AppBundle\Entity\History $histories)
+    {
+        $this->histories->removeElement($histories);
+    }
+
+    /**
+     * Get histories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getHistories()
+    {
+        return $this->histories;
     }
 }

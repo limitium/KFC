@@ -29,6 +29,8 @@ class ListApi extends Factory
       title: {method: 'GET', params: {type: 'Title'}, isArray: true, cache: true}
       titleType: {method: 'GET', params: {type: 'KF Title Type'}, isArray: true, cache: true}
       contactStatus: {method: 'GET', params: {type: 'Contact Status'}, isArray: true, cache: true}
+      accountType: {method: 'GET', params: {type: 'Account Type'}, isArray: true, cache: true}
+      accountStatus: {method: 'GET', params: {type: 'Account Status'}, isArray: true, cache: true}
     })
     getLanguage: ->
       @_language ?= @Lists.language()
@@ -40,5 +42,9 @@ class ListApi extends Factory
       @_titleType ?= @Lists.titleType()
     getContactStatus: ->
       @_contactStatus ?= @Lists.contactStatus()
+    getAccountType:->
+      @_accountType ?= @Lists.accountType()
+    getAccountStatus:->
+      @_accountStatus ?= @Lists.accountStatus()
     }
 

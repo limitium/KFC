@@ -1,28 +1,93 @@
 <div>
     <div class="row">
         <div class="col-md-12">
-            <dl class="dl-horizontal">
-                <dt>Название (рус)</dt>
-                <dd>{{ctrl.account.detail.accountrus}}</dd>
-                <dt>Название (eng)</dt>
-                <dd>{{ctrl.account.account}}</dd>
-                <dt>Телефон</dt>
-                <dd>{{(ctrl.account.detail.mainprefix+ctrl.account.mainphone|phone)}}</dd>
-                <dt>Факс</dt>
-                <dd>{{(ctrl.account.detail.faxprefix+ctrl.account.fax)|phone}}</dd>
-                <dt>Доп. телефон</dt>
-                <dd>{{(ctrl.account.detail.tollprefix+ctrl.account.tollfree)|phone}}</dd>
-                <dt>Сайт</dt>
-                <dd>{{ctrl.account.webaddress}}</dd>
-                <dt>Адрес</dt>
-                <dd>...</dd>
-                <dt>Тип</dt>
-                <dd>{{ctrl.account.type}}</dd>
-                <dt>Статус</dt>
-                <dd>{{ctrl.account.status}}</dd>
-                <dt>Консультанты</dt>
-                <dd>...</dd>
-            </dl>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group col-sm-4">
+                            <label for="accountrus">Название (рус)</label>
+                            <input type="text" class="form-control" id="accountrus"
+                                   ng-model="ctrl.account.detail.accountrus">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="account">Название (eng)</label>
+                            <input type="text" class="form-control" id="account" ng-model="ctrl.account.account">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="webaddress">Сайт</label>
+                            <input type="text" class="form-control" id="webaddress" ng-model="ctrl.account.webaddress">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label>Тип</label>
+                            <common-list model="ctrl.account.type"
+                                         items="ctrl.ListApi.getAccountType()" multiple>
+                            </common-list>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label>Статус</label>
+                            <common-list model="ctrl.account.status"
+                                         items="ctrl.ListApi.getAccountStatus()">
+                            </common-list>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Телефоны</h4>
+                    <hr/>
+                    <form class="form-horizontal">
+                        <div class="form-group col-sm-12">
+                            <label for="mobile-phone-prefix" class="col-sm-4 control-label">Телефон</label>
+
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="mobile-phone-prefix"
+                                       ng-model="ctrl.account.detail.mainprefix">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="mobile-phone"
+                                       ng-model="ctrl.account.mainphone">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="work-phone-prefix" class="col-sm-4 control-label">Факс</label>
+
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="work-phone-prefix"
+                                       ng-model="ctrl.account.detail.faxprefix">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="work-phone" ng-model="ctrl.account.fax">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="home-phone-prefix" class="col-sm-4 control-label">Доп. телефон</label>
+
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="home-phone-prefix"
+                                       ng-model="ctrl.account.detail.tollprefix">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="home-phone"
+                                       ng-model="ctrl.account.tollfree">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Адреса</h4>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Консультанты</h4>
+                    <hr/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
