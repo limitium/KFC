@@ -11,6 +11,8 @@ class UserSelector extends Directive
           UserApi.UserInfo.hint(name: val).$promise
         scope.onUserSelect = (user)->
           scope.user = user
+        scope.$watch 'user', ->
+          scope.query = '' unless scope.user
 
         template = '''
 <div class="form-group has-feedback">

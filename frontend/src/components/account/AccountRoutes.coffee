@@ -44,3 +44,8 @@ class AccountRoutes extends Config
       templateUrl: "/components/account/show/history/account-show-history.html"
       controller: "AccountShowHistoryController as ctrl"
     )
+    .state("account.show.request",
+      url: "/request"
+      templateUrl: "/components/account/show/request/account-show-request.html"
+      controller: "AccountShowRequestController as ctrl"
+    )

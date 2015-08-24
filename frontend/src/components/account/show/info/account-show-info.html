@@ -86,46 +86,18 @@
                 <div class="col-md-12">
                     <h4>Консультанты</h4>
                     <hr/>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label>Офис</label>
-                                </div>
-                                <div class="col-md-4">
-                                    {{ctrl.account.detail.officeManager}}
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="button" class="btn btn-danger" aria-label="Remove"
-                                            ng-click="ctrl.addManager()">
-                                        <i class="fa fa-remove"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group has-feedback">
-                                <input type="text"
-                                       ng-model="ctrl.account.detail.officeManager"
-                                       typeahead-on-select="ctrl.onNewManagerSelect($item)"
-                                       typeahead="item as item.username for item in ctrl.getManagers($viewValue)"
-                                       typeahead-wait-ms="500"
-                                       typeahead-loading="loadingManagers"
-                                       class="form-control">
-                                <span class="form-control-feedback">
-                                    <i ng-show="loadingManagers"
-                                       class="fa fa-refresh fa-spin"></i></span>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-success" aria-label="Add"
-                                    ng-click="ctrl.addManager()">
-                                <i class="fa fa-check"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <manager-selector label="Офисы" manager="officeManager"></manager-selector>
+                    <manager-selector label="Инвестиции" manager="invetmentManager"></manager-selector>
+                    <manager-selector label="Склады" manager="industrialManager"></manager-selector>
+                    <manager-selector label="Ритейл" manager="retailManager"></manager-selector>
+                    <manager-selector label="Проф. Услуги" manager="consultingManager"></manager-selector>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-success">Сохранить</button>
         </div>
     </div>
 </div>
