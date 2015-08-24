@@ -2455,4 +2455,42 @@ class Account
     {
         return $this->histories;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $requests;
+
+
+    /**
+     * Add requests
+     *
+     * @param \AppBundle\Entity\SpkRequests $requests
+     * @return Account
+     */
+    public function addRequest(\AppBundle\Entity\SpkRequests $requests)
+    {
+        $this->requests[] = $requests;
+
+        return $this;
+    }
+
+    /**
+     * Remove requests
+     *
+     * @param \AppBundle\Entity\SpkRequests $requests
+     */
+    public function removeRequest(\AppBundle\Entity\SpkRequests $requests)
+    {
+        $this->requests->removeElement($requests);
+    }
+
+    /**
+     * Get requests
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getRequests()
+    {
+        return $this->requests;
+    }
 }

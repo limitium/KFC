@@ -500,6 +500,11 @@ AppBundle\Entity\Account:
             mappedBy: account
             cascade:
                 - all
+        requests:
+            targetEntity: AppBundle\Entity\SpkRequests
+            mappedBy: account
+            cascade:
+                - all
     manyToOne:
         createdBy:
             targetEntity: AppBundle\Entity\User

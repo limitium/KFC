@@ -6,21 +6,31 @@
                 <thead>
                 <tr>
                     <th>Дата</th>
+                    <th>Депатртамент</th>
+                    <th>Менеджер</th>
                     <th>Контакт</th>
-                    <th>Сотрудник</th>
                     <th>Тип</th>
-                    <th>Тема</th>
+                    <th>Подтип</th>
+                    <th>Пл,min</th>
+                    <th>Пл,max</th>
                     <th>Комментарий</th>
+                    <th>Статус</th>
+                    <th>Стадия</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="history in ctrl.account.histories track by $index">
-                    <td>{{history.completeddate | date}}</td>
-                    <td>{{history.contactname}}</td>
-                    <td>{{history.createdBy.dbUsername}}</td>
-                    <td>{{history.type}}</td>
-                    <td>{{history.description}}</td>
-                    <td>{{history.longnotes}}</td>
+                <tr ng-repeat="request in ctrl.account.requests track by $index">
+                    <td>{{request.createdate | date}}</td>
+                    <td>{{request.department}}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{{request.reqType}}</td>
+                    <td>{{request.subtype}}</td>
+                    <td>{{request.squareMin}}</td>
+                    <td>{{request.squareMax}}</td>
+                    <td>{{request.notes}}</td>
+                    <td>{{request.status}}</td>
+                    <td></td>
                 </tr>
                 </tbody>
             </table>

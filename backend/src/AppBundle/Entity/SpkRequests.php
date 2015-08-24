@@ -4941,4 +4941,88 @@ class SpkRequests
     {
         return $this->offCostCurrency;
     }
+    /**
+     * @var \AppBundle\Entity\User
+     */
+    private $createdBy;
+
+    /**
+     * @var \AppBundle\Entity\User
+     */
+    private $updatedBy;
+
+    /**
+     * @var \AppBundle\Entity\Account
+     */
+    private $account;
+
+
+    /**
+     * Set createdBy
+     *
+     * @param \AppBundle\Entity\User $createdBy
+     * @return SpkRequests
+     */
+    public function setCreatedBy(\AppBundle\Entity\User $createdBy = null)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy
+     *
+     * @return \AppBundle\Entity\User 
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * Set updatedBy
+     *
+     * @param \AppBundle\Entity\User $updatedBy
+     * @return SpkRequests
+     */
+    public function setUpdatedBy(\AppBundle\Entity\User $updatedBy = null)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy
+     *
+     * @return \AppBundle\Entity\User 
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
+    }
+
+    /**
+     * Set account
+     *
+     * @param \AppBundle\Entity\Account $account
+     * @return SpkRequests
+     */
+    public function setAccount(\AppBundle\Entity\Account $account = null)
+    {
+        $this->account = $account;
+
+        return $this;
+    }
+
+    /**
+     * Get account
+     *
+     * @return \AppBundle\Entity\Account 
+     */
+    public function getAccount()
+    {
+        return $this->account;
+    }
 }

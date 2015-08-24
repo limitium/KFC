@@ -263,7 +263,7 @@ AppBundle\Entity\History:
                     on: update
         account:
           targetEntity: AppBundle\Entity\Account
-          inversedBy: histories
+          inversedBy: requests
           joinColumn:
             name: ACCOUNTID
             referencedColumnName: ACCOUNTID
